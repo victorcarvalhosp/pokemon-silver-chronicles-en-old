@@ -7387,11 +7387,12 @@ Description = A folding bicycle that more than doubles foot speed.
 #-------------------------------
 [ACROBIKE]
 Name = Acro Bike
-NamePlural = Bicycles
+NamePlural = Acro Bikes
 Pocket = 8
 Price = 0
 FieldUse = Direct
-Description = A folding bicycle capable of jumps and wheelies
+Flags = KeyItem
+Description = A folding bike that is slower than the Mach Bike but allows you to perform exciting tricks.
 #-------------------------------
 [EXPALL]
 Name = Exp All
@@ -7876,11 +7877,10 @@ Description = A crystal brimming with Z-Power. It can fully recharge your Z-Ring
 [WISHINGSTAR]
 Name = Wishing Star
 NamePlural = Wishing Stars
-Pocket = 7
-Price = 4000
-BattleUse = Direct
-Flags = Fling_50,UsesAllBattleActions
-Description = A stone that radiates Dynamax energy. It can fully recharge your Dynamax Band in battle.
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A stone with a mysterious power. It's said that your dreams come true if you find one.
 #-------------------------------
 [ARMORITEORE]
 Name = Armorite Ore
@@ -8577,4 +8577,36 @@ Pocket = 8
 Price = 0
 Flags = KeyItem
 Description = A set of golden false teeth lost by the Safari Zone's warden. They make his smile sparkle.
+#-------------------------------
+[COUPON1]
+Name = Coupon 1
+NamePlural = Coupon's 1
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A coupon to be exchanged for a couple of Ticket for the Great Butler's Magic Show. Three coupons are needed.
+#-------------------------------
+[COUPON2]
+Name = Coupon 2
+NamePlural = Coupon's 2
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A coupon to be exchanged for a couple of Ticket for the Great Butler's Magic Show. Three coupons are needed.
+#-------------------------------
+[COUPON3]
+Name = Coupon 3
+NamePlural = Coupon's 3
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = A coupon to be exchanged for a couple of Ticket for the Great Butler's Magic Show. Three coupons are needed.
+#-------------------------------
+[MAGICSHOWTICKET]
+Name = Magic Show Ticket
+NamePlural = Magic Show Ticket's
+Pocket = 8
+Price = 0
+Flags = KeyItem
+Description = An entrance ticket for the Great Butler's Magic Show.
 #-------------------------------

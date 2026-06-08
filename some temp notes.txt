@@ -1,9 +1,9 @@
 ALWAYS CHECK IF QUEST IS ACTIVE FIRST!!
-!isQuestActive?(:DadVacation)
+!isQuestActive?(:MagicShowTickets)
 
-activateQuest(:TimeTraveler,colorQuest("blue"),true)
-advanceQuestToStage(:SafariZoneGoldTeeth, 2)
-completeQuest(:DadVacation)
+activateQuest(:DoublebattleTournaments,colorQuest("blue"),true)
+advanceQuestToStage(:DoublebattleTournaments, 2)
+completeQuest(:ButlerMagicShow)
 
 
 Dialog lines to use on TCG:

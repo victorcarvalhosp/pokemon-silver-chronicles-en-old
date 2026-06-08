@@ -54,6 +54,12 @@ Gender = Male
 BaseMoney = 30
 IntroBGM = Encounter-Sailor-Hiker
 #-------------------------------
+[HIKER_3]
+Name = HIKER
+Gender = Male
+BaseMoney = 30
+IntroBGM = Encounter-Sailor-Hiker
+#-------------------------------
 [BEAUTY]
 Name = BEAUTY
 Gender = Female
@@ -124,6 +130,12 @@ BaseMoney = 30
 IntroBGM = SEQ_EYE_KID
 #-------------------------------
 [SCHOOLKID_Boy]
+Name = SCHOOL KID
+Gender = Male
+BaseMoney = 30
+IntroBGM = SEQ_EYE_KID
+#-------------------------------
+[SCHOOLKID_Boy_2]
 Name = SCHOOL KID
 Gender = Male
 BaseMoney = 30
@@ -444,6 +456,11 @@ Name = SCHOOL KID
 Gender = Female
 BaseMoney = 30
 #-------------------------------
+[SCHOOLKID_Female_2]
+Name = SCHOOL KID
+Gender = Female
+BaseMoney = 30
+#-------------------------------
 [POKeFAN_Male]
 Name = POKeFAN
 Gender = Male
@@ -676,6 +693,12 @@ Name = PkMn TRAINER
 Gender = Unknown
 BaseMoney = 30
 IntroBGM = Battle-Stadium
+#-------------------------------
+[PkMnTRAINER_May]
+Name = PkMn TRAINER
+Gender = Female
+BaseMoney = 80
+IntroBGM = Encounter_May
 #-------------------------------
 [PROFESSOR_Ivy]
 Name = PkMn PROFESSOR
@@ -1117,6 +1140,18 @@ IntroBGM = SEQ_EYE_COOLTRAINER_SNOW
 #-------------------------------
 [SALARYMAN]
 Name = Salary Man
+Gender = Male
+BaseMoney = 50
+IntroBGM = Encounter-Salaryman
+#-------------------------------
+[SALARYMAN_2]
+Name = Employee
+Gender = Male
+BaseMoney = 50
+IntroBGM = Encounter-Salaryman
+#-------------------------------
+[DIRECTOR]
+Name = Director	
 Gender = Male
 BaseMoney = 50
 IntroBGM = Encounter-Salaryman

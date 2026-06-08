@@ -754,7 +754,7 @@ Weather = Snow,10
 MapPosition = 0,22,9
 #-------------------------------
 [171]   # Indigo Plateau
-Name = Planalto Indigo
+Name = Indigo Plateau
 Outdoor = true
 ShowArea = true
 MapPosition = 1,6,5
@@ -830,12 +830,12 @@ HealingSpot = 202,14,8
 MapPosition = 2,5,11
 #-------------------------------
 [203]   # Route 102
-Name = rota 102
+Name = Route 102
 Outdoor = true
 MapPosition = 2,5,11
 #-------------------------------
 [204]   # Route 103
-Name = rota 103
+Name = Route 103
 Outdoor = true
 MapPosition = 2,8,9
 #-------------------------------
@@ -1053,8 +1053,8 @@ Outdoor = false
 MapPosition = 3,8,1
 BattleBack = indoor4
 #-------------------------------
-[285]   # Verdanturf
-Name = Verdanturf
+[285]   # Verdanturf Town
+Name = Verdanturf Town
 Outdoor = true
 ShowArea = true
 HealingSpot = 285,24,9
@@ -1853,12 +1853,12 @@ Name = Orange League HQ - Arena
 Outdoor = true
 BattleBack = battle6
 #-------------------------------
-[671]   # Rota 115
+[671]   # Route 115
 Name = Rota 115
 Outdoor = true
 MapPosition = 2,4,5
 #-------------------------------
-[672]   # Rota 116
+[672]   # Route 116
 Name = Rota 116
 Outdoor = true
 MapPosition = 2,5,7
@@ -1868,7 +1868,7 @@ Name = Rota 111
 Outdoor = true
 MapPosition = 2,10,6
 #-------------------------------
-[674]   # Rota 117
+[674]   # Route 117
 Name = Rota 117
 Outdoor = true
 MapPosition = 2,8,8
@@ -1945,6 +1945,11 @@ Name = Vale Petalburg
 Outdoor = true
 ShowArea = true
 MapPosition = 2,1,10
+#-------------------------------
+[701]   # Rustboro City - Gym
+Name = Gim
+MapPosition = 2,1,7
+BattleBack = battle2
 #-------------------------------
 [716]   # gim
 Name = gim
@@ -2164,3 +2169,7 @@ Name = Rock Tunnel
 Outdoor = false
 Bicycle = true
 MapPosition = 1,25,5
+#-------------------------------
+[900]   # Campeonato
+Name = Campeonato
+BattleBack = battle2

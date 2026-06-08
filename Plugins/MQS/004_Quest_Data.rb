@@ -885,6 +885,48 @@ module QuestModule
     :QuestDescription => "After years working non-stop, your Dad was finally able to take a vacation. He invited you to join him and your mom at the beach so you can spend some quality time together. Can you make it there?",
   }
 
+  SlakothTrade = {
+    :ID => "80",
+    :Name => "Slakoth Trade",
+    :QuestGiver => "Lass Silvia",
+    :Stage1 => "Trade Pokémon.",
+    :Location1 => "Violet City",
+    :QuestDescription => "This Lass in Rustboro City wants to trade a Bellsprout for his Onix. Do you think it's a good trade?",
+  }
+
+  MagicShowTickets = {
+    :ID => "81",
+    :Name => "Magic Show Tickets!",
+    :QuestGiver => "Diane",
+    :Stage1 => "Collect the 3 coupons.",
+    :Location1 => "Rustboro City",
+    :Stage2 => "Show the coupons to Diane.",
+    :Location2 => "Rustboro City",
+    :RewardString => "Magic Show Tickets",
+    :QuestDescription => "A promotional campaign is being ran to give out some promotional tickets to the Great Butler's Magic Show. Collect a coupon from each of the 3 clowns to get tickets to the show.",
+  }
+
+  ButlerMagicShow = {
+    :ID => "82",
+    :Name => "Great Butler's Magic Show!",
+    :QuestGiver => "Diane",
+    :Location1 => "Route 116",
+    :Stage1 => "Go to the Magic Show.",
+    :QuestDescription => "Great Butler's Magic Show is coming to town! Go to the show and see the magic up close and personal.",
+  }
+
+  DoublebattleTournaments = {
+    :ID => "83",
+    :Name => "Double Battle Tournaments!",
+    :Location1 => "Verdanturf Town",
+    :Stage1 => "Participate in the Tournament.",
+    :Location2 => "Slateport City",
+    :Stage2 => "Participate in the Tournament.",
+    :Location3 => "Fallarbor Town",
+    :Stage3 => "Participate in the Tournament.",
+    :QuestDescription => "There are 3 Battle Tournaments that happens across Hoenn. Win all of them to collect prizes and strengthen the bonds with your partner.",
+  }
+
   
 
 

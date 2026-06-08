@@ -2143,7 +2143,7 @@ Pokemon = PLUSLE,35
 Pokemon = POOCHYENA,30
 Pokemon = LINOONE,31
 #-------------------------------
-[PkMnTRAINER_Femalen,May]
+[PkMnTRAINER_May,May]
 LoseText = ...
 Pokemon = BLAZIKEN,40
 Pokemon = GLACEON,37
@@ -6129,17 +6129,17 @@ Pokemon = POOCHYENA,4
 [BUGCATCHER_2,Rick]
 LoseText = Ow! Down and out!
 Pokemon = WURMPLE,5
-Pokemon = WURMPLE,5
+Pokemon = CASCOON,6
 #-------------------------------
 [YOUNGSTER_3,Allen]
 LoseText = I called you because I thought I could beat you...
-Pokemon = ZIGZAGOON,5
-Pokemon = TAILLOW,5
+Pokemon = ZIGZAGOON,6
+Pokemon = TAILLOW,6
 #-------------------------------
 [LASS_2,Tiana]
 LoseText = I ended up furthering your career...
-Pokemon = ZIGZAGOON,5
-Pokemon = SHROOMISH,5
+Pokemon = ZIGZAGOON,6
+Pokemon = SHROOMISH,6
 #-------------------------------
 [YOUNGSTER_3,Billy]
 LoseText = Waah! I got sand in my runners! They're all gritty!
@@ -6195,12 +6195,12 @@ LoseText = We battled together, but we both lost...
 Pokemon = SEEDOT,11
 Pokemon = LOTAD,12
 #-------------------------------
-[FISHERMAN,Ivan]
+[FISHERMAN_3,Ivan]
 LoseText = I thought I wasn't too bad, if I may say so, but I guess not... Bleah...
-Pokemon = CARVANHA,11
-Pokemon = TYMPOLE,11
-Pokemon = CARVANHA,11
-Pokemon = TYMPOLE,11
+Pokemon = CARVANHA,12
+Pokemon = TYMPOLE,12
+Pokemon = CARVANHA,12
+Pokemon = TYMPOLE,12
 #-------------------------------
 [SCHOOLKID_Boy,Adam,1]
 LoseText = ...
@@ -6212,47 +6212,60 @@ LoseText = ...
 Pokemon = ZIGZAGOON,6
 Pokemon = LOTAD,6
 #-------------------------------
-[YOUNGSTER,Josh,2]
-LoseText = ...
-Pokemon = ARON,7
-Pokemon = ARON,7
+[YOUNGSTER_3,Josh]
+LoseText = You were too good for me...
+Pokemon = ARON,14
+Pokemon = SANDILE,14
 #-------------------------------
-[YOUNGSTER,Tommy,1]
-LoseText = ...
-Pokemon = ARON,8
-Pokemon = ARON,8
+[YOUNGSTER_3,Tommy]
+LoseText = Wow! You've really strong!
+Pokemon = ARON,14
+Pokemon = TRAPINCH,16
 #-------------------------------
-[HIKER,Marc,1]
-LoseText = ...
-Pokemon = ARON,8
-Pokemon = ARON,8
+[HIKER_3,Marc]
+LoseText = I challenged you because I thought I was going to win...
+Pokemon = ARON,14
+Pokemon = ROGGENROLA,14
 #-------------------------------
 [LEADER_Roxanne,Roxanne]
-Items = POTION,POTION
-LoseText = ...
-Pokemon = ARON,12
-Pokemon = ARON,12
-Pokemon = NOSEPASS,16
+Items = DYNAMAXBAND
+LoseText = So... I lost...
+Pokemon = ARON,16
+    Moves = ROCKTOMB,PROTECT,METALCLAW,STEALTHROCK
+Pokemon = ANORITH,16
+    Moves = BRINE,XSCISSOR,ROCKTOMB,BRICKBREAK
+Pokemon = LILEEP,18
+    Moves = ACID,GIGADRAIN,ANCIENTPOWER,CONFUSERAY
+Pokemon = ARCHEN,18
+    Moves = ACROBATICS,DRAGONBREATH,ROCKTOMB,ASSURANCE
+Pokemon = NOSEPASS,20
+    Moves = THUNDERPUNCH,ROCKSLIDE,DOUBLEEDGE,FIREPUNCH
+    Ace = yes
+    DynamaxLvl = 10
+    Gigantamax = yes
+Pokemon = RELICANTH,18
+    Moves = AQUATAIL,ANCIENTPOWER,ICEBEAM,PROTECT
 #-------------------------------
-[BUGCATCHER,Jose,1]
-LoseText = ...
-Pokemon = WURMPLE,8
-Pokemon = NINCADA,8
+[BUGCATCHER_2,Jose]
+LoseText = I lost! I thought I had you!
+Pokemon = VENIPEDE,15
+Pokemon = SILCOON,15
+Pokemon = NINCADA,15
 #-------------------------------
-[YOUNGSTER,JOEY,3]
-LoseText = ...
-Pokemon = MAKUHITA,8
-Pokemon = MAKUHITA,8
+[YOUNGSTER_3,Joey]
+LoseText = Ouch! A scrape! I have to put on a bandage!
+Pokemon = PATRAT,15
+Pokemon = LINOONE,16
 #-------------------------------
-[SCHOOLKID_Female,Karen,1]
-LoseText = ...
-Pokemon = SHROOMISH,8
-Pokemon = SHROOMISH,8
+[LASS_2,Karen]
+LoseText = You're a notch above me...
+Pokemon = PANPOUR,15
+Pokemon = SWABLU,15
 #-------------------------------
-[HIKER,Clark,1]
-LoseText = ...
-Pokemon = ARON,8
-Pokemon = ARON,8
+[HIKER_3,Clark]
+LoseText = Gasp... Gasp... Losing made me tired...
+Pokemon = ROGGENROLA,15
+Pokemon = ARON,15
 #-------------------------------
 [YOUNGSTER,Johnson,1]
 LoseText = ...
@@ -6481,13 +6494,13 @@ Pokemon = ELECTRIKE,17
 Pokemon = MINUN,17
 #-------------------------------
 [Dupla_jovem,Mark & Julia,1]
-LoseText = ...
-Pokemon = POOCHYENA,13
+LoseText = We need to train more!
+Pokemon = POOCHYENA,16
 Pokemon = LINOONE,15
-Pokemon = POOCHYENA,12
-Pokemon = NUZLEAF,13
-Pokemon = LINOONE,13
-Pokemon = WINGULL,12
+Pokemon = POOCHYENA,15
+Pokemon = NUZLEAF,16
+Pokemon = LINOONE,16
+Pokemon = WINGULL,15
 #-------------------------------
 [TWINS,Ana & Bia]
 LoseText = ...
@@ -6775,49 +6788,49 @@ Pokemon = DITTO,63
 Pokemon = ALAKAZAM,67
 #-------------------------------
 [SRANDJR,Maglore & Caio,1]
-LoseText = ...
-Pokemon = DUSTOX,12
-Pokemon = MUDKIP,13
-Pokemon = WINGULL,12
+LoseText = You won deservedly...
+Pokemon = HERDIER,16
+Pokemon = PANPOUR,15
+Pokemon = WINGULL,14
 Pokemon = SURSKIT,15
-Pokemon = LINOONE,13
-Pokemon = RALTS,14
+Pokemon = LINOONE,16
+Pokemon = DWEBBLE,14
 #-------------------------------
 [INTERVIEWERS,Mariah & Brad,1]
-LoseText = ...
-Pokemon = SHROOMISH,13
+LoseText = You're no stranger to the cameras...
+Pokemon = SHROOMISH,16
 Pokemon = VOLBEAT,14
-Pokemon = LINOONE,14
-Pokemon = SURSKIT,13
-Pokemon = PLUSLE,12
-Pokemon = SPHEAL,14
+Pokemon = MINCCINO,16
+Pokemon = SURSKIT,14
+Pokemon = PLUSLE,16
+Pokemon = VANILLITE,14
 #-------------------------------
 [OLDCOUPLE,Nevaresca & Carveci,1]
-LoseText = ...
-Pokemon = ELECTRIKE,13
+LoseText = You two are a very wise couple!
+Pokemon = EMOLGA,16
 Pokemon = MAKUHITA,14
-Pokemon = LINOONE,15
-Pokemon = DUSTOX,12
-Pokemon = RALTS,13
-Pokemon = PELIPPER,15
+Pokemon = RUFFLET,15
+Pokemon = TORKOAL,18
+Pokemon = LITWICK,15
+Pokemon = PELIPPER,16
 #-------------------------------
 [TWINS,Luma & Lais,1]
-LoseText = ...
-Pokemon = MINUN,13
-Pokemon = SWABLU,14
-Pokemon = PLUSLE,14
-Pokemon = AZURILL,13
-Pokemon = ZIGZAGOON,13
-Pokemon = SPINDA,14
+LoseText = They didn't need to be so rude!
+Pokemon = MINUN,16
+Pokemon = MAWILE,18
+Pokemon = PLUSLE,18
+Pokemon = AUDINO,16
+Pokemon = FLABEBE,17
+Pokemon = SPINDA,18
 #-------------------------------
 [SISANDBRO,Karine & Rafael,1]
-LoseText = ...
-Pokemon = CARVANHA,15
-Pokemon = RALTS,15
-Pokemon = CORPHISH,14
-Pokemon = AZURILL,15
-Pokemon = POOCHYENA,13
-Pokemon = LOMBRE,15
+LoseText = This was a family-sized disaster!
+Pokemon = PANSEAR,19
+Pokemon = ELECTRIKE,17
+Pokemon = PANSAGE,19
+Pokemon = SPOINK,17
+Pokemon = PANPOUR,19
+Pokemon = LOMBRE,17
 #-------------------------------
 [BOYFRIEND,Boy,10]
 LoseText = ...
@@ -6897,39 +6910,39 @@ Pokemon = ZIGZAGOON,16
 Pokemon = MAKUHITA,18
 #-------------------------------
 [TRIATHLETE_FemaleCyclist,Dyana]
-LoseText = ...
+LoseText = I have no more energy...
 Pokemon = TAILLOW,18
-Pokemon = GULPIN,17
+Pokemon = GULPIN,18
 #-------------------------------
 [SCHOOLKID_Boy,Isaac]
-LoseText = ...
-Pokemon = WHISMUR,15
+LoseText = You trained your Pokémon very well...
+Pokemon = WHISMUR,17
 Pokemon = ARON,16
-Pokemon = POOCHYENA,16
-Pokemon = ZIGZAGOON,16
+Pokemon = PURRLOIN,18
+Pokemon = MARACTUS,17
 #-------------------------------
 [TRIATHLETE_FemaleCyclist,Maria]
-LoseText = ...
-Pokemon = TAILLOW,17
+LoseText = I need to train more, I guess.
+Pokemon = TRANQUILL,18
 Pokemon = SEEDOT,18
 #-------------------------------
 [BATTLEGIRL,Aisha]
-LoseText = ...
+LoseText = I don't get angry when I lose, it just means I have to train more.
 Pokemon = MEDITITE,18
-Pokemon = MEDITITE,17
+Pokemon = SCRAGGY,18
 #-------------------------------
 [PSYCHIC_Female,Brandi]
 LoseText = ...
 Pokemon = RALTS,17
-Pokemon = RALTS,17
+Pokemon = GOTHITA,17
 #-------------------------------
-[BUGCATCHER,Derek]
-LoseText = ...
-Pokemon = DUSTOX,17
+[BUGCATCHER_2,Derek]
+LoseText = My love for them remains unwavering.
+Pokemon = DUSTOX,18
 Pokemon = BEAUTIFLY,17
 #-------------------------------
 [AROMALADY,Lydia]
-LoseText = ...
+LoseText = The wind hampered my attacks...
 Pokemon = SHROOMISH,17
 Pokemon = NINCADA,18
 Pokemon = ROSELIA,17
