@@ -1,9 +1,9 @@
 ALWAYS CHECK IF QUEST IS ACTIVE FIRST!!
 !isQuestActive?(:MagicShowTickets)
 
-activateQuest(:DoublebattleTournaments,colorQuest("blue"),true)
-advanceQuestToStage(:DoublebattleTournaments, 2)
-completeQuest(:ButlerMagicShow)
+activateQuest(:WinstrateBattle,colorQuest("blue"),true)
+advanceQuestToStage(:FollowAbsol, 2)
+completeQuest(:WinstrateBattle)
 
 
 Dialog lines to use on TCG:

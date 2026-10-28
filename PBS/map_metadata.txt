@@ -1085,7 +1085,7 @@ Name = Rota 118
 Outdoor = true
 MapPosition = 2,11,8
 #-------------------------------
-[292]   # Rota 112
+[292]   # Route 112
 Name = Rota 112
 Outdoor = true
 MapPosition = 2,9,5
@@ -1856,14 +1856,14 @@ BattleBack = battle6
 [671]   # Route 115
 Name = Rota 115
 Outdoor = true
-MapPosition = 2,4,5
+MapPosition = 2,1,5
 #-------------------------------
 [672]   # Route 116
 Name = Rota 116
 Outdoor = true
 MapPosition = 2,5,7
 #-------------------------------
-[673]   # Rota 111
+[673]   # Route 111
 Name = Rota 111
 Outdoor = true
 MapPosition = 2,10,6
@@ -1913,6 +1913,16 @@ MapPosition = 2,16,12
 [683]   # Rota 126
 Name = Rota 126
 MapPosition = 2,23,8
+#-------------------------------
+[684]   # Lavaridge Town - Gym
+Name = Lavaridge Town - Gym
+MapPosition = 2,6,5
+BattleBack = battle11
+#-------------------------------
+[685]   # Lavaridge Town - Gym
+Name = Gim 2nd
+MapPosition = 2,6,5
+BattleBack = battle11
 #-------------------------------
 [686]   # Rota 123
 Name = Rota 123
@@ -1976,6 +1986,11 @@ MapPosition = 2,2,15
 Name = Rusturf Tunnel
 MapPosition = 2,3,7
 #-------------------------------
+[730]   # Mauville City - Gym
+Name = Mauville City - Gym
+MapPosition = 2,9,8
+BattleBack = battle10
+#-------------------------------
 [735]   # Super Arena REMAKE
 Name = Coliseum Town Arena
 MapPosition = 0,10,9
@@ -2018,6 +2033,7 @@ Name = Fiery Path
 Outdoor = false
 ShowArea = true
 MapPosition = 2,9,5
+BattleBack = cave2
 #-------------------------------
 [759]   # Meteor Falls (24.0)
 Name = Meteor Falls (24.0)
@@ -2048,7 +2064,8 @@ MapPosition = 2,9,4
 [767]   # Jagged Pass
 Name = Jagged Pass
 Outdoor = true
-MapPosition = 2,8,4
+MapPosition = 2,7,3
+BattleBack = cave4
 #-------------------------------
 [768]   # Ever Grand City (0.8)
 Name = Ever Grand City (0.8)

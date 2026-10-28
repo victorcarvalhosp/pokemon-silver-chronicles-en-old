@@ -22,11 +22,11 @@ Pokemon = TOTODILE,6
     Moves = SCRATCH,WATERGUN
 #-------------------------------
 [YOUNGSTER,Joey]
-LoseText = Oh...I'm out of Pokémon that can figth...
+LoseText = Oh...I'm out of Pokémon that can fight...
 Pokemon = RATTATA,4
 #-------------------------------
 [YOUNGSTER,Joey,1]
-LoseText = Oh...I'm out of Pokémon that can figth...
+LoseText = Oh...I'm out of Pokémon that can fight...
 Pokemon = RATTATA,12
 Pokemon = RATTATA,12
 #-------------------------------
@@ -6469,29 +6469,29 @@ Pokemon = SPOINK,14
 Pokemon = SPOINK,14
 #-------------------------------
 [BATTLEGIRL,Vivian]
-LoseText = ...
-Pokemon = MEDITITE,17
-Pokemon = MEDITITE,17
+LoseText = I'm shocked by your power!
+Pokemon = MEDITITE,23
+Pokemon = JOLTIK,23
 #-------------------------------
-[GUITARIST,Kirk]
-LoseText = ...
-Pokemon = ELECTRIKE,17
-Pokemon = PLUSLE,17
+[GUITARIST_2,Kirk]
+LoseText = You're still going to haunt me!
+Pokemon = LUXIO,24
+Pokemon = EMOLGA,23
 #-------------------------------
-[YOUNGSTER,Beny]
-LoseText = ...
-Pokemon = ZIGZAGOON,17
-Pokemon = GULPIN,17
+[YOUNGSTER_3,Beny]
+LoseText = It's not cool to lose...
+Pokemon = ZIGZAGOON,23
+Pokemon = GULPIN,24
 #-------------------------------
-[BUGMANIAC,Angelo]
-LoseText = ...
-Pokemon = ILLUMISE,17
-Pokemon = VOLBEAT,17
+[COLLECTOR_2,Angelo]
+LoseText = Oh... My eyes were closed...
+Pokemon = PLUSLE,23
+Pokemon = MINUN,24
 #-------------------------------
-[GUITARIST,Shawn]
-LoseText = ...
-Pokemon = ELECTRIKE,17
-Pokemon = MINUN,17
+[GUITARIST_2,Shawn]
+LoseText = I'm offline now...
+Pokemon = ELECTRIKE,23
+Pokemon = EELEKTRIK,24
 #-------------------------------
 [Dupla_jovem,Mark & Julia,1]
 LoseText = We need to train more!
@@ -6875,34 +6875,45 @@ Pokemon = ZIGZAGOON,18
 Pokemon = BEAUTIFLY,15
 #-------------------------------
 [LEADER_Wattson,Wattson]
-Items = SUPERPOTION,SUPERPOTION
-LoseText = ...
-Pokemon = VOLTORB,20
-Pokemon = MAGNETON,22
-Pokemon = ELECTRIKE,20
-Pokemon = MANECTRIC,24
+Items = DYNAMAXBAND
+LoseText = Wahahah! Fine, I lost!
+Pokemon = BLITZLE,23
+    Moves = THUNDERWAVE,FLAMECHARGE,SPARK,LOWKICK
+Pokemon = STUNFISK,24
+    Moves = MUDDYWATER,SUCKERPUNCH,DISCHARGE,RAINDANCE
+Pokemon = ELECTRIKE,22
+    Moves = BITE,THUNDERFANG,VOLTSWITCH,THUNDERWAVE
+Pokemon = JOLTIK,23
+    Moves = BUGBITE,DISCHARGE,POISONJAB,ENERGYBALL
+Pokemon = KLINK, 23
+    Moves = ZAPCANNON,METALSOUND,PROTECT,HYPERBEAM
+Pokemon = MANECTRIC,26
+    Moves = BITE,THUNDERBOLT,FLAMETHROWER,PSYCHICFANGS
+    Ace = yes
+    DynamaxLvl = 10
+    Gigantamax = yes
 #-------------------------------
 [AROMALADY,Rose]
-LoseText = ...
-Pokemon = ROSELIA,14
-Pokemon = ROSELIA,14
-Pokemon = SHROOMISH,14
+LoseText = Oh my God! It seems I've lost.
+Pokemon = ROSELIA,21
+Pokemon = ROSELIA,20
+Pokemon = SHROOMISH,20
 #-------------------------------
-[YOUNGSTER,Deandre]
-LoseText = ...
-Pokemon = ZIGZAGOON,14
-Pokemon = ELECTRIKE,14
-Pokemon = ARON,14
+[YOUNGSTER_3,Deandre]
+LoseText = Come back, Pokémon! Are you alright? Pokémon 1, 2 and 3!
+Pokemon = LINOONE,21
+Pokemon = ELECTRIKE,20
+Pokemon = DRILBUR,20
 #-------------------------------
-[GUITARIST,Dalion]
-LoseText = ...
-Pokemon = ELECTRIKE,15
-Pokemon = WHISMUR,15
+[GUITARIST_2,Dalion]
+LoseText = La-lalala.
+Pokemon = SCRAGGY,21
+Pokemon = WHISMUR,21
 #-------------------------------
-[FISHERMAN,Wade]
-LoseText = ...
-Pokemon = TENTACOOL,15
-Pokemon = CARVANHA,15
+[FISHERMAN_3,Wade]
+LoseText = Did I fight without heart?
+Pokemon = FRILLISH,21
+Pokemon = CARVANHA,21
 #-------------------------------
 [TWINS,Anna & Meg]
 LoseText = ...
@@ -6952,125 +6963,139 @@ LoseText = ...
 Pokemon = SANDSHREW,17
 Pokemon = SANDSHREW,19
 #-------------------------------
-[AROMALADY,Celina]
-LoseText = ...
-Pokemon = ROSELIA,18
-Pokemon = ROSELIA,18
+[CAMPER_2,Tyron]
+LoseText = Wait! Did you get a good look at my Pokémon?
+Pokemon = SANDILE,21
+Pokemon = DWEBBLE,21
 #-------------------------------
-[PICNICKER,Bianca]
-LoseText = ...
-Pokemon = SHROOMISH,18
-Pokemon = SHROOMISH,18
+[AROMALADY,Celina]
+LoseText = Oh! That was so much fun!
+Pokemon = ROSELIA,21
+Pokemon = LILLIGANT,21
+#-------------------------------
+[CAMPER_2_Female,Bianca]
+LoseText = Oh la la! Quite strong.
+Pokemon = SHROOMISH,21
+Pokemon = COTTONEE,22
 #-------------------------------
 [KINDLER,Hayden]
-LoseText = ...
-Pokemon = NUMEL,18
-Pokemon = NUMEL,18
+LoseText = Grr...
+Pokemon = NUMEL,21
+Pokemon = DARUMAKA,22
 #-------------------------------
-[CAMPER,Travis]
-LoseText = ...
-Pokemon = MAWILE,18
-Pokemon = MAWILE,18
+[CAMPER_2,Travis]
+LoseText = Oh! I need to stop joking around!
+Pokemon = MAWILE,23
+Pokemon = FERROSEED,23
 #-------------------------------
-[PICNICKER,Irene]
-LoseText = ...
-Pokemon = SHROOMISH,18
-Pokemon = AZURILL,18
+[CAMPER_2_Female,Irene]
+LoseText = Nice battle!
+Pokemon = SHROOMISH,23
+Pokemon = MARACTUS,23
+Pokemon = DUCKLETT,24
 #-------------------------------
-[CAMPER,Larry]
-LoseText = ...
-Pokemon = SEEDOT,18
-Pokemon = NUZLEAF,19
+[CAMPER_2,Larry]
+LoseText = My Pokémon has run out of energy...
+Pokemon = SEEDOT,21
+Pokemon = NUZLEAF,22
+Pokemon = FERROSEED,23
 #-------------------------------
-[PICNICKER,Carol]
-LoseText = ...
-Pokemon = TAILLOW,18
-Pokemon = LOMBRE,19
+[CAMPER_2_Female,Carol]
+LoseText = Oh, what strength!
+Pokemon = TAILLOW,24
+Pokemon = LOMBRE,24
 #-------------------------------
-[HIKER,Trent]
-LoseText = ...
-Pokemon = ARON,17
-Pokemon = ARON,17
-Pokemon = ARON,17
+[HIKER_3,Trent]
+LoseText = Oh, my legs got tired.
+Pokemon = BOLDORE,25
+Pokemon = ARON,25
+Pokemon = ARCHEN,26
 #-------------------------------
-[HIKER,Brice]
-LoseText = ...
-Pokemon = NUMEL,18
-Pokemon = MEDITITE,18
+[HIKER_3,Brice]
+LoseText = I lost! Hahaha!
+Pokemon = NUMEL,25
+Pokemon = MEDITITE,26
 #-------------------------------
 [AROMALADY,Shayla]
-LoseText = ...
-Pokemon = SHROOMISH,18
-Pokemon = ROSELIA,19
+LoseText = That was epic!
+Pokemon = SHROOMISH,32
+Pokemon = ROSELIA,32
 #-------------------------------
 [KINDLER,Bryant]
-LoseText = ...
-Pokemon = NUMEL,18
-Pokemon = TORKOAL,19
+LoseText = I was burned...
+Pokemon = NUMEL,32
+Pokemon = TORKOAL,32
 #-------------------------------
-[COOLTRAINER_Male,Wilton]
-LoseText = ...
-Pokemon = ELECTRIKE,18
-Pokemon = WAILMER,18
-Pokemon = MAKUHITA,18
+[COOLTRAINER_Male_2,Wilton]
+LoseText = You are considerably strong.
+Pokemon = ELECTRIKE,30
+Pokemon = WAILMER,31
+Pokemon = MAKUHITA,31
+Pokemon = GURDURR,32
 #-------------------------------
-[COOLTRAINER_Female,Brooke]
-LoseText = ...
-Pokemon = WINGULL,18
-Pokemon = NUMEL,18
-Pokemon = ROSELIA,18
+[COOLTRAINER_Female_2,Brooke]
+LoseText = What a spectacle!
+Pokemon = SWADLOON,30
+Pokemon = PELIPPER,32
+Pokemon = BOLDORE,31
+Pokemon =  WHIMSICOTT,32
 #-------------------------------
-[YOUNGSTER,Jaylen]
-LoseText = ...
-Pokemon = TRAPINCH,18
-Pokemon = TRAPINCH,19
+[CAMPER_2,Lawrence]
+LoseText = We lost fair and square.
+Pokemon = BALTOY,32
+Pokemon = NINJASK,32
 #-------------------------------
-[CAMPER,Lawrence]
-LoseText = ...
-Pokemon = BALTOY,18
-Pokemon = NINJASK,19
+[LASS_2,Lung]
+LoseText = Fantastic!
+Pokemon = CACNEA,28
+Pokemon = SPINDA,29
+Pokemon = CACTURNE,33
 #-------------------------------
-[LASS,Lung]
-LoseText = ...
-Pokemon = CACNEA,18
-Pokemon = SPINDA,19
+[YOUNGSTER_3, Jaylen]
+LoseText = Wow!
+Pokemon = CACNEA,30
+Pokemon = SPINDA,31
+Pokemon = CACTURNE,33
 #-------------------------------
-[SCHOOLKID_Boy,Wyatt]
-LoseText = ...
-Pokemon = ARON,18
-Pokemon = ARON,19
+[SCHOOLKID_Boy_2,Wyatt]
+LoseText = A-Are you happy to win?
+Pokemon = LAIRON,31
+Pokemon = GIGALITH,34
 #-------------------------------
-[PARASOLLADY,Madeline]
-LoseText = ...
-Pokemon = ARON,18
-Pokemon = NUMEL,19
+[PARASOLLADY_2,Madeline]
+LoseText = Huff... huff... I'm exhausted.
+Pokemon = LILLIGANT,33
+    Form = 1
+Pokemon = NUMEL,32
 #-------------------------------
 [TWINS,Tory & Tya]
 LoseText = ...
 Pokemon = SPINDA,19
 Pokemon = SPINDA,19
 #-------------------------------
-[YOUNGSTER,Dillan]
-LoseText = ...
-Pokemon = ARON,19
-Pokemon = TORCHIC,19
+[YOUNGSTER_3,Dillan]
+LoseText = You have great strength!
+Pokemon = SIMISEAR,33
+Pokemon = COMBUSKEN,33
 #-------------------------------
-[PICNICKER,Sophie]
-LoseText = ...
-Pokemon = AZURILL,19
-Pokemon = LOMBRE,19
+[CAMPER_2_Female,Sophie]
+LoseText = This is a dream. I'm sure of it...
+Pokemon = SIMIPOUR,33
+Pokemon = LOMBRE,32
 #-------------------------------
-[BIRDKEEPER,Coby]
-LoseText = ...
-Pokemon = SWELLOW,18
-Pokemon = SWELLOW,19
+[BIRDKEEPER_2,Coby]
+LoseText = Oh... What?
+Pokemon = SWELLOW,33
+Pokemon = UNFEZANT,33
 #-------------------------------
-[POKeFAN_Male,Victor]
-LoseText = ...
-Pokemon = SWELLOW,19
-Pokemon = SKITTY,18
-Pokemon = MIGHTYENA,19
-Pokemon = KIRLIA,20
+[POKeFAN_Male_2,Victor]
+LoseText = Oh, what a beautiful battle!
+Pokemon = SWELLOW,28
+Pokemon = SKITTY,28
+Pokemon = MIGHTYENA,29
+Pokemon = KIRLIA,28
+Pokemon = MEDITITE,29
+Pokemon = VANILLISH,30
 #-------------------------------
 [FISHERMAN,Nolan]
 LoseText = ...
@@ -7153,79 +7178,96 @@ LoseText = ...
 Pokemon = MEDITITE,20
 Pokemon = SPOINK,20
 #-------------------------------
-[HIKER,Erick]
-LoseText = ...
-Pokemon = ARON,20
-Pokemon = BALTOY,21
+[HIKER_3,Erick]
+LoseText = Losing left me bitter!	
+Pokemon = KROKOROK,28
+Pokemon = BALTOY,27
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,4]
-LoseText = ...
-Pokemon = POOCHYENA,22
-Pokemon = NUMEL,22
+LoseText = Urrrgh...
+Pokemon = MIGHTYENA,28
+Pokemon = NUMEL,28
 #-------------------------------
-[PICNICKER,Diana]
-LoseText = ...
-Pokemon = SHROOMISH,20
-Pokemon = SHROOMISH,20
-Pokemon = SWABLU,20
+[TRIATHLETE_MaleCyclist_2,Julio]
+LoseText = I feel like I'm falling apart...
+Pokemon = KLINK,28
+Pokemon = KLANG,28
 #-------------------------------
-[PICNICKER,Autumn]
-LoseText = ...
-Pokemon = SHROOMISH,21
-Pokemon = DUSTOX,21
+[CAMPER_2_Female,Diana]
+LoseText = Ohhh, no! The ground is too bumpy...
+Pokemon = SHROOMISH,26
+Pokemon = MUNNA,26
+Pokemon = SWABLU,28
 #-------------------------------
-[HIKER,Julio]
-LoseText = ...
-Pokemon = ARON,21
-Pokemon = LAIRON,21
+[CAMPER_2,Autumn]
+LoseText = It was all over while we were still trying to find a good footing...
+Pokemon = SHROOMISH,28
+Pokemon = DUSTOX,28
 #-------------------------------
-[CAMPER,Ethan]
-LoseText = ...
-Pokemon = ZIGZAGOON,21
-Pokemon = TAILLOW,21
+[CAMPER_2,Ethan]
+LoseText = Hmm... What went wrong?
+Pokemon = LINOONE,28
+Pokemon = SWELLOW,28
 #-------------------------------
-[KINDLER,Jeff]
-LoseText = ...
-Pokemon = SLUGMA,24
-Pokemon = SLUGMA,24
+[KINDLER_2,Jeff]
+LoseText = Something didn't go right.
+Pokemon = PANSEAR,28
+Pokemon = SOLROCK,29
 #-------------------------------
 [HIKER,Eli]
-LoseText = ...
-Pokemon = NUMEL,24
-Pokemon = NUMEL,24
+LoseText = It seems to me that you've taken control...
+Pokemon = LAIRON,28
+Pokemon = BOLDORE,30
 #-------------------------------
 [KINDLER,Jace]
-LoseText = ...
-Pokemon = SLUGMA,24
-Pokemon = SLUGMA,24
+LoseText = It is so hot, and my heart is gripped by ice.
+Pokemon = PIGNITE,28
+Pokemon = PANSEAR,30
 #-------------------------------
-[KINDLER,Cole]
-LoseText = ...
-Pokemon = COMBUSKEN,23
-Pokemon = NUMEL,24
+[KINDLER_2,Cole]
+LoseText = I wasn't hot enough.
+Pokemon = COMBUSKEN,30
+Pokemon = NUMEL,29
 #-------------------------------
-[KINDLER,Gerald]
-LoseText = ...
-Pokemon = NUMEL,24
-Pokemon = SLUGMA,24
+[KINDLER_2,Gerald]
+LoseText = I was blinded by the smoke in my eyes.
+Pokemon = NUMEL,28
+Pokemon = HEATMOR,30
 #-------------------------------
-[KINDLER,Axle]
-LoseText = ...
-Pokemon = NUMEL,24
-Pokemon = SLUGMA,24
+[KINDLER_2,Axle]
+LoseText = I hope Flannery's flames burn you!
+Pokemon = NUMEL,29
+Pokemon = DARUMAKA,28
 #-------------------------------
 [BATTLEGIRL,Danielle]
-LoseText = ...
-Pokemon = MEDITITE,24
-Pokemon = MEDITITE,24
+LoseText = Oh, but you are very strong!
+Pokemon = MEDITITE,30
+Pokemon = GURDURR,30
 #-------------------------------
 [LEADER_Flannery,Flannery]
-Items = HYPERPOTION,HYPERPOTION
-LoseText = ...
-Pokemon = NUMEL,25
-Pokemon = SLUGMA,25
-Pokemon = CAMERUPT,27
-Pokemon = TORKOAL,30
+Items = DYNAMAXBAND
+LoseText = Oh... I guess I was trying too hard...
+Pokemon = NUMEL,28
+ Item = HEATROCK
+ Moves = SUNNYDAY,STEALTHROCK,FLAMECHARGE,BULLDOZE
+Pokemon = SIMISEAR,28
+ Item = CHARCOAL
+ Moves = FAKEOUT,SUNNYDAY,FIREPUNCH,GRASSKNOT
+Pokemon = LAMPENT,28
+ Item = EVIOLITE
+ Moves = WILLOWISP,HEX,ENERGYBALL,CONFUSERAY
+Pokemon = DARMANITAN,28
+ Item = CHOICESCARF
+ Moves = FLAREBLITZ,ROCKSLIDE,UTURN,EARTHQUAKE
+Pokemon = TORKOAL,29
+ Item = WHITEHERB
+ Moves = SHELLSMASH,HEATWAVE,EARTHPOWER,SOLARBEAM
+Pokemon = CAMERUPT,30
+    Item = LIFEORB
+    Ace = yes
+    DynamaxLvl = 10
+    Gigantamax = yes
+    Moves = EARTHPOWER,HEATWAVE,SOLARBEAM,ROCKSLIDE
 #-------------------------------
 [COOLTRAINER_Male_2,Randall]
 LoseText = That was a magnificent battle!
@@ -7407,45 +7449,45 @@ Pokemon = MIGHTYENA,30
 #-------------------------------
 [BOYFRIEND,Boy,13]
 LoseText = ...
-Pokemon = MARSHTOMP,29
+Pokemon = MARSHTOMP,23
     Moves = TACKLE,WATERGUN,BIDE
-Pokemon = MIGHTYENA,28
-Pokemon = DUSTOX,28
+Pokemon = MIGHTYENA,19
+Pokemon = DUSTOX,18
 #-------------------------------
 [BOYFRIEND,Boy,14]
 LoseText = ...
-Pokemon = COMBUSKEN,29
+Pokemon = COMBUSKEN,23
     Moves = SCRATCH,EMBER,PECK
-Pokemon = MIGHTYENA,28
-Pokemon = DUSTOX,28
+Pokemon = MIGHTYENA,19
+Pokemon = DUSTOX,18
 #-------------------------------
 [BOYFRIEND,Boy,15]
 LoseText = ...
-Pokemon = GROVYLE,29
+Pokemon = GROVYLE,23
     Moves = POUND,RAZORLEAF,QUICKATTACK
-Pokemon = MIGHTYENA,28
-Pokemon = DUSTOX,28
+Pokemon = MIGHTYENA,19
+Pokemon = DUSTOX,18
 #-------------------------------
 [GIRLFRIEND,Girl,13]
 LoseText = ...
-Pokemon = MARSHTOMP,29
+Pokemon = MARSHTOMP,23
     Moves = TACKLE,WATERGUN,BIDE
-Pokemon = ZIGZAGOON,28
-Pokemon = BEAUTIFLY,28
+Pokemon = ZIGZAGOON,19
+Pokemon = BEAUTIFLY,18
 #-------------------------------
 [GIRLFRIEND,Girl,14]
 LoseText = ...
-Pokemon = COMBUSKEN,29
+Pokemon = COMBUSKEN,23
     Moves = SCRATCH,EMBER,PECK
-Pokemon = ZIGZAGOON,28
-Pokemon = BEAUTIFLY,28
+Pokemon = ZIGZAGOON,19
+Pokemon = BEAUTIFLY,18
 #-------------------------------
 [GIRLFRIEND,Girl,15]
 LoseText = ...
-Pokemon = GROVYLE,29
+Pokemon = GROVYLE,23
     Moves = POUND,RAZORLEAF,QUICKATTACK
-Pokemon = ZIGZAGOON,28
-Pokemon = BEAUTIFLY,28
+Pokemon = ZIGZAGOON,19
+Pokemon = BEAUTIFLY,18
 #-------------------------------
 [BIRDKEEPER,Fabian]
 LoseText = ...
@@ -7738,45 +7780,45 @@ Pokemon = NUMEL,35
 #-------------------------------
 [BOYFRIEND,Boy,16]
 LoseText = ...
-Pokemon = MARSHTOMP,23
+Pokemon = MARSHTOMP,26
     Moves = TACKLE,WATERGUN,BIDE
-Pokemon = MIGHTYENA,19
-Pokemon = DUSTOX,18
+Pokemon = MIGHTYENA,21
+Pokemon = DUSTOX,20
 #-------------------------------
 [BOYFRIEND,Boy,17]
 LoseText = ...
-Pokemon = COMBUSKEN,23
+Pokemon = COMBUSKEN,26
     Moves = SCRATCH,EMBER,PECK
-Pokemon = MIGHTYENA,19
-Pokemon = DUSTOX,18
+Pokemon = MIGHTYENA,21
+Pokemon = DUSTOX,20
 #-------------------------------
 [BOYFRIEND,Boy,18]
 LoseText = ...
-Pokemon = GROVYLE,23
+Pokemon = GROVYLE,26
     Moves = POUND,RAZORLEAF,QUICKATTACK
-Pokemon = MIGHTYENA,19
-Pokemon = DUSTOX,18
+Pokemon = MIGHTYENA,21
+Pokemon = DUSTOX,20
 #-------------------------------
 [GIRLFRIEND,Girl,16]
 LoseText = ...
-Pokemon = MARSHTOMP,23
+Pokemon = MARSHTOMP,26
     Moves = TACKLE,WATERGUN,BIDE
-Pokemon = ZIGZAGOON,19
-Pokemon = BEAUTIFLY,18
+Pokemon = LINOONE,21
+Pokemon = BEAUTIFLY,20
 #-------------------------------
 [GIRLFRIEND,Girl,17]
 LoseText = ...
 Pokemon = COMBUSKEN,23
     Moves = SCRATCH,EMBER,PECK
-Pokemon = ZIGZAGOON,19
-Pokemon = BEAUTIFLY,18
+Pokemon = LINOONE,21
+Pokemon = BEAUTIFLY,20
 #-------------------------------
 [GIRLFRIEND,Girl,18]
 LoseText = ...
 Pokemon = GROVYLE,23
     Moves = POUND,RAZORLEAF,QUICKATTACK
-Pokemon = ZIGZAGOON,19
-Pokemon = BEAUTIFLY,18
+Pokemon = LINOONE,21
+Pokemon = BEAUTIFLY,20
 #-------------------------------
 [TEAMMAGMA_Male,Grunt,9]
 LoseText = ...
@@ -8220,4 +8262,170 @@ Pokemon = DONPHAN,40
 Pokemon = MAGCARGO,40
 Pokemon = RATICATE,40
     Form = 1
+#-------------------------------
+[BOYFRIEND,Boy,22]
+LoseText = ...
+Pokemon = MARSHTOMP,30
+    Moves = TACKLE,WATERGUN,BIDE
+Pokemon = MIGHTYENA,25
+Pokemon = DUSTOX,23
+Pokemon = KIRLIA,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[BOYFRIEND,Boy,23]
+LoseText = ...
+Pokemon = COMBUSKEN,30
+    Moves = SCRATCH,EMBER,PECK
+Pokemon = MIGHTYENA,25
+Pokemon = DUSTOX,23
+Pokemon = KIRLIA,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[BOYFRIEND,Boy,24]
+LoseText = ...
+Pokemon = GROVYLE,30
+    Moves = POUND,RAZORLEAF,QUICKATTACK
+Pokemon = MIGHTYENA,25
+Pokemon = DUSTOX,23
+Pokemon = KIRLIA,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[GIRLFRIEND,Girl,22]
+LoseText = ...
+Pokemon = MARSHTOMP,30
+    Moves = TACKLE,WATERGUN,BIDE
+Pokemon = LINOONE,25
+Pokemon = BEAUTIFLY,23
+Pokemon = SHROOMISH,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[GIRLFRIEND,Girl,23]
+LoseText = ...
+Pokemon = COMBUSKEN,30
+    Moves = SCRATCH,EMBER,PECK
+Pokemon = LINOONE,25
+Pokemon = BEAUTIFLY,23
+Pokemon = SHROOMISH,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[GIRLFRIEND,Girl,24]
+LoseText = ...
+Pokemon = GROVYLE,30
+    Moves = POUND,RAZORLEAF,QUICKATTACK
+Pokemon = LINOONE,25
+Pokemon = BEAUTIFLY,23
+Pokemon = SHROOMISH,21
+Pokemon = PIDOVE,18
+#-------------------------------
+[BOYFRIEND,Boy,25]
+LoseText = ...
+Pokemon = MARSHTOMP,32
+    Moves = TACKLE,WATERGUN,BIDE
+Pokemon = MIGHTYENA,26
+Pokemon = DUSTOX,24
+Pokemon = KIRLIA,23
+Pokemon = TRANQUILL,21
+#-------------------------------
+[BOYFRIEND,Boy,26]
+LoseText = ...
+Pokemon = COMBUSKEN,32
+    Moves = SCRATCH,EMBER,PECK
+Pokemon = MIGHTYENA,26
+Pokemon = DUSTOX,24
+Pokemon = KIRLIA,23
+Pokemon = TRANQUILL,21
+#-------------------------------
+[BOYFRIEND,Boy,27]
+LoseText = ...
+Pokemon = GROVYLE,32
+    Moves = POUND,RAZORLEAF,QUICKATTACK
+Pokemon = MIGHTYENA,26
+Pokemon = DUSTOX,24
+Pokemon = KIRLIA,23
+Pokemon = TRANQUILL,21
+#-------------------------------
+[GIRLFRIEND,Girl,25]
+LoseText = ...
+Pokemon = MARSHTOMP,32
+    Moves = TACKLE,WATERGUN,BIDE
+Pokemon = LINOONE,26
+Pokemon = BEAUTIFLY,24
+Pokemon = BRELOOM,23
+Pokemon = TRANQUILL,21
+#-------------------------------
+[GIRLFRIEND,Girl,26]
+LoseText = ...
+Pokemon = COMBUSKEN,32
+    Moves = SCRATCH,EMBER,PECK
+Pokemon = LINOONE,26
+Pokemon = BEAUTIFLY,24
+Pokemon = BRELOOM,23
+Pokemon = TRANQUILL,21
+#-------------------------------
+[GIRLFRIEND,Girl,27]
+LoseText = ...
+Pokemon = GROVYLE,32
+    Moves = POUND,RAZORLEAF,QUICKATTACK
+Pokemon = LINOONE,26
+Pokemon = BEAUTIFLY,24
+Pokemon = BRELOOM,23
+Pokemon = TRANQUILL,21
 
+
+
+
+
+
+
+
+
+
+
+#-------------------------------
+[BOYFRIEND,Boy,99]
+LoseText = Girl, pretend you didn't see that.
+Pokemon = MIGHTYENA,29
+Pokemon = DUSTOX,30
+Pokemon = KIRLIA,31
+Pokemon = TRANQUILL,29
+Pokemon = MARSHTOMP,32
+#-------------------------------
+[BOYFRIEND,Boy,98]
+LoseText = Girl, pretend you didn't see that.
+Pokemon = MIGHTYENA,29
+Pokemon = DUSTOX,30
+Pokemon = KIRLIA,31
+Pokemon = TRANQUILL,29
+Pokemon = COMBUSKEN,32
+#-------------------------------
+[BOYFRIEND,Boy,97]
+LoseText = Girl, pretend you didn't see that.
+Pokemon = MIGHTYENA,29
+Pokemon = DUSTOX,30
+Pokemon = KIRLIA,31
+Pokemon = TRANQUILL,29
+Pokemon = GROVYLE,32
+#-------------------------------
+[GIRLFRIEND,Girl,99]
+LoseText = Oh no, pretend you didn't see that.
+Pokemon = LINOONE,29
+Pokemon = BEAUTIFLY,30
+Pokemon = BRELOOM,31
+Pokemon = TRANQUILL,29
+Pokemon = MARSHTOMP,32
+#-------------------------------
+[GIRLFRIEND,Girl,98]
+LoseText = Oh no, pretend you didn't see that.
+Pokemon = LINOONE,29
+Pokemon = BEAUTIFLY,30
+Pokemon = BRELOOM,31
+Pokemon = TRANQUILL,29
+Pokemon = COMBUSKEN,32
+#-------------------------------
+[GIRLFRIEND,Girl,97]
+LoseText = Oh no, pretend you didn't see that.
+Pokemon = LINOONE,29
+Pokemon = BEAUTIFLY,30
+Pokemon = BRELOOM,31
+Pokemon = TRANQUILL,29
+Pokemon = GROVYLE,32

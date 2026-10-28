@@ -920,13 +920,30 @@ module QuestModule
     :Name => "Double Battle Tournaments!",
     :Location1 => "Verdanturf Town",
     :Stage1 => "Participate in the Tournament.",
-    :Location2 => "Slateport City",
+    :Location2 => "Fallarbor Town",
     :Stage2 => "Participate in the Tournament.",
-    :Location3 => "Fallarbor Town",
+    :Location3 => "Slateport City",
     :Stage3 => "Participate in the Tournament.",
     :QuestDescription => "There are 3 Battle Tournaments that happens across Hoenn. Win all of them to collect prizes and strengthen the bonds with your partner.",
   }
 
+  FollowAbsol = {
+    :ID => "84",
+    :Name => "Mysterious Absol!",
+    :Location1 => "Route 112",
+    :Stage1 => "Follow the Absol.",
+    :Location2 => "Fiery Path",
+    :Stage2 => "Follow the Absol.",
+    :QuestDescription => "A wild Absol is trying to tell us something. We need to follow it and find out what it's trying to tell us.",
+  }
+
+  WinstrateBattle = {
+    :ID => "85",
+    :Name => "Winstrate's Battle!",
+    :Location1 => "Route 111",
+    :Stage1 => "Battle Victor Winstrate.",
+    :QuestDescription => "Back in the day, Victor used to battle a lot, alongside his children. Now all his children's have set out on their Pokémon journeys and he is looking for a battle to remember the old days.",
+  }
   
 
 

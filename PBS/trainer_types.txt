@@ -94,6 +94,12 @@ Name = CYCLIST
 Gender = Male
 BaseMoney = 30
 #-------------------------------
+[TRIATHLETE_MaleCyclist_2]
+Name = CYCLIST
+Gender = Male
+BaseMoney = 30
+IntroBGM = SEQ_EYE_CYCLIST
+#-------------------------------
 [TEAMAQUA_Male]
 Name = TEAM AQUA
 Gender = Male
@@ -228,6 +234,13 @@ BaseMoney = 30
 Name = GUITARIST
 Gender = Male
 BaseMoney = 30
+IntroBGM = SEQ_EYE_GUITARIST
+#-------------------------------
+[GUITARIST_2]
+Name = GUITARIST
+Gender = Male
+BaseMoney = 30
+IntroBGM = SEQ_EYE_GUITARIST_2
 #-------------------------------
 [GENTLEMAN]
 Name = GENTLEMAN
@@ -325,12 +338,22 @@ Name = BIRD KEEPER
 Gender = Male
 BaseMoney = 30
 #-------------------------------
+[BIRDKEEPER_2]
+Name = BIRD KEEPER
+Gender = Male
+BaseMoney = 30
+#-------------------------------
 [NINJABOY]
 Name = NINJA BOY
 Gender = Unknown
 BaseMoney = 30
 #-------------------------------
 [PARASOLLADY]
+Name = PARASOL LADY
+Gender = Female
+BaseMoney = 30
+#-------------------------------
+[PARASOLLADY_2]
 Name = PARASOL LADY
 Gender = Female
 BaseMoney = 30
@@ -356,6 +379,13 @@ IntroBGM = SEQ_EYE_SAILOR
 Name = COLLECTOR
 Gender = Male
 BaseMoney = 30
+IntroBGM = SEQ_EYE_MANIAC
+#-------------------------------
+[COLLECTOR_2]
+Name = COLLECTOR
+Gender = Male
+BaseMoney = 30
+IntroBGM = SEQ_EYE_MANIAC
 #-------------------------------
 [PkMnBREEDER_Male]
 Name = PkMn BREEDER
@@ -376,6 +406,12 @@ BaseMoney = 30
 Name = TEAM MAGMA
 Gender = Male
 BaseMoney = 30
+IntroBGM = Encounter-Team_Magma
+#-------------------------------
+[TEAMMAGMAADMIN_Male]
+Name = TEAM MAGMA
+Gender = Male
+BaseMoney = 50
 IntroBGM = Encounter-Team_Magma
 #-------------------------------
 [TEAMMAGMA_Female]
@@ -428,15 +464,32 @@ IntroBGM = GSCPokemaniacEncounter
 Name = KINDLER
 Gender = Male
 BaseMoney = 30
+IntroBGM = Encounter-Sailor-Hiker
+#-------------------------------
+[KINDLER_2]
+Name = KINDLER
+Gender = Male
+BaseMoney = 30
+IntroBGM = Encounter-Sailor-Hiker
 #-------------------------------
 [CAMPER]
 Name = CAMPER
 Gender = Male
 BaseMoney = 30
 #-------------------------------
+[CAMPER_2]
+Name = CAMPER
+Gender = Male
+BaseMoney = 30
+#-------------------------------
+[CAMPER_2_Female]
+Name = CAMPER
+Gender = Female
+BaseMoney = 30
+#-------------------------------
 [PICNICKER]
 Name = PICNICKER
-Gender = Male
+Gender = Female
 BaseMoney = 30
 #-------------------------------
 [PSYCHIC_Male]
@@ -462,6 +515,12 @@ Gender = Female
 BaseMoney = 30
 #-------------------------------
 [POKeFAN_Male]
+Name = POKeFAN
+Gender = Male
+BaseMoney = 30
+IntroBGM = Encounter-Pokefan
+#-------------------------------
+[POKeFAN_Male_2]
 Name = POKeFAN
 Gender = Male
 BaseMoney = 30
