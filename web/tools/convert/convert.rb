@@ -157,6 +157,32 @@ module Convert
     end
   end
 
+  # RPG::Animation: per frame, 16 cells of [pattern, x, y, zoom, angle,
+  # mirror, opacity, blend] (Table[cell, field]).
+  def animations
+    Rxdata.load(File.join(DATA_IN, "Animations.rxdata")).compact.map do |a|
+      {
+        "id" => iv(a, :id),
+        "name" => Rxdata.str(iv(a, :name)),
+        "animationName" => Rxdata.str(iv(a, :animation_name)),
+        "animationHue" => iv(a, :animation_hue),
+        "position" => iv(a, :position),
+        "frameMax" => iv(a, :frame_max),
+        "frames" => iv(a, :frames).map do |f|
+          t = iv(f, :cell_data)
+          (0...t.xsize).map { |i| (0...t.ysize).map { |j| t.data[i + j * t.xsize] } }
+        end,
+        "timings" => iv(a, :timings).map do |t|
+          {
+            "frame" => iv(t, :frame), "se" => audio(iv(t, :se)),
+            "flashScope" => iv(t, :flash_scope), "flashColor" => iv(t, :flash_color).values,
+            "flashDuration" => iv(t, :flash_duration), "condition" => iv(t, :condition)
+          }
+        end
+      }
+    end
+  end
+
   def common_events
     Rxdata.load(File.join(DATA_IN, "CommonEvents.rxdata")).compact.map do |c|
       {
@@ -217,6 +243,7 @@ if $PROGRAM_NAME == __FILE__
   Convert.write(File.join(DATA_OUT, "system.json"), Convert.system)
   Convert.write(File.join(DATA_OUT, "tilesets.json"), Convert.tilesets)
   Convert.write(File.join(DATA_OUT, "common-events.json"), Convert.common_events)
+  Convert.write(File.join(DATA_OUT, "animations.json"), Convert.animations)
 
   ids = Dir[File.join(DATA_IN, "Map[0-9]*.rxdata")].map { |f| File.basename(f)[/\d+/].to_i }.sort
   ids &= only unless only.empty?

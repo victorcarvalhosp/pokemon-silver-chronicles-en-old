@@ -7,6 +7,8 @@ import { TILE_HEIGHT, TILE_WIDTH, type GameCharacter } from "../game/GameCharact
 import { GameEvent } from "../game/GameEvent";
 import type { GameMap } from "../game/GameMap";
 import { Cache } from "./cache";
+import { SpriteAnimations } from "./SpriteAnimation";
+import { Data } from "../data/store";
 
 /** BushBitmap: the character sheet with its bottom `depth` pixels faded. */
 const bushCache = new WeakMap<Bitmap, Map<string, Bitmap>>();
@@ -45,13 +47,16 @@ export class SpriteCharacter {
   private spriteOffset = false;
   private cw = 0;
   private ch = 0;
+  private animations: SpriteAnimations;
 
-  constructor(viewport: Viewport, readonly character: GameCharacter, private tileBitmap: TileTextureSource) {
+  constructor(readonly viewport: Viewport, readonly character: GameCharacter, private tileBitmap: TileTextureSource) {
     this.sprite = new Sprite(viewport);
+    this.animations = new SpriteAnimations(this);
     this.update();
   }
 
   dispose(): void {
+    this.animations.dispose();
     this.sprite.dispose();
   }
 
@@ -59,6 +64,7 @@ export class SpriteCharacter {
     const c = this.character;
     if (c instanceof GameEvent && !c.shouldUpdate()) return;
     this.sprite.update();
+    this.animations.update();
     if (this.tileId !== c.tileId || this.characterName !== c.characterName || this.characterHue !== c.characterHue || this.oldBushDepth !== c.bushDepth) {
       this.tileId = c.tileId;
       this.characterName = c.characterName;
@@ -114,7 +120,8 @@ export class SpriteCharacter {
     this.sprite.opacity = c.opacity;
     this.sprite.blendType = c.blendType;
     if (c.animationId !== 0) {
-      // TODO(animations): RPG::Sprite#animation for event animations.
+      const animation = Data.animations.get(c.animationId);
+      if (animation) this.animations.animation(animation, true);
       c.animationId = 0;
     }
   }

@@ -3,6 +3,7 @@
 // (preloadMaps) so the game code can read them synchronously.
 
 import type { CommonEvent } from "./events";
+import type { AnimationData } from "../sprites/SpriteAnimation";
 import { loadMap, loadMapInfos, loadSystem } from "./loader";
 import type { MapData, MapInfo, SystemData, Tileset } from "./types";
 
@@ -20,6 +21,8 @@ export const Data = {
   system: null as unknown as SystemData,
   tilesets: new Map<number, Tileset>(),
   commonEvents: new Map<number, CommonEvent>(),
+  /** $data_animations */
+  animations: new Map<number, AnimationData>(),
   mapInfos: new Map<number, MapInfo>(),
   /** Map id -> connections touching it (MapFactoryHelper.getMapConnections). */
   connections: new Map<number, MapConnection[]>(),
@@ -29,16 +32,18 @@ const maps = new Map<number, MapData>();
 const pending = new Map<number, Promise<MapData>>();
 
 export async function loadGameData(): Promise<void> {
-  const [system, infos, tilesets, commonEvents] = await Promise.all([
+  const [system, infos, tilesets, commonEvents, animations] = await Promise.all([
     loadSystem(),
     loadMapInfos(),
     fetch("/data/tilesets.json").then((r) => r.json() as Promise<Tileset[]>),
     fetch("/data/common-events.json").then((r) => r.json() as Promise<CommonEvent[]>),
+    fetch("/data/animations.json").then((r) => r.json() as Promise<AnimationData[]>),
   ]);
   Data.system = system;
   for (const i of infos) Data.mapInfos.set(i.id, i);
   for (const t of tilesets) Data.tilesets.set(t.id, t);
   for (const c of commonEvents) Data.commonEvents.set(c.id, c);
+  for (const a of animations) Data.animations.set(a.id, a);
 }
 
 /** Registers raw PBS map connections ([mapA, edgeA, posA, mapB, edgeB, posB]). */
