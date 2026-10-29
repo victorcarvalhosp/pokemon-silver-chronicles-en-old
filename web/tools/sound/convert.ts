@@ -8,7 +8,7 @@
 //   node tools/sound/convert.ts        (from web/; skips up-to-date files)
 
 import { execFile } from "node:child_process";
-import { mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
+import { mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { cpus, tmpdir } from "node:os";
 import { dirname, extname, join, relative, resolve } from "node:path";
 import { promisify } from "node:util";
@@ -48,7 +48,9 @@ async function convert(src: string): Promise<void> {
     if (extname(src).toLowerCase() === ".wma") {
       await run("ffmpeg", ["-y", "-loglevel", "error", "-i", src, wav]);
     } else {
-      await run("fluidsynth", ["-ni", "-R", "0", "-C", "0", "-r", "44100", "-F", wav, SOUNDFONT, src]);
+      const midi = unwrapRmid(src);
+      await run("fluidsynth", ["-ni", "-R", "0", "-C", "0", "-r", "44100", "-F", wav, SOUNDFONT, midi]);
+      if (midi !== src) rmSync(midi, { force: true });
     }
     await run("oggenc", ["-Q", "-q", "5", wav, "-o", out]);
     rmSync(wav, { force: true });
@@ -56,6 +58,16 @@ async function convert(src: string): Promise<void> {
   } catch (e) {
     failed.push(`${rel}: ${(e as Error).message.split("\n")[0]}`);
   }
+}
+
+/** RIFF "RMID" files wrap a standard MIDI file in a "data" chunk; FluidSynth needs the inner file. */
+function unwrapRmid(src: string): string {
+  const bytes = readFileSync(src);
+  if (bytes.toString("latin1", 0, 4) !== "RIFF" || bytes.toString("latin1", 8, 12) !== "RMID") return src;
+  const size = bytes.readUInt32LE(16);
+  const out = join(tmpdir(), `rmid-${process.pid}-${Math.random().toString(36).slice(2)}.mid`);
+  writeFileSync(out, bytes.subarray(20, 20 + size));
+  return out;
 }
 
 const queue = [...jobs];
