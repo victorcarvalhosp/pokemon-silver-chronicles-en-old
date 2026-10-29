@@ -28,19 +28,22 @@ let order = 0;
 let held = new Map<number, number>(); // button -> seconds held, as of the last update()
 let prevHeld = new Map<number, number>();
 
-addEventListener("keydown", (e) => {
-  const buttons = KEYS[e.code];
-  if (!buttons) return;
-  e.preventDefault();
-  for (const b of buttons) {
-    if (!down.has(b)) pressedAt.set(b, ++order);
-    down.add(b);
-  }
-});
-addEventListener("keyup", (e) => {
-  for (const b of KEYS[e.code] ?? []) down.delete(b);
-});
-addEventListener("blur", () => down.clear());
+// Tests import game logic without a browser.
+if (typeof addEventListener !== "undefined") {
+  addEventListener("keydown", (e) => {
+    const buttons = KEYS[e.code];
+    if (!buttons) return;
+    e.preventDefault();
+    for (const b of buttons) {
+      if (!down.has(b)) pressedAt.set(b, ++order);
+      down.add(b);
+    }
+  });
+  addEventListener("keyup", (e) => {
+    for (const b of KEYS[e.code] ?? []) down.delete(b);
+  });
+  addEventListener("blur", () => down.clear());
+}
 
 function padButtons(): Set<number> {
   const out = new Set<number>();

@@ -7,7 +7,8 @@
 
 import { assetUrl } from "../core/assets";
 
-const ctx = new AudioContext();
+// Tests import game logic without a browser (no AudioContext there).
+const ctx = typeof AudioContext !== "undefined" ? new AudioContext() : (null as unknown as AudioContext);
 const buffers = new Map<string, Promise<LoadedSound | null>>();
 const warned = new Set<string>();
 
@@ -66,8 +67,8 @@ function oggLoopPoints(bytes: ArrayBuffer): { loopStart?: number; loopEnd?: numb
 
 class Channel {
   private source: AudioBufferSourceNode | null = null;
-  private gain = ctx.createGain();
-  private duck = ctx.createGain();
+  private gain = ctx?.createGain();
+  private duck = ctx?.createGain();
   name = "";
   volume = 100;
   pitch = 100;
@@ -75,7 +76,7 @@ class Channel {
   private token = 0;
 
   constructor(private folder: string, private loop: boolean) {
-    this.gain.connect(this.duck).connect(ctx.destination);
+    this.gain?.connect(this.duck).connect(ctx.destination);
   }
 
   async play(name: string, volume = 100, pitch = 100, onEnd?: () => void): Promise<void> {

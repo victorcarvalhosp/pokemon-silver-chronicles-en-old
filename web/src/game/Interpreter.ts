@@ -34,7 +34,7 @@ type Instr =
 
 const compiled = new WeakMap<Command[], Instr[]>();
 
-function compile(list: Command[]): Instr[] {
+export function compile(list: Command[]): Instr[] {
   const cached = compiled.get(list);
   if (cached) return cached;
   const out: Instr[] = [];
