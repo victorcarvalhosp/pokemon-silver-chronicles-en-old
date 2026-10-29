@@ -8,6 +8,9 @@
 
 import type { GameScreen } from "./GameScreen";
 import type { GameSystem } from "./GameSystem";
+import type { PokemonBag } from "./items/PokemonBag";
+import type { PokemonStorage } from "./pokemon/PokemonStorage";
+import type { GameStats } from "./trainer/GameStats";
 
 /** Port of PokemonSystem (016_UI/..._Options.rb): player settings. */
 export class PokemonSystem {
@@ -165,6 +168,13 @@ export const G = {
   gameScreen: null as unknown as GameScreen,
   pokemonGlobal: new PokemonGlobalMetadata(),
   mapFactory: null as unknown as MapFactoryLike,
+  // Data model (assigned by save/modelValues.ts on new game / load).
+  /** $bag */
+  bag: null as unknown as PokemonBag,
+  /** $PokemonStorage */
+  storage: null as unknown as PokemonStorage,
+  /** $stats */
+  stats: null as unknown as GameStats,
 };
 
 /**

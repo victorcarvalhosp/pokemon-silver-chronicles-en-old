@@ -11,7 +11,7 @@ import { SaveData } from "./game/save/SaveData";
 import { missingScripts } from "./game/scriptApi";
 import { unlockAudio } from "./rgss/Audio";
 import { loadFonts } from "./rgss/Bitmap";
-import { Graphics, initGraphics, runGame } from "./rgss/Graphics";
+import { Graphics, initGraphics, render, runGame, runTick } from "./rgss/Graphics";
 import { SceneMap } from "./scenes/SceneMap";
 import { LOAD_SCREEN_BITMAPS, PokemonLoad_Scene, PokemonLoadScreen } from "./ui/load/loadScreen";
 import { preloadBitmaps } from "./ui/rpgCache";
@@ -42,7 +42,12 @@ await unlockAudio();
 hud.textContent = "";
 
 // Exposed for debugging in the browser console.
-Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, missingScripts, app });
+// __step(n) advances n ticks by hand (requestAnimationFrame stops in hidden tabs).
+const __step = async (n: number) => {
+  for (let i = 0; i < n; i++) await runTick();
+  render();
+};
+Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, missingScripts, app, __step });
 
 runGame(
   async () => {

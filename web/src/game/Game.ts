@@ -13,6 +13,14 @@ import { PokemonMapFactory } from "./MapFactory";
 import { SaveData, type SaveHash } from "./save/SaveData";
 import { pokemonMap, restoreMapState, savedMapId } from "./save/values";
 import "./mapHandlers";
+import { Graphics } from "../rgss/Graphics";
+
+// 013_Game_Stats.rb: Graphics.update adds delta_s to $stats.play_time once a
+// game has started (Ruby checks $PokemonEncounters, set by start_new/load).
+Graphics.onUpdate.push(() => {
+  const s = stats() as { playTime?: number } | undefined;
+  if (s && G.mapFactory) s.playTime = (s.playTime ?? 0) + Graphics.deltaS;
+});
 
 type Stats = { playSessions?: number; setTimeLastSaved?(): void };
 const stats = () => (G as unknown as { stats?: Stats }).stats;

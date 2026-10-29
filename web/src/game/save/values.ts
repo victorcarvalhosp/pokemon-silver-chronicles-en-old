@@ -34,14 +34,6 @@ function loadObject<T extends object>(cls: (new (...a: never[]) => T) & Partial<
 }
 
 SaveData.register({
-  id: "player",
-  save: () => saveObject(G.player),
-  load: (v) => { G.player = loadObject(Player, v, () => new Player("Unnamed", "")) as never; },
-  // GameData::TrainerType.keys.first once trainer types load; the field is cosmetic until then.
-  newGame: () => { G.player = new Player("Unnamed", "") as never; },
-});
-
-SaveData.register({
   id: "frame_count",
   save: () => Graphics.frameCount,
   load: (v) => { Graphics.frameCount = Number(v) || 0; },
@@ -160,8 +152,9 @@ SaveData.register({
   newGame: () => { setPokemonMap(new PokemonMapMetadata()); },
 });
 
-// TODO(model): :bag, :storage_system and :stats register here once the
-// data-model classes (PokemonBag, PokemonStorage, GameStats) land.
+// :player (replaced in place), :bag, :storage_system and :stats are registered
+// by the data model's own module.
+import "./modelValues";
 
 SaveData.register({
   id: "essentials_version",

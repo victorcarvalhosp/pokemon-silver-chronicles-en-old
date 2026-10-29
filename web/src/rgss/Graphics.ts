@@ -33,8 +33,12 @@ export const Graphics = {
   /** 0..255; 255 = normal. */
   brightness: 255,
 
+  /** Called on every update() (Essentials aliases Graphics.update, e.g. GameStats' play time). */
+  onUpdate: [] as (() => void)[],
+
   /** Waits for the next logic tick. */
   update(): Promise<void> {
+    for (const hook of Graphics.onUpdate) hook();
     if (tickDone) {
       const done = tickDone;
       tickDone = null;

@@ -1,0 +1,1415 @@
+{
+  "stats": [
+    {
+      "species": "PIKACHU",
+      "level": 50,
+      "iv": 31,
+      "ev": 0,
+      "nature": "HARDY",
+      "form": 0,
+      "totalhp": 110,
+      "attack": 75,
+      "defense": 60,
+      "spatk": 70,
+      "spdef": 70,
+      "speed": 110
+    },
+    {
+      "species": "CHARIZARD",
+      "level": 100,
+      "iv": 31,
+      "ev": 252,
+      "nature": "ADAMANT",
+      "form": 0,
+      "totalhp": 360,
+      "attack": 293,
+      "defense": 255,
+      "spatk": 285,
+      "spdef": 269,
+      "speed": 299
+    },
+    {
+      "species": "SHEDINJA",
+      "level": 30,
+      "iv": 15,
+      "ev": 100,
+      "nature": "TIMID",
+      "form": 0,
+      "totalhp": 1,
+      "attack": 63,
+      "defense": 44,
+      "spatk": 35,
+      "spdef": 35,
+      "speed": 45
+    },
+    {
+      "species": "BLISSEY",
+      "level": 75,
+      "iv": 20,
+      "ev": 85,
+      "nature": "BOLD",
+      "form": 0,
+      "totalhp": 498,
+      "attack": 45,
+      "defense": 55,
+      "spatk": 148,
+      "spdef": 238,
+      "speed": 118
+    },
+    {
+      "species": "EEVEE",
+      "level": 5,
+      "iv": 0,
+      "ev": 0,
+      "nature": "MODEST",
+      "form": 0,
+      "totalhp": 20,
+      "attack": 9,
+      "defense": 10,
+      "spatk": 9,
+      "spdef": 11,
+      "speed": 10
+    },
+    {
+      "species": "VULPIX_1",
+      "level": 40,
+      "iv": 10,
+      "ev": 40,
+      "nature": "JOLLY",
+      "form": 1,
+      "totalhp": 88,
+      "attack": 45,
+      "defense": 45,
+      "spatk": 47,
+      "spdef": 65,
+      "speed": 71
+    }
+  ],
+  "exp": [
+    {
+      "id": "Medium",
+      "max": 1000000,
+      "levels": [
+        1,
+        1,
+        1,
+        2,
+        4,
+        10,
+        100,
+        100,
+        100,
+        84,
+        84
+      ],
+      "min": [
+        0,
+        8,
+        1000,
+        125000,
+        970299,
+        1000000
+      ]
+    },
+    {
+      "id": "Erratic",
+      "max": 600000,
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        8,
+        100,
+        100,
+        100,
+        100,
+        99
+      ],
+      "min": [
+        0,
+        15,
+        1800,
+        125000,
+        591882,
+        600000
+      ]
+    },
+    {
+      "id": "Fluctuating",
+      "max": 1640000,
+      "levels": [
+        1,
+        1,
+        2,
+        2,
+        5,
+        12,
+        88,
+        88,
+        100,
+        75,
+        75
+      ],
+      "min": [
+        0,
+        4,
+        540,
+        142500,
+        1571884,
+        1640000
+      ]
+    },
+    {
+      "id": "Parabolic",
+      "max": 1059860,
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        4,
+        12,
+        99,
+        100,
+        100,
+        83,
+        83
+      ],
+      "min": [
+        0,
+        9,
+        560,
+        117360,
+        1027103,
+        1059860
+      ]
+    },
+    {
+      "id": "Fast",
+      "max": 800000,
+      "levels": [
+        1,
+        1,
+        2,
+        2,
+        5,
+        10,
+        100,
+        100,
+        100,
+        90,
+        90
+      ],
+      "min": [
+        0,
+        6,
+        800,
+        100000,
+        776239,
+        800000
+      ]
+    },
+    {
+      "id": "Slow",
+      "max": 1250000,
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        4,
+        9,
+        94,
+        94,
+        100,
+        78,
+        78
+      ],
+      "min": [
+        0,
+        10,
+        1250,
+        156250,
+        1212873,
+        1250000
+      ]
+    }
+  ],
+  "personal": [
+    {
+      "pid": 0,
+      "nature": "HARDY",
+      "gender": 1,
+      "abilityIndex": 0,
+      "ability": "SYNCHRONIZE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 1,
+      "nature": "LONELY",
+      "gender": 1,
+      "abilityIndex": 1,
+      "ability": "TRACE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 24,
+      "nature": "QUIRKY",
+      "gender": 1,
+      "abilityIndex": 0,
+      "ability": "SYNCHRONIZE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 25,
+      "nature": "HARDY",
+      "gender": 1,
+      "abilityIndex": 1,
+      "ability": "TRACE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 123456789,
+      "nature": "NAIVE",
+      "gender": 1,
+      "abilityIndex": 1,
+      "ability": "TRACE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 4294967295,
+      "nature": "CALM",
+      "gender": 0,
+      "abilityIndex": 1,
+      "ability": "TRACE",
+      "shiny": false,
+      "superShiny": false
+    },
+    {
+      "pid": 3735928559,
+      "nature": "LAX",
+      "gender": 0,
+      "abilityIndex": 1,
+      "ability": "TRACE",
+      "shiny": false,
+      "superShiny": false
+    }
+  ],
+  "evolution": [
+    [
+      "CHARMANDER lv16 levelup",
+      "CHARMELEON"
+    ],
+    [
+      "CHARMANDER lv15 levelup",
+      null
+    ],
+    [
+      "PIKACHU thunderstone",
+      "RAICHU"
+    ],
+    [
+      "PIKACHU firestone",
+      null
+    ],
+    [
+      "ONIX metalcoat trade",
+      null
+    ],
+    [
+      "ONIX trade",
+      null
+    ],
+    [
+      "TYROGUE lv20 adamant",
+      "HITMONLEE"
+    ],
+    [
+      "TYROGUE lv20 bold",
+      "HITMONCHAN"
+    ],
+    [
+      "CHARMANDER everstone",
+      null
+    ],
+    [
+      "GOLBAT happiness 220",
+      "CROBAT"
+    ],
+    [
+      "GOLBAT happiness 150",
+      null
+    ]
+  ],
+  "minimumLevel": [
+    [
+      "CHARMANDER",
+      1
+    ],
+    [
+      "CHARMELEON",
+      16
+    ],
+    [
+      "CHARIZARD",
+      36
+    ],
+    [
+      "PIKACHU",
+      2
+    ],
+    [
+      "RAICHU",
+      1
+    ],
+    [
+      "GOLBAT",
+      22
+    ],
+    [
+      "CROBAT",
+      2
+    ]
+  ],
+  "babies": [
+    [
+      "CHARIZARD",
+      "CHARMANDER",
+      [
+        "CHARMANDER",
+        "CHARMELEON",
+        "CHARIZARD"
+      ]
+    ],
+    [
+      "PIKACHU",
+      "PICHU",
+      [
+        "PICHU",
+        "PIKACHU",
+        "RAICHU"
+      ]
+    ],
+    [
+      "RAICHU",
+      "PICHU",
+      [
+        "PICHU",
+        "PIKACHU",
+        "RAICHU"
+      ]
+    ],
+    [
+      "MARILL",
+      "AZURILL",
+      [
+        "AZURILL",
+        "MARILL",
+        "AZUMARILL"
+      ]
+    ],
+    [
+      "SNORLAX",
+      "MUNCHLAX",
+      [
+        "MUNCHLAX",
+        "SNORLAX"
+      ]
+    ]
+  ],
+  "moves": [
+    [
+      "PIKACHU",
+      50,
+      [
+        [
+          "DISCHARGE",
+          15
+        ],
+        [
+          "THUNDERBOLT",
+          15
+        ],
+        [
+          "LIGHTSCREEN",
+          30
+        ],
+        [
+          "THUNDER",
+          10
+        ]
+      ]
+    ],
+    [
+      "CHARMANDER",
+      1,
+      [
+        [
+          "SCRATCH",
+          35
+        ],
+        [
+          "GROWL",
+          40
+        ]
+      ]
+    ],
+    [
+      "BULBASAUR",
+      13,
+      [
+        [
+          "VINEWHIP",
+          25
+        ],
+        [
+          "GROWTH",
+          20
+        ],
+        [
+          "LEECHSEED",
+          10
+        ],
+        [
+          "RAZORLEAF",
+          25
+        ]
+      ]
+    ],
+    [
+      "EEVEE",
+      30,
+      [
+        [
+          "BABYDOLLEYES",
+          30
+        ],
+        [
+          "SWIFT",
+          20
+        ],
+        [
+          "BITE",
+          25
+        ],
+        [
+          "COPYCAT",
+          20
+        ]
+      ]
+    ]
+  ],
+  "trainers": [
+    {
+      "id": [
+        "ELITEFOUR_Green",
+        "Green",
+        1
+      ],
+      "name": "Green",
+      "type": "ELITEFOUR_Green",
+      "items": [
+        "ZRING",
+        "DYNAMAXBAND",
+        "MEGARING"
+      ],
+      "loseText": "Wow… you actually read me like a book.",
+      "party": [
+        {
+          "species": "CLEFABLE",
+          "form": 0,
+          "level": 67,
+          "item": "LEFTOVERS",
+          "ability": "MAGICGUARD",
+          "nature": "SASSY",
+          "gender": 1,
+          "shiny": false,
+          "moves": [
+            "PERISHSONG",
+            "MOONBLAST",
+            "SOFTBOILED",
+            "FLAMETHROWER"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 252,
+            "ATTACK": 0,
+            "DEFENSE": 172,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 84,
+            "SPEED": 0
+          },
+          "happiness": 140,
+          "name": "Clefable",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 267,
+          "totalhp": 267,
+          "attack": 119,
+          "defense": 152,
+          "spatk": 153,
+          "spdef": 176,
+          "speed": 95
+        },
+        {
+          "species": "GRANBULL",
+          "form": 0,
+          "level": 67,
+          "item": "CHOICEBAND",
+          "ability": "INTIMIDATE",
+          "nature": "GENTLE",
+          "gender": 1,
+          "shiny": false,
+          "moves": [
+            "PLAYROUGH",
+            "EARTHQUAKE",
+            "CLOSECOMBAT",
+            "THUNDERPUNCH"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 252,
+            "ATTACK": 252,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 4,
+            "SPEED": 0
+          },
+          "happiness": 50,
+          "name": "Granbull",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 260,
+          "totalhp": 260,
+          "attack": 228,
+          "defense": 113,
+          "spatk": 106,
+          "spdef": 116,
+          "speed": 86
+        },
+        {
+          "species": "NIDOQUEEN",
+          "form": 0,
+          "level": 68,
+          "item": "LIFEORB",
+          "ability": "SHEERFORCE",
+          "nature": "QUIET",
+          "gender": 1,
+          "shiny": false,
+          "moves": [
+            "STEALTHROCK",
+            "EARTHPOWER",
+            "SLUDGEWAVE",
+            "ICEBEAM"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 252,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 252,
+            "SPECIAL_DEFENSE": 4,
+            "SPEED": 0
+          },
+          "happiness": 50,
+          "name": "Nidoqueen",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 264,
+          "totalhp": 264,
+          "attack": 151,
+          "defense": 144,
+          "spatk": 187,
+          "spdef": 142,
+          "speed": 116
+        },
+        {
+          "species": "BLASTOISE",
+          "form": 0,
+          "level": 70,
+          "item": "LEFTOVERS",
+          "ability": "TORRENT",
+          "nature": "CALM",
+          "gender": 1,
+          "shiny": false,
+          "moves": [
+            "HYDROCANNON",
+            "ICEBEAM",
+            "DARKPULSE",
+            "SUBSTITUTE"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 252,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 4,
+            "SPEED": 252
+          },
+          "happiness": 50,
+          "name": "Blastoise",
+          "ace": true,
+          "dynamaxLvl": 10,
+          "gmaxFactor": true,
+          "hp": 256,
+          "totalhp": 256,
+          "attack": 127,
+          "defense": 166,
+          "spatk": 145,
+          "spdef": 191,
+          "speed": 180
+        },
+        {
+          "species": "ALAKAZAM",
+          "form": 0,
+          "level": 69,
+          "item": "ALAKAZITE",
+          "ability": "MAGICGUARD",
+          "nature": "LONELY",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "PSYCHIC",
+            "FOCUSBLAST",
+            "SHADOWBALL",
+            "DAZZLINGGLEAM"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 252,
+            "SPECIAL_DEFENSE": 4,
+            "SPEED": 252
+          },
+          "happiness": 50,
+          "name": "Alakazam",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 176,
+          "totalhp": 176,
+          "attack": 104,
+          "defense": 79,
+          "spatk": 256,
+          "spdef": 158,
+          "speed": 235
+        },
+        {
+          "species": "DITTO",
+          "form": 0,
+          "level": 69,
+          "item": "CHOICESCARF",
+          "ability": "IMPOSTER",
+          "nature": "BASHFUL",
+          "gender": 2,
+          "shiny": false,
+          "moves": [
+            "TRANSFORM"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 252,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 4,
+            "SPEED": 252
+          },
+          "happiness": 50,
+          "name": "Ditto",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 210,
+          "totalhp": 210,
+          "attack": 92,
+          "defense": 92,
+          "spatk": 92,
+          "spdef": 93,
+          "speed": 136
+        }
+      ]
+    },
+    {
+      "id": [
+        "LEADER_RUDY",
+        "Rudy",
+        0
+      ],
+      "name": "Rudy",
+      "type": "LEADER_RUDY",
+      "items": [
+        "DYNAMAXBAND",
+        "ZRING",
+        "MEGARING"
+      ],
+      "loseText": "Well… that was a performance worth applauding.",
+      "party": [
+        {
+          "species": "ELECTABUZZ",
+          "form": 0,
+          "level": 65,
+          "item": "FOCUSSASH",
+          "ability": "STATIC",
+          "nature": "CALM",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "THUNDERBOLT",
+            "FOCUSBLAST",
+            "HELPINGHAND",
+            "LIGHTSCREEN"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Electabuzz",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 193,
+          "totalhp": 193,
+          "attack": 131,
+          "defense": 112,
+          "spatk": 162,
+          "spdef": 163,
+          "speed": 175
+        },
+        {
+          "species": "EXEGGUTOR",
+          "form": 0,
+          "level": 66,
+          "item": "SITRUSBERRY",
+          "ability": "CHLOROPHYLL",
+          "nature": "CAREFUL",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "PSYCHIC",
+            "LEAFSTORM",
+            "SLEEPPOWDER",
+            "PROTECT"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Exeggutor",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 235,
+          "totalhp": 235,
+          "attack": 164,
+          "defense": 151,
+          "spatk": 183,
+          "spdef": 151,
+          "speed": 111
+        },
+        {
+          "species": "STARMIE",
+          "form": 0,
+          "level": 67,
+          "item": "WATERIUMZ",
+          "ability": "ILLUMINATE",
+          "nature": "MILD",
+          "gender": 2,
+          "shiny": false,
+          "moves": [
+            "HYDROPUMP",
+            "ICEBEAM",
+            "THUNDERBOLT",
+            "PROTECT"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Starmie",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 192,
+          "totalhp": 192,
+          "attack": 140,
+          "defense": 137,
+          "spatk": 190,
+          "spdef": 153,
+          "speed": 193
+        },
+        {
+          "species": "NINETALES",
+          "form": 0,
+          "level": 68,
+          "item": "HEATROCK",
+          "ability": "FLASHFIRE",
+          "nature": "IMPISH",
+          "gender": 1,
+          "shiny": false,
+          "moves": [
+            "FLAMETHROWER",
+            "SOLARBEAM",
+            "WILLOWISP",
+            "PROTECT"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Ninetales",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 212,
+          "totalhp": 212,
+          "attack": 143,
+          "defense": 156,
+          "spatk": 135,
+          "spdef": 176,
+          "speed": 176
+        },
+        {
+          "species": "PIDGEOT",
+          "form": 0,
+          "level": 69,
+          "item": "PIDGEOTITE",
+          "ability": "KEENEYE",
+          "nature": "JOLLY",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "HURRICANE",
+            "HEATWAVE",
+            "AIRSLASH",
+            "TAILWIND"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Pidgeot",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 229,
+          "totalhp": 229,
+          "attack": 151,
+          "defense": 144,
+          "spatk": 123,
+          "spdef": 137,
+          "speed": 198
+        },
+        {
+          "species": "GOLEM",
+          "form": 0,
+          "level": 70,
+          "item": "WEAKNESSPOLICY",
+          "ability": "ROCKHEAD",
+          "nature": "GENTLE",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "EARTHQUAKE",
+            "ROCKSLIDE",
+            "FIREPUNCH",
+            "PROTECT"
+          ],
+          "iv": {
+            "HP": 31,
+            "ATTACK": 31,
+            "DEFENSE": 31,
+            "SPECIAL_ATTACK": 31,
+            "SPECIAL_DEFENSE": 31,
+            "SPEED": 31
+          },
+          "ev": {
+            "HP": 85,
+            "ATTACK": 85,
+            "DEFENSE": 85,
+            "SPECIAL_ATTACK": 85,
+            "SPECIAL_DEFENSE": 85,
+            "SPEED": 85
+          },
+          "happiness": 50,
+          "name": "Golem",
+          "ace": true,
+          "dynamaxLvl": 10,
+          "gmaxFactor": true,
+          "hp": 228,
+          "totalhp": 228,
+          "attack": 209,
+          "defense": 200,
+          "spatk": 118,
+          "spdef": 145,
+          "speed": 104
+        }
+      ]
+    },
+    {
+      "id": [
+        "YOUNGSTER",
+        "Joey",
+        1
+      ],
+      "name": "Joey",
+      "type": "YOUNGSTER",
+      "items": [
+
+      ],
+      "loseText": "Oh...I'm out of Pokémon that can fight...",
+      "party": [
+        {
+          "species": "RATTATA",
+          "form": 0,
+          "level": 12,
+          "item": null,
+          "ability": "RUNAWAY",
+          "nature": "SASSY",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "TAILWHIP",
+            "QUICKATTACK",
+            "FOCUSENERGY",
+            "BITE"
+          ],
+          "iv": {
+            "HP": 6,
+            "ATTACK": 6,
+            "DEFENSE": 6,
+            "SPECIAL_ATTACK": 6,
+            "SPECIAL_DEFENSE": 6,
+            "SPEED": 6
+          },
+          "ev": {
+            "HP": 18,
+            "ATTACK": 18,
+            "DEFENSE": 18,
+            "SPECIAL_ATTACK": 18,
+            "SPECIAL_DEFENSE": 18,
+            "SPEED": 18
+          },
+          "happiness": 50,
+          "name": "Rattata",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 30,
+          "totalhp": 30,
+          "attack": 19,
+          "defense": 14,
+          "spatk": 12,
+          "spdef": 15,
+          "speed": 20
+        },
+        {
+          "species": "RATTATA",
+          "form": 0,
+          "level": 12,
+          "item": null,
+          "ability": "RUNAWAY",
+          "nature": "SASSY",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "TAILWHIP",
+            "QUICKATTACK",
+            "FOCUSENERGY",
+            "BITE"
+          ],
+          "iv": {
+            "HP": 6,
+            "ATTACK": 6,
+            "DEFENSE": 6,
+            "SPECIAL_ATTACK": 6,
+            "SPECIAL_DEFENSE": 6,
+            "SPEED": 6
+          },
+          "ev": {
+            "HP": 18,
+            "ATTACK": 18,
+            "DEFENSE": 18,
+            "SPECIAL_ATTACK": 18,
+            "SPECIAL_DEFENSE": 18,
+            "SPEED": 18
+          },
+          "happiness": 50,
+          "name": "Rattata",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 30,
+          "totalhp": 30,
+          "attack": 19,
+          "defense": 14,
+          "spatk": 12,
+          "spdef": 15,
+          "speed": 20
+        }
+      ]
+    },
+    {
+      "id": [
+        "ROCKET_PROTON",
+        "Proton",
+        1
+      ],
+      "name": "Proton",
+      "type": "ROCKET_PROTON",
+      "items": [
+
+      ],
+      "loseText": "Grr... For a kid to be this good...",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "form": 0,
+          "level": 14,
+          "item": null,
+          "ability": "INNERFOCUS",
+          "nature": "BRAVE",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "SUPERSONIC",
+            "ABSORB",
+            "POISONFANG"
+          ],
+          "iv": {
+            "HP": 7,
+            "ATTACK": 7,
+            "DEFENSE": 7,
+            "SPECIAL_ATTACK": 7,
+            "SPECIAL_DEFENSE": 7,
+            "SPEED": 7
+          },
+          "ev": {
+            "HP": 21,
+            "ATTACK": 21,
+            "DEFENSE": 21,
+            "SPECIAL_ATTACK": 21,
+            "SPECIAL_DEFENSE": 21,
+            "SPEED": 21
+          },
+          "happiness": 50,
+          "name": "Zubat",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 36,
+          "totalhp": 36,
+          "attack": 20,
+          "defense": 16,
+          "spatk": 15,
+          "spdef": 17,
+          "speed": 19
+        },
+        {
+          "species": "KOFFING",
+          "form": 0,
+          "level": 13,
+          "item": null,
+          "ability": "LEVITATE",
+          "nature": "CALM",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "POISONGAS",
+            "SMOKESCREEN",
+            "CLEARSMOG"
+          ],
+          "iv": {
+            "HP": 6,
+            "ATTACK": 6,
+            "DEFENSE": 6,
+            "SPECIAL_ATTACK": 6,
+            "SPECIAL_DEFENSE": 6,
+            "SPEED": 6
+          },
+          "ev": {
+            "HP": 19,
+            "ATTACK": 19,
+            "DEFENSE": 19,
+            "SPECIAL_ATTACK": 19,
+            "SPECIAL_DEFENSE": 19,
+            "SPEED": 19
+          },
+          "happiness": 50,
+          "name": "Koffing",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 34,
+          "totalhp": 34,
+          "attack": 20,
+          "defense": 31,
+          "spatk": 21,
+          "spdef": 19,
+          "speed": 15
+        },
+        {
+          "species": "EKANS",
+          "form": 0,
+          "level": 13,
+          "item": null,
+          "ability": "INTIMIDATE",
+          "nature": "LAX",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "ACID",
+            "POISONSTING",
+            "BITE"
+          ],
+          "iv": {
+            "HP": 6,
+            "ATTACK": 6,
+            "DEFENSE": 6,
+            "SPECIAL_ATTACK": 6,
+            "SPECIAL_DEFENSE": 6,
+            "SPEED": 6
+          },
+          "ev": {
+            "HP": 19,
+            "ATTACK": 19,
+            "DEFENSE": 19,
+            "SPECIAL_ATTACK": 19,
+            "SPECIAL_DEFENSE": 19,
+            "SPEED": 19
+          },
+          "happiness": 50,
+          "name": "Ekans",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 33,
+          "totalhp": 33,
+          "attack": 21,
+          "defense": 18,
+          "spatk": 16,
+          "spdef": 18,
+          "speed": 20
+        },
+        {
+          "species": "GOLBAT",
+          "form": 0,
+          "level": 16,
+          "item": null,
+          "ability": "INNERFOCUS",
+          "nature": "ADAMANT",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "SUPERSONIC",
+            "ABSORB",
+            "POISONFANG",
+            "SNORE"
+          ],
+          "iv": {
+            "HP": 8,
+            "ATTACK": 8,
+            "DEFENSE": 8,
+            "SPECIAL_ATTACK": 8,
+            "SPECIAL_DEFENSE": 8,
+            "SPEED": 8
+          },
+          "ev": {
+            "HP": 24,
+            "ATTACK": 24,
+            "DEFENSE": 24,
+            "SPECIAL_ATTACK": 24,
+            "SPECIAL_DEFENSE": 24,
+            "SPEED": 24
+          },
+          "happiness": 50,
+          "name": "Golbat",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 52,
+          "totalhp": 52,
+          "attack": 35,
+          "defense": 29,
+          "spatk": 25,
+          "spdef": 31,
+          "speed": 36
+        },
+        {
+          "species": "RATTATA",
+          "form": 1,
+          "level": 15,
+          "item": null,
+          "ability": "GLUTTONY",
+          "nature": "BOLD",
+          "gender": 0,
+          "shiny": false,
+          "moves": [
+            "QUICKATTACK",
+            "BITE",
+            "SUPERFANG"
+          ],
+          "iv": {
+            "HP": 7,
+            "ATTACK": 7,
+            "DEFENSE": 7,
+            "SPECIAL_ATTACK": 7,
+            "SPECIAL_DEFENSE": 7,
+            "SPEED": 7
+          },
+          "ev": {
+            "HP": 22,
+            "ATTACK": 22,
+            "DEFENSE": 22,
+            "SPECIAL_ATTACK": 22,
+            "SPECIAL_DEFENSE": 22,
+            "SPEED": 22
+          },
+          "happiness": 50,
+          "name": "Rattata",
+          "ace": false,
+          "dynamaxLvl": 0,
+          "gmaxFactor": false,
+          "hp": 35,
+          "totalhp": 35,
+          "attack": 20,
+          "defense": 18,
+          "spatk": 14,
+          "spdef": 17,
+          "speed": 28
+        }
+      ]
+    }
+  ],
+  "dex": {
+    "seenCount": 2,
+    "ownedCount": 1,
+    "vulpixForm1": true,
+    "vulpixForm0": false,
+    "forms": 1,
+    "accessible": [
+      0
+    ],
+    "dexes": 6
+  }
+}
