@@ -141,8 +141,15 @@
             {"cmd":"playSe","audio":{"name":"computeropen","volume":80,"pitch":100}},
             {"cmd":"wait","seconds":1.0},
             {
-              "cmd": "script",
-              "ruby": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:CHAMPIONKANTO)\nend"
+              "cmd": "call",
+              "fn": "each",
+              "on": {"call":"$player.pokemon_party"},
+              "args": [
+                {
+                  "proc": ["pkmn"],
+                  "body": {"call":"giveRibbon","on":{"call":"pkmn"},"args":["CHAMPIONKANTO"]}
+                }
+              ]
             },
             {
               "cmd": "moveRoute",

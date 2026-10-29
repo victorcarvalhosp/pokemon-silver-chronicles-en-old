@@ -8,9 +8,9 @@
 // when this module is imported; the PBS data needs loadAll()/loadAllFrom().
 
 import type {
-  AbilityData, BerryPlantData, EncounterData, ItemData, MapMetadataData, MetadataData, MoveData, PhoneData,
+  AbilityData, AdventureMaps, BerryPlantData, EncounterData, ItemData, MapMetadataData, MetadataData, MoveData, PhoneData,
   PlayerMetadataData, PowerMoveData, RaidRanks, RegionalDexes, RibbonData, ShadowPokemonData, SpeciesData,
-  SpeciesMetricsData, TownMap, TrainerData, TrainerTypeData, TypeData,
+  SpeciesMetricsData, TownMap, TrainerData, TrainerList, TrainerTypeData, TypeData,
 } from "../pbs/types";
 import { Ability } from "./ability";
 import { BattleTerrain } from "./battleTerrain";
@@ -65,7 +65,8 @@ export const GameData = {
     "types.json", "abilities.json", "moves.json", "items.json", "berry-plants.json", "species.json",
     "species-metrics.json", "shadow-pokemon.json", "ribbons.json", "encounters.json", "trainer-types.json",
     "trainers.json", "metadata.json", "player-metadata.json", "map-metadata.json", "power-moves.json",
-    "town-map.json", "phone.json", "regional-dexes.json", "raid-ranks.json",
+    "town-map.json", "phone.json", "regional-dexes.json", "raid-ranks.json", "trainer-lists.json",
+    "adventure-maps.json",
   ],
 
   /** GameData.load_all from already-read JSON (read(file) returns the parsed file). */
@@ -98,6 +99,8 @@ export const GameData = {
       phone: read("phone.json") as PhoneData | null,
       regionalDexes: read("regional-dexes.json") as RegionalDexes,
       raidRanks: read("raid-ranks.json") as RaidRanks,
+      trainerLists: (read("trainer-lists.json") as TrainerList[] | undefined) ?? [],
+      lairMaps: (read("adventure-maps.json") as AdventureMaps | undefined) ?? [],
     });
   },
 

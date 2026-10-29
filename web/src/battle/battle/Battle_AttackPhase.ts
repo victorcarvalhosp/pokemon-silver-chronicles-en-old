@@ -211,8 +211,8 @@ const methods = {
   },
 
   // Placeholders: Max Raid bosses and Cheer are only used by ZUD's RaidBattle
-  // subclass (Deferred: ZUD Mechanics/[009] Max Raid/Raid_Battle.rb:26,103);
-  // the other plugins aren't installed.
+  // subclass (zud/raid/Raid_Battle.ts, Raid_Battle.rb:26,103); the other
+  // plugins aren't installed.
   async pbAttackPhaseRaidBoss(this: Battle): Promise<void> {},
   async pbAttackPhaseCheer(this: Battle): Promise<void> {},
   async pbAttackPhaseStyles(this: Battle): Promise<void> {},

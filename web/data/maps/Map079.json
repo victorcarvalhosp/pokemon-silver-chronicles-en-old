@@ -231,10 +231,15 @@
                               "- Start the contest with 20 Sport Balls."
                             ]
                           },
+                          {"cmd":"call","fn":"pbBugContestState.pbSetJudgingPoint","args":[79,9,8]},
+                          {"cmd":"call","fn":"pbBugContestState.pbSetReception","args":[79,77]},
+                          {"cmd":"call","fn":"pbBugContestState.pbSetContestMap","args":[261]},
                           {
-                            "cmd": "script",
-                            "ruby": "contest = pbBugContestState\ncontest.pbSetJudgingPoint(79, 9, 8)\ncontest.pbSetReception(79, 77)\ncontest.pbSetContestMap(261)\ncontest.pbSetPokemon(pbGet(1))\ncontest.pbStart(20)"
+                            "cmd": "call",
+                            "fn": "pbBugContestState.pbSetPokemon",
+                            "args": [{"call":"pbGet","args":[1]}]
                           },
+                          {"cmd":"call","fn":"pbBugContestState.pbStart","args":[20]},
                           {
                             "cmd": "if",
                             "cond": {"character":-1,"direction":8},
@@ -794,13 +799,68 @@
                   "then": [
                     {
                       "cmd": "script",
-                      "ruby": "evo_stones = [\n  :FIRESTONE, :THUNDERSTONE,\n  :WATERSTONE, :LEAFSTONE,\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)"
+                      "do": [
+                        {
+                          "cmd": "assign",
+                          "target": "evo_stones",
+                          "args": [],
+                          "op": "=",
+                          "value": [
+                            "FIRESTONE",
+                            "THUNDERSTONE",
+                            "WATERSTONE",
+                            "LEAFSTONE",
+                            "MOONSTONE",
+                            "SUNSTONE"
+                          ]
+                        },
+                        {
+                          "cmd": "assign",
+                          "target": "item",
+                          "args": [],
+                          "op": "=",
+                          "value": {"call":"sample","on":{"call":"evo_stones"}}
+                        },
+                        {"cmd":"call","fn":"pbSet","args":[1,{"call":"item"}]},
+                        {
+                          "cmd": "assign",
+                          "target": "data",
+                          "args": [],
+                          "op": "=",
+                          "value": {"call":"GameData::Item.get","args":[{"call":"item"}]}
+                        },
+                        {"cmd":"call","fn":"pbSet","args":[3,{"call":"name","on":{"call":"data"}}]}
+                      ]
                     }
                   ],
                   "else": [
                     {
                       "cmd": "script",
-                      "ruby": "evo_stones = [\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)"
+                      "do": [
+                        {
+                          "cmd": "assign",
+                          "target": "evo_stones",
+                          "args": [],
+                          "op": "=",
+                          "value": ["MOONSTONE","SUNSTONE"]
+                        },
+                        {
+                          "cmd": "assign",
+                          "target": "item",
+                          "args": [],
+                          "op": "=",
+                          "value": {"call":"sample","on":{"call":"evo_stones"}}
+                        },
+                        {"cmd":"call","fn":"pbSet","args":[1,{"call":"item"}]},
+                        {
+                          "cmd": "assign",
+                          "target": "data",
+                          "args": [],
+                          "op": "=",
+                          "value": {"call":"GameData::Item.get","args":[{"call":"item"}]}
+                        },
+                        {"cmd":"call","fn":"pbSet","args":[3,{"call":"name","on":{"call":"data"}}]}
+                      ]
                     }
                   ]
                 },

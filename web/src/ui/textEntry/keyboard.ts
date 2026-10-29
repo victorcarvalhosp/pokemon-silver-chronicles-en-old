@@ -23,6 +23,16 @@ const CODES: Record<string, string[]> = {
   // Enhanced UI's battle windows (MOVE_INFO_KEY / BATTLE_INFO_KEY)
   M: ["KeyM"],
   N: ["KeyN"],
+  F: ["KeyF"], // TDW Debug List Search: Input.triggerex?(:F)
+  // The battle animation editor (debug/editors/AnimEditor_*.ts)
+  E: ["KeyE"],
+  L: ["KeyL"],
+  P: ["KeyP"],
+  Q: ["KeyQ"],
+  R: ["KeyR"],
+  KP_PLUS: ["NumpadAdd"],
+  KP_MINUS: ["NumpadSubtract"],
+  F5: ["F5"],
 };
 
 /** Same repeat timing as rgss/Input (15 and 4 frames at 40 fps). */

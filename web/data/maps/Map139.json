@@ -395,7 +395,21 @@
             {"cmd":"playSe","audio":{"name":"130Cry","volume":100,"pitch":100}},
             {
               "cmd": "script",
-              "ruby": "pkmn = Pokemon.new(:GYARADOS, 30)\npkmn.shiny = true\npkmn.learn_move(:BITE)\npkmn.learn_move(:DRAGONRAGE)\npkmn.learn_move(:TWISTER)\npkmn.learn_move(:LEER)\nWildBattle.start(pkmn)"
+              "do": [
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["GYARADOS",30]}
+                },
+                {"cmd":"assign","target":"pkmn.shiny","args":[],"op":"=","value":true},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["BITE"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["DRAGONRAGE"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["TWISTER"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["LEER"]},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"switches","from":79,"to":79,"value":true},
             {"cmd":"switches","from":31,"to":31,"value":false}

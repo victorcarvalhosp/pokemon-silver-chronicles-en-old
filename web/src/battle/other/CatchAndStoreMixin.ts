@@ -9,7 +9,7 @@
 //   :414 pbRecordAndStoreCaughtPokemon ([:setcapture] :Demo); Midbattle_Triggers.rb:235:
 //   pbThrowPokeBall (midbattle triggers).
 // - ZUD Mechanics ([009] Max Raid/Raid_Battle.rb:478): pbStorePokemon (Dynamax data of caught
-//   Pokémon; Max Lair/Max Raid storage deferred).
+//   Pokémon; Max Lair/Max Raid storage in zud/raid/Raid_Battle_EndOfRound.ts).
 
 import { _INTL, type Id } from "../../data/gameData/gameData";
 import { Item } from "../../data/gameData/item";
@@ -25,9 +25,8 @@ import { Battle } from "../battle/Battle";
 import type { Battler } from "../battler/Battler";
 import { PBDebug } from "./PBDebug";
 import { PokeBallEffects } from "./PokeBallEffects";
-
-/** $DEBUG: off, as in a released game (see MenuFlags.DEBUG in ui/menus/menuScreens.ts). */
-const DEBUG = false;
+import { raidStorePokemon } from "../zud/raid/Raid_Battle_EndOfRound";
+import { DEBUG } from "../../core/debug"; // $DEBUG
 
 /** Essentials Deluxe: $game_temp.dx_rules if dx_rules? (set and not empty), else null. */
 function dxRules(): Record<string, unknown> | null {
@@ -115,8 +114,8 @@ const methods = {
       pkmn.gmaxFactor = false;
       pkmn.dynamaxLvl = 0;
     }
-    // Deferred: Max Lair (inMaxLair?) and Max Raid (@raid_battle) storage
-    // (ZUD Mechanics/[009] Max Raid/Raid_Battle.rb:483-496); neither is possible here.
+    // Max Lair (inMaxLair?) and Max Raid (@raid_battle) storage (Raid_Battle.rb:483-496)
+    if (await raidStorePokemon(this, pkmn)) return;
     // Essentials Deluxe (Battle_Misc.rb:312)
     pkmn.ace = false;
     // --- v20.1 Hotfixes (Battle bug fixes.rb:60) ---

@@ -37,6 +37,7 @@
 // both parties' sprites and balls; animations preload their sheets), because
 // IconSprite/AnimatedBitmap read them synchronously, as in Ruby.
 
+import { DEBUG } from "../../core/debug";
 import { assetExists } from "../../core/assets";
 import type { Id } from "../../data/gameData/gameData";
 import { Item } from "../../data/gameData/item";
@@ -122,7 +123,7 @@ export const BattleSceneHooks: {
   debug: () => boolean;
 } = {
   inSafari: () => false,
-  debug: () => false,
+  debug: () => DEBUG,
 };
 
 type MaybePromise<T> = T | Promise<T>;

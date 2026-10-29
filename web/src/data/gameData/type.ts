@@ -2,6 +2,7 @@
 
 import type { TypeData } from "../pbs/types";
 import { type Id, SymbolData, hasFlag } from "./gameData";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 export class Type extends SymbolData {
   static DATA = new Map<Id, Type>();
@@ -29,7 +30,7 @@ export class Type extends SymbolData {
     this.iconPosition = hash.iconPosition ?? 0;
   }
 
-  get name(): string { return this.realName; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.Types, this.realName); }
 
   /** physical? */
   physical(): boolean { return !this.specialType; }

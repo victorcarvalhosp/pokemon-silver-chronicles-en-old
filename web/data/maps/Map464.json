@@ -522,7 +522,7 @@
               "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
             },
             {"cmd":"waitForMoveCompletion"},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"transfer","map":463,"x":10,"y":2,"direction":8,"fade":true},
             {"cmd":"switches","from":269,"to":269,"value":true}
           ]

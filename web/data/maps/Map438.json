@@ -1317,10 +1317,15 @@
             {"cmd":"erasePicture","id":4},
             {"cmd":"erasePicture","id":5},
             {"cmd":"wait","seconds":0.1},
+            {"cmd":"call","fn":"Audio.bgm_stop","args":[]},
             {
-              "cmd": "script",
-              "ruby": "Audio.bgm_stop\nsscene=PokemonLoadScene.new\nsscreen=PokemonLoad.new(sscene)\nsscreen.pbStartLoadScreen"
-            }
+              "cmd": "comment",
+              "lines": [
+                "Ruby: sscene=PokemonLoadScene.new / sscreen=PokemonLoad.new(sscene) / sscreen.pbStartLoadScreen.",
+                "v20 has no PokemonLoadScene (NameError), so the rest never runs (docs/original-game-bugs.md)."
+              ]
+            },
+            {"cmd":"call","fn":"PokemonLoadScene.new","args":[]}
           ]
         }
       ]

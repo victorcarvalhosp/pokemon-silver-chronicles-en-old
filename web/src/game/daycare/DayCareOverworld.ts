@@ -21,7 +21,7 @@ export const VisibleDayCarOWSettings = {
 };
 
 /** Essentials Deluxe's ow_sprite_filename(species, form, gender, shiny) (Species Overworlds.rb:54). */
-function owSpriteFilename(species: string, form: number, gender: number, shiny: boolean): string | null {
+export function owSpriteFilename(species: string, form: number, gender: number, shiny: boolean): string | null {
   const params = { species, form: form || 0, gender: gender || 0, shiny: shiny || false, shadow: false,
     dmax: false, gmax: false, celestial: false };
   return SpeciesFiles.checkGraphicFile("Graphics/Characters/", params, "Followers");
@@ -86,6 +86,7 @@ export function addPokemonOWToMap(map: GameMap, i: number, x: number, y: number,
   const data: MapEvent = { id: keyId, name: "", x, y, pages: [page] };
   //--- creating the event ------------------------------------------
   const gameEvent = new GameEvent(map.mapId, data, map);
+  gameEvent.savedWithData = true; // Ruby's save keeps it in $game_map.events
   gameEvent.moveto(x, y);
   map.events.set(keyId, gameEvent);
   //--- updating the sprites --------------------------------------------------------

@@ -86,3 +86,4 @@ import "./bugContest";
 import "./battlePalace";
 import "./battleArena";
 import "./recordedBattle";
+import "../frontier/scripts";

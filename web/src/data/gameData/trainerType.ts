@@ -4,6 +4,7 @@
 
 import type { TrainerTypeData } from "../pbs/types";
 import { type Id, SymbolData, hasFlag } from "./gameData";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 type Resolve = (path: string) => string | null;
 
@@ -79,7 +80,7 @@ export class TrainerType extends SymbolData {
     this.victoryBGM = hash.victoryBGM ?? null;
   }
 
-  get name(): string { return this.realName; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.TrainerTypes, this.realName); }
 
   male(): boolean { return this.gender === 0; }
   female(): boolean { return this.gender === 1; }

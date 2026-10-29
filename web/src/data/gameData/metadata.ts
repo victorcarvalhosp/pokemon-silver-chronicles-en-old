@@ -2,6 +2,7 @@
 
 import type { MapCoordsFacing, MetadataData } from "../pbs/types";
 import { NumberData } from "./gameData";
+import { _INTL, MessageTypes, pbGetMessage } from "../../core/intl";
 
 export class Metadata extends NumberData {
   static DATA = new Map<number, Metadata>();
@@ -41,8 +42,9 @@ export class Metadata extends NumberData {
 
   /** storage_creator: the translated StorageCreator, or "Bill". */
   get storageCreator(): string {
-    const ret = this.realStorageCreator;
-    return !ret ? "Bill" : ret;
+    // pbGetMessage(MessageTypes::StorageCreator, 0); the compiled original is this metadata's own
+    const ret = pbGetMessage(MessageTypes.StorageCreator, 0) || this.realStorageCreator;
+    return !ret ? _INTL("Bill") : ret;
   }
 
   propertyFromString(str: string): unknown {

@@ -125,6 +125,11 @@ export class GameTemp {
   messageWindowShowing = false;
   inMenu = false;
   inBattle = false;
+  /**
+   * Following Pokemon EX (Refresh.rb:240-280): 1 once pbSetPokemonCenter queues
+   * the Poké Center animation, 2 after Recover All put the follower away.
+   */
+  pokecenterFollowingPkmn = 0;
   playerTransferring = false;
   playerNewMapId = 0;
   playerNewX = 0;
@@ -169,6 +174,15 @@ export class GameTemp {
   speechbubbleFollowerEvent: CharacterLike | null = null;
   /** In the Pokémon storage screen (forms that only change outside storage check it). */
   inStorage = false;
+  // Map Zoom (src/game/weather/MapZoom.ts): the zoom and the windows it hides
+  // while it snaps the screen. Only cmd_window is ever set in this game (the
+  // speech bubble's pbCreateMessageWindow and DP Pause Menu replace the
+  // plugin's versions that set the others).
+  backgroundZoom: { update(): void; dispose(): void } | null = null;
+  messageWindow: { visible: boolean } | null = null;
+  cmdWindow: { visible: boolean } | null = null;
+  pauseMenuScene: { pbShowMenu(): void; pbHideMenu(): void } | null = null;
+  pauseMenuScreen: unknown = null;
   /** item -> [buy price, sell price] set by the Interpreter's setPrice/setSellPrice (-1 = default). */
   martPrices: Record<string, [number, number]> = {};
   clearMartPrices(): void { this.martPrices = {}; }

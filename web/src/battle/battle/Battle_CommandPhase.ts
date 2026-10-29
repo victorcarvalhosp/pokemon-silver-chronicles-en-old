@@ -319,7 +319,9 @@ const methods = {
   },
 
   async pbDebugMenu(this: Battle): Promise<void> {
-    // Deferred: pbBattleDebug(self) (020_Debug/003_Debug menus/001_Debug_Menus.rb:185)
+    // pbBattleDebug(self) (debug/DebugMenus.ts; loaded lazily, the debug menus aren't part of the battle engine)
+    const { pbBattleDebug } = await import("../../debug/DebugMenus");
+    await pbBattleDebug(this);
     this.scene.pbRefreshEverything();
     for (const b of this.allBattlers()) await b.pbCheckFormOnWeatherChange();
     await this.pbEndPrimordialWeather();

@@ -1,9 +1,9 @@
 // pbMoveRoute, PBMoveRoute and pbWait (012_Overworld/001_Overworld.rb), and
 // Graphics.frame_rate, for event scripts (e.g. common event 46).
 
-import type { MoveCommand, MoveRoute } from "../../data/events";
-import type { GameCharacter } from "../GameCharacter";
-import { defineScript } from "../scriptApi";
+import type { Command, MoveCommand, MoveRoute } from "../../data/events";
+import { setMoveRouteScriptHook, type GameCharacter } from "../GameCharacter";
+import { defineScript, evaluate, runStatementsSync } from "../scriptApi";
 import { pbWaitSeconds } from "./overworld";
 
 /** module PBMoveRoute: the RPG Maker move command codes. */
@@ -46,10 +46,19 @@ function moveCommand(code: number, p: unknown[] = []): MoveCommand {
     case 42: return { move: "opacity", value: p[0] as number };
     case 43: return { move: "blendType", value: p[0] as number };
     case 44: return { move: "playSe", audio: typeof p[0] === "string" ? { name: p[0], volume: 80, pitch: 100 } : p[0] } as MoveCommand;
-    case 45: return { move: "raw", code, parameters: p }; // TODO(move route scripts): Ruby strings
+    case 45: return { move: "script", ruby: String(p[0]) }; // runs through defineRubyScript (see below)
     default: return { move: SIMPLE[code] ?? "raw" } as MoveCommand;
   }
 }
+
+// Game_Character#move_type_custom, Script (code 45): eval(command.parameters[0])
+// with the character as self, so bare names are its methods. Event data has the
+// translated statements ("do"); a string from pbMoveRoute stays Ruby ("ruby").
+setMoveRouteScriptHook((ch, c) => {
+  const ctx = { event: ch, interpreter: null, locals: new Map<string, unknown>() };
+  if (c.do) runStatementsSync(c.do as Command[], ctx);
+  else if (c.ruby !== undefined) evaluate({ ruby: c.ruby }, ctx);
+});
 
 /** pbMoveRoute(event, commands, waitComplete = false) */
 export function pbMoveRoute(event: GameCharacter | null, commands: unknown[], _waitComplete = false): MoveRoute {

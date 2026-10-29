@@ -33,7 +33,7 @@ import { G } from "../globals";
 import { pbGetTimeNow } from "../dayNight";
 import { Pokemon, type PokemonJSON } from "../pokemon/Pokemon";
 import { pbNicknameAndStore } from "../pokemon/utilities";
-import { defineRubyScript, defineScript } from "../scriptApi";
+import { defineScript } from "../scriptApi";
 import type { Player } from "../trainer/Player";
 import { pbGetWildBattleBGM } from "./battleAudio";
 import { pbBattleAnimation } from "./BattleIntroAnim";
@@ -612,12 +612,3 @@ defineScript("pbBugContestUndecided?", () => pbBugContestUndecided());
 defineScript("pbBugContestDecided?", () => pbBugContestDecided());
 defineScript("pbBugContestScore", (_c, pkmn) => pbBugContestScore(pkmn as Pokemon));
 defineScript("pbBugContestBattle", (_c, species, level) => pbBugContestBattle(species as Id, Number(level)));
-// Maps 77 and 79 (contest reception): the converter leaves multi-line scripts as Ruby.
-defineRubyScript("contest = pbBugContestState\ncontest.pbSetJudgingPoint(79, 9, 8)\ncontest.pbSetReception(79, 77)\ncontest.pbSetContestMap(261)\ncontest.pbSetPokemon(pbGet(1))\ncontest.pbStart(20)", () => {
-  const contest = pbBugContestState();
-  contest.pbSetJudgingPoint(79, 9, 8);
-  contest.pbSetReception(79, 77);
-  contest.pbSetContestMap(261);
-  contest.pbSetPokemon(Number(G.gameVariables.get(1)));
-  contest.pbStart(20);
-});

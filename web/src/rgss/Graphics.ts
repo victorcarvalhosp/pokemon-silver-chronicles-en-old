@@ -140,6 +140,22 @@ export const Graphics = {
     return Bitmap.fromImage(canvas);
   },
 
+  /**
+   * mkxp-z's Graphics.resize_screen(width, height): the editors that need a
+   * bigger screen (the tileset and animation editors) resize it and put it
+   * back. The canvas is refitted to the window (core/screen.ts listens for
+   * "resize").
+   */
+  resizeScreen(width: number, height: number): void {
+    Graphics.width = width;
+    Graphics.height = height;
+    if (!app) return; // tests
+    app.renderer.resize(width, height);
+    blackout.width = width;
+    blackout.height = height;
+    if (typeof dispatchEvent !== "undefined") dispatchEvent(new Event("resize"));
+  },
+
   /** Fades brightness to `target` over `seconds`. */
   async fadeTo(target: number, seconds: number): Promise<void> {
     const start = Graphics.brightness;
@@ -181,6 +197,11 @@ export async function runTick(): Promise<void> {
     tickDone = resolve;
     w();
   });
+}
+
+/** The Pixi renderer, for drawing into textures off screen (null before initGraphics). */
+export function pixiRenderer(): Application["renderer"] | null {
+  return app ? app.renderer : null;
 }
 
 export function render(): void {

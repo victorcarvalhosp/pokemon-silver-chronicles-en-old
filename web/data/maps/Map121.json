@@ -122,7 +122,23 @@
                     "then": [
                       {
                         "cmd": "script",
-                        "ruby": "pkmn = $player.last_party\npkmn.item = :BERRYJUICE\npkmn.calc_stats"
+                        "do": [
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"$player.last_party"}
+                          },
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn.item",
+                            "args": [],
+                            "op": "=",
+                            "value": "BERRYJUICE"
+                          },
+                          {"cmd":"call","fn":"calc_stats","on":{"call":"pkmn"},"args":[]}
+                        ]
                       },
                       {"cmd":"selfSwitch","ch":"A","value":true}
                     ],

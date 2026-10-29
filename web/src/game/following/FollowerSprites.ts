@@ -46,7 +46,11 @@ export class FollowerSprites {
     }
     // Following Pokemon EX
     if (!FollowingPkmn.canCheck()) return;
-    // TODO(reflections): spr.set_reflection(@viewport, event) — Sprite_Reflection isn't ported.
+    const event = FollowingPkmn.getEvent();
+    for (const spr of this.sprites) {
+      if (!FollowingPkmn.getData()?.followingPkmn()) continue;
+      spr.setReflection(this.viewport, event);
+    }
     const data = FollowingPkmn.getData();
     for (const map of (G.mapFactory as unknown as PokemonMapFactory).maps) {
       if (data && data.originalMapId === data.currentMapId) map?.events?.get(data.eventId)?.erase();

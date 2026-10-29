@@ -6,6 +6,7 @@
 // `this.blocking`, and update() awaits it at the same point in the frame.
 
 import { assetExists } from "../core/assets";
+import { DEBUG } from "../core/debug";
 import { rand } from "../core/random";
 import { Input } from "../rgss/Input";
 import { Graphics } from "../rgss/Graphics";
@@ -305,6 +306,8 @@ export class GamePlayer extends GameCharacter {
       const f = G.mapFactory as unknown as { isPassableFromEdge(x: number, y: number): boolean } | null;
       return f ? f.isPassableFromEdge(nx, ny) : false;
     }
+    // If debug mode is ON and Ctrl key was pressed
+    if (DEBUG && Input.press(Input.CTRL)) return true;
     return super.passable(x, y, d, strict);
   }
 
@@ -505,10 +508,22 @@ export class GamePlayer extends GameCharacter {
     }
   }
 
-  private updateScreenPosition(_lx: number, _ly: number): void {
+  /**
+   * The v20.1 Hotfixes' version (Overworld bug fixes.rb:289, "Fixed a scrolled
+   * screen snapping back to centre on the player as soon as they move"): the
+   * screen only follows the player's movement past the centre.
+   */
+  updateScreenPosition(lastRealX: number, lastRealY: number): void {
     if (this.map.scrolling() || !(this.movedLastFrame || this.movedThisFrame)) return;
-    this.map.displayX = this.realX - SCREEN_CENTER_X;
-    this.map.displayY = this.realY - SCREEN_CENTER_Y;
+    const gameMap = G.gameMap as unknown as GameMap;
+    if ((this.realX < lastRealX && this.realX - gameMap.displayX < SCREEN_CENTER_X) ||
+        (this.realX > lastRealX && this.realX - gameMap.displayX > SCREEN_CENTER_X)) {
+      this.map.displayX += this.realX - lastRealX;
+    }
+    if ((this.realY < lastRealY && this.realY - gameMap.displayY < SCREEN_CENTER_Y) ||
+        (this.realY > lastRealY && this.realY - gameMap.displayY > SCREEN_CENTER_Y)) {
+      this.map.displayY += this.realY - lastRealY;
+    }
   }
 
   private async updateEventTriggering(): Promise<void> {
@@ -552,7 +567,7 @@ async function pbOnStepTakenBase(eventTriggered: boolean): Promise<void> {
   }
   const g = G.pokemonGlobal as unknown as { stepcount?: number };
   g.stepcount = ((g.stepcount ?? 0) + 1) & 0x7fffffff;
-  EventHandlers.triggerSync("on_player_step_taken");
+  await EventHandlers.trigger("on_player_step_taken");
   void eventTriggered;
   G.gameTemp.encounterTriggered = false;
 }

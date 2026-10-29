@@ -3,8 +3,9 @@
 // plugins this game's version calls into:
 //   8  Special Icons Map: draw_special_icons_position (Max Raid den icons).
 //   12 Roaming Icon: draw_roaming_position (icons for roaming Pokémon).
-// The map editor mode ($DEBUG: point renaming, saving town_map.txt) isn't
-// ported; $DEBUG is off in the released game.
+// In Debug mode the map opens as an editor ($DEBUG: Use renames the point
+// under the cursor, and leaving offers to save PBS/town_map.txt through the
+// dev server's file endpoint, debug/devFiles.ts).
 //
 // pbMapScene moves the cursor by `8 * 20 / Graphics.frame_rate` px per frame:
 // 160 px/s at the original 40 fps. Integer division at 60 Hz would give 2 px
@@ -351,6 +352,49 @@ export class PokemonRegionMap_Scene {
     return point.poi; // pbGetMessageFromHash(MessageTypes::PlaceDescriptions, point[3])
   }
 
+  /** pbChangeMapLocation(x, y) (editor mode) */
+  async pbChangeMapLocation(x: number, y: number): Promise<void> {
+    if (!this.editor || !this.map?.points) return;
+    const map = this.map.points.filter((loc) => loc.x === x && loc.y === y)[0];
+    const currentobj = map;
+    let currentname = map ? map.name || "" : "";
+    const { pbMessageFreeText } = await import("../party/mail");
+    currentname = await pbMessageFreeText(_INTL("Set the name for this point."), currentname, false, 250, 240, () => this.pbUpdate());
+    // (pbMessageFreeText always returns a string, so Ruby's `if currentname` always passes.)
+    if (currentname !== null) {
+      if (currentobj) {
+        currentobj.name = currentname;
+      } else {
+        const newobj: TownMapPoint = { x, y, name: currentname, poi: "", flyMapId: null, flyX: null, flyY: null, switchId: null };
+        this.map.points.push(newobj);
+      }
+      this.changed = true;
+    }
+  }
+
+  /** pbSaveMapData (editor mode): writes PBS/town_map.txt from the edited map data. */
+  async pbSaveMapData(): Promise<void> {
+    const { csvQuote, PbsFile, pbWriteCsvRecord } = await import("../../compiler/Compiler");
+    const { addPBSHeaderToFile } = await import("../../compiler/WritePBS");
+    const { DevFiles, devWriteOrExplain } = await import("../../debug/devFiles");
+    const f = new PbsFile("PBS/town_map.txt");
+    addPBSHeaderToFile(f);
+    for (let i = 0; i < this.mapData.length; i++) {
+      const map = this.mapData[i];
+      if (!map) continue;
+      f.write("#-------------------------------\r\n");
+      f.write(`[${i}]\r\n`);
+      f.write(`Name = ${csvQuote(map.name)}\r\n`);
+      f.write(`Filename = ${csvQuote(map.filename)}\r\n`);
+      for (const loc of map.points) {
+        f.write("Point = ");
+        pbWriteCsvRecord([loc.x, loc.y, loc.name, loc.poi, loc.flyMapId, loc.flyX, loc.flyY, loc.switchId], f, [null, "uussUUUU"]);
+        f.write("\r\n");
+      }
+    }
+    await devWriteOrExplain(f.path, () => DevFiles.write(f.path, f.content));
+  }
+
   pbGetHealingSpot(x: number, y: number): FlyDestination | null {
     const point = this.visiblePoint(x, y);
     if (!point || point === "hidden") return null;
@@ -420,8 +464,8 @@ export class PokemonRegionMap_Scene {
       mapbottom.maplocation = this.pbGetMapLocation(this.mapX, this.mapY);
       mapbottom.mapdetails = this.pbGetMapDetails(this.mapX, this.mapY);
       if (Input.trigger(Input.BACK)) {
-        // (The editor's "Save changes?" prompt isn't ported.)
         if (this.editor && this.changed) {
+          if (await pbConfirmMessage(_INTL("Save changes?"), () => this.pbUpdate())) await this.pbSaveMapData();
           if (await pbConfirmMessage(_INTL("Exit from the map?"), () => this.pbUpdate())) break;
         } else {
           break;
@@ -433,6 +477,8 @@ export class PokemonRegionMap_Scene {
           const name = pbGetMapNameFromId(healspot[0]);
           if (await pbConfirmMessage(_INTL("Would you like to use Fly to go to {1}?", name), () => this.pbUpdate())) return healspot;
         }
+      } else if (Input.trigger(Input.USE) && this.editor) { // Intentionally after other USE input check
+        await this.pbChangeMapLocation(this.mapX, this.mapY);
       } else if (Input.trigger(Input.ACTION) && !this.wallmap && !this.flyMap && (await pbCanFly())) {
         pbPlayDecisionSE();
         this.mode = this.mode === 1 ? 0 : 1;

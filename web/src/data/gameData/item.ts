@@ -14,6 +14,7 @@ import { type Id, SymbolData, hasFlag } from "./gameData";
 import { Move } from "./move";
 import { Species } from "./species";
 import { Type } from "./type";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 type Resolve = (path: string) => string | null;
 
@@ -125,9 +126,9 @@ export class Item extends SymbolData {
     this.realHeldDescription = hash.heldDescription ?? hash.realHeldDescription ?? null;
   }
 
-  get name(): string { return this.realName; }
-  get namePlural(): string { return this.realNamePlural; }
-  get description(): string { return this.realDescription; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.Items, this.realName); }
+  get namePlural(): string { return pbGetMessageFromHash(MessageTypes.ItemPlurals, this.realNamePlural); }
+  get description(): string { return pbGetMessageFromHash(MessageTypes.ItemDescriptions, this.realDescription); }
 
   hasFlag(flag: string): boolean { return hasFlag(this.flags, flag); }
 

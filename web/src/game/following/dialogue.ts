@@ -102,7 +102,7 @@ EventHandlers.add("following_pkmn_talk", "amie", async (_pkmn, _randomVal, skipA
   let cmd = 1;
   if (!skipAmie) {
     cmd = await pbMessage(_INTL("What would you like to do?"), [_INTL("Play"), _INTL("Talk"), _INTL("Cancel")]);
-    // TODO(amie): Pokémon Amie's scene isn't ported; this calls it once registered.
+    // pokemonAmieRefresh: plugins/pokemonAmie (registered at boot).
     if (cmd === 0) await evaluateAsync({ call: "pokemonAmieRefresh", args: [] }, { event: null, interpreter: null });
   }
   if (cmd === 0 || cmd === 2) return true;

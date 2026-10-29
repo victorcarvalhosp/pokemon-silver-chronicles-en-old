@@ -692,6 +692,7 @@ export async function pbShowCommands(
 ): Promise<number> {
   if (!commands) return 0;
   const cmdwindow = new Window_CommandPokemonEx(commands);
+  G.gameTemp.cmdWindow = cmdwindow; // (Map Zoom hides it while it snaps the screen)
   cmdwindow.z = 99999;
   cmdwindow.visible = true;
   cmdwindow.resizeToFit(cmdwindow.commands);
@@ -791,4 +792,54 @@ export async function pbMessageWaitForInput(msgwindow: Window_AdvancedTextPokemo
     elapsed += clock.tick();
   }
   if (msgwindow && showPause) msgwindow.stopPause();
+}
+
+//===============================================================================
+// pbEventCommentInput (top of 011_Messages.rb)
+//===============================================================================
+/** One RPG::EventCommand as Ruby sees it: a comment's first line is code 108, the others 408. */
+export interface RawCommand {
+  code: number;
+  parameters: unknown[];
+}
+
+/** A page list with comments split back into RPG Maker's 108/408 commands, plus the closing code 0. */
+export function rawCommandList(list: readonly { cmd: string; [field: string]: unknown }[]): RawCommand[] {
+  const ret: RawCommand[] = [];
+  for (const c of list) {
+    if (c.cmd === "comment") {
+      const lines = (c.lines as string[] | undefined) ?? [];
+      lines.forEach((line, i) => ret.push({ code: i === 0 ? 108 : 408, parameters: [line] }));
+    } else {
+      // Only comments are read through this; another command's parameters[0]
+      // is reported as the command itself.
+      ret.push({ code: -1, parameters: [c] });
+    }
+  }
+  ret.push({ code: 0, parameters: [] });
+  return ret;
+}
+
+/**
+ * pbEventCommentInput(event, elements, trigger): the `elements` command lines
+ * after the comment line `trigger` in the event's current page, or null.
+ */
+export function pbEventCommentInput(event: { list: readonly { cmd: string; [field: string]: unknown }[] | null } | null, elements: number, trigger: string): unknown[] | null {
+  const parameters: unknown[] = [];
+  const evList = event?.list;
+  if (evList == null) return null;
+  if (!Array.isArray(evList)) return null;
+  const list = rawCommandList(evList as { cmd: string }[]);
+  for (let index = 0; index < list.length; index++) {
+    const item = list[index]!;
+    if (item.code !== 108 && item.code !== 408) continue;
+    if (item.parameters[0] !== trigger) continue;
+    const start = index + 1;
+    const finish = start + elements;
+    for (let id = start; id < finish; id++) {
+      if (list[id]) parameters.push(list[id]!.parameters[0]);
+    }
+    return parameters;
+  }
+  return null;
 }

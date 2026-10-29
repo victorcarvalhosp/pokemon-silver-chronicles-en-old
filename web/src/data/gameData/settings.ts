@@ -43,8 +43,19 @@ export const Settings = {
   /** Per pocket (index = pocket - 1). ZUD appends `true` for the Z-Crystals pocket. */
   BAG_POCKET_AUTO_SORT: [false, false, false, true, true, false, false, false, true],
   BAG_MAX_PER_SLOT: 999,
+  /** Whether the Move Relearner can also teach the first moves (egg moves known when hatched, TR moves). */
+  MOVE_RELEARNER_CAN_TEACH_MORE_MOVES: MECHANICS_GENERATION >= 6,
   NUM_STORAGE_BOXES: 40,
   HEAL_STORED_POKEMON: MECHANICS_GENERATION >= 8,
+  /**
+   * An array of available languages in the game, and their corresponding message
+   * file in the Data folder (served from web/data as .json, see core/intl.ts).
+   * Edit only if you have 2 or more languages to choose from.
+   */
+  LANGUAGES: [
+    //  ["English", "english.dat"],
+    //  ["Deutsch", "deutsch.dat"]
+  ] as [string, string][],
   USE_CURRENT_REGION_DEX: false,
   DEX_SHOWS_ALL_FORMS: false,
   STARTING_OVER_SWITCH: 1,
@@ -123,6 +134,10 @@ export const Settings = {
   MAXRAID_KOS: 3,
   MAXRAID_TIMER: 14,
   MAXRAID_SHIELD: 2,
+  /** Dark Lair frequency (0 = Never, 1 = Rarely, 2 = Common, 3 = Always). */
+  DARK_LAIR_FREQUENCY: 1,
+  UNLOCK_DATABASE_FROM_RAIDS: true,
+  HIDE_UNSEEN_SPECIES: false,
   DYNAMAX_BANLIST: ["PICHU_2", "GRENINJA_1", "GRENINJA_2"],
   /** Generation 9 Pack is installed. */
   GENERATION_LIMIT: 9,

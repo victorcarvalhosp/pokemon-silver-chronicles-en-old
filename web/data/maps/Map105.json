@@ -1305,7 +1305,11 @@
                     "cmd": "text",
                     "text": "This is the last time I'll give you something to prove that I'm really a time traveler from the past."
                   },
-                  {"cmd":"script","ruby":"pkmn = Pokemon.new(:AMAURA,20)\npbAddPokemon(pkmn)"},
+                  {
+                    "cmd": "call",
+                    "fn": "pbAddPokemon",
+                    "args": [{"call":"Pokemon.new","args":["AMAURA",20]}]
+                  },
                   {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                   {
                     "cmd": "text",

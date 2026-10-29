@@ -4159,7 +4159,7 @@
             {"cmd":"erasePicture","id":3},
             {"cmd":"switches","from":192,"to":192,"value":true},
             {"cmd":"selfSwitch","ch":"A","value":true},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"transfer","map":347,"x":17,"y":43,"direction":0,"fade":true}
           ]
         },
@@ -4775,7 +4775,7 @@
                 ]
               }
             },
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"switches","from":197,"to":197,"value":true},
             {"cmd":"transfer","map":256,"x":28,"y":28,"direction":0,"fade":true},
             {
@@ -4898,7 +4898,7 @@
                 {"cmd":"textOptions","position":1,"frame":0},
                 {"cmd":"text","text":"Nosso herói volta para o hotel e tem um bom descanso..."},
                 {"cmd":"textOptions","position":2,"frame":0},
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"variables","from":48,"to":48,"op":"add","value":1},
                 {"cmd":"selfSwitch","ch":"B","value":true},
                 {"cmd":"switches","from":204,"to":204,"value":true},
@@ -4924,7 +4924,7 @@
                 {"cmd":"textOptions","position":1,"frame":0},
                 {"cmd":"text","text":"Nosso herói volta para o hotel e tem um bom descanso..."},
                 {"cmd":"textOptions","position":2,"frame":0},
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"variables","from":45,"to":45,"op":"add","value":1},
                 {"cmd":"selfSwitch","ch":"B","value":true},
                 {"cmd":"switches","from":203,"to":203,"value":true},
@@ -5058,7 +5058,7 @@
                   "then": [{"cmd":"call","fn":"pbChangePlayer","args":[0]}],
                   "else": [{"cmd":"call","fn":"pbChangePlayer","args":[1]}]
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":202,"to":202,"value":false},
                 {"cmd":"transfer","map":349,"x":11,"y":6,"direction":2,"fade":true}
               ],
@@ -5079,7 +5079,7 @@
                   "then": [{"cmd":"call","fn":"pbChangePlayer","args":[0]}],
                   "else": [{"cmd":"call","fn":"pbChangePlayer","args":[1]}]
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":202,"to":202,"value":false},
                 {"cmd":"transfer","map":349,"x":11,"y":6,"direction":2,"fade":true},
                 {"cmd":"exitEvent"}
@@ -5242,7 +5242,7 @@
                 {"cmd":"textOptions","position":1,"frame":0},
                 {"cmd":"text","text":"Nosso herói volta para o hotel e tem um bom descanso..."},
                 {"cmd":"textOptions","position":2,"frame":0},
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":202,"to":202,"value":false},
                 {"cmd":"transfer","map":284,"x":6,"y":5,"direction":2,"fade":true}
               ],
@@ -5304,11 +5304,11 @@
                   "then": [{"cmd":"call","fn":"pbChangePlayer","args":[0]}],
                   "else": [{"cmd":"call","fn":"pbChangePlayer","args":[1]}]
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"textOptions","position":1,"frame":0},
                 {"cmd":"text","text":"Nosso herói volta para o hotel e tem um bom descanso..."},
                 {"cmd":"textOptions","position":2,"frame":0},
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":202,"to":202,"value":false},
                 {"cmd":"transfer","map":284,"x":6,"y":5,"direction":2,"fade":true},
                 {"cmd":"switches","from":202,"to":202,"value":false}

@@ -188,7 +188,17 @@
                 {"cmd":"exitEvent"}
               ]
             },
-            {"cmd":"script","ruby":"sp = GameData::Species.get(pbGet(1))\npbSet(3, sp.name)"},
+            {
+              "cmd": "call",
+              "fn": "pbSet",
+              "args": [
+                3,
+                {
+                  "call": "name",
+                  "on": {"call":"GameData::Species.get","args":[{"call":"pbGet","args":[1]}]}
+                }
+              ]
+            },
             {"cmd":"text","text":"\\CN\\bWould you like \\v[3]?"},
             {
               "cmd": "choices",

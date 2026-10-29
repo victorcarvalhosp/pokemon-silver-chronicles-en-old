@@ -4,7 +4,7 @@
 //   pbEffectsOnMakingHit (Rage Fist counter, Basculin recoil evolution).
 // - ZUD Mechanics ([004] Battle_Battler/Battler_Overrides.rb:229):
 //   pbEffectsOnMakingHit (Grudge/Destiny Bond with Power Moves and Dynamax);
-//   [009] Max Raid/Raid_Battle_Overrides.rb:27 pbEffectsAfterMove (deferred hook).
+//   [009] Max Raid/Raid_Battle_Overrides.rb:27 pbEffectsAfterMove (in zud/raid/).
 // Alias chains: pbEffectsOnMakingHit = ZUD( Gen 9( core ) );
 // pbEffectsAfterMove = ZUD Max Raid( Gen 9( core ) ).
 
@@ -17,6 +17,7 @@ import { ItemEffects } from "../other/ItemEffects";
 import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
 import { Battler } from "./Battler";
+import { raidEffectsAfterMove } from "../zud/raid/Raid_Battle_Overrides";
 
 const methods = {
   //=============================================================================
@@ -246,11 +247,9 @@ const methods = {
     if (numHits > 0) {
       for (const b of this.battle.allBattlers()) await b.pbItemEndOfMoveCheck();
     }
-    // ZUD Mechanics (Max Raid): special Max Raid effects after move usage.
-    if (this.battle.raidBattle && move.damagingMove()) {
-      // Deferred: Malicious Wave, Max Raid shields and Invigorating Wave
-      // (ZUD Mechanics/[009] Max Raid/Raid_Battle_Overrides.rb:30-140).
-    }
+    // ZUD Mechanics (Max Raid): special Max Raid effects after move usage
+    // (Malicious Wave, Max Raid shields and Invigorating Wave).
+    await raidEffectsAfterMove(this, user, targets, move, numHits);
   },
 
   /** Everything in this method is negated by Sheer Force. */

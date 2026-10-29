@@ -567,7 +567,7 @@ export class PokemonEvolutionScene {
     }
     // Learn moves upon evolution for evolved species
     for (const move of movesToLearn.moves) {
-      await pbLearnMove(this.pokemon, move, true); // { pbUpdate }
+      await pbLearnMove(this.pokemon, move, true, false, () => this.pbUpdate());
     }
   }
 

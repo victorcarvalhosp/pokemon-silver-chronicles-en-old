@@ -6,7 +6,7 @@
 // Ruby caches these in $game_temp on first use; here they're loaded with the
 // rest of the PBS data (GameData.loadAll).
 
-import type { PhoneData, RaidRanks, RegionalDexes, TownMap } from "../pbs/types";
+import type { AdventureMaps, PhoneData, RaidRanks, RegionalDexes, TownMap, TrainerList } from "../pbs/types";
 import type { Id } from "./gameData";
 import { Species } from "./species";
 
@@ -15,6 +15,10 @@ const misc = {
   phone: null as PhoneDatabase | null,
   regionalDexes: [] as RegionalDexes,
   raidRanks: { ranks: [], total: [], banned: [] } as RaidRanks,
+  /** Data/trainer_lists.dat (Battle Frontier trainers and Pokémon; game/frontier/challengeData.ts). */
+  trainerLists: [] as TrainerList[],
+  /** ZUD Mechanics' Data/adventure_maps.dat (the Max Lair maps). */
+  lairMaps: [] as AdventureMaps,
 };
 
 /** PhoneDatabase */
@@ -33,11 +37,18 @@ export class PhoneDatabase {
   }
 }
 
-export function setMiscPBSData(data: { townMap?: TownMap; phone?: PhoneData | null; regionalDexes?: RegionalDexes; raidRanks?: RaidRanks }): void {
+export function setMiscPBSData(data: { townMap?: TownMap; phone?: PhoneData | null; regionalDexes?: RegionalDexes; raidRanks?: RaidRanks; trainerLists?: TrainerList[]; lairMaps?: AdventureMaps }): void {
   if (data.townMap) misc.townMap = data.townMap;
   if (data.phone !== undefined) misc.phone = data.phone ? PhoneDatabase.from(data.phone) : null;
   if (data.regionalDexes) misc.regionalDexes = data.regionalDexes;
   if (data.raidRanks) misc.raidRanks = data.raidRanks;
+  if (data.trainerLists) misc.trainerLists = data.trainerLists;
+  if (data.lairMaps) misc.lairMaps = data.lairMaps;
+}
+
+/** ZUD Mechanics' pbLoadLairMapData (Adventure_Main.rb:467). */
+export function pbLoadLairMapData(): AdventureMaps {
+  return misc.lairMaps;
 }
 
 export function pbLoadTownMapData(): TownMap {
@@ -50,6 +61,11 @@ export function pbLoadPhoneData(): PhoneDatabase | null {
 
 export function pbLoadRegionalDexes(): RegionalDexes {
   return misc.regionalDexes;
+}
+
+/** load_data("Data/trainer_lists.dat") */
+export function pbLoadTrainerLists(): TrainerList[] {
+  return misc.trainerLists;
 }
 
 /** ZUD Mechanics' pbGetRaidRank (the compiled raid_ranks.dat). */

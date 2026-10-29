@@ -2,6 +2,8 @@
 // Essentials writes it to Data/debuglog.txt when $INTERNAL is set; here the
 // lines go to an optional sink (tests and the debug window can attach one).
 
+import { pbPrintException } from "../../debug/Errors";
+
 export const PBDebug = {
   /** Receives every logged line; null discards them. */
   sink: null as ((msg: string) => void) | null,
@@ -35,8 +37,8 @@ export const PBDebug = {
       PBDebug.log(`**Exception: ${e.message}`);
       PBDebug.log(String(e.stack));
       PBDebug.log("");
-      console.error(e); // pbPrintException($!)
       // Ruby shows the exception in a message box and carries on with the battle.
+      await pbPrintException(e);
       // In the browser an error that repeats every phase would spin forever, so
       // unless PBDebug.continueOnError is set the error propagates.
       if (!PBDebug.continueOnError) throw e;

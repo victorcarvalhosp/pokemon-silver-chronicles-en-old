@@ -123,8 +123,9 @@
                         "text": "Hey there, Trainer! I see you have some powerful cards in your deck. Let's see if they can stand up to my well-crafted strategy! Get ready for a duel!"
                       },
                       {
-                        "cmd": "script",
-                        "ruby": "result = pbTriadDuel(\"Alex\", 0, 5, [\"elements\", \"noprize\"], \n[:CHINCHOU,:SANDSHREW,:VULPIX,:PARAS,:MACHOP])\npbSet(2, result)"
+                        "cmd": "call",
+                        "fn": "pbSet",
+                        "args": [2,{"call":"pbTriadDuel","args":["Alex",0,5,["elements","noprize"],["CHINCHOU","SANDSHREW","VULPIX","PARAS","MACHOP"]]}]
                       },
                       {
                         "cmd": "if",

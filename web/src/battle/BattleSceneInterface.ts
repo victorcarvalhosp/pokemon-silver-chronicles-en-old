@@ -159,6 +159,9 @@ export interface IBattleScene {
   pbShowDynamax?(idxBattler: number): Promise<void>;
   pbRevertDynamax?(idxBattler: number, withForm?: boolean): Promise<void>;
   pbDynamaxSendOut?(idxBattler: number, xpos: number, ypos: number): Promise<void>;
+  /** ZUD Mechanics' Max Raid animations (zud/raid/scene, installed on BattleScene with zud/scene). */
+  pbRaidShield?(battler: Battler): Promise<void>;
+  pbWaveAttack?(idxBattler: number): Promise<void>;
   /** Generation 9 Pack (Legend Plate Arceus). */
   pbArceusTransform?(index: number, type?: Id): Promise<void>;
 }

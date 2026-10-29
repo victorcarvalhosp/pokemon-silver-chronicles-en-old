@@ -546,7 +546,25 @@
                       {"cmd":"playMe","audio":{"name":"pegapokemon","volume":100,"pitch":100}},
                       {
                         "cmd": "script",
-                        "ruby": "pkmn = Pokemon.new(:HITMONLEE,30)\npkmn.learn_move(:ENDURE)\npkmn.learn_move(:BLAZEKICK)\npkmn.learn_move(:COACHING)\npkmn.learn_move(:HIGHJUMPKICK)\npbAddPokemon(pkmn)"
+                        "do": [
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"Pokemon.new","args":["HITMONLEE",30]}
+                          },
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["ENDURE"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["BLAZEKICK"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["COACHING"]},
+                          {
+                            "cmd": "call",
+                            "fn": "learn_move",
+                            "on": {"call":"pkmn"},
+                            "args": ["HIGHJUMPKICK"]
+                          },
+                          {"cmd":"call","fn":"pbAddPokemon","args":[{"call":"pkmn"}]}
+                        ]
                       },
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {
@@ -670,7 +688,25 @@
                       {"cmd":"playMe","audio":{"name":"pegapokemon","volume":100,"pitch":100}},
                       {
                         "cmd": "script",
-                        "ruby": "pkmn = Pokemon.new(:HITMONCHAN,30)\npkmn.learn_move(:ENDURE)\npkmn.learn_move(:FIREPUNCH)\npkmn.learn_move(:COACHING)\npkmn.learn_move(:CLOSECOMBAT)\npbAddPokemon(pkmn)"
+                        "do": [
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"Pokemon.new","args":["HITMONCHAN",30]}
+                          },
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["ENDURE"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["FIREPUNCH"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["COACHING"]},
+                          {
+                            "cmd": "call",
+                            "fn": "learn_move",
+                            "on": {"call":"pkmn"},
+                            "args": ["CLOSECOMBAT"]
+                          },
+                          {"cmd":"call","fn":"pbAddPokemon","args":[{"call":"pkmn"}]}
+                        ]
                       },
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {

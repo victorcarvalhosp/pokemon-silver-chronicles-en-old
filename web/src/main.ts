@@ -21,6 +21,9 @@ import { preloadBitmaps } from "./ui/rpgCache";
 import { pbSaveScreen } from "./ui/save/saveScreen";
 import { runTitleScreen } from "./ui/scenes/SplashesAndTitleScreen";
 import { MenuScreens } from "./ui/menus/menuScreens";
+import "./debug"; // the Debug menus (shown only with $DEBUG)
+import { Console } from "./debug/DebugConsole";
+import { pbPrintException } from "./debug/Errors";
 
 const FONT_FILES = [
   "power clear bold.ttf", "power clear.ttf", "power green narrow.ttf", "power green small.ttf",
@@ -28,6 +31,7 @@ const FONT_FILES = [
 ];
 
 const hud = document.getElementById("hud")!;
+Console.setupConsole();
 // PBDebug.logonerr: as in the original, an error in a battle phase is reported
 // (in the console here) and the battle carries on. Tests leave this off.
 PBDebug.continueOnError = true;
@@ -73,7 +77,8 @@ runGame(
     await Game.setUpSystem();
     for (;;) {
       Graphics.freeze();
-      const branch = await runTitleScreen(); // Scene_Intro: splashes, then the title
+      // pbCallTitle: Scene_DebugIntro in Debug mode (straight to the load screen), else Scene_Intro
+      const branch = DEBUG ? null : await runTitleScreen(); // Scene_Intro: splashes, then the title
       Graphics.freeze();
       const screen = new PokemonLoadScreen(new PokemonLoad_Scene());
       await screen.init();
@@ -95,5 +100,7 @@ runGame(
     console.error(e);
     crashed = true;
     hud.textContent = `Error: ${(e as Error).message ?? e}`;
+    // mainFunction: in Debug mode pbCriticalCode shows the exception (pbPrintException).
+    if (DEBUG) void pbPrintException(e);
   },
 );

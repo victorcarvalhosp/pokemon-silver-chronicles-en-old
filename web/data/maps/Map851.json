@@ -242,7 +242,20 @@
             {"cmd":"switches","from":32,"to":32,"value":true},
             {
               "cmd": "script",
-              "ruby": "pkmn = Pokemon.new(:MEWTWO, 70)\npkmn.shiny = true\npkmn.learn_move(:PSYCHOCUT)\npkmn.ability_index = 2\npkmn.ace = true\nWildBattle.start(pkmn)"
+              "do": [
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["MEWTWO",70]}
+                },
+                {"cmd":"assign","target":"pkmn.shiny","args":[],"op":"=","value":true},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["PSYCHOCUT"]},
+                {"cmd":"assign","target":"pkmn.ability_index","args":[],"op":"=","value":2},
+                {"cmd":"assign","target":"pkmn.ace","args":[],"op":"=","value":true},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"switches","from":32,"to":32,"value":false},
             {"cmd":"switches","from":32,"to":32,"value":false},
@@ -303,8 +316,13 @@
           "trigger": 0,
           "list": [
             {
-              "cmd": "script",
-              "ruby": "pbMaxRaidDen(\n  [nil],   # don't care about habitat; we’ll force species\n  {\n    :species => :PIKACHU,\n    :rank    => 3,                 # raid rank\n    :loot    => [:DRAGONFANG, :DYNAMAXCANDY]\n  },\n  { :gmaxfactor => false, :obtaintext => \"a stormy Max Raid Den\" }\n)"
+              "cmd": "call",
+              "fn": "pbMaxRaidDen",
+              "args": [
+                [null],
+                {"hash":{"species":"PIKACHU","rank":3,"loot":["DRAGONFANG","DYNAMAXCANDY"]}},
+                {"hash":{"gmaxfactor":false,"obtaintext":"a stormy Max Raid Den"}}
+              ]
             }
           ]
         }

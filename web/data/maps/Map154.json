@@ -222,7 +222,17 @@
                           {"cmd":"playMe","audio":{"name":"pegapokemon","volume":100,"pitch":100}},
                           {
                             "cmd": "script",
-                            "ruby": "pkmn = Pokemon.new(:LAPRAS, 50)\npkmn.shiny = true\npbAddToParty(pkmn)"
+                            "do": [
+                              {
+                                "cmd": "assign",
+                                "target": "pkmn",
+                                "args": [],
+                                "op": "=",
+                                "value": {"call":"Pokemon.new","args":["LAPRAS",50]}
+                              },
+                              {"cmd":"assign","target":"pkmn.shiny","args":[],"op":"=","value":true},
+                              {"cmd":"call","fn":"pbAddToParty","args":[{"call":"pkmn"}]}
+                            ]
                           },
                           {"cmd":"call","fn":"completeQuest","args":["RescueLapras"]},
                           {"cmd":"selfSwitch","ch":"A","value":true}

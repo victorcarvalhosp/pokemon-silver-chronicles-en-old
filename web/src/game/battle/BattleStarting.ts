@@ -24,6 +24,7 @@ import { Species } from "../../data/gameData/species";
 import { TrainerType } from "../../data/gameData/trainerType";
 import { Weather } from "../../data/gameData/weather";
 import { Graphics } from "../../rgss/Graphics";
+import { DEBUG } from "../../core/debug";
 import { Input } from "../../rgss/Input";
 import { _INTL } from "../../ui/messageConfig";
 import { pbMessage } from "../../ui/messages";
@@ -216,13 +217,16 @@ export const battleFactory = {
 // Helper methods for setting up and closing down battles
 //===============================================================================
 export const BattleCreationHelperMethods = {
-  /** skip_battle?: if the player has no able Pokémon ($DEBUG Ctrl skipping doesn't exist here). */
+  /** skip_battle?: if the player has no able Pokémon, or if holding Ctrl in Debug mode. */
   skipBattle_(): boolean {
-    return player().ablePokemonCount() === 0;
+    if (player().ablePokemonCount() === 0) return true;
+    if (DEBUG && Input.press(Input.CTRL)) return true;
+    return false;
   },
 
   async skipBattle(outcomeVariable: number, trainerBattle = false): Promise<number> {
     if (!trainerBattle && player().pokemonCount() > 0) await pbMessage(_INTL("SKIPPING BATTLE..."));
+    if (trainerBattle && DEBUG) await pbMessage(_INTL("SKIPPING BATTLE..."));
     if (trainerBattle && player().ablePokemonCount() > 0) await pbMessage(_INTL("AFTER WINNING..."));
     clearBattleRules();
     const t = G.gameTemp;

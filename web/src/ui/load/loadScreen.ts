@@ -1,6 +1,8 @@
 // Port of 016_UI/013_UI_Load.rb: PokemonLoadPanel, PokemonLoad_Scene and
 // PokemonLoadScreen (Continue / New Game / Options / Quit).
 
+import { _INTL, pbChooseLanguage, pbLoadMessages } from "../../core/intl";
+import { Settings } from "../../data/gameData/settings";
 import { Bitmap } from "../../rgss/Bitmap";
 import { Sprite, Viewport } from "../../rgss/display";
 import { Graphics } from "../../rgss/Graphics";
@@ -20,6 +22,7 @@ import { pbDrawTextPositions } from "../drawText";
 import { pbFadeInAndShow, pbFadeOutAndHide, pbFadeOutIn } from "../fades";
 import { pbDisposeSpriteHash, pbSetSystemFont, pbUpdateSpriteHash } from "../messageConfig";
 import { pbConfirmMessageSerious, pbMessage } from "../messages";
+import { MenuFlags, MenuScreens } from "../menus/menuScreens";
 import { addBackgroundOrColoredPlane, pbGetMapNameFromId, TrainerWalkingCharSprite } from "../planes";
 import { PokemonOption_Scene, PokemonOptionScreen } from "../options/options";
 import { preloadBitmaps } from "../rpgCache";
@@ -307,6 +310,7 @@ export class PokemonLoadScreen {
     let cmdContinue = -1;
     let cmdNewGame = -1;
     let cmdOptions = -1;
+    let cmdDebug = -1;
     let cmdQuit = -1;
     const showContinue = Object.keys(this.saveData).length > 0;
     const trainer = showContinue ? (trainerFromSave(this.saveData) as unknown as PanelTrainer) : null;
@@ -319,6 +323,15 @@ export class PokemonLoadScreen {
     commands.push("New Game");
     cmdOptions = commands.length;
     commands.push("Options");
+    let cmdLanguage = -1;
+    if (Settings.LANGUAGES.length >= 2) {
+      cmdLanguage = commands.length;
+      commands.push(_INTL("Language"));
+    }
+    if (MenuFlags.DEBUG) {
+      cmdDebug = commands.length;
+      commands.push("Debug");
+    }
     cmdQuit = commands.length;
     commands.push("Quit Game");
     const mapId = showContinue ? savedMapId(this.saveData) : 0;
@@ -344,6 +357,17 @@ export class PokemonLoadScreen {
           const screen = new PokemonOptionScreen(scene);
           await screen.pbStartScreen(true);
         });
+      } else if (cmdLanguage >= 0 && command === cmdLanguage) {
+        await this.scene.pbEndScene();
+        G.pokemonSystem.language = await pbChooseLanguage(Settings.LANGUAGES);
+        await pbLoadMessages("Data/" + Settings.LANGUAGES[G.pokemonSystem.language]![1]);
+        if (showContinue) {
+          this.saveData.pokemon_system = { ...(this.saveData.pokemon_system as object), language: G.pokemonSystem.language };
+          await SaveData.writeToFile(this.saveData);
+        }
+        return { action: "title" }; // $scene = pbCallTitle
+      } else if (cmdDebug >= 0 && command === cmdDebug) {
+        await pbFadeOutIn(async () => { await MenuScreens.debugMenu?.(false); });
       } else if (command === cmdQuit) {
         pbSEPlay("GUI menu close", 80); // pbPlayCloseMenuSE
         await this.scene.pbEndScene();

@@ -20,9 +20,7 @@ import { AbilityEffects } from "../other/AbilityEffects";
 import { PBEffects } from "../other/PBEffects";
 import type { Move } from "../move/Move";
 import { Battle } from "./Battle";
-
-/** $DEBUG: off, as in a released game (see MenuFlags.DEBUG in ui/menus/menuScreens.ts). */
-const DEBUG = false;
+import { DEBUG } from "../../core/debug"; // $DEBUG
 
 /** nil_or_empty? */
 const nilOrEmpty = (s: string | null | undefined): boolean => s == null || s === "";

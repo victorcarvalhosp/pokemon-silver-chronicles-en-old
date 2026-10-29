@@ -2110,7 +2110,7 @@
                         "cmd": "if",
                         "cond": {"variable":1,"op":"==","value":1},
                         "then": [
-                          {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                          {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                           {"cmd":"selfSwitch","ch":"A","value":true}
                         ]
                       },
@@ -2119,7 +2119,7 @@
                         "cmd": "if",
                         "cond": {"variable":1,"op":"==","value":3},
                         "then": [
-                          {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                          {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                           {"cmd":"selfSwitch","ch":"A","value":true}
                         ]
                       },

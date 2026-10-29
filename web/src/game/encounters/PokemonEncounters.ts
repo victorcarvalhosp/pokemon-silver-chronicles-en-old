@@ -9,6 +9,8 @@
 // out in a different order than a stable sort, which changes which species a
 // given roll picks.
 
+import { DEBUG } from "../../core/debug";
+import { Input } from "../../rgss/Input";
 import { rand } from "../../core/random";
 import { Encounter } from "../../data/gameData/encounter";
 import { EncounterType } from "../../data/gameData/encounterType";
@@ -184,7 +186,7 @@ export class PokemonEncounters {
     if (!encType || !EncounterType.exists(encType)) throw new Error(`Encounter type ${encType} does not exist`);
     if (G.gameSystem.encounterDisabled) return false;
     if (!G.player) return false;
-    // ($DEBUG && Input.press?(Input::CTRL): there is no debug mode.)
+    if (DEBUG && Input.press(Input.CTRL)) return false;
     // Check if enc_type has a defined step chance/encounter table
     if (!this.stepChances[encType]) return false;
     if (!this.hasEncounterType(encType)) return false;

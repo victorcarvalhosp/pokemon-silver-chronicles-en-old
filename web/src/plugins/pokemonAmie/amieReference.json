@@ -1,0 +1,6455 @@
+{
+  "eatable": [
+    "LAVACOOKIE",
+    "OLDGATEAU",
+    "CASTELIACONE",
+    "RAGECANDYBAR",
+    "SWEETHEART",
+    "RARECANDY",
+    "CHERIBERRY",
+    "CHESTOBERRY",
+    "PECHABERRY",
+    "RAWSTBERRY",
+    "ASPEARBERRY",
+    "LEPPABERRY",
+    "ORANBERRY",
+    "PERSIMBERRY",
+    "LUMBERRY",
+    "SITRUSBERRY",
+    "FIGYBERRY",
+    "WIKIBERRY",
+    "MAGOBERRY",
+    "AGUAVBERRY",
+    "IAPAPABERRY",
+    "RAZZBERRY",
+    "BLUKBERRY",
+    "NANABBERRY",
+    "WEPEARBERRY",
+    "PINAPBERRY",
+    "POMEGBERRY",
+    "KELPSYBERRY",
+    "QUALOTBERRY",
+    "HONDEWBERRY",
+    "GREPABERRY",
+    "TAMATOBERRY",
+    "CORNNBERRY",
+    "MAGOSTBERRY",
+    "RABUTABERRY",
+    "NOMELBERRY",
+    "SPELONBERRY",
+    "PAMTREBERRY",
+    "WATMELBERRY",
+    "DURINBERRY",
+    "BELUEBERRY",
+    "OCCABERRY",
+    "PASSHOBERRY",
+    "WACANBERRY",
+    "RINDOBERRY",
+    "YACHEBERRY",
+    "CHOPLEBERRY",
+    "KEBIABERRY",
+    "SHUCABERRY",
+    "COBABERRY",
+    "PAYAPABERRY",
+    "TANGABERRY",
+    "CHARTIBERRY",
+    "KASIBBERRY",
+    "HABANBERRY",
+    "COLBURBERRY",
+    "BABIRIBERRY",
+    "CHILANBERRY",
+    "LIECHIBERRY",
+    "GANLONBERRY",
+    "SALACBERRY",
+    "PETAYABERRY",
+    "APICOTBERRY",
+    "LANSATBERRY",
+    "STARFBERRY",
+    "ENIGMABERRY",
+    "MICLEBERRY",
+    "CUSTAPBERRY",
+    "JABOCABERRY",
+    "ROWAPBERRY"
+  ],
+  "maxPoints": 255,
+  "stats": [
+    {
+      "setup": {
+        "method": "walking",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "sendInBattle",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPlainBean",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+          864355068
+        ]
+      },
+      "result": {
+        "amie": [
+          3,
+          100,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPatternBean",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+          700044574
+        ]
+      },
+      "result": {
+        "amie": [
+          5,
+          100,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedRainbowBean",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+          1016509070
+        ]
+      },
+      "result": {
+        "amie": [
+          125,
+          100,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasada",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          5,
+          255,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaDisliked",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          3,
+          255,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaLiked",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          10,
+          255,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "pet",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+          659915602,
+          336953919
+        ]
+      },
+      "result": {
+        "amie": [
+          4,
+          0,
+          39
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "unknown",
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          0,
+          0,
+          0
+        ],
+        "log": [
+          [
+            "msg",
+            "Unknown stat-changing method."
+          ]
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "walking",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          100,
+          199,
+          249
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "sendInBattle",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          100,
+          175,
+          225
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPlainBean",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+          698587982
+        ]
+      },
+      "result": {
+        "amie": [
+          103,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPatternBean",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+          287951275
+        ]
+      },
+      "result": {
+        "amie": [
+          105,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedRainbowBean",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+          818473144
+        ]
+      },
+      "result": {
+        "amie": [
+          225,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasada",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          105,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaDisliked",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          103,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaLiked",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          110,
+          255,
+          250
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "pet",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+          874063653,
+          891630373
+        ]
+      },
+      "result": {
+        "amie": [
+          103,
+          200,
+          255
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "unknown",
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          100,
+          200,
+          250
+        ],
+        "log": [
+          [
+            "msg",
+            "Unknown stat-changing method."
+          ]
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "walking",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          254,
+          254,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "sendInBattle",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          254,
+          230,
+          0
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPlainBean",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+          1015710799
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPatternBean",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+          208647068
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedRainbowBean",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+          486730020
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasada",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaDisliked",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaLiked",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          1
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "pet",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+          352644951,
+          397113190
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          255,
+          31
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "unknown",
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          254,
+          255,
+          1
+        ],
+        "log": [
+          [
+            "msg",
+            "Unknown stat-changing method."
+          ]
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "walking",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          130,
+          2,
+          29
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "sendInBattle",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          130,
+          0,
+          5
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPlainBean",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+          319426636
+        ]
+      },
+      "result": {
+        "amie": [
+          133,
+          103,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedPatternBean",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+          6925072
+        ]
+      },
+      "result": {
+        "amie": [
+          135,
+          103,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedRainbowBean",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+          1050772908
+        ]
+      },
+      "result": {
+        "amie": [
+          255,
+          103,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasada",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          135,
+          255,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaDisliked",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          133,
+          255,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "feedMalasadaLiked",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          140,
+          255,
+          30
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "pet",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+          222836583,
+          502368819
+        ]
+      },
+      "result": {
+        "amie": [
+          135,
+          3,
+          69
+        ],
+        "log": [
+
+        ]
+      }
+    },
+    {
+      "setup": {
+        "method": "unknown",
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "amie": [
+          130,
+          3,
+          30
+        ],
+        "log": [
+          [
+            "msg",
+            "Unknown stat-changing method."
+          ]
+        ]
+      }
+    }
+  ],
+  "feed": [
+    {
+      "setup": {
+        "name": "LAVACOOKIE on a hurt, burnt Pikachu",
+        "item": "LAVACOOKIE",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "LAVACOOKIE",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LAVACOOKIE",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "OLDGATEAU on a hurt, burnt Pikachu",
+        "item": "OLDGATEAU",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "OLDGATEAU",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "OLDGATEAU",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "CASTELIACONE on a hurt, burnt Pikachu",
+        "item": "CASTELIACONE",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CASTELIACONE",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CASTELIACONE",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "RAGECANDYBAR on a hurt, burnt Pikachu",
+        "item": "RAGECANDYBAR",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RAGECANDYBAR",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RAGECANDYBAR",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "SWEETHEART on a hurt, burnt Pikachu",
+        "item": "SWEETHEART",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "SWEETHEART",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 40,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "SWEETHEART",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "RARECANDY on a hurt, burnt Pikachu",
+        "item": "RARECANDY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RARECANDY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 31,
+          "hp": 22,
+          "totalhp": 72,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RARECANDY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "CHERIBERRY on a hurt, burnt Pikachu",
+        "item": "CHERIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CHERIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CHERIBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "CHESTOBERRY on a hurt, burnt Pikachu",
+        "item": "CHESTOBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CHESTOBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CHESTOBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "PECHABERRY on a hurt, burnt Pikachu",
+        "item": "PECHABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PECHABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PECHABERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "RAWSTBERRY on a hurt, burnt Pikachu",
+        "item": "RAWSTBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RAWSTBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RAWSTBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "ASPEARBERRY on a hurt, burnt Pikachu",
+        "item": "ASPEARBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "ASPEARBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ASPEARBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "LEPPABERRY on a hurt, burnt Pikachu",
+        "item": "LEPPABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "LEPPABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbChooseMove' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LEPPABERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "ORANBERRY on a hurt, burnt Pikachu",
+        "item": "ORANBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "ORANBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 30,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ORANBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "PERSIMBERRY on a hurt, burnt Pikachu",
+        "item": "PERSIMBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PERSIMBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          1000263230
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PERSIMBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "LUMBERRY on a hurt, burnt Pikachu",
+        "item": "LUMBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "LUMBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LUMBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "SITRUSBERRY on a hurt, burnt Pikachu",
+        "item": "SITRUSBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "SITRUSBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 37,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "SITRUSBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "FIGYBERRY on a hurt, burnt Pikachu",
+        "item": "FIGYBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "FIGYBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          1050454814
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "FIGYBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "WIKIBERRY on a hurt, burnt Pikachu",
+        "item": "WIKIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "WIKIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          31908533
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "WIKIBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "MAGOBERRY on a hurt, burnt Pikachu",
+        "item": "MAGOBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "MAGOBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          49015253
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "MAGOBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "AGUAVBERRY on a hurt, burnt Pikachu",
+        "item": "AGUAVBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "AGUAVBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          95020641
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "AGUAVBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "IAPAPABERRY on a hurt, burnt Pikachu",
+        "item": "IAPAPABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "IAPAPABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          944847032
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "IAPAPABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "RAZZBERRY on a hurt, burnt Pikachu",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          427604257
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "BLUKBERRY on a hurt, burnt Pikachu",
+        "item": "BLUKBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "BLUKBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          855870324
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "BLUKBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "NANABBERRY on a hurt, burnt Pikachu",
+        "item": "NANABBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "NANABBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          229718433
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "NANABBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "WEPEARBERRY on a hurt, burnt Pikachu",
+        "item": "WEPEARBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "WEPEARBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          706500763
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "WEPEARBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "PINAPBERRY on a hurt, burnt Pikachu",
+        "item": "PINAPBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PINAPBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          922408920
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PINAPBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "POMEGBERRY on a hurt, burnt Pikachu",
+        "item": "POMEGBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "POMEGBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "POMEGBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "KELPSYBERRY on a hurt, burnt Pikachu",
+        "item": "KELPSYBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "KELPSYBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "KELPSYBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "QUALOTBERRY on a hurt, burnt Pikachu",
+        "item": "QUALOTBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "QUALOTBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "QUALOTBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "HONDEWBERRY on a hurt, burnt Pikachu",
+        "item": "HONDEWBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "HONDEWBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "HONDEWBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "GREPABERRY on a hurt, burnt Pikachu",
+        "item": "GREPABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "GREPABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "GREPABERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "TAMATOBERRY on a hurt, burnt Pikachu",
+        "item": "TAMATOBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "TAMATOBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 81,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "TAMATOBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "CORNNBERRY on a hurt, burnt Pikachu",
+        "item": "CORNNBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CORNNBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          496048008
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CORNNBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "MAGOSTBERRY on a hurt, burnt Pikachu",
+        "item": "MAGOSTBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "MAGOSTBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          941795676
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "MAGOSTBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "RABUTABERRY on a hurt, burnt Pikachu",
+        "item": "RABUTABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RABUTABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          517543192
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RABUTABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "NOMELBERRY on a hurt, burnt Pikachu",
+        "item": "NOMELBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "NOMELBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          504297564
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "NOMELBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "SPELONBERRY on a hurt, burnt Pikachu",
+        "item": "SPELONBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "SPELONBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          347620391
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "SPELONBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "PAMTREBERRY on a hurt, burnt Pikachu",
+        "item": "PAMTREBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PAMTREBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          822578808
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PAMTREBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "WATMELBERRY on a hurt, burnt Pikachu",
+        "item": "WATMELBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "WATMELBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          1071737698
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "WATMELBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "DURINBERRY on a hurt, burnt Pikachu",
+        "item": "DURINBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "DURINBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          100376740
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "DURINBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "BELUEBERRY on a hurt, burnt Pikachu",
+        "item": "BELUEBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "BELUEBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          772887139
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "BELUEBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "OCCABERRY on a hurt, burnt Pikachu",
+        "item": "OCCABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "OCCABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          413900595
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "OCCABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "PASSHOBERRY on a hurt, burnt Pikachu",
+        "item": "PASSHOBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PASSHOBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          334452454
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PASSHOBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "WACANBERRY on a hurt, burnt Pikachu",
+        "item": "WACANBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "WACANBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          399794012
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "WACANBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "RINDOBERRY on a hurt, burnt Pikachu",
+        "item": "RINDOBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "RINDOBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          19870589
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RINDOBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "YACHEBERRY on a hurt, burnt Pikachu",
+        "item": "YACHEBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "YACHEBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          960413266
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "YACHEBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "CHOPLEBERRY on a hurt, burnt Pikachu",
+        "item": "CHOPLEBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CHOPLEBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          1012820355
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CHOPLEBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "KEBIABERRY on a hurt, burnt Pikachu",
+        "item": "KEBIABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "KEBIABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          313321842
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "KEBIABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "SHUCABERRY on a hurt, burnt Pikachu",
+        "item": "SHUCABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "SHUCABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          265048421
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "SHUCABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "COBABERRY on a hurt, burnt Pikachu",
+        "item": "COBABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "COBABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          126791085
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "COBABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "PAYAPABERRY on a hurt, burnt Pikachu",
+        "item": "PAYAPABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PAYAPABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          708413667
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PAYAPABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "TANGABERRY on a hurt, burnt Pikachu",
+        "item": "TANGABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "TANGABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          261211873
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "TANGABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "CHARTIBERRY on a hurt, burnt Pikachu",
+        "item": "CHARTIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CHARTIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          852492362
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CHARTIBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "KASIBBERRY on a hurt, burnt Pikachu",
+        "item": "KASIBBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "KASIBBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          228042888
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "KASIBBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "HABANBERRY on a hurt, burnt Pikachu",
+        "item": "HABANBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "HABANBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          508084989
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "HABANBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "COLBURBERRY on a hurt, burnt Pikachu",
+        "item": "COLBURBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "COLBURBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          694341881
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "COLBURBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "BABIRIBERRY on a hurt, burnt Pikachu",
+        "item": "BABIRIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "BABIRIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          95195203
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "BABIRIBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "CHILANBERRY on a hurt, burnt Pikachu",
+        "item": "CHILANBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CHILANBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          786679931
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CHILANBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "LIECHIBERRY on a hurt, burnt Pikachu",
+        "item": "LIECHIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "LIECHIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          538122854
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LIECHIBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "GANLONBERRY on a hurt, burnt Pikachu",
+        "item": "GANLONBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "GANLONBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          953528581
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "GANLONBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "SALACBERRY on a hurt, burnt Pikachu",
+        "item": "SALACBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "SALACBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          683039227
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "SALACBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "PETAYABERRY on a hurt, burnt Pikachu",
+        "item": "PETAYABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "PETAYABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          334802752
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "PETAYABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "APICOTBERRY on a hurt, burnt Pikachu",
+        "item": "APICOTBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "APICOTBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          482341800
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "APICOTBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "LANSATBERRY on a hurt, burnt Pikachu",
+        "item": "LANSATBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "LANSATBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          513064345
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LANSATBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "STARFBERRY on a hurt, burnt Pikachu",
+        "item": "STARFBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "STARFBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          587896493
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            14,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "STARFBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "ENIGMABERRY on a hurt, burnt Pikachu",
+        "item": "ENIGMABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "ENIGMABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          130574636
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ENIGMABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "MICLEBERRY on a hurt, burnt Pikachu",
+        "item": "MICLEBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "MICLEBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          824725448
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            13,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "MICLEBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "CUSTAPBERRY on a hurt, burnt Pikachu",
+        "item": "CUSTAPBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "CUSTAPBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          40431507
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "CUSTAPBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "JABOCABERRY on a hurt, burnt Pikachu",
+        "item": "JABOCABERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "JABOCABERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          275784395
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            16,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "JABOCABERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "ROWAPBERRY on a hurt, burnt Pikachu",
+        "item": "ROWAPBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "ROWAPBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          881983458
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ROWAPBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "Oran Berry at full HP",
+        "item": "ORANBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ORANBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "ORANBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "Pomeg Berry with HP EVs",
+        "item": "POMEGBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "ev": {
+            "HP": 100
+          }
+        },
+        "bag": [
+          [
+            "POMEGBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 76,
+          "totalhp": 76,
+          "status": "NONE",
+          "happiness": 61,
+          "ev": {
+            "HP": 90,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "POMEGBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "Razz Berry",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          144832018
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            90,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 5
+      }
+    },
+    {
+      "setup": {
+        "name": "Razz Berry near the caps",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            253,
+            200,
+            255
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          536200991
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            255,
+            255,
+            255
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 255
+      }
+    },
+    {
+      "setup": {
+        "name": "Razz Berry when fullness is 254",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            254,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          105433142
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            15,
+            255,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 0
+      }
+    },
+    {
+      "setup": {
+        "name": "Razz Berry when full",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            255,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            255,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "Razz Berry, last one in the Bag",
+        "item": "RAZZBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            0,
+            0,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "RAZZBERRY",
+            1
+          ]
+        ],
+        "rolls": [
+          227582017
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            4,
+            90,
+            0
+          ]
+        },
+        "bag": [
+
+        ],
+        "log": [
+
+        ],
+        "returned": 0
+      }
+    },
+    {
+      "setup": {
+        "name": "Liechi Berry",
+        "item": "LIECHIBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            60,
+            100,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "LIECHIBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+          631456215
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            66,
+            190,
+            0
+          ]
+        },
+        "bag": [
+          [
+            "LIECHIBERRY",
+            1
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": 0
+      }
+    },
+    {
+      "setup": {
+        "name": "Potion (not food)",
+        "item": "POTION",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "status": "BURN",
+          "amie": [
+            10,
+            0,
+            5
+          ],
+          "happiness": 70
+        },
+        "bag": [
+          [
+            "POTION",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": null,
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 20,
+          "totalhp": 70,
+          "status": "BURN",
+          "happiness": 70,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "POTION",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "Rare Candy at full HP",
+        "item": "RARECANDY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RARECANDY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbRefresh' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 31,
+          "hp": 72,
+          "totalhp": 72,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "RARECANDY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    },
+    {
+      "setup": {
+        "name": "Lum Berry, healthy",
+        "item": "LUMBERRY",
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LUMBERRY",
+            2
+          ]
+        ],
+        "rolls": [
+
+        ]
+      },
+      "result": {
+        "error": [
+          "NoMethodError",
+          "private method `pbDisplay' called for #<PokeAmie_Scene>"
+        ],
+        "pokemon": {
+          "species": "PIKACHU",
+          "level": 30,
+          "hp": 70,
+          "totalhp": 70,
+          "status": "NONE",
+          "happiness": 50,
+          "ev": {
+            "HP": 0,
+            "ATTACK": 0,
+            "DEFENSE": 0,
+            "SPECIAL_ATTACK": 0,
+            "SPECIAL_DEFENSE": 0,
+            "SPEED": 0
+          },
+          "amie": [
+            10,
+            0,
+            5
+          ]
+        },
+        "bag": [
+          [
+            "LUMBERRY",
+            2
+          ]
+        ],
+        "log": [
+
+        ],
+        "returned": null
+      }
+    }
+  ],
+  "levels": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      49,
+      1
+    ],
+    [
+      50,
+      2
+    ],
+    [
+      99,
+      2
+    ],
+    [
+      100,
+      3
+    ],
+    [
+      149,
+      3
+    ],
+    [
+      150,
+      4
+    ],
+    [
+      254,
+      4
+    ],
+    [
+      255,
+      5
+    ]
+  ],
+  "reset": [
+    {
+      "amie": [
+        0,
+        0,
+        0
+      ],
+      "after": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "amie": [
+        77,
+        12,
+        200
+      ],
+      "after": [
+        0,
+        12,
+        200
+      ]
+    },
+    {
+      "amie": [
+        255,
+        255,
+        255
+      ],
+      "after": [
+        0,
+        255,
+        255
+      ]
+    }
+  ],
+  "hunger": [
+    {
+      "steps": 1,
+      "counter": 1,
+      "party": [
+        [
+          10,
+          3,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          120,
+          90
+        ]
+      ]
+    },
+    {
+      "steps": 48,
+      "counter": 49,
+      "party": [
+        [
+          10,
+          3,
+          1
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          120,
+          90
+        ]
+      ]
+    },
+    {
+      "steps": 1,
+      "counter": 0,
+      "party": [
+        [
+          10,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          119,
+          89
+        ]
+      ]
+    },
+    {
+      "steps": 1,
+      "counter": 1,
+      "party": [
+        [
+          10,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          5,
+          119,
+          89
+        ]
+      ]
+    },
+    {
+      "steps": 49,
+      "counter": 0,
+      "party": [
+        [
+          10,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          118,
+          88
+        ]
+      ]
+    },
+    {
+      "steps": 1,
+      "counter": 1,
+      "party": [
+        [
+          10,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          118,
+          88
+        ]
+      ]
+    },
+    {
+      "steps": 60,
+      "counter": 11,
+      "party": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          117,
+          87
+        ]
+      ]
+    },
+    {
+      "steps": 50,
+      "counter": 11,
+      "party": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          116,
+          86
+        ]
+      ]
+    },
+    {
+      "steps": 40,
+      "counter": 1,
+      "party": [
+        [
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          115,
+          85
+        ]
+      ]
+    }
+  ],
+  "choose": [
+    {
+      "setup": {
+        "name": "default, first able",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          },
+          {
+            "species": "PIKACHU",
+            "level": 30
+          },
+          {
+            "species": "EEVEE",
+            "level": 30
+          }
+        ],
+        "arg": null
+      },
+      "result": {
+        "first": 2,
+        "set": 2
+      }
+    },
+    {
+      "setup": {
+        "name": "index of an able one",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          },
+          {
+            "species": "PIKACHU",
+            "level": 30
+          },
+          {
+            "species": "EEVEE",
+            "level": 30
+          }
+        ],
+        "arg": 3
+      },
+      "result": {
+        "first": 2,
+        "set": 3
+      }
+    },
+    {
+      "setup": {
+        "name": "index of a fainted one",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          },
+          {
+            "species": "PIKACHU",
+            "level": 30
+          }
+        ],
+        "arg": 1
+      },
+      "result": {
+        "first": 2,
+        "set": 1
+      }
+    },
+    {
+      "setup": {
+        "name": "index of an egg",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          },
+          {
+            "species": "PIKACHU",
+            "level": 30
+          }
+        ],
+        "arg": 0
+      },
+      "result": {
+        "first": 2,
+        "set": 2
+      }
+    },
+    {
+      "setup": {
+        "name": "nobody able",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          }
+        ],
+        "arg": null
+      },
+      "result": {
+        "first": null,
+        "set": null
+      }
+    },
+    {
+      "setup": {
+        "name": "nobody able, egg index",
+        "party": [
+          {
+            "species": "TOGEPI",
+            "level": 1,
+            "egg": true
+          },
+          {
+            "species": "GEODUDE",
+            "level": 12,
+            "hp": 0
+          }
+        ],
+        "arg": 0
+      },
+      "result": {
+        "first": null,
+        "set": null
+      }
+    },
+    {
+      "setup": {
+        "name": "index past the party",
+        "party": [
+          {
+            "species": "PIKACHU",
+            "level": 30
+          }
+        ],
+        "arg": 4
+      },
+      "result": {
+        "first": 0,
+        "error": [
+          "NoMethodError",
+          "undefined method `egg?' for nil:NilClass"
+        ]
+      }
+    }
+  ],
+  "berryPlantData": {
+    "loaded": true,
+    "keyClass": "Symbol",
+    "hitByItem": false,
+    "hitBySymbol": true
+  }
+}

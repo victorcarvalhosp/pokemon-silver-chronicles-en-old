@@ -8,11 +8,8 @@
 // The animation counts 40 fps frames (Graphics.frame_rate = 40); each runs
 // once per elapsed 1/40 s (eachFrame / frameLoop).
 //
-// :on_player_step_taken handlers run synchronously in the middle of the
-// player's movement here, where the hatching scene can't wait. The step
-// handler counts down as in Ruby and queues pbHatch at the player's await
-// point (GamePlayer#queueBlocking), which runs it at the start of the next
-// player update, before the next step is taken.
+// The step handler runs inside pbOnStepTaken (awaited from the player's
+// update_event_triggering, as in Ruby), so the egg hatches as the step ends.
 
 import { cryLength, preloadCryLength } from "../../battle/scene/sceneFiles";
 import { _INTL } from "../../data/gameData/gameData";
@@ -20,7 +17,6 @@ import { Settings } from "../../data/gameData/settings";
 import { pbGetTimeNow } from "../../game/dayNight";
 import { EventHandlers } from "../../game/eventHandlers";
 import { FollowingPkmn } from "../../game/following/FollowingPkmn";
-import type { GamePlayer } from "../../game/GamePlayer";
 import { pbBGMPlay, pbBGMStop, pbMEPlay, pbSEPlay } from "../../game/GameSystem";
 import { G } from "../../game/globals";
 import { Pokemon } from "../../game/pokemon/Pokemon";
@@ -302,11 +298,11 @@ export async function pbHatch(pokemon: Pokemon): Promise<void> {
 }
 
 /**
- * The :hatch_eggs step handler's countdown. Returns the eggs that reached 0
- * steps (already set to 0), in party order; Ruby hatches each as it goes.
+ * The :hatch_eggs step handler: counts each egg down and hatches it as soon
+ * as it reaches 0 steps, before the next egg is counted (a Pokémon that just
+ * hatched with Flame Body speeds up the eggs after it, as in Ruby).
  */
-export function pbHatchEggsStepCountdown(): Pokemon[] {
-  const ret: Pokemon[] = [];
+export async function pbHatchEggsOnStep(hatch: (egg: Pokemon) => Promise<void> = pbHatch): Promise<void> {
   for (const egg of player().party) {
     if (egg.stepsToHatch <= 0) continue;
     egg.stepsToHatch -= 1;
@@ -317,17 +313,9 @@ export function pbHatchEggsStepCountdown(): Pokemon[] {
     }
     if (egg.stepsToHatch <= 0) {
       egg.stepsToHatch = 0;
-      ret.push(egg);
+      await hatch(egg);
     }
   }
-  return ret;
 }
 
-EventHandlers.add("on_player_step_taken", "hatch_eggs", () => {
-  const eggs = pbHatchEggsStepCountdown();
-  if (eggs.length === 0) return;
-  const p = G.gamePlayer as unknown as GamePlayer;
-  p.queueBlocking(async () => {
-    for (const egg of eggs) await pbHatch(egg);
-  });
-});
+EventHandlers.add("on_player_step_taken", "hatch_eggs", () => pbHatchEggsOnStep());

@@ -225,8 +225,10 @@
                                 },
                                 {"cmd":"wait","seconds":4.0},
                                 {
-                                  "cmd": "script",
-                                  "ruby": "pbGetPokemon(1).forget_move_at_index(\n   pbGet(2))"
+                                  "cmd": "call",
+                                  "fn": "forget_move_at_index",
+                                  "on": {"call":"pbGetPokemon","args":[1]},
+                                  "args": [{"call":"pbGet","args":[2]}]
                                 },
                                 {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                                 {"cmd":"text","text":"\\bIt worked to perfection!"},

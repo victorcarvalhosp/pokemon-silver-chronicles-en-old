@@ -165,8 +165,9 @@
                             "text": "\\bDentro dessa Pokébola há um Mudkip, um adorável Pokémon de água!\\nCuide bem dele."
                           },
                           {
-                            "cmd": "script",
-                            "ruby": "pkmn = Pokemon.new(:MUDKIP,15)\npbAddPokemon(pkmn)"
+                            "cmd": "call",
+                            "fn": "pbAddPokemon",
+                            "args": [{"call":"Pokemon.new","args":["MUDKIP",15]}]
                           },
                           {"cmd":"selfSwitch","ch":"B","value":true}
                         ],
@@ -180,8 +181,9 @@
                                 "text": "\\bDentro da Pokébola há um Torchic, um adorável Pokémon de fogo!\\nCuide bem dele."
                               },
                               {
-                                "cmd": "script",
-                                "ruby": "pkmn = Pokemon.new(:TORCHIC,15)\npbAddPokemon(pkmn)"
+                                "cmd": "call",
+                                "fn": "pbAddPokemon",
+                                "args": [{"call":"Pokemon.new","args":["TORCHIC",15]}]
                               },
                               {"cmd":"selfSwitch","ch":"B","value":true}
                             ],
@@ -191,8 +193,9 @@
                                 "text": "\\bDentro da Pokébola há um Treecko, um adorável Pokémon de grama!\\nCuide bem dele."
                               },
                               {
-                                "cmd": "script",
-                                "ruby": "pkmn = Pokemon.new(:TREECKO,15)\npbAddPokemon(pkmn)"
+                                "cmd": "call",
+                                "fn": "pbAddPokemon",
+                                "args": [{"call":"Pokemon.new","args":["TREECKO",15]}]
                               },
                               {"cmd":"selfSwitch","ch":"B","value":true}
                             ]

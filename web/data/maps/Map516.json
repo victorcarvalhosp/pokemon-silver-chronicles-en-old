@@ -579,8 +579,24 @@
               "branches": [
                 [
                   {
-                    "cmd": "script",
-                    "ruby": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::RAICHU\n})"
+                    "cmd": "call",
+                    "fn": "pbChoosePokemon",
+                    "args": [
+                      1,
+                      2,
+                      {
+                        "proc": ["poke"],
+                        "body": {
+                          "op": "&&",
+                          "left": {"op":"!","value":{"call":"egg?","on":{"call":"poke"}}},
+                          "right": {
+                            "op": "==",
+                            "left": {"call":"species","on":{"call":"poke"}},
+                            "right": {"call":"PBSpecies::RAICHU"}
+                          }
+                        }
+                      }
+                    ]
                   },
                   {
                     "cmd": "if",
@@ -671,8 +687,24 @@
               "branches": [
                 [
                   {
-                    "cmd": "script",
-                    "ruby": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::VENONAT\n})"
+                    "cmd": "call",
+                    "fn": "pbChoosePokemon",
+                    "args": [
+                      1,
+                      2,
+                      {
+                        "proc": ["poke"],
+                        "body": {
+                          "op": "&&",
+                          "left": {"op":"!","value":{"call":"egg?","on":{"call":"poke"}}},
+                          "right": {
+                            "op": "==",
+                            "left": {"call":"species","on":{"call":"poke"}},
+                            "right": {"call":"PBSpecies::VENONAT"}
+                          }
+                        }
+                      }
+                    ]
                   },
                   {
                     "cmd": "if",

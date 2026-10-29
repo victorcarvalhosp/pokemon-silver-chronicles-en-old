@@ -103,7 +103,13 @@ export class GameMap {
   get height(): number { return this.map.height; }
   get encounterStep(): number { return this.map.encounterStep; }
   get tilesetId(): number { return this.map.tilesetId; }
-  get name(): string { return Data.mapInfos.get(this.mapId)?.name ?? ""; }
+  /** pbGetMapNameFromId(@map_id) (ui/planes.ts, inlined to keep this file free of UI imports). */
+  get name(): string {
+    let name = (mapMetadata(this.mapId)?.name as string | undefined) ?? "";
+    if (!name) name = Data.mapInfos.get(this.mapId)?.name ?? "";
+    if (G.player) name = name.replace(/\\PN/g, G.player.name);
+    return name;
+  }
 
   /** data[x, y, layer] */
   tile(x: number, y: number, layer: number): number {

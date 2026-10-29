@@ -37,6 +37,7 @@ import { pbDeregisterPartner, pbRegisterPartner } from "../../game/trainers/trai
 import { dxClear, setDxMidbattle, setDxPokemon, setDxRules } from "./DeluxeTemp";
 import { EssentialsDeluxe } from "./Midbattle_Config";
 import { idOf, isSym } from "./rubyData";
+import { inMaxLair } from "../zud/raid/maxLairHooks";
 
 type DxHash = Record<string, unknown>;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -227,9 +228,34 @@ export function pbApplyBattleRules(foeside: number, wildbattle = false): void {
     if (base && assetExists(`Graphics/Battlebacks/${base}_base0`)) setBattleRule("base", base);
   }
   //---------------------------------------------------------------------------
-  // Sets raid battle rules. (ZUD Mechanics: never here, as dx_start sets
-  // rules[:rank] = nil; Max Raids are set up by ZUD's own code.)
+  // Sets raid battle rules. (ZUD Mechanics' MaxRaidBattle.start sets a rank;
+  // dx_start sets rules[:rank] = nil.)
   //---------------------------------------------------------------------------
+  if (rules.rank) {
+    const pokemon = G.gameTemp.dxPokemon as AnyHash;
+    if (!rules.bgm) {
+      let raidMusic = rules.rank === 6 ? "Battle! Legendary Raid" : "Battle! Max Raid";
+      if (idOf(pokemon.species) === "ETERNATUS") raidMusic = "Battle! Eternatus - Phase 2";
+      rules.bgm = raidMusic;
+    }
+    if (inMaxLair()) rules.hard = false;
+    if (rules.autoscale) {
+      // (Integer arithmetic: ((level + 5) / 10 * size).ceil + 1)
+      if (rules.size < 3 && pokemon.level > 20) rules.turns += Math.floor((pokemon.level + 5) / 10) * rules.size + 1;
+      if (pokemon.level > 55) rules.kocount -= 1;
+      for (const i of [25, 35, 45, 55, 65]) if (pokemon.level > i) rules.shield += 1;
+      if (rules.hard || pokemon.level > 70) rules.shield += 1;
+    }
+    if (rules.turns < 5) rules.turns = 5;
+    if (rules.turns > 25) rules.turns = 25;
+    if (rules.kocount < 1 || rules.size === 1) rules.kocount = 1;
+    if (rules.kocount > 6) rules.kocount = 6;
+    if (rules.shield < 1) rules.shield = 1;
+    if (rules.shield > 8) rules.shield = 8;
+    rules.timer_bonus = rules.turns;
+    if (!("perfect_bonus" in rules)) rules.perfect_bonus = true;
+    rules.fairness_bonus = true;
+  }
   if (rules.hard && !rules.rank) rules.hard = null;
   //---------------------------------------------------------------------------
   // Sets battle music.

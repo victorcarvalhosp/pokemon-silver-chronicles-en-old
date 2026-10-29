@@ -29,6 +29,11 @@ export class GameEvent extends GameCharacter {
   list: Command[] | null = null;
   tempSwitches: Record<string, boolean> = {};
   needRefresh = false;
+  /**
+   * An event added at runtime (DayCare Overworld Pokemon) that saves keep with
+   * its RPG::Event data, as Ruby's marshalled $game_map.events do.
+   */
+  savedWithData = false;
   private page: EventPage | null = null;
   private erased = false;
   private routeErased = false;

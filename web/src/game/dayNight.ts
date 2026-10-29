@@ -37,7 +37,7 @@ export const PBDayNight = {
   getShade(): number {
     let time = minutes();
     if (time > 12 * 60) time = 24 * 60 - time;
-    return (255 * time) / (12 * 60);
+    return Math.floor((255 * time) / (12 * 60)); // Integer division in Ruby
   },
 
   getTone(): Tone {
@@ -65,6 +65,8 @@ function minutes(): number {
 
 /** pbDayNightTint: sets `object.tone` to the time-of-day tone on outdoor maps. */
 export function pbDayNightTint(object: { tone: Tone }): void {
+  // return if !$scene.is_a?(Scene_Map)
+  if (typeof (G.scene as { transferPlayer?: unknown } | null)?.transferPlayer !== "function") return;
   const map = G.gameMap;
   if (TIME_SHADING && map && mapMetadata(map.mapId)?.outdoorMap) object.tone.set(PBDayNight.getTone());
   else object.tone.set(0, 0, 0, 0);

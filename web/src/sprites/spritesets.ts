@@ -1,5 +1,6 @@
 // Ports of 005_Sprites/007_Spriteset_Map.rb, 006_Spriteset_Global.rb and
-// 001_Sprite_Picture.rb.
+// 001_Sprite_Picture.rb, with 009_Sprite_DynamicShadows.rb's Spriteset_Map
+// alias (shadow sources).
 
 import { EventHandlers } from "../game/eventHandlers";
 import { Plane, Sprite, Viewport } from "../rgss/display";
@@ -13,6 +14,9 @@ import { FollowerSprites } from "../game/following/FollowerSprites";
 import { AnimationSprite } from "./AnimationSprite";
 import { Cache } from "./cache";
 import { SpriteCharacter } from "./SpriteCharacter";
+import { shadowSourcesOf, type ShadowParams } from "./SpriteDynamicShadows";
+import { SpriteTimer } from "./SpriteTimer";
+import { RPGWeather } from "../game/weather/Weather";
 
 let viewports: { v0: Viewport; v1: Viewport; v2: Viewport; v3: Viewport } | null = null;
 
@@ -63,8 +67,13 @@ export class SpritesetMap {
   private fogHue = 0;
   /** 008_Sprite_AnimationSprite.rb: @usersprites */
   private usersprites: (UserSprite | null)[] = [];
+  /** RPG::Weather */
+  weather: RPGWeather | null;
+  /** 009_Sprite_DynamicShadows.rb: @shadows */
+  shadows: ShadowParams[];
 
   constructor(readonly map: GameMap, renderer: TilemapRenderer) {
+    this.shadows = shadowSourcesOf(map);
     const { v0, v1 } = mapViewports();
     this.panorama = new NamedPlane(v0);
     this.fog = new NamedPlane(v1);
@@ -77,15 +86,21 @@ export class SpritesetMap {
     for (const id of [...map.events.keys()].sort((a, b) => a - b)) {
       this.characterSprites.push(new SpriteCharacter(v1, map.events.get(id)!, tileBitmap));
     }
+    this.weather = new RPGWeather(v1);
     EventHandlers.triggerSync("on_new_spriteset_map", this, v1);
     this.update();
+    for (const sprite of this.characterSprites) sprite.setShadows(map, this.shadows);
+    const scene = G.scene as { spritesetGlobal?: SpritesetGlobal | null } | null;
+    scene?.spritesetGlobal?.playerSprite.setShadows(map, this.shadows);
   }
 
   dispose(): void {
     this.panorama.dispose();
     this.fog.dispose();
     for (const s of this.characterSprites) s.dispose();
+    this.weather?.dispose();
     this.characterSprites = [];
+    this.weather = null;
     for (const s of this.usersprites) s?.dispose();
     this.usersprites = [];
   }
@@ -148,7 +163,16 @@ export class SpritesetMap {
     this.fog.blendType = map.fogBlendType;
     this.fog.tone = map.fogTone;
     for (const s of this.characterSprites) s.update();
-    // TODO(weather): RPG::Weather.
+    const weather = this.weather!;
+    if (this.map === G.gameMap) {
+      const screen = G.gameScreen;
+      weather.fadeIn(screen.weatherType, screen.weatherMax, screen.weatherDuration);
+    } else {
+      weather.fadeIn("None", 0, 20);
+    }
+    weather.ox = tmox;
+    weather.oy = tmoy;
+    weather.update();
     v1.tone = G.gameScreen.tone;
     v3.color = G.gameScreen.flashColor;
     v1.update();
@@ -216,12 +240,14 @@ export class SpritesetGlobal {
   readonly followerSprites: FollowerSprites;
   readonly playerSprite: SpriteCharacter;
   private pictureSprites: SpritePicture[] = [];
+  private timerSprite: SpriteTimer | null;
 
   constructor(player: GameCharacter) {
     const { v1, v2 } = mapViewports();
     this.followerSprites = new FollowerSprites(v1);
     this.playerSprite = new SpriteCharacter(v1, player, () => null);
     for (let i = 1; i <= 100; i++) this.pictureSprites.push(new SpritePicture(v2, G.gameScreen.pictures[i]!));
+    this.timerSprite = new SpriteTimer();
     this.update();
   }
 
@@ -230,11 +256,14 @@ export class SpritesetGlobal {
     this.playerSprite.dispose();
     for (const s of this.pictureSprites) s.dispose();
     this.pictureSprites = [];
+    this.timerSprite?.dispose();
+    this.timerSprite = null;
   }
 
   update(): void {
     this.followerSprites.update();
     this.playerSprite.update();
     for (const s of this.pictureSprites) s.update();
+    this.timerSprite!.update();
   }
 }

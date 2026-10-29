@@ -16,9 +16,7 @@ import type { Move } from "../move/Move";
 import { AbilityEffects } from "../other/AbilityEffects";
 import { PBEffects } from "../other/PBEffects";
 import type { Pokemon } from "../../game/pokemon/Pokemon";
-
-/** $DEBUG: off, as in a released game (see MenuFlags.DEBUG in ui/menus/menuScreens.ts). */
-const DEBUG = false;
+import { DEBUG } from "../../core/debug"; // $DEBUG
 
 /** The scene's @sprites (Battle::Scene; the debug scenes have none). */
 type SceneWithSprites = { sprites?: Record<string, { x: number; y: number } | undefined> };

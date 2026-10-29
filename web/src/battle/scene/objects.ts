@@ -12,9 +12,10 @@
 //   30 ZUD Mechanics: PokemonDataBox draw_* aliases (Ultra Burst / Dynamax
 //      icons; Max Raid databoxes), Sprite#applyDynamax / #unDynamax, Dynamax
 //      shadows (shadow_filename).
-// Not ported: Max Raid boss databoxes (draw_raid_shield/_counters, raid name,
-// status, shiny and owned icons; ZUD [005] Scene_PokemonDataBox.rb:8-169),
-// the Dynamax colour pattern (mkxp-z Sprite#pattern, ZUD [000] Sprite.rb:18-24;
+//      Max Raid boss databoxes (ZUD [005] Scene_PokemonDataBox.rb: the raid HP
+//      bar, name, status, shiny and owned icons, draw_raid_shield/_counters;
+//      their graphics are preloaded by zud/raid/scene).
+// Not ported: the Dynamax colour pattern (mkxp-z Sprite#pattern, ZUD [000] Sprite.rb:18-24;
 // see ../zud/scene/dynamaxSprite.ts).
 //
 // Timing: Ruby scales these by Graphics.frame_rate (40); here they are scaled
@@ -82,6 +83,10 @@ export class PokemonDataBox extends SpriteProxy {
   private numbersBitmap!: AnimatedBitmap;
   private hpBarBitmap!: AnimatedBitmap;
   private expBarBitmap!: AnimatedBitmap;
+  // ZUD Mechanics (Max Raid bosses only here; Ruby loads them for every databox)
+  private raidNumbersBitmap: AnimatedBitmap | null = null;
+  private raidBarBitmap: AnimatedBitmap | null = null;
+  private shieldHPBitmap: AnimatedBitmap | null = null;
   private hpNumbers!: BitmapSprite;
   private hpBar!: Sprite;
   private expBar!: Sprite;
@@ -182,6 +187,23 @@ export class PokemonDataBox extends SpriteProxy {
     this.visible = false;
     this.z = 150 + Math.floor(this._battler.index / 2) * 5;
     pbSetSystemFont(this.bitmap);
+    // ZUD Mechanics: raid graphics, and the raid boss's own HP bar
+    if (this.raidBoss) {
+      const zudPath = "Graphics/Plugins/ZUD/Battle/";
+      this.raidNumbersBitmap = new AnimatedBitmap(zudPath + "raid_num");
+      this.raidBarBitmap = new AnimatedBitmap(zudPath + "raid_bar");
+      this.shieldHPBitmap = new AnimatedBitmap(zudPath + "raid_shield");
+      // (Ruby leaves the first HP bar sprite undisposed behind the raid databox.)
+      this.hpBar.dispose();
+      this.hpBarBitmap.dispose();
+      this.hpBarBitmap = new AnimatedBitmap(zudPath + "overlay_hp");
+      this.hpBar = new Sprite(viewport);
+      this.hpBar.setBitmap(this.hpBarBitmap.bitmap);
+      this.hpBar.srcRect.height = Math.floor(this.hpBarBitmap.height / 3);
+      this.sprites.hpBar = this.hpBar;
+      this.hpBar.z = this.hpNumbers.z + 1;
+      this.hpBar.visible = false;
+    }
   }
 
   override dispose(): void {
@@ -190,6 +212,9 @@ export class PokemonDataBox extends SpriteProxy {
     this.numbersBitmap.dispose();
     this.hpBarBitmap.dispose();
     this.expBarBitmap.dispose();
+    this.raidBarBitmap?.dispose();
+    this.shieldHPBitmap?.dispose();
+    this.raidNumbersBitmap?.dispose();
     this.contents.dispose();
     super.dispose();
   }
@@ -291,6 +316,13 @@ export class PokemonDataBox extends SpriteProxy {
   }
 
   drawName(): void {
+    // ZUD Mechanics: Max Raid Pokémon names are outlined in red (blue for Calyrex).
+    if (this.raidBoss) {
+      const nameBase = new Color(248, 248, 248);
+      const nameShadow = this._battler.isSpecies("CALYREX") ? new Color(48, 206, 216) : new Color(248, 32, 32);
+      pbDrawTextPositions(this.bitmap!, [[this._battler.name, 26, 6, false, nameBase, nameShadow]]);
+      return;
+    }
     const nameWidth = this.bitmap!.textSize(this._battler.name).width;
     let nameOffset = 0;
     if (nameWidth > 116) nameOffset = nameWidth - 116;
@@ -316,6 +348,20 @@ export class PokemonDataBox extends SpriteProxy {
   }
 
   drawStatus(): void {
+    // ZUD Mechanics: status icon coordinates on Max Raid Pokémon databoxes.
+    if (this.raidBoss) {
+      if (this._battler.status === "NONE") return;
+      let s: number;
+      if (this._battler.status === "POISON" && this._battler.statusCount > 0) {
+        s = Status.count() - 1;
+      } else {
+        s = Status.get(this._battler.status).iconPosition;
+      }
+      if (s < 0) return;
+      pbDrawImagePositions(this.bitmap!, [["Graphics/Pictures/Battle/icon_statuses", 155, 12,
+        0, s * PokemonDataBox.STATUS_ICON_HEIGHT, -1, PokemonDataBox.STATUS_ICON_HEIGHT]]);
+      return;
+    }
     if (this._battler.status === "NONE") return;
     let s: number;
     if (this._battler.status === "POISON" && this._battler.statusCount > 0) { // Badly poisoned
@@ -329,6 +375,12 @@ export class PokemonDataBox extends SpriteProxy {
   }
 
   drawShinyIcon(): void {
+    // ZUD Mechanics: better shiny icon for Max Raid Pokémon.
+    if (this.raidBoss) {
+      if (!this._battler.shiny()) return;
+      pbDrawImagePositions(this.bitmap!, [["Graphics/Plugins/ZUD/Battle/shiny", 0, 30]]);
+      return;
+    }
     if (!this._battler.shiny()) return;
     const shinyX = this._battler.opposes(0) ? 206 : -6; // Foe's/player's
     pbDrawImagePositions(this.bitmap!, [["Graphics/Pictures/shiny", this.spriteBaseX + shinyX, 36]]);
@@ -359,6 +411,12 @@ export class PokemonDataBox extends SpriteProxy {
   }
 
   drawOwnedIcon(): void {
+    // ZUD Mechanics: better owned icon for Max Raid Pokémon.
+    if (this.raidBoss) {
+      if (!this._battler.owned() || !this._battler.opposes(0)) return;
+      pbDrawImagePositions(this.bitmap!, [["Graphics/Plugins/ZUD/Battle/icon_own", 8, 12]]);
+      return;
+    }
     if (!this._battler.owned() || !this._battler.opposes(0)) return; // Draw for foe Pokémon only
     pbDrawImagePositions(this.bitmap!, [["Graphics/Pictures/Battle/icon_own", this.spriteBaseX + 8, 36]]);
   }
@@ -367,8 +425,8 @@ export class PokemonDataBox extends SpriteProxy {
     this.bitmap!.clear();
     if (!this._battler.pokemon) return;
     this.drawBackground();
-    if (!this.raidBoss) this.drawName();
-    if (!this.raidBoss) this.drawLevel();
+    this.drawName();
+    if (!this.raidBoss) this.drawLevel(); // ZUD: no level or gender on Max Raid Pokémon (as in SwSh)
     if (!this.raidBoss) this.drawGender();
     this.drawStatus();
     this.drawShinyIcon();
@@ -376,6 +434,59 @@ export class PokemonDataBox extends SpriteProxy {
     this.drawOwnedIcon();
     this.refreshHP();
     this.refreshExp();
+    // Essentials Deluxe: the raid shield and counters
+    if (this.raidBoss) {
+      this.drawRaidShield();
+      this.drawRaidCounters();
+    }
+  }
+
+  //-----------------------------------------------------------------------------
+  // ZUD Mechanics: draws the turn count and KO count numbers on a raid databox.
+  //-----------------------------------------------------------------------------
+  raidDrawNumbers(counter: number, number: number, btmp: Bitmap, startX: number, startY: number): void {
+    let color = 0;
+    switch (counter) {
+      case 0:
+        if (number <= Math.floor(Settings.MAXRAID_TIMER / 2)) color = 1;
+        if (number <= Math.floor(Settings.MAXRAID_TIMER / 4)) color = 2;
+        if (number <= Math.floor(Settings.MAXRAID_TIMER / 8)) color = 3;
+        break;
+      case 1:
+        if (number <= Math.floor(Settings.MAXRAID_KOS / 2)) color = 1;
+        if (number <= Math.floor(Settings.MAXRAID_KOS / 4)) color = 2;
+        if (number <= 1) color = 3;
+        break;
+    }
+    const bmp = this.raidNumbersBitmap!;
+    const n = number === -1 ? [10] : String(Math.trunc(number)).split("").map(Number);
+    const charWidth = Math.floor(bmp.width / 11);
+    const charHeight = Math.floor(bmp.height / 4);
+    startX -= charWidth * n.length;
+    for (const i of n) {
+      btmp.blt(startX, startY, bmp.bitmap, new Rect(i * charWidth, color * 14, charWidth, charHeight));
+      startX += charWidth;
+    }
+  }
+
+  /** ZUD Mechanics: draws the Timer and KO counters on a Max Raid databox. */
+  drawRaidCounters(): void {
+    const turncount = this._battler.effects![PBEffects.Dynamax] as number;
+    let kocount = this._battler.effects![PBEffects.KnockOutCount] as number;
+    if (kocount < 0) kocount = 0;
+    this.raidDrawNumbers(0, turncount, this.bitmap!, 231, 14);
+    this.raidDrawNumbers(1, kocount, this.bitmap!, 260, 14);
+  }
+
+  /** ZUD Mechanics: draws raid shields on a Max Raid databox. */
+  drawRaidShield(): void {
+    const shieldHP = this._battler.effects![PBEffects.RaidShield] as number;
+    if (shieldHP > 0) {
+      const shieldLvl = this._battler.effects![PBEffects.MaxShieldHP] as number;
+      const offset = 137 - (2 + Math.floor((shieldLvl * 26) / 2));
+      this.bitmap!.blt(offset, 46, this.raidBarBitmap!.bitmap, new Rect(0, 0, 2 + shieldLvl * 26, 12));
+      this.bitmap!.blt(offset, 46, this.shieldHPBitmap!.bitmap, new Rect(0, 0, 2 + shieldHP * 26, 12));
+    }
   }
 
   refreshHP(): void {

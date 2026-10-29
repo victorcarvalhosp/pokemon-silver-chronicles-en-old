@@ -127,7 +127,23 @@
                     "then": [
                       {
                         "cmd": "script",
-                        "ruby": "pkmn = $player.last_party\npkmn.item = :GRASSMAIL\npkmn.calc_stats"
+                        "do": [
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"$player.last_party"}
+                          },
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn.item",
+                            "args": [],
+                            "op": "=",
+                            "value": "GRASSMAIL"
+                          },
+                          {"cmd":"call","fn":"calc_stats","on":{"call":"pkmn"},"args":[]}
+                        ]
                       },
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"My friend is on Route 31."},

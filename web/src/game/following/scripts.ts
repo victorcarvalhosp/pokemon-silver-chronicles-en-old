@@ -3,7 +3,7 @@
 // pbSetOverworldShadow, pbTurnTowardEvent, pbFacingTile). PBMoveRoute::*,
 // pbMoveRoute, pbWait and Graphics.frame_rate are in game/scripts/moveRoute.ts.
 
-import { defineRubyScript, defineScript } from "../scriptApi";
+import { defineScript } from "../scriptApi";
 import { G } from "../globals";
 import type { GameCharacter } from "../GameCharacter";
 import type { GameEvent } from "../GameEvent";
@@ -70,13 +70,6 @@ defineScript("$PokemonGlobal.follower_toggled=", (_c, value) => FollowingPkmn.se
 for (const [name, value] of Object.entries(FollowingPkmnConfig)) {
   defineScript(`FollowingPkmn::${name}`, () => value);
 }
-// Common event 66 ("Update Johto Gym Leaders Rematch").
-defineRubyScript("if FollowingPkmn.active?\nFollowingPkmn.toggle(false,true)\nend", async () => {
-  if (FollowingPkmn.active()) await FollowingPkmn.toggle(false, true);
-});
-defineRubyScript("if FollowingPkmn.active?\nFollowingPkmn.toggle(true,true)\nend", async () => {
-  if (FollowingPkmn.active()) await FollowingPkmn.toggle(true, true);
-});
 
 // --- Overworld Shadows EX ---------------------------------------------------------
 defineScript("pbSetOverworldShadow", (_c, name, eventId, mapId) =>

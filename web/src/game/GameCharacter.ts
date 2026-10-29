@@ -821,4 +821,9 @@ const CHARACTER_STATE = [
   "moveRouteIndex", "moveRouteForcing", "originalMoveRoute", "originalMoveRouteIndex", "stepAnime",
   "directionFix", "alwaysOnTop", "animeCount", "stopCount", "jumpPeak", "jumpDistance",
   "jumpDistanceLeft", "jumpCount", "waitCount", "locked", "prelockDirection", "bushDepth_",
+  // Marin's Enhanced Staircases (game/field/EnhancedStaircases.ts): Ruby marshals these ivars too
+  "stairStartX", "stairStartY", "stairEndX", "stairEndY", "stairYPosition", "stairYHeight",
+  "stairBeginOffset", "stairLastIncrement", "viewOffsetX", "viewOffsetY",
+  // Side Stairs Tiles (game/field/SideStairs.ts)
+  "offsetX", "offsetY", "realOffsetX", "realOffsetY",
 ] as const;

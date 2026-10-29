@@ -175,10 +175,7 @@
               "text": "\\f[faceprofbirch]\\bSo until we understand this better, I need you working with a Pokémon that’s fully attuned to Hoenn."
             },
             {"cmd":"call","fn":"FollowingPkmn.toggle","args":[false]},
-            {
-              "cmd": "script",
-              "ruby": "storage=$PokemonStorage\nfor i in 0...$player.party.length\n storage.pbStoreCaught($player.party.pop)\nend"
-            },
+            {"cmd":"call","fn":"storeWholeParty","args":[]},
             {"cmd":"switches","from":477,"to":477,"value":false},
             {"cmd":"switches","from":476,"to":476,"value":false},
             {"cmd":"switches","from":478,"to":478,"value":false},

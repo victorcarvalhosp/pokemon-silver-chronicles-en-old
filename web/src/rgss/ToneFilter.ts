@@ -1,7 +1,7 @@
 // RGSS sprite/viewport colour effects as one shader:
 //   tone  (r,g,b in -255..255, gray 0..255): desaturate by gray, then add rgb
 //   color (r,g,b,a 0..255): blend toward rgb by a/255 (flashes, fades)
-import { Filter, GlProgram } from "pixi.js";
+import { Filter, GlProgram, Texture } from "pixi.js";
 import type { Color, Tone } from "./types";
 
 const vertex = `
@@ -64,5 +64,49 @@ export class ToneFilter extends Filter {
     u.uColor[1] = (color?.green ?? 0) / 255;
     u.uColor[2] = (color?.blue ?? 0) / 255;
     u.uColor[3] = (color?.alpha ?? 0) / 255;
+  }
+}
+
+/**
+ * mkxp applies a viewport's tone to the whole screen area under the viewport
+ * once its children are drawn (Viewport::composite -> applyViewportEffect), so
+ * a toned viewport also tones everything drawn below it. This filter does
+ * that for Viewport.toneScreen: it's put on a full-rect sprite drawn last in
+ * the viewport and outputs the backdrop (what's on screen so far) toned.
+ */
+const screenFragment = `
+in vec2 vTextureCoord;
+out vec4 finalColor;
+uniform sampler2D uTexture;
+uniform sampler2D uBackTexture;
+uniform vec4 uTone;
+void main(void) {
+  vec4 front = texture(uTexture, vTextureCoord);
+  vec4 back = texture(uBackTexture, vTextureCoord);
+  vec3 rgb = back.a > 0.0 ? back.rgb / back.a : vec3(0.0);
+  float lum = dot(rgb, vec3(0.299, 0.587, 0.114));
+  rgb = mix(rgb, vec3(lum), uTone.w);
+  rgb = clamp(rgb + uTone.xyz, 0.0, 1.0);
+  finalColor = vec4(rgb * back.a, back.a) * front.a;
+}`;
+
+export class ScreenToneFilter extends Filter {
+  constructor() {
+    super({
+      glProgram: GlProgram.from({ vertex, fragment: screenFragment, name: "rgss-screen-tone" }),
+      blendRequired: true,
+      resources: {
+        toneUniforms: { uTone: { value: new Float32Array(4), type: "vec4<f32>" } },
+        uBackTexture: Texture.EMPTY,
+      },
+    });
+  }
+
+  set(tone: Tone): void {
+    const u = this.resources.toneUniforms.uniforms as { uTone: Float32Array };
+    u.uTone[0] = tone.red / 255;
+    u.uTone[1] = tone.green / 255;
+    u.uTone[2] = tone.blue / 255;
+    u.uTone[3] = tone.gray / 255;
   }
 }

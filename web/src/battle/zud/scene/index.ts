@@ -9,7 +9,7 @@ import { preloadBitmaps } from "../../../ui/rpgCache";
 import { BattleScene } from "../../scene/BattleScene";
 import { DYNAMAX_PATTERN_GRAPHICS } from "./dynamaxSprite";
 import { zudSceneMethods } from "./Scene";
-import "../Debug"; // the ZUD Debug menu options (MenuHandlers)
+import "../raid/scene"; // Max Raid animations, the Cheer command menu, raid databox graphics
 
 Object.assign(BattleScene.prototype, zudSceneMethods);
 

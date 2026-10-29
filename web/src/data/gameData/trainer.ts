@@ -17,6 +17,7 @@ import { Settings } from "./settings";
 import { Species } from "./species";
 import { Stat } from "./stat";
 import { TrainerType } from "./trainerType";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 const key = (trType: Id, trName: string, trVersion: number) => JSON.stringify([trType, trName, trVersion]);
 
@@ -78,8 +79,8 @@ export class Trainer {
     }
   }
 
-  get name(): string { return this.realName; }
-  get loseText(): string { return this.realLoseText; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.TrainerNames, this.realName); }
+  get loseText(): string { return pbGetMessageFromHash(MessageTypes.TrainerLoseText, this.realLoseText); }
 
   /** to_trainer: builds the NPCTrainer and its party (Essentials, then Essentials Deluxe's additions). */
   toTrainer(): NPCTrainer {

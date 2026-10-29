@@ -164,18 +164,31 @@
                 {
                   "cmd": "if",
                   "cond": {"switch":822,"value":true},
-                  "then": [{"cmd":"script","ruby":"pkmn = Pokemon.new(:POPPLIO,10)\npbAddPokemon(pkmn)"}],
+                  "then": [
+                    {
+                      "cmd": "call",
+                      "fn": "pbAddPokemon",
+                      "args": [{"call":"Pokemon.new","args":["POPPLIO",10]}]
+                    }
+                  ],
                   "else": [
                     {
                       "cmd": "if",
                       "cond": {"switch":823,"value":true},
                       "then": [
                         {
-                          "cmd": "script",
-                          "ruby": "pkmn = Pokemon.new(:SPRIGATITO,10)\npbAddPokemon(pkmn)"
+                          "cmd": "call",
+                          "fn": "pbAddPokemon",
+                          "args": [{"call":"Pokemon.new","args":["SPRIGATITO",10]}]
                         }
                       ],
-                      "else": [{"cmd":"script","ruby":"pkmn = Pokemon.new(:LITTEN,10)\npbAddPokemon(pkmn)"}]
+                      "else": [
+                        {
+                          "cmd": "call",
+                          "fn": "pbAddPokemon",
+                          "args": [{"call":"Pokemon.new","args":["LITTEN",10]}]
+                        }
+                      ]
                     }
                   ]
                 },

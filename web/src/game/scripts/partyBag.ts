@@ -26,7 +26,7 @@ import { ItemHandlers } from "../items/ItemHandlers";
 import { setForgetMoveHook } from "../items/itemUtilities";
 import type { Pokemon } from "../pokemon/Pokemon";
 import type { Player } from "../trainer/Player";
-import { defineRubyScript, defineScript } from "../scriptApi";
+import { defineScript } from "../scriptApi";
 
 const player = () => G.player as unknown as Player;
 const num = (v: unknown, d: number) => (v == null ? d : Number(v));
@@ -106,11 +106,3 @@ defineScript("pbChooseItemFromList", (_c, message, variable, ...items) =>
 defineScript("pbMoveTutorChoose", (_c, move, movelist, bymachine, oneusemachine) =>
   pbMoveTutorChoose(String(move), (movelist as Id[] | null) ?? null, !!bymachine, !!oneusemachine));
 defineScript("pbForgetMove", (_c, pkmn, moveToLearn) => pbForgetMove(pkmn as Pokemon, (moveToLearn as Id | null) ?? null));
-
-// The event scripts with a Ruby proc the converter couldn't translate.
-defineRubyScript("pbChoosePokemon(1, 3, proc{ |pkmn|\n  pkmn.can_relearn_move?\n  }, true\n)", () =>
-  pbChoosePokemon(1, 3, (pkmn) => pkmn.canRelearnMove(), true));
-for (const species of ["RAICHU", "VENONAT"]) {
-  defineRubyScript(`pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::${species}\n})`, () =>
-    pbChoosePokemon(1, 2, (poke) => !poke.egg() && poke.species === species));
-}

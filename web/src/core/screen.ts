@@ -15,12 +15,17 @@ export async function createScreen(host: HTMLElement): Promise<Application> {
     resolution: 1,
     autoStart: false,
     preference: "webgl",
+    // Subtractive sprites (blend_type 2) and the weather's screen tone sample
+    // what's already drawn, which Pixi's WebGL renderer only allows with a back buffer.
+    useBackBuffer: true,
   });
   host.appendChild(app.canvas);
   const fit = () => {
-    const scale = Math.max(1, Math.floor(Math.min(innerWidth / SCREEN_WIDTH, innerHeight / SCREEN_HEIGHT)));
-    app.canvas.style.width = `${SCREEN_WIDTH * scale}px`;
-    app.canvas.style.height = `${SCREEN_HEIGHT * scale}px`;
+    // The current size: Graphics.resizeScreen (the editors) can change it.
+    const w = app.canvas.width, h = app.canvas.height;
+    const scale = Math.max(1, Math.floor(Math.min(innerWidth / w, innerHeight / h)));
+    app.canvas.style.width = `${w * scale}px`;
+    app.canvas.style.height = `${h * scale}px`;
   };
   addEventListener("resize", fit);
   fit();

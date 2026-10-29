@@ -23,6 +23,7 @@ import { evaluateAsync, runStatements, truthy, type ScriptContext } from "./scri
 import { rand } from "../core/random";
 import { pbGetTimeNow } from "./dayNight";
 import { FRAME_RATE } from "./GameCharacter";
+import { _MAPINTL } from "../core/intl";
 
 type Instr =
   | { op: "cmd"; c: Command }
@@ -451,7 +452,7 @@ export class Interpreter {
     const cancel = cancelRaw === "disallow" ? 0 : cancelRaw === "branch" ? choices.length + 1 : (cancelRaw as number) + 1;
     void map;
     return {
-      choices: visible.map((v) => v[0]),
+      choices: visible.map((v) => _MAPINTL((G.gameMap as unknown as GameMap).mapId, v[0])), // Translate choices
       cancel,
       map: visible.map((v) => v[1]),
     };
@@ -524,7 +525,7 @@ export class Interpreter {
     switch (c.cmd) {
       case "text": {
         if (t.messageWindowShowing) return false;
-        let message = c.text as string;
+        let message = _MAPINTL(map.mapId, c.text as string); // Translate the text
         const nextAt = this.nextIndex(this.index);
         const next = this.list![nextAt];
         if (next?.op === "cmd" && next.c.cmd === "text") message += "\x01";
@@ -788,24 +789,56 @@ export class Interpreter {
       case "returnToTitle":
         t.titleScreenCalling = true;
         return false;
-      case "windowskin":
+      case "windowskin": {
+        // command_131: only the speech windowskins can be chosen
+        const { MessageConfig, Settings } = await import("../ui/messageConfig");
+        const i = Settings.SPEECH_WINDOWSKINS.indexOf(c.name as string);
+        if (i >= 0) {
+          G.pokemonSystem.textskin = i;
+          MessageConfig.pbSetSpeechFrame("Graphics/Windowskins/" + Settings.SPEECH_WINDOWSKINS[i]);
+        }
+        return true;
+      }
       case "battleBgm":
+        // command_132
+        G.pokemonGlobal.nextBattleBGM = c.audio ?? null;
+        return true;
       case "battleEndMe":
+        // command_133 is command_dummy in Essentials
+        return true;
       case "callSave":
         // command_352: PokemonSaveScreen#pbSaveScreen
         await evaluateAsync({ call: "pbSaveScreen" }, this.context());
         return true;
-      case "recoverAll":
-      case "gameOver":
-        // TODO(M4): windowskin change, battle BGM, party heal, game over.
-        console.warn(`Event command ${c.cmd} isn't ported yet`);
+      case "recoverAll": {
+        // command_314 (the importer drops its actor parameter; 0, the whole party, is assumed)
+        const { Settings } = await import("../data/gameData/settings");
+        if (Settings.HEAL_STORED_POKEMON) { // No need to heal stored Pokémon
+          (G.player as unknown as { healParty(): void }).healParty();
+        } else {
+          const { pbEachPokemon } = await import("./pokemon/PokemonStorage");
+          for (const [pkmn] of pbEachPokemon()) pkmn.heal(); // Includes party Pokémon
+        }
         return true;
+      }
+      case "gameOver": {
+        // command_353
+        pbBGMFade(1.0);
+        pbBGSFade(1.0);
+        const { pbFadeOutIn } = await import("../ui/fades");
+        const { pbStartOver } = await import("./battle/startOver");
+        await pbFadeOutIn(() => pbStartOver(true));
+        return true;
+      }
       case "call":
       case "assign":
         await runStatements([c], this.context());
         return true;
       case "script":
-        await evaluateAsync({ ruby: c.ruby as string }, this.context());
+        // command_355: one eval of the script (consecutive Script commands are
+        // one script there), so its statements share local variables.
+        if (c.do) await runStatements(c.do as Command[], { ...this.context(), locals: new Map() });
+        else await evaluateAsync({ ruby: c.ruby as string }, this.context());
         return true;
       default:
         console.warn(`Unknown event command ${c.cmd}`, c);

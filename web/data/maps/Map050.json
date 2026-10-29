@@ -675,7 +675,27 @@
               "then": [
                 {
                   "cmd": "script",
-                  "ruby": "pkmn = Pokemon.new(:FARFETCHD_1, 15)\npkmn.item = :LEEK\npbAddForeignPokemon(pkmn,15, _I(\"Clark\"), _I(\"Chark'd\"), 0)"
+                  "do": [
+                    {
+                      "cmd": "assign",
+                      "target": "pkmn",
+                      "args": [],
+                      "op": "=",
+                      "value": {"call":"Pokemon.new","args":["FARFETCHD_1",15]}
+                    },
+                    {"cmd":"assign","target":"pkmn.item","args":[],"op":"=","value":"LEEK"},
+                    {
+                      "cmd": "call",
+                      "fn": "pbAddForeignPokemon",
+                      "args": [
+                        {"call":"pkmn"},
+                        15,
+                        {"call":"_I","args":["Clark"]},
+                        {"call":"_I","args":["Chark'd"]},
+                        0
+                      ]
+                    }
+                  ]
                 },
                 {"cmd":"switches","from":721,"to":721,"value":true},
                 {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
@@ -4476,7 +4496,11 @@
                   {"cmd":"text","text":"Ok... A deal is a deal..."},
                   {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                   {"cmd":"text","text":"This is the proof that I'm really from the past."},
-                  {"cmd":"script","ruby":"pkmn = Pokemon.new(:TYRUNT,20)\npbAddPokemon(pkmn)"},
+                  {
+                    "cmd": "call",
+                    "fn": "pbAddPokemon",
+                    "args": [{"call":"Pokemon.new","args":["TYRUNT",20]}]
+                  },
                   {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                   {
                     "cmd": "text",

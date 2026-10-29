@@ -112,11 +112,12 @@ export async function pbPCMailbox(): Promise<void> {
   }
 }
 
-/** pbTrainerPC */
+/** pbTrainerPC (+ Following Pokémon EX's FollowingPkmn.refresh(false) afterwards) */
 export async function pbTrainerPC(): Promise<void> {
   await pbMessage(_INTL("\\se[PC open]{1} booted up the PC.", player().name));
   await pbTrainerPCMenu();
   pbSEPlay("PC close");
+  FieldActions.followingPkmn?.refresh(false); // Following Pokemon EX (Refresh.rb:31-37)
 }
 
 /** pbTrainerPCMenu */

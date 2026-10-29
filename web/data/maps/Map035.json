@@ -364,8 +364,9 @@
                         "text": "They say that actions speak louder than words, so let's play a game!"
                       },
                       {
-                        "cmd": "script",
-                        "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PICHU,:HOPPIP])\npbSet(2, result)"
+                        "cmd": "call",
+                        "fn": "pbSet",
+                        "args": [2,{"call":"pbTriadDuel","args":["Jack",0,5,["elements","noprize"],["RATTATA","WEEDLE","CATERPIE","PICHU","HOPPIP"]]}]
                       },
                       {
                         "cmd": "if",
@@ -617,8 +618,9 @@
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"Let's go!"},
                       {
-                        "cmd": "script",
-                        "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"samewins\", \"elements\", \"noprize\"], \n[:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS], \n:CATERPIE)\npbSet(2, result)"
+                        "cmd": "call",
+                        "fn": "pbSet",
+                        "args": [2,{"call":"pbTriadDuel","args":["Jack",0,5,["samewins","elements","noprize"],["ARCEUS","ARCEUS","ARCEUS","ARCEUS","ARCEUS"],"CATERPIE"]}]
                       },
                       {
                         "cmd": "if",
@@ -900,8 +902,9 @@
           "trigger": 0,
           "list": [
             {
-              "cmd": "script",
-              "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PIKACHU,:BELLSPROUT])\npbSet(2, result)"
+              "cmd": "call",
+              "fn": "pbSet",
+              "args": [2,{"call":"pbTriadDuel","args":["Jack",0,5,["elements","noprize"],["RATTATA","WEEDLE","CATERPIE","PIKACHU","BELLSPROUT"]]}]
             }
           ]
         }

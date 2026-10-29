@@ -6,6 +6,7 @@
 // the speed they had at the original 40 fps.
 
 import { TICK } from "../core/loop";
+import { Weather } from "../data/gameData/weather";
 import { Color, Tone } from "../rgss/types";
 
 /** Ratio of an original 40 fps frame to one of our ticks. */
@@ -154,10 +155,11 @@ export class GameScreen {
     this.shakeDuration = ticks(seconds);
   }
 
+  /** Set Weather. `seconds` is the fade duration (Ruby: 1/20ths of a second); RPG::Weather only checks it's > 0. */
   weather(type: string | number, power: number, seconds: number): void {
-    const names = ["None", "Rain", "Storm", "Snow"];
-    this.weatherType = typeof type === "number" ? (names[type] ?? "None") : type;
-    this.weatherMax = this.weatherType === "None" ? 0 : (power + 1) * 4;
+    this.weatherType = Weather.get(type).id;
+    const max = (power + 1) * 60; // * RPG::Weather::MAX_SPRITES
+    this.weatherMax = Number.isInteger(max) ? Math.floor(max / 10) : max / 10;
     this.weatherDuration = seconds;
   }
 

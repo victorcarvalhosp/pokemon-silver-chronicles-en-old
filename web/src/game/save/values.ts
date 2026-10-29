@@ -3,6 +3,9 @@
 // load order: switches load before the map refreshes its event pages.
 
 import { Graphics } from "../../rgss/Graphics";
+import { Data } from "../../data/store";
+import type { MapEvent } from "../../data/types";
+import { GameEvent } from "../GameEvent";
 import { GamePlayer } from "../GamePlayer";
 import { GameScreen } from "../GameScreen";
 import { GameSystem } from "../GameSystem";
@@ -123,7 +126,7 @@ SaveData.register({
       displayX: m.displayX,
       displayY: m.displayY,
       fields: snapshot(Object.fromEntries(MAP_FIELDS.map((k) => [k, m[k]]))),
-      events: Object.fromEntries([...m.events].map(([id, e]) => [id, e.saveState()])),
+      events: Object.fromEntries([...m.events].map(([id, e]) => [id, e.savedWithData ? { ...e.saveState(), eventData: snapshot(e.event) } : e.saveState()])),
     }));
     return { current: G.gameMap!.mapId, maps };
   },
@@ -210,12 +213,24 @@ export function restoreMapState(): void {
   if (!saved) throw new Error("Save has no map data");
   G.gamePlayer = new GamePlayer() as never;
   const factory = new PokemonMapFactory(saved.current);
-  for (const s of saved.maps) {
+  // Game.load_map: a safe save (Game.save(safe: true), e.g. the Battle
+  // Frontier's), or one made before the map data changed (magic number),
+  // sets the map up afresh, with no interpreter running.
+  const magicNumberMatches = G.gameSystem.magicNumber === ((Data.system as unknown as { magicNumber?: number }).magicNumber ?? 0);
+  const safe = !magicNumberMatches || !!(G.pokemonGlobal as unknown as { safesave?: boolean }).safesave;
+  for (const s of safe ? [] : saved.maps) {
     const m: GameMap = s.mapId === saved.current ? factory.map : factory.getMap(s.mapId);
     restore(m, s.fields);
     m.displayX = s.displayX;
     m.displayY = s.displayY;
-    for (const [id, state] of Object.entries(s.events)) m.events.get(Number(id))?.loadState(state);
+    for (const [id, state] of Object.entries(s.events)) {
+      if (!m.events.has(Number(id)) && state.eventData) { // an event added at runtime
+        const e = new GameEvent(m.mapId, state.eventData as MapEvent, m);
+        e.savedWithData = true;
+        m.events.set(Number(id), e);
+      }
+      m.events.get(Number(id))?.loadState(state);
+    }
   }
   const p = G.gamePlayer as unknown as GamePlayer;
   if (pendingPlayer) {
@@ -224,9 +239,13 @@ export function restoreMapState(): void {
     p.encounterCount = Number(pendingPlayer.encounterCount ?? 0);
   }
   const current = factory.map;
-  current.displayX = saved.maps.find((m) => m.mapId === saved.current)?.displayX ?? current.displayX;
-  current.displayY = saved.maps.find((m) => m.mapId === saved.current)?.displayY ?? current.displayY;
-  (G.gameSystem.mapInterpreter as unknown as Interpreter).loadState(pendingInterpreter);
+  if (safe) {
+    p.center(p.x, p.y);
+  } else {
+    current.displayX = saved.maps.find((m) => m.mapId === saved.current)?.displayX ?? current.displayX;
+    current.displayY = saved.maps.find((m) => m.mapId === saved.current)?.displayY ?? current.displayY;
+  }
+  (G.gameSystem.mapInterpreter as unknown as Interpreter).loadState(safe ? null : pendingInterpreter);
   pendingMaps = null;
   pendingPlayer = null;
   pendingInterpreter = null;

@@ -26,6 +26,8 @@
 // operation on it is a float operation. `x.round` is rubyRound, Integer
 // division of positive Integers is Math.floor(a / b).
 
+import { DEBUG } from "../../core/debug";
+import { Input } from "../../rgss/Input";
 import type { Id } from "../../data/gameData/gameData";
 import { Settings } from "../../data/gameData/settings";
 import { Effectiveness, Type } from "../../data/gameData/type";
@@ -688,7 +690,7 @@ function additionalEffectChanceCore(move: Move, user: Battler, target: Battler, 
       (user.hasActiveAbility("SERENEGRACE") || user.pbOwnSide().effects[PBEffects.Rainbow] > 0)) {
     ret *= 2;
   }
-  // Skipped: `ret = 100 if $DEBUG && Input.press?(Input::CTRL)` (debug-only key check).
+  if (DEBUG && Input.press(Input.CTRL)) ret = 100;
   return ret;
 }
 

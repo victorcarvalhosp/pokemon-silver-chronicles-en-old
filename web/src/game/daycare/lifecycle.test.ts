@@ -31,7 +31,7 @@ import { GameData } from "../../data/gameData";
 import type { Id } from "../../data/gameData/gameData";
 import { loadGameDataForTests } from "../../data/gameData/testing";
 import { evolvePokemon } from "../../ui/evolution/Evolution";
-import { pbHatchEggsStepCountdown, pbHatchPokemonData } from "../../ui/hatching/EggHatching";
+import { pbHatchEggsOnStep, pbHatchPokemonData } from "../../ui/hatching/EggHatching";
 import { pbTradePokemon } from "../../ui/trading/Trading";
 import { BerryPlantData } from "../berries/BerryPlants";
 import { G, GameTemp, GameVariables, PokemonGlobalMetadata } from "../globals";
@@ -299,7 +299,7 @@ describe("Trades (pbStartTrade)", () => {
 
 describe("Hatching countdown (:hatch_eggs)", () => {
   for (const c of ref.hatching) {
-    it(c.name, () => {
+    it(c.name, async () => {
       resetWorld();
       for (const s of c.party) player().party.push(buildPokemon(s as Spec));
       for (const [sp, steps] of c.eggs as [Id, number][]) {
@@ -310,7 +310,7 @@ describe("Hatching countdown (:hatch_eggs)", () => {
       const hatched: Id[] = [];
       const log: unknown[] = [];
       for (let i = 0; i < c.steps; i++) {
-        for (const egg of pbHatchEggsStepCountdown()) hatched.push(egg.species);
+        await pbHatchEggsOnStep(async (egg) => { hatched.push(egg.species); });
         log.push([player().party.map((p) => p.stepsToHatch), [...hatched]]);
       }
       expect(log).toEqual(c.log);

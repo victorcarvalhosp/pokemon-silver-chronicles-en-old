@@ -571,11 +571,49 @@
             {"cmd":"call","fn":"setBattleRule","args":["backdrop","cave3"]},
             {
               "cmd": "script",
-              "ruby": "pkmn1 = Pokemon.new(:ARTICUNO, 75)\npkmn1.learn_move(:HURRICANE)\npkmn1.learn_move(:FREEZEDRY)\npkmn1.learn_move(:ROOST)\npkmn1.learn_move(:HAZE)\npkmn1.item = :LEFTOVERS\npkmn2 = Pokemon.new(:DEWGONG, 65)\npkmn2.ability = :STORMDRAIN\npkmn2.learn_move(:FOLLOWME)\npkmn2.learn_move(:PROTECT)\npkmn2.learn_move(:ICYWIND)\npkmn2.learn_move(:AQUARING)"
-            },
-            {
-              "cmd": "script",
-              "ruby": "pkmn3 = Pokemon.new(:CLOYSTER, 65)\npkmn3.ability = :LIGHTNINGROD\npkmn3.learn_move(:WIDEGUARD)\npkmn3.learn_move(:PROTECT)\npkmn3.learn_move(:REFLECT)\npkmn3.learn_move(:FOLLOWME)\nWildBattle.start(pkmn3,pkmn1,pkmn2)"
+              "do": [
+                {
+                  "cmd": "assign",
+                  "target": "pkmn1",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["ARTICUNO",75]}
+                },
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn1"},"args":["HURRICANE"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn1"},"args":["FREEZEDRY"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn1"},"args":["ROOST"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn1"},"args":["HAZE"]},
+                {"cmd":"assign","target":"pkmn1.item","args":[],"op":"=","value":"LEFTOVERS"},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn2",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["DEWGONG",65]}
+                },
+                {"cmd":"assign","target":"pkmn2.ability","args":[],"op":"=","value":"STORMDRAIN"},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn2"},"args":["FOLLOWME"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn2"},"args":["PROTECT"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn2"},"args":["ICYWIND"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn2"},"args":["AQUARING"]},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn3",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["CLOYSTER",65]}
+                },
+                {"cmd":"assign","target":"pkmn3.ability","args":[],"op":"=","value":"LIGHTNINGROD"},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn3"},"args":["WIDEGUARD"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn3"},"args":["PROTECT"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn3"},"args":["REFLECT"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn3"},"args":["FOLLOWME"]},
+                {
+                  "cmd": "call",
+                  "fn": "WildBattle.start",
+                  "args": [{"call":"pkmn3"},{"call":"pkmn1"},{"call":"pkmn2"}]
+                }
+              ]
             },
             {
               "cmd": "if",

@@ -11,6 +11,7 @@
 // (The PBTrainers constants this game keeps for old events are registered with
 // PBItems in game/scripts/pokemon.ts.)
 
+import { DEBUG } from "../../core/debug";
 import type { Id } from "../../data/gameData/gameData";
 import { TrainerType } from "../../data/gameData/trainerType";
 import { Graphics } from "../../rgss/Graphics";
@@ -29,7 +30,7 @@ import { Interpreter } from "../Interpreter";
 import { PokemonOwner } from "../pokemon/PokemonOwner";
 import { pokemonMap } from "../save/values";
 import { defineScript } from "../scriptApi";
-import { pbLoadTrainer } from "../trainer/loadAndNew";
+import { pbLoadTrainer, pbTrainerCheck, pbTrainerTypeCheck } from "../trainer/loadAndNew";
 
 /** Settings::EXCLAMATION_ANIMATION_ID (001_Settings.rb:376) */
 export const EXCLAMATION_ANIMATION_ID = 3;
@@ -104,8 +105,9 @@ defineScript("pbMoveTowardPlayer", (_c, event) => pbMoveTowardPlayer(event as Ga
 //===============================================================================
 // Trainer intro music (Interpreter#pbTrainerIntro)
 //===============================================================================
-// Interpreter#pbTrainerIntro(symbol) (`return true if $DEBUG && ...` is debug only).
+// Interpreter#pbTrainerIntro(symbol)
 Interpreter.prototype.pbTrainerIntro = function (this: Interpreter, symbol: string): boolean {
+  if (DEBUG && !TrainerType.exists(symbol)) return true;
   const trType = TrainerType.get(symbol).id;
   this.pbGlobalLock();
   pbPlayTrainerIntroBGM(trType);
@@ -115,15 +117,8 @@ Interpreter.prototype.pbTrainerIntro = function (this: Interpreter, symbol: stri
 //===============================================================================
 // Trainer data checks (debug only)
 //===============================================================================
-/** pbTrainerCheck(tr_type, tr_name, max_battles, tr_version): offers to create missing trainers in $DEBUG. */
-export function pbTrainerCheck(_trType: Id, _trName: string, _maxBattles: number, _trVersion = 0): boolean {
-  return true; // return true if !$DEBUG
-}
-/** pbTrainerTypeCheck(trainer_type) */
-export function pbTrainerTypeCheck(_trainerType: Id): boolean {
-  return true; // return true if !$DEBUG
-}
-
+// pbTrainerCheck / pbTrainerTypeCheck live in game/trainer/loadAndNew.ts (they
+// offer to create a missing trainer in Debug mode).
 defineScript("pbTrainerCheck", (_c, type, name, max, version) => pbTrainerCheck(type as Id, String(name), Number(max), Number(version ?? 0)));
 defineScript("pbTrainerTypeCheck", (_c, type) => pbTrainerTypeCheck(type as Id));
 

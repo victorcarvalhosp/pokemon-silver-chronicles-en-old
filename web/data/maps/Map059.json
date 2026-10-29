@@ -544,7 +544,22 @@
                           {"cmd":"gold","op":"sub","value":1000},
                           {
                             "cmd": "script",
-                            "ruby": "poke=pbGetPokemon(1)\npoke.changeHappiness(\"groom\")\npoke.beauty+=40"
+                            "do": [
+                              {
+                                "cmd": "assign",
+                                "target": "poke",
+                                "args": [],
+                                "op": "=",
+                                "value": {"call":"pbGetPokemon","args":[1]}
+                              },
+                              {
+                                "cmd": "call",
+                                "fn": "changeHappiness",
+                                "on": {"call":"poke"},
+                                "args": ["groom"]
+                              },
+                              {"cmd":"assign","target":"poke.beauty","args":[],"op":"+=","value":40}
+                            ]
                           },
                           {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
                           {"cmd":"screenTone","tone":[255.0,255.0,255.0,255.0],"seconds":0.5},

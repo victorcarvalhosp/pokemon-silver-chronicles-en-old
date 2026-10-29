@@ -2,6 +2,7 @@
 
 import type { RibbonData } from "../pbs/types";
 import { type Id, SymbolData, hasFlag } from "./gameData";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 export class Ribbon extends SymbolData {
   static DATA = new Map<Id, Ribbon>();
@@ -21,8 +22,8 @@ export class Ribbon extends SymbolData {
     this.flags = hash.flags ?? [];
   }
 
-  get name(): string { return this.realName; }
-  get description(): string { return this.realDescription; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.RibbonNames, this.realName); }
+  get description(): string { return pbGetMessageFromHash(MessageTypes.RibbonDescriptions, this.realDescription); }
 
   hasFlag(flag: string): boolean { return hasFlag(this.flags, flag); }
 }

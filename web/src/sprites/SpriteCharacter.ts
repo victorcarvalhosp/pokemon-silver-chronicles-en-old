@@ -1,4 +1,6 @@
-// Port of 005_Sprites/003_Sprite_Character.rb (incl. BushBitmap).
+// Port of 005_Sprites/003_Sprite_Character.rb (incl. BushBitmap), with the
+// aliases 009_Sprite_DynamicShadows.rb adds (setShadows / clearShadows) and
+// Following Pokemon EX's set_reflection.
 
 import { Bitmap } from "../rgss/Bitmap";
 import { Sprite, type Viewport } from "../rgss/display";
@@ -10,7 +12,10 @@ import { Cache } from "./cache";
 import { SpriteAnimations } from "./SpriteAnimation";
 import { Data } from "../data/store";
 import { G } from "../game/globals";
+import { pbDayNightTint } from "../game/dayNight";
 import { SpriteSurfBase } from "../game/field/SpriteSurfBase";
+import { SpriteReflection } from "./SpriteReflection";
+import { SpriteShadow, XPML_read, type ShadowParams } from "./SpriteDynamicShadows";
 
 /** BushBitmap: the character sheet with its bottom `depth` pixels faded. */
 const bushCache = new WeakMap<Bitmap, Map<string, Bitmap>>();
@@ -52,15 +57,56 @@ export class SpriteCharacter {
   private animations: SpriteAnimations;
   /** Sprite_SurfBase, for the player only. */
   private surfbase: SpriteSurfBase | null = null;
+  private reflection: SpriteReflection | null = null;
+  /** 009_Sprite_DynamicShadows.rb: @ombrelist */
+  private ombrelist: SpriteShadow[] = [];
 
   constructor(readonly viewport: Viewport, readonly character: GameCharacter, private tileBitmap: TileTextureSource) {
     this.sprite = new Sprite(viewport);
     this.animations = new SpriteAnimations(this);
+    const name = (character as { name?: unknown }).name;
+    if (!character || character === (G.gamePlayer as unknown) || (typeof name === "string" && /reflection/i.test(name))) {
+      this.reflection = new SpriteReflection(this, character, viewport);
+    }
     if (character === (G.gamePlayer as unknown)) this.surfbase = new SpriteSurfBase(this.sprite, character, viewport);
     this.update();
   }
 
+  /** Following Pokemon EX (Event Sprite.rb): set_reflection */
+  setReflection(viewport: Viewport, event: GameCharacter | null): void {
+    this.reflection ??= new SpriteReflection(this, event, viewport);
+  }
+
+  /** 009_Sprite_DynamicShadows.rb: setShadows(map, shadows) */
+  setShadows(map: GameMap, shadows: ShadowParams[]): void {
+    if (this.character instanceof GameEvent && shadows.length > 0) {
+      const params = XPML_read(map, "Shadow", this.character, 4);
+      if (params) {
+        for (const _shadow of shadows) {
+          // NOTE (Ruby parity): passes every shadow source instead of this one,
+          // so the shadow's source is an Array and its update raises
+          // (009_Sprite_DynamicShadows.rb:139). No event here has "begin Shadow".
+          this.ombrelist.push(new SpriteShadow(this.viewport, this.character, shadows, this.tileBitmap));
+        }
+      }
+    }
+    if (this.character === (G.gamePlayer as unknown) && shadows.length > 0) {
+      for (const shadow of shadows) this.ombrelist.push(new SpriteShadow(this.viewport, this.character, shadow, this.tileBitmap));
+    }
+    this.update();
+  }
+
+  clearShadows(): void {
+    for (const s of this.ombrelist) s?.dispose();
+    this.ombrelist = [];
+  }
+
   dispose(): void {
+    // (Ruby leaves @ombrelist to the garbage collector, which disposes the
+    // shadow sprites at some later point; here they'd stay on screen.)
+    this.clearShadows();
+    this.reflection?.dispose();
+    this.reflection = null;
     this.surfbase?.dispose();
     this.surfbase = null;
     this.animations.dispose();
@@ -68,6 +114,11 @@ export class SpriteCharacter {
   }
 
   update(): void {
+    this.updateCharacter();
+    for (const ombre of this.ombrelist) ombre.update();
+  }
+
+  private updateCharacter(): void {
     const c = this.character;
     if (c instanceof GameEvent && !c.shouldUpdate()) return;
     this.sprite.update();
@@ -114,13 +165,17 @@ export class SpriteCharacter {
     const bush = c.bushDepth;
     this.sprite.bitmap = bush === 0 ? this.charbitmap : bushBitmap(this.charbitmap, this.tileId >= 384, bush);
     this.sprite.visible = !c.transparent;
+    if (this.reflection) this.reflection.visible = this.sprite.visible;
     if (this.tileId === 0) {
       const sx = c.pattern * this.cw;
       const sy = ((c.direction - 2) / 2) * this.ch;
       this.sprite.srcRect.set(sx, sy, this.cw, this.ch);
       this.sprite.oy = (this.spriteOffset ? this.ch - 16 : this.ch) - c.bobHeight;
     }
-    // TODO(day/night): pbDayNightTint(self) unless the event is named "regulartone".
+    if (this.sprite.visible) {
+      if (c instanceof GameEvent && /regulartone/i.test(c.name)) this.sprite.tone.set(0, 0, 0, 0);
+      else pbDayNightTint(this.sprite);
+    }
     this.sprite.x = c.screenX();
     this.sprite.y = c.screenY();
     this.sprite.z = c.screenZ(this.ch);
@@ -131,6 +186,7 @@ export class SpriteCharacter {
       if (animation) this.animations.animation(animation, true);
       c.animationId = 0;
     }
+    this.reflection?.update();
     this.surfbase?.update();
   }
 }

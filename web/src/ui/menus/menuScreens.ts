@@ -12,6 +12,7 @@
 // Also here: the defensive views of game state the menus read before the
 // Player/Bag/Pokémon models are ported (G.bag, $PokemonGlobal fields, ...).
 
+import { DEBUG } from "../../core/debug";
 import { G } from "../../game/globals";
 
 /** [pokemon, move] as returned by PokemonPartyScreen#pbPokemonScreen. */
@@ -46,8 +47,8 @@ export const MenuScreens: {
   flyMap?: () => Promise<FlyDestination | null>;
   /** PokemonTrainerCardScreen#pbStartScreen (Mr. Gela's HGSS Trainer Card in this game). */
   trainerCard?: () => Promise<void>;
-  /** pbDebugMenu */
-  debugMenu?: () => Promise<void>;
+  /** pbDebugMenu(show_all = true) (debug/index.ts sets it) */
+  debugMenu?: (showAll?: boolean) => Promise<void>;
 } = {};
 
 /** Overworld functions the menus call after a screen returns. */
@@ -94,8 +95,8 @@ export const MenuData: {
   pokemonIconSprite?: (pkmn: unknown, viewport: import("../../rgss/display").Viewport | null) => MenuIconSprite;
 } = {};
 
-/** $DEBUG: off, as in a released game (mkxp sets it only for editor test plays). */
-export const MenuFlags = { DEBUG: false };
+/** $DEBUG (core/debug.ts; mutable for tests). */
+export const MenuFlags = { DEBUG };
 
 //===============================================================================
 // Defensive views of models that aren't ported yet

@@ -298,8 +298,9 @@
                             "cond": {"switch":227,"value":true},
                             "then": [
                               {
-                                "cmd": "script",
-                                "ruby": "pkmn = Pokemon.new(:SQUIRTLE,10)\npbAddPokemon(pkmn)"
+                                "cmd": "call",
+                                "fn": "pbAddPokemon",
+                                "args": [{"call":"Pokemon.new","args":["SQUIRTLE",10]}]
                               }
                             ],
                             "else": [
@@ -308,14 +309,16 @@
                                 "cond": {"switch":228,"value":true},
                                 "then": [
                                   {
-                                    "cmd": "script",
-                                    "ruby": "pkmn = Pokemon.new(:BULBASAUR,10)\npbAddPokemon(pkmn)"
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"Pokemon.new","args":["BULBASAUR",10]}]
                                   }
                                 ],
                                 "else": [
                                   {
-                                    "cmd": "script",
-                                    "ruby": "pkmn = Pokemon.new(:CHARMANDER,10)\npbAddPokemon(pkmn)"
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"Pokemon.new","args":["CHARMANDER",10]}]
                                   }
                                 ]
                               }

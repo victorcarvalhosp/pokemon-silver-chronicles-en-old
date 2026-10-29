@@ -11,6 +11,7 @@ import { type Id, SymbolData, hasFlag } from "./gameData";
 import { Item } from "./item";
 import { Settings } from "./settings";
 import { Type } from "./type";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 export class Move extends SymbolData {
   static DATA = new Map<Id, Move>();
@@ -48,8 +49,8 @@ export class Move extends SymbolData {
   }
 
   /** ZUD: "_" in a move name stands for "," (e.g. G-Max moves). */
-  get name(): string { return this.realName.replaceAll("_", ","); }
-  get description(): string { return this.realDescription; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.Moves, this.realName).replaceAll("_", ","); }
+  get description(): string { return pbGetMessageFromHash(MessageTypes.MoveDescriptions, this.realDescription); }
 
   hasFlag(flag: string): boolean { return hasFlag(this.flags, flag); }
 

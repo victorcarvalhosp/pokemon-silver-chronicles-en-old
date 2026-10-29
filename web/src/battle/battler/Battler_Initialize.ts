@@ -6,7 +6,7 @@
 //   adds base_moves, power_trigger, CriticalBoost, EncoreRestore, TransformPokemon.
 // - ZUD Mechanics ([004] Battle_Battler/Battler_Overrides.rb:9): pbInitEffects
 //   adds the Dynamax/Max Raid effects and keeps G-Max trapping effects;
-//   [009] Max Raid/Raid_Battle_Battler.rb:8 pbInitRaidBoss.
+//   [009] Max Raid/Raid_Battle_Battler.rb:8 pbInitRaidBoss (in zud/raid/).
 // Alias chain: ZUD( Deluxe( Gen 9( core ) ) ).
 
 import { _INTL } from "../../data/gameData/gameData";
@@ -16,6 +16,7 @@ import type { Pokemon } from "../../game/pokemon/Pokemon";
 import { Move } from "../move/Move";
 import { PBEffects } from "../other/PBEffects";
 import { Battler } from "./Battler";
+import { pbInitRaidBoss as raidInitRaidBoss } from "../zud/raid/Raid_Battle_Battler";
 
 const methods = {
   pbInitBlank(this: Battler): void {
@@ -344,14 +345,9 @@ const methods = {
     this.effects[PBEffects.Yawn] = 0;
   },
 
-  /**
-   * ZUD Mechanics ([009] Max Raid/Raid_Battle_Battler.rb:8): sets up a Max Raid
-   * boss. Deferred: Max Raid battles (raid_battle is always false here).
-   */
+  /** ZUD Mechanics ([009] Max Raid/Raid_Battle_Battler.rb:8): sets up a Max Raid boss. */
   pbInitRaidBoss(this: Battler): void {
-    if (this.battle.raidBattle && this.opposes()) {
-      // Deferred: Max Raid boss effects from $game_temp.dx_rules (Raid_Battle_Battler.rb:9-21).
-    }
+    raidInitRaidBoss(this);
   },
 
   //=============================================================================

@@ -4,6 +4,9 @@
 const DOWN = 2, LEFT = 4, RIGHT = 6, UP = 8;
 const A = 11, B = 12, C = 13, X = 14, Y = 15, Z = 16, L = 17, R = 18;
 const SHIFT = 21, CTRL = 22, ALT = 23, F5 = 25, F6 = 26, F7 = 27, F8 = 28, F9 = 29;
+// mkxp-z's mouse buttons (Input::MOUSELEFT/MOUSEMIDDLE/MOUSERIGHT).
+const MOUSELEFT = 38, MOUSEMIDDLE = 39, MOUSERIGHT = 40;
+const MOUSE_BUTTONS: Record<number, number> = { 0: MOUSELEFT, 1: MOUSEMIDDLE, 2: MOUSERIGHT };
 
 const KEYS: Record<string, number[]> = {
   ArrowDown: [DOWN], ArrowLeft: [LEFT], ArrowRight: [RIGHT], ArrowUp: [UP],
@@ -29,6 +32,10 @@ const pressedAt = new Map<number, number>(); // button -> order it was pressed (
 let order = 0;
 let held = new Map<number, number>(); // button -> seconds held, as of the last update()
 let prevHeld = new Map<number, number>();
+let rawMouseX = 0, rawMouseY = 0, rawMouseIn = false; // from events
+let mouseX = 0, mouseY = 0, mouseIn = false; // as of the last update()
+/** Run at the end of every Input.update() (Easy Mouse System's `alias update_esms update`). */
+const updateHooks: (() => void)[] = [];
 
 // Tests import game logic without a browser.
 if (typeof addEventListener !== "undefined") {
@@ -46,6 +53,31 @@ if (typeof addEventListener !== "undefined") {
     for (const b of KEYS[e.code] ?? []) down.delete(b);
   });
   addEventListener("blur", () => down.clear());
+  // mkxp-z's mouse: the position in game pixels while the pointer is over the
+  // game's canvas (System.mouse_in_window), and the three buttons as inputs.
+  const toGame = (e: MouseEvent): void => {
+    const canvas = document.querySelector("canvas");
+    if (!canvas) return;
+    const r = canvas.getBoundingClientRect();
+    rawMouseX = Math.floor(((e.clientX - r.left) * canvas.width) / Math.max(1, r.width));
+    rawMouseY = Math.floor(((e.clientY - r.top) * canvas.height) / Math.max(1, r.height));
+    rawMouseIn = rawMouseX >= 0 && rawMouseY >= 0 && rawMouseX < canvas.width && rawMouseY < canvas.height;
+  };
+  addEventListener("mousemove", toGame);
+  addEventListener("mousedown", (e) => {
+    toGame(e);
+    const b = MOUSE_BUTTONS[e.button];
+    if (!b || !rawMouseIn) return;
+    if (!down.has(b)) pressedAt.set(b, ++order);
+    down.add(b);
+    tapped.add(b);
+  });
+  addEventListener("mouseup", (e) => {
+    toGame(e);
+    const b = MOUSE_BUTTONS[e.button];
+    if (b) down.delete(b);
+  });
+  addEventListener("contextmenu", (e) => { if (rawMouseIn) e.preventDefault(); });
 }
 
 function padButtons(): Set<number> {
@@ -69,6 +101,7 @@ export const Input = {
   DOWN, LEFT, RIGHT, UP, A, B, C, X, Y, Z, L, R, SHIFT, CTRL, ALT, F5, F6, F7, F8, F9,
   // Essentials' names (001_Technical/004_Input.rb)
   USE: C, BACK: B, ACTION: A, JUMPUP: X, JUMPDOWN: Y, SPECIAL: Z, AUX1: L, AUX2: R,
+  MOUSELEFT, MOUSEMIDDLE, MOUSERIGHT,
 
   update(dt = 1 / 60): void {
     const now = new Set([...down, ...tapped, ...padButtons()]);
@@ -78,6 +111,33 @@ export const Input = {
     held = new Map();
     for (const b of now) held.set(b, (prevHeld.get(b) ?? -dt) + dt);
     for (const b of pressedAt.keys()) if (!now.has(b)) pressedAt.delete(b);
+    mouseX = rawMouseX;
+    mouseY = rawMouseY;
+    mouseIn = rawMouseIn;
+    for (const hook of updateHooks) hook();
+  },
+
+  /** Plugins that alias Input.update (Easy Mouse System) add their part here. */
+  addUpdateHook(hook: () => void): void {
+    if (!updateHooks.includes(hook)) updateHooks.push(hook);
+  },
+
+  /** mkxp-z Input.mouse_x / mouse_y: the pointer in game pixels, as of the last update(). */
+  get mouseX(): number { return mouseX; },
+  get mouseY(): number { return mouseY; },
+  /** mkxp-z System.mouse_in_window. */
+  get mouseInWindow(): boolean { return mouseIn; },
+
+  /**
+   * mkxp-z Input.time?: microseconds the button has been held (0 if not held).
+   * mkxp-z measures from its clock, so a press is already a few microseconds
+   * old when the update that sees it returns: at least 1 here, or Easy Mouse's
+   * click? (which needs a held time >= 1) would miss a press and release
+   * between two updates (a trackpad tap).
+   */
+  time(b: number): number {
+    const t = held.get(b);
+    return t === undefined ? 0 : Math.max(1, Math.round(t * 1_000_000));
   },
 
   press(b: number): boolean {

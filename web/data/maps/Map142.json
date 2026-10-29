@@ -1645,7 +1645,20 @@
           "list": [
             {
               "cmd": "script",
-              "ruby": "setBattleRule(\"cannotRun\")\npkmn = Pokemon.new(:VOLTORB, 24)\npkmn.learn_move(:THUNDER)\npkmn.learn_move(:METALSOUND)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)"
+              "do": [
+                {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["VOLTORB",24]}
+                },
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["THUNDER"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["METALSOUND"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["LIGHTSCREEN"]},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"selfSwitch","ch":"A","value":true},
             {"cmd":"variables","from":37,"to":37,"op":"add","value":1}
@@ -1710,7 +1723,21 @@
           "list": [
             {
               "cmd": "script",
-              "ruby": "setBattleRule(\"cannotRun\")\npkmn = Pokemon.new(:VOLTORB, 24)\npkmn.learn_move(:EXPLOSION)\npkmn.learn_move(:THUNDER)\npkmn.learn_move(:METALSOUND)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)"
+              "do": [
+                {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["VOLTORB",24]}
+                },
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["EXPLOSION"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["THUNDER"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["METALSOUND"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["LIGHTSCREEN"]},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"selfSwitch","ch":"A","value":true},
             {"cmd":"variables","from":37,"to":37,"op":"add","value":1}
@@ -1775,7 +1802,21 @@
           "list": [
             {
               "cmd": "script",
-              "ruby": "setBattleRule(\"cannotRun\")\npkmn = Pokemon.new(:VOLTORB, 24)\npkmn.learn_move(:EXPLOSION)\npkmn.learn_move(:THUNDER)\npkmn.learn_move(:METALSOUND)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)"
+              "do": [
+                {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["VOLTORB",24]}
+                },
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["EXPLOSION"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["THUNDER"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["METALSOUND"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["LIGHTSCREEN"]},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"selfSwitch","ch":"A","value":true},
             {"cmd":"variables","from":37,"to":37,"op":"add","value":1}

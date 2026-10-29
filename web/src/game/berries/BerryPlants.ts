@@ -21,7 +21,7 @@ import { pbFadeOutIn } from "../../ui/fades";
 import { pbConfirmMessage, pbMessage } from "../../ui/messages";
 import { PokemonBag_Scene, PokemonBagScreen } from "../../ui/bag/bag";
 import { IconSprite } from "../../ui/SpriteWrapper";
-import { pbGetTimeNow } from "../dayNight";
+import { pbDayNightTint, pbGetTimeNow } from "../dayNight";
 import { EventHandlers } from "../eventHandlers";
 import type { GameEvent } from "../GameEvent";
 import type { GameMap } from "../GameMap";
@@ -281,8 +281,7 @@ export class BerryPlantMoistureSprite implements UserSprite {
     this.sprite.y = this.event.screenY();
     this.sprite.zoomX = 1.0;
     this.sprite.zoomY = this.sprite.zoomX;
-    // pbDayNightTint(@sprite): the map viewport is tinted as a whole here
-    // (SceneMap.updateSpritesets), which covers this sprite.
+    pbDayNightTint(this.sprite);
   }
 }
 const MOISTURE_FILES: Record<number, string> = {

@@ -237,8 +237,15 @@
             {"cmd":"wait","seconds":1.0},
             {"cmd":"recoverAll"},
             {
-              "cmd": "script",
-              "ruby": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:KANTOCHAMPION)\nend"
+              "cmd": "call",
+              "fn": "each",
+              "on": {"call":"$player.pokemon_party"},
+              "args": [
+                {
+                  "proc": ["pkmn"],
+                  "body": {"call":"giveRibbon","on":{"call":"pkmn"},"args":["KANTOCHAMPION"]}
+                }
+              ]
             },
             {
               "cmd": "moveRoute",

@@ -1301,7 +1301,7 @@
             {"cmd":"erasePicture","id":1},
             {"cmd":"erasePicture","id":2},
             {"cmd":"erasePicture","id":3},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"transfer","map":359,"x":17,"y":41,"direction":0,"fade":true},
             {"cmd":"switches","from":215,"to":215,"value":true},
             {
@@ -1378,7 +1378,7 @@
                     }
                   ]
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":216,"to":216,"value":true},
                 {"cmd":"switches","from":217,"to":217,"value":true},
                 {"cmd":"switches","from":219,"to":219,"value":true},
@@ -1403,7 +1403,7 @@
                   "cmd": "text",
                   "text": "\\f[facegiovanni]\\b Nem foi nescessário utilizar força máxima contra você..."
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":213,"to":213,"value":true},
                 {"cmd":"switches","from":218,"to":218,"value":true},
                 {"cmd":"switches","from":216,"to":216,"value":true},
@@ -1546,7 +1546,7 @@
                 },
                 {"cmd":"waitForMoveCompletion"},
                 {"cmd":"text","text":"\\bE o vencedor é Agente 017!"},
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"selfSwitch","ch":"B","value":true},
                 {"cmd":"switches","from":223,"to":223,"value":true},
                 {
@@ -1570,7 +1570,7 @@
                   "cmd": "text",
                   "text": "\\f[facerival]\\b Agora vejo qua valeu a pena me unir a Equipe Rocket..."
                 },
-                {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+                {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
                 {"cmd":"switches","from":223,"to":223,"value":true},
                 {
                   "cmd": "if",

@@ -151,7 +151,30 @@
                         {"cmd":"text","text":"Ah, bom. Então, qual deve ser o novo apelido?"},
                         {
                           "cmd": "script",
-                          "ruby": "pkmn=$player.party[\npbGet(1)]\nspecies=PBSpecies.getName(\npkmn.species)\npbTextEntry(\"#{species}'s nickname?\",\n0,10,5)"
+                          "do": [
+                            {
+                              "cmd": "assign",
+                              "target": "pkmn",
+                              "args": [],
+                              "op": "=",
+                              "value": {"call":"$player.party[]","args":[{"call":"pbGet","args":[1]}]}
+                            },
+                            {
+                              "cmd": "assign",
+                              "target": "species",
+                              "args": [],
+                              "op": "=",
+                              "value": {
+                                "call": "PBSpecies.getName",
+                                "args": [{"call":"species","on":{"call":"pkmn"}}]
+                              }
+                            },
+                            {
+                              "cmd": "call",
+                              "fn": "pbTextEntry",
+                              "args": [{"op":"+","left":{"call":"species"},"right":"'s nickname?"},0,10,5]
+                            }
+                          ]
                         },
                         {
                           "cmd": "if",
@@ -180,7 +203,22 @@
                           "else": [
                             {
                               "cmd": "script",
-                              "ruby": "pkmn=$player.party[\npbGet(1)]\npkmn.name=pbGet(5)"
+                              "do": [
+                                {
+                                  "cmd": "assign",
+                                  "target": "pkmn",
+                                  "args": [],
+                                  "op": "=",
+                                  "value": {"call":"$player.party[]","args":[{"call":"pbGet","args":[1]}]}
+                                },
+                                {
+                                  "cmd": "assign",
+                                  "target": "pkmn.name",
+                                  "args": [],
+                                  "op": "=",
+                                  "value": {"call":"pbGet","args":[5]}
+                                }
+                              ]
                             },
                             {
                               "cmd": "text",

@@ -1161,8 +1161,30 @@
           "trigger": 0,
           "list": [
             {
-              "cmd": "script",
-              "ruby": "pbSecretBaseMart([\n\"Brick Desk\",\"Camp Desk\",\n\"Comfort Desk\",\"Hard Desk\",\n\"Heavy Desk\",\"Pokémon Desk\",\n\"Ragged Desk\",\"Small Desk\",\n\"Brick Chair\",\"Camp Chair\",\n\"Comfort Chair\",\"Hard Chair\",\n\"Heavy Chair\",\"Pokémon Chair\",\n\"Pretty Chair\",\"Ragged Chair\",\n\"Small Chair\"\n],\"Welcome!\\nI have desks and chairs\"\n)"
+              "cmd": "call",
+              "fn": "pbSecretBaseMart",
+              "args": [
+                [
+                  "Brick Desk",
+                  "Camp Desk",
+                  "Comfort Desk",
+                  "Hard Desk",
+                  "Heavy Desk",
+                  "Pokémon Desk",
+                  "Ragged Desk",
+                  "Small Desk",
+                  "Brick Chair",
+                  "Camp Chair",
+                  "Comfort Chair",
+                  "Hard Chair",
+                  "Heavy Chair",
+                  "Pokémon Chair",
+                  "Pretty Chair",
+                  "Ragged Chair",
+                  "Small Chair"
+                ],
+                "Welcome!\nI have desks and chairs"
+              ]
             }
           ]
         }

@@ -37,10 +37,31 @@ Commands are named objects instead of RPG Maker's numeric codes, e.g.
 `web/src/game/scriptApi.ts` and `web/src/game/scripts/*.ts`; every command and
 condition shape is typed in `web/src/data/events.ts`.
 
-Some Ruby snippets couldn't be translated into named calls; they stay as
-`{"cmd": "script", "ruby": "…"}` (and `{"ruby": …}` conditions) and are listed
-in `web/data/reports/conversion.json`. They run through a hand-written
-function or not at all — translating them is ongoing work.
+A Script command with Ruby local variables keeps its statements together, as
+Ruby runs them as one script (consecutive Script commands are one script
+there too):
+
+```json
+{"cmd": "script", "do": [
+  {"cmd": "assign", "target": "pkmn", "args": [], "op": "=", "value": {"call": "Pokemon.new", "args": ["SNORLAX", 60]}},
+  {"cmd": "call", "fn": "learn_move", "on": {"call": "pkmn"}, "args": ["SURF"]},
+  {"cmd": "call", "fn": "WildBattle.start", "args": [{"call": "pkmn"}]}
+]}
+```
+
+A Ruby block/proc is `{"proc": ["pkmn"], "body": <expression>}` (e.g. the
+filter `pbChoosePokemon` takes, or `$player.pokemon_party.each`), and a hash
+literal is `{"hash": {"rank": 3}}`. Snippets that are real logic (loops over
+the party…) call a function named after what they do, in
+`web/src/game/scripts/eventScripts.ts`. Names the original game doesn't define
+either (old Essentials leftovers) raise Ruby's error, as there
+(`web/src/game/scripts/rubyErrors.ts`, listed in `docs/original-game-bugs.md`).
+
+`web/src/data/eventScripts.test.ts` checks that every call in the maps,
+common events and script switches resolves, that no untranslated Ruby is
+left (`web/data/reports/conversion.json`, the importer's list of snippets it
+couldn't translate, is now empty), that every command is one the interpreter
+runs and that messages only use codes the message window knows.
 
 ## Finding a map
 
@@ -53,3 +74,32 @@ any build, `?debug=0` turns it off.
 `pnpm import-rxdata` (`web/tools/convert/convert.rb`) is the one-time import
 from `Data/*.rxdata`. Running it again would overwrite everything edited
 since, so it refuses unless `REIMPORT=1` is set.
+
+## Writing files from the game (Debug mode)
+
+The Debug menu's commands that write files in Essentials (Compile Data,
+Create PBS File(s), Fix Invalid Tiles, Rename Outdated Files, the Town Map
+editor, creating a missing trainer, Import Animations…) can't touch the disk
+from a browser. On the dev server (`pnpm dev`) they go through a small file
+endpoint instead (`web/tools/devFiles.ts`, installed by `vite.config.ts`):
+
+| Route | Does |
+|---|---|
+| `GET /__dev/ping` | `{ok: true}` when the endpoint exists |
+| `GET /__dev/read?path=PBS/items.txt` | a file under `web/data/`, `PBS/`, `Graphics/`, `Audio/` or `Fonts/` |
+| `GET /__dev/list?dir=PBS` | the files under a folder (same folders) |
+| `POST /__dev/write` `{path, content, encoding?, append?}` | writes a file under `web/data/` or `PBS/` |
+| `POST /__dev/move` `{from, to}` | renames within `web/data/` or `PBS/` |
+| `POST /__dev/compile-pbs` | runs `pnpm pbs` (PBS → `web/data/pbs/`) |
+
+Paths are relative to the game root. Writes anywhere else (`Graphics/`,
+`Audio/`, `Animations/`, `..` tricks, absolute paths, symlinks out of the
+repo) are refused; the rule is `src/debug/devFilesPolicy.ts`. The endpoint
+exists only under `vite` (dev): `vite build` / `vite preview` don't install
+it, and on a static host the commands say in the message window that they
+can't write. The browser side is `src/debug/devFiles.ts`
+(`DevFiles.write/read/list/move/compilePbs`, `devWriteOrExplain`).
+
+After Compile Data the game reloads `web/data/pbs/` itself; after writing a
+PBS file, run Compile Data (or `pnpm pbs`) for the game to use it. Changed
+files are ordinary working-tree changes: review them with `git diff`.

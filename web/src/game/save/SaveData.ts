@@ -106,8 +106,12 @@ export const SaveData = {
   },
 
   async saveToFile(path = FILE_PATH): Promise<void> {
-    const text = JSON.stringify(SaveData.compileSaveHash());
-    await idb("readwrite", (s) => s.put(text, path));
+    await SaveData.writeToFile(SaveData.compileSaveHash(), path);
+  },
+
+  /** Writes a save hash as it is (the load screen's language change rewrites the loaded one). */
+  async writeToFile(hash: SaveHash, path = FILE_PATH): Promise<void> {
+    await idb("readwrite", (s) => s.put(JSON.stringify(hash), path));
   },
 
   /** Copies the save to its backup (Essentials keeps Game.rxdata.bak). */

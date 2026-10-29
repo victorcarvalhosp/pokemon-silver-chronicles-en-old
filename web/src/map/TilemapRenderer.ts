@@ -8,13 +8,16 @@
 // ties by creation order (see display.ts): a tile stack's three layers share
 // z 0, and the sprite drawing a layer changes z as the screen scrolls.
 
-import { Container, Rectangle, Sprite, Texture, TextureSource } from "pixi.js";
+import { Container, Rectangle, RenderTexture, Sprite, Texture, TextureSource } from "pixi.js";
 import { graphicsPath, loadImage, loadImageStrips } from "../core/assets";
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from "../core/screen";
 import { terrainTag } from "../data/gameData/terrainTag";
 import type { Tileset } from "../data/types";
 import { Bitmap } from "../rgss/Bitmap";
 import { newZStamp, zIndexOf } from "../rgss/display";
+import { pixiRenderer } from "../rgss/Graphics";
+import { ToneFilter } from "../rgss/ToneFilter";
+import { Tone } from "../rgss/types";
 import {
   SOURCE_TILE as T,
   TILESET_START_ID,
@@ -146,6 +149,16 @@ export class TilemapRenderer {
   private autotiles = new Map<string, Promise<Autotile | null>>();
   private autotilesReady = new Map<string, Autotile | null>();
   private timer = 0;
+  /**
+   * TilemapRenderer#tone: Scene_Map sets it every frame with pbDayNightTint.
+   * Ruby gives each tile sprite this tone; here the tile graphics are toned
+   * once per tone change instead (toneSource), so only tiles are tinted and
+   * the rest of the map viewport (light glows, fog, weather) keeps its colours.
+   */
+  readonly tone = new Tone();
+  private appliedTone = new Tone();
+  private tonedSources = new Map<TextureSource, TextureSource>();
+  private tonedTextures = new Map<Texture, Texture>();
 
   constructor(container: Container) {
     for (let i = 0; i < TILES_H; i++) {
@@ -160,6 +173,17 @@ export class TilemapRenderer {
       }
       this.sprites.push(col);
     }
+  }
+
+  /** Removes the tile sprites from the screen (TilemapRenderer#dispose). */
+  dispose(): void {
+    for (const col of this.sprites) for (const stack of col) for (const s of stack) s.destroy();
+    this.sprites = [];
+    this.clearToned();
+  }
+
+  isDisposed(): boolean {
+    return this.sprites.length === 0;
   }
 
   /** Loads the tileset and autotile graphics (add_tileset / add_autotile). */
@@ -203,10 +227,54 @@ export class TilemapRenderer {
     return this.tilesetsReady.get(tileset.tilesetName)?.bitmap(tileId) ?? null;
   }
 
+  /**
+   * A copy of a tile graphic with `tone` applied (RGSS Sprite#tone on each tile
+   * sprite), drawn through the same shader as every other toned sprite.
+   */
+  protected toneSource(source: TextureSource, tone: Tone): TextureSource {
+    const renderer = pixiRenderer();
+    if (!renderer) return source;
+    const sprite = new Sprite(new Texture({ source }));
+    const filter = new ToneFilter();
+    filter.set(tone, null);
+    sprite.filters = [filter];
+    const target = RenderTexture.create({ width: source.width, height: source.height, scaleMode: "nearest" });
+    renderer.render({ container: sprite, target, clear: true });
+    sprite.destroy();
+    filter.destroy();
+    return target.source;
+  }
+
+  private clearToned(): void {
+    for (const source of this.tonedSources.values()) source.destroy();
+    this.tonedSources.clear();
+    for (const tex of this.tonedTextures.values()) tex.destroy();
+    this.tonedTextures.clear();
+  }
+
+  /** `texture` as drawn with the current tone. */
+  private toned(texture: Texture): Texture {
+    if (this.tone.isZero()) return texture;
+    let tex = this.tonedTextures.get(texture);
+    if (tex) return tex;
+    let source = this.tonedSources.get(texture.source);
+    if (!source) {
+      source = this.toneSource(texture.source, this.tone);
+      this.tonedSources.set(texture.source, source);
+    }
+    tex = source === texture.source ? texture : new Texture({ source, frame: texture.frame.clone() });
+    this.tonedTextures.set(texture, tex);
+    return tex;
+  }
+
   /** Draws `maps` (the current map first), like TilemapRenderer#update. */
   draw(maps: TilemapSource[], bridge: number): void {
     const current = maps[0];
     if (!current) return;
+    if (!this.tone.equals(this.appliedTone)) { // TilemapRenderer#update: tone changed
+      this.clearToned();
+      this.appliedTone.set(this.tone);
+    }
     const dx = Math.round(current.displayX);
     const dy = Math.round(current.displayY);
     const pixelOffsetX = dx - Math.floor(dx / T) * T;
@@ -235,7 +303,7 @@ export class TilemapRenderer {
               sprite.visible = false;
               continue;
             }
-            sprite.texture = texture;
+            sprite.texture = this.toned(texture);
             sprite.visible = true;
             sprite.x = i * T - pixelOffsetX;
             sprite.y = j * T - pixelOffsetY;

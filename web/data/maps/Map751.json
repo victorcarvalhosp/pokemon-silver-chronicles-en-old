@@ -802,10 +802,7 @@
               "cmd": "comment",
               "lines": ["Erase all wild Pokemon - in order to do the proper cutscene"]
             },
-            {
-              "cmd": "script",
-              "ruby": "$game_map.events.values.each { |e|\n  e.removeThisEventfromMap if e.is_a?(Game_PokeEvent)\n}"
-            },
+            {"cmd":"call","fn":"removeOverworldPokemon","args":[]},
             {
               "cmd": "moveRoute",
               "character": -1,
@@ -1148,10 +1145,7 @@
               "cmd": "comment",
               "lines": ["Erase all wild Pokemon - in order to do the proper cutscene"]
             },
-            {
-              "cmd": "script",
-              "ruby": "$game_map.events.values.each { |e|\n  e.removeThisEventfromMap if e.is_a?(Game_PokeEvent)\n}"
-            },
+            {"cmd":"call","fn":"removeOverworldPokemon","args":[]},
             {
               "cmd": "moveRoute",
               "character": 0,

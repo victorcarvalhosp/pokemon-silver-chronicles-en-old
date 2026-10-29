@@ -11,8 +11,9 @@
         "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::CHIKORITA"}]}},
         "then": [
           {
-            "cmd": "script",
-            "ruby": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==PBSpecies::CHIKORITA\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend"
+            "cmd": "call",
+            "fn": "storePartySpecies",
+            "args": [{"proc":[],"body":{"call":"PBSpecies::CHIKORITA"}}]
           },
           {"cmd":"text","text":"Algum pkmn foi depositado"}
         ]
@@ -22,8 +23,9 @@
         "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::CHIKORITA"}]}},
         "then": [
           {
-            "cmd": "script",
-            "ruby": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==PBSpecies::CHIKORITA\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend"
+            "cmd": "call",
+            "fn": "storePartySpecies",
+            "args": [{"proc":[],"body":{"call":"PBSpecies::CHIKORITA"}}]
           },
           {"cmd":"text","text":"Algum pkmn foi depositado"}
         ]
@@ -52,10 +54,7 @@
         "cmd": "if",
         "cond": {"script":{"call":"$player.has_species?","args":["RAIKOU"]}},
         "then": [
-          {
-            "cmd": "script",
-            "ruby": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==:RAIKOU\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend"
-          },
+          {"cmd":"call","fn":"storePartySpecies","args":[{"proc":[],"body":"RAIKOU"}]},
           {"cmd":"text","text":"Raikou saiu do grupo."},
           {"cmd":"text","text":"Ele precisa ficar em Johto para manter o equilibrio do local."}
         ],
@@ -73,10 +72,7 @@
         "cmd": "if",
         "cond": {"script":{"call":"$player.has_species?","args":["RAIKOU"]}},
         "then": [
-          {
-            "cmd": "script",
-            "ruby": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==:RAIKOU\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend"
-          },
+          {"cmd":"call","fn":"storePartySpecies","args":[{"proc":[],"body":"RAIKOU"}]},
           {"cmd":"text","text":"Raikou saiu do grupo."},
           {"cmd":"text","text":"Ele precisa ficar em Johto para manter o equilibrio do local."}
         ],
@@ -95,8 +91,9 @@
         "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::BULBASAUR"}]}},
         "then": [
           {
-            "cmd": "script",
-            "ruby": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==PBSpecies::BULBASAUR\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend"
+            "cmd": "call",
+            "fn": "storePartySpecies",
+            "args": [{"proc":[],"body":{"call":"PBSpecies::BULBASAUR"}}]
           },
           {"cmd":"text","text":"BULBASAUR saiu do grupo."},
           {"cmd":"text","text":"Ele Não se adapta bem aqui."}
@@ -1207,12 +1204,7 @@
                       ]
                     }
                   ],
-                  [
-                    {
-                      "cmd": "script",
-                      "ruby": "pbPlayDecisionSE\n    pbFadeOutIn {\n      scene = \nPokemonPartnerTrainerCard_Scene.new\n      screen = \nPokemonPartnerTrainerCardScreen.new(\nscene)\n      screen.pbStartScreen\n    }"
-                    }
-                  ]
+                  [{"cmd":"call","fn":"pbPartnerTrainerCard","args":[]}]
                 ],
                 "cancel": "branch",
                 "cancelBranch": []
@@ -1682,10 +1674,7 @@
                     }
                   ],
                   [
-                    {
-                      "cmd": "script",
-                      "ruby": "pbPlayDecisionSE\n    pbFadeOutIn {\n      scene = \nPokemonPartnerTrainerCard_Scene.new\n      screen = \nPokemonPartnerTrainerCardScreen.new(\nscene)\n      screen.pbStartScreen\n    }"
-                    },
+                    {"cmd":"call","fn":"pbPartnerTrainerCard","args":[]},
                     {
                       "cmd": "if",
                       "cond": {"switch":420,"value":true},
@@ -2467,10 +2456,7 @@
     "switchId": 1,
     "list": [
       {"cmd":"playBgm","audio":{"name":"HallOfFame","volume":100,"pitch":100}},
-      {
-        "cmd": "script",
-        "ruby": "Graphics.frame_rate=40\n$game_system.se_play(\n$data_system.decision_se)\nPBDebug.logonerr {       \nscene=HallofFameScene.new     \nscreen=HallofFame.new(scene)   \npbFadeOutIn(99999) { \nscreen.pbStartScreen }}"
-      }
+      {"cmd":"call","fn":"callHallOfFameCommonEvent","args":[]}
     ]
   },
   {
@@ -6021,8 +6007,9 @@
             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
             {"cmd":"text","text":"Ok, I'll take your Pokémon for a few seconds..."},
             {
-              "cmd": "script",
-              "ruby": "if FollowingPkmn.active?\nFollowingPkmn.toggle(false,true)\nend"
+              "cmd": "if",
+              "cond": {"script":{"call":"FollowingPkmn.active?"}},
+              "then": [{"cmd":"call","fn":"FollowingPkmn.toggle","args":[false,true]}]
             },
             {
               "cmd": "moveRoute",
@@ -6120,7 +6107,11 @@
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
             {"cmd":"text","text":"Please, come back again any time!"},
-            {"cmd":"script","ruby":"if FollowingPkmn.active?\nFollowingPkmn.toggle(true,true)\nend"}
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"FollowingPkmn.active?"}},
+              "then": [{"cmd":"call","fn":"FollowingPkmn.toggle","args":[true,true]}]
+            }
           ],
           [
             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},

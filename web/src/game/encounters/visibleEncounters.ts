@@ -179,7 +179,7 @@ export async function pbOnStepTaken(eventTriggered: boolean): Promise<void> {
   const g = G.pokemonGlobal;
   g.stepcount = ((g.stepcount ?? 0) + 1) & 0x7fffffff;
   const repelActive = (g.repel ?? 0) > 0;
-  EventHandlers.triggerSync("on_player_step_taken");
+  await EventHandlers.trigger("on_player_step_taken"); // (eggs hatch here, mid-step)
   const handled: (boolean | null)[] = [null];
   await EventHandlers.trigger("on_player_step_taken_can_transfer", handled); // (the Safari step counter shows messages)
   if (handled[0]) return;

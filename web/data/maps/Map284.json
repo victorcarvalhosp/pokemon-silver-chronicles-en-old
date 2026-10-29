@@ -206,9 +206,9 @@
           "alwaysOnTop": false,
           "trigger": 3,
           "list": [
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"..."},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"Dormi demais!!"},
             {"cmd":"text","text":"Acho melhor ir correndo ao Pokémon Coliseum!"},
             {"cmd":"selfSwitch","ch":"A","value":true}
@@ -259,9 +259,9 @@
           "alwaysOnTop": false,
           "trigger": 3,
           "list": [
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"..."},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"Dormi demais!!"},
             {"cmd":"text","text":"Fiz o que ninguém acreditava e passei para a próxima fase."},
             {"cmd":"text","text":"Hoje vou dar o meu melhor!"},
@@ -290,9 +290,9 @@
           "alwaysOnTop": false,
           "trigger": 3,
           "list": [
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"..."},
-            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"call","fn":"pbFadeOutIn","args":[99999]},
             {"cmd":"text","text":"Dormi demais!!"},
             {"cmd":"text","text":"Perdi..."},
             {"cmd":"text","text":"Mas sei que tenho capacidade de ser o melhor treinador de todos!"},

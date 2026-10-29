@@ -13,6 +13,7 @@
 // level/Exp. helpers open with setTopRightWindowHook (pbTopRightWindow) and
 // setItemEvolutionSceneHook (PokemonEvolutionScene, ui/evolution).
 
+import { DEBUG } from "../../core/debug";
 import type { Id } from "../../data/gameData/gameData";
 import { _INTL } from "../../data/gameData/gameData";
 import { GrowthRate } from "../../data/gameData/growthRate";
@@ -29,11 +30,13 @@ import type { Pokemon } from "../pokemon/Pokemon";
 import { PokemonMove } from "../pokemon/PokemonMove";
 import { PokemonBag } from "./PokemonBag";
 
-type MessageFn = (text: string, commands?: string[] | null, cmdIfCancel?: number) => Promise<number>;
-type ConfirmFn = (text: string) => Promise<boolean>;
+/** The block pbMessage runs every frame (&block: e.g. { scene.pbUpdate }). */
+type MessageBlock = (() => void | Promise<void>) | null | undefined;
+type MessageFn = (text: string, commands?: string[] | null, cmdIfCancel?: number, block?: MessageBlock) => Promise<number>;
+type ConfirmFn = (text: string, block?: MessageBlock) => Promise<boolean>;
 
-let messageFn: MessageFn = (text, commands = null, cmdIfCancel = 0) => pbMessage(text, commands, cmdIfCancel);
-let confirmFn: ConfirmFn = (text) => pbConfirmMessage(text);
+let messageFn: MessageFn = (text, commands = null, cmdIfCancel = 0, block) => pbMessage(text, commands, cmdIfCancel, null, 0, block);
+let confirmFn: ConfirmFn = (text, block) => pbConfirmMessage(text, block);
 
 /** Replaces pbMessage/pbConfirmMessage for the data model (tests, headless runs). */
 export function setMessageHook(message: MessageFn, confirm?: ConfirmFn): void {
@@ -42,12 +45,12 @@ export function setMessageHook(message: MessageFn, confirm?: ConfirmFn): void {
 }
 
 /** pbMessage as the data model calls it. */
-export function pbMessageHook(text: string, commands: string[] | null = null, cmdIfCancel = 0): Promise<number> {
-  return messageFn(text, commands, cmdIfCancel);
+export function pbMessageHook(text: string, commands: string[] | null = null, cmdIfCancel = 0, block?: MessageBlock): Promise<number> {
+  return messageFn(text, commands, cmdIfCancel, block);
 }
 
-export function pbConfirmMessageHook(text: string): Promise<boolean> {
-  return confirmFn(text);
+export function pbConfirmMessageHook(text: string, block?: MessageBlock): Promise<boolean> {
+  return confirmFn(text, block);
 }
 
 const bag = () => (G as unknown as { bag: PokemonBag }).bag;
@@ -169,48 +172,48 @@ export async function pbForgetMove(pkmn: Pokemon, moveToLearn: Id): Promise<numb
   return forgetMoveHook(pkmn, moveToLearn);
 }
 
-/** pbLearnMove(pkmn, move, ignore_if_known = false, by_machine = false) */
-export async function pbLearnMove(pkmn: Pokemon | null, move: Id, ignoreIfKnown = false, byMachine = false): Promise<boolean> {
+/** pbLearnMove(pkmn, move, ignore_if_known = false, by_machine = false, &block): `block` runs every frame of its messages. */
+export async function pbLearnMove(pkmn: Pokemon | null, move: Id, ignoreIfKnown = false, byMachine = false, block?: MessageBlock): Promise<boolean> {
   if (!pkmn) return false;
   move = MoveData.get(move).id;
-  if (pkmn.egg()) {
-    await pbMessageHook(_INTL("Eggs can't be taught any moves."));
+  if (pkmn.egg() && !DEBUG) {
+    await pbMessageHook(_INTL("Eggs can't be taught any moves."), null, 0, block);
     return false;
   } else if (pkmn.shadowPokemon()) {
-    await pbMessageHook(_INTL("Shadow Pokémon can't be taught any moves."));
+    await pbMessageHook(_INTL("Shadow Pokémon can't be taught any moves."), null, 0, block);
     return false;
   }
   const pkmnName = pkmn.name;
   const moveName = MoveData.get(move).name;
   if (pkmn.hasMove(move)) {
-    if (!ignoreIfKnown) await pbMessageHook(_INTL("{1} already knows {2}.", pkmnName, moveName));
+    if (!ignoreIfKnown) await pbMessageHook(_INTL("{1} already knows {2}.", pkmnName, moveName), null, 0, block);
     return false;
   } else if (pkmn.numMoves() < 4) {
     pkmn.learnMove(move);
-    await pbMessageHook(_INTL("\\se[]{1} learned {2}!\\se[Pkmn move learnt]", pkmnName, moveName));
+    await pbMessageHook(_INTL("\\se[]{1} learned {2}!\\se[Pkmn move learnt]", pkmnName, moveName), null, 0, block);
     return true;
   }
   await pbMessageHook(_INTL("{1} wants to learn {2}, but it already knows {3} moves.\x01",
-    pkmnName, moveName, toWord(pkmn.numMoves())));
-  if (await pbConfirmMessageHook(_INTL("Should {1} forget a move to learn {2}?", pkmnName, moveName))) {
+    pkmnName, moveName, toWord(pkmn.numMoves())), null, 0, block);
+  if (await pbConfirmMessageHook(_INTL("Should {1} forget a move to learn {2}?", pkmnName, moveName), block)) {
     for (;;) {
       const moveIndex = await pbForgetMove(pkmn, move);
       if (moveIndex >= 0) {
         const oldMoveName = pkmn.moves[moveIndex]!.name;
         pkmn.moves[moveIndex] = new PokemonMove(move); // Replaces current/total PP
         // Settings::TAUGHT_MACHINES_KEEP_OLD_PP is false (generation 8)
-        await pbMessageHook(_INTL("1, 2, and...\\wt[16] ...\\wt[16] ...\\wt[16] Ta-da!\\se[Battle ball drop]\x01"));
-        await pbMessageHook(_INTL("{1} forgot how to use {2}.\\nAnd...\x01", pkmnName, oldMoveName));
-        await pbMessageHook(_INTL("\\se[]{1} learned {2}!\\se[Pkmn move learnt]", pkmnName, moveName));
+        await pbMessageHook(_INTL("1, 2, and...\\wt[16] ...\\wt[16] ...\\wt[16] Ta-da!\\se[Battle ball drop]\x01"), null, 0, block);
+        await pbMessageHook(_INTL("{1} forgot how to use {2}.\\nAnd...\x01", pkmnName, oldMoveName), null, 0, block);
+        await pbMessageHook(_INTL("\\se[]{1} learned {2}!\\se[Pkmn move learnt]", pkmnName, moveName), null, 0, block);
         if (byMachine) pkmn.changeHappiness("machine");
         return true;
-      } else if (await pbConfirmMessageHook(_INTL("Give up on learning {1}?", moveName))) {
-        await pbMessageHook(_INTL("{1} did not learn {2}.", pkmnName, moveName));
+      } else if (await pbConfirmMessageHook(_INTL("Give up on learning {1}?", moveName), block)) {
+        await pbMessageHook(_INTL("{1} did not learn {2}.", pkmnName, moveName), null, 0, block);
         return false;
       }
     }
   } else {
-    await pbMessageHook(_INTL("{1} did not learn {2}.", pkmnName, moveName));
+    await pbMessageHook(_INTL("{1} did not learn {2}.", pkmnName, moveName), null, 0, block);
   }
   return false;
 }
@@ -428,7 +431,7 @@ export async function pbChangeLevel(pkmn: Pokemon, newLevel: number, scene: Item
     const movelist = pkmn.getMoveList();
     for (const i of movelist) {
       if (i.level <= oldLevel || i.level > pkmn.level) continue;
-      await pbLearnMove(pkmn, i.move, true); // { scene.pbUpdate }
+      await pbLearnMove(pkmn, i.move, true, false, () => scene?.pbUpdate?.());
     }
     // Check for evolution
     const newSpecies = pkmn.checkEvolutionOnLevelUp();
@@ -546,7 +549,7 @@ export async function pbChangeExp(pkmn: Pokemon, newExp: number, scene: ItemEffe
     const movelist = pkmn.getMoveList();
     for (const i of movelist) {
       if (i.level <= oldLevel || i.level > pkmn.level) continue;
-      await pbLearnMove(pkmn, i.move, true); // { scene.pbUpdate }
+      await pbLearnMove(pkmn, i.move, true, false, () => scene?.pbUpdate?.());
     }
     // Check for evolution
     const newSpecies = pkmn.checkEvolutionOnLevelUp();

@@ -224,7 +224,33 @@
                         {"cmd":"text","text":"\\bAh, good. Then, what shall the new nickname be?"},
                         {
                           "cmd": "script",
-                          "ruby": "pkmn = pbGetPokemon(1)\nspecies = pkmn.speciesName\npbSet(4, species)\npbTextEntry(\"#{species}'s nickname?\",\n  0, Pokemon::MAX_NAME_SIZE, 5)"
+                          "do": [
+                            {
+                              "cmd": "assign",
+                              "target": "pkmn",
+                              "args": [],
+                              "op": "=",
+                              "value": {"call":"pbGetPokemon","args":[1]}
+                            },
+                            {
+                              "cmd": "assign",
+                              "target": "species",
+                              "args": [],
+                              "op": "=",
+                              "value": {"call":"speciesName","on":{"call":"pkmn"}}
+                            },
+                            {"cmd":"call","fn":"pbSet","args":[4,{"call":"species"}]},
+                            {
+                              "cmd": "call",
+                              "fn": "pbTextEntry",
+                              "args": [
+                                {"op":"+","left":{"call":"species"},"right":"'s nickname?"},
+                                0,
+                                {"call":"Pokemon::MAX_NAME_SIZE"},
+                                5
+                              ]
+                            }
+                          ]
                         },
                         {
                           "cmd": "if",
@@ -278,7 +304,27 @@
                                 },
                                 {
                                   "cmd": "script",
-                                  "ruby": "pkmn = pbGetPokemon(1)\npkmn.name = nil\npbSet(3, pkmn.name)"
+                                  "do": [
+                                    {
+                                      "cmd": "assign",
+                                      "target": "pkmn",
+                                      "args": [],
+                                      "op": "=",
+                                      "value": {"call":"pbGetPokemon","args":[1]}
+                                    },
+                                    {
+                                      "cmd": "assign",
+                                      "target": "pkmn.name",
+                                      "args": [],
+                                      "op": "=",
+                                      "value": null
+                                    },
+                                    {
+                                      "cmd": "call",
+                                      "fn": "pbSet",
+                                      "args": [3,{"call":"name","on":{"call":"pkmn"}}]
+                                    }
+                                  ]
                                 },
                                 {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                                 {
@@ -304,7 +350,22 @@
                                 },
                                 {
                                   "cmd": "script",
-                                  "ruby": "pkmn = pbGetPokemon(1)\npkmn.name = pbGet(5)"
+                                  "do": [
+                                    {
+                                      "cmd": "assign",
+                                      "target": "pkmn",
+                                      "args": [],
+                                      "op": "=",
+                                      "value": {"call":"pbGetPokemon","args":[1]}
+                                    },
+                                    {
+                                      "cmd": "assign",
+                                      "target": "pkmn.name",
+                                      "args": [],
+                                      "op": "=",
+                                      "value": {"call":"pbGet","args":[5]}
+                                    }
+                                  ]
                                 },
                                 {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                                 {

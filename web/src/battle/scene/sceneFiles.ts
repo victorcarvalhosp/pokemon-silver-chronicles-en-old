@@ -122,7 +122,7 @@ function oggfiletime(v: DataView): number {
 }
 
 /** Fetches an SE file's length (getPlayTime, in seconds; 0 if unknown). */
-function fetchPlayTime(file: string): Promise<number> {
+export function fetchPlayTime(file: string): Promise<number> {
   let p = playTimes.get(file);
   if (!p) {
     p = fetch(assetUrl(`Audio/SE/${file}`))

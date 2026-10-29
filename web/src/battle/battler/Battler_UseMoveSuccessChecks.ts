@@ -28,6 +28,7 @@ import { AbilityEffects } from "../other/AbilityEffects";
 import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
 import { Battler } from "./Battler";
+import { raidShieldBreak, raidSuccessCheck } from "../zud/raid/Raid_Battle_Battler";
 
 /** Battle::SuccessState#protected (Battle#successStates is unknown[] in Battle.ts). */
 const setSuccessStateProtected = (battler: Battler, idx: number): void => {
@@ -684,9 +685,8 @@ const methods = {
         return false;
       }
     }
-    // Deferred: return false if !raid_SuccessCheck(move, user, target)
-    // (ZUD Mechanics/[004] Battle_Battler/Battler_Overrides.rb:310, [009] Max Raid/Raid_Battle_Battler.rb:28;
-    // it returns true outside Max Raid battles).
+    // ZUD Mechanics/[009] Max Raid/Raid_Battle_Battler.rb:28 (true outside Max Raid battles)
+    if (!(await raidSuccessCheck(this, move, user, target))) return false;
     if (target.effects[PBEffects.MaxGuard] && !user.effects[PBEffects.TwoTurnAttack]) {
       const bypass = ["MEANLOOK", "ROLEPLAY", "PERISHSONG", "DECORATE", "FEINT"];
       if (!bypass.includes(move.id) && move.function !== "ZUDBypassProtect") {
@@ -694,8 +694,7 @@ const methods = {
         await this.battle.pbDisplay(_INTL("{1} protected itself!", target.pbThis()));
         target.damageState.protected = true;
         setSuccessStateProtected(this, user.index);
-        // Deferred: raid_ShieldBreak(move, target)
-        // (ZUD Mechanics/[004] Battle_Battler/Battler_Overrides.rb:318, [009] Max Raid/Raid_Battle_Battler.rb:105)
+        await raidShieldBreak(this, move, target); // ZUD Mechanics/[009] Max Raid/Raid_Battle_Battler.rb:105
         return false;
       }
     }

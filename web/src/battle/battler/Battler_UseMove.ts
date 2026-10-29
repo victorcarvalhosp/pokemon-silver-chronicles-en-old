@@ -2,7 +2,7 @@
 // - ZUD Mechanics ([004] Battle_Battler/Battler_Overrides.rb:91): pbUseMove
 //   (Power Move registration), :104 pbEndTurn (Z-Move usage), :122
 //   pbUseMoveSimple (redefined: Z-Powered called moves);
-//   [009] Max Raid/Raid_Battle_Overrides.rb:17 pbProcessTurn (deferred hook).
+//   [009] Max Raid/Raid_Battle_Overrides.rb:17 pbProcessTurn (raid_UseBaseMoves, in zud/raid/).
 // Alias chains: pbProcessTurn = ZUD Max Raid( core ); pbUseMove = ZUD( core );
 // pbEndTurn = ZUD( core ); pbUseMoveSimple = ZUD's redefinition.
 
@@ -21,6 +21,7 @@ import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
 import { rubyRound } from "../rubyMath";
 import { Battler } from "./Battler";
+import { raidUseBaseMoves } from "../zud/raid/Raid_Battle_Battler";
 
 /**
  * Battle::SuccessState (007_Other battle types/004_BattleArenaBattle.rb:4).
@@ -100,10 +101,7 @@ const methods = {
     };
     const ret = await core();
     // ZUD Mechanics (Max Raid): lets Max Raid Pokémon strike multiple times per turn.
-    if (ret && this.battle.decision === 0) {
-      // Deferred: raid_UseBaseMoves(choice) (ZUD Mechanics/[009] Max Raid/Raid_Battle_Overrides.rb:20,
-      // Raid_Battle_Battler.rb:80); it returns at once unless effects[MaxRaidBoss] is set.
-    }
+    if (ret && this.battle.decision === 0) await raidUseBaseMoves(this, choice); // Raid_Battle_Battler.rb:80
     return ret;
   },
 

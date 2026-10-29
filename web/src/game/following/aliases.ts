@@ -14,6 +14,7 @@
 // Carmaniac's Speech Bubble's pbCallBubFollower finds followers through
 // SpeechBubbleHooks.getFollower.
 
+import type { Command } from "../../data/events";
 import { Input } from "../../rgss/Input";
 import { SceneMap } from "../../scenes/SceneMap";
 import { FieldActions } from "../../ui/menus/menuScreens";
@@ -21,6 +22,7 @@ import { SpeechBubbleHooks } from "../../ui/speechBubble";
 import { EventHandlers } from "../eventHandlers";
 import { GameCharacter } from "../GameCharacter";
 import { GamePlayer } from "../GamePlayer";
+import { Interpreter } from "../Interpreter";
 import { G } from "../globals";
 import type { PokemonMapFactory } from "../MapFactory";
 import type { Player } from "../trainer/Player";
@@ -37,18 +39,11 @@ type Proto = Record<string, (...args: unknown[]) => unknown>;
 //-------------------------------------------------------------------------------
 const sceneProto = SceneMap.prototype as unknown as Proto;
 
-/** Animated refreshes queued by handlers that run synchronously (see :forced_follower_refresh). */
-let queuedAnimatedRefresh = false;
-
 // Check for Toggle input and update Following Pokemon's time_taken for to
 // track the happiness increase and hold item
 const sceneUpdate = sceneProto.update!;
 sceneProto.update = async function (this: SceneMap, ...args: unknown[]) {
   await sceneUpdate.apply(this, args);
-  if (queuedAnimatedRefresh) {
-    queuedAnimatedRefresh = false;
-    await FollowingPkmn.refresh(true);
-  }
   // TOGGLE_FOLLOWER_KEY is nil in this game.
   if (FollowingPkmnConfig.TOGGLE_FOLLOWER_KEY && Input.trigger((Input as unknown as Record<string, number>)[FollowingPkmnConfig.TOGGLE_FOLLOWER_KEY]!)) {
     await FollowingPkmn.toggle();
@@ -82,7 +77,7 @@ const transferPlayer = sceneProto.transferPlayer!;
 sceneProto.transferPlayer = async function (this: SceneMap, ...args: unknown[]) {
   await transferPlayer.apply(this, args);
   let leader: GameCharacter = G.gamePlayer as unknown as GameCharacter;
-  void FollowingPkmn.refresh(false);
+  await FollowingPkmn.refresh(false);
   for (const [event, follower] of G.gameTemp.followers?.eachFollower() ?? []) {
     pbTurnTowardEvent(event, leader);
     (follower as { direction: number }).direction = event.direction;
@@ -103,7 +98,7 @@ sceneProto.miniupdate = async function (this: SceneMap, ...args: unknown[]) {
 const callMenu = sceneProto.callMenu!;
 sceneProto.callMenu = async function (this: SceneMap, ...args: unknown[]) {
   await callMenu.apply(this, args);
-  void FollowingPkmn.refresh(false);
+  await FollowingPkmn.refresh(false);
 };
 
 //-------------------------------------------------------------------------------
@@ -122,11 +117,11 @@ EventHandlers.add("on_enter_map", "erase_following_pkmn", (_oldMapId) => {
 
 // Reset the queued pokecenter refresh if nothing changed
 EventHandlers.add("on_enter_map", "pokecenter_follower_reset", (_oldMapId) => {
-  pokecenterFollowingPkmn.value = 0;
+  G.gameTemp.pokecenterFollowingPkmn = 0;
 });
 
 // Refresh Following Pokemon after taking a step, when a refresh is queued
-EventHandlers.add("on_player_step_taken", "forced_follower_refresh", () => {
+EventHandlers.add("on_player_step_taken", "forced_follower_refresh", async () => {
   const callRefresh = FollowingPkmn.callRefresh();
   if (!callRefresh[0]) return;
   // Wait for steps
@@ -135,16 +130,40 @@ EventHandlers.add("on_player_step_taken", "forced_follower_refresh", () => {
     if (callRefresh[2] === 0) callRefresh.splice(2, 1);
     return;
   }
-  // Refresh queued. :on_player_step_taken fires mid-update here, where the
-  // come-out animation can't wait; an animated refresh runs at the end of
-  // this frame's Scene_Map#update instead.
-  if (callRefresh[1]) queuedAnimatedRefresh = true;
-  else void FollowingPkmn.refresh(false);
+  // Refresh queued
+  await FollowingPkmn.refresh(!!callRefresh[1]);
   FollowingPkmn.setCallRefresh(false);
 });
 
-/** $game_temp.pokecenter_following_pkmn (the Poké Center animation isn't ported: Recover All is still a TODO). */
-export const pokecenterFollowingPkmn = { value: 0 };
+//-------------------------------------------------------------------------------
+// Interpreter: the Poké Center healing animation (pbSetPokemonCenter queues it,
+// game/scripts/fieldMoves.ts)
+//-------------------------------------------------------------------------------
+const interpProto = Interpreter.prototype as unknown as Proto;
+
+// Toggle Following Pokemon off if a Pokecenter refresh is queued and the
+// Pokemon are healed
+const command = interpProto.command!;
+interpProto.command = async function (this: Interpreter, ...args: unknown[]) {
+  const ret = await command.apply(this, args);
+  if ((args[0] as Command).cmd !== "recoverAll") return ret; // command_314
+  if (FollowingPkmnConfig.SHOW_POKECENTER_ANIMATION && G.gameTemp.pokecenterFollowingPkmn > 0 && FollowingPkmn.active()) {
+    await FollowingPkmn.toggleOff();
+    G.gameTemp.pokecenterFollowingPkmn = 2;
+  }
+  return ret;
+};
+
+// Refresh Following Pokemon after using the Pokecneter healing event is
+// completely done
+const interpUpdate = interpProto.update!;
+interpProto.update = async function (this: Interpreter, ...args: unknown[]) {
+  await interpUpdate.apply(this, args);
+  if (FollowingPkmnConfig.SHOW_POKECENTER_ANIMATION && G.gameTemp.pokecenterFollowingPkmn > 0 && !this.running()) {
+    await FollowingPkmn.toggleOn();
+    G.gameTemp.pokecenterFollowingPkmn = 0;
+  }
+};
 
 // NOTE: Refresh.rb also "aliases" BattleCreationHelperMethods.after_battle,
 //       but it defines an instance method on a module whose after_battle is

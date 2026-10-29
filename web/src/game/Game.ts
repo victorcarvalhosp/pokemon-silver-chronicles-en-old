@@ -1,6 +1,8 @@
 // Port of 003_Game processing/001_StartGame.rb's Game module: set_up_system,
 // start_new, load and save. (Game.initialize is initializeGame in newGame.ts.)
 
+import { pbChooseLanguage, pbLoadMessages } from "../core/intl";
+import { Settings } from "../data/gameData/settings";
 import { Data } from "../data/store";
 import { prepareMap } from "../scenes/SceneMap";
 import { setMapFactoryRef } from "./GameCharacter";
@@ -35,6 +37,11 @@ export const Game = {
     const save = (await SaveData.exists()) ? await SaveData.readFromFile() : null;
     if (!save) SaveData.initializeBootupValues();
     else SaveData.loadBootupValues(save);
+    // Set language (and choose language if there is no save file)
+    if (Settings.LANGUAGES.length >= 2) {
+      if (!save) G.pokemonSystem.language = await pbChooseLanguage(Settings.LANGUAGES);
+      await pbLoadMessages("Data/" + Settings.LANGUAGES[G.pokemonSystem.language]![1]);
+    }
     return save;
   },
 
@@ -70,6 +77,9 @@ export const Game = {
     setPokemonEncounters(new PokemonEncounters());
     pokemonEncounters().setup(G.gameMap!.mapId);
     pbUpdateVehicle();
+    // Following Pokemon EX's Game.load_map alias (Refresh.rb:177-181)
+    const { FollowingPkmn } = await import("./following/FollowingPkmn");
+    await FollowingPkmn.refresh(false);
     pbAutoplayOnSave();
     await (G.gameMap as unknown as GameMap).update();
     pokemonMap().updateMap();

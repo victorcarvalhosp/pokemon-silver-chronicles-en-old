@@ -174,6 +174,17 @@ written for one (`web/src/battle/deluxe`).
 | Waterfall: Following Pokemon EX's pbHiddenMoveAnimation gives the follower a 3-second Wait route that outlasts the ~2-second banner, so it is still on it during the climb (`follow_leader` returns early): the follower stays at the foot of the waterfall until the next step | Following Pokemon EX `Script Additions/Animations.rb:8` | `src/game/field/hiddenMoveAnimation.ts` |
 | pbAscendWaterfall loops forever when the waterfall runs off the top of the map (`move_up` fails, the tile stays a waterfall); Seafoam Islands B3F (map 451) has one, but no transfer leads to that map | Following Pokemon EX `Script Additions/Field Moves.rb:139-148` | `src/game/field/followingFieldMoves.ts` |
 
+## Overworld visuals and map plugins (`web/src/game/weather`, `web/src/sprites`)
+| Bug | Original | Port |
+|---|---|---|
+| Particle effects only follow page changes for events that had one when the map loaded: an event whose first active page has no "Particle Engine Type" comment never gets its effect (the Super Arena's fires on maps 347/735 appear only after re-entering) | `005_Sprites/010_ParticleEngine.rb:88-89` | `src/sprites/ParticleEngine.ts` |
+| Particle_Engine#remove_effect uses `delete_at`, shifting every later effect off its event's slot (only reached before any effect exists) | `010_ParticleEngine.rb:54` | `src/sprites/ParticleEngine.ts` |
+| Dynamic shadows: an event with a "begin Shadow" comment gets a Sprite_Shadow per source, each built from the whole source list, so its first update raises NoMethodError (no event of this game has one); an empty comment line after "begin Shadow Source" raises too | `005_Sprites/009_Sprite_DynamicShadows.rb:139,236` | `src/sprites/SpriteCharacter.ts`, `SpriteDynamicShadows.ts` |
+| RPG::Weather: fading from a tiled weather (blizzard/sandstorm/fog) to one without tiles reads the new type's missing tile bitmap if `@fade_time` lands exactly on the 2-second threshold (never does at 40 or 60 fps) | `012_Overworld/001_Overworld visuals/001_Overworld_Weather.rb:315-320` | `src/game/weather/Weather.ts` |
+| LocationWindow never disposes the viewport it makes for its window (one empty viewport leaks per signpost) | `002_Overworld_Overlays.rb:10` | `src/game/weather/Overlays.ts` |
+| Map Zoom: the snapshot it zooms is the whole screen under it, so the Photographer's camera frame (viewport z 99) is zoomed in with the map; only `$game_temp.cmd_window` is hidden from it (the speech bubble's pbCreateMessageWindow and DP Pause Menu replace the plugin's versions that would record the message window and pause menu) | `Plugins/Map Zoom/Map Zoom.rb:24-37` | `src/game/weather/MapZoom.ts` |
+| Photographer: a party member without an overworld (follower) sprite makes `fname.gsub!` raise; pbPhotographWithPartner doesn't check that the follower exists | `Plugins/Photographer/Photographer.rb:26,267` | `src/game/weather/Photographer.ts` |
+
 ## Trainer battles, battle intros and special battle types (`web/src/game/battle`, `web/src/game/trainers`)
 | Bug | Original | Port |
 |---|---|---|
@@ -190,7 +201,150 @@ written for one (`web/src/battle/deluxe`).
 | Battle Arena: the round counter is never reset after a replacement, so after the first judgment every round is judged | `004_BattleArenaBattle.rb:148` | `src/game/battle/battleArena.ts` |
 | RecordedBattleModule#pbGetTrainerInfo's single-trainer branch reads an undefined `i` (never reached) | `005_RecordedBattle.rb:40` | `src/game/battle/recordedBattle.ts` |
 | PlaybackHelper.pbGetBattleBGM calls a missing `pbGetTrainerBattleBGM`, so pbPlayBattle / pbPlayLastBattle always raise | `005_RecordedBattle.rb:264` | `src/game/battle/recordedBattle.ts` |
-| PokemonRuleSet#addSubsetRule pushes onto `@teamRules` | `018_Alternate battle modes/002_Battle Frontier rules/002_Challenge_Rulesets.rb:105` | `src/game/trainers/pokemonSelection.ts` |
 | pbRegisterPartner with a trainer that doesn't exist raises NoMethodError on `trainer.party` | `012_Overworld/001_Overworld.rb:717` | `src/game/trainers/trainerEvents.ts` |
 | VSEliteFour never checks the player's `vsE4_` sprite; the alternate (Luka S.J.) VS intro never checks the player's `vsBar_`/`vsTrainer_` graphics (none exist here, so it never plays) | `009_Scenes/001_Transitions.rb:1448`; `002_Overworld_BattleIntroAnim.rb:289-296` | `src/game/battle/transitions.ts`, `BattleIntroAnim.ts` |
 | ThreeBallDown places its black squares for a zoom it never applies (invisible: the zoom is 1) | `001_Transitions.rb:866-867` | `src/game/battle/transitions.ts` |
+
+## Debug menus, editor helpers and PBS writers (`web/src/debug`, `web/src/compiler`)
+
+Only reachable in Debug mode (the dev server, or `?debug=1`).
+
+| Bug | Original | Port |
+|---|---|---|
+| Set Player Character: `break` inside the proc raises LocalJumpError (only with a single player character; this game has 6) | `020_Debug/003_Debug menus/002_Debug_MenuCommands.rb:842` | `src/debug/DebugMenuCommands.ts:1011` |
+| Day Care "Set to other value": the number prompt defaults to the step counter, not the steps left (256 − counter) | `003_Debug_MenuExtraCode.rb:312` | `src/debug/DebugMenuExtraCode.ts:434` |
+| Roaming Pokémon: the `roamPokemonCaught` writes go to a throwaway array, so a roamer never becomes "caught" | `012_Overworld/005_Overworld_RoamingPokemon.rb:8`, v20.1 Hotfixes `Debug bug fixes.rb:378-387` | `src/debug/DebugMenuExtraCode.ts:630` |
+| Import Animations: `missingFiles` records the name after clearing it (`""`) | `003_Debug_MenuExtraCode.rb:672-673, 679-680` | `src/debug/DebugMenuExtraCode.ts:897, 905` |
+| `pbCheckTileValidity`: tile IDs 1-47 read `autotile_names[-1]` (the last autotile) | `003_Debug_MenuExtraCode.rb:759-760` | `src/debug/DebugMenuExtraCode.ts:1129` |
+| PokemonDebugPartyScreen#pbConfirm starts its result as -1 (harmless: every way out sets a boolean) | `003_Debug_MenuExtraCode.rb:820` | `src/debug/DebugMenuExtraCode.ts:1196` |
+| Pokémon Debug "Set form": the cursor starts at the form *number* used as a list index (wrong row for species whose forms skip numbers) | v20.1 Hotfixes `Debug bug fixes.rb:291` (`007_Debug_PokemonCommands.rb:772`) | `src/debug/DebugPokemonCommands.ts:773` |
+| Battle Debug "Set status" (Gen 9 Pack): Drowsy's default count is always 3, and on a battler `Battler#status=` then resets the chosen Drowsy count to 0 | Gen 9 Pack `[000] General/[002] Debug.rb:110-118`, `011_Battle/002_Battler/001_Battle_Battler.rb:113` | `src/debug/DebugBattlePkmnCommands.ts:106` |
+| ZUD's ZHeal is initialised on sides but used on positions, so the battle effects editor shows it blank until toggled | ZUD `[003] Battle/Battle_Overrides.rb:13`, `Battle_PBEffects.rb:39` | `src/debug/DebugBattleExtraCode.ts:249` |
+| `pbAllocateAnimation` resizes the list to 10 whatever its length (with 10+ animations the returned slot doesn't exist; Import Animations cuts the list to 10) | `020_Debug/001_Editor_Utilities.rb:57` | `src/debug/EditorUtilities.ts:131` |
+| `pbChooseMoveListForSpecies`: an illegal (or first legal) default move's row is counted without the legal list's length, so the cursor starts on the wrong move | `001_Editor_Utilities.rb:187-191` | `src/debug/EditorUtilities.ts:300` |
+| List screens: `list.index = list.commands.length if list.index == list.commands.length` does nothing (meant length − 1) | `003_Editor_Listers.rb:91-93, 99-101`, TDW Debug List Search `:151, :165` | `src/debug/EditorListers.ts:211, 230` |
+| MetadataLister uses `@commands.length + 1` while `@commands` is still empty: the cursor always starts on the first player | `003_Editor_Listers.rb:258` | `src/debug/EditorListers.ts:451` |
+| TDW Debug List Search: searching within search results maps entries to the wrong IDs (`@ids` was already narrowed) | `TDW Debug List Search.rb:189-191, 210-212, 231-233, 252-254` | `src/debug/EditorListers.ts:246` |
+| GraphicsLister globs `*.png` and `*.PNG` without `uniq!`; Windows' case-insensitive glob lists every picture twice | `003_Editor_Listers.rb:135-138` | `src/debug/EditorListers.ts:75` |
+| StringListProperty pushes `old_setting[i]` with no `i` (NameError on any non-empty list, e.g. editing Flags) | `002_Editor_DataTypes.rb:244` | `src/debug/EditorDataTypes.ts:344` |
+| IVsProperty / EVsProperty read and write the old hash by `pbs_order` instead of stat ID (the hash gains keys 0-5) | `002_Editor_DataTypes.rb:558, 598` | `src/debug/EditorDataTypes.ts:654, 691` |
+| EvolutionsProperty: `when String` never matches (`param_type` is the class), so a String parameter gets the 0-65535 number chooser | `002_Editor_DataTypes.rb:1282` | `src/debug/EditorDataTypes.ts:1398` |
+| GameDataPoolProperty "Change value" with auto_sort sorts without keeping "[ADD VALUE]" first (cursor one row off) | `002_Editor_DataTypes.rb:1054` | `src/debug/EditorDataTypes.ts:1152` |
+| chooseMapPoint and pbPropertyList never dispose their viewport (small leak) | `002_Editor_DataTypes.rb:685, 1551` | `src/debug/EditorDataTypes.ts:794, 1689` |
+| ZUD `write_power_moves` writes `species.first` for flagged entries, which compile_power_moves already replaced: `PIKASHUNIUMZ` comes out as `Species = ` and recompiling fails | ZUD `[000] General/Compiler.rb:426, 454` (`:377`) | `src/compiler/WritePBS.ts:1199, 1233` |
+
+### Battle animation editor (`web/src/debug/editors`)
+
+Paths under `020_Debug/002_Animation editor/` unless noted.
+
+| Bug | Original | Port |
+|---|---|---|
+| PBAnimTiming#to_s, "Set FG": `@colorGreen \| "-"` (bitwise or): shows `true` for no green, raises TypeError for a set one (the SE/BG list crashes) | `011_Battle/006_Other battle code/007_BattleAnimationPlayer.rb:313` | `src/debug/editors/AnimEditor_Data.ts:253` |
+| PBAnimTiming#to_s, "Set BG/FG": `sprintf("%d", @opacity)` raises TypeError when the opacity is unset | `007_BattleAnimationPlayer.rb:294, 316` | `src/debug/editors/AnimEditor_Data.ts:237` |
+| PBAnimations#resize puts the selection one past the last animation (`selected = len`) | `007_BattleAnimationPlayer.rb:396` | `src/battle/scene/animationPlayer.ts:421` |
+| OptionalSlider / OptionalTextSlider: `curvalue=`, `minvalue=`, `maxvalue=` call an undefined `slider` (NameError; never called) | `002_AnimEditor_ControlsButtons.rb:469, 503, 511, 717, 751, 759` | `src/debug/editors/AnimEditor_ControlsButtons.ts:524, 557, 563, 790, 817, 823` |
+| OptionalSlider / OptionalTextSlider define `validate?` instead of `validate`, so they are redrawn every frame | `002_AnimEditor_ControlsButtons.rb:489, 737` | `src/debug/editors/AnimEditor_ControlsButtons.ts:542, 806` |
+| ArrayCountSlider reads an undefined `canvas` (NameError; unused class) | `002_AnimEditor_ControlsButtons.rb:555` | `src/debug/editors/AnimEditor_ControlsButtons.ts:610` |
+| Insert Frame copies the frame shallowly: both frames share their cels, so editing one edits the other | `001_AnimEditor_SceneElements.rb:663` | `src/debug/editors/AnimEditor_SceneElements.ts:743` |
+| Renumber allows cel number 60 (MAX_SPRITES), past the last cel: the cel is never shown or played | `005_AnimEditor_Functions.rb:193` | `src/debug/editors/AnimEditor_Functions.ts:230` |
+| Set Blending Color previews the color as a tone | `005_AnimEditor_Functions.rb:253` | `src/debug/editors/AnimEditor_Functions.ts:290` |
+| Import Anim: an animation without a graphic also gets "The animation file … was not found" (the folder is prefixed before the empty check) | `004_AnimEditor_ExportImport.rb:69-70` | `src/debug/editors/AnimEditor_ExportImport.ts:153` |
+
+## Minigames (`web/src/minigames`)
+
+Triple Triad is this game's modified copy (custom cards such as `OAK`), and
+the game's own NPCs only play with `noprize`, so most of the card-trading
+crashes below can't happen from events. `TT` = `017_Minigames/002_Minigame_TripleTriad.rb`.
+
+| Bug | Original | Port |
+|---|---|---|
+| A card that is neither a species nor a custom card raises NoMethodError on nil (`found_card.species`) | `TT:53-55` | `src/minigames/TripleTriad.ts:92` |
+| Card selection: taking a card back (BACK) relists the cards with `GameData::Species.get`, which raises for custom cards (`OAK`) | `TT:358` | `src/minigames/TripleTriad.ts:565` |
+| Win or loss with the default trade rule names the card with `GameData::Species.get` (raises for custom cards) | `TT:976, 1007` | `src/minigames/TripleTriad.ts:1180, 1203` |
+| "direct" trade rule: `get_species_form(...).id` is nil for custom cards (NoMethodError) | `TT:957, 988, 1018` | `src/minigames/TripleTriad.ts:1151` |
+| The opponent's "can't move" branch calls `continue`, not a Ruby keyword (NameError; unreachable) | `TT:911` | `src/minigames/TripleTriad.ts:1111` |
+| pbSellTriads calls a missing global `pbDisplayPaused` for a 0-price card (unreachable: prices are ≥ 100) | `TT:1296` | `src/minigames/TripleTriad.ts:1495` |
+| pbTriadList names cards with `GameData::Species.get` (raises for custom cards) | `TT:1346` | `src/minigames/TripleTriad.ts:1541` |
+| Card backgrounds are `card_#{type}`: there is no `card_fighting`/`card_steel` (only `card_fight`), so Fighting and Steel cards have a blank background; species-form cards (`RATTATA_1`) have no `Cards/` picture | `Triple Triad Booster Packs/TripleTriad_Improvements.rb:30, 34` | `src/minigames/TripleTriad.ts:251` |
+| Binder: the row count rounds with TOTAL_VISIBLE_ROWS instead of TOTAL_COLUMNS - 1, so with 19-20 (25-26, ...) cards the last row can't be reached | `TripleTriad_Binder.rb:51` | `src/minigames/TripleTriad_Binder.ts:108` |
+| Binder with no cards: `@cards[0]` is nil (NoMethodError) | `TripleTriad_Binder.rb:106` | `src/minigames/TripleTriad_Binder.ts:167` |
+| Binder: BACK plays the close-menu sound twice | `TripleTriad_Binder.rb:200-201` | `src/minigames/TripleTriad_Binder.ts:252` |
+| Rubik's square (game 6) walks columns with `(width - 1) * height` instead of `(height - 1) * width` (wrong on non-square boards; all of this game's are square) | `007_Minigame_TilePuzzles.rb:412` | `src/minigames/TilePuzzles.ts:473` |
+| Dance: an unknown game id raises NoMethodError in `initialize` before the "Minigame not found" check | `Dance Minigame/Main.rb:231` | `src/minigames/DanceMinigame.ts:326` |
+| Dance: Infinite Mode has no lives and `handle_input` never returns `:exit`, so it never ends; `@forced_exit` is never set (the analysis always shows) | `Dance Minigame/Main.rb:277, 300, 337-357` | `src/minigames/DanceMinigame.ts:407, 445` |
+| Dance: `valid_game_id?` builds a whole DanceGame each time (twice per pbDanceGame), shuffling its moves and leaving a viewport behind | `Dance Minigame/Main.rb:243-255, 904-909` | `src/minigames/DanceMinigame.ts:354` (the empty viewport is disposed) |
+
+## Battle Frontier (`web/src/game/frontier`; paths under `018_Alternate battle modes/`)
+| Bug | Original | Port |
+|---|---|---|
+| PokemonRuleSet#addSubsetRule pushes onto `@teamRules`, so subset rules (TotalLevelRestriction) are checked on whole teams and suggestedLevel never sees them | `002_Battle Frontier rules/002_Challenge_Rulesets.rb:103,50` | `rulesets.ts` |
+| …so with the Pika/Poké/Fancy Cup rules no generated team is ever valid (3 Pokémon at the maximum level exceed the total): pbGenerateBattleTrainer and pbBattleFactoryPokemon loop forever for those cups | `001_Battle Frontier/003_Challenge_ChooseFoes.rb:74-80,153-160` | `chooseFoes.ts` |
+| The Battle Tower's record board (map 191, event 5) asks for `getPreviousWins(0)`/`getMaxWins(0)`, but challenges are kept under their IDs (`"towersingle"`), so it always shows 0 | `Data/Map191.rxdata` (event data) | `data/maps/Map191.json` |
+| Map 191's receptionist sends a resting challenger on to Goldenrod City (map 56, 0,6) instead of the battle room | `Data/Map191.rxdata` (event data) | `data/maps/Map191.json` |
+| BattleChallenge#data compares the challenge's string ID with 0 (ArgumentError while a challenge is in progress; only reached by #rules without rules) | `001_Battle Frontier/001_Challenge_BattleChallenge.rb:141` | `battleChallenge.ts` |
+| BattleChallengeData#pbEnd sets `$player.party = @oldParty` before checking a challenge is in progress (nil party) | `001_Challenge_BattleChallenge.rb:275` | `battleChallenge.ts` |
+| pbBattleFactoryPokemon scales the last range end (881) to the list's length (882), so a Group 3 draw can pick index 882 (nil, NoMethodError): open level, or 21+ wins | `003_Challenge_ChooseFoes.rb:124,155` | `chooseFoes.ts` |
+| LevelAdjustment#getAdjustment calls the class method getNullAdjustment on the instance (NoMethodError; every used subclass overrides it) | `002_Battle Frontier rules/004_Challenge_LevelAdjustment.rb:25` | `levelAdjustment.ts` |
+| NegativeExtendedGameClause returns nil (invalid) for every Pokémon it doesn't ban | `002_Battle Frontier rules/003_Challenge_EntryRestrictions.rb:56-62` | `entryRestrictions.ts` |
+| NicknameClause calls `NicknameChecker.check`, a module instance method (NoMethodError for 2+ Pokémon); NicknameChecker#getName returns the name un-upcased the first time | `003_Challenge_EntryRestrictions.rb:103-109,131` | `entryRestrictions.ts` |
+| Rules without `errorMessage` (RestrictedSpecies*) raise NoMethodError when isValid? reports errors | `002_Challenge_Rulesets.rb:214,219` | `rulesets.ts` |
+| PBPokemon#inspect calls `real_name_brief` on stat symbols (NoMethodError with any EVs) | `001_Battle Frontier/002_Challenge_Data.rb:173` | `challengeData.ts` |
+| pbWriteCup: canceling the YES/NO prompt (no trainer lists) gives "YES, USE NEW" | `003_Battle Frontier generator/001_ChallengeGenerator_Data.rb:293-301` | `generatorData.ts` |
+| isBattlePokemonDuplicate discards `moves.compact.sort` and the move lists always have 4 entries, so moves must match in order and any matching moves count as the same set | `001_ChallengeGenerator_Data.rb:136-139` | `generatorData.ts` |
+| pbTrainerInfo's random trainer type loop has no `break` (hangs when a challenge has no trainer list and there's no default list) | `003_ChallengeGenerator_Trainers.rb:27-32` | `generatorTrainers.ts` |
+| Team generation's real battles (pbRuledBattle, 1 in 100) use Battle::DebugSceneNoLogging, which lacks Essentials Deluxe's pbDeluxeTriggers: every attack phase raises, nobody moves, and the battle is decided on time after 100 rounds | `004_ChallengeGenerator_BattleSim.rb:401`; Essentials Deluxe `[000] Essentials Patches/Battle.rb:282` | `battleSim.ts` |
+| PlayerRatingElo#update reads an undefined `match` (NameError); RuledTeam#toStr (PlayerRating#to_i), #load (indexes by Pokémon) and #compare (PlayerRating#compare) raise (all unused) | `004_ChallengeGenerator_BattleSim.rb:68-75,160` | `battleSim.ts` |
+| Battle Swap: the rental screen's message window is Graphics.height wide | `001_Battle Frontier/005_UI_BattleSwap.rb:19` | `battleSwap.ts` |
+
+## ZUD Max Raids and Dynamax Adventures (`web/src/game/maxRaid`, `web/src/game/maxLair`, `web/src/battle/zud/raid`; paths under ZUD `[009] Max Raid/` and `[010] Adventures/`)
+| Bug | Original | Port |
+|---|---|---|
+| A Pokémon caught in a raid isn't marked as caught/owned in the Pokédex (RaidBattle#pbRecordAndStoreCaughtPokemon skips pbSetCaught) | `Raid_Battle.rb:15-21` | `src/battle/zud/raid/Raid_Battle.ts` |
+| A saved den Pokémon's IVs are read in Hash order but applied in PBS order, so its Speed/Sp. Atk/Sp. Def IVs rotate each time the den is set up | `Raid_Setup.rb:109` | `src/game/maxRaid/Raid_Setup.ts` |
+| Gender roll is inverted: the female chance makes the raid Pokémon male | `Raid_Setup.rb:145` | `src/game/maxRaid/Raid_Setup.ts` |
+| A species in no raid rank (e.g. a Mega form picked by a random form) leaves rank nil and `i <= rank` raises ArgumentError | `Raid_Setup.rb:134-160` | `src/game/maxRaid/Raid_Setup.ts` |
+| MaxRaidBattle.start_core's fallback passes an undefined `pokemon` (NameError; never reached) | `Raid_Setup.rb:52` | `src/game/maxRaid/Raid_Setup.ts` (passes dx_pokemon) |
+| MaxRaidBattle.start returns true for every raid den (it returns pbEndScene's value, not the outcome); events must read the outcome variable | `Raid_Setup.rb:40-43` | `src/game/maxRaid/Raid_Setup.ts` |
+| raid_GenerateSpeciesList raises NoMethodError when the map's encounter table gives nothing | `Raid_Ranks.rb:207` | `src/game/maxRaid/Raid_Ranks.ts` (keeps the previous params) |
+| Rewards screen reads `rules[:environment]` (the rule is `:environ`), so the environment-based rewards never drop | `Raid_Den_Scene.rb:403` | `src/game/maxRaid/Raid_Den_Scene.ts` |
+| Story dens: `:rank => 5` is overwritten by the boss's level (55 -> rank 4); `:gmax_factor`/`:catch_rate` options are read by nothing; the fallback branch learns `:DRAGON_DANCE` (not a move), uses `:Sunny` (not a weather) and leaves pkmn_options nil (NoMethodError) | `Raid_Mine.rb:114, 216-246` | `src/game/maxRaid/Raid_Mine.ts` |
+| Map 851 (test map) event 6: `:species` isn't a rule anything reads, and the `:loot` pair makes the quantity `:DYNAMAXCANDY`, which `$bag.add` can't take (the rewards screen raises) | `Data/Map851.rxdata` (event data) | `src/game/scripts/maxRaid.ts` |
+| Debug "Max Raid Battle": MAXRAID_SIZE is 6 here, past the end of sizemsg, so the menu shows "Raid Size []" until a size is picked | ZUD `[000] General/Debug.rb` | `src/game/maxRaid/Debug.ts` |
+| lair_CanMove? calls `ret.include?` on nil when there's no Selection tile (NoMethodError) | `MaxLair_Controls.rb:25-28` | `src/game/maxLair/MaxLair_Controls.ts` (false) |
+| A trapped chest sends the player back to the start even when it stays locked (no Lair Key) | `MaxLair_Controls.rb:166` | `src/game/maxLair/MaxLair_Controls.ts` |
+| Move tutor: the move's name is read before checking there is one (GameData::Move.get(nil) raises) | `LairMenu_Menus.rb:668` | `src/game/maxLair/LairMenu_Menus.ts` |
+| Move tutor: tutoring a Pokémon that knows four moves calls `@scene.pbForgetMove`, but MaxLairEventScene has no @scene (NoMethodError) | `LairMenu_Menus.rb:690` | `src/game/maxLair/LairMenu_Menus.ts` |
+
+## Pokémon Amie (`web/src/plugins/pokemonAmie`; paths under `Plugins/Pokemon Amie/Pokemon Amie.rb`)
+
+| Bug | Original | Port |
+|---|---|---|
+| Feeding any food with a field-use handler (status/HP berries, Leppa, the EV-lowering berries, the sweets, Rare Candy: 22 of the 70) stops the game: the handler calls `scene.pbDisplay`/`pbRefresh`/`pbChooseMove`, which the plugin defines as top-level (private) methods, so NoMethodError. The handler's effect (HP, status, happiness) is applied first; the item isn't taken | `:196, 1158-1195` | `src/plugins/pokemonAmie/amie.ts` (`amieItemScene`) |
+| Berries never use their berry_plants.dat entry (looked up by GameData::Item, keyed by symbol): every berry gives 3 + rand(4) affection. The loaded hash is kept in the Pokémon (`@berryPlantData`), so it goes into the save | `:198-207` | `src/plugins/pokemonAmie/amie.ts` (`feedAmie`; nothing stored) |
+| PokeBattle_Battler is v19's battler class (v20.1: Battle::Battler), so Amie stats do nothing in battle | `:344-365` | `src/plugins/pokemonAmie/amie.ts` (unused class) |
+| The hunger counter counts every event's steps (`:on_step_taken`), not just the player's, and lowers eggs' stats too | `:333-342` | `src/plugins/pokemonAmie/amie.ts` |
+| Pressing on the open food bar with no food in the Bag raises NoMethodError (`food-1`) | `:946` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+| Closing an empty food bar leaves its count overlay (disposed inside the food loop) | `:523-526` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+| `@nibbleCooldown` starts nil: food picked up already over the Pokémon would raise on the first nibble | `:833` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+| The walk's second leg left is twice as long as the first, and the Pokémon creeps 3 px up each round trip (`@initial_y` re-read mid-bob) | `:387-411` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+| Every opening and every return from the switch screen costs 2 Enjoyment and plays a Following Pokémon line | `:710-712` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+| Most maps' BattleBack (cave1, tunnel, battle1, indoor2…) has no picture in `Graphics/Pictures/Pokemon Amie`, so the backdrop is blank (black) there | `:876-901` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
+
+## Event scripts (`web/data/maps`, `web/data/common-events.json`; port in `src/game/scripts/eventScripts.ts`, `src/game/scripts/rubyErrors.ts`)
+
+Calls in the game's events that the original game (v20.1 and its plugins) doesn't define, left over from the older Essentials the game started on. Each raises when it runs (NameError / NoMethodError → EventScriptError) and the game stops with the error box; the port raises the same (`rubyErrors.ts`). `data/eventScripts.test.ts` checks every other call resolves.
+
+| Bug | Original (event) | Port |
+|---|---|---|
+| `PBSpecies` doesn't exist (the Chronicles Helpers keep PBItems/PBTrainers only): `PBSpecies::X` raises. Common events 2 ("Pokés", parallel on switch 488) and 7 raise on the first party Pokémon they compare; Cinnabar Lab (Map 516, events 5-6) raises when the party screen checks a Pokémon; also Maps 207, 473, 676, 766, 199 (conditions), and `PBSpecies.getName` in the Name Rater (Map 215, event 3) | events | `rubyErrors.ts`, `storePartySpecies` |
+| `PBItems::PARLYZHEAL`, `POKeBALL`, `POKeDOLL`, `XDEFEND`, `XSPECIAL` aren't in the Helpers' PBItems (uninitialized constant): Marts on Maps 204, 218, 822 | events | `rubyErrors.ts` |
+| Day Care (Map 440): event 1 calls `pkmn.eggsteps` (v20: `steps_to_hatch`) after you pick the Pokémon; event 2 assigns `$PokemonGlobal.daycareEgg`/`daycareEggSteps` (gone in v20) right after giving you the egg | Map 440 events 1-2 | `rubyErrors.ts` |
+| Name Rater (Map 215, event 3): `pkmn.isForeign?($player)` (v20: `foreign?`) | Map 215 | `rubyErrors.ts` |
+| Secret Bases (Maps 255, 673, 209): `pbSecretBaseMart`, `pbSecretBasePC`, `pbNewSecretBase`, `pbInstallingBase`, `getAllCushions`… don't exist | events | `rubyErrors.ts` |
+| Pokémon Center online counters (Map 842, common events 43-44): `GTS.open`, `PVP.open`, `OnlineLobby.open`, `pbWonderTrade`, `pbSave`, `Kernel.pbTransferPlayer` don't exist | events | `rubyErrors.ts` |
+| Move Deleter (Map 314, event 3): `pbNumMoves`, `pbDeleteMove` (v17 names) | Map 314 | `rubyErrors.ts` |
+| `pbIsWeekday?` (common event 78; the function is `pbIsWeekday`), `pbTalkToFollower` (common event 41), `pbToggleFollowingPokemon` (Map 569), `pbFirstRaid` (Map 851) don't exist | events | `rubyErrors.ts` |
+| Map 438 ("Intro antes title"), event 1 page 2: `PokemonLoadScene.new` (v20: `PokemonLoad_Scene`) raises after stopping the BGM | Map 438 | `rubyErrors.ts` |
+| Common event 32 ("Call HallofFame", unused): `HallofFameScene` (v20: `HallOfFame_Scene`) raises inside `PBDebug.logonerr`, which shows the error and carries on | common event 32 | `callHallOfFameCommonEvent` |
+| Common events 2, 5, 6, 7: `$Trainer.party.compact!` runs inside the `for k in 0..5` loop, so the Pokémon after a stored one is skipped | common events 2, 5-7 | `storePartySpecies` |
+| Messages with a stray backslash show it as written: `\v [77]` / `\v [76]` (a space; Map 251 event 31), `\Olá` (Map 314), `\Hm!` (Map 678) | events | `data/eventScripts.test.ts` |

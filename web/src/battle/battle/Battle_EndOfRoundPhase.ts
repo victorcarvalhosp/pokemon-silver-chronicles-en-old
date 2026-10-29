@@ -37,6 +37,7 @@ import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
 import { rubyRound } from "../rubyMath";
 import { Battle } from "./Battle";
+import { raidEndOfRound, raidEndOfRound2 } from "../zud/raid/Raid_Battle_EndOfRound";
 
 /** Battle::TRAPPING_MOVE_COMMON_ANIMATIONS */
 export const TRAPPING_MOVE_COMMON_ANIMATIONS: Record<Id, string> = {
@@ -930,7 +931,7 @@ const methods = {
         battler.displayBaseMoves();
         battler.selectedMoveIsZMove = false;
       }
-      // Deferred: raid_EndOfRound(battler) — Max Raids (ZUD Mechanics/[009] Max Raid/Raid_Battle.rb:382)
+      await raidEndOfRound(this, battler); // ZUD Mechanics/[009] Max Raid/Raid_Battle.rb:382
       if (battler.effects[PBEffects.Dynamax] <= 0) continue;
       // Converts any newly-learned moves into Max Moves while Dynamaxed.
       if (!battler.effects[PBEffects.MaxRaidBoss]) {
@@ -948,7 +949,7 @@ const methods = {
       if (battler.effects[PBEffects.Dynamax] === 0) {
         if (!battler.effects[PBEffects.MaxRaidBoss]) await battler.unmax();
       }
-      // Deferred: raid_EndOfRound2(battler) — Max Raids (ZUD Mechanics/[009] Max Raid/Raid_Battle.rb:432)
+      await raidEndOfRound2(this, battler); // Raid_Battle.rb:432
     }
   },
 

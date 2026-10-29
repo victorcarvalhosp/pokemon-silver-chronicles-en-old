@@ -1,6 +1,8 @@
 // Port of 004_Game classes/006_Game_MapFactory.rb: keeps the current map and
 // the maps connected to it (PBS map_connections) loaded and aligned.
 
+import { DEBUG } from "../core/debug";
+import { Input } from "../rgss/Input";
 import { connectionsFor, hasMapData, mapDims, preloadMaps, type MapConnection } from "../data/store";
 import { terrainTag, type TerrainTag } from "../data/gameData/terrainTag";
 import { REAL_RES_X, REAL_RES_Y, TILE_HEIGHT, TILE_WIDTH, type GameCharacter, player } from "./GameCharacter";
@@ -151,6 +153,8 @@ export class PokemonMapFactory {
     const map = this.getMapNoAdd(mapID);
     if (!map.valid(x, y)) return false;
     if (ev.through) return true;
+    // Check passability of tile
+    if (DEBUG && Input.press(Input.CTRL) && ev === player()) return true;
     if (!map.passable(x, y, 0, ev)) return false;
     for (const event of map.events.values()) {
       if (event === ev || !event.atCoordinate(x, y)) continue;

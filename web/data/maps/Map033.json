@@ -232,7 +232,7 @@
               "then": [
                 {"cmd":"text","text":"\\bOla, você deve ser \\PN."},
                 {"cmd":"text","text":"\\bEu tenho uma encomenda para você.\\nAqui está!"},
-                {"cmd":"script","ruby":"id=pbNextMysteryGiftID\npbReceiveMysteryGift(id)"}
+                {"cmd":"call","fn":"pbReceiveMysteryGift","args":[{"call":"pbNextMysteryGiftID"}]}
               ],
               "else": [{"cmd":"text","text":"\\bNo momento ainda não recebi nenhuma outra encomenda."}]
             },

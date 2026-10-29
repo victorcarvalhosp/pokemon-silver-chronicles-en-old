@@ -2,6 +2,7 @@ import { createReadStream, existsSync, readdirSync, statSync } from "node:fs";
 import { extname, join, relative, resolve } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vitest/config";
+import { devFiles } from "./tools/devFiles";
 
 const GAME_ROOT = resolve(import.meta.dirname, "..");
 const ASSET_DIRS = ["Graphics", "Audio", "Fonts"];
@@ -77,7 +78,8 @@ function gameAssets(): Plugin {
 }
 
 export default defineConfig({
-  plugins: [gameAssets()],
+  // devFiles: the Debug menu's file writes (dev server only, see docs/data.md).
+  plugins: [gameAssets(), devFiles(GAME_ROOT)],
   server: { port: 5317 },
   test: { include: ["src/**/*.test.ts"] },
 });

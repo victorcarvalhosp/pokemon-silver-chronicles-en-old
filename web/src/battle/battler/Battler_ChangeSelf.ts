@@ -18,6 +18,8 @@
 //   pbCheckFormOnWeatherChange = Gen 9( core ); pbFaint = ZUD( Deluxe( Gen 9( core ) ) );
 //   pbTransform = ZUD( Gen 9( core ) ); pbReducePP = Deluxe (replaces core).
 
+import { DEBUG } from "../../core/debug";
+import { Input } from "../../rgss/Input";
 import { _INTL, type Id } from "../../data/gameData/gameData";
 import { MapMetadata } from "../../data/gameData/mapMetadata";
 import { Settings } from "../../data/gameData/settings";
@@ -31,6 +33,7 @@ import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
 import { rubyRound } from "../rubyMath";
 import { Battler } from "./Battler";
+import { raidKOCounter } from "../zud/raid/Raid_Battle_Battler";
 
 /** Essentials Deluxe's $game_temp.dx_rules (not declared on GameTemp). */
 function dxRules(): Record<string, unknown> | null {
@@ -275,7 +278,7 @@ const methods = {
     }
     // --- ZUD Mechanics ---
     if (this.ultra()) this.pokemon!.makeUnUltra();
-    // Deferred: raid_KOCounter(self.pbDirectOpposing) if @battle.raid_battle (ZUD Mechanics/[004] Battle_Battler/Battler_Overrides.rb:157)
+    if (this.battle.raidBattle) await raidKOCounter(this, this.pbDirectOpposing()); // Battler_Overrides.rb:157
   },
 
   //=============================================================================
@@ -330,8 +333,7 @@ const methods = {
             G.bag.remove(ball, 1);
             if (chance > 0) {
               const r = this.battle.pbRandom(100);
-              // ($DEBUG && Input.press?(Input::CTRL): $DEBUG is off)
-              const capture = r < chance || ball === "MASTERBALL";
+              const capture = r < chance || ball === "MASTERBALL" || (DEBUG && Input.press(Input.CTRL));
               dxRules()!.setcapture = capture;
             }
             await this.battle.pbThrowPokeBall(target.index, ball);

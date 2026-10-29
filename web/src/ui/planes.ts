@@ -8,6 +8,7 @@ import { Bitmap } from "../rgss/Bitmap";
 import { Plane, Sprite, type Viewport } from "../rgss/display";
 import type { Color } from "../rgss/types";
 import { FRAME_RATE } from "../game/GameCharacter";
+import { MessageTypes, pbGetMessage } from "../core/intl";
 import { Data } from "../data/store";
 import { G } from "../game/globals";
 import { mapMetadata } from "../game/metadata";
@@ -155,7 +156,8 @@ export class TrainerWalkingCharSprite extends Sprite {
 
 /** pbGetMapNameFromId: the PBS map name (MessageTypes::MapNames), else the editor's, with \PN replaced. */
 export function pbGetMapNameFromId(id: number): string {
-  let name = (mapMetadata(id)?.name as string | undefined) ?? "";
+  // pbGetMessage(MessageTypes::MapNames, id): a loaded translation, else the compiled original
+  let name = pbGetMessage(MessageTypes.MapNames, id) || ((mapMetadata(id)?.name as string | undefined) ?? "");
   if (!name) name = Data.mapInfos.get(id)?.name ?? "";
   if (G.player) name = name.replace(/\\PN/g, G.player.name);
   return name;

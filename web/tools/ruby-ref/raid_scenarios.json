@@ -1,0 +1,90 @@
+{
+  "_doc": "Max Raid battles for raid_reference.rb (and src/battle/zud/raid/raidReference.test.ts). p = the player's party (sent out in order), boss = the raid Pokémon (set up as MaxRaidBattle.generate_foe/pbApplyWildAttributes would: Dynamaxed, full HP, reverted), rules = $game_temp.dx_rules after pbApplyBattleRules (size is the battle size), turns[i][battler] = actions as in zud_scenarios.json, plus \"c\" (Cheer). The boss always acts with the AI.",
+  "scenarios": [
+    {
+      "name": "1v1: shields at 4/5 and 1/2 HP, KO counter, Max Moves after the last shields",
+      "p": [{"sp": "MACHAMP", "lv": 45, "m": ["CROSSCHOP", "KNOCKOFF", "BULKUP", "ROCKSLIDE"], "ab": "NOGUARD"}],
+      "boss": {"sp": "SNORLAX", "lv": 40, "m": ["BODYSLAM", "CRUNCH", "REST", "HEAVYSLAM"], "dlvl": 20},
+      "rules": {"size": 1, "turns": 10, "kocount": 2, "shield": 3, "rank": 3, "hard": false},
+      "turns": [["0"], ["0"], ["1"], ["2"], ["0"], ["0"], ["0"], ["0"], ["0"], ["0"], ["0"]]
+    },
+    {
+      "name": "3v1 hard mode: neutralizing/immobilizing/malicious/invigorating waves, regeneration, KO boost",
+      "p": [
+        {"sp": "LUCARIO", "lv": 50, "m": ["AURASPHERE", "FLASHCANNON", "SWORDSDANCE", "EXTREMESPEED"]},
+        {"sp": "GARCHOMP", "lv": 50, "m": ["EARTHQUAKE", "DRAGONCLAW", "SWORDSDANCE", "STONEEDGE"]},
+        {"sp": "GENGAR", "lv": 50, "m": ["SHADOWBALL", "SLUDGEBOMB", "HYPNOSIS", "THUNDERBOLT"]}
+      ],
+      "boss": {"sp": "TYRANITAR", "lv": 52, "m": ["STONEEDGE", "CRUNCH", "EARTHQUAKE", "DRAGONDANCE"], "dlvl": 30},
+      "rules": {"size": 3, "turns": 8, "kocount": 3, "shield": 4, "rank": 4, "hard": true},
+      "turns": [["2", "2", "2"], ["0", "0", "0"], ["0", "0", "0"], ["1", "1", "0"], ["0", "0", "0"], ["0", "0", "0"], ["1", "1", "1"], ["0", "0", "0"], ["0", "0", "0"], ["0", "0", "0"]]
+    },
+    {
+      "name": "3v1 cheers: one, two and three at once; Dynamax recharge",
+      "p": [
+        {"sp": "PIKACHU", "lv": 30, "m": ["THUNDERBOLT", "QUICKATTACK"]},
+        {"sp": "BULBASAUR", "lv": 30, "m": ["VINEWHIP", "GROWL"]},
+        {"sp": "SQUIRTLE", "lv": 30, "m": ["WATERGUN", "TACKLE"]}
+      ],
+      "boss": {"sp": "MACHAMP", "lv": 34, "m": ["CROSSCHOP", "KNOCKOFF", "ROCKSLIDE", "BULKUP"], "dlvl": 10, "gmax": true},
+      "rules": {"size": 3, "turns": 10, "kocount": 3, "shield": 2, "rank": 2, "hard": false},
+      "turns": [["0d", "c", "0"], ["0", "c", "c"], ["c", "c", "c"], ["c", "0", "0"], ["c", "c", "0"], ["c", "c", "c"], ["0", "0", "0"], ["c", "c", "c"], ["0", "0", "0"]]
+    },
+    {
+      "name": "1v1: Dynamaxed player, Max Moves break two shields, Max Guard takes a shield",
+      "p": [{"sp": "CHARIZARD", "lv": 60, "m": ["FLAMETHROWER", "AIRSLASH", "DRAGONPULSE", "PROTECT"], "gmax": true, "dlvl": 10}],
+      "boss": {"sp": "VENUSAUR", "lv": 55, "m": ["SLUDGEBOMB", "GIGADRAIN", "EARTHPOWER", "LEECHSEED"], "dlvl": 30},
+      "rules": {"size": 1, "turns": 10, "kocount": 1, "shield": 4, "rank": 4, "hard": false},
+      "turns": [["0d"], ["0"], ["3"], ["1"], ["0"], ["2"], ["0"], ["0"], ["0"], ["0"]]
+    },
+    {
+      "name": "2v1: boss brought to 0 HP is caught (raid capture), stored in a box",
+      "p": [
+        {"sp": "DRAGONITE", "lv": 70, "m": ["OUTRAGE", "EXTREMESPEED", "FIREPUNCH", "EARTHQUAKE"]},
+        {"sp": "METAGROSS", "lv": 70, "m": ["METEORMASH", "ZENHEADBUTT", "EARTHQUAKE", "BULLETPUNCH"]}
+      ],
+      "boss": {"sp": "EEVEE", "lv": 15, "m": ["TACKLE", "SANDATTACK"], "dlvl": 5},
+      "rules": {"size": 2, "turns": 10, "kocount": 2, "shield": 1, "rank": 1, "hard": false, "setcapture": true},
+      "turns": [["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"]]
+    },
+    {
+      "name": "1v1: the timer runs out (blown out of the den)",
+      "p": [{"sp": "BLISSEY", "lv": 50, "m": ["PROTECT", "SOFTBOILED", "SEISMICTOSS"]}],
+      "boss": {"sp": "WOBBUFFET", "lv": 30, "m": ["COUNTER", "MIRRORCOAT", "SAFEGUARD", "CHARM"], "dlvl": 10},
+      "rules": {"size": 1, "turns": 5, "kocount": 1, "shield": 1, "rank": 2, "hard": false},
+      "turns": [["0"], ["1"], ["2"], ["0"], ["1"], ["2"], ["0"], ["1"]]
+    },
+    {
+      "name": "2v1: last KO ends the raid; fainted party revived at end of round",
+      "p": [
+        {"sp": "CATERPIE", "lv": 5, "m": ["TACKLE"]},
+        {"sp": "WEEDLE", "lv": 5, "m": ["POISONSTING"]}
+      ],
+      "boss": {"sp": "ARCANINE", "lv": 60, "m": ["FLAREBLITZ", "EXTREMESPEED", "CRUNCH", "WILDCHARGE"], "dlvl": 40},
+      "rules": {"size": 2, "turns": 10, "kocount": 3, "shield": 3, "rank": 5, "hard": false},
+      "turns": [["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"], ["0", "0"]]
+    },
+    {
+      "name": "3v1: raid immunities (Knock Off, Super Fang, status through shields), boss Roar/Belch",
+      "p": [
+        {"sp": "WEAVILE", "lv": 50, "m": ["KNOCKOFF", "SUPERFANG", "ICESHARD", "TAUNT"]},
+        {"sp": "RATICATE", "lv": 50, "m": ["SUPERFANG", "THUNDERWAVE", "CRUNCH", "BITE"]},
+        {"sp": "HEATRAN", "lv": 50, "m": ["FLAMETHROWER", "WILLOWISP", "TOXIC", "EARTHPOWER"]}
+      ],
+      "boss": {"sp": "SNORLAX", "lv": 50, "m": ["BELCH", "ROAR", "BODYSLAM", "SUBSTITUTE"], "dlvl": 30, "it": "LEFTOVERS"},
+      "rules": {"size": 3, "turns": 8, "kocount": 3, "shield": 3, "rank": 4, "hard": false},
+      "turns": [["0", "0", "1"], ["1", "1", "2"], ["2", "2", "0"], ["3", "1", "1"], ["0", "0", "0"], ["2", "2", "3"], ["0", "0", "0"], ["2", "2", "0"]]
+    },
+    {
+      "name": "3v1: no shields left: boss strikes with Max Moves then base moves",
+      "p": [
+        {"sp": "ALAKAZAM", "lv": 60, "m": ["PSYCHIC", "SHADOWBALL", "FOCUSBLAST", "CALMMIND"]},
+        {"sp": "GYARADOS", "lv": 60, "m": ["WATERFALL", "CRUNCH", "DRAGONDANCE", "EARTHQUAKE"]},
+        {"sp": "MAGNEZONE", "lv": 60, "m": ["THUNDERBOLT", "FLASHCANNON", "VOLTSWITCH", "THUNDERWAVE"]}
+      ],
+      "boss": {"sp": "GOLEM", "lv": 30, "m": ["ROCKSLIDE", "EARTHQUAKE", "STEALTHROCK", "DEFENSECURL"], "dlvl": 10},
+      "rules": {"size": 3, "turns": 10, "kocount": 3, "shield": 2, "rank": 2, "hard": false},
+      "turns": [["0", "0", "0"], ["1", "0", "0"], ["0", "1", "0"], ["2", "0", "1"], ["0", "0", "0"], ["0", "0", "0"]]
+    }
+  ]
+}

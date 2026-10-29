@@ -189,7 +189,17 @@
                 },
                 {
                   "cmd": "script",
-                  "ruby": "pkmn=Pokemon.new(:TYROGUE, 25)\npkmn.item = :BLACKBELT\npbSet(1, pkmn)"
+                  "do": [
+                    {
+                      "cmd": "assign",
+                      "target": "pkmn",
+                      "args": [],
+                      "op": "=",
+                      "value": {"call":"Pokemon.new","args":["TYROGUE",25]}
+                    },
+                    {"cmd":"assign","target":"pkmn.item","args":[],"op":"=","value":"BLACKBELT"},
+                    {"cmd":"call","fn":"pbSet","args":[1,{"call":"pkmn"}]}
+                  ]
                 },
                 {
                   "cmd": "if",

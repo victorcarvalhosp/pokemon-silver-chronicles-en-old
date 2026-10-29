@@ -230,10 +230,15 @@
                               "- Start the contest with 20 Sport Balls."
                             ]
                           },
+                          {"cmd":"call","fn":"pbBugContestState.pbSetJudgingPoint","args":[79,9,8]},
+                          {"cmd":"call","fn":"pbBugContestState.pbSetReception","args":[79,77]},
+                          {"cmd":"call","fn":"pbBugContestState.pbSetContestMap","args":[261]},
                           {
-                            "cmd": "script",
-                            "ruby": "contest = pbBugContestState\ncontest.pbSetJudgingPoint(79, 9, 8)\ncontest.pbSetReception(79, 77)\ncontest.pbSetContestMap(261)\ncontest.pbSetPokemon(pbGet(1))\ncontest.pbStart(20)"
+                            "cmd": "call",
+                            "fn": "pbBugContestState.pbSetPokemon",
+                            "args": [{"call":"pbGet","args":[1]}]
                           },
+                          {"cmd":"call","fn":"pbBugContestState.pbStart","args":[20]},
                           {
                             "cmd": "moveRoute",
                             "character": -1,

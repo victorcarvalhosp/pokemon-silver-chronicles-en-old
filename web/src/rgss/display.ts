@@ -10,7 +10,7 @@ import "pixi.js/advanced-blend-modes";
 import { Container, Graphics as PixiGraphics, Sprite as PixiSprite, Texture, TilingSprite } from "pixi.js";
 import type { BLEND_MODES } from "pixi.js";
 import { Bitmap } from "./Bitmap";
-import { ToneFilter } from "./ToneFilter";
+import { ScreenToneFilter, ToneFilter } from "./ToneFilter";
 import { Color, Rect, Tone } from "./types";
 
 let stage: Container | null = null;
@@ -68,14 +68,9 @@ class Flash {
   }
 }
 
-function effects(node: Container, filterHolder: { filter: ToneFilter | null; pre?: ToneFilter | null }, tone: Tone, color: Color, flash: Color | null, preTone?: Tone): void {
+function effects(node: Container, filterHolder: { filter: ToneFilter | null }, tone: Tone, color: Color, flash: Color | null): void {
   const c = flash && (!color.alpha || flash.alpha > color.alpha) ? flash : color;
   const filters: ToneFilter[] = [];
-  if (preTone && !preTone.isZero()) {
-    filterHolder.pre ??= new ToneFilter();
-    filterHolder.pre.set(preTone, null);
-    filters.push(filterHolder.pre);
-  }
   if (!tone.isZero() || c.alpha !== 0) {
     filterHolder.filter ??= new ToneFilter();
     filterHolder.filter.set(tone, c);
@@ -94,10 +89,12 @@ export class Viewport implements Displayable {
   color = new Color(0, 0, 0, 0);
   tone = new Tone();
   /**
-   * Applied before `tone`: the day/night tint Essentials sets on every tile and
-   * character sprite (pbDayNightTint), applied once here instead.
+   * mkxp's semantics for `tone`: applied to the screen under the viewport too,
+   * not just to its children (RPG::Weather's screen tone). Off by default: the
+   * port's other viewports tone only their own contents.
    */
-  preTone = new Tone();
+  toneScreen = false;
+  private toneOverlay: PixiSprite | null = null;
   readonly node = new Container({ sortableChildren: true });
   private mask = new PixiGraphics();
   /**
@@ -107,7 +104,7 @@ export class Viewport implements Displayable {
    */
   private overlay = new PixiSprite(Texture.WHITE);
   private flashState = new Flash();
-  private filterHolder = { filter: null as ToneFilter | null, pre: null as ToneFilter | null };
+  private filterHolder = { filter: null as ToneFilter | null };
   private disposed = false;
 
   private stamp = nextStamp++;
@@ -130,6 +127,7 @@ export class Viewport implements Displayable {
     if (this.disposed) return;
     this.disposed = true;
     live.delete(this);
+    this.toneOverlay?.destroy();
     this.node.destroy({ children: false });
   }
 
@@ -150,9 +148,29 @@ export class Viewport implements Displayable {
       this.overlay.width = this.rect.width;
       this.overlay.height = this.rect.height;
     }
-    effects(n, this.filterHolder, this.tone, NO_COLOR, null, this.preTone);
+    if (this.toneScreen) {
+      const show = !this.tone.isZero();
+      if (show && !this.toneOverlay) {
+        this.toneOverlay = new PixiSprite(Texture.WHITE);
+        this.toneOverlay.zIndex = Number.MAX_SAFE_INTEGER - 1;
+        this.toneOverlay.filters = [new ScreenToneFilter()];
+        n.addChild(this.toneOverlay);
+      }
+      if (this.toneOverlay) {
+        this.toneOverlay.visible = show;
+        this.toneOverlay.width = this.rect.width;
+        this.toneOverlay.height = this.rect.height;
+        (this.toneOverlay.filters as ScreenToneFilter[])[0]!.set(this.tone);
+      }
+      effects(n, this.filterHolder, NO_TONE, NO_COLOR, null);
+      return;
+    }
+    if (this.toneOverlay) this.toneOverlay.visible = false;
+    effects(n, this.filterHolder, this.tone, NO_COLOR, null);
   }
 }
+
+const NO_TONE = new Tone();
 
 const NO_COLOR = new Color(0, 0, 0, 0);
 

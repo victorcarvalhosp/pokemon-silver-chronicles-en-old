@@ -16,7 +16,7 @@ import { pbDayCareShowPokemonOW, pbDaycareInteract } from "../daycare/DayCareOve
 import { G } from "../globals";
 import { Pokemon } from "../pokemon/Pokemon";
 import type { Player } from "../trainer/Player";
-import { defineRubyScript, defineScript } from "../scriptApi";
+import { defineScript } from "../scriptApi";
 
 const num = (v: unknown, d: number) => (v == null ? d : Number(v));
 
@@ -57,13 +57,6 @@ defineScript("pbHatchAnimation", (_c, pkmn) => pbHatchAnimation(pkmn as Pokemon)
 defineScript("pbStartTrade", (_c, pokemonIndex, newpoke, nickname, trainerName, trainerGender) =>
   pbStartTrade(Number(pokemonIndex), newpoke instanceof Pokemon ? newpoke : (newpoke as Id),
     nickname == null ? null : String(nickname), String(trainerName), num(trainerGender, 0)));
-// Map 634 (the Pinsir trade)
-defineRubyScript("pkmn = Pokemon.new(:PINSIR, pbGetPokemon(1).level)\npkmn.item = :PINSIRITE\npbStartTrade(pbGet(1), pkmn,\"Pinsey\",\"Anya\")", async () => {
-  const index = Number(G.gameVariables.get(1));
-  const pkmn = new Pokemon("PINSIR", (G.player as unknown as Player).party[index]!.level);
-  pkmn.item = "PINSIRITE";
-  await pbStartTrade(index, pkmn, "Pinsey", "Anya");
-});
 
 // --- Hall of Fame and credits (006_UI_HallOfFame.rb, 007_UI_Credits.rb) -------------
 defineScript("pbHallOfFameEntry", () => pbHallOfFameEntry());

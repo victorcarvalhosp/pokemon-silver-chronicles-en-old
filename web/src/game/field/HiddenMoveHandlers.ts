@@ -9,6 +9,7 @@
 // shows the message itself when showmsg is true, which is the same order of
 // events as the Ruby.
 
+import { DEBUG } from "../../core/debug";
 import type { Id } from "../../data/gameData/gameData";
 import { Settings } from "../../data/gameData/settings";
 import { _INTL } from "../../ui/messageConfig";
@@ -19,8 +20,8 @@ import type { Player } from "../trainer/Player";
 
 const player = () => G.player as unknown as Player;
 
-/** $DEBUG: off, as in a released game. */
-export const FieldDebug = { DEBUG: false };
+/** $DEBUG (core/debug.ts; mutable for tests). */
+export const FieldDebug = { DEBUG };
 /** Settings::FIELD_MOVES_COUNT_BADGES */
 const FIELD_MOVES_COUNT_BADGES = true;
 

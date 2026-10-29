@@ -2,6 +2,8 @@
 // grass patches around the player), the encounters and chains it gives, and
 // the item handlers.
 
+import { DEBUG } from "../../core/debug";
+import { Input } from "../../rgss/Input";
 import { rand } from "../../core/random";
 import { EncounterType } from "../../data/gameData/encounterType";
 import { _INTL, type Id } from "../../data/gameData/gameData";
@@ -72,7 +74,8 @@ export async function pbCanUsePokeRadar(): Promise<boolean> {
     await pbMessage(_INTL("Can't use that while on a bicycle."));
     return false;
   }
-  // (Debug: Ctrl skips the battery check in $DEBUG.)
+  // Debug
+  if (DEBUG && Input.press(Input.CTRL)) return true;
   // Can't use Radar if it isn't fully charged
   const battery = G.pokemonGlobal.pokeradarBattery;
   if (battery && battery > 0) {

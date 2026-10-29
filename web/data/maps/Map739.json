@@ -1043,7 +1043,23 @@
             {"cmd":"playSe","audio":{"name":"249Cry","volume":80,"pitch":100}},
             {
               "cmd": "script",
-              "ruby": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\nsetBattleRule(\"disablePokeBalls\")\npkmn = Pokemon.new(:LUGIA, 70)\npkmn.learn_move(:HYDROPUMP)\npkmn.learn_move(:EXTRASENSORY)\npkmn.learn_move(:AEROBLAST)\npkmn.learn_move(:RECOVER)\nWildBattle.start(pkmn)"
+              "do": [
+                {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                {"cmd":"call","fn":"setBattleRule","args":["disablePokeBalls"]},
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"Pokemon.new","args":["LUGIA",70]}
+                },
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["HYDROPUMP"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["EXTRASENSORY"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["AEROBLAST"]},
+                {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["RECOVER"]},
+                {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+              ]
             },
             {"cmd":"switches","from":554,"to":554,"value":false},
             {"cmd":"switches","from":347,"to":347,"value":false},

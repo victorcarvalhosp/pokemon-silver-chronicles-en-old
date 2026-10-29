@@ -22,6 +22,7 @@ import { PowerMove } from "./powerMove";
 import { Settings } from "./settings";
 import { SpeciesMetrics } from "./speciesMetrics";
 import { Stat } from "./stat";
+import { MessageTypes, pbGetMessageFromHash } from "../../core/intl";
 
 /** [species, method, parameter] */
 export type EvolutionTuple = [Id, Id, number | string | null];
@@ -158,10 +159,10 @@ export class Species extends SymbolData {
     this.fieldSkills = hash.fieldSkills ?? [];
   }
 
-  get name(): string { return this.realName; }
-  get formName(): string | null { return this.realFormName; }
-  get category(): string { return this.realCategory; }
-  get pokedexEntry(): string { return this.realPokedexEntry; }
+  get name(): string { return pbGetMessageFromHash(MessageTypes.Species, this.realName); }
+  get formName(): string | null { return this.realFormName == null ? null : pbGetMessageFromHash(MessageTypes.FormNames, this.realFormName); }
+  get category(): string { return pbGetMessageFromHash(MessageTypes.Kinds, this.realCategory); }
+  get pokedexEntry(): string { return pbGetMessageFromHash(MessageTypes.Entries, this.realPokedexEntry); }
 
   /** default_form: the form set by a DefaultForm_n flag, or -1. */
   defaultForm(): number {

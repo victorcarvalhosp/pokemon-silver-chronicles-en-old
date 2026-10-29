@@ -8,6 +8,10 @@ export type Expr =
   | null
   | Expr[]
   | { call: string; on?: Expr; args?: Expr[] }
+  /** A Ruby proc/block: the parameters are locals while `body` is evaluated. */
+  | { proc: string[]; body: Expr }
+  /** A Ruby hash literal (Symbol keys as strings). */
+  | { hash: Record<string, Expr> }
   | { op: string; left: Expr; right: Expr }
   | { op: "!"; value: Expr };
 

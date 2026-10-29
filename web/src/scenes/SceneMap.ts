@@ -1,5 +1,6 @@
 // Port of 003_Game processing/002_Scene_Map.rb.
 
+import { DEBUG } from "../core/debug";
 import { connectionsFor, getMapData, preloadMaps } from "../data/store";
 import { Data } from "../data/store";
 import { EventHandlers } from "../game/eventHandlers";
@@ -9,13 +10,14 @@ import { pbCancelVehicles, type GamePlayer } from "../game/GamePlayer";
 import { G } from "../game/globals";
 import { pbMapInterpreter } from "../game/Interpreter";
 import type { PokemonMapFactory } from "../game/MapFactory";
-import { pbBGMFade } from "../game/GameSystem";
+import { pbBGMFade, pbPlayDecisionSE } from "../game/GameSystem";
 import { SaveData } from "../game/save/SaveData";
 import { TilemapRenderer, type TilemapSource } from "../map/TilemapRenderer";
 import { Graphics } from "../rgss/Graphics";
 import { Input } from "../rgss/Input";
 import { preloadMapGraphics } from "../sprites/cache";
 import { SpritesetGlobal, SpritesetMap, mapViewports } from "../sprites/spritesets";
+import { preloadOverworldVisuals } from "../game/weather/Overlays";
 
 const factory = () => G.mapFactory as unknown as PokemonMapFactory;
 const gameMap = () => G.gameMap as unknown as GameMap;
@@ -40,7 +42,7 @@ export async function prepareMap(id: number, renderer?: TilemapRenderer): Promis
   await Promise.all(ids.map(async (m) => {
     const data = getMapData(m);
     const tileset = Data.tilesets.get(data.tilesetId);
-    await Promise.all([preloadMapGraphics(data), tileset && renderer ? renderer.prepare(tileset) : null]);
+    await Promise.all([preloadMapGraphics(data), tileset && renderer ? renderer.prepare(tileset) : null, preloadOverworldVisuals(data)]);
   }));
 }
 
@@ -48,6 +50,8 @@ export async function prepareMap(id: number, renderer?: TilemapRenderer): Promis
 export const SceneMapHooks = {
   pauseMenu: async (): Promise<void> => {},
   useKeyItem: async (): Promise<void> => {},
+  /** pbFadeOutIn { pbDebugMenu } (debug/index.ts) */
+  debugMenu: async (): Promise<void> => {},
   /** Marin's Enhanced Staircases' transfer_player alias (game/field/EnhancedStaircases.ts). */
   afterTransferPlayer: (): void => {},
 };
@@ -64,7 +68,7 @@ export class SceneMap {
   }
 
   async createSpritesets(): Promise<void> {
-    this.renderer ??= new TilemapRenderer(mapViewports().v1.node);
+    if (!this.renderer || this.renderer.isDisposed()) this.renderer = new TilemapRenderer(mapViewports().v1.node);
     for (const map of factory().maps) await this.renderer.prepare(map.tileset);
     this.spritesetGlobal ??= new SpritesetGlobal(gamePlayer());
     this.spritesets = new Map();
@@ -78,8 +82,11 @@ export class SceneMap {
     this.spritesets = new Map();
   }
 
+  /** The v20.1 Hotfixes' version (Overworld bug fixes.rb:14): also disposes the map renderer. */
   dispose(): void {
     this.disposeSpritesets();
+    this.renderer?.dispose();
+    this.renderer = null;
     this.spritesetGlobal?.dispose();
     this.spritesetGlobal = null;
   }
@@ -100,6 +107,7 @@ export class SceneMap {
     pbCancelVehicles(t.playerNewMapId, cancelSwimming);
     G.pokemonGlobal.bridge = 0; // pbBridgeOff
     this.autofade(t.playerNewMapId);
+    this.spritesetGlobal?.playerSprite.clearShadows();
     if (gameMap().mapId !== t.playerNewMapId) factory().setup(t.playerNewMapId);
     const p = gamePlayer();
     p.moveto(t.playerNewX, t.playerNewY);
@@ -160,9 +168,7 @@ export class SceneMap {
       }
     }
     this.spritesetGlobal!.update();
-    // pbDayNightTint(@map_renderer) and each Sprite_Character, applied to their viewport.
-    // TODO(regulartone): events named "regulartone" should stay untinted.
-    pbDayNightTint({ tone: mapViewports().v1.preTone });
+    pbDayNightTint(this.renderer!);
     this.renderer!.update(Graphics.deltaS);
     const maps = [gameMap(), ...f.maps.filter((m) => m !== gameMap())];
     this.renderer!.draw(maps.map(tilemapSource), G.pokemonGlobal.bridge);
@@ -202,11 +208,15 @@ export class SceneMap {
         }
       } else if (Input.trigger(Input.SPECIAL)) {
         if (!gamePlayer().moving()) t.readyMenuCalling = true;
+      } else if (Input.press(Input.F9)) {
+        if (DEBUG) t.debugCalling = true;
       }
     }
     if (!gamePlayer().moving()) {
       if (t.menuCalling) {
         await this.callMenu();
+      } else if (t.debugCalling) {
+        await this.callDebug();
       } else if (t.readyMenuCalling) {
         t.readyMenuCalling = false;
         gamePlayer().straighten();
@@ -227,6 +237,13 @@ export class SceneMap {
     await gameMap().update();
     await SceneMapHooks.pauseMenu();
     t.inMenu = false;
+  }
+
+  async callDebug(): Promise<void> {
+    G.gameTemp.debugCalling = false;
+    pbPlayDecisionSE();
+    gamePlayer().straighten();
+    await SceneMapHooks.debugMenu();
   }
 
   async main(): Promise<void> {

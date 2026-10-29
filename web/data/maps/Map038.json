@@ -794,8 +794,9 @@
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"Let's go!"},
                       {
-                        "cmd": "script",
-                        "ruby": "result = pbTriadDuel(\"Pedro\", 0, 5, [\"elements\", \"noprize\"], \n[:ELEKID,:METAPOD,:CLEFFA,:TOGEPI,:LEDYBA])\npbSet(2, result)"
+                        "cmd": "call",
+                        "fn": "pbSet",
+                        "args": [2,{"call":"pbTriadDuel","args":["Pedro",0,5,["elements","noprize"],["ELEKID","METAPOD","CLEFFA","TOGEPI","LEDYBA"]]}]
                       },
                       {
                         "cmd": "if",

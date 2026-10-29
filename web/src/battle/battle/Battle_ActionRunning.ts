@@ -8,9 +8,7 @@ import { Input } from "../../rgss/Input";
 import { AbilityEffects } from "../other/AbilityEffects";
 import { ItemEffects } from "../other/ItemEffects";
 import { Battle } from "./Battle";
-
-/** $DEBUG: off, as in a released game (see MenuFlags.DEBUG in ui/menus/menuScreens.ts). */
-const DEBUG = false;
+import { DEBUG } from "../../core/debug"; // $DEBUG
 
 const methods = {
   //=============================================================================

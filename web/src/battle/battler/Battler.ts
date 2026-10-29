@@ -898,8 +898,9 @@ export class Battler {
     this.battle.recycleItems[this.index & 1]![this.pokemonIndex] = newItem;
   }
 
-  /** belched? */
+  /** belched? (ZUD Mechanics, Raid_Battle_Overrides.rb:9: Max Raid Pokémon can always Belch) */
   belched(): boolean {
+    if (this.effects[PBEffects.MaxRaidBoss]) return true;
     return this.battle.belch[this.index & 1]![this.pokemonIndex]!;
   }
 

@@ -1305,16 +1305,18 @@
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\rYou're... real?!\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rI’m sorry. I didn’t mean to cry out here.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rI’m sorry. I didn’t mean to cry out here.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rI wasn’t trying to make a scene. I'm just having a bad day.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rI wasn’t trying to make a scene. I'm just having a bad day.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
-            {"cmd":"script","ruby":"pbMessage(\"\\\\ts[2]\\\\rI’m okay. Really.\\\\wtnp[40]\")"},
+            {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\rI’m okay. Really.\\wtnp[40]"]},
             {
               "cmd": "showPicture",
               "id": 3,
@@ -1329,7 +1331,7 @@
             },
             {"cmd":"wait","seconds":2.0},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
-            {"cmd":"script","ruby":"pbMessage(\"\\\\ts[2]\\\\rI just…\\\\wtnp[40]\")"},
+            {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\rI just…\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
               "cmd": "call",
@@ -1338,13 +1340,15 @@
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rAnd I'm so tired, but I’m supposed to be brave.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rAnd I'm so tired, but I’m supposed to be brave.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rMy Pokémon are not obbeying me since I arived here too...\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rMy Pokémon are not obbeying me since I arived here too...\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
@@ -1372,7 +1376,7 @@
             },
             {"cmd":"wait","seconds":2.0},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
-            {"cmd":"script","ruby":"pbMessage(\"\\\\ts[2]\\\\rBut… you’re here.\\\\wtnp[40]\")"},
+            {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\rBut… you’re here.\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
               "cmd": "call",
@@ -1402,8 +1406,9 @@
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\r...\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rI’m supposed to meet Professor Birch today.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rI’m supposed to meet Professor Birch today.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\rCan I walk with you?\\wtnp[40]"]},
@@ -1415,13 +1420,15 @@
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rAfter that, I’ll be fine. I promise.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rAfter that, I’ll be fine. I promise.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\rI just… don’t want to stand in the rain anymore...\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\rI just… don’t want to stand in the rain anymore...\\wtnp[40]"]
             },
             {
               "cmd": "moveRoute",
@@ -1762,28 +1769,33 @@
             {"cmd":"wait","seconds":4.0},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "# Auto-skip after 2 seconds when text finishes\npbMessage(\"\\\\ts[2]\\\\bYou’re going to ruin your hair doing that...\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bYou’re going to ruin your hair doing that...\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bYou know… most people run when it rains.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bYou know… most people run when it rains.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bBut you’re just standing here like you’re posing.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bBut you’re just standing here like you’re posing.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bIt’s kind of impressive.\\\\nAlso kind of dangerous.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bIt’s kind of impressive.\\nAlso kind of dangerous.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bCute girls shouldn’t be left unattended on empty routes.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bCute girls shouldn’t be left unattended on empty routes.\\wtnp[40]"]
             },
             {
               "cmd": "showPicture",
@@ -1808,18 +1820,23 @@
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\bBut that's true.\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bHonestly… you look like someone who shouldn’t be out here alone.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": [
+                "\\ts[2]\\bHonestly… you look like someone who shouldn’t be out here alone.\\wtnp[40]"
+              ]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bNot because you can’t handle it.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bNot because you can’t handle it.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bBecause you shouldn’t have to.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bBecause you shouldn’t have to.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\b...\\wtnp[40]"]},
@@ -1831,8 +1848,9 @@
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bBut… given you’re still here.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bBut… given you’re still here.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
@@ -1842,23 +1860,26 @@
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bLet’s not prove my instincts wrong.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bLet’s not prove my instincts wrong.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bI’m supposed to meet Professor Birch today.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bI’m supposed to meet Professor Birch today.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\bCome with me.\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
-              "cmd": "script",
-              "ruby": "pbMessage(\"\\\\ts[2]\\\\bJust walk under the umbrella and pretend you’re not drenched.\\\\wtnp[40]\")"
+              "cmd": "call",
+              "fn": "pbMessage",
+              "args": ["\\ts[2]\\bJust walk under the umbrella and pretend you’re not drenched.\\wtnp[40]"]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
-            {"cmd":"script","ruby":"pbMessage(\"\\\\ts[2]\\\\bLittleroot’s not far.\\\\wtnp[40]\")"},
+            {"cmd":"call","fn":"pbMessage","args":["\\ts[2]\\bLittleroot’s not far.\\wtnp[40]"]},
             {"cmd":"call","fn":"pbCallBub","args":[2,18]},
             {
               "cmd": "call",

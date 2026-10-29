@@ -9,6 +9,7 @@ import type { GameMap } from "../game/GameMap";
 import { REAL_RES_X, REAL_RES_Y, TILE_HEIGHT, TILE_WIDTH, X_SUBPIXELS, Y_SUBPIXELS } from "../game/GameCharacter";
 import { Bitmap } from "../rgss/Bitmap";
 import { Sprite, type Viewport } from "../rgss/display";
+import { pbDayNightTint } from "../game/dayNight";
 import { SpriteAnimations, type AnimationData } from "./SpriteAnimation";
 
 export class AnimationSprite {
@@ -16,15 +17,12 @@ export class AnimationSprite {
   private animations: SpriteAnimations;
   private disposed = false;
 
-  /**
-   * `tinting` (pbDayNightTint(self)) is covered by the map viewport's
-   * day/night tone in this port.
-   */
-  constructor(animId: number, private map: GameMap, private tileX: number, private tileY: number, readonly viewport: Viewport | null = null, _tinting = false, height = 3) {
+  constructor(animId: number, private map: GameMap, private tileX: number, private tileY: number, readonly viewport: Viewport | null = null, tinting = false, height = 3) {
     this.sprite = new Sprite(viewport);
     this.sprite.setBitmap(new Bitmap(1, 1));
     this.animations = new SpriteAnimations(this);
     this.setCoords();
+    if (tinting) pbDayNightTint(this.sprite);
     const animation = Data.animations.get(animId) as AnimationData | undefined;
     if (animation) this.animations.animation(animation, true, height);
   }

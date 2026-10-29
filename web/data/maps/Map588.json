@@ -495,8 +495,9 @@
                       "cond": {"switch":822,"value":true},
                       "then": [
                         {
-                          "cmd": "script",
-                          "ruby": "pkmn = Pokemon.new(:SPRIGATITO,10)\npbAddPokemon(pkmn)"
+                          "cmd": "call",
+                          "fn": "pbAddPokemon",
+                          "args": [{"call":"Pokemon.new","args":["SPRIGATITO",10]}]
                         },
                         {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                         {"cmd":"text","text":"Take good care of Sprigatito!"}
@@ -507,16 +508,18 @@
                           "cond": {"switch":823,"value":true},
                           "then": [
                             {
-                              "cmd": "script",
-                              "ruby": "pkmn = Pokemon.new(:LITTEN,10)\npbAddPokemon(pkmn)"
+                              "cmd": "call",
+                              "fn": "pbAddPokemon",
+                              "args": [{"call":"Pokemon.new","args":["LITTEN",10]}]
                             },
                             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                             {"cmd":"text","text":"Take good care of Litten!"}
                           ],
                           "else": [
                             {
-                              "cmd": "script",
-                              "ruby": "pkmn = Pokemon.new(:POPPLIO,10)\npbAddPokemon(pkmn)"
+                              "cmd": "call",
+                              "fn": "pbAddPokemon",
+                              "args": [{"call":"Pokemon.new","args":["POPPLIO",10]}]
                             },
                             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                             {"cmd":"text","text":"Take good care of Popplio!"}

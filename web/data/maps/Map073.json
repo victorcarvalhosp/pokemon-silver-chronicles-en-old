@@ -389,8 +389,9 @@
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"Let's begin!"},
                       {
-                        "cmd": "script",
-                        "ruby": "result = pbTriadDuel(\"Heather\", 0, 5, [\"elements\", \"noprize\"], \n[:DITTO,:ABRA,:VENONAT,:CLEFFA,:LEDYBA])\npbSet(2, result)"
+                        "cmd": "call",
+                        "fn": "pbSet",
+                        "args": [2,{"call":"pbTriadDuel","args":["Heather",0,5,["elements","noprize"],["DITTO","ABRA","VENONAT","CLEFFA","LEDYBA"]]}]
                       },
                       {
                         "cmd": "if",

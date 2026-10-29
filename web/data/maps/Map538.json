@@ -474,7 +474,27 @@
                       {"cmd":"switches","from":357,"to":357,"value":true},
                       {
                         "cmd": "script",
-                        "ruby": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:SNORLAX, 60)\npkmn.learn_move(:SURF)\npkmn.learn_move(:REST)\npkmn.learn_move(:SLEEPTALK)\npkmn.learn_move(:GIGAIMPACT)\nWildBattle.start(pkmn)"
+                        "do": [
+                          {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                          {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"Pokemon.new","args":["SNORLAX",60]}
+                          },
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SURF"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["REST"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SLEEPTALK"]},
+                          {
+                            "cmd": "call",
+                            "fn": "learn_move",
+                            "on": {"call":"pkmn"},
+                            "args": ["GIGAIMPACT"]
+                          },
+                          {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+                        ]
                       },
                       {"cmd":"switches","from":357,"to":357,"value":false},
                       {"cmd":"restoreBgmBgs"},
@@ -1440,7 +1460,27 @@
                       {"cmd":"switches","from":357,"to":357,"value":true},
                       {
                         "cmd": "script",
-                        "ruby": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:SNORLAX, 60)\npkmn.learn_move(:SURF)\npkmn.learn_move(:REST)\npkmn.learn_move(:SLEEPTALK)\npkmn.learn_move(:GIGAIMPACT)\nWildBattle.start(pkmn)"
+                        "do": [
+                          {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                          {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"Pokemon.new","args":["SNORLAX",60]}
+                          },
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SURF"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["REST"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SLEEPTALK"]},
+                          {
+                            "cmd": "call",
+                            "fn": "learn_move",
+                            "on": {"call":"pkmn"},
+                            "args": ["GIGAIMPACT"]
+                          },
+                          {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+                        ]
                       },
                       {"cmd":"switches","from":357,"to":357,"value":false},
                       {"cmd":"restoreBgmBgs"},
@@ -1539,7 +1579,27 @@
                       {"cmd":"switches","from":357,"to":357,"value":true},
                       {
                         "cmd": "script",
-                        "ruby": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:SNORLAX, 60)\npkmn.learn_move(:SURF)\npkmn.learn_move(:REST)\npkmn.learn_move(:SLEEPTALK)\npkmn.learn_move(:GIGAIMPACT)\nWildBattle.start(pkmn)"
+                        "do": [
+                          {"cmd":"call","fn":"setBattleRule","args":["cannotRun"]},
+                          {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {"call":"Pokemon.new","args":["SNORLAX",60]}
+                          },
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SURF"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["REST"]},
+                          {"cmd":"call","fn":"learn_move","on":{"call":"pkmn"},"args":["SLEEPTALK"]},
+                          {
+                            "cmd": "call",
+                            "fn": "learn_move",
+                            "on": {"call":"pkmn"},
+                            "args": ["GIGAIMPACT"]
+                          },
+                          {"cmd":"call","fn":"WildBattle.start","args":[{"call":"pkmn"}]}
+                        ]
                       },
                       {"cmd":"switches","from":357,"to":357,"value":false},
                       {"cmd":"restoreBgmBgs"},

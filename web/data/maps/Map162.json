@@ -290,8 +290,14 @@
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"Which Pokémon needs tutoring?"},
                       {
-                        "cmd": "script",
-                        "ruby": "pbChoosePokemon(1, 3, proc{ |pkmn|\n  pkmn.can_relearn_move?\n  }, true\n)"
+                        "cmd": "call",
+                        "fn": "pbChoosePokemon",
+                        "args": [
+                          1,
+                          3,
+                          {"proc":["pkmn"],"body":{"call":"can_relearn_move?","on":{"call":"pkmn"}}},
+                          true
+                        ]
                       },
                       {
                         "cmd": "comment",
@@ -534,8 +540,10 @@
                                 },
                                 {"cmd":"wait","seconds":4.0},
                                 {
-                                  "cmd": "script",
-                                  "ruby": "pbGetPokemon(1).forget_move_at_index(\n   pbGet(2))"
+                                  "cmd": "call",
+                                  "fn": "forget_move_at_index",
+                                  "on": {"call":"pbGetPokemon","args":[1]},
+                                  "args": [{"call":"pbGet","args":[2]}]
                                 },
                                 {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                                 {"cmd":"text","text":"\\bIt worked to perfection!"},

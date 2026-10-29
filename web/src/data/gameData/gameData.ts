@@ -21,10 +21,8 @@ export interface DataClass<T, K = Id> {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Ctor<T> = new (hash: any) => T;
 
-/** Ruby's _INTL without a translation table: fills in {1}, {2}, ... */
-export function _INTL(str: string, ...args: unknown[]): string {
-  return str.replace(/\{(\d+)\}/g, (m, n: string) => (Number(n) >= 1 && Number(n) <= args.length ? String(args[Number(n) - 1]) : m));
-}
+/** _INTL (001_Technical/003_Intl_Messages.rb): the translated text, with {1}, {2}... filled in. */
+export { _INTL } from "../../core/intl";
 
 function resolve<T, K>(cls: DataClass<T, K>, other: unknown): unknown {
   return other instanceof (cls as unknown as abstract new (...a: never[]) => T) ? (other as { id: unknown }).id : other;

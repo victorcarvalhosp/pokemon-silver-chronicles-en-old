@@ -100,7 +100,24 @@
             },
             {
               "cmd": "script",
-              "ruby": "pkmn = $player.first_pokemon\ntotal = 0\npkmn.ev.each_value { |v| total += v }\nmaxed = 0\nif total >= Pokemon::EV_LIMIT\n  maxed = 1\nend\nmaxed = 2 if pkmn.hasRibbon?(:EFFORT)\npbSet(1, pkmn.name)\npbSet(2, maxed)"
+              "do": [
+                {
+                  "cmd": "assign",
+                  "target": "pkmn",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"$player.first_pokemon"}
+                },
+                {
+                  "cmd": "assign",
+                  "target": "maxed",
+                  "args": [],
+                  "op": "=",
+                  "value": {"call":"effortRibbonState","args":[{"call":"pkmn"}]}
+                },
+                {"cmd":"call","fn":"pbSet","args":[1,{"call":"name","on":{"call":"pkmn"}}]},
+                {"cmd":"call","fn":"pbSet","args":[2,{"call":"maxed"}]}
+              ]
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
             {"cmd":"text","text":"\\rOh?\\nYour \\v[1]..."},
@@ -128,7 +145,12 @@
                     {"cmd":"text","text":"\\rWent for it stupendously!"},
                     {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                     {"cmd":"text","text":"\\rAs its reward, please give it this Effort Ribbon."},
-                    {"cmd":"script","ruby":"pkmn = $player.first_pokemon\npkmn.giveRibbon(:EFFORT)"},
+                    {
+                      "cmd": "call",
+                      "fn": "giveRibbon",
+                      "on": {"call":"$player.first_pokemon"},
+                      "args": ["EFFORT"]
+                    },
                     {
                       "cmd": "text",
                       "text": "\\PN received the Effort Ribbon. \\me[Item get]\\wtnp[20]"

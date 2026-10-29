@@ -169,7 +169,30 @@
                       {"cmd":"text","text":"\\rOK, let's get started."},
                       {
                         "cmd": "script",
-                        "ruby": "pkmn = Pokemon.new(:PINSIR, pbGetPokemon(1).level)\npkmn.item = :PINSIRITE\npbStartTrade(pbGet(1), pkmn,\"Pinsey\",\"Anya\")"
+                        "do": [
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn",
+                            "args": [],
+                            "op": "=",
+                            "value": {
+                              "call": "Pokemon.new",
+                              "args": ["PINSIR",{"call":"level","on":{"call":"pbGetPokemon","args":[1]}}]
+                            }
+                          },
+                          {
+                            "cmd": "assign",
+                            "target": "pkmn.item",
+                            "args": [],
+                            "op": "=",
+                            "value": "PINSIRITE"
+                          },
+                          {
+                            "cmd": "call",
+                            "fn": "pbStartTrade",
+                            "args": [{"call":"pbGet","args":[1]},{"call":"pkmn"},"Pinsey","Anya"]
+                          }
+                        ]
                       },
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"\\PN traded Sandygast for Pinsir!"},

@@ -3,9 +3,12 @@
 // pbSpriteSetAnimFrame and PBAnimationPlayerX), and the loaders from
 // 010_Data/002_PBS data/001_MiscPBSData.rb (pbLoadBattleAnimations,
 // pbLoadMoveToAnim). The animations are web/data/pkmn-animations.json (imported
-// once from Data/PkmnAnimations.rxdata and Data/move2anim.dat). The editor-only parts (pbConvertRPGAnimation,
-// RPG::Animation#addAnimation, PBAnimTiming#to_s, PBAnimations#resize...) aren't
-// ported.
+// once from Data/PkmnAnimations.rxdata and Data/move2anim.dat). The parts
+// only the animation editor uses are here too where they belong to the
+// classes (pbCreateCel, pbResetCel, PBAnimation#resize/addFrame/insert/
+// delete_at, PBAnimations#resize/insert/delete_at/compact/selected); the rest
+// (PBAnimTiming.new/#to_s, pbConvertRPGAnimation, RPG::Animation#addAnimation)
+// is in debug/editors/AnimEditor_Data.ts.
 //
 // Timing: an animation frame lasts 1/20 s (@framesPerTick =
 // Graphics.frame_rate / 20, i.e. 3 ticks at 60 Hz), as in the original.
@@ -105,6 +108,44 @@ export function isReversed(src0: number, src1: number, dst0: number, dst1: numbe
   return dst0 < dst1;
 }
 
+/** pbCreateCel(x, y, pattern, focus = 4) */
+export function pbCreateCel(x: number, y: number, pattern: number, focus = 4): Cel {
+  // Ruby's `frame = []` grows to index 26 with nil in the unused slots (9, 10).
+  const frame: Cel = new Array<number | null>(AnimFrame.FOCUS + 1).fill(null);
+  frame[AnimFrame.X] = x;
+  frame[AnimFrame.Y] = y;
+  frame[AnimFrame.PATTERN] = pattern;
+  frame[AnimFrame.FOCUS] = focus; // 1=target, 2=user, 3=user and target, 4=screen
+  frame[AnimFrame.LOCKED] = 0;
+  pbResetCel(frame);
+  return frame;
+}
+
+/** pbResetCel(frame) */
+export function pbResetCel(frame: Cel | null | undefined): void {
+  if (!frame) return;
+  frame[AnimFrame.ZOOMX] = 100;
+  frame[AnimFrame.ZOOMY] = 100;
+  frame[AnimFrame.BLENDTYPE] = 0;
+  frame[AnimFrame.VISIBLE] = 1;
+  frame[AnimFrame.ANGLE] = 0;
+  frame[AnimFrame.MIRROR] = 0;
+  frame[AnimFrame.OPACITY] = 255;
+  frame[AnimFrame.COLORRED] = 0;
+  frame[AnimFrame.COLORGREEN] = 0;
+  frame[AnimFrame.COLORBLUE] = 0;
+  frame[AnimFrame.COLORALPHA] = 0;
+  frame[AnimFrame.TONERED] = 0;
+  frame[AnimFrame.TONEGREEN] = 0;
+  frame[AnimFrame.TONEBLUE] = 0;
+  frame[AnimFrame.TONEGRAY] = 0;
+  frame[AnimFrame.FLASHRED] = 0;
+  frame[AnimFrame.FLASHGREEN] = 0;
+  frame[AnimFrame.FLASHBLUE] = 0;
+  frame[AnimFrame.FLASHALPHA] = 0;
+  frame[AnimFrame.PRIORITY] = 1; // 0=back, 1=front, 2=behind focus, 3=before focus
+}
+
 //===============================================================================
 //
 //===============================================================================
@@ -129,7 +170,7 @@ export interface PBAnimTiming {
   flashDuration: number;
 }
 
-interface PBAnimationData {
+export interface PBAnimationData {
   id: number;
   name: string;
   graphic: string;
@@ -150,28 +191,84 @@ type OldBg = [number, number, number, Color] | [];
 /** A battle animation (PBAnimation): frames of cels plus SE/background timings. */
 export class PBAnimation {
   static readonly MAX_SPRITES = 60;
-  readonly id: number;
-  readonly name: string;
-  readonly graphic: string;
-  readonly hue: number;
+  id: number;
+  name: string;
+  graphic: string;
+  hue: number;
   /** 1=target, 2=user, 3=user and target, 4=screen */
-  readonly position: number;
+  position: number;
+  /** @speed as stored (attr_writer); `speed` reads it with its default. */
+  rawSpeed: number | null;
+  /** @scope (written by initialize, never read) */
+  scope: number;
   readonly timing: PBAnimTiming[];
   readonly array: (Cel | null)[][];
 
-  constructor(data: PBAnimationData) {
+  /** From the data file, or PBAnimation.new(size = 1) (an empty animation). */
+  constructor(data: PBAnimationData | number = 1) {
+    if (typeof data === "number") {
+      this.id = -1;
+      this.name = "";
+      this.graphic = "";
+      this.hue = 0;
+      this.position = 4; // 1=target, 2=user, 3=user and target, 4=screen
+      this.rawSpeed = null;
+      this.array = [];
+      const size = data < 1 ? 1 : data; // Always create at least one frame
+      for (let i = 0; i < size; i++) this.addFrame();
+      this.timing = [];
+      this.scope = 0;
+      return;
+    }
     this.id = data.id;
     this.name = data.name;
     this.graphic = data.graphic;
     this.hue = data.hue;
     this.position = data.position;
+    this.rawSpeed = data.speed;
+    this.scope = data.scope;
     this.timing = data.timing;
     this.array = data.frames;
   }
 
-  get speed(): number { return 20; }
+  get speed(): number { return this.rawSpeed ?? 20; }
+  set speed(value: number | null) { this.rawSpeed = value; }
   get length(): number { return this.array.length; }
   frame(i: number): (Cel | null)[] { return this.array[i] ?? []; }
+
+  insert(index: number, ...frames: (Cel | null)[][]): void {
+    this.array.splice(index, 0, ...frames);
+  }
+
+  /** delete_at(index) */
+  deleteAt(index: number): (Cel | null)[] | null {
+    if (index < 0) index += this.array.length;
+    if (index < 0 || index >= this.array.length) return null;
+    return this.array.splice(index, 1)[0] ?? null;
+  }
+
+  resize(len: number): void {
+    if (len < this.array.length) {
+      this.array.splice(len, this.array.length - len);
+    } else if (len > this.array.length) {
+      const n = len - this.array.length;
+      for (let i = 0; i < n; i++) this.addFrame();
+    }
+  }
+
+  addFrame(): (Cel | null)[] {
+    const pos = this.array.length;
+    this.array[pos] = [];
+    // Move's user
+    this.array[pos]![0] = pbCreateCel(FOCUSUSER_X, FOCUSUSER_Y, -1);
+    this.array[pos]![0]![AnimFrame.FOCUS] = 2;
+    this.array[pos]![0]![AnimFrame.LOCKED] = 1;
+    // Move's target
+    this.array[pos]![1] = pbCreateCel(FOCUSTARGET_X, FOCUSTARGET_Y, -2);
+    this.array[pos]![1]![AnimFrame.FOCUS] = 1;
+    this.array[pos]![1]![AnimFrame.LOCKED] = 1;
+    return this.array[pos]!;
+  }
 
   /** Every graphic this animation shows (for preloading). */
   graphics(): string[] {
@@ -283,12 +380,47 @@ export class PBAnimation {
 
 /** PBAnimations: the list of all animations (the game's PkmnAnimations.rxdata). */
 export class PBAnimations {
-  constructor(readonly array: (PBAnimation | null)[]) {}
+  selected = 0;
+  /** From the data file's list, or PBAnimations.new(size = 1) (always at least one animation). */
+  readonly array: (PBAnimation | null)[];
+  constructor(array: (PBAnimation | null)[] | number = 1) {
+    if (typeof array === "number") {
+      this.array = [];
+      const size = array < 1 ? 1 : array;
+      for (let i = 0; i < size; i++) this.array.push(new PBAnimation());
+    } else {
+      this.array = array;
+    }
+  }
   get length(): number { return this.array.length; }
   get(i: number): PBAnimation | null { return this.array[i] ?? null; }
+  /** []=(i, value) */
+  set(i: number, value: PBAnimation | null): void { this.array[i] = value; }
   getFromName(name: string): PBAnimation | null {
     for (const i of this.array) if (i?.name === name) return i;
     return null;
+  }
+  compact(): void {
+    const kept = this.array.filter((a) => a != null);
+    this.array.splice(0, this.array.length, ...kept);
+  }
+  insert(index: number, val: PBAnimation | null): void { this.array.splice(index, 0, val); }
+  deleteAt(index: number): PBAnimation | null {
+    if (index < 0) index += this.array.length;
+    if (index < 0 || index >= this.array.length) return null;
+    return this.array.splice(index, 1)[0] ?? null;
+  }
+  resize(len: number): void {
+    const idxStart = this.array.length;
+    const idxEnd = len;
+    if (idxStart > idxEnd) {
+      for (let i = 0; i < idxStart - idxEnd; i++) this.array.pop();
+    } else {
+      for (let i = 0; i < idxEnd - idxStart; i++) this.array.push(new PBAnimation());
+    }
+    // NOTE (Ruby parity): sets the selection one past the last animation
+    // (meant len - 1; 007_BattleAnimationPlayer.rb:396).
+    if (this.selected >= len) this.selected = len;
   }
 }
 
@@ -311,6 +443,17 @@ export function preloadBattleAnimations(): Promise<void> {
       console.warn("Couldn't load pkmn-animations.json", e);
     });
   return loading;
+}
+
+/**
+ * $game_temp.battle_animations_data = nil: forgets the loaded animations, so
+ * the next pbLoadBattleAnimations/preloadBattleAnimations fetches the file
+ * again (after the animation editor or organiser saved it).
+ */
+export function resetBattleAnimationsData(): void {
+  loading = null;
+  animations = null;
+  moveToAnim = [{}, {}];
 }
 
 /** pbLoadBattleAnimations (null until preloadBattleAnimations has finished). */

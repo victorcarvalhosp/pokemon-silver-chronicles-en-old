@@ -165,8 +165,11 @@
               "text": "\\f[faceThorton]\\bLet's see what I can see about you through my data-analyzing machine."
             },
             {
-              "cmd": "script",
-              "ruby": "names = []\nfor p in $player.party\n  next if p.egg?\n  names << p.speciesName\n  break if names.length >= 3\nend\n\n$game_variables[1] = names.length == 0 ? \"No usable Pokémon.\" :\n                     (names.length == 1 ? names[0] :\n                      names[0..-2].join(\", \") + \" and \" + names[-1])"
+              "cmd": "assign",
+              "target": "$game_variables[]",
+              "args": [1],
+              "op": "=",
+              "value": {"call":"partySpeciesNames"}
             },
             {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
             {"cmd":"text","text":"\\f[faceThorton]\\b\\v[1]..."},

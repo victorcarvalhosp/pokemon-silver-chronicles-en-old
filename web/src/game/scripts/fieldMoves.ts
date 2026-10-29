@@ -14,6 +14,8 @@ import { Graphics } from "../../rgss/Graphics";
 import { Input } from "../../rgss/Input";
 import "../field";
 import { pbDismountBike, pbMountBike } from "../field/bicycle";
+import { FollowingPkmnConfig } from "../following/config";
+import { FollowingPkmn } from "../following/FollowingPkmn";
 import {
   FieldMoves, pbCut, pbEraseEscapePoint, pbHiddenMoveEvent, pbTransferSurfing, pbTransferUnderwater, pbRockSmash, pbRockSmashRandomEncounter, pbSmashEvent, pbStrength, pbSweetScent,
 } from "../field/FieldMoves";
@@ -72,7 +74,11 @@ defineScript("pbCaveEntrance", () => pbCaveEntrance());
 defineScript("pbCaveExit", () => pbCaveExit());
 defineScript("pbCaveEntranceEx", (_c, exiting) => pbCaveEntranceEx(!!exiting));
 
-/** pbSetPokemonCenter (012_Overworld/001_Overworld.rb:701): where the player returns after blacking out. */
+/**
+ * pbSetPokemonCenter (012_Overworld/001_Overworld.rb:701): where the player
+ * returns after blacking out. With Following Pokemon EX's alias
+ * (Refresh.rb:243-248): queues the Poké Center animation for the follower.
+ */
 export function pbSetPokemonCenter(): void {
   const g = G.pokemonGlobal;
   const p = gamePlayer();
@@ -80,6 +86,7 @@ export function pbSetPokemonCenter(): void {
   g.pokecenterX = p.x;
   g.pokecenterY = p.y;
   g.pokecenterDirection = p.direction;
+  if (FollowingPkmnConfig.SHOW_POKECENTER_ANIMATION && FollowingPkmn.active()) G.gameTemp.pokecenterFollowingPkmn = 1;
 }
 defineScript("pbSetPokemonCenter", () => pbSetPokemonCenter());
 

@@ -698,7 +698,27 @@
                     {
                       "cmd": "if",
                       "cond": {
-                        "ruby": "pbGetPokemon(1).species === :SPEAROW && pbGetPokemon(1).name === 'Kenya' && pbGetPokemon(1).item === :GRASSMAIL"
+                        "script": {
+                          "op": "&&",
+                          "left": {
+                            "op": "&&",
+                            "left": {
+                              "op": "==",
+                              "left": {"call":"species","on":{"call":"pbGetPokemon","args":[1]}},
+                              "right": "SPEAROW"
+                            },
+                            "right": {
+                              "op": "==",
+                              "left": {"call":"name","on":{"call":"pbGetPokemon","args":[1]}},
+                              "right": "Kenya"
+                            }
+                          },
+                          "right": {
+                            "op": "==",
+                            "left": {"call":"item","on":{"call":"pbGetPokemon","args":[1]}},
+                            "right": "GRASSMAIL"
+                          }
+                        }
                       },
                       "then": [
                         {"cmd":"playMe","audio":{"name":"Item get","volume":100,"pitch":100}},
