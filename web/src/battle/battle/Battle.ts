@@ -153,6 +153,16 @@ export class Battle {
   moldBreaker: boolean;
   /** The Struggle move */
   readonly struggle: Move;
+  /**
+   * Scene effects started from synchronous code (damage calculation) that
+   * Ruby plays right there; the async caller plays them with
+   * pbPlayPendingSceneEffects at that same point in the flow.
+   */
+  pendingSceneEffects: (() => Promise<void>)[] = [];
+
+  async pbPlayPendingSceneEffects(): Promise<void> {
+    while (this.pendingSceneEffects.length > 0) await this.pendingSceneEffects.shift()!();
+  }
 
   // Private in Ruby (instance variables without accessors).
   caughtPokemon: Pokemon[];

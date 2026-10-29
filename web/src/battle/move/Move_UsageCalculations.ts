@@ -310,6 +310,7 @@ const methods = {
 
   async pbCalcDamage(this: Move, user: Battler, target: Battler, numTargets = 1): Promise<void> {
     calcDamageCore(this, user, target, numTargets);
+    await this.battle.pbPlayPendingSceneEffects();
     // ZUD Mechanics (Max Raid): damage thresholds for triggering Max Raid shields.
     if (this.battle.raidBattle &&
         target.effects[PBEffects.MaxRaidBoss] &&

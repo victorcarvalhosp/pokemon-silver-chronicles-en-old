@@ -573,8 +573,8 @@ const methods = {
   /**
    * Called from (synchronous) DamageCalcFromTarget item handlers during damage
    * calculation, so this is sync: the multipliers and berryWeakened are set
-   * immediately, and the ability splash/EatBerry animation are started without
-   * being awaited (Ruby shows them in the middle of the damage calculation).
+   * immediately, and the ability splash/EatBerry animation are queued for
+   * Move#pbCalcDamage to play straight after the calculation.
    */
   pbMoveTypeWeakeningBerry(this: Battler, berryType: Id, moveType: Id, mults: DamageMultipliers): void {
     if (moveType !== berryType) return;
@@ -586,11 +586,11 @@ const methods = {
       mults.final_damage_multiplier! /= 2;
       ripening = true;
     }
-    void (async () => {
+    this.battle.pendingSceneEffects.push(async () => {
       if (ripening) await this.battle.pbShowAbilitySplash(this);
       await this.battle.pbCommonAnimation("EatBerry", this);
       if (ripening) await this.battle.pbHideAbilitySplash(this);
-    })();
+    });
   },
 
   pbMoveTypePoweringUpGem(this: Battler, gemType: Id, move: Move, moveType: Id, mults: DamageMultipliers): void {
