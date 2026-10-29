@@ -78,6 +78,8 @@ export class GameTemp {
   titleScreenCalling = false;
   endingSurf = false;
   battlebackName = "";
+  /** pbPushFade/pbPopFade depth. */
+  fadestate = 0;
   // Carmaniac's Speech Bubble (src/ui/speechBubble.ts)
   /** 0 none, 1 floating bubble, 2 speech bubble with arrow; consumed by the next message. */
   speechbubbleBubble = 0;
