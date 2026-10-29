@@ -53,15 +53,21 @@ class Flash {
   }
 }
 
-function effects(node: Container, filterHolder: { filter: ToneFilter | null }, tone: Tone, color: Color, flash: Color | null): void {
+function effects(node: Container, filterHolder: { filter: ToneFilter | null; pre?: ToneFilter | null }, tone: Tone, color: Color, flash: Color | null, preTone?: Tone): void {
   const c = flash && (!color.alpha || flash.alpha > color.alpha) ? flash : color;
-  if (tone.isZero() && c.alpha === 0) {
-    if (node.filters) node.filters = null;
-    return;
+  const filters: ToneFilter[] = [];
+  if (preTone && !preTone.isZero()) {
+    filterHolder.pre ??= new ToneFilter();
+    filterHolder.pre.set(preTone, null);
+    filters.push(filterHolder.pre);
   }
-  filterHolder.filter ??= new ToneFilter();
-  filterHolder.filter.set(tone, c);
-  if (!node.filters) node.filters = [filterHolder.filter];
+  if (!tone.isZero() || c.alpha !== 0) {
+    filterHolder.filter ??= new ToneFilter();
+    filterHolder.filter.set(tone, c);
+    filters.push(filterHolder.filter);
+  }
+  const current = (node.filters ?? []) as ToneFilter[];
+  if (current.length !== filters.length || current.some((f, i) => f !== filters[i])) node.filters = filters.length ? filters : null;
 }
 
 export class Viewport implements Displayable {
@@ -72,10 +78,15 @@ export class Viewport implements Displayable {
   visible = true;
   color = new Color(0, 0, 0, 0);
   tone = new Tone();
+  /**
+   * Applied before `tone`: the day/night tint Essentials sets on every tile and
+   * character sprite (pbDayNightTint), applied once here instead.
+   */
+  preTone = new Tone();
   readonly node = new Container({ sortableChildren: true });
   private mask = new PixiGraphics();
   private flashState = new Flash();
-  private filterHolder = { filter: null as ToneFilter | null };
+  private filterHolder = { filter: null as ToneFilter | null, pre: null as ToneFilter | null };
   private disposed = false;
 
   constructor(x: number | Rect = 0, y = 0, width = 512, height = 384) {
@@ -104,7 +115,7 @@ export class Viewport implements Displayable {
     n.position.set(this.rect.x, this.rect.y);
     this.mask.clear().rect(0, 0, this.rect.width, this.rect.height).fill(0xffffff);
     n.mask = this.mask;
-    effects(n, this.filterHolder, this.tone, this.color, f === "hide" ? null : f);
+    effects(n, this.filterHolder, this.tone, this.color, f === "hide" ? null : f, this.preTone);
   }
 }
 

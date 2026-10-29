@@ -1,4 +1,4 @@
-import { createReadStream, readdirSync, statSync } from "node:fs";
+import { createReadStream, existsSync, readdirSync, statSync } from "node:fs";
 import { extname, join, relative, resolve } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vitest/config";
@@ -33,6 +33,18 @@ function buildAssetIndex(): Map<string, string> {
       index.set(rel.toLowerCase(), rel);
     }
   }
+  // Audio rendered by tools/sound/convert.ts replaces the .mid/.wma it came from.
+  const cache = join(GAME_ROOT, "web", ".audio-cache");
+  if (existsSync(cache)) {
+    for (const entry of readdirSync(cache, { recursive: true }) as string[]) {
+      if (!entry.endsWith(".ogg")) continue;
+      const original = entry.split("\\").join("/");
+      const key = original.slice(0, -4).toLowerCase();
+      const rel = relative(GAME_ROOT, join(cache, entry)).split("\\").join("/");
+      index.set(key, rel);
+      for (const ext of [".mid", ".midi", ".wma"]) index.set(key + ext, rel);
+    }
+  }
   return index;
 }
 
@@ -42,8 +54,12 @@ function gameAssets(): Plugin {
   return {
     name: "game-assets",
     configureServer(server) {
-      server.watcher.add(ASSET_DIRS.map((d) => join(GAME_ROOT, d)));
-      server.watcher.on("add", () => (index = buildAssetIndex()));
+      server.watcher.add([...ASSET_DIRS.map((d) => join(GAME_ROOT, d)), join(GAME_ROOT, "web", ".audio-cache")]);
+      let rebuild: ReturnType<typeof setTimeout> | undefined;
+      server.watcher.on("add", () => {
+        clearTimeout(rebuild);
+        rebuild = setTimeout(() => (index = buildAssetIndex()), 500);
+      });
       server.middlewares.use("/game", (req, res, next) => {
         if (req.url === "/__index.json") {
           res.setHeader("Content-Type", "application/json");

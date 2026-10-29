@@ -11,6 +11,7 @@ import { messages } from "../messageBridge";
 import { playerMetadata } from "../metadata";
 import type { Player } from "../Player";
 import { defineScript } from "../scriptApi";
+import { PBDayNight, pbGetTimeNow, pbIsWeekday } from "../dayNight";
 
 const player = () => G.player as unknown as Player;
 const gamePlayer = () => G.gamePlayer as unknown as GamePlayer;
@@ -80,3 +81,15 @@ todo("pbUnlockOutfit", "M3: TC Wardrobe plugin");
 todo("Pokemon.play_cry", "M4: cries");
 
 void gamePlayer;
+
+// --- Time (012_Overworld/003_Overworld_Time.rb) -------------------------------
+defineScript("pbGetTimeNow", () => pbGetTimeNow());
+defineScript("pbIsWeekday", (_c, v, ...days) => pbIsWeekday(Number(v), ...days.map(Number)));
+defineScript("PBDayNight.isDay?", (_c, t) => PBDayNight.isDay(t as Date | undefined));
+defineScript("PBDayNight.isNight?", (_c, t) => PBDayNight.isNight(t as Date | undefined));
+defineScript("PBDayNight.isMorning?", (_c, t) => PBDayNight.isMorning(t as Date | undefined));
+defineScript("PBDayNight.isAfternoon?", (_c, t) => PBDayNight.isAfternoon(t as Date | undefined));
+defineScript("PBDayNight.isEvening?", (_c, t) => PBDayNight.isEvening(t as Date | undefined));
+// Script switches 25-30: features that arrive later; false until then.
+for (const name of ["pbInSafari?", "pbBugContestUndecided?", "pbBugContestDecided?", "pbInChallenge?"]) defineScript(name, () => false);
+defineScript("pbNextMysteryGiftID", () => 0);

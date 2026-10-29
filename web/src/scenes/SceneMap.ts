@@ -3,6 +3,7 @@
 import { connectionsFor, getMapData, preloadMaps } from "../data/store";
 import { Data } from "../data/store";
 import { EventHandlers } from "../game/eventHandlers";
+import { pbDayNightTint } from "../game/dayNight";
 import type { GameMap } from "../game/GameMap";
 import { pbCancelVehicles, type GamePlayer } from "../game/GamePlayer";
 import { G } from "../game/globals";
@@ -149,7 +150,9 @@ export class SceneMap {
       }
     }
     this.spritesetGlobal!.update();
-    // TODO(day/night): pbDayNightTint(@map_renderer).
+    // pbDayNightTint(@map_renderer) and each Sprite_Character, applied to their viewport.
+    // TODO(regulartone): events named "regulartone" should stay untinted.
+    pbDayNightTint({ tone: mapViewports().v1.preTone });
     this.renderer!.update(Graphics.deltaS);
     const maps = [gameMap(), ...f.maps.filter((m) => m !== gameMap())];
     this.renderer!.draw(maps.map(tilemapSource), G.pokemonGlobal.bridge);

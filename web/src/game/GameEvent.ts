@@ -8,6 +8,7 @@ import type { GameMap } from "./GameMap";
 import { G } from "./globals";
 import { Interpreter } from "./Interpreter";
 import { evaluate } from "./scriptApi";
+import { pbGetTimeNow } from "./dayNight";
 
 const SCREEN_W = 512;
 const SCREEN_H = 384;
@@ -89,6 +90,33 @@ export class GameEvent extends GameCharacter {
   }
   setVariable(v: unknown): void {
     G.pokemonGlobal.eventvars[`${this.mapId},${this.event.id}`] = v;
+  }
+
+  expired(secs = 86_400): boolean {
+    const ontime = this.variable() as number | undefined;
+    const time = Math.floor(pbGetTimeNow().getTime() / 1000);
+    return ontime != null && time > ontime + secs;
+  }
+
+  expiredDays(days = 1): boolean {
+    const ontime = Number(this.variable() ?? 0);
+    const now = pbGetTimeNow();
+    const t = Math.floor(now.getTime() / 1000);
+    let elapsed = Math.floor((t - ontime) / 86_400);
+    if ((t - ontime) % 86_400 > now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds()) elapsed += 1;
+    return elapsed >= days;
+  }
+
+  cooledDown(seconds: number): boolean {
+    if (this.expired(seconds) && this.tsOff("A")) return true;
+    this.needRefresh = true;
+    return false;
+  }
+
+  cooledDownDays(days: number): boolean {
+    if (this.expiredDays(days) && this.tsOff("A")) return true;
+    this.needRefresh = true;
+    return false;
   }
 
   onEvent(): boolean {

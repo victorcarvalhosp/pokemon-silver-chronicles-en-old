@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tools/pbs/tsconfig.json",
     "test": "vitest run",
-    "convert": "ruby tools/convert/convert.rb"
+    "pbs": "node tools/pbs/compile.ts",
+    "convert": "ruby tools/convert/convert.rb",
+    "audio": "node tools/sound/convert.ts"
   },
   "dependencies": {
     "pixi.js": "^8.22.0"
