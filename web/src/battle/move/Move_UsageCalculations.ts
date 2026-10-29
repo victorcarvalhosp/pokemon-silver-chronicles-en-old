@@ -358,11 +358,12 @@ const methods = {
     switch (user.effectiveWeather()) {
       case "Sun":
       case "HarshSun":
-        // NOTE: Ruby bug preserved — the plugin writes `if @function = "IncreasePowerInSunWeather"`
-        //       (an assignment): in Sun every move's function code becomes
-        //       "IncreasePowerInSunWeather" and this multiplier always applies.
-        this.function = "IncreasePowerInSunWeather";
-        multipliers.final_damage_multiplier! *= (type === "FIRE") ? 1 : (type === "WATER") ? 3 : 1.5;
+        // Deliberate fix: the plugin writes `if @function = "IncreasePowerInSunWeather"`
+        // (an assignment), so in Sun every damaging move got this multiplier and
+        // had its function code overwritten. Only Hydro Steam is meant to.
+        if (this.function === "IncreasePowerInSunWeather") {
+          multipliers.final_damage_multiplier! *= (type === "FIRE") ? 1 : (type === "WATER") ? 3 : 1.5;
+        }
         break;
       case "Hail":
         if (Settings.HAIL_WEATHER_TYPE > 0 && target.pbHasType("ICE") &&
