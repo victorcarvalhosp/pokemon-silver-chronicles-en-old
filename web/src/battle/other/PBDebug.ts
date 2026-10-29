@@ -20,4 +20,26 @@ export const PBDebug = {
   logMessage(msg: string): void {
     PBDebug.sink?.(`[Message] ${msg}`);
   },
+
+  /**
+   * PBDebug.logonerr: runs the block; a StandardError raised in it is logged and
+   * printed (pbPrintException) and the battle carries on. Ruby's bare `rescue`
+   * doesn't catch BattleAbortedException (an Exception), so that propagates.
+   */
+  async logonerr(fn: () => Promise<unknown>): Promise<void> {
+    try {
+      await fn();
+    } catch (e) {
+      if (!(e instanceof Error) || e.name === "BattleAbortedException") throw e;
+      PBDebug.log("");
+      PBDebug.log(`**Exception: ${e.message}`);
+      PBDebug.log(String(e.stack));
+      PBDebug.log("");
+      console.error(e); // pbPrintException($!)
+      // Ruby shows the exception in a message box and carries on with the battle.
+      // In the browser an error that repeats every phase would spin forever, so
+      // unless PBDebug.continueOnError is set the error propagates.
+      if (!PBDebug.continueOnError) throw e;
+    }
+  },
 };

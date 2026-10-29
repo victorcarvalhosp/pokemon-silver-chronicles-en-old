@@ -45,7 +45,9 @@ import "./other/Peers";
 import "./other/CatchAndStoreMixin";
 import "./other/Clauses";
 import "./other/AbilityEffects";
+import "./abilities"; // the ability handlers (008_Battle_AbilityEffects.rb + plugins)
 import "./other/ItemEffects";
+import "./items"; // the item handlers (009_Battle_ItemEffects.rb, 013_Items/002-003 + plugins)
 import "./other/PokeBallEffects";
 
 export { Battle } from "./battle/Battle";

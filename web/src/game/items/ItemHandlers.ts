@@ -1,11 +1,10 @@
 // Port of the ItemHandlers module (013_Items/001_Item_Utilities.rb) and the
 // HandlerHash2 it's built on (003_Game processing/005_Event_Handlers.rb).
 //
-// Only the registry is here: the handlers themselves (002_Item_Effects.rb,
-// 003_Item_BattleEffects.rb and the plugins' item effects) aren't ported yet,
-// so every hash starts empty. The Bag, party and summary screens go through
-// these functions, so items start working there as their effects get
-// registered.
+// Only the registry is here: the handlers themselves (002_Item_Effects.rb in
+// Item_Effects.ts, 003_Item_BattleEffects.rb and the plugins in battle/items/)
+// register themselves when web/src/battle/items/index.ts is imported (in Ruby's
+// load order). The Bag, party and summary screens go through these functions.
 
 import type { Id } from "../../data/gameData/gameData";
 import type { Pokemon } from "../pokemon/Pokemon";
@@ -67,7 +66,7 @@ export const ItemHandlers = {
   UseInField: new ItemHandlerHash<(item: Id) => MaybePromise<boolean>>(),
   UseOnPokemon: new ItemHandlerHash<(item: Id, qty: number, pkmn: Pokemon, scene: ItemScene) => MaybePromise<boolean>>(),
   UseOnPokemonMaximum: new ItemHandlerHash<(item: Id, pkmn: Pokemon) => number>(),
-  CanUseInBattle: new ItemHandlerHash<(item: Id, ...args: any[]) => boolean>(),
+  CanUseInBattle: new ItemHandlerHash<(item: Id, ...args: any[]) => MaybePromise<boolean>>(),
   UseInBattle: new ItemHandlerHash<(item: Id, ...args: any[]) => unknown>(),
   BattleUseOnBattler: new ItemHandlerHash<(item: Id, ...args: any[]) => unknown>(),
   BattleUseOnPokemon: new ItemHandlerHash<(item: Id, ...args: any[]) => unknown>(),

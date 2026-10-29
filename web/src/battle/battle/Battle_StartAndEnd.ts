@@ -73,28 +73,6 @@ export class SuccessState {
   }
 }
 
-/**
- * PBDebug.logonerr: runs the block; a StandardError raised in it is logged and
- * printed (pbPrintException) and the battle carries on. Ruby's bare `rescue`
- * doesn't catch BattleAbortedException (an Exception), so that propagates.
- */
-async function logonerr(fn: () => Promise<void>): Promise<void> {
-  try {
-    await fn();
-  } catch (e) {
-    if (e instanceof BattleAbortedException || !(e instanceof Error)) throw e;
-    PBDebug.log("");
-    PBDebug.log(`**Exception: ${e.message}`);
-    PBDebug.log(String(e.stack));
-    PBDebug.log("");
-    console.error(e); // pbPrintException($!)
-    // Ruby shows the exception in a message box and carries on with the battle.
-    // In the browser an error that repeats every phase would spin forever, so
-    // unless PBDebug.continueOnError is set the error propagates.
-    if (!PBDebug.continueOnError) throw e;
-  }
-}
-
 /** Array#to_s, for the debug log. */
 const inspectArray = (a: (number | undefined)[]): string =>
   `[${Array.from(a, (x) => (x == null ? "nil" : String(x))).join(", ")}]`;
@@ -434,13 +412,13 @@ const methods = {
       }
       PBDebug.log("");
       // Command phase
-      await logonerr(() => this.pbCommandPhase());
+      await PBDebug.logonerr(() => this.pbCommandPhase());
       if (this.decision > 0) break;
       // Attack phase
-      await logonerr(() => this.pbAttackPhase());
+      await PBDebug.logonerr(() => this.pbAttackPhase());
       if (this.decision > 0) break;
       // End of round phase
-      await logonerr(() => this.pbEndOfRoundPhase());
+      await PBDebug.logonerr(() => this.pbEndOfRoundPhase());
       if (this.decision > 0) break;
       this.turnCount += 1;
     }

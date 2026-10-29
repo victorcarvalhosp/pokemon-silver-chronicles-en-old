@@ -92,8 +92,7 @@ const methods = {
       }
       // Use the move
       PBDebug.log(`[Move usage] ${this.pbThis()} started using ${(choice[2] as Move).name}`);
-      // PBDebug.logonerr { ... } only logs and re-raises
-      await this.pbUseMove(choice, choice[2] === this.battle.struggle);
+      await PBDebug.logonerr(() => this.pbUseMove(choice, choice[2] === this.battle.struggle));
       await this.battle.pbJudge();
       // Update priority order
       if (Settings.RECALCULATE_TURN_ORDER_AFTER_SPEED_CHANGES) await this.battle.pbCalculatePriority();
@@ -626,8 +625,7 @@ const methods = {
       b.effects[PBEffects.Instructed] = true;
       // NOTE: Ruby checks self's @moves[idxMove] here, not b's (preserved).
       if (await b.pbCanChooseMoveAsync(this.moves[idxMove]!, false)) {
-        // PBDebug.logonerr { ... } only logs and re-raises
-        await b.pbUseMoveSimple(b.lastMoveUsed!, b.lastRegularMoveTarget, idxMove, false);
+        await PBDebug.logonerr(() => b.pbUseMoveSimple(b.lastMoveUsed!, b.lastRegularMoveTarget, idxMove, false));
         b.lastRoundMoved = oldLastRoundMoved;
         await this.battle.pbJudge();
         if (this.battle.decision > 0) return;
@@ -661,8 +659,7 @@ const methods = {
         }
         nextUser.effects[PBEffects.Dancer] = true;
         if (await nextUser.pbCanChooseMoveAsync(move, false)) {
-          // PBDebug.logonerr { ... } only logs and re-raises
-          await nextUser.pbUseMoveSimple(move.id, preTarget);
+          await PBDebug.logonerr(() => nextUser.pbUseMoveSimple(move.id, preTarget));
           nextUser.lastRoundMoved = oldLastRoundMoved;
           nextUser.effects[PBEffects.Outrage] = oldOutrage;
           nextUser.currentMove = oldCurrentMove;
