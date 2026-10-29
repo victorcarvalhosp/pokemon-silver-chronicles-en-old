@@ -95,16 +95,16 @@ export class TrainerWalkingCharSprite extends Sprite {
   private frame = 0;
   private frameskip = 0;
 
-  constructor(charset: string, viewport: Viewport | null = null) {
+  constructor(charset: string | null, viewport: Viewport | null = null) {
     super(viewport);
     this.charset = charset;
     this.animspeed = 5;
   }
 
-  set charset(value: string) {
+  set charset(value: string | null) {
     this.animbitmap?.dispose();
     this.animbitmap = null;
-    const file = pbResolveBitmap(`Graphics/Characters/${value}`);
+    const file = value == null ? null : pbResolveBitmap(`Graphics/Characters/${value}`);
     if (file) {
       this.animbitmap = new AnimatedBitmap(file);
       this.bitmap = this.animbitmap.bitmap;

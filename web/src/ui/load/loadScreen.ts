@@ -21,6 +21,7 @@ import { pbFadeInAndShow, pbFadeOutAndHide, pbFadeOutIn } from "../fades";
 import { pbDisposeSpriteHash, pbSetSystemFont, pbUpdateSpriteHash } from "../messageConfig";
 import { pbConfirmMessageSerious, pbMessage } from "../messages";
 import { addBackgroundOrColoredPlane, pbGetMapNameFromId, TrainerWalkingCharSprite } from "../planes";
+import { PokemonOption_Scene, PokemonOptionScreen } from "../options/options";
 import { preloadBitmaps } from "../rpgCache";
 import { Window_CommandPokemon } from "../windows/SpriteWindowText";
 
@@ -329,8 +330,9 @@ export class PokemonLoadScreen {
         return { action: "new_game" };
       } else if (command === cmdOptions) {
         await pbFadeOutIn(async () => {
-          // TODO(M3 menus): PokemonOption_Scene / PokemonOptionScreen#pbStartScreen(true).
-          await pbMessage("The Options screen isn't ported yet.");
+          const scene = new PokemonOption_Scene();
+          const screen = new PokemonOptionScreen(scene);
+          await screen.pbStartScreen(true);
         });
       } else if (command === cmdQuit) {
         pbSEPlay("GUI menu close", 80); // pbPlayCloseMenuSE

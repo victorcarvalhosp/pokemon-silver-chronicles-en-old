@@ -7,7 +7,6 @@ import { Input } from "../../rgss/Input";
 import { Tone } from "../../rgss/types";
 import type { GamePlayer } from "../GamePlayer";
 import { G, pbUpdateSceneMap } from "../globals";
-import { messages } from "../messageBridge";
 import { playerMetadata } from "../metadata";
 import type { Player } from "../Player";
 import { defineScript } from "../scriptApi";
@@ -43,19 +42,8 @@ defineScript("pbToneChangeAll", (_c, tone, duration) => {
 defineScript("pbShake", (_c, power, speed, frames) => G.gameScreen.startShake(Number(power), Number(speed), Number(frames) / 20));
 defineScript("pbFlash", (_c, color, frames) => G.gameScreen.startFlash(color as never, Number(frames) / 20));
 
-// --- BW Gender Selector (Plugins/BW Gender Selector) ---------------------------
-// TEMPORARY stand-in until the plugin's scene is ported (M3): a Boy/Girl
-// choice that sets the same switches and player character.
-const BOY_SELECTED_SWITCH = 140;
-const GIRL_SELECTED_SWITCH = 141;
-defineScript("pbGenderSelector", async () => {
-  const choice = await messages().pbMessage("Are you a boy or a girl?", ["Boy", "Girl"], 0);
-  const boy = choice === 0;
-  pbChangePlayer(boy ? 1 : 2);
-  G.gameSwitches.set(BOY_SELECTED_SWITCH, boy);
-  G.gameSwitches.set(GIRL_SELECTED_SWITCH, !boy);
-  (G.gameMap as unknown as { needRefresh: boolean }).needRefresh = true;
-});
+// pbGenderSelector, pbEventScreen, pbGetKeyItem, pbWardrobe and
+// pbUnlockOutfit are registered in scenes.ts.
 
 // --- Following Pokémon EX / Followers (plugins) --------------------------------
 // TODO(followers): port Following Pokémon EX; these keep events running meanwhile.
@@ -72,12 +60,8 @@ const todo = (name: string, milestone: string) =>
     console.warn(`${name} isn't ported yet (${milestone})`);
     return null;
   });
-todo("pbEventScreen", "M3: Controls help scene");
 todo("pbTrainerPC", "M3: PC");
-todo("pbWardrobe", "M3: TC Wardrobe plugin");
-todo("pbGetKeyItem", "M3: key item get scene");
 todo("pbPhoneRegisterNPC", "M3: phone");
-todo("pbUnlockOutfit", "M3: TC Wardrobe plugin");
 todo("Pokemon.play_cry", "M4: cries");
 
 void gamePlayer;

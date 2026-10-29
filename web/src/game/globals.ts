@@ -167,7 +167,11 @@ export const G = {
   mapFactory: null as unknown as MapFactoryLike,
 };
 
-/** pbUpdateSceneMap (Essentials): updates the map scene while something else has control. */
+/**
+ * pbUpdateSceneMap (011_Messages.rb): updates the map scene while something
+ * else has control, unless the screen is faded out (pbIsFaded?). Characters
+ * don't move while G.gameTemp.inMenu; the map keeps animating behind menus.
+ */
 export async function pbUpdateSceneMap(): Promise<void> {
-  if (!G.gameTemp.inMenu) await G.scene?.miniupdate?.();
+  if (G.gameTemp.fadestate <= 0) await G.scene?.miniupdate?.();
 }

@@ -16,6 +16,7 @@ import { SceneMap } from "./scenes/SceneMap";
 import { LOAD_SCREEN_BITMAPS, PokemonLoad_Scene, PokemonLoadScreen } from "./ui/load/loadScreen";
 import { preloadBitmaps } from "./ui/rpgCache";
 import { pbSaveScreen } from "./ui/save/saveScreen";
+import { runTitleScreen } from "./ui/scenes/SplashesAndTitleScreen";
 
 const FONT_FILES = [
   "power clear bold.ttf", "power clear.ttf", "power green narrow.ttf", "power green small.ttf",
@@ -43,18 +44,13 @@ hud.textContent = "";
 // Exposed for debugging in the browser console.
 Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, missingScripts, app });
 
-/** Scene_Intro: splashes and title. Returns "delete" for Down+Back+Ctrl. */
-async function titleScreen(): Promise<"load" | "delete"> {
-  // TODO(M3): IntroEventScene (splashes + title) from the scenes port.
-  return "load";
-}
-
 runGame(
   async () => {
     await Game.setUpSystem();
     for (;;) {
       Graphics.freeze();
-      const branch = await titleScreen();
+      const branch = await runTitleScreen(); // Scene_Intro: splashes, then the title
+      Graphics.freeze();
       const screen = new PokemonLoadScreen(new PokemonLoad_Scene());
       await screen.init();
       if (branch === "delete") {
