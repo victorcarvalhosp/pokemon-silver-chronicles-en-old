@@ -4,7 +4,9 @@
 // and column) and re-points them at the right tile each frame, for the
 // current map and every connected map in view. Tiles live in the same
 // container as character sprites so priority tiles sort above or below
-// characters by z, exactly like RMXP.
+// characters by z, exactly like RMXP. Like every RGSS Sprite, a tile breaks z
+// ties by creation order (see display.ts): a tile stack's three layers share
+// z 0, and the sprite drawing a layer changes z as the screen scrolls.
 
 import { Container, Rectangle, Sprite, Texture, TextureSource } from "pixi.js";
 import { graphicsPath, loadImage, loadImageStrips } from "../core/assets";
@@ -12,6 +14,7 @@ import { SCREEN_HEIGHT, SCREEN_WIDTH } from "../core/screen";
 import { terrainTag } from "../data/gameData/terrainTag";
 import type { Tileset } from "../data/types";
 import { Bitmap } from "../rgss/Bitmap";
+import { newZStamp, zIndexOf } from "../rgss/display";
 import {
   SOURCE_TILE as T,
   TILESET_START_ID,
@@ -108,6 +111,22 @@ class Autotile {
   }
 }
 
+/** TilemapRenderer::TileSprite, with the creation stamp mkxp sorts z ties by. */
+class TileSprite extends Sprite {
+  readonly stamp = newZStamp();
+}
+
+/**
+ * refresh_tile_z with the v20.1 Hotfixes' +1 ("Fixed priority 1 tiles appearing
+ * below the player at larger screen sizes"). `y` is the row in the tile sprite
+ * grid, not a map y.
+ */
+export function tileZ(y: number, priority: number, showsReflections: boolean, isBridge: boolean, bridge: number): number {
+  if (showsReflections) return -100;
+  if (isBridge && bridge > 0) return 0;
+  return priority === 0 ? 0 : y * T + priority * T + T + 1;
+}
+
 /** What the renderer needs from each map being drawn. */
 export interface TilemapSource {
   mapId: number;
@@ -121,7 +140,7 @@ export interface TilemapSource {
 }
 
 export class TilemapRenderer {
-  private sprites: Sprite[][][] = [];
+  private sprites: TileSprite[][][] = [];
   private tilesets = new Map<string, Promise<TilesetTextures>>();
   private tilesetsReady = new Map<string, TilesetTextures>();
   private autotiles = new Map<string, Promise<Autotile | null>>();
@@ -130,10 +149,10 @@ export class TilemapRenderer {
 
   constructor(container: Container) {
     for (let i = 0; i < TILES_H; i++) {
-      const col: Sprite[][] = [];
+      const col: TileSprite[][] = [];
       for (let j = 0; j < TILES_V; j++) {
         col.push([0, 1, 2].map(() => {
-          const s = new Sprite();
+          const s = new TileSprite();
           s.visible = false;
           container.addChild(s);
           return s;
@@ -222,9 +241,8 @@ export class TilemapRenderer {
             sprite.y = j * T - pixelOffsetY;
             const tag = terrainTag(map.tileset.terrainTags[tileId] ?? 0);
             const priority = map.tileset.priorities[tileId] ?? 0;
-            if (tag.showsReflections) sprite.zIndex = -100;
-            else if (tag.bridge && bridge > 0) sprite.zIndex = 0;
-            else sprite.zIndex = priority === 0 ? 0 : j * T + priority * T + T;
+            const z = tileZ(j, priority, !!tag.showsReflections, !!tag.bridge, bridge);
+            sprite.zIndex = zIndexOf(z, sprite.stamp);
           }
           visited[i]![j] = true;
         }

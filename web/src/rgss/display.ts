@@ -22,8 +22,13 @@ const live = new Set<Displayable>();
 // leaving 36 for the stamp).
 let nextStamp = 1;
 const STAMP_STEP = 2 ** -36;
-function zIndexOf(z: number, stamp: number): number {
+export function zIndexOf(z: number, stamp: number): number {
   return z + stamp * STAMP_STEP;
+}
+
+/** A creation stamp for a raw Pixi object that sorts among Sprites (the tilemap's tiles). */
+export function newZStamp(): number {
+  return nextStamp++;
 }
 
 export function attachStage(s: Container): void {
