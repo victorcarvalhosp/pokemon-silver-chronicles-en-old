@@ -37,6 +37,7 @@ import { Color, Rect } from "../../rgss/types";
 import { FrameCounter } from "../frameTime";
 import { isBitmapPreloaded, preloadBitmap, preloadBitmaps, RPGCache } from "../rpgCache";
 import { PictureOrigin } from "../scenes/PictureEx";
+import { checkGraphicFile, type SpeciesIconParams } from "./pokemonIcon";
 
 export { PictureOrigin };
 
@@ -138,60 +139,8 @@ type GraphicParams = Pick<SpriteParams, "species" | "form" | "gender" | "shiny" 
 export const SpeciesFiles = {
   /** check_graphic_file(path, params, subfolder) — Essentials Deluxe's. */
   checkGraphicFile(path: string, params: GraphicParams, subfolder = ""): string | null {
-    const { species, form, gender, shiny, shadow, dmax, gmax, celestial } = params;
-    let trySpecies: string = species ?? "";
-    let tryForm = form > 0 ? `_${form}` : "";
-    let tryGender = gender === 1 ? "_female" : "";
-    let tryShadow = shadow ? "_shadow" : "";
-    let tryDmax = dmax ? "_dmax" : "";
-    let tryGmax = gmax ? "_gmax" : "";
-    let tryCelest = celestial ? "_celestial" : "";
-    const subfolderTries: string[] = [];
-    if (subfolder) {
-      if (gmax) {
-        if (shiny === "super_shiny") subfolderTries.push(" super shiny/Gigantamax/");
-        if (shiny) subfolderTries.push(" shiny/Gigantamax/");
-        subfolderTries.push("/Gigantamax/");
-      }
-      if (dmax) {
-        if (shiny === "super_shiny") subfolderTries.push(" super shiny/Dynamax/");
-        if (shiny) subfolderTries.push(" shiny/Dynamax/");
-        subfolderTries.push("/Dynamax/");
-      }
-      if (shiny) {
-        if (shiny === "super_shiny") subfolderTries.push(" super shiny/");
-        subfolderTries.push(" shiny/");
-      }
-      subfolderTries.push("/");
-    }
-    subfolderTries.push("");
-    const factors: [number, string, string][] = [];
-    if (celestial) factors.push([6, tryCelest, ""]);
-    if (gmax) factors.push([5, tryGmax, ""]);
-    if (dmax) factors.push([4, tryDmax, ""]);
-    if (shadow) factors.push([3, tryShadow, ""]);
-    if (gender === 1) factors.push([2, tryGender, ""]);
-    if (form > 0) factors.push([1, tryForm, ""]);
-    factors.push([0, trySpecies, "000"]);
-    for (let i = 0; i < 2 ** factors.length; i++) {
-      factors.forEach((factor, index) => {
-        const value = Math.floor(i / 2 ** index) % 2 === 0 ? factor[1] : factor[2];
-        switch (factor[0]) {
-          case 0: trySpecies = value; break;
-          case 1: tryForm = value; break;
-          case 2: tryGender = value; break;
-          case 3: tryShadow = value; break;
-          case 4: tryDmax = value; break;
-          case 5: tryGmax = value; break;
-          case 6: tryCelest = value; break;
-        }
-      });
-      for (const tryFolder of subfolderTries) {
-        const ret = resolveGraphic(`${path}${subfolder}${tryFolder}${trySpecies}${tryForm}${tryGender}${tryShadow}${tryDmax}${tryGmax}${tryCelest}`);
-        if (ret) return ret;
-      }
-    }
-    return null;
+    // Same port of Deluxe's check_graphic_file as the icons use, resolved against the asset index.
+    return checkGraphicFile(path, params as SpeciesIconParams, subfolder, resolveGraphic);
   },
 
   /** check_egg_graphic_file(path, species, form, suffix) */
