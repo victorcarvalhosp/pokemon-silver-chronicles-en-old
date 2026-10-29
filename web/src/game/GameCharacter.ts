@@ -123,6 +123,21 @@ export class GameCharacter {
   }
   get moveFrequencyReal(): number { return this.moveFrequencyReal_; }
 
+  /** Dynamic state for save files (Essentials marshals the whole object). */
+  saveState(): Record<string, unknown> {
+    const self = this as unknown as Record<string, unknown>;
+    const out: Record<string, unknown> = { moveSpeed: this.moveSpeed, moveFrequency: this.moveFrequency };
+    for (const k of CHARACTER_STATE) out[k] = self[k];
+    return out;
+  }
+
+  loadState(state: Record<string, unknown>): void {
+    const self = this as unknown as Record<string, unknown>;
+    for (const k of CHARACTER_STATE) if (k in state) self[k] = state[k];
+    if (typeof state.moveSpeed === "number") this.moveSpeed = state.moveSpeed;
+    if (typeof state.moveFrequency === "number") this.moveFrequency = state.moveFrequency;
+  }
+
   lock(): void {
     if (this.locked) return;
     this.prelockDirection = 0; // Was @direction but disabled
@@ -780,3 +795,13 @@ export function setMoveRouteScriptHook(fn: typeof moveRouteScriptHook): void {
 }
 
 export { terrainTag };
+
+/** Fields saveState() keeps (move speed/frequency go through their setters). */
+const CHARACTER_STATE = [
+  "x", "y", "realX", "realY", "xOffset", "yOffset", "tileId", "characterName", "characterHue",
+  "opacity", "blendType", "direction", "pattern", "patternSurf", "lockPattern", "through",
+  "transparent", "walkAnime", "originalDirection", "originalPattern", "moveType", "moveRoute",
+  "moveRouteIndex", "moveRouteForcing", "originalMoveRoute", "originalMoveRouteIndex", "stepAnime",
+  "directionFix", "alwaysOnTop", "animeCount", "stopCount", "jumpPeak", "jumpDistance",
+  "jumpDistanceLeft", "jumpCount", "waitCount", "locked", "prelockDirection", "bushDepth_",
+] as const;

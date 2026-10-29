@@ -7,7 +7,7 @@
 // labels are found by scanning the whole list like command_119 does.
 
 import type { AudioRef, Command, Condition, Expr, MoveRoute } from "../data/events";
-import { Data } from "../data/store";
+import { Data, getMapData, hasMapData } from "../data/store";
 import { Graphics } from "../rgss/Graphics";
 import { Input } from "../rgss/Input";
 import { Color, Tone } from "../rgss/types";
@@ -118,6 +118,7 @@ export class Interpreter {
   mapId = 0;
   eventId = 0;
   private list: Instr[] | null = null;
+  private source: Command[] | null = null;
   private index = 0;
   private messageWaiting = false;
   private moveRouteWaiting = false;
@@ -147,8 +148,38 @@ export class Interpreter {
     this.clear();
     this.mapId = mapId ?? G.gameMap?.mapId ?? 0;
     this.eventId = eventId;
+    this.source = list;
     this.list = list ? compile(list) : null;
     this.index = 0;
+  }
+
+  /**
+   * Where the running list came from, so a save made mid-event resumes it
+   * (Essentials marshals the interpreter with its command list).
+   */
+  saveState(): InterpreterState | null {
+    if (!this.list || !this.source) return null;
+    const ref = findListRef(this.source);
+    if (!ref) return null;
+    return {
+      ref, index: this.index, eventId: this.eventId, mapId: this.mapId, waitCount: this.waitCount,
+      moveRouteWaiting: this.moveRouteWaiting, child: this.child?.saveState() ?? null,
+    };
+  }
+
+  loadState(state: InterpreterState | null): void {
+    this.setup(null, 0);
+    if (!state) return;
+    const list = resolveListRef(state.ref);
+    if (!list) return;
+    this.setup(list, state.eventId, state.mapId);
+    this.index = state.index;
+    this.waitCount = state.waitCount;
+    this.moveRouteWaiting = state.moveRouteWaiting;
+    if (state.child) {
+      this.child = new Interpreter(this.depth + 1);
+      this.child.loadState(state.child);
+    }
   }
 
   setupStartingEvent(): void {
@@ -699,10 +730,13 @@ export class Interpreter {
       case "windowskin":
       case "battleBgm":
       case "battleEndMe":
-      case "recoverAll":
       case "callSave":
+        // command_352: PokemonSaveScreen#pbSaveScreen
+        await evaluateAsync({ call: "pbSaveScreen" }, this.context());
+        return true;
+      case "recoverAll":
       case "gameOver":
-        // TODO(M3/M4): windowskin change, battle BGM, party heal, save screen, game over.
+        // TODO(M4): windowskin change, battle BGM, party heal, game over.
         console.warn(`Event command ${c.cmd} isn't ported yet`);
         return true;
       case "call":
@@ -786,6 +820,37 @@ export class Interpreter {
     }
     return ret;
   }
+}
+
+export type ListRef = { map: number; event: number; page: number } | { common: number };
+
+export interface InterpreterState {
+  ref: ListRef;
+  index: number;
+  eventId: number;
+  mapId: number;
+  waitCount: number;
+  moveRouteWaiting: boolean;
+  child: InterpreterState | null;
+}
+
+/** Finds which event page or common event a command list belongs to. */
+function findListRef(list: Command[]): ListRef | null {
+  for (const [id, ce] of Data.commonEvents) if (ce.list === list) return { common: id };
+  const maps = (G.mapFactory as unknown as { maps?: GameMap[] } | null)?.maps ?? [];
+  for (const m of maps) {
+    for (const ev of m.map.events) {
+      const page = ev.pages.findIndex((p) => p.list === list);
+      if (page >= 0) return { map: m.mapId, event: ev.id, page };
+    }
+  }
+  return null;
+}
+
+function resolveListRef(ref: ListRef): Command[] | null {
+  if ("common" in ref) return Data.commonEvents.get(ref.common)?.list ?? null;
+  if (!hasMapData(ref.map)) return null;
+  return getMapData(ref.map).events.find((e) => e.id === ref.event)?.pages[ref.page]?.list ?? null;
 }
 
 /** pbMapInterpreter */

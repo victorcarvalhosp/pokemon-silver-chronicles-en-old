@@ -497,9 +497,9 @@ export function pbOnStepTaken(eventTriggered: boolean): void {
 }
 
 /** pbGetPlayerCharset: the charset, or its "_<outfit>" variant when that file exists. */
-export function pbGetPlayerCharset(charset: string | undefined, force = false): string | null {
+export function pbGetPlayerCharset(charset: string | undefined, force = false, forTrainer: OverworldTrainer | null = null): string | null {
   if (!charset) return null;
-  const t = trainer();
+  const t = forTrainer ?? trainer();
   const outfit = t?.outfit ?? 0;
   const p = G.gamePlayer as unknown as GamePlayer | null;
   if (!force && p?.charsetData && p.charsetData[0] === t?.characterID && p.charsetData[1] === charset && p.charsetData[2] === outfit) {

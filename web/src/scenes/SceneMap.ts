@@ -10,6 +10,7 @@ import { G } from "../game/globals";
 import { pbMapInterpreter } from "../game/Interpreter";
 import type { PokemonMapFactory } from "../game/MapFactory";
 import { pbBGMFade } from "../game/GameSystem";
+import { SaveData } from "../game/save/SaveData";
 import { TilemapRenderer, type TilemapSource } from "../map/TilemapRenderer";
 import { Graphics } from "../rgss/Graphics";
 import { Input } from "../rgss/Input";
@@ -42,6 +43,12 @@ export async function prepareMap(id: number, renderer?: TilemapRenderer): Promis
     await Promise.all([preloadMapGraphics(data), tileset && renderer ? renderer.prepare(tileset) : null]);
   }));
 }
+
+/** Scenes Scene_Map opens; filled in by the menu ports (PokemonPauseMenu, pbUseKeyItem). */
+export const SceneMapHooks = {
+  pauseMenu: async (): Promise<void> => {},
+  useKeyItem: async (): Promise<void> => {},
+};
 
 export class SceneMap {
   renderer: TilemapRenderer | null = null;
@@ -173,7 +180,8 @@ export class SceneMap {
     }
     await this.updateSpritesets();
     if (t.titleScreenCalling) {
-      // TODO(M3): back to the title screen.
+      SaveData.markValuesAsUnloaded();
+      G.scene = null; // $scene = pbCallTitle (main.ts runs the title loop)
       return;
     }
     if (t.transitionProcessing) {
@@ -196,18 +204,27 @@ export class SceneMap {
     }
     if (!gamePlayer().moving()) {
       if (t.menuCalling) {
-        // TODO(M3): pause menu.
-        t.menuCalling = false;
+        await this.callMenu();
       } else if (t.readyMenuCalling) {
         t.readyMenuCalling = false;
         gamePlayer().straighten();
-        // TODO(M3): pbUseKeyItem.
+        await SceneMapHooks.useKeyItem();
       } else if (t.interactCalling) {
         t.interactCalling = false;
         gamePlayer().straighten();
         await EventHandlers.trigger("on_player_interact");
       }
     }
+  }
+
+  async callMenu(): Promise<void> {
+    const t = G.gameTemp;
+    t.menuCalling = false;
+    t.inMenu = true;
+    gamePlayer().straighten();
+    await gameMap().update();
+    await SceneMapHooks.pauseMenu();
+    t.inMenu = false;
   }
 
   async main(): Promise<void> {
@@ -221,5 +238,11 @@ export class SceneMap {
     }
     Graphics.freeze();
     this.dispose();
+    if (G.gameTemp.titleScreenCalling) {
+      if (pbMapInterpreter().running()) pbMapInterpreter().commandEnd();
+      G.gameTemp.titleScreenCalling = false;
+      await Graphics.transition();
+      Graphics.freeze();
+    }
   }
 }

@@ -164,6 +164,19 @@ export class GameEvent extends GameCharacter {
     }
   }
 
+  override saveState(): Record<string, unknown> {
+    return { ...super.saveState(), erased: this.erased, routeErased: this.routeErased, tempSwitches: { ...this.tempSwitches } };
+  }
+
+  /** Re-derives the page from the saved flags, then restores position/movement. */
+  override loadState(state: Record<string, unknown>): void {
+    this.erased = !!state.erased;
+    this.routeErased = !!state.routeErased;
+    this.tempSwitches = { ...((state.tempSwitches as Record<string, boolean>) ?? {}) };
+    this.refresh();
+    super.loadState(state);
+  }
+
   refresh(): void {
     let newPage: EventPage | null = null;
     if (!this.erased) {

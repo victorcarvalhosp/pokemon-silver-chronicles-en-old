@@ -1,16 +1,21 @@
-// Boots the game: data and fonts, then a click (browsers only allow sound
-// after a user gesture), then the game coroutine.
+// Boots the game like Essentials' mainFunction: Game.initialize, then a
+// click (browsers only allow sound after a user gesture), Game.set_up_system,
+// and the $scene loop: title -> load screen -> Scene_Map -> back to title.
 
-import { assetExists } from "./core/assets";
 import { createScreen } from "./core/screen";
 import { Data } from "./data/store";
+import { Game } from "./game/Game";
 import { G } from "./game/globals";
-import { initializeGame, startNewGame } from "./game/newGame";
+import { initializeGame } from "./game/newGame";
+import { SaveData } from "./game/save/SaveData";
 import { missingScripts } from "./game/scriptApi";
 import { unlockAudio } from "./rgss/Audio";
 import { loadFonts } from "./rgss/Bitmap";
-import { initGraphics, runGame } from "./rgss/Graphics";
-import { prepareMap, SceneMap } from "./scenes/SceneMap";
+import { Graphics, initGraphics, runGame } from "./rgss/Graphics";
+import { SceneMap } from "./scenes/SceneMap";
+import { LOAD_SCREEN_BITMAPS, PokemonLoad_Scene, PokemonLoadScreen } from "./ui/load/loadScreen";
+import { preloadBitmaps } from "./ui/rpgCache";
+import { pbSaveScreen } from "./ui/save/saveScreen";
 
 const FONT_FILES = [
   "power clear bold.ttf", "power clear.ttf", "power green narrow.ttf", "power green small.ttf",
@@ -21,7 +26,7 @@ const hud = document.getElementById("hud")!;
 const app = await createScreen(document.getElementById("screen")!);
 initGraphics(app);
 hud.textContent = "Loading…";
-await Promise.all([initializeGame(), loadFonts(FONT_FILES.filter((f) => assetExists(`Fonts/${f}`) || true))]);
+await Promise.all([initializeGame(), loadFonts(FONT_FILES), preloadBitmaps(LOAD_SCREEN_BITMAPS)]);
 hud.textContent = "Click or press a key to start";
 await new Promise<void>((resolve) => {
   const go = () => {
@@ -36,16 +41,34 @@ await unlockAudio();
 hud.textContent = "";
 
 // Exposed for debugging in the browser console.
-Object.assign(window, { G, Data, missingScripts, app });
+Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, missingScripts, app });
+
+/** Scene_Intro: splashes and title. Returns "delete" for Down+Back+Ctrl. */
+async function titleScreen(): Promise<"load" | "delete"> {
+  // TODO(M3): IntroEventScene (splashes + title) from the scenes port.
+  return "load";
+}
 
 runGame(
   async () => {
-    // TODO(M3): title screen + continue/new game.
-    await prepareMap(Data.system.startMapId);
-    startNewGame();
-    const scene = new SceneMap();
-    G.scene = scene as never;
-    await scene.main();
+    await Game.setUpSystem();
+    for (;;) {
+      Graphics.freeze();
+      const branch = await titleScreen();
+      const screen = new PokemonLoadScreen(new PokemonLoad_Scene());
+      await screen.init();
+      if (branch === "delete") {
+        await screen.pbStartDeleteScreen();
+        continue;
+      }
+      const choice = await screen.pbStartLoadScreen();
+      if (choice.action === "continue") await Game.load(choice.save);
+      else if (choice.action === "new_game") await Game.startNew();
+      else continue; // Quit Game can't close a browser tab: back to the title.
+      const scene = new SceneMap();
+      G.scene = scene as never;
+      await scene.main();
+    }
   },
   (e) => {
     console.error(e);
