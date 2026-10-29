@@ -1,11 +1,13 @@
 # Translates RPG Maker XP event command lists (numeric codes + indentation)
 # into nested, named JSON commands. Mirrors what Essentials' Interpreter does
 # at runtime where that is static (joining Show Text lines, merging
-# consecutive Show Choices), and converts frame counts (40 fps) to seconds.
+# consecutive Show Choices), and converts durations (1/20 s units) to seconds.
 require_relative "ruby_expr"
 
 module Events
-  FPS = 40.0
+  # Essentials v20.1 reads every event duration as param * frame_rate / 20,
+  # i.e. the editor's "frames" are 1/20 s.
+  FPS = 20.0
   COMPARE = ["==", ">=", "<=", ">", "<", "!="].freeze
   VAR_OPS = %w[set add sub mul div mod].freeze
   BRANCH_MARKERS = [402, 403, 404, 411, 412, 413, 601, 602, 603, 604, 605].freeze

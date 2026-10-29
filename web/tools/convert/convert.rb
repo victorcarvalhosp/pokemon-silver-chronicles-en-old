@@ -183,6 +183,8 @@ module Convert
       "battleTransition" => Rxdata.str(iv(s, :battle_transition)),
       "sounds" => sounds.to_h { |k| [Rxdata.camel(k.to_s), audio(iv(s, k))] },
       "switches" => names.call(iv(s, :switches)),
+      "scriptSwitches" => names.call(iv(s, :switches)).select { |_, n| n.start_with?("s:") }
+                             .transform_values { |n| ok, e = RubyExpr.expression(n[2..-1]); ok ? e : { "ruby" => n[2..-1] } },
       "variables" => names.call(iv(s, :variables))
     }
   end
@@ -213,17 +215,23 @@ if $PROGRAM_NAME == __FILE__
   only = ARGV.map(&:to_i)
   infos = Rxdata.load(File.join(DATA_IN, "MapInfos.rxdata"))
   Convert.write(File.join(DATA_OUT, "system.json"), Convert.system)
-  Convert.write(File.join(DATA_OUT, "map-infos.json"), Convert.map_infos)
   Convert.write(File.join(DATA_OUT, "tilesets.json"), Convert.tilesets)
   Convert.write(File.join(DATA_OUT, "common-events.json"), Convert.common_events)
 
   ids = Dir[File.join(DATA_IN, "Map[0-9]*.rxdata")].map { |f| File.basename(f)[/\d+/].to_i }.sort
   ids &= only unless only.empty?
   failures = []
+  dims = {}
   ids.each do |id|
-    Convert.write(File.join(DATA_OUT, "maps", format("Map%03d.json", id)), Convert.map(id, infos[id]))
+    data = Convert.map(id, infos[id])
+    dims[id] = [data["width"], data["height"]]
+    Convert.write(File.join(DATA_OUT, "maps", format("Map%03d.json", id)), data)
   rescue StandardError => e
     failures << "Map#{id}: #{e.class}: #{e.message}"
+  end
+  if only.empty?
+    infos_out = Convert.map_infos.map { |i| i.merge("width" => dims.dig(i["id"], 0) || 0, "height" => dims.dig(i["id"], 1) || 0) }
+    Convert.write(File.join(DATA_OUT, "map-infos.json"), infos_out)
   end
   Convert.write(File.join(DATA_OUT, "reports", "conversion.json"), Convert::REPORT.to_h)
   r = Convert::REPORT

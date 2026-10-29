@@ -1,15 +1,17 @@
 // Port of Data/Scripts/006_Map renderer/001_TilemapRenderer.rb.
 //
 // Keeps a fixed grid of tile sprites covering the screen (plus one extra row
-// and column) and re-points them at the right tile each frame. Tiles live in
-// the same container as character sprites so priority tiles sort above or
-// below characters by z, exactly like RMXP.
+// and column) and re-points them at the right tile each frame, for the
+// current map and every connected map in view. Tiles live in the same
+// container as character sprites so priority tiles sort above or below
+// characters by z, exactly like RMXP.
 
 import { Container, Rectangle, Sprite, Texture, TextureSource } from "pixi.js";
 import { graphicsPath, loadImage, loadImageStrips } from "../core/assets";
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from "../core/screen";
 import { terrainTag } from "../data/gameData/terrainTag";
-import type { MapData, Tileset } from "../data/types";
+import type { Tileset } from "../data/types";
+import { Bitmap } from "../rgss/Bitmap";
 import {
   SOURCE_TILE as T,
   TILESET_START_ID,
@@ -24,7 +26,8 @@ const TILES_H = Math.ceil(SCREEN_WIDTH / T) + 1;
 const TILES_V = Math.ceil(SCREEN_HEIGHT / T) + 1;
 
 class TilesetTextures {
-  private sources: TextureSource[] = [];
+  sources: TextureSource[] = [];
+  strips: ImageBitmap[] = [];
   private cache = new Map<number, Texture>();
 
   static async load(name: string): Promise<TilesetTextures> {
@@ -32,21 +35,38 @@ class TilesetTextures {
     if (!name) return set;
     const image = await loadImageStrips(graphicsPath("Tilesets", name), STRIP_HEIGHT);
     if (!image) console.warn(`Missing tileset graphic: ${name}`);
-    set.sources = image ? image.strips.map((s) => TextureSource.from(s)) : [];
+    set.strips = image?.strips ?? [];
+    set.sources = set.strips.map((s) => TextureSource.from(s));
     return set;
+  }
+
+  private locate(tileId: number): { strip: number; x: number; y: number } | null {
+    const index = tileId - TILESET_START_ID;
+    const x = (index % TILESET_TILES_PER_ROW) * T;
+    const y = Math.floor(index / TILESET_TILES_PER_ROW) * T;
+    const strip = Math.floor(y / STRIP_HEIGHT);
+    const src = this.strips[strip];
+    if (!src || (y % STRIP_HEIGHT) + T > src.height) return null;
+    return { strip, x, y: y % STRIP_HEIGHT };
   }
 
   texture(tileId: number): Texture | null {
     let tex = this.cache.get(tileId);
     if (tex) return tex;
-    const index = tileId - TILESET_START_ID;
-    const x = (index % TILESET_TILES_PER_ROW) * T;
-    const y = Math.floor(index / TILESET_TILES_PER_ROW) * T;
-    const source = this.sources[Math.floor(y / STRIP_HEIGHT)];
-    if (!source || (y % STRIP_HEIGHT) + T > source.height) return null;
-    tex = new Texture({ source, frame: new Rectangle(x, y % STRIP_HEIGHT, T, T) });
+    const at = this.locate(tileId);
+    if (!at) return null;
+    tex = new Texture({ source: this.sources[at.strip]!, frame: new Rectangle(at.x, at.y, T, T) });
     this.cache.set(tileId, tex);
     return tex;
+  }
+
+  /** One tile as a Bitmap (pbGetTileBitmap), for tile-graphic events. */
+  bitmap(tileId: number): Bitmap | null {
+    const at = this.locate(tileId);
+    if (!at) return null;
+    const bmp = new Bitmap(T, T);
+    bmp.ctx.drawImage(this.strips[at.strip]!, at.x, at.y, T, T, 0, 0, T, T);
+    return bmp;
   }
 }
 
@@ -88,30 +108,34 @@ class Autotile {
   }
 }
 
-export interface TilemapState {
-  /** Top-left of the screen in map pixels (may be negative or past the edge). */
+/** What the renderer needs from each map being drawn. */
+export interface TilemapSource {
+  mapId: number;
+  width: number;
+  height: number;
+  tileset: Tileset;
+  /** Top-left of the screen in map pixels (Essentials: display_x / X_SUBPIXELS). */
   displayX: number;
   displayY: number;
-  /** $PokemonGlobal.bridge: >0 while the player is on a bridge. */
-  bridge: number;
+  tile(x: number, y: number, layer: number): number;
 }
 
 export class TilemapRenderer {
   private sprites: Sprite[][][] = [];
-  private map: MapData | null = null;
-  private tileset: Tileset | null = null;
-  private tilesetTextures: TilesetTextures | null = null;
-  private autotiles: (Autotile | null)[] = [];
+  private tilesets = new Map<string, Promise<TilesetTextures>>();
+  private tilesetsReady = new Map<string, TilesetTextures>();
+  private autotiles = new Map<string, Promise<Autotile | null>>();
+  private autotilesReady = new Map<string, Autotile | null>();
   private timer = 0;
 
-  constructor(private viewport: Container) {
+  constructor(container: Container) {
     for (let i = 0; i < TILES_H; i++) {
       const col: Sprite[][] = [];
       for (let j = 0; j < TILES_V; j++) {
         col.push([0, 1, 2].map(() => {
           const s = new Sprite();
           s.visible = false;
-          viewport.addChild(s);
+          container.addChild(s);
           return s;
         }));
       }
@@ -119,65 +143,97 @@ export class TilemapRenderer {
     }
   }
 
-  async setMap(map: MapData, tileset: Tileset): Promise<void> {
-    const [textures, ...autotiles] = await Promise.all([
-      TilesetTextures.load(tileset.tilesetName),
-      ...tileset.autotileNames.map((n) => Autotile.load(n)),
-    ]);
-    this.map = map;
-    this.tileset = tileset;
-    this.tilesetTextures = textures as TilesetTextures;
-    this.autotiles = autotiles as (Autotile | null)[];
+  /** Loads the tileset and autotile graphics (add_tileset / add_autotile). */
+  async prepare(tileset: Tileset): Promise<void> {
+    const name = tileset.tilesetName;
+    if (!this.tilesets.has(name)) {
+      this.tilesets.set(name, TilesetTextures.load(name).then((t) => {
+        this.tilesetsReady.set(name, t);
+        return t;
+      }));
+    }
+    const jobs: Promise<unknown>[] = [this.tilesets.get(name)!];
+    for (const a of tileset.autotileNames) {
+      if (!a) continue;
+      if (!this.autotiles.has(a)) {
+        this.autotiles.set(a, Autotile.load(a).then((t) => {
+          this.autotilesReady.set(a, t);
+          return t;
+        }));
+      }
+      jobs.push(this.autotiles.get(a)!);
+    }
+    await Promise.all(jobs);
   }
 
   update(dt: number): void {
     this.timer += dt;
   }
 
-  /** Texture for a tile id on the current map (also used for tile-graphic events). */
-  textureFor(tileId: number): Texture | null {
+  textureFor(tileset: Tileset, tileId: number): Texture | null {
     if (tileId < TILES_PER_AUTOTILE) return null;
     if (tileId < TILESET_START_ID) {
-      const autotile = this.autotiles[Math.floor(tileId / TILES_PER_AUTOTILE) - 1];
+      const name = tileset.autotileNames[Math.floor(tileId / TILES_PER_AUTOTILE) - 1];
+      const autotile = name ? this.autotilesReady.get(name) : null;
       return autotile ? autotile.texture(tileId, autotile.frameAt(this.timer)) : null;
     }
-    return this.tilesetTextures?.texture(tileId) ?? null;
+    return this.tilesetsReady.get(tileset.tilesetName)?.texture(tileId) ?? null;
   }
 
-  draw(state: TilemapState): void {
-    const map = this.map;
-    const tileset = this.tileset;
-    if (!map || !tileset) return;
-    const dx = Math.round(state.displayX);
-    const dy = Math.round(state.displayY);
-    const tileOffsetX = Math.floor(dx / T);
-    const tileOffsetY = Math.floor(dy / T);
-    const pixelOffsetX = dx - tileOffsetX * T;
-    const pixelOffsetY = dy - tileOffsetY * T;
-    for (let i = 0; i < TILES_H; i++) {
-      const tileX = i + tileOffsetX;
-      for (let j = 0; j < TILES_V; j++) {
-        const tileY = j + tileOffsetY;
-        const inMap = tileX >= 0 && tileY >= 0 && tileX < map.width && tileY < map.height;
-        const stack = this.sprites[i]![j]!;
-        for (let layer = 0; layer < 3; layer++) {
-          const sprite = stack[layer]!;
-          const tileId = inMap ? map.layers[layer]![tileY]![tileX]! : 0;
-          const texture = this.textureFor(tileId);
-          if (!texture) {
-            sprite.visible = false;
-            continue;
+  tileBitmap(tileset: Tileset, tileId: number): Bitmap | null {
+    return this.tilesetsReady.get(tileset.tilesetName)?.bitmap(tileId) ?? null;
+  }
+
+  /** Draws `maps` (the current map first), like TilemapRenderer#update. */
+  draw(maps: TilemapSource[], bridge: number): void {
+    const current = maps[0];
+    if (!current) return;
+    const dx = Math.round(current.displayX);
+    const dy = Math.round(current.displayY);
+    const pixelOffsetX = dx - Math.floor(dx / T) * T;
+    const pixelOffsetY = dy - Math.floor(dy / T) * T;
+    const visited: boolean[][] = this.sprites.map((col) => col.map(() => false));
+    for (const map of maps) {
+      const mdx = Math.round(map.displayX);
+      const mdy = Math.round(map.displayY);
+      const tileOffsetX = Math.floor(mdx / T);
+      const tileOffsetY = Math.floor(mdy / T);
+      const startX = Math.max(-tileOffsetX, 0);
+      const startY = Math.max(-tileOffsetY, 0);
+      const endX = Math.min(TILES_H - 1, map.width - tileOffsetX - 1);
+      const endY = Math.min(TILES_V - 1, map.height - tileOffsetY - 1);
+      if (startX > endX || startY > endY) continue;
+      for (let i = startX; i <= endX; i++) {
+        const tileX = i + tileOffsetX;
+        for (let j = startY; j <= endY; j++) {
+          const tileY = j + tileOffsetY;
+          const stack = this.sprites[i]![j]!;
+          for (let layer = 0; layer < 3; layer++) {
+            const sprite = stack[layer]!;
+            const tileId = map.tile(tileX, tileY, layer);
+            const texture = this.textureFor(map.tileset, tileId);
+            if (!texture) {
+              sprite.visible = false;
+              continue;
+            }
+            sprite.texture = texture;
+            sprite.visible = true;
+            sprite.x = i * T - pixelOffsetX;
+            sprite.y = j * T - pixelOffsetY;
+            const tag = terrainTag(map.tileset.terrainTags[tileId] ?? 0);
+            const priority = map.tileset.priorities[tileId] ?? 0;
+            if (tag.showsReflections) sprite.zIndex = -100;
+            else if (tag.bridge && bridge > 0) sprite.zIndex = 0;
+            else sprite.zIndex = priority === 0 ? 0 : j * T + priority * T + T;
           }
-          sprite.texture = texture;
-          sprite.visible = true;
-          sprite.x = i * T - pixelOffsetX;
-          sprite.y = j * T - pixelOffsetY;
-          const tag = terrainTag(tileset.terrainTags[tileId] ?? 0);
-          const priority = tileset.priorities[tileId] ?? 0;
-          if (tag.showsReflections) sprite.zIndex = -100;
-          else if (tag.bridge && state.bridge > 0) sprite.zIndex = 0;
-          else sprite.zIndex = priority === 0 ? 0 : j * T + priority * T + T;
+          visited[i]![j] = true;
         }
+      }
+    }
+    for (let i = 0; i < TILES_H; i++) {
+      for (let j = 0; j < TILES_V; j++) {
+        if (visited[i]![j]) continue;
+        for (const s of this.sprites[i]![j]!) s.visible = false;
       }
     }
   }

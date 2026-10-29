@@ -1,26 +1,11 @@
 // Shapes of the JSON files written by tools/convert/convert.rb.
 
+import type { Command, MoveRoute } from "./events";
+
 export interface AudioFile {
   name: string;
   volume: number;
   pitch: number;
-}
-
-export interface EventCommand {
-  code: number;
-  indent: number;
-  parameters: unknown[];
-}
-
-export interface MoveCommand {
-  code: number;
-  parameters: unknown[];
-}
-
-export interface MoveRoute {
-  repeat: boolean;
-  skippable: boolean;
-  list: MoveCommand[];
 }
 
 export interface EventPage {
@@ -49,7 +34,7 @@ export interface EventPage {
   through: boolean;
   alwaysOnTop: boolean;
   trigger: number;
-  list: EventCommand[];
+  list: Command[];
 }
 
 export interface MapEvent {
@@ -93,6 +78,8 @@ export interface Tileset {
 
 export interface MapInfo {
   id: number;
+  width: number;
+  height: number;
   name: string;
   parentId: number;
   order: number;
@@ -115,4 +102,6 @@ export interface SystemData {
   sounds: Record<string, AudioFile>;
   switches: Record<string, string>;
   variables: Record<string, string>;
+  /** Switches named "s:...": an expression evaluated in the event's context. */
+  scriptSwitches: Record<string, import("./events").Expr | { ruby: string }>;
 }

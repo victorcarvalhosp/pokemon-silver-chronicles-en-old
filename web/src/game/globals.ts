@@ -6,6 +6,9 @@
 //   $scene -> G.scene
 // Classes that grow large live in their own modules and are assigned here.
 
+import type { GameScreen } from "./GameScreen";
+import type { GameSystem } from "./GameSystem";
+
 /** Port of PokemonSystem (016_UI/..._Options.rb): player settings. */
 export class PokemonSystem {
   textspeed = 1; // 0 slow, 1 normal, 2 fast
@@ -21,6 +24,34 @@ export class PokemonSystem {
   bgmvolume = 100;
   sevolume = 100;
   textinput = 0;
+}
+
+/** Port of PokemonGlobalMetadata (002_Save data): per-save overworld state. */
+export class PokemonGlobalMetadata {
+  bicycle = false;
+  surfing = false;
+  diving = false;
+  sliding = false;
+  fishing = false;
+  bridge = 0;
+  runningShoes = false;
+  /** Partner trainers / followers (Following Pokémon EX keeps its own). */
+  followers: unknown[] = [];
+  /** [mapId, eventId] -> value (Interpreter#setVariable / pbSetEventTime). */
+  eventvars: Record<string, unknown> = {};
+  nextBattleBGM: unknown = null;
+  pokecenterMapId = -1;
+  pokecenterX = -1;
+  pokecenterY = -1;
+  pokecenterDirection = -1;
+  escapePoint: number[] = [];
+  visitedMaps: boolean[] = [];
+  playerID = -1;
+}
+
+/** What the rest of the game needs from PokemonMapFactory. */
+export interface MapFactoryLike {
+  areConnected(a: number, b: number): boolean;
 }
 
 /** Port of Game_Temp's fields used across systems (004_Game classes). */
@@ -39,6 +70,25 @@ export class GameTemp {
   menuBeep = false;
   commonEventId = 0;
   toTitle = false;
+  encounterTriggered = false;
+  inMiniUpdate = false;
+  interactCalling = false;
+  readyMenuCalling = false;
+  debugCalling = false;
+  titleScreenCalling = false;
+  endingSurf = false;
+  battlebackName = "";
+  // Carmaniac's Speech Bubble (src/ui/speechBubble.ts)
+  /** 0 none, 1 floating bubble, 2 speech bubble with arrow; consumed by the next message. */
+  speechbubbleBubble = 0;
+  speechbubbleVp: { dispose(): void } | null = null;
+  speechbubbleArrow: { dispose(): void } | null = null;
+  speechbubbleOutofrange = false;
+  /** Event id of the speaker. */
+  speechbubbleTalking: number | null = null;
+  /** 0 default, 1 force top, 2 force bottom. */
+  speechbubblePosition = 0;
+  speechbubbleFollowerEvent: CharacterLike | null = null;
 }
 
 export class GameSwitches {
@@ -93,8 +143,8 @@ export interface TrainerLike {
 
 export interface SceneLike {
   /** Scene_Map#miniupdate: keeps the map animating behind messages/menus. */
-  miniupdate?(): void;
-  update?(): void;
+  miniupdate?(): Promise<void>;
+  update?(): Promise<void>;
 }
 
 export const G = {
@@ -107,9 +157,14 @@ export const G = {
   gameMap: null as MapLike | null,
   gamePlayer: null as CharacterLike | null,
   scene: null as SceneLike | null,
+  // Assigned at boot by the modules that own these classes.
+  gameSystem: null as unknown as GameSystem,
+  gameScreen: null as unknown as GameScreen,
+  pokemonGlobal: new PokemonGlobalMetadata(),
+  mapFactory: null as unknown as MapFactoryLike,
 };
 
 /** pbUpdateSceneMap (Essentials): updates the map scene while something else has control. */
-export function pbUpdateSceneMap(): void {
-  if (!G.gameTemp.inMenu) G.scene?.miniupdate?.();
+export async function pbUpdateSceneMap(): Promise<void> {
+  if (!G.gameTemp.inMenu) await G.scene?.miniupdate?.();
 }

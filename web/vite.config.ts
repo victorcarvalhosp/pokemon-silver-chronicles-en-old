@@ -45,6 +45,11 @@ function gameAssets(): Plugin {
       server.watcher.add(ASSET_DIRS.map((d) => join(GAME_ROOT, d)));
       server.watcher.on("add", () => (index = buildAssetIndex()));
       server.middlewares.use("/game", (req, res, next) => {
+        if (req.url === "/__index.json") {
+          res.setHeader("Content-Type", "application/json");
+          res.end(JSON.stringify([...index.keys()]));
+          return;
+        }
         const path = decodeURIComponent((req.url ?? "").split("?")[0] ?? "").replace(/^\/+/, "");
         const rel = index.get(path.toLowerCase());
         if (!rel) return next();

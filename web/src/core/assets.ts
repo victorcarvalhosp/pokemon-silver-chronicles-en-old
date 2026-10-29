@@ -45,3 +45,17 @@ export async function loadImageStrips(path: string, maxHeight: number): Promise<
 export function graphicsPath(folder: string, name: string): string {
   return `Graphics/${folder}/${name}`;
 }
+
+// Every asset path (lowercased, with and without extension), so code ported
+// from Ruby can check for a file synchronously (pbResolveBitmap,
+// FileTest.audio_exist?).
+let assetIndex = new Set<string>();
+
+export async function loadAssetIndex(): Promise<void> {
+  const res = await fetch("/game/__index.json");
+  assetIndex = new Set((await res.json()) as string[]);
+}
+
+export function assetExists(path: string): boolean {
+  return assetIndex.has(path.toLowerCase());
+}
