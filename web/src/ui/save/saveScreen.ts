@@ -16,7 +16,7 @@ import { Window_AdvancedTextPokemon } from "../windows/SpriteWindowText";
 interface SaveTrainer {
   name: string;
   gender?: number;
-  badgeCount?: number;
+  badgeCount(): number;
   badges?: boolean[];
   hasPokedex?: boolean;
   pokedex?: { ownedCount?(): number; seenCount?(): number };
@@ -41,7 +41,7 @@ export class PokemonSave_Scene {
     let loctext = `<ac><c3=${locationColor}>${mapname}</c3></ac>`;
     loctext += `Player<r><c3=${textColor}>${player.name}</c3><br>`;
     loctext += hour > 0 ? `Time<r><c3=${textColor}>${hour}h ${min}m</c3><br>` : `Time<r><c3=${textColor}>${min}m</c3><br>`;
-    const badges = player.badgeCount ?? (player.badges ?? []).filter(Boolean).length;
+    const badges = player.badgeCount();
     loctext += `Badges<r><c3=${textColor}>${badges}</c3><br>`;
     if (player.hasPokedex) {
       loctext += `Pokédex<r><c3=${textColor}>${player.pokedex?.ownedCount?.() ?? 0}/${player.pokedex?.seenCount?.() ?? 0}</c3>`;

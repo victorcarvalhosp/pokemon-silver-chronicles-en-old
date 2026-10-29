@@ -31,7 +31,7 @@ interface PanelTrainer {
   name: string;
   characterID?: number;
   party?: unknown[];
-  badgeCount?: number;
+  badgeCount(): number;
   badges?: boolean[];
   gender?: number;
   male?(): boolean;
@@ -48,7 +48,7 @@ const FEMALETEXTSHADOWCOLOR = new Color(160, 64, 64);
 
 const isMale = (t: PanelTrainer) => (t.male ? t.male() : t.gender === 0);
 const isFemale = (t: PanelTrainer) => (t.female ? t.female() : t.gender === 1);
-const badgeCount = (t: PanelTrainer) => t.badgeCount ?? (t.badges ?? []).filter(Boolean).length;
+const badgeCount = (t: PanelTrainer) => t.badgeCount();
 
 class PokemonLoadPanel extends Sprite {
   private bgbitmap = new AnimatedBitmap("Graphics/Pictures/loadPanels");
