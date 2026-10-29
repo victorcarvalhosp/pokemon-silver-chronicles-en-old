@@ -3,6 +3,7 @@
 // and the $scene loop: title -> load screen -> Scene_Map -> back to title.
 
 import { PBDebug } from "./battle/other/PBDebug";
+import { DEBUG } from "./core/debug";
 import { createScreen } from "./core/screen";
 import { Data } from "./data/store";
 import { Game } from "./game/Game";
@@ -15,6 +16,7 @@ import { loadFonts } from "./rgss/Bitmap";
 import { Graphics, initGraphics, render, runGame, runTick } from "./rgss/Graphics";
 import { SceneMap } from "./scenes/SceneMap";
 import { LOAD_SCREEN_BITMAPS, PokemonLoad_Scene, PokemonLoadScreen } from "./ui/load/loadScreen";
+import { pbGetMapNameFromId } from "./ui/planes";
 import { preloadBitmaps } from "./ui/rpgCache";
 import { pbSaveScreen } from "./ui/save/saveScreen";
 import { runTitleScreen } from "./ui/scenes/SplashesAndTitleScreen";
@@ -45,6 +47,18 @@ await new Promise<void>((resolve) => {
 });
 await unlockAudio();
 hud.textContent = "";
+
+// In debug mode the HUD shows where the player is ("Map 25 Mr. Pokémon's House (9,11)").
+let crashed = false;
+if (DEBUG) {
+  let shown = "";
+  const showMapInfo = () => {
+    const map = G.gameMap;
+    const text = crashed || !map ? "" : `Map ${map.mapId} ${pbGetMapNameFromId(map.mapId)} (${G.gamePlayer!.x},${G.gamePlayer!.y})`;
+    if (!crashed && text !== shown) hud.textContent = shown = text;
+  };
+  setInterval(showMapInfo, 100);
+}
 
 // Exposed for debugging in the browser console.
 // __step(n) advances n ticks by hand (requestAnimationFrame stops in hidden tabs).
@@ -79,6 +93,7 @@ runGame(
   },
   (e) => {
     console.error(e);
+    crashed = true;
     hud.textContent = `Error: ${(e as Error).message ?? e}`;
   },
 );

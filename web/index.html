@@ -9,6 +9,7 @@
       #screen { position: absolute; inset: 0; display: grid; place-items: center; }
       #screen canvas { image-rendering: pixelated; }
       #hud { position: absolute; left: 8px; top: 8px; color: #ccc; font: 12px/1.4 ui-monospace, monospace; pointer-events: none; }
+      #hud:not(:empty) { background: rgba(0, 0, 0, 0.7); padding: 2px 6px; border-radius: 3px; z-index: 1; }
     </style>
   </head>
   <body>
