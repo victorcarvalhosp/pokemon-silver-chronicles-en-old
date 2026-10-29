@@ -1,0 +1,366 @@
+{
+  "id": 800,
+  "name": "Casa 4",
+  "tilesetId": 47,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48],
+      [48,48,48,48,72,932,932,932,932,932,645,932,932,932,932,932,64,48,48,48],
+      [48,48,48,48,72,940,940,940,940,940,653,940,940,940,940,940,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,72,624,625,624,625,624,625,624,625,624,625,624,64,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,932,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,940,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,2366,2367,2372,0,0,644,645,2247,0,0,2257,0,0,0,0],
+      [0,0,0,0,0,2374,2375,2380,0,0,652,653,2255,2260,2261,2265,0,0,0,0],
+      [0,0,0,0,0,2382,2383,2388,0,0,0,0,2263,2268,2269,2273,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,2238,2204,2205,2238,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,2238,2212,2213,2238,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,2256,0,0,0,0,0,0,0,0,0,2256,0,0,0,0],
+      [0,0,0,0,0,2264,0,0,445,446,447,0,0,0,0,2264,0,0,0,0],
+      [0,0,0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bEu quero arranjar um parceiro, para que possamos participar do Torneio de duplas juntos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 12,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bQuando minha esposa deu a luz a quadrigêmeos eu fiquei muito chocado."
+            },
+            {"cmd":"text","text":"\\bMas, agora, vendo-os brincar juntos, isso me deixa feliz."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 6,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bEu quero arranjar um parceiro, para que possamos participar do Torneio de duplas juntos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bEu quero arranjar um parceiro, para que possamos participar do Torneio de duplas juntos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 7,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bEu quero arranjar um parceiro, para que possamos participar do Torneio de duplas juntos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 12,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk009",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rOh meu Deus! Você está viajando sozinho?\\nMas você é tão jovem!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\rTenho certeza que minhas crianças podem aprender algo com você!"
+            },
+            {"cmd":"text","text":"\\rEu? Sou mestra em fazer Pokébolas!"},
+            {"cmd":"text","text":"\\rTome está aqui que acabei de fazer."},
+            {
+              "cmd": "comment",
+              "lines": ["ARRUMAR ISSO AQUI PRA UMA POKÉBOLA ","DE APRICORN CERTINHO!"]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::NESTBALL"}]}},
+              "then": []
+            },
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk011",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": ["ARRUMAR ISSO AQUI PRA FAZER O EVENTO DE ","UMA POKÉBOLA ","DE APRICORN CERTINHO!"]
+            },
+            {"cmd":"text","text":"\\rMe traga mais Berries que poderei fazer mais!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":250,"x":11,"y":22,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

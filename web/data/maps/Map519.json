@@ -1,0 +1,344 @@
+{
+  "id": 519,
+  "name": "Lavender Town - Name Rater",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,48,72,955,955,955,955,955,955,955,955,955,64,48,48,48,48,48],
+      [48,48,48,48,72,963,963,963,963,963,963,963,963,963,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,72,1201,1201,1201,1201,1201,1201,1201,1201,1201,64,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3989,3990,3991,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4005,4006,4007,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,4068,933,934,935,4068,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,4076,941,942,943,4076,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,487,0,4075,949,950,951,4075,0,487,0,0,0,0,0,0],
+      [0,0,0,0,0,495,0,0,0,0,0,0,0,495,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4069,4070,4071,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4077,4078,4079,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3989,3975,3991,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4005,3983,4007,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":350,"x":10,"y":16,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bHello, hello!\\nI am the official Name Rater!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWant me to rate the nicknames of your Pokémon?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhich Pokémon's nickname should I critique?"},
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "Opens a screen for choosing a Pokémon. The index ",
+                      "is stored in Game Variable 1, and the name in Game ",
+                      "Variable 3."
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "If Game Variable 1 is less than 0, it means the player ",
+                      "has canceled choosing a Pokémon."
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"<","value":0},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bI see.\\nDo come visit again."},
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {"cmd":"comment","lines":["Check for eggs."]},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"egg?","on":{"call":"pbGetPokemon","args":[1]}}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bNow, now... That is merely an Egg!"},
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {"cmd":"comment","lines":["Check for Shadow Pokémon."]},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"shadowPokemon?","on":{"call":"pbGetPokemon","args":[1]}}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bI wouldn't dare critique a Shadow Pokémon's name!"},
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {
+                        "call": "foreign?",
+                        "on": {"call":"pbGetPokemon","args":[1]},
+                        "args": [{"call":"$player"}]
+                      }
+                    },
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bHmmm... \\v[3] it is!"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\bThis is a magnificent nickname! It is impeccably beyond reproach!"
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\bYou'll do well to cherish your \\v[3] now and beyond."
+                      },
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\b\\v[3], is it?\\nThat is a decent nickname!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bBut, would you like me to give it a nicer name?"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHow about it?"},
+                  {
+                    "cmd": "choices",
+                    "choices": ["Yes","No"],
+                    "branches": [
+                      [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\bAh, good. Then, what shall the new nickname be?"},
+                        {
+                          "cmd": "script",
+                          "ruby": "pkmn = pbGetPokemon(1)\nspecies = pkmn.speciesName\npbSet(4, species)\npbTextEntry(\"#{species}'s nickname?\",\n  0, Pokemon::MAX_NAME_SIZE, 5)"
+                        },
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {
+                                "op": "==",
+                                "left": {"call":"pbGet","args":[5]},
+                                "right": {"call":"pbGet","args":[3]}
+                              },
+                              "right": {
+                                "op": "&&",
+                                "left": {"op":"==","left":{"call":"pbGet","args":[5]},"right":""},
+                                "right": {
+                                  "op": "==",
+                                  "left": {"call":"pbGet","args":[3]},
+                                  "right": {"call":"pbGet","args":[4]}
+                                }
+                              }
+                            }
+                          },
+                          "then": [
+                            {"cmd":"comment","lines":["The Pokémon's nickname wasn't changed."]},
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\bI see. You're right, there's no need to change this Pokémon's nickname."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {"cmd":"text","text":"\\bIt already had a superb name!"}
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {
+                                  "op": "||",
+                                  "left": {"op":"==","left":{"call":"pbGet","args":[5]},"right":""},
+                                  "right": {
+                                    "op": "==",
+                                    "left": {"call":"pbGet","args":[5]},
+                                    "right": {"call":"pbGet","args":[4]}
+                                  }
+                                }
+                              },
+                              "then": [
+                                {
+                                  "cmd": "comment",
+                                  "lines": ["Resets the Pokémon's nickname to the species name."]
+                                },
+                                {
+                                  "cmd": "script",
+                                  "ruby": "pkmn = pbGetPokemon(1)\npkmn.name = nil\npbSet(3, pkmn.name)"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\bDone! From now on, this Pokémon shall be known as \\v[3]!"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\bIt looks no different from before, and yet, this is vastly superior!"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {"cmd":"text","text":"\\bHow fortunate for you!"}
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "comment",
+                                  "lines": [
+                                    "Retrieves the Pokémon whose party index is stored in ",
+                                    "Game Variable 1, and changes its name to the name ",
+                                    "stored in Game Variable 5."
+                                  ]
+                                },
+                                {
+                                  "cmd": "script",
+                                  "ruby": "pkmn = pbGetPokemon(1)\npkmn.name = pbGet(5)"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\bDone! From now on, this Pokémon shall be known as \\v[5]!"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\bIt is a better name than before!\\nHow fortunate for you!"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\bI see.\\nDo come visit again."}
+                      ]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bI see.\\nDo come visit again."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

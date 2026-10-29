@@ -1,0 +1,868 @@
+{
+  "id": 696,
+  "name": "Route 104 - House",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"Rota 104","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,52,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,72,391,391,391,391,391,391,391,391,391,391,391,391,64,48,48,48,48],
+      [48,48,72,399,399,399,399,399,399,399,399,399,399,399,399,64,48,48,48,48],
+      [48,48,72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,64,48,48,48,48],
+      [48,48,72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,64,48,48,48,48],
+      [48,48,72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,64,48,48,48,48],
+      [48,48,72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,64,48,48,48,48],
+      [48,48,72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,64,48,48,48,48],
+      [48,48,72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,64,48,48,48,48],
+      [48,48,72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,64,48,48,48,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,642,643,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4139,4140,4141,4142,4143,650,651,0,0,0,4136,4137,0,0,0,0,0],
+      [0,0,0,4147,4148,4149,4150,4151,0,0,0,0,0,4144,4145,0,0,0,0,0],
+      [0,0,0,4155,4156,4157,0,0,0,0,0,0,0,4152,4153,0,0,0,0,0],
+      [0,0,0,0,0,0,3003,3004,3004,3004,3004,3005,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3011,3012,3012,3012,3012,3013,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3019,3020,3020,3020,3020,3021,0,0,0,0,0,0,0,0],
+      [0,0,0,4126,4127,0,0,0,0,0,0,0,0,4120,4121,0,0,0,0,0],
+      [0,0,0,4134,4135,0,0,0,0,0,0,0,0,4128,4129,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3443,3444,3445,3446,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3451,3452,3453,3454,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "BLACKBELT_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sorry for the mess, we just moved here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "We're training together for the Double Battle Tournament, so we didn't have time to organize things."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Oh, I have an idea! Let's have a Double Battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "To make things more interesting, If you beat us, we'll give you a Pokémon as the prize."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"So... do you want to help us on our training?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {"switch":431,"value":true},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Ok, let's go!"},
+                      {"cmd":"comment","lines":["EndSpeech: O que..."]},
+                      {"cmd":"call","fn":"setBattleRule","args":["double"]},
+                      {"cmd":"call","fn":"setBattleRule","args":["backdrop","battle1"]},
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "call": "TrainerBattle.start",
+                            "args": ["BLACKBELT","Thomas","BLACKBELT_2","Silas"]
+                          }
+                        },
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "As we promised, you can now choose a Pokémon to have as a prize."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Which one do you want?"},
+                          {
+                            "cmd": "choices",
+                            "choices": ["Sawk, The Karate Pokémon.","Throh, The Judo Pokémon."],
+                            "branches": [
+                              [
+                                {"cmd":"call","fn":"pbAddPokemon","args":["SAWK",8]},
+                                {"cmd":"switches","from":870,"to":870,"value":true}
+                              ],
+                              [
+                                {"cmd":"call","fn":"pbAddPokemon","args":["THROH",8]},
+                                {"cmd":"switches","from":871,"to":871,"value":true}
+                              ]
+                            ],
+                            "cancel": 1
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {"switch":431,"value":true},
+                            "then": [{"cmd":"call","fn":"pbIncreasePartnerHearts","args":[2]}]
+                          },
+                          {"cmd":"call","fn":"completeQuest","args":["DoubleBattleBlackbelt"]},
+                          {"cmd":"switches","from":869,"to":869,"value":true},
+                          {"cmd":"selfSwitch","ch":"A","value":true}
+                        ],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {
+                                "op": "!",
+                                "value": {"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}
+                              }
+                            },
+                            "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                          }
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+                    ],
+                    "else": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "It doesn't seem like you both are battling together... \\nTalk with your partner and then come back here."
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": "!",
+                            "value": {"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}
+                          }
+                        },
+                        "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Come back later then..."},
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {"op":"!","value":{"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}}
+                    },
+                    "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":869,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "BLACKBELT_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We'll keep training together for the Double Battle Tournament."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I wish to battle with you both again in the future!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sorry for the mess, we just moved here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "We're training together for the Double Battle Tournament, so we didn't have time to organize things."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Oh, I have an idea! Let's have a Double Battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "To make things more interesting, If you beat us, we'll give you a Pokémon as the prize."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"So... do you want to help us on our training?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {"switch":431,"value":true},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Ok, let's go!"},
+                      {"cmd":"comment","lines":["EndSpeech: O que..."]},
+                      {"cmd":"call","fn":"setBattleRule","args":["double"]},
+                      {"cmd":"call","fn":"setBattleRule","args":["backdrop","battle1"]},
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "call": "TrainerBattle.start",
+                            "args": ["BLACKBELT","Thomas","BLACKBELT_2","Silas"]
+                          }
+                        },
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "As we promised, you can now choose a Pokémon to have as a prize."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Which one do you want?"},
+                          {
+                            "cmd": "choices",
+                            "choices": ["Sawk, The Karate Pokémon.","Throh, The Judo Pokémon."],
+                            "branches": [
+                              [
+                                {"cmd":"call","fn":"pbAddPokemon","args":["SAWK",8]},
+                                {"cmd":"switches","from":870,"to":870,"value":true}
+                              ],
+                              [
+                                {"cmd":"call","fn":"pbAddPokemon","args":["THROH",8]},
+                                {"cmd":"switches","from":871,"to":871,"value":true}
+                              ]
+                            ],
+                            "cancel": 1
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {"switch":431,"value":true},
+                            "then": [{"cmd":"call","fn":"pbIncreasePartnerHearts","args":[2]}]
+                          },
+                          {"cmd":"call","fn":"completeQuest","args":["DoubleBattleBlackbelt"]},
+                          {"cmd":"switches","from":869,"to":869,"value":true},
+                          {"cmd":"selfSwitch","ch":"A","value":true}
+                        ],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {
+                                "op": "!",
+                                "value": {"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}
+                              }
+                            },
+                            "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                          }
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+                    ],
+                    "else": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "It doesn't seem like you both are battling together... \\nTalk with your partner and then come back here."
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": "!",
+                            "value": {"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}
+                          }
+                        },
+                        "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Come back later then..."},
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {"op":"!","value":{"call":"isQuestActive?","args":["DoubleBattleBlackbelt"]}}
+                    },
+                    "then": [{"cmd":"call","fn":"activateQuest","args":["DoubleBattleBlackbelt"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":869,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We'll keep training together for the Double Battle Tournament."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I wish to battle with you both again in the future!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 19,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":448,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {
+              "cmd": "text",
+              "text": "\\bOlá! Meu amigo que trabalha na Devon Corps me falou que vocês viriam aqui!"
+            },
+            {"cmd":"text","text":"\\bEu posso levá-los até a Cidade de Dewford!"},
+            {"cmd":"text","text":"\\bDesejam ir até Dewford?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"\\bVenham comigo jovens."},
+                  {"cmd":"transfer","map":206,"x":12,"y":51,"direction":4,"fade":true},
+                  {"cmd":"switches","from":424,"to":424,"value":true}
+                ],
+                [{"cmd":"text","text":"\\bVoltem quando quiserem."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":424,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":449,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":425,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 8,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":206,"x":17,"y":50,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 19,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":448,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "wingull",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnLeft"},{"move":"turnDown"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Wingull:Prr prr..."},
+            {"cmd":"playSe","audio":{"name":"278Cry","volume":80,"pitch":100}}
+          ]
+        },
+        {
+          "condition": {"switch1":424,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":449,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":425,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 13,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "538",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["THROH"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["THROH"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Throh: Wagh!!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 12,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "538",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["THROH"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["THROH"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Throh: Wagh!!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "539",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["SAWK"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["SAWK"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sawk: Wagh!!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 4,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "539",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["SAWK"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["SAWK"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sawk: Wagh!!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 8,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "538",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["THROH"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["THROH"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Throh: Wagh!!"}
+          ]
+        }
+      ]
+    }
+  ]
+}

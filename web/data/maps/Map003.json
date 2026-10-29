@@ -1,0 +1,1225 @@
+{
+  "id": 3,
+  "name": "\\PN's House",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 21,
+  "autoplayBgm": true,
+  "bgm": {"name":"Casa","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,52,76,76,76,76,76,60,76,76,76,76,76,76,76,56,48,48,48],
+      [48,48,72,881,882,882,882,883,80,881,882,882,882,882,882,883,64,48,48,48],
+      [48,48,72,889,890,890,890,891,92,889,890,890,890,890,890,891,64,48,48,48],
+      [48,48,72,3736,3736,3736,3736,3736,880,3736,3736,3736,3729,3729,3736,3736,64,48,48,48],
+      [48,48,72,3737,3729,3729,3729,3729,888,3729,3729,3729,3729,3729,3729,3729,64,48,48,48],
+      [48,48,72,3737,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,64,48,48,48],
+      [48,48,72,3737,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,64,48,48,48],
+      [48,48,72,3737,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,64,48,48,48],
+      [48,48,72,3737,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,3729,64,48,48,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,642,643,0,0,0,0,0,642,643,1318,1319,0,0,0,0],
+      [0,0,0,584,585,650,651,558,0,552,958,959,650,651,1326,1327,0,0,0,0],
+      [0,0,0,592,593,602,565,566,0,560,966,967,0,0,1334,1335,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1343,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,570,752,753,570,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,570,760,761,570,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,594,557,0,0,0,0,0,0,0,1302,1303,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1310,1311,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,487,0,0,0,0,0,0,0,0,0,0,0,487,0,0,0,0],
+      [0,0,0,495,0,0,0,0,0,0,0,0,0,0,0,495,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 5,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "190",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["AIPOM"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["AIPOM"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Aipom: Ai-pom!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 6,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":1,"x":26,"y":11,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 14,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnRight"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"upperRight"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":2,"x":12,"y":5,"direction":0,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [{"move":"left"},{"move":"throughOff"},{"move":"alwaysOnTopOff"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 12,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"variables","from":120,"to":120,"op":"set","value":0},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":1.0}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rHi \\PN!\\nYou're finally awake."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rOur acquaintance, Professor Elm, is looking for you!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rHe said he had a favor to ask of you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rYou know where the lab is, right?\\nIt's right next door to us."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOh! I almost forgot!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rYour Pokégear already arrived from the repair store."
+            },
+            {"cmd":"call","fn":"pbGetKeyItem","args":["iconPokegear"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rGuess what?\\nYou can use the Pokégear to make a phone call, too."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rJust power the Pokégear and touch the telephone button, OK?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rThe names of the people you can call are automatically registered."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rJust select one to give him or her a call."},
+            {"cmd":"call","fn":"pbPhoneRegisterNPC","args":[53,"Mother",3]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rWow, I can't believe it's so easy to make a phone call!"
+            },
+            {"cmd":"assign","target":"$player.has_pokegear","args":[],"op":"=","value":true},
+            {"cmd":"switches","from":473,"to":473,"value":true},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rThe Pokémon Gear...\\nor Pokégear, as it's often called, is what every trainer should have."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"left"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]Mom: \\rProfessor Elm is waiting for you.\\nGo talk with him son."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOh! \\PN!\\nThat's a cute Pokémon you have."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rProfessor Elm must have given it to you?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rOh, Professor Elm has a task for you, you say?\\nWhat kind of task?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\r..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rI see. That sounds a little difficult."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rBut when someone makes that kind of request of you, it must be important!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rRemember you can always check your task log inside the Pokégear."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOh, that's right!\\nI have something for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rTake the Running Shoes, it'll help on your journey!"
+            },
+            {"cmd":"call","fn":"pbGetKeyItem","args":["iconRunningShoes"]},
+            {"cmd":"assign","target":"$player.has_running_shoes","args":[],"op":"=","value":true},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rTo run with it just press the button Z."},
+            {"cmd":"switches","from":983,"to":983,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":983,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rWhat's wrong?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rDid you forget how to get to Mr. Pokémon's house?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rGo north on Route 30.\\nTake care, dear."}
+          ]
+        },
+        {
+          "condition": {"switch1":38,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\r...\\nSo, you're leaving on an adventure..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOk! I'll help, too.\\nBut what can I do for you?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rI know!\\nI have something for you!"},
+            {"cmd":"if","cond":{"script":{"call":"pbReceiveItem","args":["EXPSHARE"]}},"then":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rEquip this in a Pokémon and it will share the EXP Points gained."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOk, be careful out there."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rPokémon are your friends.\\nWhen you work as a team, you can accomplish anything!\\nNow, go on!"
+            },
+            {"cmd":"switches","from":39,"to":39,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":39,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"label","name":"Generic dialog"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rHi! Welcome home!\\nYou're doing fine, I see."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rI've kept your room tidy and clean."},
+            {"cmd":"commonEvent","id":79},
+            {"cmd":"label","name":"End"}
+          ]
+        },
+        {
+          "condition": {"switch1":166,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rHi, \\PN! I saw you on TV, congratulations on winning the Indigo Pokémon League, my dear!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rProfessor Elm told me that he has something to give you!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"left"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"commonEvent","id":79},
+            {"cmd":"selfSwitch","ch":"B","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rProfessor Elm told me that he has something to give you.\\nWhy don't you visit his lab?"
+            },
+            {"cmd":"commonEvent","id":79}
+          ]
+        },
+        {
+          "condition": {"switch1":225,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":1.0}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"},{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rHi dear!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rWe had a great time yesterday!\\nI'm so proud of you!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rI wish you good luck on your new journey in Kanto!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rBut look at these clothes...\\nThey are old and torn..."
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":140,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facemom]\\rPlease wear these new clothes, they will look good on you!"
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facemom]\\rPlease wear this, that's the most attractive fashion!"
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbUnlockOutfit","args":[3]},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Changed-Clothes_3","volume":80,"pitch":100}},
+            {"cmd":"assign","target":"$player.outfit","args":[],"op":"=","value":3},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":2.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rMuch better!\\nYou can always change clothes on your bedroom wardrobe if you're looking for a change."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rGood luck on your new journey my honey!"},
+            {"cmd":"switches","from":226,"to":226,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":226,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rKeep going on your journey, my son!"},
+            {"cmd":"commonEvent","id":79}
+          ]
+        },
+        {
+          "condition": {"switch1":816,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"showAnimation","character":0,"animation":3},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rOh, there you are, dear!"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"down"},{"move":"turnLeft"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemom]\\rLooks like you had a lot of fun in Kanto."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rYou know, with all your recent adventures, I realized you might need some more appropriate clothing for the summer months ahead."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rI got you a new outfit.\\nIt's lightweight and breathable - perfect for when the temperatures rise."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rWhy don't you try it on?\\nIt should be much more comfortable than what you're wearing now!"
+            },
+            {"cmd":"call","fn":"pbUnlockOutfit","args":[4]},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Changed-Clothes_3","volume":80,"pitch":100}},
+            {"cmd":"assign","target":"$player.outfit","args":[],"op":"=","value":4},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":2.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rOh, you look wonderful! So refreshing and ready for adventure!\\nYou can always change clothes on your bedroom wardrobe if you're looking for a change."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rTake care of yourself, dear. And don't forget to call your mother once in a while!\\nI love hearing about all your adventures."
+            },
+            {"cmd":"switches","from":818,"to":818,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":818,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mama golda i crystal",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemom]\\rTake care of yourself, dear. And don't forget to call your mother once in a while!\\nI love hearing about all your adventures."
+            },
+            {"cmd":"commonEvent","id":79}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 9,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "DAD",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "if",
+              "cond": {"switch":474,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":140,"value":true},
+                  "then": [
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facedad]Dad: \\bHi champ! What a nice Pokémon you have now!"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facedad]Dad: \\bHi sweetheart! What a nice Pokémon you have now!"
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":140,"value":true},
+                  "then": [{"cmd":"text","text":"\\f[facedad]Dad: \\bHi champ! Are you having a good day?"}],
+                  "else": [
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facedad]Dad: \\bHi sweetheart! Are you having a good day?"
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facedad]\\bWhen I was a kid I wanted to be a Pokémon Trainer too.\\nBut it was complicated back in the day..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facedad]\\b..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facedad]\\bI'm happy you can have your own Pokémon now!\\nThat's what matters!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facedad]\\bCoff! Coff!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facedad]\\bI'm just getting some rest now, but will get back to work asap!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":736,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":958,"switch2":43,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "DAD",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "if",
+              "cond": {"switch":140,"value":true},
+              "then": [{"cmd":"text","text":"\\f[facedad]Dad: \\bHi champ!"}],
+              "else": [{"cmd":"text","text":"\\f[facedad]Dad: \\bHi sweetheart!"}]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facedad]\\bCoff! Coff!"},
+            {
+              "cmd": "if",
+              "cond": {"switch":816,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facedad]\\bCongrats on winning the Indigo League once again."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facedad]\\bEven my boss stopped working to see your fight against Lance, it was really memorable."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facedad]\\bI'm very proud of you!"}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":225,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":140,"value":true},
+                      "then": [
+                        {
+                          "cmd": "text",
+                          "text": "\\f[facedad]\\bEveryone at work saw your battles in the World Cup, champ."
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "text",
+                          "text": "\\f[facedad]\\bEveryone at work saw your battles in the World Cup, sweetheart."
+                        }
+                      ]
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facedad]\\bI felt good to stop working once in a while to watch you on TV!"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[facedad]\\bI'm very proud of you!"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":750,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[facedad]\\bCongrats on winning the Indigo League."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[facedad]\\bEven my boss stopped working to see your fight against Lance, it was really memorable."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[facedad]\\bI'm very proud of you!"}
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[facedad]\\bPlease tell me all the news about your journey!"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[facedad]\\b..."},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[facedad]\\bOh! That's really amazing!"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facedad]\\bI'll give you a little something to help."},
+            {"cmd":"gold","op":"add","value":1000},
+            {"cmd":"text","text":"\\PN received $1000!"},
+            {"cmd":"playSe","audio":{"name":"ItemGet","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facedad]\\bI had to work a lot for this money, so you need to spend it wisely."
+            },
+            {"cmd":"variables","from":120,"to":120,"op":"add","value":1},
+            {"cmd":"call","fn":"pbSetEventTime","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "DAD",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "if",
+              "cond": {"switch":140,"value":true},
+              "then": [{"cmd":"text","text":"\\f[facedad]Dad: \\bHi champ!"}],
+              "else": [{"cmd":"text","text":"\\f[facedad]Dad: \\bHi sweetheart!"}]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facedad]\\bCoff! Coff!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facedad]\\bI had to work a lot for this money, so you need to spend it wisely."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":23,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"selfSwitch","ch":"A","value":false},
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        },
+        {
+          "condition": {"switch1":951,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "id": 66,
+  "name": "Goldenrod City - Bike Shop",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,52,76,76,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,923,923,923,923,64,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,931,931,931,931,64,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,50,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,922,923,923,923,923,936,923,924,0,0,0,0,0,0],
+      [0,0,0,0,0,0,930,931,931,906,907,944,931,932,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,898,898,898,898,898,898,898,898,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,91,81,93,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,929,908,909,0,908,909,0,0,0,0,0,0],
+      [0,0,0,0,0,0,917,918,937,0,0,1083,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,925,926,921,0,921,1091,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,915,0,1099,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,906,907,0,0,916,1107,736,737,0,0,0,0,0,0],
+      [0,0,0,0,0,0,906,907,0,0,0,0,744,745,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,908,909,0,0,0,0,0,929,0,0,0,0,0,0],
+      [0,0,0,0,0,0,908,909,0,0,0,0,908,909,0,0,0,0,0,0],
+      [0,0,0,0,0,0,929,0,1100,1101,1102,0,915,916,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 12,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Sigh... I opened a branch here, but I can't sell my Bicycles.\\nWhy is that?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Could you ride a a Bicycle and advertise for me?"},
+            {
+              "cmd": "choices",
+              "choices": ["YES","NO"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Really? Great!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Give me your name and phone number and I'll loan you a Bicycle."
+                  },
+                  {
+                    "cmd": "choices",
+                    "choices": ["YES","NO"],
+                    "branches": [
+                      [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"pbGetKeyItem","args":["BICYCLE"]}},
+                          "then": []
+                        },
+                        {"cmd":"selfSwitch","ch":"A","value":true}
+                      ],
+                      [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"Sigh...\\nOh, for the kindness of people..."}
+                      ]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Sigh...\\nOh, for the kindness of people..."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"The main shop is at Cerulean back in Kanto."},
+            {"cmd":"text","text":"Say hello to the shop manager if you happen to go there!"},
+            {"cmd":"text","text":"Our Bicycles are first-rate!\\nYou can ride them in Kanto, too!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":56,"x":52,"y":53,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

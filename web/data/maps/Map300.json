@@ -1,0 +1,215 @@
+{
+  "id": 300,
+  "name": "Route 5 - House",
+  "tilesetId": 25,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,405,405,405,405,405,405,405,405,405,405,64,48,48,48,48],
+      [48,48,48,48,72,413,413,413,413,413,413,413,413,413,413,64,48,48,48,48],
+      [48,48,48,48,72,400,400,400,400,400,400,400,400,400,400,64,48,48,48,48],
+      [48,48,48,48,72,400,385,385,385,385,385,385,385,385,385,64,48,48,48,48],
+      [48,48,48,48,72,400,385,385,385,385,385,385,385,385,385,64,48,48,48,48],
+      [48,48,48,48,72,400,385,385,385,385,385,385,385,385,385,64,48,48,48,48],
+      [48,48,48,48,72,400,385,385,385,385,385,385,385,385,385,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,483,0,437,438,0,468,464,465,0,0,0,0,0],
+      [0,0,0,0,0,466,467,491,0,445,446,0,476,472,473,0,0,0,0,0],
+      [0,0,0,0,0,474,475,499,0,0,0,0,484,480,481,0,0,0,0,0],
+      [0,0,0,0,0,0,4999,4991,4991,4991,4991,4991,4991,4991,4991,0,0,0,0,0],
+      [0,0,0,0,0,0,4983,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,439,4983,0,0,0,0,0,398,0,0,0,0,0,0,0],
+      [0,0,0,0,0,447,4983,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,466,467,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,474,475,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,398,493,494,398,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,398,501,502,398,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,584,585,586,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":379,"x":23,"y":25,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Eeyaaaah!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I sense a sinister shadow hovering over you.\\nTake this to ward it off!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["CLEANSETAG"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"You were in mortal danger, but you're protected now."},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You were in mortal danger, but you're protected now."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 14,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk011",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My grandma is into warding off what she believes to be evil spirits.\\nI'm sorry that she startled you."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

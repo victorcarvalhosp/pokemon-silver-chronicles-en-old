@@ -1,0 +1,411 @@
+{
+  "id": 625,
+  "name": "Kumquat Island - Dept. Store",
+  "tilesetId": 2,
+  "width": 20,
+  "height": 19,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,72,1099,1099,1099,1099,1099,1099,1099,1099,64,48,48],
+      [48,48,48,48,48,48,48,48,72,1107,1107,1107,1107,1107,1107,1107,1107,64,48,48],
+      [48,48,48,48,48,48,52,76,86,1090,1090,1090,1090,1090,1090,1090,1090,88,76,76],
+      [48,48,48,48,48,48,72,1099,1099,1099,1099,1090,1090,1090,1090,1090,1099,1099,1099,1099],
+      [48,48,48,48,48,48,72,1107,1107,1107,1107,1090,1090,1090,1090,1090,1107,1107,1107,1107],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080],
+      [48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,1099,1099,1099,1100,1101,1102,1099,1099,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1251,1252,1107,1108,1109,1110,1107,1107,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1259,1260,0,1125,1126,1127,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1067,1269,0,0,0,0,1066,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1075,0,0,0,0,0,1074,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1090,1090,1090,1090,1090,0,0,0,0],
+      [0,0,0,0,0,0,0,439,0,1080,1092,1090,1090,1090,1090,1090,1092,0,0,0],
+      [0,0,0,0,0,0,0,447,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,0],
+      [0,0,0,0,0,0,0,0,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,0],
+      [0,0,0,0,0,0,0,1174,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,1173],
+      [0,0,0,0,0,0,0,1182,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,1181],
+      [0,0,0,0,0,0,0,1190,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,1189],
+      [0,0,0,0,0,0,0,439,0,1090,1090,1090,1090,1090,1090,1090,1090,1090,0,439],
+      [0,0,0,0,0,0,0,447,0,0,0,0,0,0,0,0,0,0,0,447],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,384,384,0,0,0,0,0,0,0,420,0,0,384,384],
+      [0,0,0,0,0,0,384,384,0,0,0,0,0,0,0,428,0,0,384,384],
+      [0,0,0,0,0,0,384,384,0,0,0,0,0,1111,0,0,0,0,384,384],
+      [0,0,0,0,0,0,384,1099,1099,1099,1067,0,0,0,0,0,1066,1099,0,0],
+      [0,0,0,0,0,0,384,1107,1107,1107,1075,0,0,0,0,0,1074,1107,439,439],
+      [0,0,0,0,0,0,384,1080,1080,1080,1094,0,0,0,0,0,1093,0,447,447],
+      [0,0,0,0,0,0,384,0,1086,1092,1094,0,0,0,0,0,1093,1092,1085,0],
+      [0,0,0,0,0,0,384,0,1094,0,1132,1133,1133,1133,1133,1133,1134,0,1093,0],
+      [0,0,0,0,0,0,384,0,1094,0,1120,1121,1121,1121,1121,1121,1122,0,1093,0],
+      [0,0,0,0,0,0,384,0,1094,0,1136,0,0,0,0,0,1138,0,1093,0],
+      [0,0,0,0,0,0,384,0,1094,0,1128,1133,1133,1143,1133,1133,1139,0,1093,0],
+      [0,0,0,0,0,0,384,0,1094,0,1144,1121,1121,1123,1121,1121,1147,0,1093,0],
+      [0,0,0,0,0,0,384,0,1094,0,0,0,0,0,0,0,0,0,1093,0],
+      [0,0,0,0,0,0,384,0,1095,1091,1091,1091,1091,1091,1091,1091,1091,1091,1087,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,584,585,586,0,0,0,0,0],
+      [0,0,0,0,0,0,384,384,0,0,0,384,592,593,594,384,0,0,0,384],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 13,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk018",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hello! Welcome to the Kumquat Department Store."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The sign beside me says what’s on each floor."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 16,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"1st floor: Reception"},
+            {"cmd":"text","text":"2nd floor: Trainer's Store"},
+            {"cmd":"text","text":"3rd floor: Lan House"},
+            {"cmd":"text","text":"4th floor: Gifts"},
+            {"cmd":"text","text":"5th floor: Pharmacy"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 19,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":29,"to":29,"op":"set","value":1}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnRight"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"upperLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":626,"x":9,"y":2,"direction":6,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 15,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"1st floor: Reception"}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 13,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":543,"x":37,"y":27,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 13,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":630,"x":7,"y":10,"direction":8,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

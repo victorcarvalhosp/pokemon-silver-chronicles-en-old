@@ -1,0 +1,264 @@
+{
+  "id": 801,
+  "name": "FanClub",
+  "tilesetId": 47,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,72,643,643,643,643,643,643,643,643,643,643,643,643,64,48,48,48,48,48],
+      [48,72,651,651,651,651,651,651,651,651,651,651,651,651,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,72,624,625,624,625,624,625,624,625,624,625,624,625,64,48,48,48,48,48],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,644,645,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,652,653,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,673,673,0,0,0,0,0,0,0,672,673,673,0,0,0,0,0,0],
+      [0,0,681,681,0,0,0,0,0,0,0,680,681,681,0,0,0,0,0,0],
+      [0,0,689,689,0,413,414,414,414,414,415,688,689,689,0,0,0,0,0,0],
+      [0,0,0,0,0,421,422,422,422,422,423,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,421,422,422,422,422,423,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,429,430,430,430,430,431,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,445,446,447,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,2342,2343,2271,0,644,645,644,645,2372,0,0,0,0,0,0,0,0,0],
+      [0,0,2350,2351,2279,0,652,653,652,653,2380,0,2240,2242,0,0,0,0,0,0],
+      [0,0,2358,2359,2287,0,0,0,0,0,2388,0,2248,2250,0,0,0,0,0,0],
+      [0,0,0,0,0,2238,2216,2217,2216,2217,2239,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2224,2225,2224,2225,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,2239,0,0,0,0,0,0,0,0,0,0],
+      [0,0,673,673,674,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,681,681,682,0,0,0,0,0,0,0,2247,2271,0,0,0,0,0,0],
+      [0,0,2240,2242,690,0,0,0,0,0,0,0,2255,2279,0,0,0,0,0,0],
+      [0,0,2248,2250,0,0,2204,2205,2204,2205,0,0,2263,2287,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2212,2213,2212,2213,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk005",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rMeu treinador favorito é..."},
+            {"cmd":"text","text":"\\rLegal..."},
+            {"cmd":"text","text":"\\rForte..."},
+            {"cmd":"text","text":"\\rE muito simpático..."},
+            {"cmd":"text","text":"\\rEspero que aqui tenha algum treinador assim..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk025",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bOuvi algo sobre um importante treinador de outra região estar em Hoenn."
+            },
+            {"cmd":"text","text":"\\rVocê sabe quem é esse treinador?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 8,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bTodo mundo aqui é um grande fã de batalhas Pokémon."},
+            {"cmd":"text","text":"\\bNós discutimos sobre quem é o melhor de todos os treinadores."},
+            {"cmd":"text","text":"\\bHey, você é \\PN não é?!\\nEu sou seu fã!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 5,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rNão importa o que todos digam, meu treinador favorito é o líder do Ginásio de Dewford, Brawly!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 7,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":250,"x":39,"y":14,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

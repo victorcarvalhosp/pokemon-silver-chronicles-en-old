@@ -1,0 +1,312 @@
+{
+  "id": 237,
+  "name": "S. S. Aqua",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"SSAqua","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,3697,3697,3697,3697,3697,3697,3697,3697,3697,3697,0,0,0,0,0,0],
+      [0,0,0,0,3705,3705,3705,3705,3705,3705,3705,3705,3705,3705,0,0,0,0,0,0],
+      [0,0,0,0,3692,3692,3692,3692,3692,3692,3692,3692,3692,3692,0,0,0,0,0,0],
+      [0,0,0,0,3692,3692,3692,3692,3692,3692,3692,3692,3692,3692,0,0,0,0,0,0],
+      [0,0,0,0,3692,3692,3692,3692,3692,3692,3692,3692,3692,3692,0,0,0,0,0,0],
+      [0,0,0,0,3692,3692,3692,3692,3692,3692,3692,3692,3692,3692,0,0,0,0,0,0],
+      [0,0,0,0,3692,3692,3692,3692,3692,3692,3692,3692,3692,3692,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,2555,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,2563,2564,2565,623,623,623,623,623,623,0,0,0,0,0,0,0],
+      [0,0,0,0,2571,2572,0,631,631,631,631,631,631,0,0,0,0,0,0,0],
+      [0,0,0,0,2579,2580,2581,0,0,0,3692,1060,1060,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,1060,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,3692,3692,0,0,0,0,0,0,0],
+      [0,0,0,0,1057,0,0,0,0,0,0,3692,3692,1056,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":235,"x":27,"y":14,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "",
+      "x": 13,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm the best Sailor from here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I didn't win the Indigo League only because I spend all my time traveling..."
+            },
+            {"cmd":"comment","lines":["EndSpeech: Apesar da vitória não levo fé em você..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["SAILOR","Bred"]}},
+              "then": [
+                {"cmd":"variables","from":42,"to":42,"op":"add","value":1},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I was always the best Sailor, but I never won anything..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I don't want the same thing to happen to you."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Take this."},
+                {"cmd":"call","fn":"pbReceiveItem","args":["GROUNDIUMZ"]},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I was always the best Sailor, but I never won anything..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I don't want the same thing to happen to you."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Character (45)",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["MAXELIXIR"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 14,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"screenShake","power":2,"speed":1,"seconds":0.05}]
+        },
+        {
+          "condition": {"switch1":154,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

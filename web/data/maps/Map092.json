@@ -1,0 +1,288 @@
+{
+  "id": 92,
+  "name": "Ecruteak City - House",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,52,76,76,56,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,431,431,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,431,431,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,50,68,68,49,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,384,384,384,384,384,384,384,0,0,0,0,0,0],
+      [0,0,0,0,0,0,392,392,392,392,392,392,392,392,0,0,0,0,0,0],
+      [0,0,0,0,0,0,322,308,308,308,308,308,308,324,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,292,316,316,296,288,312,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,312,752,753,304,288,312,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,312,760,761,304,288,312,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,290,308,308,289,288,312,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,288,288,288,288,288,312,0,0,0,0,0,0],
+      [0,0,0,0,0,0,328,316,316,316,316,316,316,326,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,401,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,584,585,594,0,409,0,552,551,0,0,0,0,0,0],
+      [0,0,0,0,0,0,592,593,602,0,0,0,560,559,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,521,652,753,521,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,330,0,521,760,761,521,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,329,321,321,321,321,321,321,333,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer055c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Ah. You're on an adventure with your Pokémon?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Well, what's an adventure without treasure hunting?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Am I right, or am I right?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Good! You understand the true spirit of adventure."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"I like that! Take this with you."},
+                  {"cmd":"call","fn":"pbReceiveItem","args":["DOWSINGMACHINE"]},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"There are many items lying about that aren't obvious."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Touch the Downsing Machine for a while to see if it makes a high-pitched noise."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"When it does, you know there is an intem near you."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Walking as you use it may make it easy to find items."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Oh yeah--I heard there are items in Ecruteak's Burned Tower."
+                  },
+                  {"cmd":"selfSwitch","ch":"A","value":true}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Oh... To each his own, I suppose..."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer055c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"There are many items lying about that aren't obvious."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Touch the Downsing Machine for a while to see if it makes a high-pitched noise."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"When it does, you know there is an intem near you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Walking as you use it may make it easy to find items."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Oh yeah--I heard there are items in Ecruteak's Burned Tower."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"History of Ecruteak"},
+            {"cmd":"text","text":"Want to read it?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "text",
+                    "text": "In Ecruteak, there were two towers.\\nEach tower was the roost of powerful flying Pokémon."
+                  },
+                  {"cmd":"text","text":"But one of the towers burned to the ground."},
+                  {"cmd":"text","text":"The two Pokémon haven't been seen since..."},
+                  {"cmd":"text","text":"Keep reading?"},
+                  {
+                    "cmd": "choices",
+                    "choices": ["Yes","No"],
+                    "branches": [
+                      [
+                        {
+                          "cmd": "text",
+                          "text": "Ecruteak was also home to three Pokémon that raced around the town."
+                        },
+                        {
+                          "cmd": "text",
+                          "text": "They were said to have been born of water, lightning, and fire."
+                        },
+                        {"cmd":"text","text":"But they could not contain their excessive power."},
+                        {
+                          "cmd": "text",
+                          "text": "So they say the three ran like the wind off into the grassland."
+                        }
+                      ],
+                      []
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 10,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":83,"x":17,"y":35,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

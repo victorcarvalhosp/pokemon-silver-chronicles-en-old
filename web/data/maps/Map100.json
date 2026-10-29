@@ -1,0 +1,512 @@
+{
+  "id": 100,
+  "name": "Router 39 - Moomoo Farm",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,430,430,430,430,430,430,430,430,0,0,0,0,0,0],
+      [0,0,0,0,0,0,438,438,438,438,438,438,438,438,0,0,0,0,0,0],
+      [0,0,0,0,0,0,423,423,423,423,423,423,423,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,422,423,423,423,423,423,422,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,423,423,423,423,423,423,423,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,423,423,423,423,422,423,423,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,423,423,423,423,423,422,423,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,422,423,423,423,423,423,423,423,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,852,0,0,835,836,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,860,0,0,843,844,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,845,846,847,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,853,854,855,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,861,862,863,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,984,984,984,0,0,984,984,984,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is sick..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"She needs lots of Oran Berries."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!","value":{"call":"isQuestActive?","args":["SickMiltank"]}}},
+              "then": [{"cmd":"call","fn":"activateQuest","args":["SickMiltank"]}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":688,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is sick..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "She's feeling a bit better, but not healthy yet...\\nI wonder what the needs to recover..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":71,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Shocking!\\nMoomoo is totally healthy again!\\nI'll give these for your trouble."
+            },
+            {"cmd":"call","fn":"pbReceiveItem","args":["MOOMOOMILK",2]},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is totally healthy again!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is sick..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"She needs lots of Oran Berries."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!","value":{"call":"isQuestActive?","args":["SickMiltank"]}}},
+              "then": [{"cmd":"call","fn":"activateQuest","args":["SickMiltank"]}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":688,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is sick..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "She's feeling a bit better, but not healthy yet...\\nI wonder what the needs to recover..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":71,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Shocking!\\nMoomoo is totally healthy again!\\nI'll give these for your trouble."
+            },
+            {"cmd":"call","fn":"pbReceiveItem","args":["MOOMOOMILK",2]},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Moomoo is totally healthy again!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "241_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"241Cry","volume":55,"pitch":100}},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"MILTANK:..Moo..."},
+            {"cmd":"text","text":"Its cry is weak..."},
+            {"cmd":"text","text":"Give an Oran Berry to MILTANK?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {"op":">","left":{"call":"$bag.quantity","args":["ORANBERRY"]},"right":0}
+                    },
+                    "then": [
+                      {"cmd":"playMe","audio":{"name":"PkmRS-Berry","volume":100,"pitch":100}},
+                      {"cmd":"text","text":"\\PN gave an Oran Berry to Miltank."},
+                      {"cmd":"text","text":"MILTANK became a little healthier."},
+                      {"cmd":"call","fn":"$bag.remove","args":["ORANBERRY"]},
+                      {"cmd":"switches","from":688,"to":688,"value":true},
+                      {"cmd":"call","fn":"advanceQuestToStage","args":["SickMiltank",2]}
+                    ],
+                    "else": [{"cmd":"text","text":"\\PN has no Oran Berries..."}]
+                  }
+                ],
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"op":"!","value":{"call":"isQuestActive?","args":["SickMiltank"]}}},
+                    "then": [{"cmd":"call","fn":"activateQuest","args":["SickMiltank"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":688,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "241_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"241Cry","volume":55,"pitch":100}},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"MILTANK:..Moo..."},
+            {"cmd":"text","text":"Its cry is still weak..."},
+            {"cmd":"text","text":"Give an Revival Herb to MILTANK?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {"op":">","left":{"call":"$bag.quantity","args":["REVIVALHERB"]},"right":0}
+                    },
+                    "then": [
+                      {"cmd":"playMe","audio":{"name":"PkmRS-Berry","volume":100,"pitch":100}},
+                      {"cmd":"text","text":"\\PN gave an Revival Herb  to Miltank."},
+                      {"cmd":"text","text":"MILTANK became totally healthy!"},
+                      {"cmd":"call","fn":"$bag.remove","args":["REVIVALHERB"]},
+                      {"cmd":"switches","from":71,"to":71,"value":true},
+                      {"cmd":"call","fn":"completeQuest","args":["SickMiltank"]}
+                    ],
+                    "else": [{"cmd":"text","text":"\\PN has no Revival Herbies..."}]
+                  }
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":71,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "241_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"241Cry","volume":100,"pitch":100}},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"MILTANK:..Moo!"},
+            {"cmd":"text","text":"It's brimming with energy."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 10,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":95,"x":11,"y":8,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

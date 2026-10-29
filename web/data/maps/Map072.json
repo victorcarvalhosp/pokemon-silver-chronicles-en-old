@@ -1,0 +1,654 @@
+{
+  "id": 72,
+  "name": "Goldenrod City - Mart 4F",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 18,
+  "autoplayBgm": true,
+  "bgm": {"name":"Poke Mart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,56,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,72,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,1041,64,48],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,1044,0,0],
+      [0,0,1052,1052,1052,1052,1052,1052,1052,1052,1052,1044,1052,1052,1052,1052,1052,1052,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1052,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1045,1046,1045,1046,0,1045,1046,1047,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1053,1054,0,1053,1054,1055,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1061,1062,0,1061,1062,1063,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1828,1829,1830,1045,1046,1084,1085,1086,1653,3000,3001,0,0,0,0,0,0],
+      [0,0,0,1836,1837,1838,1053,1054,1092,1093,1094,1647,3008,3009,0,0,2998,2999,0,0],
+      [0,0,0,0,0,0,1061,1062,0,0,0,1655,3016,3017,0,0,3006,3007,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3014,3015,0,0],
+      [0,0,0,0,1045,1046,0,0,0,0,0,0,0,0,0,1069,1070,1071,0,0],
+      [0,0,0,0,1053,1054,0,0,0,0,0,0,0,0,1083,1077,1078,1079,0,0],
+      [0,0,0,0,1061,1062,0,0,0,0,0,0,0,0,1091,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1099,1069,1070,1071,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1107,1077,1078,1079,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Home door",
+      "x": 4,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":74,"x":7,"y":9,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 15,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Take this as a free sample of our products:"},
+            {"cmd":"if","cond":{"script":{"call":"pbReceiveItem","args":["TM47"]}},"then":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We will certainly have the ideal TMs for your Pokémon here."},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"isQuestActive?","args":["WorkingShoes"]}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {"op":">","left":{"call":"$bag.quantity","args":["WORKINGSHOES"]},"right":0}
+                  },
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "These are really good shoes for everyday use. It was the last one available!"
+                    }
+                  ],
+                  "else": [
+                    {"cmd":"call","fn":"pbPokemonMart","args":[["WORKINGSHOES"]]},
+                    {"cmd":"comment","lines":["It means it bought the shoes"]},
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"op":">","left":{"call":"$bag.quantity","args":["WORKINGSHOES"]},"right":0}
+                      },
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "These are really good shoes for everyday use. It was the last one available!"
+                        },
+                        {"cmd":"call","fn":"advanceQuestToStage","args":["WorkingShoes",2]}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"We will certainly have the ideal TMs for your Pokémon here."}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 6,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hey. I love strong Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I feed them Protein to crank up their Attack."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer013c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Iron adds to your Pokémon's Defense."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 16,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnRight"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerRight"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":70,"x":16,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"left"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 19,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":29,"to":29,"op":"set","value":4}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 13,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"upperLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":73,"x":21,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

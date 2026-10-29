@@ -1,0 +1,451 @@
+{
+  "id": 199,
+  "name": "Lendário",
+  "tilesetId": 8,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296],
+      [312,4390,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4391,304],
+      [312,4397,4390,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4391,4395,304],
+      [312,4397,4397,0,0,0,4387,4388,4388,4388,4388,4388,4388,4389,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,4395,4396,4396,4396,4396,4396,4396,4397,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,4395,4396,4396,4396,4396,4396,4396,4397,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,4403,4404,4404,4181,4182,4183,4404,4405,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4395,4395,304],
+      [312,4397,4398,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4399,4395,304]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4151,0,0,0,0,0,0,0,0,0,0,0,0,4151,0,0,0],
+      [0,0,0,0,0,0,0,3324,0,0,3327,0,0,0,0,4151,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4387,4388,4388,4389,4151,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4395,4396,4396,4397,0,0,0,4387,4388,4388,4388,4388,4388,4389,0,0,0],
+      [0,0,0,4395,4396,4396,4397,0,0,0,4395,4396,4396,4396,4396,4396,4397,0,0,0],
+      [0,0,0,4395,4396,4396,4397,4151,0,4151,4403,4181,4183,4391,4396,4396,4397,0,0,0],
+      [0,0,0,4395,4396,4396,4397,0,0,0,0,0,0,4395,4396,4396,4397,0,0,0],
+      [0,0,0,4403,4181,4183,4405,0,0,4142,0,0,0,4395,4396,4396,4397,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4150,0,0,0,4403,4404,4404,4405,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":88,"x":9,"y":5,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "StrengthBoulder",
+      "x": 8,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Copy of Character (47)",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [{"cmd":"call","fn":"pbPushThisBoulder","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":">","left":{"call":"$bag.quantity","args":["DEVONSCOPE"]},"right":0}},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "Alguma coisa bloqueia este caminho.  Deseja usar a Devon Scope?"
+                },
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {"cmd":"text","text":"O Pokémon invisivel agora está visível."},
+                      {"cmd":"text","text":"Ele atacou!"},
+                      {"cmd":"call","fn":"pbWildBattle","args":["HAUNTER",30]}
+                    ],
+                    []
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [{"cmd":"text","text":"Alguma coisa bloqueia o caminho..."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 4,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "caesdormindo",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"selfSwitch","ch":"A","value":true}]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "raikou",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 6,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"243Cry","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"jump","x":0,"y":1}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"jump","x":3,"y":0},
+                  {"move":"right"},
+                  {"move":"jump","x":3,"y":0},
+                  {"move":"turnDown"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":433,"to":433,"value":true},
+            {"cmd":"selfSwitch","ch":"B","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 12,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":433,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "raikou",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"243Cry","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnUp"},
+                  {"move":"jump","x":0,"y":-4},
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"turnDown"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":434,"to":434,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":434,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 10,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":434,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "raikou",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"243Cry","volume":80,"pitch":100}},
+            {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::RAIKOU"},40]},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"switches","from":178,"to":178,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

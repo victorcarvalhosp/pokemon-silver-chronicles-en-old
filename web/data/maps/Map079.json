@@ -1,0 +1,999 @@
+{
+  "id": 79,
+  "name": "National Park - Gate",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,72,3030,3031,3030,3031,3030,3031,3030,3031,3030,3031,3030,64,48,48,48,48],
+      [48,48,48,72,3038,3039,3038,3039,3038,3039,3038,3039,3038,3039,3038,64,48,48,48,48],
+      [48,48,48,72,3046,3047,3046,3047,3046,3047,3046,3047,3046,3047,3046,64,48,48,48,48],
+      [48,48,48,72,3054,3055,3054,3055,3054,3055,3054,3055,3054,3055,3054,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,72,421,421,421,421,421,421,421,421,421,421,421,64,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,529,0,0,0,0,0,534,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,537,0,0,0,0,0,542,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,545,546,547,548,549,549,550,0,0,0,0,0,0,0],
+      [0,0,3408,3409,0,0,0,0,0,0,0,0,0,0,0,3410,3411,0,0,0],
+      [0,0,3416,3417,0,0,0,0,0,0,0,0,0,0,0,3418,3419,0,0,0],
+      [0,0,3424,3425,0,0,0,0,0,0,0,0,0,0,0,3426,3427,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3032,3033,3034,3035,3036,3037,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3040,3041,3042,3043,3044,3045,0,0,0,0,0,0,0,0],
+      [0,0,0,0,503,503,0,0,0,0,0,0,0,503,503,0,0,0,0,0],
+      [0,0,0,0,511,511,0,0,0,0,0,0,0,511,511,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,3408,3409,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,3416,3417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,3424,3425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Man contest",
+      "x": 5,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbIsWeekday","args":[1,2,4,6]}},
+              "then": [
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "Today is Tuesday (2), Thursday (4) or Saturday (6), ",
+                    "and the Bug Contest is running today. The weekday's ",
+                    "name is put in Game Variable 1."
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbBugContestState.pbContestHeld?"}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bWe hope you'll take part in a Bug-Catching Contest in the future!"
+                    },
+                    {"cmd":"exitEvent"}
+                  ]
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bToday's \\v[1]."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bThat means the Bug-Catching Contest is on today."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bThe rules are simple."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bUsing one of your Pokémon, catch a Bug-type Pokémon to be judged."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bWould you like to give it a try?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","No"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbBoxesFull?"}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bSorry, your PC boxes are full."},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\bYou are only allowed to take 1 Pokémon into the Contest."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bPlease choose which Pokémon you want to enter with."},
+                      {
+                        "cmd": "comment",
+                        "lines": [
+                          "Opens a screen for choosing an able Pokémon (i.e. a ",
+                          "non-egg, non-fainted Pokémon).",
+                          "The party index of the chosen Pokémon is put in ",
+                          "Game Variable 1, and the chosen Pokémon's name is ",
+                          "put in Game Variable 2."
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbChooseAblePokemon","args":[1,2]},
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":1,"op":"<","value":0},
+                        "then": [
+                          {"cmd":"comment","lines":["Cancelled choosing a Pokémon."]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bOK. We hope you'll take part in the future."},
+                          {"cmd":"exitEvent"}
+                        ],
+                        "else": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bYou will be entering with \\v[2], then."},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bWe'll hold your other Pokémon while you compete."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\PN's Pokémon were left with the Contest Helper.\\se[Pkmn exp full]\\wtnp[20]"
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bHere are the Sport Balls for the Contest."},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\PN received 20 Sport Balls.\\me[Item get]\\wtnp[40]"
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bThe person who gets the strongest bug Pokémon is the winner."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bYou have 20 minutes."},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bIf you run out of Sport Balls, you're done."},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bYou can keep the last Pokémon you catch as your own."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bGo out and catch the strongest Bug-type Pokémon you can find!"
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "comment",
+                            "lines": [
+                              "- Set the map ID and X/Y coordinates of the spot the ",
+                              "player is teleported to at the end for judging.",
+                              "- Set the map IDs of reception maps which, if you ",
+                              "enter them, will not immediately end the contest ",
+                              "(those maps should prompt the player to go back into ",
+                              "the contest's map or to end the contest)."
+                            ]
+                          },
+                          {
+                            "cmd": "comment",
+                            "lines": [
+                              "- Set the map ID of the map where the contest takes ",
+                              "place (there can only be one). NPC participants have ",
+                              "random wild Pokémon found on this map.",
+                              "- Set the party index of the Pokémon chosen by the ",
+                              "player to use in the contest.",
+                              "- Start the contest with 20 Sport Balls."
+                            ]
+                          },
+                          {
+                            "cmd": "script",
+                            "ruby": "contest = pbBugContestState\ncontest.pbSetJudgingPoint(79, 9, 8)\ncontest.pbSetReception(79, 77)\ncontest.pbSetContestMap(261)\ncontest.pbSetPokemon(pbGet(1))\ncontest.pbStart(20)"
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {"character":-1,"direction":8},
+                            "then": [
+                              {
+                                "cmd": "moveRoute",
+                                "character": -1,
+                                "route": {
+                                  "repeat": false,
+                                  "skippable": true,
+                                  "list": [
+                                    {"move":"throughOn"},
+                                    {"move":"down"},
+                                    {"move":"left"},
+                                    {"move":"opacity","value":0},
+                                    {"move":"throughOff"}
+                                  ]
+                                }
+                              }
+                            ],
+                            "else": [
+                              {
+                                "cmd": "moveRoute",
+                                "character": -1,
+                                "route": {
+                                  "repeat": false,
+                                  "skippable": false,
+                                  "list": [
+                                    {"move":"throughOn"},
+                                    {"move":"down"},
+                                    {"move":"down"},
+                                    {"move":"turnLeft"},
+                                    {"move":"opacity","value":0},
+                                    {"move":"throughOff"}
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {"cmd":"waitForMoveCompletion"},
+                          {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+                          {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                          {"cmd":"wait","seconds":0.4},
+                          {
+                            "cmd": "moveRoute",
+                            "character": -1,
+                            "route": {
+                              "repeat": false,
+                              "skippable": false,
+                              "list": [{"move":"opacity","value":255}]
+                            }
+                          },
+                          {"cmd":"transfer","map":261,"x":35,"y":19,"direction":0,"fade":false},
+                          {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                          {"cmd":"exitEvent"}
+                        ]
+                      }
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bOK. We hope you'll take part in the future."}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"comment","lines":["Today is not a Contest day."]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bWe hold contests regularly in the Park. You should give it a shot."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":20,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":26,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": ["Event page called when the contest is still in ","progress."]
+            },
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bYou still have some time left. Do you want to finish now?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bPlease wait here for the announcement of the winners."},
+                  {"cmd":"call","fn":"pbBugContestState.pbStartJudging","args":[]}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOK. Please go back outside and finish up."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {"move":"turnLeft"},
+                        {"move":"wait","seconds":0.2},
+                        {"move":"opacity","value":0}
+                      ]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.4},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":255}]}
+                  },
+                  {"cmd":"transfer","map":261,"x":35,"y":19,"direction":0,"fade":false},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 15,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":13,"x":10,"y":10,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":70,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":13,"x":10,"y":10,"direction":0,"fade":true},
+            {"cmd":"switches","from":161,"to":161,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":150,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":13,"x":10,"y":10,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 11,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer060c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I really love bug Pokémon!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Did I already say that?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 3,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "img_nationalPark",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0
+            },
+            {
+              "cmd": "showPicture",
+              "id": 2,
+              "name": "img_iconNationalPark",
+              "origin": "topLeft",
+              "x": 0,
+              "y": -80,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "movePicture",
+              "id": 1,
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.5},
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":2.0},
+            {
+              "cmd": "movePicture",
+              "id": 1,
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 2.0
+            },
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"erasePicture","id":2},
+            {"cmd":"transfer","map":75,"x":35,"y":19,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Man regular",
+      "x": 9,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"comment","lines":["Today is not a Contest day."]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bWe hold contests regularly in the Park. You should give it a shot."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":19,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Man contest",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWe will now judge the Pokémon you've caught."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"......\\wt[10]\\n......"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWe have chosen the winners!\\nAre you ready for this?"},
+            {"cmd":"call","fn":"pbBugContestState.pbGetPlaceInfo","args":[2]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bPlacing third is \\v[1], who caught a writhing \\v[2]!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThe score was \\v[3] points!"},
+            {"cmd":"call","fn":"pbBugContestState.pbGetPlaceInfo","args":[1]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bPlacing second is \\v[1], who caught a wriggling \\v[2]!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThe score was \\v[3] points!"},
+            {"cmd":"call","fn":"pbBugContestState.pbGetPlaceInfo","args":[0]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThis Bug-Catching Contest winner is..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\b\\v[1], who caught a whopping \\v[2]!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThe score was \\v[3] points!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBugContestState.place"},"right":0}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":">=","left":{"call":"$player.badge_count"},"right":5}},
+                  "then": [
+                    {
+                      "cmd": "script",
+                      "ruby": "evo_stones = [\n  :FIRESTONE, :THUNDERSTONE,\n  :WATERSTONE, :LEAFSTONE,\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)"
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "script",
+                      "ruby": "evo_stones = [\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)"
+                    }
+                  ]
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\me[Bug contest 1st]\\b\\PN, the First Place finisher, wins the \\v[3]!"
+                },
+                {"cmd":"call","fn":"pbReceiveItem","args":[{"call":"pbGet","args":[1]}]}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBugContestState.place"},"right":1}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\me[Bug contest 2nd]\\b\\PN, the Second Place finisher, wins the Everstone!"
+                },
+                {"cmd":"call","fn":"pbReceiveItem","args":["EVERSTONE"]}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBugContestState.place"},"right":2}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\me[Bug contest 3rd]\\b\\PN, the Third Place finisher, wins the Sitrus Berry!"
+                },
+                {"cmd":"call","fn":"pbReceiveItem","args":["SITRUSBERRY"]}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBugContestState.place"},"right":3}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bEveryone else gets a Shed Shell as a consolation prize!"},
+                {"cmd":"call","fn":"pbReceiveItem","args":["SHEDSHELL"]}
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bWe'll return the Pokémon we kept for you. Here you go!\\se[Pkmn exp full]"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bWe hope you'll take part in a Bug-Catching Contest in the future!"
+            },
+            {"cmd":"call","fn":"pbBugContestState.pbEnd","args":[]},
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        },
+        {
+          "condition": {"switch1":21,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bWe hope you'll take part in a Bug-Catching Contest in the future!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer003cA",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"So... I thought I would score higher..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 8,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer012c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Listen, I caught a SCYTHER before, but I didn't win."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 7,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":27,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer007c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I heard that using Pokémon with beaultiful colors make it easier to win.\\nI wonder if that's true?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

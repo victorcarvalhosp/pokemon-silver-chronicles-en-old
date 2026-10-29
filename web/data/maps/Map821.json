@@ -1,0 +1,349 @@
+{
+  "id": 821,
+  "name": "Mart  3°",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,48,76,76,76,76,76,76,56,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,76,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,72,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,1187,64,48],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1044,1044,1044,1044,1044,1044,1044,1044,1044,1653,1044,1044,1044,1044,1044,1044,0,0],
+      [0,0,1052,1052,1052,1052,1052,1052,1052,1052,1052,1653,1052,1052,1052,1052,1052,1052,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1091,1044,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1099,1052,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1080,1081,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1088,1089,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1096,1097,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1104,1105,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1828,1829,1830,0,0,0,0,0,1653,0,0,0,0,524,525,0,0],
+      [0,0,0,1836,1837,1838,1083,0,0,0,1083,1653,522,523,0,0,532,533,0,0],
+      [0,0,0,0,0,0,1091,0,0,0,1082,1647,530,531,0,0,540,541,0,0],
+      [0,0,0,0,0,0,1099,1069,1070,1071,1090,1655,538,539,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1107,1077,1078,1079,1107,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1080,1081,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1088,1089,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1096,1097,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1104,1105,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 4,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transfer","map":824,"x":7,"y":9,"direction":0,"fade":true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 6,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rEu dei um CARBOS para o meu Pokémon e sua velocidade aumentou."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 13,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":820,"x":13,"y":5,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer004c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bQuero que meu Pokémon tenha mais resistência."},
+            {
+              "cmd": "text",
+              "text": "\\bEstou decidindo se aumento a sua Defesa com IRON, ou sua Defesa Especial com ZINC."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 16,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":822,"x":16,"y":5,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 19,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":29,"to":29,"op":"set","value":3}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  {"call":"PBItems::PROTEIN"},
+                  {"call":"PBItems::IRON"},
+                  {"call":"PBItems::CARBOS"},
+                  {"call":"PBItems::CALCIUM"},
+                  {"call":"PBItems::HPUP"}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

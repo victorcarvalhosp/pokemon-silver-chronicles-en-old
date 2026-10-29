@@ -1,0 +1,285 @@
+{
+  "id": 786,
+  "name": "Casa 2",
+  "tilesetId": 47,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,48,72,1072,1072,1072,1072,1072,1072,1072,64,48,48,48,48,48,48],
+      [48,48,48,48,52,86,1080,1080,1080,1080,1080,1080,1080,88,56,48,48,48,48,48],
+      [48,48,48,48,72,1081,1081,1081,1081,1081,1081,1081,1081,1081,64,48,48,48,48,48],
+      [48,48,48,48,72,1081,1081,1081,1081,1081,1081,1081,1081,1081,64,48,48,48,48,48],
+      [48,48,48,48,72,1081,1081,1081,1081,1081,1081,1081,1081,1081,64,48,48,48,48,48],
+      [48,48,48,48,72,1081,1081,1081,1081,1081,1081,1081,1081,1081,64,48,48,48,48,48],
+      [48,48,48,48,50,84,1081,1081,1081,1081,1081,1081,1081,82,49,48,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1074,0,0,0,0,0,0,1072,1075,0,0,0,0,0,0],
+      [0,0,0,0,0,1080,0,0,0,0,0,0,1080,1080,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1081,0,0,0,0,0,0,0,1081,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1001,1002,1003,1004,1005,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1008,1009,1010,1011,1012,1013,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1016,1017,1018,1019,1020,1021,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1024,2247,1025,1026,1027,1028,1029,2372,1030,0,0,0,0,0,0],
+      [0,0,0,0,0,1032,2255,1033,1034,1035,1036,1037,2380,1038,0,0,0,0,0,0],
+      [0,0,0,0,0,1040,2263,1041,1042,1043,1044,1045,2388,1046,0,0,0,0,0,0],
+      [0,0,0,0,0,1081,1048,1049,1050,1051,1052,1053,1054,1081,0,0,0,0,0,0],
+      [0,0,0,0,0,1081,1081,1081,1081,1081,1081,1081,1081,1081,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1082,1081,1081,445,446,447,1081,1081,1083,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rPessoas...Pokémons..."},
+            {
+              "cmd": "text",
+              "text": "\\rSeus poderes escondidos são despertados quando estão em contato com a natureza..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\rDeixa essa velha mulher ver se seus poderes escondidos estão acordados..."
+            },
+            {"cmd":"text","text":"\\rEu tenho uma moeda em minha mão."},
+            {
+              "cmd": "text",
+              "text": "\\rAgora me figa, eu estou segurando ela na mão direita ou esquerda?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Direita","Esquerda"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"\\rOh, sim está certo!"},
+                  {"cmd":"text","text":"\\rVamos tentar de novo."},
+                  {
+                    "cmd": "text",
+                    "text": "\\rAEm qual mão eu coloquei a moeda? Na direita ou esquerda?"
+                  },
+                  {
+                    "cmd": "choices",
+                    "choices": ["Direita","Esquerda"],
+                    "branches": [
+                      [
+                        {"cmd":"text","text":"\\rOh, sim está certo!"},
+                        {"cmd":"text","text":"\\rVamos tentar de novo."},
+                        {
+                          "cmd": "text",
+                          "text": "\\rAEm qual mão eu coloquei a moeda? Na direita ou esquerda?"
+                        },
+                        {
+                          "cmd": "choices",
+                          "choices": ["Direita","Esquerda"],
+                          "branches": [
+                            [
+                              {
+                                "cmd": "text",
+                                "text": "\\rOh, muito mal.\\nVocê escolheu a mão errada."
+                              }
+                            ],
+                            [
+                              {
+                                "cmd": "text",
+                                "text": "\\rOh, esplêndido!\\nSeu poder oculto está acordado!"
+                              },
+                              {
+                                "cmd": "text",
+                                "text": "\\rAqui, pegue isso e desperte o poder oculto dos seus Pokémons."
+                              },
+                              {
+                                "cmd": "if",
+                                "cond": {
+                                  "script": {"call":"pbReceiveItem","args":[{"call":"PBItems::TM10"}]}
+                                },
+                                "then": []
+                              },
+                              {
+                                "cmd": "text",
+                                "text": "Hidden Power é um golpe que meche com o Pokémon."
+                              },
+                              {"cmd":"selfSwitch","ch":"A","value":true}
+                            ]
+                          ],
+                          "cancel": 1
+                        }
+                      ],
+                      [{"cmd":"text","text":"\\rOh, muito mal.\\nVocê escolheu a mão errada."}]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [{"cmd":"text","text":"\\rOh, muito mal.\\nVocê escolheu a mão errada."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Hidden Power é um golpe que meche com o Pokémon."}]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bMinha esposa está sempre tentando despertar seus poderes ocultos.\\nMas não sei se isso existe realmente..."
+            },
+            {"cmd":"comment","lines":["Aqui tem que adicionar um Ensinar Golpe SLEEP TALK."]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":249,"x":16,"y":7,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

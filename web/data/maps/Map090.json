@@ -1,0 +1,960 @@
+{
+  "id": 90,
+  "name": "Ecruteak City - Burned Tower",
+  "tilesetId": 8,
+  "width": 20,
+  "height": 23,
+  "autoplayBgm": true,
+  "bgm": {"name":"Burned_Tower","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,56,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,72,72,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,50,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76],
+      [308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288]
+    ],
+    [
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296],
+      [326,4390,4404,4404,4404,4405,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4391,328],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [324,4397,395,395,0,395,4387,4388,4388,4388,4388,4388,4389,0,566,0,395,395,4395,322],
+      [312,4397,395,0,0,0,4395,4396,4396,4396,4396,4396,4397,0,566,0,395,0,4395,304],
+      [312,4397,0,0,0,0,4395,4396,4396,4396,4396,4396,4397,0,571,570,0,0,4395,304],
+      [312,4397,572,572,572,572,4403,4404,4404,4404,4404,4404,4405,0,0,566,395,0,4395,304],
+      [312,4397,0,0,0,0,0,395,395,0,0,395,395,0,0,566,0,0,4395,304],
+      [312,4397,0,0,0,0,0,395,395,0,0,395,395,0,0,566,0,0,4395,304],
+      [312,4397,0,0,0,0,0,395,0,0,0,0,395,0,0,566,0,0,4395,304],
+      [312,4398,4388,4388,4388,4389,0,395,572,572,572,572,395,0,4387,4388,4388,4388,4399,304],
+      [290,308,308,308,324,4397,0,0,0,0,0,0,0,0,4395,322,308,308,308,289],
+      [292,316,316,316,326,4397,0,0,0,0,0,0,0,0,4395,328,316,316,316,296],
+      [312,4390,4404,4404,4404,4405,572,572,572,572,572,572,572,572,4403,4404,4404,4404,4391,304],
+      [312,4397,395,0,0,567,0,0,0,0,0,0,0,0,566,0,0,395,4395,304],
+      [312,4397,0,0,0,567,0,4544,0,0,0,0,0,0,566,0,0,0,4395,304],
+      [312,4397,395,0,0,567,0,4552,0,0,0,0,0,0,566,0,0,395,4395,304],
+      [312,4397,395,395,0,567,0,4560,4561,0,395,395,0,0,566,0,0,395,4395,304],
+      [312,4398,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4388,4399,304],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296],
+      [312,4390,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4404,4391,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,4182,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "StrengthBoulder",
+      "x": 16,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Copy of Character (47)",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [{"cmd":"call","fn":"pbPushThisBoulder","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 5,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 413,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["HPUP"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"fadeOutBgm","seconds":1},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "entei",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  }
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "raikou",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  }
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "suicune",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  }
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":0.75},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_1",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_2",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_3",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"playSe","audio":{"name":"244Cry","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_4",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_5",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_6",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"playSe","audio":{"name":"245Cry","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_7",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_8",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.15},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_10",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"playSe","audio":{"name":"243Cry","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "scene_caes_9",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"pictureTone","id":1,"tone":[255.0,255.0,255.0,0.0],"seconds":2.0},
+            {"cmd":"playSe","audio":{"name":"115-Raise01","volume":100,"pitch":100}},
+            {"cmd":"wait","seconds":3.0},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"text","text":"\\f[faceEusine]\\bDid you see it?"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEusine]\\bSUICUNE raced by like a blur, right in front of my eyes!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceEusine]\\bI have been chasing SUICUNE for almost ten years, but I have never been this close! I'm all chocked up!"
+            },
+            {"cmd":"text","text":"\\f[morty]\\bHey, that kid seems to be unconscious!"},
+            {"cmd":"text","text":"\\f[morty]\\bI'll take him to the nearest Pokémon Center!"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEusine]\\bI'll go after Suicune's footprints!\\nSee you around bud!"
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+            {"cmd":"switches","from":68,"to":68,"value":true},
+            {"cmd":"switches","from":69,"to":69,"value":true},
+            {"cmd":"switches","from":70,"to":70,"value":true},
+            {"cmd":"transfer","map":328,"x":7,"y":2,"direction":2,"fade":true},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"selfSwitch","ch":"B","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":68,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"fadeOutBgm","seconds":1},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["MEOWTH_2"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["MEOWTH_2"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Meowth: Me-owth!"},
+            {
+              "cmd": "moveRoute",
+              "character": 10,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"alwaysOnTopOn"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"jump","x":2,"y":0},
+                  {"move":"jump","x":2,"y":0},
+                  {"move":"jump","x":2,"y":0}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":752,"to":752,"value":true},
+            {"cmd":"restoreBgmBgs"}
+          ]
+        },
+        {
+          "condition": {"switch1":752,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Raikou",
+      "x": 8,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "raikou cinza",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":70,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":178,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":387,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Entei",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "entei cinza",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":69,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Suicune",
+      "x": 11,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "suicune cinza",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":68,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 17,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":70,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 413,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["MAGNET"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "noShadow",
+      "x": 7,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "Notice that invisible character needs to be used here, ",
+                "otherwise it has a small glitch where the user goes ",
+                "behind the stair for a frame."
+              ]
+            },
+            {
+              "cmd": "comment",
+              "lines": ["Check the second page of the event as well, as it is important!"]
+            },
+            {"cmd":"call","fn":"CustomStairs.transferUp","args":[89,6,18]}
+          ]
+        },
+        {
+          "condition": {"switch1":965,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4552,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 17,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 413,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["DUSKSTONE"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "meowth",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":68,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "052_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":752,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

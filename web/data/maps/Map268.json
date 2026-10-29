@@ -1,0 +1,292 @@
+{
+  "id": 268,
+  "name": "Route 2 - House",
+  "tilesetId": 2,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"viridiancity","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,72,404,404,404,404,404,404,404,404,404,404,404,404,404],
+      [48,48,48,48,48,48,72,412,412,412,412,412,412,412,412,412,412,412,412,412],
+      [48,48,48,48,48,48,72,388,388,388,388,388,388,388,388,388,388,388,388,388],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,72,388,387,387,387,387,387,387,387,387,387,387,387,387],
+      [48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,469,470,0,468,0,437,438,0,418,419,0],
+      [0,0,0,0,0,0,0,466,467,477,478,0,476,0,445,446,0,426,427,0],
+      [0,0,0,0,0,0,0,474,475,485,486,0,484,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,690,691,691,691,691,692,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,698,699,699,699,699,700,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,698,699,699,699,699,700,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,706,707,707,707,707,708,0,0,0],
+      [0,0,0,0,0,0,0,439,0,0,0,0,0,0,0,0,0,0,0,439],
+      [0,0,0,0,0,0,0,447,0,0,584,585,586,0,0,0,0,0,0,447],
+      [0,0,0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,646,453,454,646,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,646,461,462,646,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 06",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm looking for a Pokemon: Mareep!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I can trade it for a Ponyta."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Do you have a Mareep?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "The chosen Pokémon's party index goes in game ",
+                      "variable 1. A value of -1 means no Pokémon was ",
+                      "chosen.",
+                      "The chosen Pokémon's name goes in game variable 2."
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbChoosePokemonForTrade","args":[1,2,"MAREEP"]},
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"==","value":-1},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bYou don't want to trade?  Aww..."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bCome back if you change your mind."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"isQuestActive?","args":["MareepTrade"]}},
+                        "then": [],
+                        "else": [{"cmd":"call","fn":"activateQuest","args":["MareepTrade"]}]
+                      }
+                    ],
+                    "else": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bOK, let's get started."},
+                      {
+                        "cmd": "call",
+                        "fn": "pbStartTrade",
+                        "args": [{"call":"pbGet","args":[1]},"PONYTA","Poney","Larry"]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\PN traded Mareep for Ponyta!"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bThanks!"},
+                      {"cmd":"call","fn":"completeQuest","args":["MareepTrade"]},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bYou don't want to trade? Aww..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bCome back if you change your mind."},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"isQuestActive?","args":["MareepTrade"]}},
+                    "then": [],
+                    "else": [{"cmd":"call","fn":"activateQuest","args":["MareepTrade"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 06",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Mareep is so nice!\\nI never saw one in Kanto!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 17,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbShowMap","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 18,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbShowMap","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 11,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":266,"x":27,"y":21,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

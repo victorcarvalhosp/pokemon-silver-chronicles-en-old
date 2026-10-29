@@ -1,0 +1,1287 @@
+{
+  "id": 429,
+  "name": "Vermilion City - Gym",
+  "tilesetId": 32,
+  "width": 21,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,52,76,76,76,76,76,56,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,72,554,554,554,554,554,64,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,72,554,554,554,554,554,64,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,72,554,554,554,554,554,64,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,72,554,554,554,554,554,64,48,48,48],
+      [48,48,48,48,48,48,48,48,52,76,76,86,554,554,554,554,554,88,76,76,56],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,72,554,554,554,554,554,554,554,554,554,554,554,64],
+      [48,48,48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1297,1296,1298,1299,1300,1296,1301,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1305,1336,1306,1307,1308,1336,1309,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1305,1344,1314,1315,1316,1344,1309,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1305,0,1322,1323,1324,0,1309,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1305,0,1330,1331,1332,0,1309,0,0,0],
+      [0,0,0,0,0,0,0,0,1342,1319,1319,1313,0,1338,1339,1340,0,1317,1319,1319,1343],
+      [0,0,0,0,0,0,0,0,1350,1325,1326,1327,0,0,0,0,0,1325,1326,1327,0],
+      [0,0,0,0,0,0,0,0,1350,1333,1334,1335,0,0,0,0,0,1333,1334,1335,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1350,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1329,0,0,0,0,0,0,0,0,0,0,0,1328],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,521,0,0,0,521,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,529,0,0,0,529,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,537,0,0,0,537,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1345,0,0,0,0,0,1346,0,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,0,1353,0,0,0,0,0,1354,0,0,1351],
+      [0,0,0,0,0,0,0,0,0,1341,1349,0,0,0,0,0,0,1341,1349,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,515,0,515,0,515,0,515,0,515,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,523,0,523,0,523,0,523,0,523,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,515,0,515,0,515,0,515,0,515,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,523,0,523,0,523,0,523,0,523,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,515,0,515,0,515,0,515,0,515,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,523,0,523,0,523,0,523,0,523,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,0,669,670,671,0,669,670,671,0,0,1351],
+      [0,0,0,0,0,0,0,0,0,0,0,677,678,679,0,677,678,679,0,0,1351],
+      [0,0,0,0,0,0,0,0,1321,0,0,0,686,0,0,0,686,0,0,0,1320],
+      [0,0,0,0,0,0,0,0,1329,0,0,0,0,0,0,0,0,0,0,0,1328],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,451,452,453,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 14,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":380,"x":14,"y":25,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 14,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":763,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]Lt. Surge: Hey, you little tyke, so you're back.\\nYou and Red gave us trouble back at Mt. Moon - didn’t think you had it in you."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]It may not be very smart to challenge me, but it takes guts!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]When it comes to Electric-type Pokemon, I'm number one!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facelt.surge]I've never lost on the battlefield."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]I'll zap you just like I do all my enemies in battle!"
+            },
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",2]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",3]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",4]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",5]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_Surge","Lt.Surge",6]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_Surge","Lt.Surge",7]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Surge","Lt.Surge",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Surge","Lt.Surge",9]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facelt.surge]Lt. Surge: Arrrgh!\\nYou are strong!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facelt.surge]Ok, kid.\\nYou get the Thunder badge!"},
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Thunder Badge from Lt. Surge!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[10],"op":"=","value":true},
+                {"cmd":"commonEvent","id":69},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facelt.surge]Kanto needs strength. Needs leadership. And Giovanni… Giovanni knows how to get things done. He’s got a plan - a real plan - to make Kanto strong again.\\nThat’s why I’m backing him."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facelt.surge]A trainer like you should understand. Power decides everything in the end.\\nGiovanni knows that.\\nAnd I’m making sure I’m on the winning side."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facelt.surge]I need to go, the elections will be starting soon."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"character":-1,"direction":8},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [{"move":"right"},{"move":"left"},{"move":"turnUp"}]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {
+                      "cmd": "moveRoute",
+                      "character": 0,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [
+                          {"move":"left"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"}
+                        ]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": 0,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"left"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"down"}
+                        ]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {"op":"!","value":{"call":"isQuestActive?","args":["AssociationElections"]}}
+                  },
+                  "then": [
+                    {
+                      "cmd": "call",
+                      "fn": "activateQuest",
+                      "args": ["AssociationElections",{"call":"colorQuest","args":["blue"]},true]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"switches","from":771,"to":771,"value":true},
+            {
+              "cmd": "comment",
+              "lines": [
+                "These are two different switches, the 767 is DEACTIVATED after the elections happen"
+              ]
+            },
+            {"cmd":"switches","from":767,"to":767,"value":true},
+            {"cmd":"switches","from":265,"to":265,"value":true},
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":265,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]Lt. Surge: I really thought Kanto would be a better place."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]I had no idea about all the bad plans Giovanni had...\\nIt was an honest mistake and I'm really sorry for it."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":771,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":281,"switch2":800,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]Lt. Surge: Hey, you little tyke.\\nI recognize I was wrong."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]The Pokémon Association allowed me to remain as a Gym Leader after I apologized."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]When it comes to Electric-type Pokemon, I'm number one!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facelt.surge]I've never lost on the battlefield."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]I'll zap you just like I do all my enemies in battle!"
+            },
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",2]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",3]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",4]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_Surge","Lt.Surge",5]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_Surge","Lt.Surge",6]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_Surge","Lt.Surge",7]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Surge","Lt.Surge",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Surge","Lt.Surge",9]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facelt.surge]Lt. Surge: Arrrgh!\\nYou are strong!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facelt.surge]Ok, kid.\\nYou get the Thunder badge!"},
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Thunder Badge from Lt. Surge!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[10],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facelt.surge]To prove I regret my actions, I'll give you this."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["SILPHSCOPE"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facelt.surge]Lt. Surge: Team Rocket is keeping the Mewtwo experiment in the Silph Co. building,"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facelt.surge]With this item you'll be able to see through their psychic barrier."
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"op":"!","value":{"call":"isQuestActive?","args":["SilphCoResearch"]}}
+                      },
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "activateQuest",
+                          "args": ["SilphCoResearch",{"call":"colorQuest","args":["blue"]},true]
+                        }
+                      ]
+                    },
+                    {"cmd":"call","fn":"advanceQuestToStage","args":["SilphCoResearch",2]},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facelt.surge]It won't be easy, but I think you have what it takes to stop all this."
+                    }
+                  ]
+                },
+                {"cmd":"commonEvent","id":69}
+              ]
+            },
+            {"cmd":"switches","from":265,"to":265,"value":true},
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":281,"switch2":265,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]Lt. Surge: I really thought Kanto would be a better place."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facelt.surge]I had no idea about all the bad plans Giovanni had...\\nIt was an honest mistake and I'm really sorry for it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(5)",
+      "x": 17,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["SAILOR"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Lt. Surge saw my potential with Electric-type Pokemon.\\nThink you can beat me?"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Wow!nMe surpreendeu!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["SAILOR","DWAYNE",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The reason that Lt. Surge was protected by electric fences isn't because he's a coward! It's so you won't underestimate his strength!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(4)",
+      "x": 11,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer139c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["POKeFAN_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm going to take you down!\\nPrepare to be shocked!"},
+            {"cmd":"comment","lines":["EndSpeech: Frito!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["JUGGLER","BAILY"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer139c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Lt. Surge is a great Trainer!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(3)",
+      "x": 16,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["GENTLEMAN"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You're here to defeat Lt. Surge?\\nNot if I can help it!"},
+            {"cmd":"comment","lines":["EndSpeech: Pare!nVocê é muito bom!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["GENTLEMAN","TUCKER",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"When I was in the military, this is what Lt. Surge taught me..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Lock the doors, watch out for fire, and always have two electric fences for safety!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "ff",
+      "x": 17,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The Gym Leader is not here right now.\\nHe went to the Mt. Moon, can you go there and call him back to the Gym, please?"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":763,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!\\nYou had luck this time!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The traps at this Gym are out of order for a while...\\nSo you can go directly for Lt. Surge!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":771,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The Gym Leader is not here right now.\\nHe's attending some Pokémon Association meetings, I suppose."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":800,"switch2":281,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!\\nYou had luck this time!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The traps at this Gym are out of order for a while...\\nSo you can go directly for Lt. Surge!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":265,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Whew! That was an electricfying bout!\\nI'm sure made my nerves tingle."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The traps at this Gym are out of order for a while...\\nSo you can go directly for Lt. Surge!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

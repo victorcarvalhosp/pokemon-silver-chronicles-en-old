@@ -1,0 +1,1063 @@
+{
+  "id": 793,
+  "name": "Gym",
+  "tilesetId": 46,
+  "width": 20,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816],
+      [816,817,817,817,821,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816],
+      [817,817,818,819,820,816,816,816,816,816,817,817,817,816,816,816,816,816,816,816],
+      [816,817,821,816,816,816,817,817,817,817,818,819,819,816,816,816,816,816,816,817],
+      [816,817,821,816,816,816,823,819,819,819,828,816,816,816,816,816,816,816,816,816],
+      [817,817,821,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816],
+      [817,818,820,816,816,816,816,816,816,816,816,816,817,829,830,830,830,830,816,816],
+      [817,821,816,816,816,816,816,816,816,816,816,817,817,821,816,816,816,816,816,816],
+      [817,821,816,816,816,816,816,816,816,816,816,817,817,821,816,816,816,816,816,816],
+      [817,821,816,816,816,816,816,816,816,816,816,816,817,821,816,816,816,816,816,816],
+      [817,821,816,817,817,816,816,816,816,816,816,816,817,821,816,816,816,816,816,816],
+      [816,816,816,817,817,816,817,817,817,822,816,817,817,821,816,816,816,816,816,816],
+      [816,817,817,816,816,816,817,818,819,820,816,816,817,829,830,830,830,830,816,816],
+      [816,817,817,817,817,816,817,821,817,822,816,816,817,821,816,816,816,816,816,816],
+      [816,816,816,817,818,816,817,821,823,820,816,817,817,821,816,816,816,816,816,816],
+      [816,816,816,817,821,817,817,821,816,816,816,816,817,821,816,816,816,816,816,816],
+      [816,817,817,817,821,823,819,820,816,816,816,816,817,821,816,816,816,816,816,816],
+      [816,817,818,819,828,816,817,822,816,816,816,817,817,829,830,830,830,830,816,816],
+      [816,817,821,817,822,816,823,828,816,816,816,816,817,821,816,816,816,816,816,816],
+      [816,817,821,823,828,816,816,816,816,816,816,816,817,821,816,816,816,816,816,816],
+      [816,817,821,816,816,816,817,817,817,817,817,817,817,821,816,816,816,816,816,816],
+      [816,817,821,816,816,817,817,818,819,819,817,818,819,820,817,822,816,817,816,816],
+      [816,817,817,822,816,823,819,820,816,816,823,820,816,816,823,828,816,823,816,816],
+      [816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816],
+      [816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816,816]
+    ],
+    [
+      [851,851,851,852,0,0,850,851,851,851,851,846,847,851,851,845,851,851,846,847],
+      [859,859,859,860,0,0,858,859,859,859,859,854,855,859,859,853,859,859,854,855],
+      [0,810,0,0,0,0,0,139,129,129,141,862,863,864,865,866,867,868,862,863],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,872,873,874,875,876,0,849],
+      [0,0,0,0,0,0,825,825,825,825,825,825,825,0,0,0,0,0,857,857],
+      [0,0,0,0,0,0,833,833,833,833,833,833,833,0,0,0,0,0,857,857],
+      [0,0,812,0,0,0,832,832,833,833,833,833,833,0,0,0,0,0,857,857],
+      [0,0,812,0,0,0,0,0,833,832,833,841,833,0,0,0,0,0,857,857],
+      [0,812,825,825,825,812,0,0,832,0,832,849,833,811,811,0,0,0,857,857],
+      [0,812,833,833,833,825,0,0,0,0,0,848,833,811,0,0,0,0,857,857],
+      [0,825,833,841,841,833,849,824,824,0,825,856,833,0,0,0,0,0,857,857],
+      [0,833,833,849,849,833,848,832,832,0,833,849,833,0,0,0,0,0,857,857],
+      [0,841,841,848,848,833,833,0,0,0,833,848,833,0,0,0,0,0,857,857],
+      [0,849,849,833,856,833,833,0,842,0,833,856,833,0,0,0,0,0,857,857],
+      [0,848,848,833,0,833,833,0,0,0,833,849,833,0,0,0,0,0,857,857],
+      [0,833,833,833,0,841,841,0,0,826,833,848,833,0,0,0,0,0,857,857],
+      [0,833,832,856,0,0,0,0,0,826,833,856,833,0,0,0,0,0,857,857],
+      [0,833,0,0,0,0,842,0,826,826,833,849,833,0,0,0,0,0,857,857],
+      [0,833,0,842,0,0,0,0,826,826,833,848,833,0,0,0,0,0,857,857],
+      [0,833,0,0,0,826,827,827,827,827,833,833,833,0,0,0,0,0,857,857],
+      [0,833,0,0,0,827,833,835,835,835,833,841,841,0,831,0,0,831,857,857],
+      [0,833,825,0,0,835,841,0,0,0,841,0,0,0,839,0,0,839,857,857],
+      [0,833,833,825,0,0,0,0,825,825,825,825,825,0,0,0,0,0,857,840],
+      [0,833,833,833,824,824,824,824,833,833,833,833,833,824,824,0,0,824,848,848],
+      [0,841,841,841,832,832,832,832,841,841,841,841,841,832,832,837,838,832,835,841]
+    ],
+    [
+      [810,810,810,810,842,842,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [810,825,810,810,0,0,825,825,825,825,824,0,0,0,0,0,0,0,812,0],
+      [849,833,0,0,0,0,833,833,833,833,832,0,0,0,0,0,0,0,849,0],
+      [857,833,0,826,0,0,841,841,841,841,0,0,0,0,0,0,0,0,857,0],
+      [857,833,0,826,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,841,0,826,825,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,827,833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,835,841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,811,810,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,811,810,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,811,811,810,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,811,811,0,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,811,811,0,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,811,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [857,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 15,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":249,"x":20,"y":15,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(3)",
+      "x": 5,
+      "y": 23,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\bQuando Winona entra em uma batalha, ela enfrenta todos com uma brava determinação..."
+            },
+            {"cmd":"text","text":"\\bTentarei fazer igual a ela nessa batalha!"},
+            {"cmd":"comment","lines":["EndSpeech: Urk! Minha determinação foi pouca."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::BIRDKEEPER"},"Humberto",0]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bÉ melhor você ir ver isso!\\nNão se distraia contra Winona, ou ela te colocará para baixo!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(1)",
+      "x": 5,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer060c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[{"move":"turnTowardPlayer"}]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["PICNICKER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\rWinona me ensinou pessoalmente!\\nVocê não me vencerá facilmente!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Fui derrotada..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::PICNICKER"},"Ashley"]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":2}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer060c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnUp"},
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnRight"},
+              {"move":"turnUp"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rAgradeço a Winona, as pessoas em Fortree podem viver sem medo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(3)",
+      "x": 4,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bVeja o elegante estilo de batalha dos Pokémons pássaros!"},
+            {"cmd":"comment","lines":["EndSpeech: Você...\\nVocê é forte..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BIRDKEEPER"},"Jared",0]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bUm treinador tem que ficar atento para os contratempos de uma batalha."
+            },
+            {"cmd":"text","text":"\\bVocê estará atento o suficiente para a nossa líder?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Trainer(1)",
+      "x": 10,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer059c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnUp"},
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnRight"},
+              {"move":"turnUp"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["CAMPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bNão há motivos para a nossa líder Winona batalhar com você!"},
+            {"cmd":"text","text":"\\bEu sou bom o suficiente para você!"},
+            {"cmd":"comment","lines":["EndSpeech: Winona, eu...\\nEu perdi..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::CAMPER"},"Flintt"]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":2}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer059c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnUp"},
+              {"move":"turnDown"},
+              {"move":"turnLeft"},
+              {"move":"turnRight"},
+              {"move":"turnRight"},
+              {"move":"turnUp"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bWinona é fofa e forte.\\nEla é a melhor das líderes!"}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Trainer(2)",
+      "x": 9,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\bOs amantes de Pokémons pássaros sempre querem vir a este Ginásio."
+            },
+            {"cmd":"text","text":"\\bComo um membro do Ginásio de Fortree eu não posso perder!"},
+            {"cmd":"comment","lines":["EndSpeech: É muito para mim..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BIRDKEEPER"},"Edward",0]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bO mundo é enorme, e tem muitos treinadores poderosos nele."},
+            {"cmd":"text","text":"\\bEu continuarei treinando para me tornar mais forte."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Trainer(3)",
+      "x": 5,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\bÉ melhor você saber que existem diversos tipos de Pokémons voadores."
+            },
+            {"cmd":"text","text":"\\bVocê sabe disso, certo?"},
+            {"cmd":"comment","lines":["EndSpeech: Você parece conhecer sobre o assunto."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BIRDKEEPER"},"Darius",0]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bTudo bem você ter me vencido.\\nMas é melhor ficar atento!Nossa líder Winona sabe tudo sobre os Pokémons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 15,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Winona",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\f[faceWinona]\\rEu sou Winona. Sou a líder do Ginásio da Cidade de Fortree."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceWinona]\\rEu comecei a treinar com Pokémons pássaros para poder chegar até o céu..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceWinona]\\rDe qualquer maneira, quando estamos batalhando entramos em estado de graça..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceWinona]\\rCom a elegante coreográfia dos Pokémons pássaros e eu!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":431,"value":true},
+              "then": [
+                {"cmd":"switches","from":431,"to":431,"value":false},
+                {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+                {"cmd":"memorizeBgmBgs"},
+                {
+                  "cmd": "playBgm",
+                  "audio": {"name":"Pkmn_FRLG_Battle_RS_Trainer","volume":100,"pitch":100}
+                },
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "versusbatle",
+                  "origin": "topLeft",
+                  "x": 380,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "versusWinona",
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 98,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"pictureTone","id":2,"tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.05},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 280,
+                  "y": 98,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.3
+                },
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"pictureTone","id":2,"tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":1.0},
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "EndSpeech: Eu nunca tinha visto um treinador comandar um Pokémon com mais graça que eu...\\nEm reconhecimento do seu talento, eu lhe dou a Insígnia deste Ginásio."
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "call": "TrainerBattle.start",
+                      "args": [{"call":"PBTrainers::LEADER_Winona"},"Winona"]
+                    }
+                  },
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":141,"value":true},
+                      "then": [{"cmd":"commonEvent","id":37}],
+                      "else": [{"cmd":"commonEvent","id":36}]
+                    },
+                    {"cmd":"erasePicture","id":1},
+                    {"cmd":"erasePicture","id":2},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
+                    {"cmd":"restoreBgmBgs"},
+                    {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                    {
+                      "cmd": "text",
+                      "text": "\\PN foi presenteado com uma Insígnia da Pena do Ginásio da Cidade de Fortree."
+                    },
+                    {"cmd":"assign","target":"$player.badges[]","args":[21],"op":"=","value":true},
+                    {"cmd":"text","text":"\\f[faceWinona]\\rE isso...\\nÉ um presente meu. "},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM40"}]}},
+                      "then": []
+                    },
+                    {"cmd":"text","text":"\\f[faceWinona]\\rTM 40 contém AERIAL ACE."},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceWinona]\\rÉ rápido...\\nNenhum Pokémon pode escapar dele..."
+                    },
+                    {"cmd":"text","text":"\\f[faceWinona]\\r... ... ... ..."},
+                    {"cmd":"variables","from":85,"to":85,"op":"add","value":4},
+                    {"cmd":"switches","from":611,"to":611,"value":true}
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"memorizeBgmBgs"},
+                {
+                  "cmd": "playBgm",
+                  "audio": {"name":"Pkmn_FRLG_Battle_RS_Trainer","volume":100,"pitch":100}
+                },
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "versusbatle",
+                  "origin": "topLeft",
+                  "x": 380,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "versusWinona",
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"pictureTone","id":2,"tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.05},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 280,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.3
+                },
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"pictureTone","id":2,"tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":1.0},
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "EndSpeech: Eu nunca tinha visto um treinador comandar um Pokémon com mais graça que eu...\\nEm reconhecimento do seu talento, eu lhe dou a Insígnia deste Ginásio."
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "call": "TrainerBattle.start",
+                      "args": [{"call":"PBTrainers::LEADER_Winona"},"Winona"]
+                    }
+                  },
+                  "then": [
+                    {"cmd":"erasePicture","id":1},
+                    {"cmd":"erasePicture","id":2},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
+                    {"cmd":"restoreBgmBgs"},
+                    {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                    {
+                      "cmd": "text",
+                      "text": "\\PN foi presenteado com uma Insígnia da Pena do Ginásio da Cidade de Fortree."
+                    },
+                    {"cmd":"assign","target":"$player.badges[]","args":[21],"op":"=","value":true},
+                    {"cmd":"text","text":"\\f[faceWinona]\\rE isso...\\nÉ um presente meu. "},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM40"}]}},
+                      "then": []
+                    },
+                    {"cmd":"text","text":"\\f[faceWinona]\\rTM 40 contém AERIAL ACE."},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceWinona]\\rÉ rápido...\\nNenhum Pokémon pode escapar dele..."
+                    },
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceWinona]\\rAgora você também poderá retirar seus Pokémons de outras regiões do Box, até o level 50."
+                    },
+                    {"cmd":"text","text":"\\f[faceWinona]\\r... ... ... ..."},
+                    {"cmd":"switches","from":611,"to":611,"value":true}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":611,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Winona",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\f[faceWinona]\\rMesmo perdendo para você, eu continuarei usando Pokémons pássaros."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 16,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":249,"x":20,"y":15,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

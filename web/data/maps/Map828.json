@@ -1,0 +1,225 @@
+{
+  "id": 828,
+  "name": "Mart",
+  "tilesetId": 4,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,56,48,52,76,56,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,72,388,64,48,72,388,64,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,86,396,88,76,86,396,88,76,56,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,402,388,388,388,388,429,430,388,403,0,0,0,0,0,0,0],
+      [0,0,0,0,410,396,427,396,396,437,438,396,411,0,0,0,0,0,0,0],
+      [0,0,0,0,418,0,435,0,0,0,0,0,419,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,443,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,451,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,401,0,0,0,0,0,0,0,400,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,428,429,430,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,436,424,425,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,432,433,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,440,441,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,413,414,415,0,0,448,449,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,421,422,423,0,0,0,0,425,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,433,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,441,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,444,445,446,0,0,449,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,452,453,454,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 11,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer003cA",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bMAX REPEL mantém todos os Pokémons fracos longe."},
+            {"cmd":"text","text":"\\bMas quando acaba os Pokémons se aproximam novamente."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 6,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnRight"},{"move":"turnUp"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rRevive é fantástico!"},
+            {"cmd":"text","text":"\\rDe isso para um Pokémon desmaiado e ele se recuperará!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  {"call":"PBItems::ULTRABALL"},
+                  {"call":"PBItems::NETBALL"},
+                  {"call":"PBItems::DIVEBALL"},
+                  {"call":"PBItems::HYPERPOTION"},
+                  {"call":"PBItems::FULLHEAL"},
+                  {"call":"PBItems::REVIVE"},
+                  {"call":"PBItems::MAXREPEL"},
+                  {"call":"PBItems::XDEFEND"},
+                  {"call":"PBItems::XATTACK"}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 7,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":251,"x":38,"y":18,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

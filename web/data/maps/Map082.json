@@ -1,0 +1,814 @@
+{
+  "id": 82,
+  "name": "Route 37",
+  "tilesetId": 1,
+  "width": 60,
+  "height": 18,
+  "autoplayBgm": true,
+  "bgm": {"name":"Route36","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384]
+    ],
+    [
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,396,397,0,304,312,0,0,0,0,4852,0,0,0,0,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,0,0,0,328,326,0,0,0,0,0,0,0,0,0,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,0,0,597,598,598,599,0,0,0,0,0,0,0,0,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,0,0,605,606,606,607,0,0,557,0,0,0,0,0,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,597,598,606,606,606,607,0,0,0,0,0,0,0,0,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,613,614,614,614,614,615,0,0,0,0,0,0,0,0,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,572,565,0,0,557,572,0,0,0,0,0,0,0,0,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,322,308,308,308,308,324,0,0,0,0,0,0,0,0,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,304,292,316,316,296,312,0,0,0,0,387,384,0,0,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,304,312,4841,4842,304,312,0,0,0,0,0,0,597,599,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,304,312,4849,4850,304,312,0,0,0,0,384,387,605,607,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,304,290,308,308,289,312,0,0,0,0,597,598,606,607,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,328,316,296,292,316,326,0,0,0,0,605,606,606,607,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,0,0,304,312,0,0,0,0,0,0,605,606,606,607,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4834,4835,0,304,312,0,0,0,0,0,0,605,606,606,607,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836],
+      [4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4842,4843,391,304,312,4821,4820,4821,4820,4821,4820,613,614,614,615,4841,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844,4845,4844],
+      [4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,398,399,304,312,4829,4828,4829,4828,4829,4828,4829,4828,4829,4832,4833,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836,4837,4836]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4840,4841,4842,4843,0,0,0,4849,4850,4853,4840,4841,4844,4845,4844,4845,4844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4848,4849,4850,4851,0,0,0,0,0,0,4832,4833,4836,4837,4836,4837,4836,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4817,4818,0,4840,4841,4844,4845,4844,4845,4844,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,415,0,0,0,4840,4841,4842,4843,572,4853,4852,4853,4852,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4837,4836,0,0,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,0,0,0,0,4840,4841,4842,4843,0,0,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4837,4836,0,0,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,0,0,0,0,4840,4841,4842,4843,0,0,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4837,4836,4821,4820,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,4816,4817,4818,4819,4840,4841,4844,4845,4842,4843,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,4824,4825,4826,4827,0,4837,4836,4837,4836,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,4848,4849,4850,4851,4840,4841,4844,4845,4842,4843,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4837,4836,4837,4836,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,0,0,0,0,4840,4841,4844,4845,4842,4843,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4842,4843,0,0,0,0,0,4849,4850,4849,4850,0,0,0,4840,4841,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4834,4835,0,0,0,0,0,0,0,0,0,0,0,0,4832,4833,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4816,4817,4818,4819,4816,4817,4820,4821,4820,4821,4820,4821,4820,4821,4818,4819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4824,4825,4826,4827,4824,4825,0,0,0,0,0,0,0,0,4826,4827,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 29,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4840,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Yellow Apricorn Tree",
+      "x": 25,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"It's a Yellow Apricorn tree!"},
+            {"cmd":"commonEvent","id":95},
+            {"cmd":"call","fn":"pbItemBall","args":["YELLOWAPRICORN"]},
+            {"cmd":"call","fn":"pbSetEventTime","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"The tree is empty..."}]
+        },
+        {
+          "condition": {"switch1":23,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"selfSwitch","ch":"A","value":false},
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "HeadbuttTree",
+      "x": 18,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "headbutt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbHeadbutt","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "HeadbuttTree",
+      "x": 18,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "headbutt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbHeadbutt","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV009",
+      "x": 18,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!","value":{"call":"pbCanDoubleBattle?"}}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\rYou'll need at least two Pokémon or a partner if you want to battle us."
+                },
+                {"cmd":"exitEvent"}
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Ann: Let's battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,6]},
+            {"cmd":"text","text":"Anne: All right, I'm bringing out a Pokémon."},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::TWINS"},"Ann & Anne"]}
+              },
+              "then": [
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"call","fn":"pbSetSelfSwitch","args":[6,"A",true]}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Ann: Even though I teamed up with Anne, we still lost..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV008",
+      "x": 19,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!","value":{"call":"pbCanDoubleBattle?"}}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\rYou'll need at least two Pokémon or a partner if you want to battle us."
+                },
+                {"cmd":"exitEvent"}
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {"cmd":"text","text":"Ann: Let's battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Anne: All right, I'm bringing out a Pokémon."},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::TWINS"},"Ann & Anne"]}
+              },
+              "then": [
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"call","fn":"pbSetSelfSwitch","args":[5,"A",true]}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Anne: Even though Ann tried very hard for me, we still lost..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Trainer(5)",
+      "x": 21,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["PSYCHIC_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Pokémon can't move if they are sleeping.\\nI'll show you how scary that is!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Eu perdi. Isso é triste..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["PSYCHIC_Male","Greg"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Making Pokémon sleep is a good battle technique."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 17,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Route 37\\nNorth to Ecruteak City"}]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Green Apricorn Tree",
+      "x": 28,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_1",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"It's a Green Apricorn tree!"},
+            {"cmd":"commonEvent","id":100},
+            {"cmd":"call","fn":"pbItemBall","args":["GREENAPRICORN"]},
+            {"cmd":"call","fn":"pbSetEventTime","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"The tree is empty..."}]
+        },
+        {
+          "condition": {"switch1":23,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"selfSwitch","ch":"A","value":false},
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "White Apricorn Tree",
+      "x": 27,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"It's a White Apricorn tree!"},
+            {"cmd":"commonEvent","id":96},
+            {"cmd":"call","fn":"pbItemBall","args":["WHITEAPRICORN"]},
+            {"cmd":"call","fn":"pbSetEventTime","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"The tree is empty..."}]
+        },
+        {
+          "condition": {"switch1":23,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Apricorn_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"selfSwitch","ch":"A","value":false},
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "noShadow",
+      "x": 27,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Flowers",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 1,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "HeadbuttTree",
+      "x": 21,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "headbutt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbHeadbutt","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "noShadow",
+      "x": 26,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Flowers",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 1,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

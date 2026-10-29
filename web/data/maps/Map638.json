@@ -1,0 +1,370 @@
+{
+  "id": 638,
+  "name": "Kumquat Island - Kumquat Hotel 2nd",
+  "tilesetId": 33,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,640,640,640,640,640,640,640,640,640,640,64,48,48,48,48],
+      [48,48,48,48,72,648,648,648,648,648,648,648,648,648,648,64,48,48,48,48],
+      [48,48,48,48,50,384,384,384,384,384,384,384,384,384,384,49,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,384,384,384,384,384,384,384,384,384,384,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,610,611,0,0,610,611,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,618,619,0,0,618,619,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,624,625,626,626,626,626,626,626,626,627,0,0,0,0,0],
+      [0,0,0,0,0,632,633,634,634,634,634,634,634,634,635,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,523,524,525,0,567,567,0,520,521,0,0,0,0,0,0],
+      [0,0,0,0,0,531,532,533,0,575,575,0,496,497,498,0,0,0,0,0],
+      [0,0,0,0,0,539,540,584,553,553,553,553,587,505,506,0,0,0,0,0],
+      [0,0,0,0,0,547,548,592,569,569,569,569,595,513,514,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,576,608,609,576,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,576,616,617,576,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,612,0,0,0,0,0,0,0,0,612,0,0,0,0,0],
+      [0,0,0,0,0,620,0,0,0,0,0,0,0,0,620,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk001",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Only hotel guests are allowed to pass through here..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "luana",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Luana_c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rCome and check it out, come!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rKumquat Hotel is the best hotel in town!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rYou're gonna love it!"},
+            {"cmd":"showAnimation","character":0,"animation":3},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rOh! You're looking for the Gym Leader?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rI'm the Gym Leader!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceluana]\\rIt will be a great pleasure to battle against you, but not now..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceluana]\\rFind me at the city Gym."},
+            {
+              "cmd": "if",
+              "cond": {"character":-1,"direction":2},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"up"},{"move":"right"},{"move":"turnDown"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 3,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"up"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"up"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"playSe","audio":{"name":"Exit Door","volume":90,"pitch":100}}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"switches","from":363,"to":363,"value":true}
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 3,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"switches","from":363,"to":363,"value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":363,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hotel guests get free food and drinks here."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 13,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerRight"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":637,"x":13,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"left"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

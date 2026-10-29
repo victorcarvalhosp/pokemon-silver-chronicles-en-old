@@ -1,0 +1,1992 @@
+{
+  "id": 350,
+  "name": "Lavender Town",
+  "tilesetId": 26,
+  "width": 31,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"Lavender Town","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0]
+    ],
+    [
+      [96,96,96,96,96,96,96,96,96,120,0,0,0,112,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,120,0,0,0,112,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,100,124,124,124,124,124,134,0,0,0,112,96,100,124,124,124,124,124,124,124,104,96,96,96,96,96,96,96],
+      [96,96,96,120,0,0,0,0,0,0,0,0,0,112,96,120,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [100,124,124,134,0,0,0,0,0,0,0,0,0,112,96,120,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,0,0,0,0,0,136,124,134,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,6370,0,0,0,0,6353,6354,6354,6354,6354,6354,6354,6354,6354,6355,112,96,96,96,96,96,96,96],
+      [134,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6362,6362,6362,6362,6362,6362,6362,6363,112,96,96,96,96,96,96,96],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6347,6370,6370,6370,6370,6370,6370,6371,112,96,96,96,96,96,96,96],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6363,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6363,1225,0,0,0,0,0,1224,112,96,96,96,96,96,96,96],
+      [0,0,0,0,0,0,0,0,0,6353,6354,6354,6354,6338,6362,6363,1225,0,0,0,0,0,1224,112,96,96,96,96,96,96,96],
+      [132,0,0,0,0,0,0,0,0,6369,6370,6370,6370,6346,6362,6363,1225,0,0,0,0,0,1224,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6363,415,0,0,0,0,0,1224,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6363,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [120,0,0,0,0,0,0,0,0,0,0,0,0,6361,6362,6363,0,0,0,0,0,0,0,112,96,96,96,96,96,96,96],
+      [120,0,6353,6354,6354,6354,6354,6354,6354,6354,6354,6354,6354,6338,6362,6363,2139,2140,2141,2140,2141,2142,2143,112,96,96,96,96,96,96,96],
+      [120,0,6369,6370,6370,6370,6370,6370,6370,6370,6370,6346,6362,6362,6362,6363,2147,2148,2149,2148,2149,2150,2151,112,96,96,96,96,96,96,96],
+      [98,116,116,116,116,116,116,116,116,116,132,6369,6370,6370,6370,6371,2155,2156,2157,2156,2157,2158,2159,112,96,96,96,96,96,96,96]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6288,6289,6290,6291,6292,6293,6294,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,744,745,746,747,748,0,0,0,0,0,0,6296,6297,6298,6299,6300,6301,6302,0,0,0,0,0,0,0,0],
+      [0,712,713,714,715,752,753,754,755,756,0,0,0,0,0,610,6304,6305,6306,6307,6308,6309,6310,611,0,0,0,0,0,0,0],
+      [0,720,721,722,723,760,761,762,763,764,0,0,0,0,0,0,6312,6313,6314,6315,6316,6317,6318,0,0,0,0,0,0,0,0],
+      [610,728,729,730,731,768,769,770,771,772,0,0,415,0,0,0,6320,6321,6322,6323,6324,6325,6326,0,0,0,0,0,0,0,0],
+      [0,736,737,738,739,776,777,778,779,780,0,0,0,0,0,0,6328,6329,6330,6331,6332,6333,6334,0,0,0,0,0,0,0,0],
+      [0,6353,6354,6354,6354,6354,6354,6354,6354,6355,0,0,0,0,0,0,0,0,0,0,0,0,415,0,0,0,0,0,0,0,0],
+      [0,6369,6370,6370,6370,6370,6370,6370,6370,6371,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1800,1801,1802,1803,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1808,1809,1810,1811,0,0,0,0,5011,5012,5013,5014,5015,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1816,1817,1818,1819,0,0,0,1217,5019,5020,5021,5022,5023,1216,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,415,1824,1825,1826,1827,0,0,0,1217,5027,5028,5029,5030,5031,1216,0,0,0,0,0,0,0,0],
+      [604,0,0,0,0,0,0,0,1832,1833,1834,1835,1836,0,0,0,1217,5035,5036,5037,5038,5039,1216,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1800,1801,1802,1803,1840,1841,1842,1843,1844,0,0,0,0,5043,5044,5045,5046,5047,1216,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1808,1809,1810,1811,1848,1849,1850,1851,1852,0,0,0,415,5051,5052,5053,5054,5055,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1816,1817,1818,1819,1856,1857,1858,1859,1860,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1824,1825,1826,1827,1864,1865,1866,1867,1868,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2139,2175,2175,2140,2175,2175,2143,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147,2175,2149,2175,2175,2175,2151,0,0,0,0,0,0,0,0],
+      [630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2155,2191,2175,2156,2175,2183,2159,631,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "Home door",
+      "x": 10,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":452,"x":6,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Home door",
+      "x": 5,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":450,"x":7,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Home door",
+      "x": 19,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 2,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":455,"x":10,"y":13,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 2,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Home door",
+      "x": 19,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta1",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":474,"x":3,"y":12,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta1",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Home door",
+      "x": 7,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":453,"x":9,"y":8,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 8,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Lavender Volunteer Pokemon House"}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 12,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Lavender Town\\nThe Noble Town"}]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 22,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "Kanto TV Station\\nYour Best-Loved Shows On-Air Around the Clock!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 16,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"House of Memories\\nMay Pokemon Spirits Rest Easy"}]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Home door",
+      "x": 3,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":454,"x":7,"y":11,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 19,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":778,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Move along, citizen."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It’s restricted access to authorized personnel only."}
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 21,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":299,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "People come from all over to pay their respects to the spirits of Pokemon."
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":768,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "The spirits are more calm now...\\nBut I still sense something bad in the air..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"It's far from here though."}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":777,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "The spirits are deeply troubled. Something is disrupting their peace..."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "Ever since the the new Pokémon Association President elections, there's been a darkness hanging over this town."
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"switch":767,"value":true},
+                          "then": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "All the TV broadcasts are talking about is the Pokémon Association Elections.\\nThis is a big deal for all Trainers."
+                            }
+                          ],
+                          "else": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "People come from all over to pay their respects to the spirits of Pokemon."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "x": 6,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":299,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "You need a PokeFlute to wake sleeping Pokemon. \\nEvery Trainer has to know that!"
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":768,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "That was unbelievable!\\nSomeone activate a live broadcast from an internal Pokémon Association meeting..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "I knew something was wrong with the Association!\\nHope things improve now with Agatha in charge."
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":777,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"This town feels different now."},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "The Pokémon Association has guards everywhere...\\nthey say it's for protection, but I've lived here all my life and never needed protection before."
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "You need a PokeFlute to wake sleeping Pokemon. \\nEvery Trainer has to know that!"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 15,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":299,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"That's quite some building, eh?\\nIt's Kanto TV Tower."}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":768,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "I'm so grateful that the television is now back on their usual schedule."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "I was really tired of seeing all that propaganda about Giovanni."
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":777,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "They're expanding the Kanto TV Tower services even more."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "The broadcasts are non-stop now... all about how the Association is working to improve Kanto."
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"switch":767,"value":true},
+                          "then": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "The Pokémon Association Elections are happening in Celadon City right now.\\nIf you're a registered Trainer, you should go there."
+                            }
+                          ],
+                          "else": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "That's quite some building, eh?\\nIt's Kanto TV Tower."
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Home door",
+      "x": 10,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 2,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":519,"x":9,"y":9,"direction":0,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [{"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "x": 8,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk011",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":299,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Kanto has many good TV shows."}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":768,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "I knew since the beggining that Giovanni was a bad person, but people still voted for him..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"I hope all of them are sorry now."}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":777,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "The Pokémon Association has been making changes to broadcasting regulations."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "My cousin works at the TV Tower and says they're required to run only stories approved by the Association now."
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"Kanto has many good TV shows."}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "x": 5,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "shop_panel",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.1},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "shop_panel",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "x": 3,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":778,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Move along, citizen."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "This area is under enhanced security protocols by direct order of President Giovanni.\\nIt's for your own safety."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "EV020",
+      "x": 19,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":787,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "yellow",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceyellow]\\rI've been waiting for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceyellow]\\rFollow me inside."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,799 @@
+{
+  "id": 366,
+  "name": "Viridian City - School",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 18,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,52,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,72,72,389,389,389,389,389,389,389,389,389,389,64,48,48,48,48],
+      [48,48,48,72,72,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48],
+      [48,48,48,72,72,178,164,164,164,164,164,164,164,164,180,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,72,72,184,172,172,172,172,172,172,172,172,182,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,401,0,0,0,0,0,0,401,0,0,0,0,0,0],
+      [0,0,0,0,0,0,409,0,0,0,0,0,0,409,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,739,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,738,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,706,707,708,709,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,714,715,716,717,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,0,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,652,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,521,521,521,521,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,739,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,738,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,521,521,521,521,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,739,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,738,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,521,521,521,521,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "student 1",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm trying to memorize everything!"}
+          ]
+        },
+        {
+          "condition": {"switch1":946,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I love the way you battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I'm trying to memorize every move so I can copy your technique on my next battle!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "TEACHER_Female",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's very important to pay attention to the class!\\nPlease take some notes!"
+            },
+            {"cmd":"showAnimation","character":0,"animation":3},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Are you \\PN?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Oh, what a renowned Trainer like you is doing here?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"My students have been talking a lot about you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "They’ve been studying hard, but nothing like some real action to really learn."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Can you show your abilities to the class in a demonstration battle against me?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Really? Great!"},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.4},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "if",
+                    "cond": {"character":-1,"direction":6},
+                    "then": [
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                      }
+                    ],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"character":-1,"direction":8},
+                        "then": [
+                          {
+                            "cmd": "moveRoute",
+                            "character": -1,
+                            "route": {
+                              "repeat": false,
+                              "skippable": false,
+                              "list": [{"move":"left"},{"move":"up"},{"move":"turnDown"}]
+                            }
+                          }
+                        ],
+                        "else": [
+                          {
+                            "cmd": "moveRoute",
+                            "character": -1,
+                            "route": {
+                              "repeat": false,
+                              "skippable": false,
+                              "list": [
+                                {"move":"down"},
+                                {"move":"left"},
+                                {"move":"left"},
+                                {"move":"up"},
+                                {"move":"turnDown"}
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [{"move":"left"},{"move":"right"},{"move":"turnDown"}]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"setEventLocation","event":7,"direction":8,"x":10,"y":6},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Class! Everyone clome closer, please."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 4,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {"move":"left"},
+                        {"move":"left"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"right"},
+                        {"move":"turnUp"}
+                      ]
+                    }
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 6,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {"move":"right"},
+                        {"move":"right"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"left"},
+                        {"move":"turnUp"}
+                      ]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"We have a special guest today!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\PN, from Johto. An Indigo League Champion and World Cup participant."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,6]},
+                  {"cmd":"text","text":"Whoa!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                  {"cmd":"text","text":"I saw them on TV!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"All right! No crowding!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"We're going to do a demonstration battle."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Watch carefully!\\nI want you to see how a certified Trainer thinks during a battle."
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"This is a friendly battle, but I’m not going easy!"},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"TrainerBattle.start","args":["TEACHER_Female","Lilian"]}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Whew... you're amazing..."},
+                      {
+                        "cmd": "moveRoute",
+                        "character": 0,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"OK, class! Did you see that?"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\PN stayed calm the whole time."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"That’s what a strong Trainer looks like."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,6]},
+                      {"cmd":"text","text":"Whoa!"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                      {"cmd":"text","text":"Too much skill!"},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": 0,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"You really helped me today."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Here! Please take this as a thank-you gift!"},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbReceiveItem","args":["TM56"]}},
+                        "then": []
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"I'm sure you'll know how to make good use of it!"},
+                      {"cmd":"call","fn":"completeQuest","args":["ViridianSchool"]},
+                      {"cmd":"switches","from":946,"to":946,"value":true},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {"op":"!","value":{"call":"isQuestActive?","args":["ViridianSchool"]}}
+                        },
+                        "then": [{"cmd":"call","fn":"activateQuest","args":["ViridianSchool"]}]
+                      }
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"I see...\\nIf you change your mind, come talk to me."},
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {"op":"!","value":{"call":"isQuestActive?","args":["ViridianSchool"]}}
+                    },
+                    "then": [{"cmd":"call","fn":"activateQuest","args":["ViridianSchool"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":946,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "TEACHER_Female",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's very important to pay attention to the class!\\nPlease take some notes!"
+            },
+            {"cmd":"showAnimation","character":0,"animation":3},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Oh, I didn't realize it was you, \\PN."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Our students can't stop talking about you. Thank you for your help."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":265,"x":18,"y":20,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "student 2",
+      "x": 9,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer013c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I want to go all over the place and battle all kinds of Trainers"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I learned that is not just about training your Pokemon.\\nIt's also a chance to experience many things yourself."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I bet the Champion from Pallet Town went to all the cities and towns in Kanto."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":946,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer013c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I want to go all over the place and battle all kinds of Trainers, just like you!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I learned that is not just about training your Pokemon.\\nIt's also a chance to experience many things yourself."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "student 3",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer012c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm learning how to evolve my Pokémon."}
+          ]
+        },
+        {
+          "condition": {"switch1":946,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer012c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I'm studying to become a great Pokémon Trainer like you some day!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "student 4",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bI like to trade Pokémon.\\nBut my mom said I shouldn't trade with strangers!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":946,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bI like to trade Pokémon.\\nBut my mom said I shouldn't trade with strangers..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bYou are \\PN! So you're not a stranger!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI'm looking for an Heracross, it's a Pokémon from Johto."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWant to trade it for my Munchlax?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "The chosen Pokémon's party index goes in game ",
+                      "variable 1. A value of -1 means no Pokémon was ",
+                      "chosen.",
+                      "The chosen Pokémon's name goes in game variable 2."
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbChoosePokemonForTrade","args":[1,2,"HERACROSS"]},
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"==","value":-1},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bYou don't want to trade?  Aww..."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bCome back if you change your mind."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"isQuestActive?","args":["HeracrossTrade"]}},
+                        "then": [],
+                        "else": [{"cmd":"call","fn":"activateQuest","args":["HeracrossTrade"]}]
+                      }
+                    ],
+                    "else": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bOK, let's get started."},
+                      {
+                        "cmd": "call",
+                        "fn": "pbStartTrade",
+                        "args": [{"call":"pbGet","args":[1]},"MUNCHLAX","Sleepy","Enzo"]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\PN traded Heracross for Munchlax!"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bThanks!"},
+                      {"cmd":"call","fn":"completeQuest","args":["HeracrossTrade"]},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bYou don't want to trade? Aww..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bCome back if you change your mind."},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"isQuestActive?","args":["HeracrossTrade"]}},
+                    "then": [],
+                    "else": [{"cmd":"call","fn":"activateQuest","args":["HeracrossTrade"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bIcan tell everyone that I traded a Pokémon with \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bNobody will believe me!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bHeracross is having a lot of fun with me."}
+          ]
+        }
+      ]
+    }
+  ]
+}

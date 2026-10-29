@@ -1,0 +1,983 @@
+{
+  "id": 35,
+  "name": "Violet City - Mart",
+  "tilesetId": 4,
+  "width": 20,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,56,48,52,76,56,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,72,388,64,48,72,388,64,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,86,396,88,76,86,396,88,76,56,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,402,388,388,388,428,429,430,388,403,0,0,0,0,0,0,0],
+      [0,0,0,0,410,396,427,396,436,437,438,396,411,0,0,0,0,0,0,0],
+      [0,0,0,0,418,0,435,0,0,0,0,0,419,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,443,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,451,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,401,0,0,0,0,0,0,0,400,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,428,429,430,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,436,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,457,458,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,463,465,466,463,0,0,0,0,0,0,0,0],
+      [0,0,0,0,413,414,415,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,421,422,423,0,0,0,0,425,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,433,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,441,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,444,445,446,0,0,449,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,452,453,454,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":10,"x":13,"y":25,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 19,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Pokémon can hold items like a Potion or an Antidote."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"But they don't appear to know how to use man-made items."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 12,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"When you first catch a Pokémon, it may be weak."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"But it will eventually grow to be strong."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It's important to treat Pokémon with love."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  "POKEBALL",
+                  "POTION",
+                  "ANTIDOTE",
+                  "XATTACK",
+                  "XDEFENSE",
+                  "PARALYZEHEAL",
+                  "ICEHEAL",
+                  "REPEL",
+                  "ESCAPEROPE"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 11,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_PokeFan_M_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"BoosterPack.initialize_all_packs","args":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "One day, I heard a rumor: \"The Legendary Pokémon Cards...\\nThe extremely rare and powerful cards held by Pokémon Trading Card Game's greatest players... \\nThe Grand Masters are searching for one to inherit the legend!\""
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Dreaming of inheriting the Legendary Pokémon Cards, I started to play with them a lot!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm crazy about Pokémon and Pokémon Card Collecting!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You want to learn how to play the Pokémon Trading Card game?\\nLet me help you get started then!"
+            },
+            {"cmd":"call","fn":"pbGetKeyItem","args":["TCGBINDER"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"This is a binder where you can put and check your cards."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Take this as well."},
+            {"cmd":"call","fn":"pbGetKeyItem","args":["BOOSTERPACK_GENESIS"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Open it and then talk to me again so we can have our first duel!"},
+            {"cmd":"call","fn":"activateQuest","args":["TCGInitiation"]},
+            {"cmd":"selfSwitch","ch":"C","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"C"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_PokeFan_M_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbCanTriadDuel?"}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"So you, too, finally want to start playing the Card Game."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Well, dueling is more fun than just collecting cards!"},
+                {"cmd":"label","name":"Choices"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let's have a quick Pokémon TCG duel?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","Game rules","No"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "comment",
+                        "lines": [
+                          "The two numbers are the min and max level of the ",
+                          "opponent respectively. Each number can be between ",
+                          "0 and 9 inclusive, and the max level must be higher ",
+                          "than or equal to the min level."
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "They say that actions speak louder than words, so let's play a game!"
+                      },
+                      {
+                        "cmd": "script",
+                        "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PICHU,:HOPPIP])\npbSet(2, result)"
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":2,"op":"==","value":1},
+                        "then": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"You won!"},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Take this card as the prize for the win."},
+                          {"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["RATTATA"]},
+                          {"cmd":"call","fn":"completeQuest","args":["TCGInitiation"]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "You should duel with many different people.\\nWhy don't you go to one of the Card Clubs?\\nThere are many people playing at the clubs."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "Collect new cards and try completing your Binder too!"
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {"op":"!","value":{"call":"isQuestActive?","args":["TCGLeague"]}}
+                            },
+                            "then": [{"cmd":"call","fn":"activateQuest","args":["TCGLeague"]}]
+                          },
+                          {"cmd":"selfSwitch","ch":"D","value":true}
+                        ],
+                        "else": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {
+                            "cmd": "if",
+                            "cond": {"variable":2,"op":"==","value":2},
+                            "then": [
+                              {"cmd":"comment","lines":["You lost!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {"cmd":"text","text":"Don't worry, we can duel again anytime!"},
+                              {
+                                "cmd": "if",
+                                "cond": {
+                                  "script": {
+                                    "op": "<=",
+                                    "left": {"call":"getCurrentStage","args":["TCGInitiation"]},
+                                    "right": 1
+                                  }
+                                },
+                                "then": [
+                                  {
+                                    "cmd": "call",
+                                    "fn": "advanceQuestToStage",
+                                    "args": ["TCGInitiation",2]
+                                  }
+                                ]
+                              }
+                            ],
+                            "else": [
+                              {"cmd":"comment","lines":["Draw!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {"cmd":"text","text":"Don't worry, we can duel again anytime!"},
+                              {
+                                "cmd": "if",
+                                "cond": {
+                                  "script": {
+                                    "op": "<=",
+                                    "left": {"call":"getCurrentStage","args":["TCGInitiation"]},
+                                    "right": 1
+                                  }
+                                },
+                                "then": [
+                                  {
+                                    "cmd": "call",
+                                    "fn": "advanceQuestToStage",
+                                    "args": ["TCGInitiation",2]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Pokémon TCG is a game played with special cards placed on a 3x3 board."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Each card has 4 numbers on it, one per side.\\n These numbers are so-called stats."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Players take turns placing cards on the board. As they do so, they try to capture and gain control of their opponent's cards."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "That's where the numbers come in. If a player places a card with a higher number next to a card with a lower number, the player captures that card."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Thus, the goal of the game is to gain control of more cards than the other player by the end of the game."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Notice that each space on the board is assigned a random type.\\nIf a card is placed on a space with the same type, it gains +1 to all its values."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "When you win a game, you will receive 1 card as the prize from your opponent."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "This also works the other way around: if you lose, you have to give your opponent one of your cards, chosen at random."
+                      },
+                      {"cmd":"call","fn":"advanceQuestToStage","args":["TCGInitiation",2]},
+                      {"cmd":"jump","label":"Choices"}
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Ok...\\nPlease come back later!"},
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": "<=",
+                            "left": {"call":"getCurrentStage","args":["TCGInitiation"]},
+                            "right": 1
+                          }
+                        },
+                        "then": [{"cmd":"call","fn":"advanceQuestToStage","args":["TCGInitiation",2]}]
+                      }
+                    ]
+                  ],
+                  "cancel": 2
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Oh, you don't have enough cards to play. You need  at least 5."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Open the Booster Pack I gave you to get some cards to play."}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"D"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_PokeFan_M_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You should duel with many different people.\\nWhy don't you go to one of the Card Clubs?\\nThere are many people playing at the clubs."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Collect new cards and try completing your Binder too!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!","value":{"call":"isQuestActive?","args":["TCGLeague"]}}},
+              "then": [{"cmd":"call","fn":"activateQuest","args":["TCGLeague"]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 19,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_PokeFan_M_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbCanTriadDuel?"}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"That are some nice cards you have!"},
+                {"cmd":"label","name":"Choices"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let's have a quick Pokémon TCG battle?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","Game rules","No"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "comment",
+                        "lines": [
+                          "The two numbers are the min and max level of the ",
+                          "opponent respectively. Each number can be between ",
+                          "0 and 9 inclusive, and the max level must be higher ",
+                          "than or equal to the min level."
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Let's go!"},
+                      {
+                        "cmd": "script",
+                        "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"samewins\", \"elements\", \"noprize\"], \n[:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS], \n:CATERPIE)\npbSet(2, result)"
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":2,"op":"==","value":1},
+                        "then": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"You won!"}
+                        ],
+                        "else": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {
+                            "cmd": "if",
+                            "cond": {"variable":2,"op":"==","value":2},
+                            "then": [
+                              {"cmd":"comment","lines":["You lost!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {"cmd":"text","text":"You lost!"}
+                            ],
+                            "else": [
+                              {"cmd":"comment","lines":["Draw!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {"cmd":"text","text":"That's a draw!"}
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Pokémon TCG is a game played with special cards placed on a 3x3 board."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Each card has 4 numbers on it, one per side.\\n These numbers are so-called stats."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Players take turns placing cards on the board. As they do so, they try to capture and gain control of their opponent's cards."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "That's where the numbers come in. If a player places a card with a higher number next to a card with a lower number, the player captures that card."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Thus, the goal of the game is to gain control of more cards than the other player by the end of the game."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Notice that each space on the board is assigned a random type.\\nIf a card is placed on a space with the same type, it gains +1 to all its values."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "When you win a game, you will receive 1 card as the prize from your opponent."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "This also works the other way around: if you lose, you have to give your opponent one of your cards, chosen at random."
+                      },
+                      {"cmd":"jump","label":"Choices"}
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Ok...\\nPlease come back later!"}
+                    ]
+                  ],
+                  "cancel": 2
+                },
+                {"cmd":"selfSwitch","ch":"B","value":true}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Oh, you don't have enough cards to play. You need  at least 5."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Open the Booster Pack I gave you to get some cards to play."}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 19,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "003s",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["RATTATA_1"]}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 15,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "003s",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["OAK"]}]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 16,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "003s",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["CHARIZARD_2"]}]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 17,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "003s",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["CHARIZARD"]}]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 18,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "004s",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"BoosterPack.initialize_all_packs","args":[]},
+            {"cmd":"call","fn":"pbGetKeyItem","args":["BOOSTERPACK_DESTINY"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 18,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "script",
+              "ruby": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PIKACHU,:BELLSPROUT])\npbSet(2, result)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Triple Triad card shop",
+      "x": 18,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 19",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"label","name":"Shop Start"},
+            {"cmd":"text","text":"\\bWelcome to the Triad Card Shop."},
+            {"cmd":"label","name":"Choices"},
+            {
+              "cmd": "choices",
+              "choices": ["Buy Cards","Sell Cards","Information","Exit"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbBuyTriads","args":[]},
+                  {"cmd":"text","text":"\\bAnything else I can do for you?"},
+                  {"cmd":"jump","label":"Choices"}
+                ],
+                [
+                  {"cmd":"call","fn":"pbSellTriads","args":[]},
+                  {"cmd":"text","text":"\\bAnything else I can do for you?"},
+                  {"cmd":"jump","label":"Choices"}
+                ],
+                [
+                  {
+                    "cmd": "text",
+                    "text": "\\bHere is where you can purchase new cards for Triple Triad duels."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "\\bThe selection grows as you catch and find new Pokémon, so check often."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "\\bAnd, of course, stronger Pokémon cards cost more than weaker cards."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "\\bYou don't have to use this shop in your game. It's just an example of how the player could gain Triple Triad cards. You could implement other ways."
+                  },
+                  {"cmd":"jump","label":"Shop Start"}
+                ],
+                [{"cmd":"text","text":"\\bPlease come again."}]
+              ],
+              "cancel": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

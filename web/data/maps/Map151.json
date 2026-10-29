@@ -1,0 +1,704 @@
+{
+  "id": 151,
+  "name": "Goldenrod City - Mart Warehouse",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,72,446,455,455,455,455,455,455,455,455,455,455,455,455,455,455,455,455,446],
+      [48,72,370,356,356,372,370,356,356,356,370,356,356,356,356,356,356,356,356,356],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,352,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336,336],
+      [48,72,376,364,364,364,364,364,364,364,364,364,364,364,364,364,364,364,364,364],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,1549,1549,1549,1549,1549,1549,1549,1549,1549,1549,1549,1549,1653,1549,1549,1549,1549,1549],
+      [0,0,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557,1557],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,378,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,380,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1549,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1557,0,0,0,0,0],
+      [0,0,0,0,1060,1060,0,0,0,0,0,0,0,0,378,0,0,0,0,0],
+      [0,0,0,0,1060,1060,0,0,0,0,0,0,0,0,368,0,0,0,0,0],
+      [0,0,0,0,1060,4139,4140,1060,1060,0,0,0,0,0,368,0,0,0,0,0],
+      [0,0,0,0,1060,4147,4148,1060,1060,0,0,0,0,0,353,356,356,356,372,0],
+      [0,0,0,0,1060,4155,4156,1060,1060,0,0,0,0,0,376,364,364,364,374,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,1060,1060,1060,4126,4120,4121,0,0],
+      [0,0,1549,0,0,0,0,0,0,0,0,0,1060,1060,1060,4134,4135,4129,0,1549],
+      [0,0,1557,0,0,0,0,0,0,0,0,0,1060,0,0,0,0,0,0,1557],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,1534,0,0,0,1828,1829,1830,0,0,0,0,0,1649,0,0,0,0,1535],
+      [0,0,1653,0,0,0,1836,1837,1838,0,0,0,0,0,1653,0,522,523,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1653,0,530,531,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1653,0,538,539,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1647,0,0,0,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1655,0,0,0,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1654,0,0,0,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1653,0,0,0,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,1542,1627,1627,1627,1627,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,4123,4124,4125,1480,1549,1549,1549,1549,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,4131,4132,4133,1488,1557,1557,1557,1557,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,4120,0,0,1653],
+      [0,0,1647,4120,4121,0,0,0,0,0,0,0,0,0,0,0,4128,0,0,1647],
+      [0,0,1655,4128,4129,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1655],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,82,68,68,68,68,68,68,68,68,68,68,68],
+      [0,0,0,0,0,0,0,82,49,48,48,48,48,48,48,48,48,48,48,48],
+      [0,0,0,0,0,0,0,64,48,48,48,48,48,48,48,48,48,48,48,48]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 6,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["ULTRABALL"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transfer","map":74,"x":7,"y":9,"direction":0,"fade":true},
+            {"cmd":"switches","from":105,"to":105,"value":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "067",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"MACHOKE: Maaacho!"},
+            {"cmd":"playSe","audio":{"name":"067Cry","volume":80,"pitch":100}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 3,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "067",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"MACHOKE: Maaacho!"},
+            {"cmd":"playSe","audio":{"name":"067Cry","volume":80,"pitch":100}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 13,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":105,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1060,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 13,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":105,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1060,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 13,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":105,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1060,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 14,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":105,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1060,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 11,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk087-machop",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Machop : Chop!"},
+            {"cmd":"playSe","audio":{"name":"066Cry","volume":80,"pitch":100}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk034-blackbelt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"MACHOKE is helping us move the boxes!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 17,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":150,"x":18,"y":2,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 3,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk034-blackbelt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "This warehouse gets cleaned in a matter of seconds thanks to MACHOKE."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The stuff on the ground is junk. Take it if you want it!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "x": 13,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["WATERSTONE"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 19,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":29,"to":29,"op":"set","value":0}]
+        }
+      ]
+    }
+  ]
+}

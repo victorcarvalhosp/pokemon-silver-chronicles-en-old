@@ -1,0 +1,232 @@
+{
+  "id": 314,
+  "name": "Indigo Plateau - House Move Deleter",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,384,384,384,384,384,384,384,384,384,384,64,48,48,48,48],
+      [48,48,48,48,72,392,392,392,392,392,392,392,392,392,392,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,584,585,594,557,558,0,0,551,555,556,0,0,0,0,0],
+      [0,0,0,0,0,592,593,602,565,566,0,0,559,563,564,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,626,627,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,634,635,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,487,0,0,0,0,0,0,0,0,487,0,0,0,0,0],
+      [0,0,0,0,0,495,0,0,0,0,0,0,0,0,495,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,401,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,409,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\Olá eu sou o Move Deleter."},
+            {"cmd":"text","text":"Eu posso fazer Pokémos esquecerem golpes."},
+            {"cmd":"text","text":"Você gostaria que eu fizesse isso?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {"cmd":"label","name":"ChoosePokemon"},
+                  {"cmd":"text","text":"Qual Pokémon esquecerá um golpe?"},
+                  {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "If variable 1 is less than 0, it means the player has ",
+                      "canceled choosing a Pokemon."
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"<","value":0},
+                    "then": [{"cmd":"text","text":"Volte quando precisar que algum golpe seja deletado."}],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"egg?","on":{"call":"pbGetPokemon","args":[1]}}},
+                        "then": [
+                          {"cmd":"text","text":"O que?  Ovos não sabem nenhum golpe!"},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": "==",
+                            "left": {"call":"pbNumMoves","args":[{"call":"pbGetPokemon","args":[1]}]},
+                            "right": 1
+                          }
+                        },
+                        "then": [
+                          {
+                            "cmd": "text",
+                            "text": "\\v[3] knows only one move so it can't be forgotten..."
+                          },
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"text","text":"Which move should be forgotten?"},
+                      {
+                        "cmd": "call",
+                        "fn": "pbChooseMove",
+                        "args": [{"call":"pbGetPokemon","args":[1]},2,4]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":2,"op":"<","value":0},
+                        "then": [{"cmd":"jump","label":"ChoosePokemon"}],
+                        "else": [
+                          {"cmd":"text","text":"Hm!  \\v[3]'s \\v[4]?  Este golpe será esquecido?"},
+                          {
+                            "cmd": "choices",
+                            "choices": ["Sim","Não"],
+                            "branches": [
+                              [
+                                {
+                                  "cmd": "playMe",
+                                  "audio": {"name":"013-Gag02","volume":100,"pitch":100}
+                                },
+                                {"cmd":"wait","seconds":4.0},
+                                {
+                                  "cmd": "call",
+                                  "fn": "pbDeleteMove",
+                                  "args": [{"call":"pbGetPokemon","args":[1]},{"call":"pbGet","args":[2]}]
+                                },
+                                {"cmd":"text","text":"It worked to perfection!"},
+                                {"cmd":"text","text":"\\v[3] has forgotten \\v[4] completely."}
+                              ],
+                              [
+                                {
+                                  "cmd": "text",
+                                  "text": "Volte quando precisar que algum golpe seja deletado."
+                                }
+                              ]
+                            ],
+                            "cancel": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [{"cmd":"text","text":"Volte quando precisar que algum golpe seja deletado."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 9,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":171,"x":22,"y":39,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

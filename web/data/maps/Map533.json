@@ -1,0 +1,608 @@
+{
+  "id": 533,
+  "name": "mesa",
+  "tilesetId": 25,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [68,68,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 19,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "escolherpokemon",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"menuAccess","enabled":false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "meio",
+      "x": 1,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "showPicture",
+              "id": 10,
+              "name": "chi",
+              "origin": "topLeft",
+              "x": 190,
+              "y": 90,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"text","text":"You'll take CHIKORITA, the Grass-type Pokémon?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"switches","from":996,"to":996,"value":true},
+                  {"cmd":"erasePicture","id":10},
+                  {"cmd":"text","text":"I think it's a great Pokémon!"},
+                  {"cmd":"erasePicture","id":1},
+                  {"cmd":"erasePicture","id":2},
+                  {"cmd":"erasePicture","id":3},
+                  {"cmd":"erasePicture","id":4},
+                  {"cmd":"erasePicture","id":5},
+                  {"cmd":"menuAccess","enabled":true},
+                  {"cmd":"erasePicture","id":10},
+                  {"cmd":"erasePicture","id":1},
+                  {"cmd":"erasePicture","id":2},
+                  {"cmd":"erasePicture","id":3},
+                  {"cmd":"erasePicture","id":4},
+                  {"cmd":"erasePicture","id":5},
+                  {"cmd":"switches","from":474,"to":474,"value":true},
+                  {"cmd":"transfer","map":8,"x":13,"y":6,"direction":8,"fade":true}
+                ],
+                [{"cmd":"erasePicture","id":10},{"cmd":"text","text":"Choose your Pokémon wisely!"}]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 0,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"variable":68,"op":"==","value":0},
+              "then": [
+                {
+                  "cmd": "showPicture",
+                  "id": 10,
+                  "name": "cyn",
+                  "origin": "topLeft",
+                  "x": 190,
+                  "y": 90,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"text","text":"You'll take CYNDAQUIL, the Fire-type Pokémon?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","No"],
+                  "branches": [
+                    [
+                      {"cmd":"switches","from":997,"to":997,"value":true},
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"text","text":"I think it's a great Pokémon!"},
+                      {"cmd":"erasePicture","id":1},
+                      {"cmd":"erasePicture","id":2},
+                      {"cmd":"erasePicture","id":3},
+                      {"cmd":"erasePicture","id":4},
+                      {"cmd":"erasePicture","id":5},
+                      {"cmd":"menuAccess","enabled":true},
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"erasePicture","id":1},
+                      {"cmd":"erasePicture","id":2},
+                      {"cmd":"erasePicture","id":3},
+                      {"cmd":"erasePicture","id":4},
+                      {"cmd":"erasePicture","id":5},
+                      {"cmd":"switches","from":474,"to":474,"value":true},
+                      {"cmd":"transfer","map":8,"x":13,"y":6,"direction":8,"fade":true}
+                    ],
+                    [
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"text","text":"Choose your Pokémon wisely!"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 2,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"variable":68,"op":"==","value":2},
+              "then": [
+                {
+                  "cmd": "showPicture",
+                  "id": 10,
+                  "name": "toto",
+                  "origin": "topLeft",
+                  "x": 190,
+                  "y": 90,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"text","text":"You'll take TOTODILE, the Water-type Pokémon?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","No"],
+                  "branches": [
+                    [
+                      {"cmd":"switches","from":995,"to":995,"value":true},
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"text","text":"I think it's a great Pokémon!"},
+                      {"cmd":"erasePicture","id":1},
+                      {"cmd":"erasePicture","id":2},
+                      {"cmd":"erasePicture","id":3},
+                      {"cmd":"erasePicture","id":4},
+                      {"cmd":"erasePicture","id":5},
+                      {"cmd":"menuAccess","enabled":true},
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"erasePicture","id":1},
+                      {"cmd":"erasePicture","id":2},
+                      {"cmd":"erasePicture","id":3},
+                      {"cmd":"erasePicture","id":4},
+                      {"cmd":"erasePicture","id":5},
+                      {"cmd":"switches","from":474,"to":474,"value":true},
+                      {"cmd":"transfer","map":8,"x":13,"y":6,"direction":8,"fade":true}
+                    ],
+                    [
+                      {"cmd":"erasePicture","id":10},
+                      {"cmd":"text","text":"Choose your Pokémon wisely!"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 19,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"button":2},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"variable":68,"op":"==","value":2},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+                    },
+                    {"cmd":"wait","seconds":0.25}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":68,"op":"==","value":0},
+                      "then": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": -1,
+                          "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+                        },
+                        {"cmd":"wait","seconds":0.25}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 18,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [
+            {"cmd":"variables","from":68,"to":68,"op":"set","value":{"character":-1,"property":"x"}},
+            {
+              "cmd": "if",
+              "cond": {"variable":68,"op":"==","value":0},
+              "then": [
+                {
+                  "cmd": "showPicture",
+                  "id": 5,
+                  "name": "maindwesquerda",
+                  "origin": "topLeft",
+                  "x": 150,
+                  "y": 20,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"wait","seconds":0.15},
+                {
+                  "cmd": "movePicture",
+                  "id": 5,
+                  "origin": "topLeft",
+                  "x": 200,
+                  "y": 20,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.15},
+                {
+                  "cmd": "movePicture",
+                  "id": 5,
+                  "origin": "topLeft",
+                  "x": 150,
+                  "y": 20,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.15}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"variable":68,"op":"==","value":1},
+                  "then": [
+                    {
+                      "cmd": "showPicture",
+                      "id": 5,
+                      "name": "maindw1",
+                      "origin": "topLeft",
+                      "x": 200,
+                      "y": 70,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 255,
+                      "blendType": 0
+                    },
+                    {"cmd":"wait","seconds":0.15},
+                    {
+                      "cmd": "movePicture",
+                      "id": 5,
+                      "origin": "topLeft",
+                      "x": 200,
+                      "y": 30,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 255,
+                      "blendType": 0,
+                      "seconds": 0.5
+                    },
+                    {"cmd":"wait","seconds":0.15},
+                    {
+                      "cmd": "movePicture",
+                      "id": 5,
+                      "origin": "topLeft",
+                      "x": 200,
+                      "y": 70,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 255,
+                      "blendType": 0,
+                      "seconds": 0.5
+                    },
+                    {"cmd":"wait","seconds":0.15}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":68,"op":"==","value":2},
+                      "then": [
+                        {
+                          "cmd": "showPicture",
+                          "id": 5,
+                          "name": "maindwdireita",
+                          "origin": "topLeft",
+                          "x": 250,
+                          "y": 20,
+                          "zoomX": 100,
+                          "zoomY": 100,
+                          "opacity": 255,
+                          "blendType": 0
+                        },
+                        {"cmd":"wait","seconds":0.15},
+                        {
+                          "cmd": "movePicture",
+                          "id": 5,
+                          "origin": "topLeft",
+                          "x": 200,
+                          "y": 20,
+                          "zoomX": 100,
+                          "zoomY": 100,
+                          "opacity": 255,
+                          "blendType": 0,
+                          "seconds": 0.5
+                        },
+                        {"cmd":"wait","seconds":0.15},
+                        {
+                          "cmd": "movePicture",
+                          "id": 5,
+                          "origin": "topLeft",
+                          "x": 250,
+                          "y": 20,
+                          "zoomX": 100,
+                          "zoomY": 100,
+                          "opacity": 255,
+                          "blendType": 0,
+                          "seconds": 0.5
+                        },
+                        {"cmd":"wait","seconds":0.15}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

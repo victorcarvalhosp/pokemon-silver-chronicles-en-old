@@ -1,0 +1,1047 @@
+{
+  "id": 738,
+  "name": "Whirl Islands",
+  "tilesetId": 23,
+  "width": 25,
+  "height": 38,
+  "autoplayBgm": true,
+  "bgm": {"name":"Cave1Dark","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296,288],
+      [288,288,312,130,132,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,130,132,304,288],
+      [288,288,312,112,120,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,112,120,304,288],
+      [288,288,312,112,120,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,130,97,120,304,288],
+      [288,288,312,112,98,132,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,136,124,134,304,288],
+      [288,288,312,136,124,134,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,404,1281,1281,1281,1281,404,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,404,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,404,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,404,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,404,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,404,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,404,404,404,404,1281,404,1281,1281,1281,1281,1281,1281,1281,401,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,312,401,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,401,1281,304,288],
+      [288,288,312,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,1281,304,288],
+      [288,288,290,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,289,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,304,288,288,288,288,288,288,288,288,312,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,304,288,288,288,288,288,288,288,288,312,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,306,316,316,316,316,316,316,296,288,312,0,0,0,0,0,0,0,0],
+      [0,0,0,322,308,308,308,314,384,412,412,412,412,387,304,288,290,308,308,308,308,308,324,0,0],
+      [0,0,0,304,288,288,288,312,402,0,0,0,0,400,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,312,402,0,0,0,0,400,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,312,402,0,0,0,0,400,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,312,402,0,0,0,0,400,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,312,402,0,0,0,0,400,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,312,396,394,0,0,392,396,304,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,290,324,402,0,0,400,322,289,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,288,312,402,0,0,400,304,288,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,288,312,402,0,0,400,304,288,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,304,288,288,288,288,312,402,0,0,400,304,288,288,288,288,288,288,288,288,312,0,0],
+      [0,0,0,306,316,316,316,316,326,402,0,0,400,328,316,316,316,316,316,316,316,316,313,0,0],
+      [0,0,0,320,384,409,409,409,409,410,0,0,408,409,409,409,409,409,409,409,409,385,320,0,0],
+      [0,0,0,320,402,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,320,0,0],
+      [0,0,0,320,393,393,393,393,393,393,393,393,393,393,393,393,393,394,0,0,0,400,320,0,0],
+      [0,0,0,307,321,321,321,321,321,321,321,321,321,321,321,321,333,396,393,394,0,400,320,0,0],
+      [0,0,0,320,384,409,409,409,409,409,409,409,409,409,409,409,387,401,401,402,0,400,320,0,0],
+      [0,0,0,332,402,0,0,0,0,0,0,0,0,0,0,0,408,409,409,410,0,400,320,0,0],
+      [0,0,0,384,410,0,392,393,393,394,0,392,393,394,0,0,0,0,0,0,0,400,320,0,0],
+      [0,0,0,402,0,0,400,401,401,396,393,396,401,396,393,393,393,393,393,393,393,396,320,0,0],
+      [0,0,0,402,0,0,408,409,409,409,409,409,409,409,409,409,409,409,409,409,409,385,320,0,0],
+      [0,0,0,402,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,320,0,0],
+      [0,0,0,393,393,393,393,393,393,393,394,0,0,0,392,393,393,393,393,394,0,400,320,0,0],
+      [0,0,0,331,321,321,321,321,310,324,396,393,393,393,396,322,308,308,324,402,0,400,320,0,0],
+      [0,0,0,386,412,412,412,387,304,290,308,308,309,321,321,317,316,316,313,402,0,400,320,0,0],
+      [0,0,0,402,829,830,831,400,328,316,316,316,326,384,409,409,409,385,332,402,0,400,320,0,0],
+      [0,0,0,402,837,838,839,408,409,409,409,409,409,410,0,0,0,408,409,410,0,400,320,0,0],
+      [0,0,0,402,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,320,0,0],
+      [0,0,0,396,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,396,320,0,0],
+      [0,0,0,331,321,321,321,321,321,321,321,321,321,321,321,321,321,321,321,321,321,321,327,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,304,288,288,288,288,288,288,288,288,288,312,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,304,288,288,288,288,288,288,288,288,288,312,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,328,316,316,316,316,316,316,316,316,316,326,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,534,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,542,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,829,823,831,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,837,838,839,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Trainer(2)",
+      "x": 24,
+      "y": 37,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"Ei! Pessoa não autorizadas não passam!"},
+            {"cmd":"comment","lines":["EndSpeech: Não irá passar dos outros..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::ROCKET_Male"},"Allen",0]}
+              },
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Estamos atrás de Lugia, dessa vez ele não escapa!"}]
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Trainer(2)",
+      "x": 18,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We've come a long way, you won't ruin our plan!"},
+            {"cmd":"comment","lines":["EndSpeech: Melhor avisar ao chefe..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_Male","Grunt",60]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Our boss will not be happy with that..."}
+          ]
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 11,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "kimono moja4",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 4,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[kimono]\\rYour Pokémon look tired, let me heal them."},
+            {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"recoverAll"},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[kimono]\\rI already called my sisters to come and help, but it'll take a while for them to get here...\\nSo I need to go by myself!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(1)",
+      "x": 23,
+      "y": 37,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "Um homem estranho passou por aqui correndo, ele tem algo a ver com você?"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Não!!!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::ROCKET_Male"},"Toni",0]}
+              },
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Nosso novo chefe terá que tomar alguma atitude!"}]
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 10,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I have no more Pokémon to fight..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"A girl wearing a Kimono defeated them."}
+          ]
+        },
+        {
+          "condition": {"switch1":135,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 15,
+      "y": 29,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm sure a good fight is happening downstairs!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"If my Pokémon were not so tired I would join them!"}
+          ]
+        },
+        {
+          "condition": {"switch1":135,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "noShadow stairDetail",
+      "x": 4,
+      "y": 30,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1281,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 5,
+      "y": 29,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[739,12,36,true]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 19,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":127,"value":true},
+              "then": [{"cmd":"screenShake","power":5,"speed":5,"seconds":0.05}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Trainer(1)",
+      "x": 12,
+      "y": 25,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"My job here is to not allow anyone to pass!"},
+            {"cmd":"comment","lines":["EndSpeech: Não acredito!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_Male","Grunt",61]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Now all I can do is hope you can't get to our boss..."}
+          ]
+        },
+        {
+          "condition": {"switch1":136,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "noShadow",
+      "x": 11,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "Notice that invisible character needs to be used here, ",
+                "otherwise it has a small glitch where the user goes ",
+                "behind the stair for a frame."
+              ]
+            },
+            {
+              "cmd": "comment",
+              "lines": ["Check the second page of the event as well, as it is important!"]
+            },
+            {"cmd":"switches","from":127,"to":127,"value":false},
+            {"cmd":"switches","from":128,"to":128,"value":true},
+            {"cmd":"call","fn":"CustomStairs.transferUp","args":[737,34,25,true]}
+          ]
+        },
+        {
+          "condition": {"switch1":965,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 542,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "noShadow stairDetail",
+      "x": 5,
+      "y": 30,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1281,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "noShadow stairDetail",
+      "x": 6,
+      "y": 30,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1281,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

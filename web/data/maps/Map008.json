@@ -1,0 +1,2261 @@
+{
+  "id": 8,
+  "name": "Elm's Lab",
+  "tilesetId": 25,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"Lab","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,76,56,48,48],
+      [48,48,48,48,48,72,5038,5038,5038,5038,5038,5038,5038,5038,5038,5038,5038,64,48,48],
+      [48,48,48,48,48,72,5046,5046,5046,5046,5046,5046,5046,5046,5046,5046,5046,88,56,48],
+      [48,48,48,48,48,72,5056,5056,5056,5056,5056,5056,5056,5056,5056,5056,5056,5056,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,72,5056,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,72,5056,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,72,5056,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,72,5056,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,72,5056,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,64,48],
+      [48,48,48,48,48,72,5056,5048,5049,5048,5049,5048,5049,5048,5049,5048,5049,5048,64,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,529,5037,0,5032,5033,5034,0,0,5032,5033,5034,0,5039,0,0],
+      [0,0,0,0,0,0,5045,0,0,0,0,0,5040,0,0,5046,0,5047,0,0],
+      [0,0,0,0,0,0,5053,0,0,0,0,0,0,0,0,0,0,5055,0,0],
+      [0,0,0,0,90,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,80,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,80,0,508,509,0,0,0,0,508,509,508,509,508,509,0,0],
+      [0,0,0,0,65,84,5082,5082,5084,0,0,5081,5082,5083,5083,5083,5083,5083,0,0],
+      [0,0,0,0,64,72,5090,5090,5092,0,0,5089,5090,5091,5091,5091,5091,5091,0,0],
+      [0,0,0,0,66,86,5098,5098,5100,0,0,5097,5098,5099,5099,5099,5099,5099,0,0],
+      [0,0,0,0,92,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,584,585,586,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,5040,0,528,529,5040,5050,5051,5052,5015,510,0,0,0],
+      [0,0,0,0,0,0,0,0,0,536,537,5035,5058,5059,5060,5023,518,0,0,0],
+      [0,0,0,0,0,0,439,5061,5062,544,545,5043,5066,5067,5068,5031,526,439,0,0],
+      [0,0,0,0,0,0,447,5069,5070,0,0,0,5074,5075,5076,0,0,447,0,0],
+      [0,0,0,0,0,0,0,5077,5078,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,508,509,0,0,0,0,508,509,508,509,508,509,0,0],
+      [0,0,0,0,0,0,508,509,0,0,0,0,508,509,508,509,508,509,0,0],
+      [0,0,0,0,0,0,516,517,0,0,0,0,516,517,516,517,516,517,0,0],
+      [0,0,0,0,0,0,524,525,0,0,0,0,524,525,524,525,524,525,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "elm",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bHi, \\PN!\\nI've been waiting for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bDo you know anything about my research?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bAs you know, Pokémon are carried in Poké Balls these days."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bBut before the Poké Ball was invented, people used to walk with Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bPoké Balls are great because you can carry many Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bBut walking with Pokémon must have some advantages."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bIt could have something to do with how Pokémon grow or evolve..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bSo I'm going to give you a Pokémon!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bCan you walk beside this Pokémon, outside of its Poké Ball?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bTo see if this brings any special feelings or bonds between Pokémon and people?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bThe device over there has some Pokémon you could choose from..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"turnRight"},{"move":"wait","seconds":0.2}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {"cmd":"showAnimation","character":0,"animation":3},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bOh, hey! I got an email!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\b...\\nHm... Uh-huh... OK..."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bHey, listen.\\nI have this acquaintance that people call Mr. Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bHe keeps finding weird things and raving about his discoveries."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bAnyway, I just got an email from him saying that this time it's real."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bIt's probably just another Pokémon Egg, but we're still so busy with our Pokémon research..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bWait!\\nI know!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bYou can go in our place, right?\\nCan we count on you?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bYou can choose one of the Pokémon over there."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":160,"to":160,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":160,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bIf a wild Pokémon appears, let your Pokémon battle it!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"menuAccess","enabled":true},
+            {
+              "cmd": "if",
+              "cond": {"switch":996,"value":true},
+              "then": [{"cmd":"call","fn":"pbAddPokemon","args":["CHIKORITA",5]}],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":997,"value":true},
+                  "then": [{"cmd":"call","fn":"pbAddPokemon","args":["CYNDAQUIL",5]}],
+                  "else": [{"cmd":"call","fn":"pbAddPokemon","args":["TOTODILE",5]}]
+                }
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"call","fn":"FollowingPkmn.start_following","args":[14]},
+            {"cmd":"wait","seconds":0.5},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"left"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bHow do you like walking with your Pokémon? It's not bad, is it?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bYou can take it all the way to the Mr. Pokémon's house."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bIf your Pokémon gets hurt..."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bYou should heal it with this machine."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bIt's so easy to use.\\nYou just need to press a button on it!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bMr. Pokémon goes everywhere and find rarities.\\nHis house is past Cherrygrove City."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bGo north a little past Cherrygrove."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bI'm counting on you, \\PN!"},
+            {"cmd":"switches","from":963,"to":963,"value":true},
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["MysteryEgg",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bOh! I forgot to give you my number!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bI'll call you if something comes up!"},
+            {"cmd":"call","fn":"pbPhoneRegisterNPC","args":[50,"Professor \nElm",8]},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bMr. Pokémon goes everywhere and find rarities.\\nHis house is past Cherrygrove City."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bGo north a little past Cherrygrove."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bI'm counting on you, Victor!"}
+          ]
+        },
+        {
+          "condition": {"switch1":36,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\bWho are you?\\nWe are investigating the case of the missing Pokémon here..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\bRule number one!\\n\"Whoever did it will come back to the site.\""
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {"cmd":"text","text":"\\bOh my... So you must be...\\nthe one who did it?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {"cmd":"text","text":"\\bOh, but you don't have red-hair as one of the witnesses said."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {"cmd":"text","text":"\\bWhat?\\nYou battled a boy like that?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\bHe must be the one who dit it...\\nDid you happen to get his name?"
+            },
+            {
+              "cmd": "call",
+              "fn": "pbSet",
+              "args": [111,{"call":"pbEnterNPCName","args":["This boy's name?",1,10,"","Silver"]}]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {"cmd":"text","text":"\\bI see! So \\v[111] was his name."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {"cmd":"text","text":"\\bThanks for helping my investigation!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\bMy next assignment is to search for this red-haired individual."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 10,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":38,"to":38,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":38,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\b\\PN, this is terrible..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bOh, yes, what was Mr. Pokémon's big discovery?"
+            },
+            {"cmd":"call","fn":"$bag.remove","args":["MYSTERYEGG"]},
+            {"cmd":"playMe","audio":{"name":"Egg","volume":100,"pitch":120}},
+            {"cmd":"text","text":"\\PN handed the Mystery Egg to Professor Elm!"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"completeQuest","args":["MysteryEgg"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bHuh?\\nThis is an...Egg, isn't it?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bThis Egg may be something I've never seen...still it's just an Egg."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bMr. Pokémon is always fascinated by Eggs."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bWell, since he gave it to us, we might as well find out what secret it holds."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bI'll keep it for a while to find out about the Egg."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bWhat?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bProfessor Oak gave you a Pokédex?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\b\\PN, is that true? Th-that's incredible!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bHe is superb at seeing the potential of people as Trainers."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bWow, \\PN.\\nI knew you were a little different.\\nThings are going to be fun!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bYour Pokémon seem to really like you, so why don't you...take the Pokémon Gym challenge?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bIf you manage to defeat all the Gym Leaders, you'll eventually challenge the Pokémon League Champion!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\b...Or not! Ha ha!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bBecoming the Champion is not at all easy, but you can certainly challenge Violet City's Gym."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\b...\\PN. Challenging the Gyms scattered around will be a long journey."
+            },
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["JohtoGymChallenge",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofElm]\\bTake this to help on your journey as well."},
+            {"cmd":"if","cond":{"script":{"call":"pbReceiveItem","args":["POKEBALL",5]}},"then":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofElm]\\bBefore you leave, make sure that you talk to your mom."
+            },
+            {"cmd":"selfSwitch","ch":"B","value":true},
+            {"cmd":"switches","from":157,"to":157,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-ProfElm",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "This will define which dialogue you'll have with Professor Elm",
+                " - based on the Togepi Egg hatching or not.",
+                "The first part is related to the initial dialogue,",
+                " and then the rules about the Togepi Egg follow it."
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":225,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofElm]\\bI'm super happy with your participation in the World Cup, everyone in Newbark Town is very proud of you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofElm]\\bYou probably want go to meet Prof. Oak in his laboratory now, right?\\nDo you know how to get there?"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofElm]\\b Follow the same path you took for the Indigo League, but before entering on the Victory Road, go east to reach Viridian City. \\nOnce you get there, go straight south to arrive in Pallet Town!"
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":530,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bCongratulations on the Indigo League Championship!\\nYou won it just in time to secure a place in the next World Cup that will start soon!"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bIt happens every 4 years in Pokétopia!"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bYou'll be the youngest one in the next edition!\\nThat's remarkable!"
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":529,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bThe ship will not leave immediately, so use this time to train for the World Cup."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bNow that you are the new Champion, I'm sure a lot of people will be looking for a rematch!\\nThis includes the Gym Leaders...\\nI'm sure they will use their full power this time, so be prepared."
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bThe ship will not leave immediately, so use this time to train for the World Championship.\\nOr use this time to resolve something that is open here in Johto."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bNow that you are the new Champion, I'm sure a lot of people will be looking for a rematch!\\nThis includes the Gym Leaders...\\nI'm sure they will use their full power this time, so be prepared."
+                        }
+                      ]
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bI'll call you when everything is ready."
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":166,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]Professor Elm: \\b\\PN!\\nThere you are!"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bCongratulations on the Indigo League Championship!\\nYou won it just in time to secure a place in the next World Cup that will start soon!"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bIt happens every 4 years in Pokétopia!"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bYou'll be the youngest one in the next edition!\\nThat's remarkable!"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bOh, I called because I have something for you."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bSee? It's an S. S. Aqua Ticket.\\nWith it you can go to Pokétopia!"
+                        },
+                        {"cmd":"call","fn":"pbReceiveItem","args":["S_S_AQUA_TICKET"]},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bThis ticket will let you take the Aqua Ship that departs from Olivine City."
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofElm]\\bBut you knew that already, \\PN."},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bAfter all, you've adventured all over with your Pokémon."
+                        },
+                        {
+                          "cmd": "if",
+                          "cond": {"switch":529,"value":true},
+                          "then": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bThe ship will not leave immediately, so use this time to train for the World Championship."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bNow that you are the new Champion, I'm sure a lot of people will be looking for a rematch!\\nThis includes the Gym Leaders...\\nI'm sure they will use their full power this time, so be prepared."
+                            }
+                          ],
+                          "else": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bThe ship will not leave immediately, so use this time to train for the World Championship.\\nOr use this time to resolve something that is open here in Johto."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bNow that you are the new Champion, I'm sure a lot of people will be looking for a rematch!\\nThis includes the Gym Leaders...\\nI'm sure they will use their full power this time, so be prepared."
+                            }
+                          ]
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bI'll call you when everything is ready for you to go."
+                        },
+                        {
+                          "cmd": "call",
+                          "fn": "activateQuest",
+                          "args": ["WorldChampionshipTraining",{"call":"colorQuest","args":["blue"]},true]
+                        },
+                        {"cmd":"variables","from":126,"to":126,"op":"set","value":0},
+                        {"cmd":"switches","from":530,"to":530,"value":true}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"switch":136,"value":true},
+                          "then": [
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bThanks \\PN, you're helping us to discover many things."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bYou should be able to take on the Pokemon League now! "
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bTo get there, follow Route 27 to reach Route 26. Once you get there, go straight north!"
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {"cmd":"text","text":"\\f[faceprofElm]\\bGood luck!"}
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {"selfSwitch":"C","value":true},
+                              "then": [
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\f[faceprofElm]\\bThanks \\PN, you're helping us to discover many things."
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {"switch":117,"value":true},
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {"switch":108,"value":true},
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "op": "==",
+                                              "left": {"call":"$player.badge_count"},
+                                              "right": 8
+                                            }
+                                          },
+                                          "then": [
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bHi \\PN!\\nYou never cease to amaze me!"
+                                            },
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bDid you already collect eight Badges?!\\nThat's so cool!"
+                                            },
+                                            {
+                                              "cmd": "if",
+                                              "cond": {"switch":169,"value":true},
+                                              "then": [
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bHaving achieved such a thing, you should be able to take on the Pokémon League now! "
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bYou should head for the Indigo Plateau! Do you know how to get there?"
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\b Follow Route 27 to reach Route 26. Once you get there, go straight north!"
+                                                }
+                                              ],
+                                              "else": [
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bThanks to you, my research is going great!"
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bTake this as a token of my appreciation."
+                                                },
+                                                {
+                                                  "cmd": "if",
+                                                  "cond": {"switch":997,"value":true},
+                                                  "then": [
+                                                    {
+                                                      "cmd": "if",
+                                                      "cond": {
+                                                        "script": {
+                                                          "call": "pbReceiveItem",
+                                                          "args": ["WATERIUMZ"]
+                                                        }
+                                                      },
+                                                      "then": [
+                                                        {
+                                                          "cmd": "call",
+                                                          "fn": "pbCallBub",
+                                                          "args": [2,{"call":"@event_id"}]
+                                                        },
+                                                        {
+                                                          "cmd": "text",
+                                                          "text": "\\f[faceprofElm]\\bWaterium Z converts Z-Power into crystals that upgrade Water-type moves to Water- type Z-Moves."
+                                                        }
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "else": [
+                                                    {
+                                                      "cmd": "if",
+                                                      "cond": {"switch":996,"value":true},
+                                                      "then": [
+                                                        {
+                                                          "cmd": "if",
+                                                          "cond": {
+                                                            "script": {
+                                                              "call": "pbReceiveItem",
+                                                              "args": ["FIRIUMZ"]
+                                                            }
+                                                          },
+                                                          "then": [
+                                                            {
+                                                              "cmd": "call",
+                                                              "fn": "pbCallBub",
+                                                              "args": [2,{"call":"@event_id"}]
+                                                            },
+                                                            {
+                                                              "cmd": "text",
+                                                              "text": "\\f[faceprofElm]\\bFirium Z converts Z-Power into crystals that upgrade Fire-type moves to Fire-type Z-Moves."
+                                                            }
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "else": [
+                                                        {
+                                                          "cmd": "if",
+                                                          "cond": {
+                                                            "script": {
+                                                              "call": "pbReceiveItem",
+                                                              "args": ["GRASSIUMZ"]
+                                                            }
+                                                          },
+                                                          "then": [
+                                                            {
+                                                              "cmd": "call",
+                                                              "fn": "pbCallBub",
+                                                              "args": [2,{"call":"@event_id"}]
+                                                            },
+                                                            {
+                                                              "cmd": "text",
+                                                              "text": "\\f[faceprofElm]\\bGrassium Z converts Z-Power into crystals that upgrade Grass-type moves to Grass- type Z-Moves."
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bI think you can make much better use of it than I can, \\PN!"
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bHaving achieved such a thing, you should be able to take on the Pokémon League now! "
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bYou should head for the Indigo Plateau! Do you know how to get there?"
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "pbCallBub",
+                                                  "args": [2,{"call":"@event_id"}]
+                                                },
+                                                {
+                                                  "cmd": "text",
+                                                  "text": "\\f[faceprofElm]\\bFollow Route 27 to reach Route 26. Once you get there, go straight north!"
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "completeQuest",
+                                                  "args": ["JohtoGymChallenge"]
+                                                },
+                                                {
+                                                  "cmd": "call",
+                                                  "fn": "activateQuest",
+                                                  "args": [
+                                                    "JohtoPokemonLeague",
+                                                    {"call":"colorQuest","args":["blue"]},
+                                                    true
+                                                  ]
+                                                },
+                                                {"cmd":"switches","from":169,"to":169,"value":true}
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "op": "==",
+                                              "left": {"call":"$player.badge_count"},
+                                              "right": 8
+                                            }
+                                          },
+                                          "then": [
+                                            {
+                                              "cmd": "comment",
+                                              "lines": [
+                                                "Dialogue in case got the 8 badge, ",
+                                                "but didn't defeat Team Rocket yet."
+                                              ]
+                                            },
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bHi \\PN!\\nYou never cease to amaze me!"
+                                            },
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bDid you already collect eight Badges?\\nThat's so cool!"
+                                            },
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bHaving achieved such a thing, you should be able to take on the Pokémon League now! "
+                                            },
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bBut before that I think you should investigate this weird radio broadcasts. The Radio Tower is located in Goldenrod, it's probably coming from there!"
+                                            }
+                                          ],
+                                          "else": [
+                                            {"cmd":"comment","lines":["This should never happen"]},
+                                            {
+                                              "cmd": "call",
+                                              "fn": "pbCallBub",
+                                              "args": [2,{"call":"@event_id"}]
+                                            },
+                                            {
+                                              "cmd": "text",
+                                              "text": "\\f[faceprofElm]\\bHi \\PN!\\nYou never cease to amaze me!"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "else": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "comment",
+              "lines": ["Below here are just the dialogues related to the Togepi event"]
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":727,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"<","left":{"call":"$player.badge_count"},"right":8}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[faceprofElm]\\bHi, \\PN! How are you?"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bI'm sure you can be the next Champion having taken care of that Egg!"
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":43,"value":true},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":44,"value":true},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {"switch":717,"value":true},
+                          "then": [
+                            {"cmd":"comment","lines":["Egg hatched"]},
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bHey, I thought the Egg hatched."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bWhere is the Pokémon?\\nI'd love to take a look at the Pokémon that hatched from that Egg, \\PN."
+                            },
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "if",
+                              "cond": {"script":{"call":"$player.has_species?","args":["TOGEPI"]}},
+                              "then": [
+                                {
+                                  "cmd": "call",
+                                  "fn": "pbSet",
+                                  "args": [1,{"call":"switchPositionIfHasPokemon","args":["TOGEPI"]}]
+                                },
+                                {"cmd":"commonEvent","id":46}
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {"script":{"call":"$player.has_species?","args":["TOGETIC"]}},
+                                  "then": [
+                                    {
+                                      "cmd": "call",
+                                      "fn": "pbSet",
+                                      "args": [1,{"call":"switchPositionIfHasPokemon","args":["TOGETIC"]}]
+                                    },
+                                    {"cmd":"commonEvent","id":46}
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {"script":{"call":"$player.has_species?","args":["TOGEKISS"]}},
+                                      "then": [
+                                        {
+                                          "cmd": "call",
+                                          "fn": "pbSet",
+                                          "args": [
+                                            1,
+                                            {
+                                              "call": "switchPositionIfHasPokemon",
+                                              "args": ["TOGEKISS"]
+                                            }
+                                          ]
+                                        },
+                                        {"cmd":"commonEvent","id":46}
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "comment",
+                                          "lines": ["Egg hatched, but it's not on the player party"]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {"cmd":"comment","lines":["Egg didn't hatch yet"]},
+                            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                            {
+                              "cmd": "text",
+                              "text": "\\f[faceprofElm]\\bHey, has that Egg changed any?"
+                            }
+                          ]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "comment",
+                          "lines": ["Got the first badge, but didn't get the egg yet"]
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\b\\PN? Didn't you meet my assistant?"
+                        },
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofElm]\\bHe should have met you with the Egg at Violet City's Pokémon Center.\\nYou must have just missed him.\\nTry to catch him there."
+                        }
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofElm]\\bDon't give up! I'll call if I learn anything about that Egg!"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":160,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"Hey! You can't leave without a Pokémon!"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"\\PN, I want you to have these to help you with your task."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["POTION",5]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Pokémon are weak in the beginning."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Don't hesitate to use a Potion if you think yours is in danger."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"And please, go talk with your mom about this job we gave to you."},
+            {"cmd":"switches","from":999,"to":999,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":999,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":160,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"Hey! You can't leave without a Pokémon!"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"\\PN, I want you to have these to help you with your task."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["POTION",5]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Pokémon are weak in the beginning."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Don't hesitate to use a Potion if you think yours is in danger."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"And please, go talk with your mom about this job we gave to you."},
+            {"cmd":"switches","from":999,"to":999,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":999,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":160,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"Hey! You can't leave without a Pokémon!"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"right"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"\\PN, I want you to have these to help you with your task."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["POTION",5]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Pokémon are weak in the beginning."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Don't hesitate to use a Potion if you think yours is in danger."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"And please, go talk with your mom about this job we gave to you."},
+            {"cmd":"switches","from":999,"to":999,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":999,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "c",
+      "x": 13,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 5057,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":533,"x":1,"y":0,"direction":8,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 5065,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"A Poké Ball!\\nThere's a Pokémon inside."}]
+        },
+        {
+          "condition": {"switch1":36,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 5073,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "c",
+      "x": 13,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":533,"x":1,"y":0,"direction":8,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"A Poké Ball.\\nThere's a Pokémon inside of it."}]
+        },
+        {
+          "condition": {"switch1":36,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"A Poké Ball.\\nThere's a Pokémon inside of it."}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "f",
+      "x": 7,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Pokémon are weak in the beginning."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Don't hesitate to use a Potion if you think yours is in danger."}
+          ]
+        },
+        {
+          "condition": {"switch1":38,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "There was a loud noise outside...\\nWhen we went to look, someone stole a Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sigh...\\nThat stolen Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I wonder how it's doing.\\nThey say a Pokémon raised by a bad person turns bad itself."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":166,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It's amazing to see how much you've grown as a Pokémon Trainer!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm sure everyone in New Bark Town is proud of you!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 9,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":1,"x":14,"y":9,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "POLICE",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":36,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk001",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":38,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 8,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "This machine can heal Pokémon.\\nDo you like to heal your Pokémon?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"text","text":"Your Pokémon were healed."}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 7,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "This machine can heal Pokémon.\\nDo you like to heal your Pokémon?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"text","text":"Your Pokémon were healed."}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":160,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"Hey! You can't leave without a Pokémon!"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":474,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"\\PN, I want you to have these to help you with your task."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["POTION",5]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Pokémon are weak in the beginning."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"Don't hesitate to use a Potion if you think yours is in danger."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,8]},
+            {"cmd":"text","text":"And please, go talk with your mom about this job we gave to you."},
+            {"cmd":"switches","from":999,"to":999,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":999,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "FollowerPkmn",
+      "x": 18,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

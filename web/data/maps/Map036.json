@@ -1,0 +1,1079 @@
+{
+  "id": 36,
+  "name": "Violet City - Gym",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,50,68,69,81,93,2983,2983,91,81,70,68,49,48,48,48,48],
+      [48,48,48,48,48,48,72,2983,2983,2983,2983,2983,2983,64,48,48,48,48,48,48],
+      [48,48,48,48,48,48,72,2983,2983,91,81,81,81,57,48,48,48,48,48,48],
+      [48,48,48,48,48,48,72,2983,2983,2983,2983,2983,2983,64,48,48,48,48,48,48],
+      [48,48,48,48,48,48,54,81,81,81,93,2983,2983,64,48,48,48,48,48,48],
+      [48,48,48,48,48,48,72,2983,2983,2983,2983,2983,2983,64,48,56,48,48,48,48],
+      [48,48,48,48,52,76,78,81,93,2983,2983,91,81,77,76,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,72,2983,2983,2983,2983,2983,2983,2983,2983,2983,2983,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,84,704,705,82,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,50,68,68,49,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,2980,2980,2980,2980,2980,2980,2980,2980,2980,2980,0,0,0,0,0],
+      [0,0,0,0,0,2988,2988,2988,2988,2988,2988,2988,2988,2988,2988,0,0,0,0,0],
+      [0,0,0,0,0,2996,2996,2996,2996,2996,2996,2996,2996,2996,2996,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,2991,2991,2991,2991,0,0,2991,2991,2991,2991,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,2991,2991,2991,2991,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2991,2991,2991,2991,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2991,2991,0,0,2991,2991,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2982,0,0,2982,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2990,0,0,2990,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,2991,2991,2991,2991,2991,2991,2991,2991,2991,2991,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,2980,2980,2980,2980,2977,2978,2979,2980,2980,2980,0,0,0,0,0],
+      [0,0,0,0,0,2988,2988,2988,2988,2985,2986,2987,2988,2988,2988,0,0,0,0,0],
+      [0,0,0,0,0,2996,2996,2996,2996,2993,2994,2995,2996,2996,2996,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3003,3004,3004,3004,3005,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3011,3012,3012,3012,3013,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3019,3020,3020,3020,3021,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,704,705,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Trainer(4)",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I can't believe how ridiculously high this is!\\nBut from up here, you can tell what it feels like to be a bird Pokémon!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Let me see if you're good enough to face Falkner!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BIRDKEEPER","Abe"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Even though you're a rookie Trainer, you're not bothered by these heights at all... You're really something!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You must be here to challenge Falkner, the Gym Leader, right?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "This city has a place called Sprout Tower where Trainer's go to train."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Facing Falkner must be very difficult for you, better train there before. Haha ha!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":715,"value":true},
+              "then": [],
+              "else": [
+                {
+                  "cmd": "call",
+                  "fn": "activateQuest",
+                  "args": ["SproutTower",{"call":"colorQuest","args":["blue"]}]
+                },
+                {"cmd":"switches","from":715,"to":715,"value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":40,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(3)",
+      "x": 12,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BIRDKEEPER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Ho ho!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You some kind of big shot? We'll see what happens if you get pushed around up here. Think you'll stagger and fall?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "People here are training night and day to become bird Pokémon masters."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Bring it on!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BIRDKEEPER","Rod"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer042c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Falkner is very good.\\nDon't be happy just because you beat me."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer071c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[falkner]\\bI'm Falkner, the Violet City Pokémon Gym Leader!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bPeople say you can clip Flying-type Pokémon's wings with a jolt of electricity..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[falkner]\\bI won't allow such insults to bird Pokémon!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bI'll show you the real power of the magnificent bird Pokémon!"
+            },
+            {"cmd":"memorizeBgmBgs"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Falkner","Falkner"]}},
+              "then": [
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[falkner]\\b...For pity's sake!\\nMy dad's cherished bird Pokémon..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[falkner]\\bBut a defeat is a defeat.\\nAll right."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[falkner]\\bTake this official Pokémon League badge.\\nThis one is the Zephyr Badge."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Zephyr Badge from Falkner!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[0],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[falkner]\\bWith that Badge, Pokémon, including traded Pokémon up to Lv. 20, will obey you without question."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[falkner]\\bI'll also give you a special permit that enables you to use the skill Fly anytime outside of battle."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_FLY"]}},
+                  "then": []
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\b\\f[falkner]Take this too."},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["TM51"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[falkner]\\bBy using a TM, a Pokémon will instantly learn a new move."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[falkner]\\bTM 51 contains Roost.\\nIt restores half the max HP."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[falkner]\\bThere are Pokémon Gyms in cities and towns ahead. Make good use of them!"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[falkner]\\bAs for your next move..."},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[falkner]\\bI would suggest Azalea Town."},
+                    {"cmd":"call","fn":"advanceQuestToStage","args":["JohtoGymChallenge",2]},
+                    {"cmd":"switches","from":43,"to":43,"value":true},
+                    {"cmd":"selfSwitch","ch":"A","value":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"erasePicture","id":2},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {"cmd":"restoreBgmBgs"}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer071c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[falkner]\\bThere are Pokémon Gyms in cities and towns ahead."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[falkner]\\bYou should test your skills at these Gyms."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bI'm going to train harder to become the greatest Bird Keeper of all!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":737,"value":false},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[falkner]\\bWould you like to take a photo with me? \\nYes, no problem."
+                },
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"transfer","map":36,"x":9,"y":5,"direction":2,"fade":false},
+                {"cmd":"setEventLocation","event":0,"direction":2,"x":10,"y":5},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"call","fn":"pbPhotograph","args":[]},
+                {"cmd":"setEventLocation","event":0,"direction":0,"x":10,"y":3},
+                {"cmd":"switches","from":737,"to":737,"value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":530,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer071c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[falkner]Falkner: \\bHi! I've been waiting for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bYeah, I'm in top form.\\nWe're battling again, correct?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[falkner]\\bIt's a pleasure to be able to battle you again!"
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[falkner]\\bI'll show you the real power of the magnificent bird Pokémon!"
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Falkner","Falkner",2]}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[falkner]\\bMmm...\\nIt's still a long way to become the best Trainer..."
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\b\\f[falkner]Please take this."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbReceiveItem","args":["FLYINIUMZ"]}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[falkner]\\bThis is a crystallized form of Z-Power. It upgrades Flying-type moves to Z-Moves."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[falkner]\\bHope this can help you in the World Cup!"
+                          },
+                          {"cmd":"commonEvent","id":66},
+                          {"cmd":"selfSwitch","ch":"B","value":true}
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[falkner]\\bCome back when you're ready."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer071c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bMmm...\\nIt's still a long way to become the best Trainer..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[falkner]\\bI'm going to train harder to become the greatest Bird Keeper of all!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 10,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":10,"x":22,"y":25,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 9,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":10,"x":22,"y":25,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "noShadow",
+      "x": 6,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "hlicexu5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 6,
+                "pattern": 0
+              }
+            ]
+          },
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 12,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":40,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Yo, Champ in the making!\\nI'm no Trainer, but I can give some advice!\\nBelieve me!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"If you believe, then a Championship dream can come true."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You believe?\\nThen listen."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The Grass type is weak agains the Flying type. Keep this in mind."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":43,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Nice battle! Keep it up, and you'll be the Champ in no time at all!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 10,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"showAnimation","character":2,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {"cmd":"text","text":"You must be here to challenge Falkner, the Gym Leader, right?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "This city has a place called Sprout Tower where Trainer's go to train."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "Facing Falkner must be very difficult for you, better train there before. Haha ha!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":715,"value":true},
+              "then": [],
+              "else": [
+                {
+                  "cmd": "call",
+                  "fn": "activateQuest",
+                  "args": ["SproutTower",{"call":"colorQuest","args":["blue"]}]
+                },
+                {"cmd":"switches","from":715,"to":715,"value":true}
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":40,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "noShadow",
+      "x": 13,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "hlicexu5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "hlicexu5",
+                "characterHue": 0,
+                "direction": 6,
+                "pattern": 0
+              }
+            ]
+          },
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

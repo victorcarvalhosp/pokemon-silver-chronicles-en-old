@@ -1,0 +1,720 @@
+{
+  "id": 99,
+  "name": "Olivine City - Gym",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,48,72,3497,3496,3497,3496,3497,3496,3497,3496,3497,64,48,48,48,48],
+      [48,48,48,48,48,72,3505,3504,3505,3504,3505,3504,3505,3504,3505,64,48,48,48,48],
+      [48,48,48,48,48,72,3513,3512,3513,3512,3513,3512,3513,3512,3513,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,72,3010,3010,3010,3010,3010,3010,3010,3010,3010,64,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,94,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3497,3496,3497,3496,3497,3496,3497,3496,3497,0,0,0,0,0],
+      [0,0,0,0,0,0,3505,3504,3505,3504,3505,3504,3505,3504,3505,0,0,0,0,0],
+      [0,0,0,0,0,0,3513,3512,3520,3521,3522,3523,3524,3525,3513,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,3528,3529,3530,3531,3532,3533,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,3536,3537,3538,3539,3540,3541,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,0,0,0,0,0,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,1023,1023,0,0,1023,1023,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,1023,0,0,0,0,1023,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,0,0,0,0,0,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,1023,1023,0,0,1023,1023,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,1023,0,0,0,0,1023,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,1023,0,0,0,0,1023,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,2982,0,0,0,2982,1023,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,1023,0,2990,0,0,0,2990,0,1023,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,91,93,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3498,3499,3500,3501,3502,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3506,3507,3508,3509,3510,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3514,3515,3516,3517,3518,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "Trainer(4)",
+      "x": 8,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":77,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I knew you'd come here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Thank you for helping the Gym Leader, but battle is a separate matter."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Go for it!"},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I knew you'd come here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Thank you for helping the Gym Leader, but battle is a separate matter."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Go for it!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ff",
+      "x": 13,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Jasmine, the Gym Leader?\\nShe's at the Lighthouse."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"She's been tending to a sick Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"A strong Trainer is compassionate at the same time..."}
+          ]
+        },
+        {
+          "condition": {"switch1":77,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Jasmine uses Steel-type Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"She's trying to hide her tenderness behind her steely coldness."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":77,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer076c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]Thank you for your help at the Lighthouse..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[jasmine]But this is different. Please allow me to introduce myself."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[jasmine]I am Jasmine, a Gym Leader.\\nI use the...clang!\\nSteel type!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]...Do you know about the Steel type?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[jasmine]They are very hard, cold, sharp, and really strong!\\nUm... I'm not lying."
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"<=","left":{"call":"$player.badge_count"},"right":4}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Jasmine","Jasmine"]}},
+                  "then": [],
+                  "else": [{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":5}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"call":"TrainerBattle.start","args":["LEADER_Jasmine","Jasmine",1]}
+                      },
+                      "then": [],
+                      "else": [{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":6}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Jasmine","Jasmine",2]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"exitEvent"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[jasmine]...You are a better Trainer than me, in both skill and kindness."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[jasmine]In accordance with the League rules, I confer upon you this Badge."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Mineral Badge from Jasmine!"},
+                {"cmd":"assign","target":"$player.badges[]","args":[5],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[jasmine]With that Badge, all Pokémon, including traded Pokémon up to Lv. 70, will obey you without question."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[jasmine]Um... Please take this, too..."},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM23"}]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[jasmine]It is called Iron Tail..."},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[jasmine]Your Pokémon will hit the target with its hard tail, occasionaly lowering the target's Defense..."
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":5}},
+                      "then": [
+                        {
+                          "cmd": "assign",
+                          "target": "$PokemonGlobal.encounter_version",
+                          "args": [],
+                          "op": "=",
+                          "value": 2
+                        },
+                        {
+                          "cmd": "text",
+                          "text": "\\f[jasmine]This Gym badge also lets your Pokémon use Strenght to get move boulders around."
+                        },
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_STRENGTH"]}},
+                          "then": []
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":6}},
+                          "then": [
+                            {
+                              "cmd": "assign",
+                              "target": "$PokemonGlobal.encounter_version",
+                              "args": [],
+                              "op": "=",
+                              "value": 3
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {"script":{"op":">=","left":{"call":"$player.badge_count"},"right":7}},
+                              "then": [
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\f[jasmine]This Gym badge also lets your Pokémon use Whirlpool to get across real whirlpools."
+                                },
+                                {
+                                  "cmd": "if",
+                                  "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_WHIRLPOOL"]}},
+                                  "then": []
+                                },
+                                {"cmd":"switches","from":723,"to":723,"value":true},
+                                {
+                                  "cmd": "call",
+                                  "fn": "advanceQuestToStage",
+                                  "args": ["JohtoGymChallenge",6]
+                                },
+                                {
+                                  "cmd": "assign",
+                                  "target": "$PokemonGlobal.encounter_version",
+                                  "args": [],
+                                  "op": "=",
+                                  "value": 4
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {"cmd":"selfSwitch","ch":"A","value":true},
+                    {"cmd":"switches","from":78,"to":78,"value":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {"cmd":"restoreBgmBgs"}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer076c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]Um..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]I don't know how to say this, but good luck..."},
+            {
+              "cmd": "if",
+              "cond": {"switch":747,"value":false},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[jasmine]Let's register this moment, of course."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"switches","from":746,"to":746,"value":true},
+                {"cmd":"transfer","map":99,"x":10,"y":9,"direction":2,"fade":false},
+                {"cmd":"setEventLocation","event":0,"direction":2,"x":11,"y":9},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"call","fn":"pbPhotograph","args":[]},
+                {"cmd":"switches","from":746,"to":746,"value":false},
+                {"cmd":"setEventLocation","event":0,"direction":0,"x":10,"y":7},
+                {"cmd":"switches","from":747,"to":747,"value":true}
+              ],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":166,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer076c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]Hi, \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]I'll never forget your help at the Lighthouse..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[jasmine]I think a rematch could help with your training for the World Cup.\\nLet's battle?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[jasmine]Let's go!"},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Jasmine","Jasmine",3]}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\f[jasmine]True to your reputation..."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\f[jasmine]Please take this."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbReceiveItem","args":["STEELIUMZ"]}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[jasmine]This is a crystallized form of Z-Power. It upgrades Steel-type moves to Z-Moves."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\f[jasmine]Wish you the best of luck!"},
+                          {"cmd":"commonEvent","id":66},
+                          {"cmd":"selfSwitch","ch":"B","value":true}
+                        ]
+                      }
+                    ],
+                    "else": [{"cmd":"exitEvent"}]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[jasmine]Come back later then."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer076c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]Um..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[jasmine]I don't know how to say this, but good luck..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(4)",
+      "x": 12,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":77,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Giggle..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I know how capable you are from the Lighthouse."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's time you showed that side of yourself to Jasmine! Good luck!"
+            },
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Giggle..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I know how capable you are from the Lighthouse."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's time you showed that side of yourself to Jasmine! Good luck!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 10,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":96,"x":10,"y":12,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

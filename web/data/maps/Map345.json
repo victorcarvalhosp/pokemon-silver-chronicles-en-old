@@ -1,0 +1,790 @@
+{
+  "id": 345,
+  "name": "Dragon's Den",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"Dragon_s-Den","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,48,72,3566,3566,3567,3566,3567,3566,3567,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,3574,3574,3575,3574,3575,3574,3575,88,76,76,56,48,48,48],
+      [48,48,48,48,48,72,1116,4636,4637,4638,4639,4636,4637,4638,4639,4636,88,56,48,48],
+      [48,48,48,48,48,72,4646,4644,4645,4646,4647,4644,4645,4646,4647,4644,4644,64,48,48],
+      [48,48,48,48,48,72,4654,4652,4653,4654,4655,4652,4653,4654,4655,4652,4652,64,48,48],
+      [48,48,48,48,48,72,4576,4577,0,0,0,4577,0,0,0,4577,4579,64,48,48],
+      [48,48,48,48,48,72,4584,4585,0,4585,0,4585,0,4585,0,4585,4587,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4644,4645,4646,4647,4644,4645,4646,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4652,4653,4654,4655,4652,4653,4654,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4660,4661,4662,4663,4660,4661,4662,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4636,4637,4638,4639,4636,4637,4638,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4644,4645,4646,4647,4644,4645,4646,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4652,4653,4654,4655,4652,4653,4654,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4660,4661,4662,4663,4660,4661,4662,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4636,4637,4638,4639,4636,4637,4638,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4644,4645,4646,4647,4644,4645,4646,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4652,4653,4654,4655,4652,4653,4654,4599,4591,64,48,48],
+      [48,48,48,48,48,72,4591,4599,4660,4661,4662,4663,4660,4661,4662,4599,4591,64,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,4561,4561,4561,4563,4564,4565,4566,4560,4561,4561,4561,0,0,0],
+      [0,0,0,0,0,0,4569,4569,4569,4571,4572,4573,4574,4568,4569,4569,4569,0,0,0],
+      [0,0,0,0,0,0,4583,4636,4637,4638,4580,4581,4582,4638,4639,4636,4583,0,0,0],
+      [0,0,0,0,0,0,4669,4670,4671,4646,4588,4589,4590,4646,4669,4670,4671,0,0,0],
+      [0,0,0,0,0,0,4677,4678,4679,4596,4597,4597,4597,4598,4677,4678,4679,0,0,0],
+      [0,0,0,0,0,0,4576,4577,4576,4577,4576,4605,4579,4577,4579,4577,4579,0,0,0],
+      [0,0,0,0,0,0,4700,4701,4584,4610,4584,4613,4587,4624,4587,4702,4703,0,0,0],
+      [0,0,0,0,0,0,4592,4593,4656,4593,4592,4593,4595,4593,4595,4593,4595,0,0,0],
+      [0,0,0,0,0,0,4716,4717,4656,0,4641,0,0,0,0,4718,4719,0,0,0],
+      [0,0,0,0,0,0,4724,4725,4656,0,4649,4650,4651,0,0,4726,4727,0,0,0],
+      [0,0,0,0,0,0,4700,4701,4656,0,0,0,0,0,0,4702,4703,0,0,0],
+      [0,0,0,0,0,0,4708,4709,4656,0,0,0,0,0,0,4710,4711,0,0,0],
+      [0,0,0,0,0,0,4716,4717,4656,0,0,0,0,0,0,4718,4719,0,0,0],
+      [0,0,0,0,0,0,4724,4725,4656,0,0,0,0,0,0,4726,4727,0,0,0],
+      [0,0,0,0,0,0,0,4733,4656,0,0,0,0,0,0,4734,4735,0,0,0],
+      [0,0,0,0,0,0,0,4741,4656,0,0,0,0,0,0,4742,4743,0,0,0],
+      [0,0,0,0,0,0,0,4749,4656,0,0,0,0,0,0,4750,4751,0,0,0],
+      [0,0,0,0,0,0,0,0,4656,0,4657,4658,4659,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,4567,0,0,0,0,0,0,0,0,0,4567,0,0,0],
+      [0,0,0,0,0,0,4575,0,0,0,0,0,0,0,0,0,4575,0,0,0],
+      [0,0,0,0,0,0,4583,0,0,0,0,0,0,0,0,0,4583,0,0,0],
+      [0,0,0,0,0,0,4669,4670,4671,0,4620,4621,4623,0,4669,4670,4671,0,0,0],
+      [0,0,0,0,0,0,4677,4678,4679,0,4628,4629,4631,0,4677,4678,4679,0,0,0],
+      [0,0,0,0,0,0,4600,4601,4602,4603,4604,4619,4606,4607,4616,4617,4618,0,0,0],
+      [0,0,0,0,0,0,4608,4609,4610,4667,4612,4627,4614,4667,4624,4625,4626,0,0,0],
+      [0,0,0,0,0,0,4708,4709,4592,4675,4633,4634,4635,4675,0,4710,4711,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4683,4684,4642,4643,4683,4684,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4691,4692,4650,4651,4691,4692,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4665,0,0,0,0,0,4665,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4666,0,0,0,4666,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4674,0,0,0,4674,0,0,0,0,0,0],
+      [0,0,0,0,0,0,4567,0,0,4682,0,0,0,4682,0,0,4567,0,0,0],
+      [0,0,0,0,0,0,4575,4672,0,0,0,0,0,0,0,4672,4575,0,0,0],
+      [0,0,0,0,0,0,4583,4680,0,0,1100,1101,1102,0,0,4680,4583,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "velhoSabio",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bHm... Good to see you here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bNo need to explain why you came."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bClair sent you here, didn't she?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThat girl is a handful..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI am sorry, but I must test you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bNot to worry, you are to answer only a few questions.\\nReady?"
+            },
+            {"cmd":"variables","from":101,"to":101,"op":"set","value":0},
+            {"cmd":"label","name":"question1"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWhat are Pokémon to you?"},
+            {
+              "cmd": "choices",
+              "choices": ["ALLY","JUNIOR","FRIEND"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question1"}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"label","name":"question2"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWhat helps to win battles?"},
+            {
+              "cmd": "choices",
+              "choices": ["STRATEGY","TRAINING","CHEATING"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question2"}
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"label","name":"question3"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWhat kind of Trainer do you wish to battle?"},
+            {
+              "cmd": "choices",
+              "choices": ["WEAK","STRONG","ANYONE"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question3"}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"label","name":"question4"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWhat is most important for raising Pokémon?"},
+            {
+              "cmd": "choices",
+              "choices": ["LOVE","VIOLENCE","KNOWLEDGE"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question4"}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh, I understand..."}
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"label","name":"question5"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bStrong Pokémon. Weak Pokémon.\\nWhich is more important?"},
+            {
+              "cmd": "choices",
+              "choices": ["STRENGTH","BOTH","WEAKNESS"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question5"}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHm... I see...\\nYou care deeply for Pokémon."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bVery commendable."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bThat conviction is what is important!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\b\\PN, don't lose that belief."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bIt will see you through at the Pokémon League."},
+                  {"cmd":"memorizeBgmBgs"},
+                  {"cmd":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"switches","from":117,"to":117,"value":true},
+                  {
+                    "cmd": "playBgm",
+                    "audio": {"name":"Pokemon Crystal Version - Clair","volume":100,"pitch":100}
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"left"},
+                        {"move":"up"},
+                        {"move":"up"},
+                        {"move":"turnRight"}
+                      ]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {"cmd":"text","text":"\\f[clair2]\\rSo how did it go?"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[clair2]\\rI guess there's no point in asking.\\nYou did fail?\\n...\\n...What? You passed?"
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"backward"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {"cmd":"text","text":"\\f[clair2]\\rThat can't be!"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"backward"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[clair2]\\rYou're lying!\\nEven I haven't been aproved! "
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [{"move":"left"},{"move":"down"},{"move":"turnLeft"}]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bClair!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bThis child is impeccable, in skill and spirit!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bAdmit defeat and confer the Rising Badge!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\b...Or must I inform Lance of this?"},
+                  {"cmd":"showAnimation","character":3,"animation":17},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {"cmd":"text","text":"\\f[clair2]\\rI... I understand..."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [{"move":"up"},{"move":"right"},{"move":"turnDown"}]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"right"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[clair2]\\rHere, this is the Rising badge...\\nHurry up! Take it!"
+                  },
+                  {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                  {"cmd":"text","text":"\\PN received the Rising Badge from Clair!"},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"assign","target":"$player.badges[]","args":[7],"op":"=","value":true},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[clair2]\\rWith the Rising Badge you get the license that enable your Pokémon to use the move for climbing waterfalls."
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_WATERFALL"]}},
+                    "then": []
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[clair2]\\rAlso, all Pokémon will know you as a Trainer and obey your every command without question."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bClair..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bReflect upon what it is that you lack and this child has."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                  {"cmd":"text","text":"\\f[clair2]\\r...\\n..."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 3,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {"move":"frequency","value":4},
+                        {"move":"down"},
+                        {"move":"down"},
+                        {"move":"right"},
+                        {"move":"down"},
+                        {"move":"down"},
+                        {"move":"down"},
+                        {"move":"down"},
+                        {"move":"down"}
+                      ]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"switches","from":525,"to":525,"value":true},
+                  {"cmd":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}},
+                  {"cmd":"restoreBgmBgs"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bBy the way...\\nDid you heard of Lugia?\\nEr..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bBetween Olivine and Cianwood are islands called Whirls Islands."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bThere is a huge waterfall deep in the cave there. It said that Lugia rests in the deep end of the waterfall basin..."
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bYou need a Silver Wing to reach the waterfall basin, I've heard..."
+                  },
+                  {"cmd":"call","fn":"advanceQuestToStage","args":["JohtoGymChallenge",7]},
+                  {"cmd":"selfSwitch","ch":"A","value":true}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bHah? I didn't quite catch that..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhat was it you said?"},
+                  {"cmd":"jump","label":"question5"}
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "velhoSabio",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bThere is a huge waterfall deep in the cave there. It said that LUGIA rests in the deep end of the waterfall basin..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bYou need a Silver Wing to reach the waterfall basin, I've heard..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "clair",
+      "x": 11,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":117,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer078c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":525,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 9,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dragons den fire",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 13,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dragons den fire",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 14,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You know young Master Lance?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "He looks so much like our Master did in his youth.\\nIt's in their blood."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 8,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's been quite some time since a Trainer has gained our Master's rare approval."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"In fact, not since Master Lance."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Take this as part of our approval."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["DRAGONSCALE"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Take this as part of our approval."},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It's been quite some time since a Trainer has gained our Master's rare approval."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"In fact, not since Master Lance."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 11,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":167,"x":29,"y":41,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

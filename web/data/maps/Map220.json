@@ -1,0 +1,209 @@
+{
+  "id": 220,
+  "name": "Estaleiro 2nd",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,72,1429,1429,1429,1429,1429,1429,1429,1429,1429,1429,1429,1429,1429,1429,64,48,48],
+      [48,48,72,1437,1437,1437,1437,1437,1437,1437,1437,1437,1437,1437,1437,1437,1437,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2604,2604,2604,2604,2604,2604,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,722,723,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,604,730,731,604,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2025,0,0,0,0,0,0,2027,604,0,0,0],
+      [0,0,0,722,723,0,0,604,2033,0,1151,0,0,0,0,2035,604,0,0,0],
+      [0,0,0,730,731,0,722,723,2033,0,1183,0,0,1151,0,2035,0,0,0,0],
+      [0,0,0,604,0,0,730,731,2033,1151,1183,0,0,1151,0,2035,0,0,0,0],
+      [0,0,0,722,723,0,0,604,2033,1159,1191,0,0,1175,0,2035,0,0,0,0],
+      [0,0,0,730,731,0,722,723,2033,1191,0,0,0,1191,0,2035,0,0,0,0],
+      [0,0,0,604,0,0,730,731,2008,2009,2009,2009,2009,2009,2009,2010,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,604,0,0,604,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,401,0,0,0,0,401,0,0,0,0,0,0,0],
+      [0,0,0,2958,2959,0,0,409,0,0,0,0,409,0,0,0,0,0,0,0],
+      [0,0,0,2966,2967,0,0,0,0,0,0,0,0,721,0,0,0,0,0,0],
+      [0,0,0,2974,2975,0,0,0,0,0,0,0,0,720,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,2012,2012,2012,2012,2012,2012,0,0,0,0,0],
+      [0,0,0,721,0,0,0,0,0,0,0,685,686,687,0,0,0,0,0,0],
+      [0,0,0,720,0,0,0,721,0,0,0,693,694,695,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,720,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,721,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,720,0,0,0,721,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,720,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 4,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":219,"x":1,"y":2,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Projetar um navio grande é como construir um edificio enorme."},
+            {"cmd":"text","text":"Fazer um veiculo para passageiros."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 3,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Não imagina como um navio em aço pode flutuar?"},
+            {"cmd":"text","text":"Flutua por causa de um principio chamado flutuabilidade."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 11,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"As estações, o tempo, a posição da lua no céu..."},
+            {"cmd":"text","text":"Estas e outras condições fazem o mar mudar seu jeito. "},
+            {"cmd":"text","text":"Isso é certo! \\n O mar é um ser vivo!"}
+          ]
+        }
+      ]
+    }
+  ]
+}

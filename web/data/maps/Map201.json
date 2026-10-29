@@ -1,0 +1,765 @@
+{
+  "id": 201,
+  "name": "Route 101",
+  "tilesetId": 17,
+  "width": 38,
+  "height": 21,
+  "autoplayBgm": true,
+  "bgm": {"name":"Rota 101","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478],
+      [5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478,5478]
+    ],
+    [
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,4938,4939,4924,4925,4924,4925,0,0,0,0,4924,4925,4924,4925,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5461,5462,5461,5462,5461,5462,0,0,0,0,5461,5462,5461,5462,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5469,5470,5469,5470,5469,5470,0,0,0,0,5469,5470,5469,5470,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5469,5470,370,356,372,0,0,0,0,0,0,0,0,370,356,372,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,0,0,352,336,338,372,0,0,0,0,0,0,0,352,336,360,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,370,356,337,336,336,360,0,0,0,0,0,0,370,337,336,360,5469,5470,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,352,336,336,336,340,374,0,0,0,0,0,0,376,344,336,338,356,372,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,376,364,344,340,374,0,0,0,0,0,0,4924,4925,376,364,364,364,374,5469,5470,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,352,360,0,0,0,0,0,0,0,4920,4921,4924,4925,0,0,0,0,0,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,376,374,0,0,0,569,572,572,565,4936,4937,5461,5462,0,0,0,0,0,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,572,572,572,572,572,573,0,0,0,5461,5462,5469,5470,0,0,0,0,0,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5461,5462,0,0,0,0,0,0,0,5469,5470,370,372,0,0,0,0,0,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5453,5454,0,0,0,0,0,0,0,370,356,337,338,372,0,0,0,0,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5453,5454,5461,5462,0,0,0,0,0,0,0,352,336,336,336,338,372,0,0,0,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5461,5462,5469,5470,0,0,0,0,0,0,0,352,336,336,336,336,360,0,0,0,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5469,5470,370,372,0,0,0,0,0,0,0,376,344,336,336,340,374,0,0,0,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,370,356,337,338,372,0,0,0,557,572,572,565,376,364,344,360,0,0,4924,4925,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,376,364,344,336,338,372,0,0,0,0,0,0,4922,4923,352,360,0,0,4922,4923,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5451,5452,352,336,340,374,0,0,0,0,0,0,4936,4937,376,374,4924,4925,4936,4937,5461,5462,5461,5462,5461,5462,5461,5462,5461],
+      [5454,5453,5454,5453,5454,5453,5454,5453,5454,5461,5462,376,364,374,0,0,0,0,0,0,0,4922,4923,4922,4923,4922,4923,4922,4923,5453,5454,5453,5454,5453,5454,5453,5454,5453],
+      [5462,5461,5462,5461,5462,5461,5462,5461,5462,5453,5454,4924,4925,4924,4925,4924,4925,4924,4925,0,0,4938,4939,4938,4939,4938,4939,4938,4939,5461,5462,5461,5462,5461,5462,5461,5462,5461]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4924,4925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,4924,4925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5450,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5458,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4924,4925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4924,4925,4924,4925,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,0,0,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924,4925,4924]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 12,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Wild Pokémon will jump out at you in tall grass."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "If you want to catch Pokémon, you have to go into the tall grass and search."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"If Pokémon get tired, take them to a Pokémon Center."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"There's a Pokémon Center in Oldale Town right close by."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 22,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":412,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"},{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bHey \\PN... now that we're travelling together, it would be great if we train double battles!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bI know you're a great Trainer, and I could learn a lot battling together."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bWe could even battle in the Double Battle Tournaments that happen in some cities."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_shy_boy]\\bI'm sure that with you around my journey will be much more interesting."
+                },
+                {"cmd":"variables","from":86,"to":86,"op":"set","value":1},
+                {"cmd":"variables","from":79,"to":79,"op":"set","value":1},
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"variables","from":78,"to":78,"op":"set","value":0},
+                {"cmd":"variables","from":84,"to":84,"op":"set","value":0},
+                {"cmd":"switches","from":431,"to":431,"value":true},
+                {"cmd":"variables","from":78,"to":78,"op":"add","value":1},
+                {"cmd":"variables","from":80,"to":80,"op":"add","value":1},
+                {"cmd":"switches","from":960,"to":960,"value":true},
+                {"cmd":"commonEvent","id":37},
+                {"cmd":"comment","lines":["é o que tem desvantagem em relação a switch"]},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bOh, let's take a photo together too!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"wait","seconds":1.5},
+                {"cmd":"call","fn":"pbPhotographWithPartner","args":["namorado"]}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rHey \\PN... now that we're travelling together, it would be great if we train double battles!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rI know you're a great Trainer, and I could learn a lot battling together."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rWe could even battle in the Double Battle Tournaments that happen in some cities."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_shy_girl]\\rI'm sure that with you around my journey will be much more interesting."
+                },
+                {"cmd":"comment","lines":["é o que tem desvantagem em relação a switch"]},
+                {"cmd":"variables","from":86,"to":86,"op":"set","value":1},
+                {"cmd":"variables","from":79,"to":79,"op":"set","value":1},
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"variables","from":78,"to":78,"op":"set","value":0},
+                {"cmd":"variables","from":84,"to":84,"op":"set","value":0},
+                {"cmd":"switches","from":431,"to":431,"value":true},
+                {"cmd":"variables","from":78,"to":78,"op":"add","value":1},
+                {"cmd":"variables","from":80,"to":80,"op":"add","value":1},
+                {"cmd":"switches","from":960,"to":960,"value":true},
+                {"cmd":"commonEvent","id":36},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rOh, let's take a photo together too!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"wait","seconds":1.5},
+                {"cmd":"call","fn":"pbPhotographWithPartner","args":["namorada"]}
+              ]
+            },
+            {"cmd":"switches","from":414,"to":414,"value":true},
+            {"cmd":"switches","from":435,"to":435,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"},{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bEi \\PN!\\nAgora vou te ensinar algumas coisas sobre Relacionamentos."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bTer um companheiro durante suas viagens  é muito legal!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bEles te ajudam nas batalhas Pokémon e podem ser muito úteis durante sua jornada!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bVou te mostrar as principais coisas para se ter um bom relacionamento com seu companheiro de viagem."
+                },
+                {"cmd":"switches","from":413,"to":413,"value":true},
+                {"cmd":"variables","from":79,"to":79,"op":"set","value":0},
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"variables","from":78,"to":78,"op":"set","value":0},
+                {"cmd":"variables","from":81,"to":81,"op":"set","value":0},
+                {"cmd":"variables","from":82,"to":82,"op":"set","value":0},
+                {"cmd":"variables","from":83,"to":83,"op":"set","value":0},
+                {"cmd":"variables","from":84,"to":84,"op":"set","value":0},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bEste é o Menu do Companheiro, você pode abilitado ou desabilitado a hora que quiser, para isso basta falar comigo."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bVocê pode fazer várias coisas com seu acompanhante, pode conversar, dar presentes, elogiar, usar em batalhas em dupla e até brigar!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bConforme seu relacionamento com essa pessoa melhora, os coraçõezinhos ficam vermelhos e quando chegar à 10 o nivel de confiança dele aumenta."
+                },
+                {"cmd":"variables","from":78,"to":78,"op":"add","value":1},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bQuanto mais alto o nivel de confiança, mais fortes ficam os Pokémons e mais opções de interação são liberadas."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bVocê também pode ver como está o humor de seu companheiro, basta olhar para o rosto dele no Menu do Companheiro."
+                },
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bAgora estou tranquila, por isso o rosto é esse..."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bDependendo do que acontecer posso ficar triste ou muito feliz."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bPara explorar esse mundo de possibilidades basta falar comigo!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorado]\\bQuem sabe no futuro a gente não possa até namorar de verdade?!"
+                },
+                {"cmd":"text","text":"\\f[facenamorado]\\bE então aprendeu sobre relacionamentos?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "text",
+                        "text": "\\f[facenamorado]\\bQue bom! Agora vamos continuar nossa jornada!"
+                      }
+                    ],
+                    [
+                      {"cmd":"text","text":"\\f[facenamorado]\\bOk! Vou te explicar de novo..."},
+                      {"cmd":"jump","label":"Explica"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"label","name":"Explica"},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rEi \\PN!\\nAgora vou te ensinar algumas coisas sobre Relacionamentos."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rTer um companheiro durante suas viagens  é muito legal!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rEles te ajudam nas batalhas Pokémon e podem ser muito úteis durante sua jornada!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rVou te mostrar as principais coisas para se ter um bom relacionamento com seu companheiro de viagem."
+                },
+                {"cmd":"switches","from":413,"to":413,"value":true},
+                {"cmd":"variables","from":79,"to":79,"op":"set","value":0},
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"variables","from":78,"to":78,"op":"set","value":0},
+                {"cmd":"variables","from":81,"to":81,"op":"set","value":0},
+                {"cmd":"variables","from":82,"to":82,"op":"set","value":0},
+                {"cmd":"variables","from":83,"to":83,"op":"set","value":0},
+                {"cmd":"variables","from":84,"to":84,"op":"set","value":0},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rEste é o Menu do Companheiro, você pode abilitado ou desabilitado a hora que quiser, para isso basta falar comigo."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rVocê pode fazer várias coisas com seu acompanhante, pode conversar, dar presentes, elogiar, usar em batalhas em dupla e até brigar!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rConforme seu relacionamento com essa pessoa melhora, os coraçõezinhos ficam vermelhos e quando chegar à 10 o nivel de confiança dele aumenta."
+                },
+                {"cmd":"variables","from":78,"to":78,"op":"add","value":1},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rQuanto mais alto o nivel de confiança, mais fortes ficam os Pokémons e mais opções de interação são liberadas."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rVocê também pode ver como está o humor de seu companheiro, basta olhar para o rosto dele no Menu do Companheiro."
+                },
+                {"cmd":"variables","from":80,"to":80,"op":"set","value":1},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rAgora estou tranquila, por isso o rosto é esse..."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rDependendo do que acontecer posso ficar triste ou muito feliz."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rPara explorar esse mundo de possibilidades basta falar comigo!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facenamorada]\\rQuem sabe no futuro a gente não possa até namorar de verdade?!"
+                },
+                {"cmd":"text","text":"\\f[facenamorada]\\rE então aprendeu sobre relacionamentos?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "text",
+                        "text": "\\f[facenamorada]\\rQue bom! Agora vamos continuar nossa jornada!"
+                      }
+                    ],
+                    [
+                      {"cmd":"text","text":"\\f[facenamorada]\\rOk! Vou te explicar de novo..."},
+                      {"cmd":"jump","label":"Explica"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ]
+            },
+            {"cmd":"switches","from":414,"to":414,"value":true},
+            {"cmd":"switches","from":435,"to":435,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":414,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 15,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Route 101\\nNorth to Oldale Town"}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 24,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"switches","from":550,"to":550,"value":true}]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Trainer(4)",
+      "x": 17,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":140,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hey, young kid."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It seems it's going to rain soon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm worried about kids being in the rain, so please take that."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["COMMONUMBRELLA"]},
+            {"cmd":"switches","from":865,"to":865,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I'm worried about kids being in the rain, please use the umbrella in case it rains."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":405,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Trainer(5)",
+      "x": 19,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "YOUNGSTER_3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["YOUNGSTER"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hey, you're not the famous \\PN?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"What are you doing here with this weak Pokémon?"},
+            {
+              "cmd": "comment",
+              "lines": ["EndSpeech: Merda, perdi...\\nTenho que treinar um pouco mais."]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["YOUNGSTER_3","Joe"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "YOUNGSTER_3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I thought I had a chance to win. Big mistake."}
+          ]
+        }
+      ]
+    }
+  ]
+}

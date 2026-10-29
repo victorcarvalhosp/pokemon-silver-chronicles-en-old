@@ -1,0 +1,1064 @@
+{
+  "id": 123,
+  "name": "Cianwood City - Gym",
+  "tilesetId": 52,
+  "width": 20,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,52,86,3476,3476,3476,3476,3476,64,48,48,48,48,48,48],
+      [48,48,48,48,52,76,86,3476,3476,3476,3476,3476,91,77,76,56,48,48,48,48],
+      [48,48,48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48],
+      [48,48,48,48,72,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,64,48,48,48,48],
+      [48,48,48,48,72,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,64,48,48,48,48],
+      [48,48,48,48,72,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,64,48,48,48,48],
+      [48,48,48,48,72,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,64,48,48,48,48],
+      [48,48,48,48,72,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,72,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,3476,3476,3476,208,192,192,216,3476,3476,3476,0,0,0,0,0],
+      [0,0,0,0,0,3476,3476,3476,232,220,220,230,3476,3476,3476,0,0,0,0,0],
+      [0,0,0,0,0,3476,3476,3476,274,260,260,276,3476,3476,3476,0,0,0,0,0],
+      [0,0,0,0,0,3438,0,0,280,268,268,278,0,0,3439,0,0,0,0,0],
+      [0,0,0,0,0,3438,0,0,0,3444,3445,0,0,0,3439,0,0,0,0,0],
+      [0,0,0,0,0,3438,0,0,3451,3452,3453,3454,0,0,3439,0,0,0,0,0],
+      [0,0,0,0,0,3438,0,0,3439,3438,3439,3438,0,0,3439,0,0,0,0,0],
+      [0,0,0,0,0,3438,3439,3438,3439,3438,3439,3438,3439,3438,3439,0,0,0,0,0],
+      [0,0,0,0,0,3473,3464,3465,3465,3465,3465,3465,3465,3466,3473,0,0,0,0,0],
+      [0,0,0,0,0,3473,3472,3473,3473,3473,3473,3473,3473,3474,3473,0,0,0,0,0],
+      [0,0,0,0,0,985,3472,3473,3473,3473,3473,3473,3473,3474,985,0,0,0,0,0],
+      [0,0,0,0,0,3473,3480,3481,3481,3481,3481,3481,3481,3482,3473,0,0,0,0,0],
+      [0,0,0,0,0,985,3473,3473,3473,3473,3473,3473,3473,3473,985,0,0,0,0,0],
+      [0,0,0,0,0,3473,3473,3473,3473,3473,3473,3473,3473,3473,3473,0,0,0,0,0],
+      [0,0,0,0,0,985,3473,3473,3473,3473,3473,3473,3473,3473,985,0,0,0,0,0],
+      [0,0,0,0,0,985,984,984,984,3473,3473,984,984,984,985,0,0,0,0,0],
+      [0,0,0,0,0,985,3464,3465,3465,3465,3465,3465,3465,3466,986,0,0,0,0,0],
+      [0,0,0,0,0,985,3472,3473,3473,3473,3473,3473,3473,3474,986,0,0,0,0,0],
+      [0,0,0,0,0,1002,3480,3481,3481,3481,3481,3481,3481,3482,1003,0,0,0,0,0],
+      [0,0,0,0,0,3473,3480,3481,3481,3481,3481,3481,3481,3482,3473,0,0,0,0,0],
+      [0,0,0,0,0,82,68,68,84,704,705,82,68,68,84,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,208,192,192,216,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,208,192,192,216,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,232,220,220,230,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,0,0,0,0,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,0,0,0,0,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,0,0,0,0,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,0,0,0,0,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3475,3476,3476,3476,3483,3476,3476,3476,3476,3477,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,1023,0,0,0,1023,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,1023,0,0,0,1023,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,984,0,0,0,0,0,0,984,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,0,0,0,0,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3475,3476,3476,3476,3476,3483,3476,3476,3476,3477,0,0,0,0,0],
+      [0,0,0,0,0,3467,3464,3465,3465,3465,3465,3465,3465,3466,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,3480,3481,3481,3481,3481,3481,3481,3482,3469,0,0,0,0,0],
+      [0,0,0,0,0,3475,3476,3476,3476,3483,3483,3476,3476,3476,3477,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,2982,0,0,2982,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,0,0,2990,0,0,2990,0,0,3469,0,0,0,0,0],
+      [0,0,0,0,0,3467,984,0,0,0,0,0,0,984,3469,0,0,0,0,0],
+      [0,0,0,0,0,3475,3476,3476,3476,3483,3483,3476,3476,3476,3477,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":117,"x":9,"y":34,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SmashRock",
+      "x": 8,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(4)",
+      "x": 7,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My Pokémon and I are bound together by friendship. \\nOur bond will never be broken!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Não é possível!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BLACKBELT","Yoshi"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You seem to have a strong bond with your Pokémon, too!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(4)",
+      "x": 12,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We martial artists fear nothing!"},
+            {"cmd":"comment","lines":["EndSpeech: Foi chocante!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BLACKBELT","Lao"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Fighting-type Pokémon are afraid of Psychic types..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(4)",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"My raging fists will shatter your Pokémon!"},
+            {"cmd":"comment","lines":["EndSpeech: ..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BLACKBELT","Nob"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"My Pokémon lost...\\nMy...my pride is shattered..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "SmashRock",
+      "x": 9,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "SmashRock",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Trainer(4)",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Words are useless.\\nLet your fists do the talking!"},
+            {"cmd":"comment","lines":["EndSpeech: Eu fui quebrado!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BLACKBELT","Lung"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I lost!\\nI'm speechless!"}
+          ]
+        },
+        {
+          "condition": {"switch1":746,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Pedra",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Copy of Character (47)",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": []
+        },
+        {
+          "condition": {"switch1":746,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer075c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[chuck]\\bOoomph!\\nThe pouring waterfall right onto my head...\\nArrgh!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[chuck]\\bYou just spoiled my training!\\nI have to warn you that I am a strong Trainer training every day under this waterfall!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bLook what I can do..."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bUrrgh!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bOooarrggh!"},
+            {"cmd":"playSe","audio":{"name":"129-Earth01","volume":100,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 10,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"jump","x":3,"y":0}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bWhat?\\nIt has nothing to do with Pokémon?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\b...\\nThat's true!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\b...\\n..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bCome on. We shall do battle!"},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":4}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Chuck","Chuck"]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":5}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Chuck","Chuck",1]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":6}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Chuck","Chuck",2]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"comment","lines":["1 == player won"]},
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[chuck]\\bHmm... I lost?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[chuck]\\bHow about that!\\nAll right. You're worthy of the Storm Badge!"
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Storm Badge from Chuck!"},
+                {"cmd":"assign","target":"$player.badges[]","args":[4],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[chuck]\\bHere, take this, too!"},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM01"}]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\f[chuck]\\bThat is Focus Punch."},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[chuck]\\bIt doesn't land if the foe you're attacking hit you first, but it's very powerful if it manages to hit!"
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":5}},
+                      "then": [
+                        {
+                          "cmd": "assign",
+                          "target": "$PokemonGlobal.encounter_version",
+                          "args": [],
+                          "op": "=",
+                          "value": 2
+                        },
+                        {
+                          "cmd": "text",
+                          "text": "\\f[chuck]\\bThis Gym badge also lets your Pokémon use Strenght to get move boulders around."
+                        },
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_STRENGTH"]}},
+                          "then": []
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":6}},
+                          "then": [
+                            {
+                              "cmd": "assign",
+                              "target": "$PokemonGlobal.encounter_version",
+                              "args": [],
+                              "op": "=",
+                              "value": 3
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {"script":{"op":">=","left":{"call":"$player.badge_count"},"right":7}},
+                              "then": [
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\f[chuck]\\bThis Gym badge also lets your Pokémon use Whirlpool to get across real whirlpools."
+                                },
+                                {
+                                  "cmd": "if",
+                                  "cond": {"script":{"call":"pbReceiveItem","args":["LICENSE_WHIRLPOOL"]}},
+                                  "then": []
+                                },
+                                {"cmd":"switches","from":723,"to":723,"value":true},
+                                {
+                                  "cmd": "call",
+                                  "fn": "advanceQuestToStage",
+                                  "args": ["JohtoGymChallenge",6]
+                                },
+                                {
+                                  "cmd": "assign",
+                                  "target": "$PokemonGlobal.encounter_version",
+                                  "args": [],
+                                  "op": "=",
+                                  "value": 4
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {"cmd":"selfSwitch","ch":"A","value":true},
+                    {"cmd":"switches","from":76,"to":76,"value":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"erasePicture","id":2},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {"cmd":"switches","from":968,"to":968,"value":false},
+            {"cmd":"restoreBgmBgs"}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer075c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bWahahah!\\nI enjoyed battling you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bBut a loss is a loss!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bFrom now on, I'm going to train 24 hours a day!"},
+            {
+              "cmd": "if",
+              "cond": {"switch":745,"value":false},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[chuck]\\bIf you want to take a photo, I'll not refuse."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"switches","from":746,"to":746,"value":true},
+                {"cmd":"transfer","map":123,"x":9,"y":5,"direction":2,"fade":false},
+                {"cmd":"setEventLocation","event":0,"direction":2,"x":10,"y":5},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"call","fn":"pbPhotograph","args":[]},
+                {"cmd":"switches","from":746,"to":746,"value":false},
+                {"cmd":"setEventLocation","event":0,"direction":0,"x":9,"y":3},
+                {"cmd":"switches","from":745,"to":745,"value":true}
+              ],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":166,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer075c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]Chuck: \\bMy only hobby is to battle tough Trainers."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[chuck]\\bOh hey! I just finished training.\\nDo you want to battle again?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[chuck]\\bTaste my 24-hour training!"},
+                  {"cmd":"switches","from":968,"to":968,"value":true},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Chuck","Chuck",3]}},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[chuck]Chuck: \\bWahaha!\\nA battle with you is never boring!"
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\f[chuck]\\bPlease take this."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbReceiveItem","args":["FIGHTINIUMZ"]}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[chuck]\\bThis is a crystallized form of Z-Power. It upgrades Fighting-type moves to Z-Moves."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[chuck]\\bKeep training hard and good things will happen to you!"
+                          },
+                          {"cmd":"commonEvent","id":66},
+                          {"cmd":"selfSwitch","ch":"B","value":true}
+                        ]
+                      }
+                    ],
+                    "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                  },
+                  {"cmd":"switches","from":968,"to":968,"value":false}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[chuck]\\bCome back when you're ready!"}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer075c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bWahahah!\\nI enjoyed battling you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bBut a loss is a loss!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[chuck]\\bI'll keep training 24 hours a day!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 10,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":117,"x":9,"y":34,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

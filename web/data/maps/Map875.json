@@ -1,0 +1,1454 @@
+{
+  "id": 875,
+  "name": "Lavender Town - TV Tower 4th",
+  "tilesetId": 5,
+  "width": 25,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"Pokemon Tower - FRLG","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,52,76,76,76,76,56,48,48,48,48],
+      [52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48,48,48,48],
+      [72,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48,48,48,48],
+      [72,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,0,812,812,64,48,48,48,48],
+      [72,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,0,820,820,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,2281,452,452,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,2289,2289,2289,452,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,2293,452,64,48,48,48,48],
+      [72,452,4201,4200,452,452,452,452,4201,4202,4203,82,68,84,4200,4201,4200,4201,4200,452,64,48,48,48,48],
+      [72,452,4209,4208,452,452,452,452,4209,4210,4211,64,48,72,4208,4209,4208,4209,4208,452,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [54,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,49,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,48,48,48,48,48],
+      [50,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,50,68,68,68,68,68,68,48,48,48,48,48],
+      [48,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2265,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2273,2301,0,0,0,0,0,0],
+      [0,0,0,939,940,0,0,0,0,0,0,0,0,939,940,0,0,2281,2293,0,0,0,0,0,0],
+      [0,0,0,947,948,0,0,0,0,0,0,0,0,947,948,0,0,2289,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2288,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2274,0,0,0,0,0,0,0,0],
+      [0,0,2296,2297,2301,2301,2301,2301,2301,2301,2301,2301,2301,2301,2293,2293,2293,2293,0,2302,0,0,0,0,0],
+      [0,0,2304,2305,4220,4221,4222,4223,2309,2309,2309,2309,2309,2309,2307,2307,2307,2307,2309,2310,0,0,0,0,0],
+      [0,0,0,0,4228,4229,4230,4231,0,0,0,0,0,0,0,4932,4933,4934,4935,0,0,0,0,0,0],
+      [0,0,0,4176,570,570,570,570,4178,0,0,0,0,0,0,4940,4941,4942,4943,0,0,0,0,0,0],
+      [0,0,570,4184,4185,4185,4185,4185,4186,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4192,4193,4193,4193,4193,4194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,570,570,570,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2264,0,2265,2270,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2272,0,2273,2278,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2280,0,1726,2286,0,0,0,0,0],
+      [0,0,0,947,948,0,0,0,0,0,0,0,0,947,948,0,2288,0,2293,2294,0,0,0,0,0],
+      [0,0,2264,2265,2265,2265,2265,2265,2265,2265,2265,2265,2265,2265,2265,2265,2266,0,2285,2286,0,0,0,0,0],
+      [0,0,2272,2273,2273,2273,2273,2273,2273,2273,2273,2273,2273,2273,2273,2273,2274,0,2293,2294,0,0,0,0,0],
+      [0,0,2296,2297,2301,2301,2301,2301,2301,0,0,0,0,0,0,4884,4885,4886,4887,0,0,0,0,0,0],
+      [0,0,2304,2305,2309,2309,2309,2309,2309,0,0,0,0,0,0,4892,4893,4894,4895,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4900,4901,4902,4903,0,0,0,0,0,0],
+      [0,0,0,4176,4177,4177,4177,4177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4184,0,0,0,0,4172,0,0,0,0,0,0,0,0,1626,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4910,4909,4910,4909,4910,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4918,4917,4918,4917,4918,0,0,0,0,0,0],
+      [0,0,0,0,4931,0,0,4931,0,0,0,0,0,0,4926,4925,4926,4925,4926,0,0,0,0,0,0],
+      [0,0,0,0,4939,0,0,4939,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4947,0,0,4947,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 22,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":477,"x":2,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Trainer(3)",
+      "x": 24,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bSou o encarregado da segurança da reunião."},
+            {"cmd":"comment","lines":["EndSpeech: Não esperava por isso..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::ROCKET_Male"},"ADM",4]}
+              },
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bMelhor você não entrar na reunião..."}]
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 1,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"\\f[facerival]\\b..."},
+            {"cmd":"text","text":"\\f[facerival]\\bVamos começar a transmissão em: \\n 3"},
+            {"cmd":"text","text":"\\f[facerival]\\b2"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bEi! Espere!"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bQuem é esse(a) muleque(a)?!"},
+            {"cmd":"text","text":"\\f[facerival]\\bJá sei quem é..."},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"left"},{"move":"turnUp"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bAgora mesmo vou informar a todos que o Grande Mart de Celadon está sob o comando da Equipe Rocket e que todos os seus fornecimentos estão temporariamente interrompidos!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bE dessa vez você não irá atrapalhar, vou dar um jeito em você agora mesmo!"
+            },
+            {"cmd":"text","text":"\\f[facerival]\\bVou te ensinar uma lição!"},
+            {"cmd":"text","text":"\\f[facerival]\\bVai Mewtwo!"},
+            {"cmd":"showAnimation","character":7,"animation":446},
+            {"cmd":"switches","from":270,"to":270,"value":true},
+            {"cmd":"text","text":"\\f[facerival]\\bMewtwo, mande ele(a) pra longe daqui!"},
+            {"cmd":"text","text":"\\f[facemewtwo]\\b..."},
+            {"cmd":"text","text":"\\f[facerival]\\bVai logo!"},
+            {"cmd":"text","text":"\\f[facerival]\\bPokémon insolente!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemewtwo]\\bNão sou obrigado a aturar esse tipo de coisa! \\n Não conte comigo nessa batalha!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bEsse(a) muleque é mesmo tão fraco(a) que nem preciso de você para vencer..."
+            },
+            {"cmd":"comment","lines":["EndSpeech: Achei que não precisaria de Mewtwo..."]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::RIVAL_ROCKET"},"Agente017",2]
+                }
+              },
+              "then": [
+                {"cmd":"switches","from":271,"to":271,"value":true},
+                {"cmd":"text","text":"\\f[facerival]\\bNão posso acreditar nisso..."},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bVocê teve sorte, Mewtwo está indisposto no momento."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bVou deixar meus planos aqui para trás por enquanto..."
+                },
+                {"cmd":"text","text":"\\f[facerival]\\bMas não pense que isso ficará assim..."},
+                {"cmd":"text","text":"\\f[facerival]\\bAinda temos muitas cartas na manga."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.25},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"switches","from":272,"to":272,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25}
+              ],
+              "else": [
+                {"cmd":"switches","from":271,"to":271,"value":true},
+                {"cmd":"text","text":"\\f[facerival]\\bHahahaha! Seu fracote!"},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bNem mesmo precisei de Mewtwo para te derrotar."
+                },
+                {"cmd":"text","text":"\\f[facerival]\\bVocê atrapalhou meus planos por aqui..."},
+                {"cmd":"text","text":"\\f[facerival]\\bMas não pense que isso ficará assim..."},
+                {"cmd":"text","text":"\\f[facerival]\\bAinda temos muitas cartas na manga."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"switches","from":272,"to":272,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bCadê aqueles Rockets?"},
+            {"cmd":"text","text":"\\bO quê?Eles já foram embora?!"},
+            {
+              "cmd": "text",
+              "text": "\\bA Equipe Rocket está aparecendo em toda parte e as forças policiais não estão conseguindo fazer nada..."
+            },
+            {"cmd":"text","text":"\\bVocê acha que poderia nos ajudar?!"},
+            {"cmd":"text","text":"\\bEntão tenho uma missão para você!"},
+            {"cmd":"text","text":"\\bHá um Pokémon dorminhoco ao sul de Lavender."},
+            {
+              "cmd": "text",
+              "text": "\\bJá tentamos de tudo para removê-lo de lá, mas foi tudo em vão..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bIsso está atrasando nossas investigações a respeito da Equipe Rocket..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bOuvi falar que o Pokémon dorminhoco pode acordar se ouvir a PokéFlauta."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bOuvi dizer que um tal de Sr. Fuji tem uma dessas, tente encontrá-lo."
+            },
+            {"cmd":"text","text":"\\bObrigado, e te devo essa."},
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":273,"to":273,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":273,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Lt. Surge",
+      "x": 4,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge-rocket",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sabrina",
+      "x": 5,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina-rocket",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Blaine",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "rival",
+      "x": 2,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Silverrocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 7,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_2",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Koga",
+      "x": 6,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk064-koga",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 6,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 1,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":270,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "armored_mewtwo",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":271,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "policial",
+      "x": 23,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk001",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":273,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 18,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[874,17,1,true]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "noShadow stairDetail",
+      "x": 18,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4895,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 14,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1016,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rThere's nobody in Control Room. Should we squeeze in?"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"\\f[faceyellow]\\rOk, let's go!"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": -1,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [{"move":"playSe","audio":{"name":"027-Door04","volume":80,"pitch":100}}]
+                    }
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"switches","from":792,"to":792,"value":true},
+                  {"cmd":"wait","seconds":1.0},
+                  {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.15},
+                  {"cmd":"transfer","map":478,"x":14,"y":9,"direction":2,"fade":true},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+                ],
+                [{"cmd":"text","text":"\\f[faceyellow]\\rWe need to hurry..."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":792,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1024,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Giovanni",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer089c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "x": 5,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association01",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "x": 4,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_3",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": " size(1,4) noShadow",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"showAnimation","character":-1,"animation":3},
+            {"cmd":"wait","seconds":0.5},
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rLook, that meeting is about to start.\\nWe should go to the Control Room as fast as we can! "
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": " size(1,4) noShadow",
+      "x": 14,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"variables","from":27,"to":27,"op":"set","value":{"character":-1,"property":"y"}},
+            {"cmd":"showAnimation","character":-1,"animation":3},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"scrollMap","direction":4,"distance":7,"speed":4},
+            {"cmd":"scrollMap","direction":2,"distance":5,"speed":4},
+            {"cmd":"wait","seconds":2.0},
+            {"cmd":"comment","lines":["7 is top position"]},
+            {
+              "cmd": "if",
+              "cond": {"variable":27,"op":"==","value":7},
+              "then": [{"cmd":"setEventLocation","event":21,"direction":4,"x":15,"y":7}],
+              "else": [{"cmd":"setEventLocation","event":21,"direction":4,"x":15,"y":8}]
+            },
+            {"cmd":"switches","from":794,"to":794,"value":true},
+            {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+            {"cmd":"call","fn":"pbRemoveDependency2","args":["Yellow"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,21]},
+            {"cmd":"text","text":"\\f[faceyellow]\\rLook, their meeting is about to start."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"scrollMap","direction":6,"distance":10,"speed":4},
+            {"cmd":"wait","seconds":2.0},
+            {
+              "cmd": "moveRoute",
+              "character": 21,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,21]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rAnd this is the Control Room.\\nFrom here, they control all broadcasts across Kanto."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,21]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rIf we can get there without being seen,  we can hijack the broadcast system."
+            },
+            {"cmd":"scrollMap","direction":4,"distance":3,"speed":4},
+            {"cmd":"scrollMap","direction":8,"distance":5,"speed":4},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,21]},
+            {"cmd":"text","text":"\\f[faceyellow]\\rLet me setup a camera to record it."},
+            {
+              "cmd": "if",
+              "cond": {"variable":27,"op":"==","value":7},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 21,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"down"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"turnDown"}
+                    ]
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 21,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"up"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"turnDown"}
+                    ]
+                  }
+                }
+              ]
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":795,"to":795,"value":true},
+            {"cmd":"playSe","audio":{"name":"Camera Shutter Sound Effect","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "if",
+              "cond": {"variable":27,"op":"==","value":7},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 21,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"}
+                    ]
+                  }
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 21,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"down"},
+                      {"move":"right"},
+                      {"move":"right"}
+                    ]
+                  }
+                }
+              ]
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,21]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rEverything is set, we need to start broadcasting this for everyone to see."
+            },
+            {"cmd":"call","fn":"Followers.add","args":[21,"Yellow",31]},
+            {"cmd":"call","fn":"pbRegisterPartner","args":["RIVAL_YELLOW","Yellow",2]},
+            {"cmd":"switches","from":796,"to":796,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Yellow",
+      "x": 24,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":794,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "yellow",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":796,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "EV022",
+      "x": 9,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":795,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "items-1",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

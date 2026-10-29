@@ -1,0 +1,309 @@
+{
+  "id": 137,
+  "name": "Route 43 - Gate",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,72,3046,3047,3046,3047,3046,3047,3046,3047,64,48,48,48,48,48],
+      [48,48,48,48,48,72,3054,3055,3054,3055,3054,3055,3054,3055,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,72,421,421,421,421,421,421,421,421,64,48,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,784,785,786,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,792,793,794,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,547,547,520,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,528,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,536,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,547,547,544,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,487,0,0,0,0,0,0,487,0,0,0,0,0,0],
+      [0,0,0,0,0,0,495,0,0,0,0,0,0,495,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3738,3739,3740,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3746,3747,3748,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3746,3747,3748,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3746,3747,3748,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3746,3747,3748,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3754,3755,3756,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":136,"x":14,"y":50,"direction":0,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": " size(4,1) noShadow",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":2.0},
+            {
+              "cmd": "comment",
+              "lines": ["This is the phone call that the player receives after getting 7 badges"]
+            },
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "call_dad",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":140,"value":true},
+              "then": [{"cmd":"text","text":"Hello champ!"}],
+              "else": [{"cmd":"text","text":"Hello sweetheart!"}]
+            },
+            {"cmd":"text","text":"How are things going?\\nAre you winning?"},
+            {"cmd":"text","text":"..."},
+            {"cmd":"text","text":"Oh! Amazing!"},
+            {"cmd":"text","text":"So you're near Mahogany?!"},
+            {"cmd":"text","text":"Can you do your old man a favor then?"},
+            {
+              "cmd": "text",
+              "text": "My boss asked me to pick up a Candy box in Mahogany, for the team."
+            },
+            {"cmd":"text","text":"Coff! Coff!"},
+            {
+              "cmd": "text",
+              "text": "I meant to grab it, but  I’m already buried in work here in Goldenrod."
+            },
+            {
+              "cmd": "text",
+              "text": "If I don’t bring it, I’ll be ‘that guy’ at the office for a week."
+            },
+            {"cmd":"text","text":"Can you get it and bring it to me?"},
+            {"cmd":"text","text":"Thanks. I’m counting on you."},
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":50}},
+            {"cmd":"text","text":"..."},
+            {"cmd":"text","text":"..."},
+            {"cmd":"text","text":"..."},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"call","fn":"activateQuest","args":["BoxDelivery"]},
+            {"cmd":"switches","from":954,"to":954,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":954,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":951,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 7,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Only people going to the Lake of Rage pass through here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "More people are going there lately.\\nI'm wondering if something is going on."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 10,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":126,"x":10,"y":4,"direction":2,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

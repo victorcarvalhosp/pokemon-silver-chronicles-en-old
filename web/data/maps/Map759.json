@@ -1,0 +1,907 @@
+{
+  "id": 759,
+  "name": "Meteor Falls (24.0)",
+  "tilesetId": 49,
+  "width": 30,
+  "height": 42,
+  "autoplayBgm": true,
+  "bgm": {"name":"Cave","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,593,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,633,593,593,593,593,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,633,633,633,633,633,633,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,633,633,633,633,633,633,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,633,633,633,633,633,633,593],
+      [593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,593,633,633,633,633,633,633,633,633,633,633,633,633,593]
+    ],
+    [
+      [711,662,663,715,715,715,685,715,715,715,715,715,715,715,715,715,715,715,715,715,715,662,663,715,715,715,715,686,687,455],
+      [711,670,671,715,715,715,693,715,715,715,715,715,715,686,687,715,715,715,715,715,715,670,671,715,715,715,715,694,695,455],
+      [711,678,679,698,715,699,701,698,715,648,649,650,715,694,695,715,715,715,715,715,699,678,679,698,715,715,715,694,695,455],
+      [711,592,592,592,592,592,711,614,715,656,657,658,699,702,703,698,715,715,615,455,592,592,592,592,592,592,614,702,703,455],
+      [711,592,592,592,592,598,711,610,592,592,592,592,592,130,116,116,116,132,608,455,592,592,592,592,592,592,610,592,1673,455],
+      [711,592,622,623,592,592,711,610,592,592,592,592,592,112,96,96,96,120,608,455,592,592,592,592,592,592,610,592,592,455],
+      [711,592,630,631,592,711,614,618,130,116,116,116,116,97,96,96,96,120,608,455,592,592,592,592,592,614,618,592,592,455],
+      [711,592,592,592,592,711,610,130,97,96,96,96,96,96,96,96,96,120,608,455,592,592,592,592,592,610,592,592,592,455],
+      [711,592,592,592,592,614,618,136,104,96,96,96,96,96,96,100,124,134,608,455,592,592,592,592,592,610,592,592,592,455],
+      [711,617,617,617,617,618,592,652,112,96,96,96,96,96,96,120,652,652,616,617,617,617,617,617,617,618,592,592,592,455],
+      [711,662,663,715,715,715,715,699,112,96,96,96,96,96,96,120,698,715,715,686,687,715,715,715,662,663,715,596,715,455],
+      [711,670,671,715,715,715,715,699,112,96,96,96,96,96,96,120,698,715,715,694,695,715,715,715,670,671,715,596,715,455],
+      [711,678,679,698,715,715,715,699,112,96,96,96,96,96,96,120,698,685,715,694,695,715,715,699,678,679,698,596,715,455],
+      [711,592,592,592,614,715,715,699,112,96,96,96,96,96,96,120,698,693,715,694,695,715,715,615,712,622,623,592,1673,455],
+      [711,592,592,593,610,614,715,699,112,96,96,96,96,96,96,120,698,701,698,702,703,698,615,608,455,630,631,592,592,455],
+      [711,592,592,592,610,610,130,116,97,96,96,96,96,96,96,98,116,116,116,132,593,593,608,608,455,592,592,592,592,455],
+      [711,617,596,617,618,610,112,96,96,96,96,96,96,96,96,96,96,96,96,98,116,132,608,616,617,617,617,596,617,455],
+      [711,592,592,592,592,610,112,96,96,96,100,124,124,124,124,124,124,124,124,104,96,120,608,592,592,592,592,592,1672,455],
+      [711,614,596,617,617,618,112,96,96,96,120,608,659,592,592,592,592,661,0,112,96,120,0,592,592,592,592,592,592,455],
+      [711,610,592,592,592,592,136,124,124,124,134,616,617,617,596,615,659,661,0,112,96,120,0,592,592,592,592,592,592,455],
+      [711,610,592,592,592,592,1699,1699,1699,1699,1699,592,592,592,592,608,659,661,610,112,96,120,616,615,624,712,664,665,666,455],
+      [711,610,1672,592,592,592,592,592,592,592,592,592,622,623,592,608,659,661,610,112,96,98,132,608,608,455,592,592,592,455],
+      [711,618,592,1672,592,592,592,592,592,592,592,592,630,631,592,608,659,661,610,136,104,96,120,608,616,617,617,617,617,455],
+      [711,592,661,685,715,715,596,715,662,663,592,592,592,592,1672,616,617,617,618,1680,112,96,120,616,617,617,617,617,617,455],
+      [711,686,687,693,715,715,596,715,670,671,455,1672,592,592,592,715,685,715,715,699,112,96,120,698,715,715,715,715,715,455],
+      [711,694,695,701,593,593,593,593,678,679,698,715,715,715,699,715,693,715,715,699,112,96,120,698,715,715,715,715,715,455],
+      [711,702,703,593,593,593,593,593,593,593,698,715,715,715,699,614,701,698,715,699,112,96,120,698,715,715,715,715,685,455],
+      [711,593,593,593,593,593,593,593,593,593,593,593,593,593,593,610,614,715,715,699,112,96,120,698,715,648,649,650,693,455],
+      [711,593,593,593,602,667,668,669,600,593,593,593,593,593,593,610,610,614,715,699,112,96,120,698,715,656,657,658,701,455],
+      [711,614,617,617,618,675,676,677,616,617,617,617,617,596,617,618,610,610,614,699,112,96,120,698,615,592,592,592,592,455],
+      [711,610,593,602,667,669,667,668,668,669,600,593,593,593,593,593,610,610,610,130,97,96,98,132,608,592,592,1672,592,455],
+      [711,618,614,618,675,677,675,676,676,677,616,617,617,596,617,617,618,610,610,112,96,96,96,120,608,592,592,592,592,455],
+      [711,617,618,602,667,668,668,668,669,667,669,600,593,593,593,1672,593,610,610,112,96,96,96,120,608,592,622,623,592,455],
+      [711,614,641,642,675,676,676,676,677,675,677,616,641,596,641,617,617,618,610,112,96,96,96,120,608,592,630,631,592,455],
+      [711,634,626,667,669,667,668,668,669,667,668,669,600,593,593,593,593,1672,610,112,96,96,96,120,608,592,592,592,592,455],
+      [711,634,634,675,677,675,676,676,677,675,676,677,608,593,622,623,593,614,618,112,96,96,96,120,608,592,1672,592,592,455],
+      [711,634,634,667,668,668,668,669,667,668,668,669,608,593,630,631,593,610,130,97,96,96,96,120,616,615,592,592,1672,455],
+      [711,634,634,675,676,676,676,677,675,676,676,677,616,596,617,617,617,618,112,96,96,96,96,98,132,616,617,617,617,455],
+      [711,634,634,593,593,593,593,593,593,593,593,593,593,593,593,1672,593,130,97,96,96,96,96,96,98,116,116,116,132,455],
+      [711,618,634,593,593,593,593,593,593,593,593,593,593,593,593,1672,593,112,96,96,96,96,96,96,96,96,96,96,120,455],
+      [711,1673,680,681,681,664,665,666,681,626,593,593,593,593,593,593,1672,136,124,124,124,124,124,124,124,124,124,124,134,455],
+      [593,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,652,592]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,178,164,164,164,164,164,164,180,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,160,144,144,144,144,144,144,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,160,144,144,144,144,144,144,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,160,144,144,144,144,144,144,168,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,184,172,172,172,172,172,172,182,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,722,723,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,730,731,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,603,604,604,604,604,604,604,605,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,566,567,566,567,566,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,574,575,574,575,574,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,178,164,180,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,144,168,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,144,168,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,144,168,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,160,144,168,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,184,172,182,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,722,723,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,730,731,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,722,723,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,722,723,0,0,730,731,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,730,731,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 27,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":[{"call":"PBItems::FULLHEAL"}]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 27,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":327,"x":12,"y":67,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "magma",
+      "x": 12,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":583,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":584,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 14,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":583,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facemagma]\\bHehehe!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bCom esse plano, finalmente o grande Pokémon aparecerá..."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":3,"animation":17},
+            {"cmd":"text","text":"\\f[facemagma]\\bHeh?"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"turnUp"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bEu não sei quem você é, mas se entrar no caminho do Time Magma, não espere nenhuma gentileza!"
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bCalma ai, Time Magma!"},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facemagma]\\bHehehe!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bButler, o Grande Mordomo, você está conosco, ou não?!"
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bIsso não importa!"},
+            {"cmd":"text","text":"\\f[faceButler]\\bEu os conheço, não façam nada a eles."},
+            {"cmd":"text","text":"\\f[facemagma]\\bHehehe!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bNós já temos o que queremos, não precisamos ficar aqui."
+            },
+            {"cmd":"text","text":"\\f[facemagma]\\bHehehe! Nos vemos por ai \"Grande Mordomo\"!"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"right"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":584,"to":584,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"up"},{"move":"up"},{"move":"turnLeft"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceButler]\\bOlá \\PN e \\v[77], espero que eles não tenham lhes causado maiores problemas."
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceButler]\\bOlá \\PN e \\v[76], espero que eles não tenham lhes causado maiores problemas."
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bO Time Magma é um grupo perigoso de fanáticos."},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bEles destroem as coisas, alegando que vão aumentar a massa da Terra."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bNão tenho nenhum envolvimento com eles, se foi isso que pareceu..."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"text","text":"\\f[faceDiane]\\rButler, precisamos ir atrás deles."},
+            {"cmd":"text","text":"\\f[faceButler]\\bSim, nós temos, e rápido!"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bNão temos idéia do que eles podem estar planejando."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceButler]\\b\\PN e \\v[77], o Time Magma é perigoso, não se metam com eles."
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceButler]\\b\\PN e \\v[76], o Time Magma é perigoso, não se metam com eles."
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bAté breve!"},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":585,"to":585,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":585,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "magma2",
+      "x": 14,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":583,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":584,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "butler",
+      "x": 6,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":583,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Butler",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":585,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "diane",
+      "x": 6,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":583,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mordomo-Diane",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":585,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 6,
+      "y": 40,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":671,"x":32,"y":37,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 2,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":[{"call":"PBItems::MOONSTONE"}]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

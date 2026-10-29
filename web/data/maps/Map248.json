@@ -1,0 +1,1848 @@
+{
+  "id": 248,
+  "name": "Fallarbor Town ",
+  "tilesetId": 19,
+  "width": 20,
+  "height": 30,
+  "autoplayBgm": true,
+  "bgm": {"name":"Fallarbor Town","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494],
+      [4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494,4494]
+    ],
+    [
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3023,3028,3028,3028,3028,3028,3028,3028,3028],
+      [3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3032,3036,3036,3036,3036,3036,3036,3036,3036],
+      [3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036,3036],
+      [0,0,0,0,0,0,0,0,0,0,0,3035,3036,3036,3036,3036,3036,3036,3036,3036],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,5535,0,0,0,0,178,164,180,0,0,0,0,0,0,0,5535,5535,0],
+      [0,178,164,164,164,164,164,145,144,146,164,164,164,164,164,164,164,164,180,0],
+      [0,184,172,172,172,172,172,172,172,172,172,152,148,172,172,172,172,172,182,0],
+      [0,0,0,0,5535,0,0,0,5535,5535,0,160,168,5535,0,0,0,0,0,0],
+      [0,0,5535,0,0,0,0,0,0,0,0,160,168,0,0,0,0,0,5535,0],
+      [0,0,0,0,0,0,0,0,0,0,0,160,168,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,160,168,0,0,0,0,0,6382,6383],
+      [0,0,0,0,0,0,0,0,0,0,0,160,168,0,0,0,0,0,6390,6391],
+      [0,0,0,0,0,0,0,0,0,5535,0,160,146,164,164,180,0,0,6390,6391],
+      [6382,6383,0,0,0,0,0,0,0,0,0,184,172,172,172,182,0,0,6382,6383],
+      [6390,6391,6382,6383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6390,6391],
+      [6382,6383,6390,6391,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4312,4313,4314,4315,4316,4317,4318,0,0,0,0,0,0,0,0],
+      [6416,6417,6418,6419,0,4320,4321,4322,4323,4324,4325,4326,744,745,746,747,748,0,0,0],
+      [6424,6425,6426,6427,0,4328,4329,4330,4331,4332,4333,4334,752,753,754,755,756,0,0,0],
+      [6432,6433,6434,6435,0,4336,4337,4338,4339,4340,4341,4342,760,761,762,763,764,0,0,0],
+      [6440,6441,6442,6443,0,4344,4345,4346,4347,4348,4349,4350,768,769,770,771,772,0,0,0],
+      [0,0,0,5477,0,4352,4353,4354,4355,4356,4357,4358,776,777,778,779,780,0,0,0],
+      [0,0,0,0,0,0,5477,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,5477,0,0,0,7192,7193,7194,7195,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,7200,7201,7202,7203,0,0],
+      [0,0,0,0,0,0,6341,6342,6343,0,0,0,0,0,7208,7209,7210,7211,0,0],
+      [0,0,0,0,0,6348,6349,6350,6351,0,0,0,0,0,7216,7217,7218,7219,0,0],
+      [0,0,0,0,0,6356,6357,6358,6359,0,0,0,0,0,7224,7225,7226,7227,6382,6383],
+      [0,0,0,0,0,6364,6365,6366,6367,0,0,0,0,0,0,0,0,0,6390,6391],
+      [0,0,0,0,0,6372,6373,6374,6375,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383],
+      [6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391],
+      [0,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,6382,6383,0],
+      [0,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,6390,6391,0],
+      [0,0,6382,6383,6382,6383,0,6382,6383,6382,6383,0,0,6382,6383,0,6382,6383,0,0],
+      [0,0,6390,6391,6390,6391,0,6390,6391,6390,6391,0,0,6390,6391,0,6390,6391,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "Cidade Fallabor.\\n\"Um pequena cidade, que cultiva solidariedade.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Home door",
+      "x": 8,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portaPokeCenter",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":721,"x":6,"y":9,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portaPokeCenter",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Home door",
+      "x": 14,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portaPokeCenter",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":755,"x":9,"y":8,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portaPokeCenter",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 8,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"switches","from":562,"to":562,"value":true},
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"up"},{"move":"turnRight"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [{"cmd":"call","fn":"pbTrainerIntro","args":["GIRLFRIEND"]}],
+              "else": [{"cmd":"call","fn":"pbTrainerIntro","args":["BOYFRIEND"]}]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 16,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rMy name is \\v[76]!"},
+                {"cmd":"call","fn":"follower_move_route","args":["namorado"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_girl]\\rHey!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_girl]\\rWait, you're still together?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_angry_girl]\\r...Huh. You don't even look good together."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rAnyway, I'm looking for someone to team up with for the Doubles Tournament."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rAnd I would like \\v[77] to accompany me."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rLet's do this: if I win a battle against you, he'll be my partner in the tournament!"
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"switch":409,"value":true},
+                  "then": [
+                    {"cmd":"comment","lines":["EndSpeech: Isso não aconteceu de verdade!"]},
+                    {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["GIRLFRIEND","Girl",98]}},
+                      "then": [{"cmd":"jump","label":"Won Battle"}],
+                      "else": [{"cmd":"jump","label":"Lost Battle"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":410,"value":true},
+                      "then": [
+                        {"cmd":"comment","lines":["EndSpeech: Isso não aconteceu de verdade!"]},
+                        {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"TrainerBattle.start","args":["GIRLFRIEND","Girl",97]}},
+                          "then": [{"cmd":"jump","label":"Won Battle"}],
+                          "else": [{"cmd":"jump","label":"Lost Battle"}]
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"comment","lines":["EndSpeech: iIsso não aconteceu de verdade!"]},
+                        {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"TrainerBattle.start","args":["GIRLFRIEND","Girl",99]}},
+                          "then": [{"cmd":"jump","label":"Won Battle"}],
+                          "else": [{"cmd":"jump","label":"Lost Battle"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"follower_move_route","args":["namorada"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_boy]\\bHey!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_boy]\\bWait, you're still together?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_angry_boy]\\bI don't know what that beautiful girl saw in a fool like you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_angry_boy]\\bIt's obvious that I'm better than you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_angry_boy]\\bAnyway, I'm looking for someone to team up with for the Doubles Tournament."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bAnd I would like \\v[77] to accompany me."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bLet's do this: if I win a battle against you, he'll be my partner in the tournament!"
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"switch":409,"value":true},
+                  "then": [
+                    {"cmd":"comment","lines":["EndSpeech: Isso não aconteceu de verdade!"]},
+                    {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["BOYFRIEND","Boy",98]}},
+                      "then": [{"cmd":"jump","label":"Won Battle"}],
+                      "else": [{"cmd":"jump","label":"Lost Battle"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":410,"value":true},
+                      "then": [
+                        {"cmd":"comment","lines":["EndSpeech: Isso não aconteceu de verdade!"]},
+                        {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"TrainerBattle.start","args":["BOYFRIEND","Boy",97]}},
+                          "then": [{"cmd":"jump","label":"Won Battle"}],
+                          "else": [{"cmd":"jump","label":"Lost Battle"}]
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"comment","lines":["EndSpeech: iIsso não aconteceu de verdade!"]},
+                        {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"call":"TrainerBattle.start","args":["BOYFRIEND","Boy",99]}},
+                          "then": [{"cmd":"jump","label":"Won Battle"}],
+                          "else": [{"cmd":"jump","label":"Lost Battle"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"label","name":"Won Battle"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_girl]\\rWhat a disaster! bububu..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_girl]\\rIt won't stay like this for long... *sniff*"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_girl]\\rI'm going to train harder and prove that I'm better than you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_girl]\\rUntil later \\v[77]!"}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_boy]\\bWhat a disaster! bububu..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_boy]\\bIt won't stay like this for long... *sniff*"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_boy]\\bI'm going to train harder and prove that I'm better than you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_boy]\\bUntil later \\v[76]!"}
+              ]
+            },
+            {"cmd":"comment","lines":["You won the battle"]},
+            {"cmd":"jump","label":"End"},
+            {"cmd":"label","name":"Lost Battle"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rYes! I knew I would win!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rNow that I've proven I'm the best, \\v[76] you have to join me in the Slateport Doubles Tournament!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_admiring_girl]\\rWe'll be the cutest couple!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 16,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"turnLeft"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\r..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_girl]\\rWhat do you mean, no?!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_girl]\\rDo you prefer hanging out with that uggly girl?!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_girl]\\rI can't believe that!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_girl]\\rThis won't end here; I'll still show you all my qualities!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_girl]\\rGet ready to fall in love with me..."
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 16,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"turnRight"},{"move":"speed","value":5},{"move":"frequency","value":5}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_girl]\\rBuááááá!"}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bYes! I knew I would win!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bNow that I've proven I'm the best, \\v[76] you have to join me in the Slateport Doubles Tournament!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_admiring_boy]\\bWe'll make a great couple!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 16,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"turnLeft"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\b..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_angry_boy]\\bWhat do you mean, no?!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_boy]\\bDo you prefer hanging out with that loser?!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_boy]\\bI can't believe that!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_boy]\\bI will still show you all my qualities, lovely maiden!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_cry_boy]\\bGet ready to fall in love with me..."
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 16,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"turnRight"},{"move":"speed","value":5},{"move":"frequency","value":5}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,16]},
+                {"cmd":"text","text":"\\f[face_namo_cry_boy]\\bBuááááá!"}
+              ]
+            },
+            {"cmd":"comment","lines":["You lost the battle"]},
+            {"cmd":"jump","label":"End"},
+            {"cmd":"label","name":"End"},
+            {
+              "cmd": "moveRoute",
+              "character": 16,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"switch":431,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [{"cmd":"commonEvent","id":37}],
+                  "else": [{"cmd":"commonEvent","id":36}]
+                }
+              ]
+            },
+            {"cmd":"switches","from":563,"to":563,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":563,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 3,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Casa do deletador de golpes."}]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Home door",
+      "x": 6,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":757,"x":9,"y":11,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Home door",
+      "x": 15,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":756,"x":7,"y":11,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 6,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "Torneio de Duplas de Fallabor\\n\"O mais disputado torneio da região\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 11,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk017",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bVocê já enfrentou Flannery, a líder do Ginásio de Lavaridge?"},
+            {
+              "cmd": "text",
+              "text": "\\bO avô da garota é famoso.\\nEle era membro da Elite dos Quatro há algum tempo."
+            },
+            {"cmd":"text","text":"\\bNão é surpresa ver que Flannery é uma ótima treinadora."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 14,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bAlgo está acontecendo, e eu não gosto disso..."},
+            {"cmd":"text","text":"\\bEstou vendo pessoas estranhas ao redor da cidade."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 7,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rOlhe! Dê uma olhada!\\nEsse é meu precioso Azurill."},
+            {"cmd":"text","text":"\\rEle é liso, suave e felpudo também!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 7,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Azurill",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"AZURILL:Rooreelooo."},
+            {"cmd":"playSe","audio":{"name":"298Cry","volume":95,"pitch":100}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 19,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":601,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[girfacel]\\rOh! Uma mensagem de texto do \\v[77]!\\nDeixa eu ver o que diz...."
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "\\f[hero]\\rOh! Uma mensagem de texto da \\v[76]!\\nDeixa eu ver o que diz...."
+                }
+              ]
+            },
+            {
+              "cmd": "text",
+              "text": "Mensagem: estao m levand p um lugar chamado Weater Inst. m ajude!"
+            },
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":50}},
+            {"cmd":"text","text":"..."},
+            {"cmd":"text","text":"..."},
+            {"cmd":"text","text":"..."},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"text","text":"\\f[girfacel]\\rVou repassar essa mensagem para o Norman."},
+                {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":50}},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"Mensagem encaminhada."}
+              ],
+              "else": [
+                {"cmd":"text","text":"\\f[hero]\\rVou repassar essa mensagem para o Norman."},
+                {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":50}},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"..."},
+                {"cmd":"text","text":"Mensagem encaminhada."}
+              ]
+            },
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "x": 18,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [{"cmd":"switches","from":665,"to":665,"value":true}]
+        },
+        {
+          "condition": {"switch1":665,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Home door",
+      "x": 1,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"transfer","map":758,"x":9,"y":11,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta3",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "rival",
+      "x": 19,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":141,"switch2":562,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "GIRLFRIEND",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":562,"switch2":140,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "BOYFRIEND",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":563,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

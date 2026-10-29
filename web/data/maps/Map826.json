@@ -1,0 +1,397 @@
+{
+  "id": 826,
+  "name": "Entrada Zona Safari",
+  "tilesetId": 35,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,48,72,564,564,564,565,566,567,564,564,564,64,48,48,48,48],
+      [48,48,48,48,48,72,572,572,572,573,574,575,572,572,572,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,545,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,536,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,544,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,536,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,536,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,72,530,530,530,546,536,547,530,530,530,64,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,561,561,496,0,0,0,496,561,561,0,0,0,0,0],
+      [0,0,0,0,0,0,569,569,504,0,0,0,504,569,569,0,0,0,0,0],
+      [0,0,0,0,0,0,542,549,504,0,0,0,504,549,542,0,0,0,0,0],
+      [0,0,0,0,0,0,550,0,504,0,0,0,504,0,550,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,504,0,0,0,504,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,542,549,504,0,0,0,504,549,542,0,0,0,0,0],
+      [0,0,0,0,0,0,550,0,512,389,390,391,512,0,550,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,397,398,399,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":677,"x":37,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Counter(4)",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk017",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {
+              "cmd": "text",
+              "text": "\\bEsta é uma reserva natural de Pokémons.\\n É preciso ter uma autorização especial para poder entrar aqui."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":615,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk017",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"text","text":"\\GPor apenas$500, você pode entrar na Zona Safari .  "},
+            {"cmd":"text","text":"\\GGostaria de entrar?\\ch[1,2,SIM,NÃO]"},
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":0},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbBoxesFull?"}},
+                  "then": [
+                    {"cmd":"text","text":"\\GDesculpe, seus boxes do PC estão cheios."},
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {"cmd":"exitEvent"}
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"gold":"<=","value":499},
+                  "then": [
+                    {"cmd":"text","text":"\\GVocê não tem dinheiro suficiente."},
+                    {"cmd":"text","text":"\\GVolte sempre."},
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {"cmd":"exitEvent"}
+                  ],
+                  "else": [
+                    {"cmd":"gold","op":"sub","value":500},
+                    {"cmd":"text","text":"\\GObrigado.Divirta-se!"},
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [
+                          {"move":"turnUp"},
+                          {"move":"forward"},
+                          {"move":"forward"},
+                          {"move":"opacity","value":0}
+                        ]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {"cmd":"call","fn":"pbSafariState.pbStart","args":[30]},
+                    {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                    {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                    {"cmd":"wait","seconds":0.3},
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":255}]}
+                    },
+                    {"cmd":"transfer","map":486,"x":25,"y":29,"direction":0,"fade":false},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                    {"cmd":"exitEvent"}
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"text","text":"\\GVolte sempre."},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":21,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk017",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbSafariState.decision"},"right":0}},
+              "then": [
+                {"cmd":"text","text":"Tem certeza?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {"cmd":"call","fn":"pbSafariState.pbEnd","args":[]},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [{"move":"forward"},{"move":"forward"}]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"exitEvent"}
+                    ],
+                    [
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [{"move":"up"},{"move":"opacity","value":0}]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                      {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                      {"cmd":"wait","seconds":0.3},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":255}]}
+                      },
+                      {"cmd":"transfer","map":486,"x":25,"y":29,"direction":0,"fade":false},
+                      {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                      {"cmd":"exitEvent"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbSafariState.decision"},"right":1}},
+              "then": [
+                {"cmd":"text","text":"Você controlou suas iscas?  Volte sempre."},
+                {"cmd":"call","fn":"pbSafariState.pbEnd","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"forward"},{"move":"forward"}]}
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":486,"x":25,"y":29,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

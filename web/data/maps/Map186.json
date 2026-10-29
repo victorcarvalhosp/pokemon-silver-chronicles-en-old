@@ -1,0 +1,625 @@
+{
+  "id": 186,
+  "name": "Pokémon League HQ",
+  "tilesetId": 15,
+  "width": 20,
+  "height": 37,
+  "autoplayBgm": true,
+  "bgm": {"name":"Indigo-Plateau-Pokemon-Heart-Gold-and-Soul-Silver","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [1505,88,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,86,1505,1505],
+      [1505,3344,3344,3345,3344,3345,3344,3345,3344,3344,3345,3344,3345,3344,3345,3344,3345,3344,1505,1505],
+      [1505,3352,3352,3353,3352,3353,3352,3353,3352,815,3353,3352,3353,3352,3353,3352,3353,3352,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,3334,3334,3334,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,3334,3334,3334,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,3334,3334,3334,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,1202,3334,1202,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,1202,3334,1202,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,3334,1202,1202,1202,1202,1202,1202,1202,3334,1202,1202,1202,1202,1202,1202,1202,3334,1505,1505],
+      [1505,1202,1202,1202,1202,1202,1202,1202,1202,3334,1202,1202,1202,1202,1202,1202,1202,1202,1505,1505],
+      [1505,1202,1202,1202,1202,1202,1202,1202,1202,3334,1202,1202,1202,1202,2009,2009,2009,2009,1505,1505],
+      [1505,68,68,68,84,1202,1202,1202,1202,3334,1202,1202,1202,1202,82,68,68,68,1505,1505],
+      [1505,1505,130,116,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,82,68,1505,1505,1505,1505],
+      [129,129,125,124,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,129,129,129,129],
+      [68,68,68,68,84,1202,1202,1202,1202,3334,1202,1202,1202,1202,82,68,68,68,68,68],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,3334,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,1203,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,72,1202,1202,1202,1202,1203,1202,1202,1202,1202,64,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [48,0,0,0,0,0,0,0,1627,1627,1627,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,3093,3094,0,0,0,3143,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,3101,3102,0,0,0,3151,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,0,2845,0,2847,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,1965,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [52,0,1627,1627,1627,1627,1629,0,0,0,0,0,1627,1627,1627,1627,1627,0,64,48],
+      [72,0,3345,3344,3345,3344,3345,3344,3345,3344,3345,3344,3345,3344,3345,3344,3345,0,64,48],
+      [72,0,3353,3352,3353,3352,3353,3352,3353,3352,3353,3352,3353,3352,3353,3352,3353,0,64,48],
+      [50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,64,48],
+      [48,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,64,48],
+      [52,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,57,48],
+      [72,1542,1627,1627,1627,1629,0,0,3342,0,3335,0,0,1628,1627,1627,1627,1543,64,48],
+      [72,3344,3345,3344,3345,1535,0,0,3342,0,3335,0,0,1534,3345,3344,3345,3344,64,48],
+      [72,3352,3353,3352,3353,1653,0,0,3342,0,3335,0,0,1653,3353,3352,3353,3352,64,48],
+      [50,68,68,68,82,0,0,0,3342,0,3335,0,0,0,82,84,68,68,49,48],
+      [76,76,76,76,64,0,0,0,3342,0,3335,0,0,0,64,72,76,76,76,76],
+      [0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,82,0,0,0,3342,0,3335,0,0,0,82,84,0,0,0,0],
+      [0,0,0,0,64,0,0,0,3342,0,3335,0,0,0,64,72,0,0,0,0],
+      [0,0,0,0,64,0,0,0,3342,0,3335,0,0,0,64,72,0,0,0,0],
+      [0,0,0,0,64,0,0,0,3342,0,3335,0,0,0,64,72,0,0,0,0],
+      [0,0,0,0,64,0,0,0,3342,0,3335,0,0,0,64,72,0,0,0,0],
+      [0,0,0,0,64,0,0,0,3342,0,3335,0,0,0,64,72,0,0,0,0],
+      [0,0,0,0,64,3345,0,0,3342,3334,3335,0,0,3345,64,72,0,0,0,0],
+      [0,0,0,0,88,3353,0,0,3342,3334,3335,0,0,3353,88,86,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [72,1628,1627,1627,1627,1627,1627,1627,3664,3665,3666,1627,1627,1627,1627,1627,1627,1527,0,64],
+      [72,1534,0,0,0,0,0,0,3672,3673,3674,0,0,0,0,0,0,1535,0,64],
+      [72,1653,0,0,0,0,0,0,3680,3681,3682,0,0,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3077,3078,3079,3125,3126,3127,3367,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3085,3086,4897,4898,4899,3135,3375,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3093,4904,4905,4906,4907,4908,3383,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3101,4912,4913,4914,4915,4916,3391,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3109,3110,4921,4922,4923,3159,3399,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,3117,3118,3119,3165,3166,3167,3407,0,0,0,0,1653,0,64],
+      [72,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,64],
+      [72,1653,1320,1336,1320,1336,1320,1321,1322,1323,1324,1325,1336,1320,1336,1320,1336,1653,0,64],
+      [72,1542,1328,1344,1328,1344,1328,1329,1330,1331,1332,1333,1344,1328,1344,1328,1344,1543,0,64],
+      [72,1534,0,0,0,0,0,1337,1338,1339,1340,1341,0,0,0,0,0,1535,0,64],
+      [86,1653,0,0,0,0,0,1345,1346,1347,1348,1349,0,0,0,0,0,1653,0,88],
+      [0,1653,0,0,0,0,0,1353,1354,1355,1356,1357,0,0,0,0,0,1653,0,0],
+      [0,1653,0,0,0,0,0,1361,1362,1363,1364,1365,0,0,0,0,0,1653,0,0],
+      [0,1653,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,1653,0,0],
+      [0,1653,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,1653,0,0],
+      [0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0,0],
+      [0,3362,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,3363,0,0],
+      [0,3370,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,3371,0,0],
+      [0,0,0,0,0,1653,4882,4883,3342,0,3335,4880,4881,1653,0,0,0,0,0,0],
+      [0,0,0,0,0,1653,4890,4891,3342,0,3335,4888,4889,1653,0,0,0,0,0,0],
+      [0,0,0,0,0,1653,0,0,3342,0,3335,0,0,1653,0,0,0,0,0,0],
+      [0,64,48,72,0,1653,4882,4883,3342,0,3335,4880,4881,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1653,4890,4891,3342,0,3335,4888,4889,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1653,0,0,3342,0,3335,0,0,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1653,4882,4883,3342,0,3335,4880,4881,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1653,4890,4891,3342,0,3335,4888,4889,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1653,0,0,3342,0,3335,0,0,1653,0,0,0,48,72,0],
+      [0,64,48,72,0,1647,0,0,0,0,0,0,0,1647,0,0,0,48,72,0],
+      [0,64,48,72,0,1655,0,0,1100,1101,1102,0,0,1655,0,0,0,48,72,0],
+      [0,64,48,48,72,0,0,0,1108,1109,1110,0,0,0,0,82,49,48,72,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "lance",
+      "x": 9,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk071-lance",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[lance]Lance:\\b I've been waiting for you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[lance]\\b\\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bI knew that you, with your skills, would eventually reach me here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[lance]\\bThere's no need for words now."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bWe will battle to determine who is the stronger of the two of us."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bAs the most powerful Trainer and as the Pokémon League Champion..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[lance]\\bI, Lance the dragon master, accept your challenge!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ELITEFOUR_Lance","Lance",1]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[lance]\\b...Whew."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[lance]\\bYou have become truly powerful, \\PN."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[lance]\\bYour Pokémon have responded to your strong and upstanding nature."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[lance]\\bAs a Trainer, you will continue to grow strong with your Pokémon."
+                },
+                {"cmd":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": 1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"character":-1,"direction":2},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {"repeat":false,"skippable":false,"list":[{"move":"left"},{"move":"down"}]}
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"character":-1,"direction":4},
+                      "then": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": -1,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [
+                              {"move":"down"},
+                              {"move":"left"},
+                              {"move":"left"},
+                              {"move":"up"},
+                              {"move":"up"},
+                              {"move":"down"}
+                            ]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"character":-1,"direction":8},
+                          "then": [
+                            {
+                              "cmd": "moveRoute",
+                              "character": -1,
+                              "route": {
+                                "repeat": false,
+                                "skippable": false,
+                                "list": [{"move":"left"},{"move":"up"},{"move":"turnDown"}]
+                              }
+                            },
+                            {"cmd":"waitForMoveCompletion"},
+                            {
+                              "cmd": "call",
+                              "fn": "FollowingPkmn.move_route",
+                              "args": [
+                                [
+                                  {"call":"PBMoveRoute::Up"},
+                                  {"call":"PBMoveRoute::Up"},
+                                  {"call":"PBMoveRoute::TurnDown"}
+                                ]
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "moveRoute",
+                              "character": -1,
+                              "route": {
+                                "repeat": false,
+                                "skippable": false,
+                                "list": [{"move":"up"},{"move":"down"}]
+                              }
+                            },
+                            {"cmd":"waitForMoveCompletion"}
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {"cmd":"switches","from":138,"to":138,"value":true},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"switches","from":137,"to":137,"value":true},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"playBgm","audio":{"name":"MaryinEliteFour","volume":100,"pitch":100}},
+                {"cmd":"showAnimation","character":4,"animation":17},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 4,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"wait","seconds":1.0},
+                      {"move":"left"},
+                      {"move":"turnDown"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                {
+                  "cmd": "text",
+                  "text": "Mary: \\rOh, no! It's all over!\\nProfessor Oak, if you weren't so slow..."
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 7,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 4,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofcarvalho]Professor Oak: \\bAh, \\PN!\\nIt's been a long while.\\nYou certainly look more impressive."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofcarvalho]\\bYour conquest of the League is just fantastic!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofcarvalho]\\bYour dedication, trust, and love for your Pokémon made this happen."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {"cmd":"text","text":"\\f[faceprofcarvalho]\\bYour Pokémon were outstanding, too."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofcarvalho]\\bBecause they believed in you as a Trainer, they persevered."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+                {"cmd":"text","text":"\\f[faceprofcarvalho]\\bCongratulations, \\PN!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                {"cmd":"text","text":"Mary:\\r Let's interview the brand-new Champion!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[lance]Lance:\\b This is getting to be a bit too noisy..."},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":750,"value":false},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                    {
+                      "cmd": "text",
+                      "text": "Mary: \\rAllow me to at least take a photo from this unforgetable moment first."
+                    },
+                    {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                    {"cmd":"wait","seconds":0.75},
+                    {"cmd":"switches","from":751,"to":751,"value":true},
+                    {"cmd":"transfer","map":186,"x":9,"y":7,"direction":2,"fade":false},
+                    {"cmd":"setEventLocation","event":0,"direction":2,"x":10,"y":7},
+                    {"cmd":"setEventLocation","event":7,"direction":2,"x":8,"y":7},
+                    {"cmd":"wait","seconds":0.75},
+                    {"cmd":"call","fn":"pbPhotograph","args":[]},
+                    {
+                      "cmd": "assign",
+                      "target": "$PokemonGlobal.encounter_version",
+                      "args": [],
+                      "op": "=",
+                      "value": 5
+                    },
+                    {"cmd":"switches","from":751,"to":751,"value":false},
+                    {"cmd":"transfer","map":186,"x":8,"y":7,"direction":6,"fade":false},
+                    {"cmd":"setEventLocation","event":0,"direction":4,"x":9,"y":7},
+                    {"cmd":"setEventLocation","event":7,"direction":8,"x":9,"y":8},
+                    {"cmd":"switches","from":750,"to":750,"value":true}
+                  ]
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[lance]\\b\\PN, could you come with me?"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+                  }
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"showAnimation","character":4,"animation":17},
+                {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                {"cmd":"text","text":"Mary: \\rOh, wait!\\nWe haven't done the interview!"},
+                {"cmd":"fadeOutBgm","seconds":2},
+                {"cmd":"transfer","map":190,"x":10,"y":15,"direction":8,"fade":true}
+              ],
+              "else": [
+                {"cmd":"switches","from":131,"to":131,"value":false},
+                {"cmd":"switches","from":132,"to":132,"value":false},
+                {"cmd":"switches","from":133,"to":133,"value":false},
+                {"cmd":"switches","from":137,"to":137,"value":false},
+                {"cmd":"switches","from":138,"to":138,"value":false},
+                {"cmd":"switches","from":556,"to":556,"value":false}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 34,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"text","text":"Can't go back now..."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "mary",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":137,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Mary",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":751,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 9,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portao",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":138,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "prof",
+      "x": 9,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":137,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk048-prof-oak",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

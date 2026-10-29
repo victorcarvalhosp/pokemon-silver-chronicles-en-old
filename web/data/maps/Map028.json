@@ -1,0 +1,877 @@
+{
+  "id": 28,
+  "name": "Violet City - School",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,388,388,388,388,388,388,388,388,388,388,64,48,48,48,48],
+      [48,48,48,48,72,396,396,396,396,396,396,396,396,396,396,64,48,48,48,48],
+      [48,48,48,48,72,370,356,356,356,356,356,356,356,356,372,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,336,360,64,48,48,48,48],
+      [48,48,48,48,72,376,364,364,364,364,364,364,364,364,374,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,401,0,0,0,0,0,0,401,0,0,0,0,0,0],
+      [0,0,0,0,0,0,409,0,0,0,0,0,0,409,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,738,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,706,707,708,709,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,714,715,716,717,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,739,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,652,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,526,526,526,526,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,739,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,738,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,526,526,526,526,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,722,739,739,723,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,730,738,738,731,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,526,526,526,526,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I traded my best Pokémon with the kid next to me."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk072",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"My Pokémon is holding an item."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"A Pokémon holding a berry can heal itself ..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I better write this down!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk017",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I'm learning about Pokémon.\\nI must write down what is on the board."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"It's the kid's notebook ..."},
+            {"cmd":"text","text":"Capture Pokémon using Poké Balls."},
+            {"cmd":"text","text":"You can have up to 6 Pokémon in the team."},
+            {"cmd":"text","text":"Read more?"},
+            {
+              "cmd": "choices",
+              "choices": ["YES","NO"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"Before playing the Poké Ball, leave the target weak."},
+                  {"cmd":"text","text":"Paralyzed or sleeping Pokémon are easier to capture."},
+                  {"cmd":"text","text":"That's all..."}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 9,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"The table shows the states of Pokémon that change in battles"},
+            {
+              "cmd": "choices",
+              "choices": ["POISON","PARALYZED","SLEEP","EXIT"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"The poisoned Pokémon gradually loses HP."},
+                  {"cmd":"text","text":"Outside the battle they continue to lose HP."},
+                  {"cmd":"text","text":"To cure use the ANTIDOTE."}
+                ],
+                [
+                  {"cmd":"text","text":"Paralysis slows down or prevents the Pokémon from acting."},
+                  {"cmd":"text","text":"It remains after the fight."},
+                  {"cmd":"text","text":"To heal use the PARLYZHEAL."}
+                ],
+                [
+                  {"cmd":"text","text":"Your Pokémon cannot attack in its sleep."},
+                  {"cmd":"text","text":"The sleeping Pokémon does not wake up after battles."},
+                  {"cmd":"text","text":"To cure use the AWAKENING."}
+                ],
+                []
+              ],
+              "cancel": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 7,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":10,"x":33,"y":24,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bOh! I'm desperate!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bOne of my students left for recess and did not return yet!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bHe was saying something about playing in a Dark Cave..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bCould you go after him please?"},
+            {
+              "cmd": "choices",
+              "choices": ["YES","NO"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bOh! Thank you so much!"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bAs soon as you find him, send him here immediately and I will give you a reward!"
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bSome Pokémon have the Flash skill, that you can use to illuminate caves.\\nNo badge is required to use it outside of a battle."
+                  },
+                  {"cmd":"call","fn":"activateQuest","args":["StudentInDarkCave"]},
+                  {"cmd":"switches","from":501,"to":501,"value":true}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bI don't know what I can do ..."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":501,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI'm counting with your help!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bSome Pokémon have the Flash skill, that you can use to illuminate caves.\\nNo badge is required to use it outside of a battle."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":502,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bI was about to call the police! Thank you very much for bringing this boy back to class."
+            },
+            {"cmd":"call","fn":"completeQuest","args":["StudentInDarkCave"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bYou seem to me to be a very good Trainer."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bI would like to give you a gift...\\nBut I can't think on something nice to give to you..."
+            },
+            {
+              "cmd": "if",
+              "cond": {"character":-1,"direction":6},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 12,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"speed","value":3},
+                      {"move":"frequency","value":3},
+                      {"move":"down"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"turnUp"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"setEventLocation","event":13,"direction":0,"x":9,"y":3},
+                {"cmd":"switches","from":505,"to":505,"value":true}
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 12,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"turnDown"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"setEventLocation","event":13,"direction":0,"x":11,"y":3},
+                {"cmd":"switches","from":505,"to":505,"value":true}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":997,"value":true},
+              "then": [
+                {"cmd":"playSe","audio":{"name":"152Cry","volume":50,"pitch":90}},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"CHIKORITA: Chiko chiko!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bIt seems like CHIKORITA liked you!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bThis Pokémon was abandoned here at the school door some time ago..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bAnd since then he has not been in the mood for anything ..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bBut, apparently, you seem to make him happy!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bCHIKORITA, do you want to go with this young Trainer?!"},
+                {"cmd":"playSe","audio":{"name":"152Cry","volume":90,"pitch":100}},
+                {"cmd":"switches","from":505,"to":505,"value":true},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bSo, young Trainer, I already know what to give you as reward!"
+                },
+                {"cmd":"call","fn":"pbAddPokemon","args":["CHIKORITA",8]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bGood luck on your journey!"},
+                {"cmd":"switches","from":503,"to":503,"value":true}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":996,"value":true},
+                  "then": [
+                    {"cmd":"playSe","audio":{"name":"158Cry","volume":45,"pitch":90}},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"TOTODILE: Toto Dile!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bIt seems like TOTODILE liked you!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bThis Pokémon was abandoned here at the school door some time ago..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bAnd since then he has not been in the mood for anything ..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bBut, apparently, you seem to make him happy!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bTOTODILE, do you want to go with this young Trainer?!"},
+                    {"cmd":"playSe","audio":{"name":"158Cry","volume":90,"pitch":100}},
+                    {"cmd":"switches","from":505,"to":505,"value":true},
+                    {"cmd":"wait","seconds":1.0},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bSo, young Trainer, I already know what to give you as reward!"
+                    },
+                    {"cmd":"call","fn":"pbAddPokemon","args":["TOTODILE",8]},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bGood luck on your journey!"},
+                    {"cmd":"switches","from":503,"to":503,"value":true}
+                  ],
+                  "else": [
+                    {"cmd":"playSe","audio":{"name":"155Cry","volume":80,"pitch":100}},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"CYNDAQUIL: Cyndaquil!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bIt seems like CYNDAQUIL liked you!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bThis Pokémon was abandoned here at the school door some time ago..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bAnd since then he has not been in the mood for anything ..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bBut, apparently, you seem to make him happy!"},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bCYNDAQUIL, do you want to go with this young Trainer?!"
+                    },
+                    {"cmd":"playSe","audio":{"name":"155Cry","volume":90,"pitch":100}},
+                    {"cmd":"switches","from":505,"to":505,"value":true},
+                    {"cmd":"wait","seconds":1.0},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bSo, young Trainer, I already know what to give you as reward!"
+                    },
+                    {"cmd":"call","fn":"pbAddPokemon","args":["CYNDAQUIL",7]},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {"cmd":"text","text":"\\bGood luck on your journey!"},
+                    {"cmd":"switches","from":503,"to":503,"value":true}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":503,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI hope your Pokémon are always happy with you!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":502,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer003cA",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I have to be an exemplary student to become a great Trainer!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "pokemon",
+      "x": 11,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":997,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "152_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 2,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"switches","from":504,"to":504,"value":true},
+            {"cmd":"playSe","audio":{"name":"152Cry","volume":50,"pitch":90}},
+            {"cmd":"text","text":"CHIKORITA: Chiko chiko..."}
+          ]
+        },
+        {
+          "condition": {"switch1":996,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "158_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 2,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"switches","from":504,"to":504,"value":true},
+            {"cmd":"text","text":"TOTODILE: Dile..."},
+            {"cmd":"playSe","audio":{"name":"158Cry","volume":45,"pitch":90}}
+          ]
+        },
+        {
+          "condition": {"switch1":995,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "155_0",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 2,
+          "moveFrequency": 1,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"switches","from":504,"to":504,"value":true},
+            {"cmd":"text","text":"CYNDAQUIL: Cynda..."},
+            {"cmd":"playSe","audio":{"name":"155Cry","volume":80,"pitch":100}}
+          ]
+        },
+        {
+          "condition": {"switch1":503,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "emoticon",
+      "x": 11,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":504,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "emoticons",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 4,
+          "list": [{"cmd":"wait","seconds":1.0},{"cmd":"switches","from":504,"to":504,"value":false}]
+        },
+        {
+          "condition": {"switch1":505,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "emoticons",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 4,
+          "list": [{"cmd":"wait","seconds":2.0},{"cmd":"switches","from":505,"to":505,"value":false}]
+        }
+      ]
+    }
+  ]
+}

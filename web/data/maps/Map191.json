@@ -1,0 +1,664 @@
+{
+  "id": 191,
+  "name": "Battle Tower",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-BTower","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [2039,2039,2039,2039,2039,2039,2039,2039,2039,2039,2039,2039,2039,2039,64,48,48,48,48,48],
+      [2047,2047,2047,2047,2047,2047,2047,2047,2047,2047,2047,2047,2047,2047,64,48,48,48,48,48],
+      [260,260,260,260,260,260,260,260,260,260,260,260,260,276,64,48,48,48,48,48],
+      [240,240,240,240,240,240,240,240,240,240,240,240,240,264,64,48,48,48,48,48],
+      [240,240,240,240,240,240,240,240,240,240,240,240,240,264,64,48,48,48,48,48],
+      [240,240,240,240,240,240,240,240,240,240,240,240,240,264,64,48,48,48,48,48],
+      [240,240,240,240,240,240,240,240,240,240,240,240,240,264,64,48,48,48,48,48],
+      [268,268,268,268,268,268,268,268,268,268,268,268,268,278,64,48,48,48,48,48],
+      [68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,2053,2054,2055,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2061,2062,2063,0,0,0,0,0,0,0,0,0,0,0],
+      [1864,283,285,0,0,0,1864,285,1864,0,0,283,285,1864,0,0,0,0,0,0],
+      [1872,1849,1849,1849,1849,1849,1873,0,1872,1849,1849,1849,1849,1873,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [1874,0,0,0,0,0,1874,0,1874,0,0,0,0,1874,0,0,0,0,0,0],
+      [0,0,886,0,0,0,0,0,1864,0,0,886,0,1130,0,0,0,0,0,0],
+      [0,1849,894,1849,1849,1849,0,0,1872,1849,1849,894,1849,1138,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1146,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 13,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Single battles NPC",
+      "x": 7,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rWelcome to the Battle Tower."},
+            {"cmd":"text","text":"\\rWould you like to participate in a single battle?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "text",
+                    "text": "\\rDo you want to take the Level 50 challenge, or the Open Level challenge?"
+                  },
+                  {
+                    "cmd": "choices",
+                    "choices": ["Level 50","Open Level","Cancel"],
+                    "branches": [
+                      [
+                        {
+                          "cmd": "call",
+                          "fn": "pbBattleChallenge.set",
+                          "args": ["towersingle",7,{"call":"pbBattleTowerRules","args":[false,false]}]
+                        }
+                      ],
+                      [
+                        {
+                          "cmd": "call",
+                          "fn": "pbBattleChallenge.set",
+                          "args": ["towersingleopen",7,{"call":"pbBattleTowerRules","args":[false,true]}]
+                        }
+                      ],
+                      [{"cmd":"jump","label":"End"}]
+                    ],
+                    "cancel": 2
+                  },
+                  {"cmd":"comment","lines":["Has 3 or more eligible Pokemon level 100 or less?"]},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"op":"!","value":{"call":"pbHasEligible?","args":[3,100]}}},
+                    "then": [
+                      {
+                        "cmd": "text",
+                        "text": "\\rSorry, you can't participate.  You need three different Pokémon to enter."
+                      },
+                      {
+                        "cmd": "text",
+                        "text": "\\rThey must be of a different species and hold different items."
+                      },
+                      {
+                        "cmd": "text",
+                        "text": "\\rCertain exotic species, as well as eggs, are ineligible."
+                      },
+                      {"cmd":"jump","label":"End"}
+                    ]
+                  },
+                  {"cmd":"text","text":"\\rPlease choose the three Pokémon that will enter."},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"op":"!","value":{"call":"pbEntryScreen","args":[3,100]}}},
+                    "then": [{"cmd":"jump","label":"End"}]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"pbSaveScreen"}},
+                    "then": [
+                      {"cmd":"text","text":"\\rPlease come this way."},
+                      {"cmd":"comment","lines":["Starting challenge type 0 (7 rounds)"]},
+                      {"cmd":"call","fn":"pbBattleChallenge.start","args":[0,7]},
+                      {
+                        "cmd": "moveRoute",
+                        "character": 0,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [
+                            {"move":"throughOn"},
+                            {"move":"wait","seconds":0.2},
+                            {"move":"turnUp"},
+                            {"move":"up"},
+                            {"move":"throughOff"}
+                          ]
+                        }
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [
+                            {"move":"throughOn"},
+                            {"move":"wait","seconds":0.2},
+                            {"move":"turnUp"},
+                            {"move":"up"},
+                            {"move":"throughOff"}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {
+                        "cmd": "moveRoute",
+                        "character": 8,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [
+                            {
+                              "move": "playSe",
+                              "audio": {"name":"Entering Door","volume":100,"pitch":100}
+                            },
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnLeft"},
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnRight"},
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnUp"},
+                            {"move":"wait","seconds":0.1}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {
+                        "cmd": "moveRoute",
+                        "character": 0,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [
+                            {"move":"throughOn"},
+                            {"move":"up"},
+                            {"move":"opacity","value":0},
+                            {"move":"throughOff"}
+                          ]
+                        }
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [
+                            {"move":"throughOn"},
+                            {"move":"wait","seconds":0.2},
+                            {"move":"up"},
+                            {"move":"up"},
+                            {"move":"opacity","value":0},
+                            {"move":"throughOff"}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"transparent","value":true},
+                      {
+                        "cmd": "moveRoute",
+                        "character": 8,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnRight"},
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnLeft"},
+                            {"move":"wait","seconds":0.1},
+                            {"move":"turnDown"},
+                            {"move":"wait","seconds":0.1}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                      {"cmd":"wait","seconds":0.4},
+                      {"cmd":"transparent","value":false},
+                      {"cmd":"transfer","map":192,"x":7,"y":8,"direction":6,"fade":false},
+                      {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+                    ],
+                    "else": [{"cmd":"jump","label":"End"}]
+                  }
+                ],
+                [
+                  {"cmd":"label","name":"End"},
+                  {"cmd":"text","text":"\\rCome back another time."},
+                  {"cmd":"call","fn":"pbBattleChallenge.pbCancel","args":[]},
+                  {"cmd":"exitEvent"}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":28,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"comment","lines":["If Won"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBattleChallenge.decision"},"right":1}},
+              "then": [
+                {"cmd":"text","text":"\\rCongratulations for winning."},
+                {"cmd":"text","text":"\\rPlease take this prize."},
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "op": "!",
+                      "value": {"call":"pbReceiveItem","args":[{"call":"PBItems::RARECANDY"}]}
+                    }
+                  },
+                  "then": [{"cmd":"text","text":"\\rYou have no room for it.  At least you won, though."}]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {"op":"!=","left":{"call":"$game_temp.last_battle_record"},"right":null}
+                  },
+                  "then": [
+                    {"cmd":"text","text":"\\rWould you like to record your last battle?"},
+                    {
+                      "cmd": "choices",
+                      "choices": ["Yes","No"],
+                      "branches": [
+                        [
+                          {"cmd":"call","fn":"pbRecordLastBattle","args":[]},
+                          {"cmd":"text","text":"\\se[expfull]The battle was recorded."}
+                        ],
+                        []
+                      ],
+                      "cancel": 1
+                    }
+                  ]
+                },
+                {"cmd":"text","text":"Your results will be recorded.\\wtnp[15]"},
+                {"cmd":"call","fn":"pbBattleChallenge.pbEnd","args":[]},
+                {"cmd":"text","text":"\\rCome back another time."},
+                {"cmd":"exitEvent"}
+              ]
+            },
+            {"cmd":"comment","lines":["If Lost or Forfeited"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"pbBattleChallenge.decision"},"right":2}},
+              "then": [
+                {"cmd":"text","text":"\\rThanks for playing."},
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {"op":"!=","left":{"call":"$game_temp.last_battle_record"},"right":null}
+                  },
+                  "then": [
+                    {"cmd":"text","text":"\\rWould you like to record your last battle?"},
+                    {
+                      "cmd": "choices",
+                      "choices": ["Yes","No"],
+                      "branches": [
+                        [
+                          {"cmd":"call","fn":"pbRecordLastBattle","args":[]},
+                          {"cmd":"text","text":"\\se[expfull]The battle was recorded."}
+                        ],
+                        []
+                      ],
+                      "cancel": 1
+                    }
+                  ]
+                },
+                {"cmd":"text","text":"Your results will be recorded.\\wtnp[15]"},
+                {"cmd":"call","fn":"pbBattleChallenge.pbEnd","args":[]},
+                {"cmd":"text","text":"\\rCome back another time."},
+                {"cmd":"exitEvent"}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbBattleChallenge.pbResting?"}},
+              "then": [
+                {"cmd":"text","text":"\\rWe've been waiting for you.  Please come this way."},
+                {"cmd":"call","fn":"pbBattleChallenge.pbGoOn","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"wait","seconds":0.2},
+                      {"move":"turnUp"},
+                      {"move":"up"},
+                      {"move":"throughOff"}
+                    ]
+                  }
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"wait","seconds":0.2},
+                      {"move":"turnUp"},
+                      {"move":"up"},
+                      {"move":"throughOff"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 8,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"up"},
+                      {"move":"opacity","value":0},
+                      {"move":"throughOff"}
+                    ]
+                  }
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"wait","seconds":0.2},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"opacity","value":0},
+                      {"move":"throughOff"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": 8,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.4},
+                {"cmd":"transparent","value":false},
+                {"cmd":"transfer","map":56,"x":0,"y":6,"direction":6,"fade":false},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+              ],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "\\rExcuse me, but you didn't save before finishing your challenge last time."
+                },
+                {"cmd":"text","text":"\\rSorry, but your challenge has been canceled."},
+                {"cmd":"call","fn":"pbBattleChallenge.pbEnd","args":[]},
+                {"cmd":"switches","from":28,"to":28,"value":false}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 4,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"transfer","map":101,"x":17,"y":22,"direction":2,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 2,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "assign",
+              "target": "$game_variables[]",
+              "args": [1],
+              "op": "=",
+              "value": {"call":"pbBattleChallenge.getPreviousWins","args":[0]}
+            },
+            {
+              "cmd": "assign",
+              "target": "$game_variables[]",
+              "args": [2],
+              "op": "=",
+              "value": {"call":"pbBattleChallenge.getMaxWins","args":[0]}
+            },
+            {"cmd":"text","text":"\\PN's Battle Tower Single Battle results:"},
+            {"cmd":"text","text":"Last win streak: \\v[1]\\nRecord win streak: \\v[2]"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 11,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"!=","left":{"call":"$PokemonGlobal.lastbattle"},"right":null}},
+              "then": [{"cmd":"call","fn":"pbPlayLastBattle","args":[]}],
+              "else": [{"cmd":"text","text":"There is no battle recorded."}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

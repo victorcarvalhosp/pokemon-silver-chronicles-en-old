@@ -1,0 +1,1687 @@
+{
+  "id": 502,
+  "name": "Saffron City - Gym",
+  "tilesetId": 32,
+  "width": 40,
+  "height": 22,
+  "autoplayBgm": true,
+  "bgm": {"name":"gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,60,76,76,76,76,76,76,56,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,797,1474,1474,1474,1474,797,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,65,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,66,76,76,76,76,76,76,56,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,797,1474,1474,1474,1474,797,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,65,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,66,76,76,76,76,76,76,56,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,797,1474,1474,1474,1474,797,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,1474,1474,1474,1474,1474,1474,1474,1474,1474,80,1474,1474,1474,1474,1474,1474,64,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,51,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,1467,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,1475,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1467,1467,1467,1467,1467,1467,1467,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1475,1475,1475,1475,1475,1475,1475,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1474,1474,1464,1465,1466,1474,1474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1474,1474,1474,1474,1474,1474,1474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1474,1474,1474,1474,1474,1474,1474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1474,1474,1474,1474,1474,1474,1474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1474,1474,1474,1474,1474,1474,1474,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,451,452,453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,1481,1482,1483,0,0,1468,1469,1470,0,0,1481,1482,1483,0,0,0,0,1481,1482,1483,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1489,1490,1491,1467,1467,1476,1477,1478,1467,1467,1489,1490,1491,1467,1467,1467,1467,1489,1490,1491,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1498,1475,1475,1475,1484,1485,1486,1475,1475,1475,1498,1475,1475,1475,1475,1475,1475,1498,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,1492,1493,1494,0,0,0,1506,1465,1466,0,0,1464,1465,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,1500,1501,1502,0,0,0,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,1508,1509,1510,0,0,0,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,0,0,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,0,0,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,0,0,1506,1467,1467,1467,1467,1467,1467,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,0,0,1506,1475,1475,1475,1475,1475,1475,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,1464,1465,1506,1465,1466,0,0,1464,1465,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,1467,1467,1467,1467,1467,1467,1467,1467,1467,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,1475,1475,1475,1475,1475,1475,1475,1475,1475,1506,0,0,0,0,0,0,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,0,0,0,0,0,0,0,0,1506,1467,1467,1467,1467,1467,1467,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,669,670,671,0,669,670,671,0,1506,1475,1475,1475,1475,1475,1475,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1506,0,677,678,679,0,677,678,679,0,1506,1465,1466,0,0,1464,1465,1506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1514,0,0,686,0,0,0,686,0,0,1514,0,0,0,0,0,0,1514,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1522,0,0,0,0,0,0,0,0,0,1522,0,0,0,0,0,0,1522,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":15,"y":3,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":384,"x":50,"y":12,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 15,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":9,"y":13,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 20,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":15,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 15,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":20,"y":3,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 20,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":15,"y":15,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 15,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":20,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 20,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":13,"y":10,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 13,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"018-Teleport01","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.2},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.2}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"transfer","map":502,"x":20,"y":15,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "sabrina",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":763,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceSabrina]Sabrina: I knew you were coming..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]It's still my duty as a Gym Leader to confer Badges on anyone who has proven him- or helself worthy."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]This isn't just about proving your strength to me anymore... it's about proving your loyalty to what’s becoming of this region."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]Since you wish it, I will show you my psychic powers!"
+            },
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",2]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",3]}
+                      },
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",4]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",5]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_SABRINA","Sabrina",6]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_SABRINA","Sabrina",7]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_SABRINA","Sabrina",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_SABRINA","Sabrina",9]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Sabrina: Your power...\\nIt far exceeds what I foresaw..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Ok, you win. You earned yourself the Marsh Badge."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Marsh Badge from Sabrina!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[13],"op":"=","value":true},
+                {"cmd":"commonEvent","id":69},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Sabrina:Giovanni’s vision for Kanto is unfolding.\\nWhether you choose to align with it or stand against it, there will be no turning back."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]I need to go, the elections will be starting soon."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"character":-1,"direction":8},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [
+                          {"move":"down"},
+                          {"move":"down"},
+                          {"move":"right"},
+                          {"move":"right"},
+                          {"move":"left"}
+                        ]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ],
+                  "else": []
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"down"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"throughOn"},
+                      {"move":"right"},
+                      {"move":"turnDown"},
+                      {"move":"turnLeft"},
+                      {"move":"turnUp"},
+                      {"move":"turnRight"},
+                      {"move":"turnDown"},
+                      {"move":"playSe","audio":{"name":"020-Teleport03","volume":80,"pitch":100}},
+                      {"move":"wait","seconds":0.5},
+                      {"move":"opacity","value":0}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {"op":"!","value":{"call":"isQuestActive?","args":["AssociationElections"]}}
+                  },
+                  "then": [
+                    {
+                      "cmd": "call",
+                      "fn": "activateQuest",
+                      "args": ["AssociationElections",{"call":"colorQuest","args":["blue"]},true]
+                    }
+                  ]
+                },
+                {"cmd":"switches","from":771,"to":771,"value":true},
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "These are two different switches, the 767 is DEACTIVATED after the elections happen"
+                  ]
+                },
+                {"cmd":"switches","from":767,"to":767,"value":true},
+                {"cmd":"switches","from":281,"to":281,"value":true}
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":771,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":281,"switch2":768,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]Sabrina: Your love for your Pokemon smashed my psychic abilities..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]The ability to love, I think, is some kind of psychic ability..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":767,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":801,"switch2":265,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceSabrina]Sabrina: I knew you were coming..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]The Pokémon Association allowed me to stay as a Gym Leader...\\nI recognize my mistakes, and I think I was too naive."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]It's still my duty as a Gym Leader to confer Badges on anyone who has proven him- or helself worthy."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]This isn't just about proving your strength to me anymore... it's about proving your loyalty to what’s becoming of this region."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]Since you wish it, I will show you my psychic powers!"
+            },
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",2]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",3]}
+                      },
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",4]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_SABRINA","Sabrina",5]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_SABRINA","Sabrina",6]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_SABRINA","Sabrina",7]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_SABRINA","Sabrina",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_SABRINA","Sabrina",9]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Sabrina: Your power...\\nIt far exceeds what I foresaw..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Ok, you win. You earned yourself the Marsh Badge."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Marsh Badge from Sabrina!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[13],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceSabrina]Sabrina: To prove I regret my actions, I'll give you this."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["SILPHSCOPE"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceSabrina]Sabrina: Team Rocket is keeping the Mewtwo experiment in the Silph Co. building,"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceSabrina]With this item you'll be able to see through their psychic barrier."
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"op":"!","value":{"call":"isQuestActive?","args":["SilphCoResearch"]}}
+                      },
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "activateQuest",
+                          "args": ["SilphCoResearch",{"call":"colorQuest","args":["blue"]},true]
+                        }
+                      ]
+                    },
+                    {"cmd":"call","fn":"advanceQuestToStage","args":["SilphCoResearch",2]},
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceSabrina]It won't be easy, but I think you have what it takes to stop all this."
+                    }
+                  ]
+                },
+                {"cmd":"commonEvent","id":69},
+                {"cmd":"switches","from":281,"to":281,"value":true}
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":281,"switch2":265,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]Sabrina: Your love for your Pokemon smashed my psychic abilities..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceSabrina]The ability to love, I think, is some kind of psychic ability..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Trainer(2)",
+      "x": 17,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer038c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["HEXMANIAC"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The power of all those you defeated comes to me!"},
+            {"cmd":"comment","lines":["EndSpeech: Eu, eu, eu perdi..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["HEXMANIAC","Rebecca"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer038c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":1.0},
+              {"move":"turnDown"},
+              {"move":"wait","seconds":1.0}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"What is the source of your power?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Trainer(5)",
+      "x": 17,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["PSYCHIC_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Fighting Dojo next door was once this city's Gym."},
+            {"cmd":"comment","lines":["EndSpeech: Eu perdi. Isso é triste..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["PSYCHIC_Male","Jared"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Karate King, the master of the Fighting Dojo, was just destroyed by Sabrina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Trainer(5)",
+      "x": 18,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["PSYCHIC_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Psychic power is the powert of your mind."},
+            {"cmd":"comment","lines":["EndSpeech: Eu perdi. Isso é triste..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["PSYCHIC_Male","Franklin"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer061c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You made your mind stronger, not just your abilities."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "ff",
+      "x": 12,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The Gym Leader is not here right now.\\nShe went to the Mt. Moon, can you go there and call him back to the Gym, please?"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":763,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "A Trainer as skilled as you doesn't need to be told how to deal with Psychic-type Pokemon, right?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I expect great things for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Good luck!"}
+          ]
+        },
+        {
+          "condition": {"switch1":771,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The Gym Leader is not here right now.\\nHe's attending some Pokémon Association meetings, I suppose."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":265,"switch2":801,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "A Trainer as skilled as you doesn't need to be told how to deal with Psychic-type Pokemon, right?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I expect great things for you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Good luck!"}
+          ]
+        },
+        {
+          "condition": {"switch1":281,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"That was another fantastic battle!"}
+          ]
+        }
+      ]
+    }
+  ]
+}

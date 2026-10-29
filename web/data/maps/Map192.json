@@ -1,0 +1,382 @@
+{
+  "id": 192,
+  "name": "Battle Tower",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-BTower","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2039,2039,2039,2039,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2047,2047,2047,2047,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [48,48,52,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,72,2036,2036,2036,2036,2053,2054,2055,2036,2036,2036,2036,64,48,48,48,48,48],
+      [48,48,72,2044,2044,2044,2044,2061,2062,2063,2044,2044,2044,2044,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,72,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,2194,64,48,48,48,48,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2195,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2195,2195,2195,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,2195,2195,2195,2195,2195,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2195,2195,2195,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2195,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"opacity","value":255},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"turnRight"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"opacity","value":0},
+                  {"move":"throughOn"},
+                  {"move":"up"},
+                  {"move":"opacity","value":255},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"turnRight"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"label","name":"Next Opponent"},
+            {"cmd":"setEventLocation","event":3,"direction":0,"x":8,"y":2},
+            {
+              "cmd": "call",
+              "fn": "pbBattleChallengeGraphic",
+              "args": [{"call":"get_character","args":[3]}]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "assign",
+              "target": "$game_variables[]",
+              "args": [1],
+              "op": "=",
+              "value": {"call":"pbBattleChallengeBeginSpeech"}
+            },
+            {"cmd":"text","text":"\\v[1]"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbBattleChallengeBattle"}},
+              "then": [
+                {"cmd":"call","fn":"pbBattleChallenge.pbAddWin","args":[]},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbBattleChallenge.pbMatchOver?"}},
+                  "then": [
+                    {"cmd":"call","fn":"pbBattleChallenge.setDecision","args":[1]},
+                    {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                    {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                    {"cmd":"wait","seconds":0.3},
+                    {"cmd":"call","fn":"pbBattleChallenge.pbGoToStart","args":[]},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                    {"cmd":"exitEvent"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": 3,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [
+                          {"move":"throughOn"},
+                          {"move":"up"},
+                          {"move":"up"},
+                          {"move":"up"},
+                          {
+                            "move": "graphic",
+                            "characterName": "",
+                            "characterHue": 0,
+                            "direction": 2,
+                            "pattern": 0
+                          },
+                          {"move":"throughOff"}
+                        ]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {
+                      "cmd": "moveRoute",
+                      "character": -1,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [{"move":"throughOn"},{"move":"left"},{"move":"throughOff"}]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"},
+                    {"cmd":"text","text":"Thanks for playing.  Let me heal your party."},
+                    {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                    {"cmd":"wait","seconds":0.3},
+                    {"cmd":"recoverAll"},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                    {"cmd":"wait","seconds":0.3},
+                    {"cmd":"label","name":"Choice Menu"},
+                    {
+                      "cmd": "assign",
+                      "target": "$game_variables[]",
+                      "args": [1],
+                      "op": "=",
+                      "value": {"call":"pbBattleChallenge.battleNumber"}
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {"op":"!=","left":{"call":"$game_temp.last_battle_record"},"right":null}
+                      },
+                      "then": [
+                        {
+                          "cmd": "text",
+                          "text": "Battle number \\v[1] is next.  Are you ready?\\ch[2,0,GO ON,REST, RETIRE,RECORD]"
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "text",
+                          "text": "Battle number \\v[1] is next.  Are you ready?\\ch[2,0,GO ON,REST,RETIRE]"
+                        }
+                      ]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":2,"op":"==","value":3},
+                      "then": [
+                        {"cmd":"text","text":"Would you like to record your last battle?"},
+                        {
+                          "cmd": "choices",
+                          "choices": ["Yes","No"],
+                          "branches": [
+                            [
+                              {"cmd":"call","fn":"pbRecordLastBattle","args":[]},
+                              {"cmd":"text","text":"The battle was recorded."}
+                            ],
+                            []
+                          ],
+                          "cancel": 1
+                        },
+                        {"cmd":"jump","label":"Choice Menu"}
+                      ]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":2,"op":"==","value":1},
+                      "then": [
+                        {"cmd":"text","text":"Would you like to save the game and continue later?"},
+                        {
+                          "cmd": "choices",
+                          "choices": ["Yes","No"],
+                          "branches": [
+                            [
+                              {"cmd":"call","fn":"pbBattleChallenge.pbRest","args":[]},
+                              {"cmd":"text","text":"Your game has been saved."},
+                              {"cmd":"returnToTitle"},
+                              {"cmd":"exitEvent"}
+                            ],
+                            [{"cmd":"jump","label":"Choice Menu"}]
+                          ],
+                          "cancel": 1
+                        },
+                        {"cmd":"jump","label":"Choice Menu"}
+                      ]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":2,"op":"==","value":2},
+                      "then": [
+                        {"cmd":"text","text":"Are you sure you want to quit your challenge?"},
+                        {
+                          "cmd": "choices",
+                          "choices": ["Yes","No"],
+                          "branches": [
+                            [
+                              {"cmd":"call","fn":"pbBattleChallenge.setDecision","args":[2]},
+                              {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                              {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                              {"cmd":"wait","seconds":0.3},
+                              {"cmd":"call","fn":"pbBattleChallenge.pbGoToStart","args":[]},
+                              {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                              {"cmd":"exitEvent"}
+                            ],
+                            [{"cmd":"jump","label":"Choice Menu"}]
+                          ],
+                          "cancel": 1
+                        }
+                      ]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":2,"op":"==","value":0},
+                      "then": [
+                        {"cmd":"call","fn":"pbBattleChallenge.pbGoOn","args":[]},
+                        {
+                          "cmd": "moveRoute",
+                          "character": -1,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [{"move":"throughOn"},{"move":"right"},{"move":"throughOff"}]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"},
+                        {"cmd":"jump","label":"Next Opponent"}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbBattleChallenge.setDecision","args":[2]},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"call","fn":"pbBattleChallenge.pbGoToStart","args":[]},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"exitEvent"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 8,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

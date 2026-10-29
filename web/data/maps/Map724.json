@@ -1,0 +1,1339 @@
+{
+  "id": 724,
+  "name": "Novo centro de treinamento",
+  "tilesetId": 5,
+  "width": 35,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"SPTC2","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3229,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221],
+      [3228,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3221,3230],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [3204,3207,3205,3205,3205,3191,3205,3205,3207,3205,3205,3205,3191,3205,3205,3207,3205,3205,3205,3191,3205,3205,3207,3205,3205,3205,3191,3205,3205,3207,3205,3205,3205,3191,3206],
+      [3212,3215,3213,3213,3213,3199,3213,3213,3215,3213,3213,3213,3199,3213,3213,3215,3213,3213,3213,3199,3213,3213,3215,3213,3213,3213,3199,3213,3213,3215,3213,3213,3213,3199,3214],
+      [3220,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3222],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [3216,0,0,0,3188,0,0,0,3217,0,0,3188,0,0,0,3217,0,0,3188,0,0,0,3217,0,0,3188,0,0,0,3217,0,0,3188,0,0],
+      [3224,0,0,0,3196,0,0,0,3225,0,0,3196,0,0,0,3225,0,0,3196,0,0,0,3225,0,0,3196,0,0,0,3225,0,0,3196,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,784,785,786,0,0,0,0,784,785,786,0,0,0,0,784,785,786,0,0,0,0,784,785,786,0,0,0,0,784,785,786,0,0],
+      [0,0,792,793,794,0,3227,3227,0,792,793,794,0,3227,3227,0,792,793,794,0,3227,3227,0,792,793,794,0,3227,3227,0,792,793,794,0,3227],
+      [3227,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210],
+      [3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210,3200,0,0,0,0,0,3210],
+      [3216,3217,3189,0,3223,3217,3218,3216,3217,3189,0,3223,3217,3218,3216,3217,3189,0,3223,3217,3218,3216,3217,3189,0,3223,3217,3218,3216,3217,3189,0,3223,3217,3218],
+      [1130,3225,3197,0,3231,3225,3226,3224,1130,3197,0,3231,3225,3226,3224,1130,3197,0,3231,3225,3226,3224,1130,3197,0,3231,3225,3226,3224,1130,3197,0,3231,3225,3226],
+      [1138,0,0,0,0,0,3278,3263,1138,0,0,0,0,3278,3263,1138,0,0,0,0,3278,3263,1138,0,0,0,0,3278,3263,1138,0,0,0,0,0],
+      [1146,0,0,0,0,0,0,0,1146,0,0,0,0,0,0,1146,0,0,0,0,0,0,1146,0,0,0,0,0,0,1146,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 0,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 15,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 22,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 29,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 5,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Um cartão de treino!"},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Siga por aqui!"},
+                {"cmd":"switches","from":458,"to":458,"value":true},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":193,"x":4,"y":21,"direction":0,"fade":true},
+                {"cmd":"switches","from":458,"to":458,"value":false}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 3,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1565,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":458,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 12,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Ainda não pode acessar este nivel..."}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":491,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Um cartão de treino!"},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Siga por aqui!"},
+                {"cmd":"switches","from":459,"to":459,"value":true},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":193,"x":15,"y":21,"direction":0,"fade":true},
+                {"cmd":"switches","from":459,"to":459,"value":false}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1565,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":459,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 19,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Ainda não pode acessar este nivel..."}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":492,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Um cartão de treino!"},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Siga por aqui!"},
+                {"cmd":"switches","from":460,"to":460,"value":true},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":193,"x":26,"y":21,"direction":0,"fade":true},
+                {"cmd":"switches","from":460,"to":460,"value":false}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 17,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1565,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":460,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 24,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1565,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":461,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 31,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1565,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":462,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "x": 26,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Ainda não pode acessar este nivel..."}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":493,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Um cartão de treino!"},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Siga por aqui!"},
+                {"cmd":"switches","from":461,"to":461,"value":true},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":193,"x":38,"y":21,"direction":0,"fade":true},
+                {"cmd":"switches","from":461,"to":461,"value":false}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 33,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {
+                  "cmd": "text",
+                  "text": "\\rO responsável por este treinamento não está aqui no momento..."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\rJá pensou em enfrentar a Elite dos Quatro enquanto ele não chega? \\nVocê poderá voltar aqui depois."
+                }
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":494,"switch2":166,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk055",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::Cartaodetreino"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+                {"cmd":"text","text":"Um cartão de treino!"},
+                {"cmd":"text","text":"Deixa eu conferir em que nivel está..."},
+                {"cmd":"text","text":"Siga por aqui!"},
+                {"cmd":"switches","from":462,"to":462,"value":true},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":193,"x":50,"y":21,"direction":0,"fade":true},
+                {"cmd":"switches","from":462,"to":462,"value":false}
+              ],
+              "else": [{"cmd":"text","text":"Você ainda não tem um cartão de treino."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "x": 8,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":171,"x":39,"y":45,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "x": 27,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":171,"x":43,"y":45,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "x": 6,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 1 a esquerda."}]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 2 a direita."}]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "EV020",
+      "x": 13,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 2 a esquerda."}]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "EV021",
+      "x": 14,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 3 a direita."}]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "EV022",
+      "x": 20,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 3 a esquerda."}]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "EV023",
+      "x": 21,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 4 a direita."}]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "EV024",
+      "x": 28,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 5 a direita."}]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "EV025",
+      "x": 27,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Treino Nível 4 a esquerda."}]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "id": 614,
+  "name": "Mandarin Island South - House 2",
+  "tilesetId": 25,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,52,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,72,405,405,405,405,405,405,405,405,405,405,405,64,48,48,48,48,48],
+      [48,48,72,413,413,413,413,413,413,413,413,413,413,413,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,72,397,397,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,483,423,0,468,0,0,423,421,422,0,0,0,0,0,0],
+      [0,0,0,466,467,491,431,0,476,0,0,431,429,430,0,0,0,0,0,0],
+      [0,0,0,474,475,499,0,0,484,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3939,3940,3940,3940,3940,3941,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3947,3948,3948,3948,3948,3949,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,3947,3948,3948,3948,3948,3949,0,0,0,0,0,0,0,0],
+      [0,0,0,455,0,0,3955,3956,3956,3956,3956,3957,0,455,0,0,0,0,0,0],
+      [0,0,0,463,0,0,584,585,586,0,0,0,0,463,0,0,0,0,0,0],
+      [0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,407,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,415,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,645,493,494,646,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,645,501,502,646,0,0,0,0,0,0,0,0,0],
+      [0,0,0,455,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,463,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":526,"x":25,"y":16,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "SUPERNERD_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hi! Are you really a Trainer!?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I have to see your Pokédex!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm interested in seeing the Orange Archipelago Dex..."},
+            {"cmd":"call","fn":"pbSet","args":[1,{"call":"$player.pokedex.seen_count","args":[4]}]},
+            {"cmd":"call","fn":"pbSet","args":[2,{"call":"$player.pokedex.owned_count","args":[4]}]},
+            {
+              "cmd": "text",
+              "text": "Hmm, let's see..\\nYou've seen \\v[1] Pokémon, and \\nyou've caught \\v[2] Pokémon!\\nI see!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":2,"op":">=","value":70},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Whoa! Caught over 70!?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"That's amazing!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"You're really a Pro Trainer!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I noticed that you're still missing a Pokémon..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"To help you to complete your Pokédex, I'll give it to you."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I spend so much time at home that it is bored."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "I have other Pokémon that enjoy staying home with me, but this one wants to go on an adventure!"
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"switch":822,"value":true},
+                  "then": [{"cmd":"script","ruby":"pkmn = Pokemon.new(:POPPLIO,10)\npbAddPokemon(pkmn)"}],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":823,"value":true},
+                      "then": [
+                        {
+                          "cmd": "script",
+                          "ruby": "pkmn = Pokemon.new(:SPRIGATITO,10)\npbAddPokemon(pkmn)"
+                        }
+                      ],
+                      "else": [{"cmd":"script","ruby":"pkmn = Pokemon.new(:LITTEN,10)\npbAddPokemon(pkmn)"}]
+                    }
+                  ]
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Please take good care of it."},
+                {"cmd":"call","fn":"completeQuest","args":["ThirdStarterOrangeIslands"]},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"That’s good. But you can do more!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"If you get over 70, come show me again!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I’ll be right here!"},
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "op": "!",
+                      "value": {"call":"isQuestActive?","args":["ThirdStarterOrangeIslands"]}
+                    }
+                  },
+                  "then": [{"cmd":"call","fn":"activateQuest","args":["ThirdStarterOrangeIslands"]}]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "SUPERNERD_2",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I don't like to go out that much, so I enjoy checking Trainers Pokédex."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It's my way to see as many Pokémon as possible!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk009",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"There are a lot of interesting Pokémon around here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"If you search for it you may find a few."}
+          ]
+        }
+      ]
+    }
+  ]
+}

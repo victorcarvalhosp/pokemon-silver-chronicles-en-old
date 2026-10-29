@@ -1,0 +1,293 @@
+{
+  "id": 573,
+  "name": "hall da fama",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"HallOfFame","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,72,452,452,452,64,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,50,68,68,68,49,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,3697,3697,3697,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3705,3705,3705,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3659,3660,3661,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3667,3668,3669,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3675,3676,3677,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3683,3684,3685,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3272,3273,3274,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk048-prof-oak",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"turnRight"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceprofcarvalho]\\bRegistre seus Pokémons."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":true,"list":[{"move":"up"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Select","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"shiny","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"computeropen","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "script",
+              "ruby": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:CHAMPIONKANTO)\nend"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 2
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 0
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"$stats.set_time_to_hall_of_fame","args":[]},
+            {"cmd":"call","fn":"pbHallOfFameEntry","args":[]},
+            {"cmd":"transfer","map":574,"x":0,"y":0,"direction":0,"fade":true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "balls",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

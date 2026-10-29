@@ -1,0 +1,954 @@
+{
+  "id": 720,
+  "name": "GRANITE CAVE(24.10)",
+  "tilesetId": 49,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"CaveHoenn","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [76,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,88,76,56,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48],
+      [752,752,752,752,752,752,752,752,752,752,752,752,752,752,752,64,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [769,769,769,769,769,787,777,777,777,788,769,769,769,769,769,0,0,0,0,0],
+      [769,787,777,777,777,778,769,769,769,776,777,777,788,769,769,0,0,0,0,0],
+      [769,770,769,787,777,777,784,785,786,777,777,788,768,769,769,0,0,0,0,0],
+      [769,770,787,778,787,777,792,793,794,788,769,768,776,788,769,0,0,0,0,0],
+      [769,770,770,769,770,0,0,0,0,768,769,768,769,768,769,0,0,0,0,0],
+      [769,770,770,787,778,755,0,0,0,768,769,776,768,768,769,0,0,0,0,0],
+      [769,770,770,770,0,0,0,0,0,776,777,788,768,768,769,0,0,0,0,0],
+      [769,770,770,770,0,0,0,0,0,0,0,768,768,768,769,0,0,0,0,0],
+      [769,770,770,770,0,0,0,0,0,0,755,768,768,768,769,0,0,0,0,0],
+      [769,770,770,761,761,762,0,0,0,0,0,768,768,768,769,0,0,0,0,0],
+      [769,770,761,762,769,770,0,754,0,0,0,768,768,768,769,0,0,0,0,0],
+      [769,761,762,770,754,761,761,761,761,761,761,761,768,768,769,0,0,0,0,0],
+      [769,769,770,761,761,761,761,761,761,761,761,761,761,768,769,0,0,0,0,0],
+      [769,769,761,761,761,761,761,761,761,761,761,761,761,761,769,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,788,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 3,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+            {"cmd":"transfer","map":717,"x":5,"y":11,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "brandon",
+      "x": 7,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Trainer096c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "direita",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":457,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "esquerda",
+      "x": 6,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "regirock",
+      "x": 7,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "regirockcinza",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":436,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "lider",
+      "x": 7,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Magmachef",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "magma cima",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":456,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "abaixo",
+      "x": 7,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "magma",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 10,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"scrollMap","direction":2,"distance":3,"speed":4},
+            {"cmd":"call","fn":"pbTrainerIntro","args":["TEAMMAGMA_Male"]},
+            {"cmd":"wait","seconds":2.0},
+            {"cmd":"showAnimation","character":2,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceBrandon]\\bEi vocês! Ajudem!"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facemagma]\\bNão tão fácil assim garoto(a)!"},
+            {"cmd":"comment","lines":["EndSpeech: Não podemos ser atrapalhados agora!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::TEAMMAGMA_Male"},"Grunt"]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"turnLeft"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bVocês já devem estar cansados, não vai ser difícil derrotá-los."
+            },
+            {"cmd":"comment","lines":["EndSpeech: Arghhhh!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::TEAMMAGMA_Male"},"Grunt",2]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facemagma]\\bNão acredito que perdemos, o chefe vai nos matar...!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"right"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"switches","from":456,"to":456,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":true,"list":[{"move":"left"},{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"switches","from":457,"to":457,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facemagma]\\bDeixa que da criança eu cuido!"},
+            {"cmd":"comment","lines":["EndSpeech: Não pode ser!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::TEAMMAGMA_Male"},"Grunt",3]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"text","text":"\\f[facemagmalider]\\bVocê não vai levar Regirock daqui!"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"showAnimation","character":5,"animation":69},
+            {"cmd":"showAnimation","character":6,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"text","text":"\\f[facemagmalider]\\b...Vamos pegar ele!"},
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"down"},{"move":"turnLeft"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facemagmalider]\\bVai Pokébola!"},
+            {"cmd":"playSe","audio":{"name":"throw","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Down","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "tentar capturar",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  },
+                  {"move":"stepAnimeOn"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"text","text":"\\f[facemagmalider]\\b..."},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Pokeopenbreak","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "regirock",
+                    "characterHue": 0,
+                    "direction": 8,
+                    "pattern": 0
+                  },
+                  {"move":"stepAnimeOn"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"text","text":"\\f[facemagmalider]\\bDroga! Ele despertou!"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"showAnimation","character":1,"animation":120},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"stepAnimeOff"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"jump","x":-3,"y":-1},
+                  {
+                    "move": "graphic",
+                    "characterName": "Magmachefcaido",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  }
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"jump","x":2,"y":0},
+                  {
+                    "move": "graphic",
+                    "characterName": "magmacaido",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 3
+                  }
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceBrandon]\\bAgora ele está fraco!"},
+            {"cmd":"text","text":"\\f[faceBrandon]\\bVai Pokébola!"},
+            {"cmd":"playSe","audio":{"name":"throw","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Down","volume":80,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "tentar capturar",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  },
+                  {"move":"stepAnimeOn"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playSe","audio":{"name":"Pokemove","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":0.5},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "itemball",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  }
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"text","text":"\\f[faceBrandon]\\bPronto, agora Regirock está seguro."},
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":436,"to":436,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[255.0,255.0,255.0,0.0],"seconds":0.25},
+            {"cmd":"wait","seconds":1.5},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+            {"cmd":"switches","from":437,"to":437,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":437,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

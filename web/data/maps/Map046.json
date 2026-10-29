@@ -1,0 +1,415 @@
+{
+  "id": 46,
+  "name": "Azalea Town - Mart",
+  "tilesetId": 4,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,56,48,52,76,56,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,72,388,64,48,72,388,64,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,86,396,88,76,86,396,88,76,56,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,72,385,385,385,385,385,385,385,385,385,64,48,48,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,402,388,388,388,428,429,430,388,403,0,0,0,0,0,0,0],
+      [0,0,0,0,410,396,427,396,436,437,438,396,411,0,0,0,0,0,0,0],
+      [0,0,0,0,418,0,435,0,0,0,0,0,419,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,443,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,451,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,401,0,0,0,0,0,0,0,400,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,428,429,430,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,436,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,457,458,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,463,465,466,463,0,0,0,0,0,0,0],
+      [0,0,0,0,413,414,415,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,421,422,423,0,0,0,0,425,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,433,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,441,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,444,445,446,0,0,449,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,452,453,454,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":42,"x":33,"y":8,"direction":2,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 19,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The number of Gym Badges you have shows how strong a Trainer you are."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The more badges you have, the better the items you'll see in shops!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"A Great Ball is better for catching Pokémon than a Poké Ball."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"But Kurt's might be better sometimes."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  "POKEBALL",
+                  "HEALBALL",
+                  "BOOSTERPACK_GENESIS",
+                  "POTION",
+                  "ANTIDOTE",
+                  "PARALYZEHEAL",
+                  "AWAKENING",
+                  "BURNHEAL",
+                  "ICEHEAL",
+                  "REPEL"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 12,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_SchoolKid_M",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbCanTriadDuel?"}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Pokémon TCG is so much fun!\\nNo matter if you're just collecting or using it to duel, it's always fun!"
+                },
+                {"cmd":"label","name":"Choices"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let's have a Pokémon TCG duel?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","No"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "comment",
+                        "lines": [
+                          "The two numbers are the min and max level of the ",
+                          "opponent respectively. Each number can be between ",
+                          "0 and 9 inclusive, and the max level must be higher ",
+                          "than or equal to the min level."
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Let's go!"},
+                      {
+                        "cmd": "script",
+                        "ruby": "result = pbTriadDuel(\"George\", 0, 5, [\"elements\", \"noprize\"], \n[:MAGIKARP,:SENTRET,:MARILL,:TOGEPI,:HOPPIP])\npbSet(2, result)"
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":2,"op":"==","value":1},
+                        "then": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"That was a great duel!"},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Take this card as the prize for the win."},
+                          {"cmd":"call","fn":"pbGiveTriadCardWithAnimation","args":["MARILL"]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"selfSwitch","ch":"A","value":true}
+                        ],
+                        "else": [
+                          {"cmd":"comment","lines":["You won!"]},
+                          {
+                            "cmd": "if",
+                            "cond": {"variable":2,"op":"==","value":2},
+                            "then": [
+                              {"cmd":"comment","lines":["You lost!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "I'm too good for you!\\nCome back to duel again anytime!"
+                              },
+                              {"cmd":"gold","op":"sub","value":200}
+                            ],
+                            "else": [
+                              {"cmd":"comment","lines":["Draw!"]},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "I'm too good for you!\\nCome back to duel again anytime!"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "I'm too good for you anyway!\\nCome back to duel again anytime!"
+                      },
+                      {"cmd":"jump","label":"Choices"}
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Oh, you don't have enough cards to play. You need  at least 5."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "tcg_SchoolKid_M",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You can almost always find some Pokémon TCG players in the Poké Mart, but the Pokémon Clubs are the best places to duel!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 9,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

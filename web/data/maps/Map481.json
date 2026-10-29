@@ -1,0 +1,883 @@
+{
+  "id": 481,
+  "name": "Fuchsia City - Gym",
+  "tilesetId": 32,
+  "width": 20,
+  "height": 21,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48,48],
+      [48,48,48,52,86,1440,1440,1440,1440,1440,1440,1440,1440,1440,88,56,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,72,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,1440,64,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,1417,1418,1419,1420,1416,1416,1416,1416,1416,1418,1419,1420,1421,0,0,0,0],
+      [0,0,0,1425,1426,1427,1428,1424,1424,1424,1424,1424,1426,1427,1428,1429,0,0,0,0],
+      [0,0,0,1433,1434,1435,1436,1432,1432,1432,1432,1432,1434,1435,1436,1437,0,0,0,0],
+      [0,0,0,1425,0,0,0,0,690,691,692,0,0,0,0,1429,0,0,0,0],
+      [0,0,0,1433,0,0,0,0,698,699,700,0,0,0,0,1437,0,0,0,0],
+      [0,0,0,1425,1456,1456,1456,1456,0,0,0,0,1456,1456,1456,1429,0,0,0,0],
+      [0,0,0,1433,1456,1456,1456,0,1456,1456,1456,0,1456,1456,1456,1437,0,0,0,0],
+      [0,0,0,1425,0,0,0,0,0,0,0,0,1456,1456,1456,1429,0,0,0,0],
+      [0,0,0,1433,0,1456,1456,1456,1456,1456,1456,0,1456,1456,1456,1437,0,0,0,0],
+      [0,0,0,1425,0,0,0,0,0,0,0,0,0,0,0,1429,0,0,0,0],
+      [0,0,0,1433,0,0,0,0,0,0,0,0,0,0,0,1437,0,0,0,0],
+      [0,0,0,1425,0,0,0,0,0,0,0,0,0,0,0,1429,0,0,0,0],
+      [0,0,0,1433,0,0,0,0,0,0,0,0,0,0,0,1437,0,0,0,0],
+      [0,0,0,1441,0,0,0,0,0,0,0,0,0,0,0,1445,0,0,0,0],
+      [0,0,0,1449,0,0,0,0,0,0,0,0,0,0,0,1453,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,1442,1443,1444,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1450,1451,1452,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1458,1459,1460,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1456,1456,1456,1456,1456,1456,1456,0,1456,1456,1456,0,0,0,0,0],
+      [0,0,0,0,0,0,669,670,671,0,669,670,671,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,677,678,679,0,677,678,679,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,686,0,0,0,686,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,451,452,453,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Janine",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "janine_c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceJanine]\\rFufufufu...\\nI'm sorry to disappoint you..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceJanine]\\rI'm only joking! I'm the real deal!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceJanine]\\rJanine of Fuchsia, that's me!"},
+            {
+              "cmd": "comment",
+              "lines": [
+                "EndSpeech: Você é forte.\\n Você venceu definitivamente\\n Aqui está a Insígnia da Alma.\\nLeve-a!"
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Janine","Janine",1]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Janine","Janine",2]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Janine","Janine",3]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_Janine","Janine",4]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_Janine","Janine",5]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_Janine","Janine",6]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Janine","Janine",7]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Janine","Janine",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceJanine]Janine: \\rI see... You have defeated Koga, my father and member of the Elite Four, to come here."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceJanine]\\rNo wonder you are strong!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceJanine]\\rYou've definitely won...\\nHere's the Soul Badge. Take it."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Soul Badge from Janine!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[12],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceJanine]Janine: \\rYou're so tough!\\nI have a special gift!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceJanine]\\rIt's Poision Jab, a powerful Poison- type move that maybe poison its victim."
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["TM84"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceJanine]Janine: \\rI'm going to really apply myself and improve my skills."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceJanine]\\rI want to become much better than my father and you!"
+                    },
+                    {"cmd":"selfSwitch","ch":"A","value":true},
+                    {"cmd":"switches","from":276,"to":276,"value":true}
+                  ]
+                },
+                {"cmd":"commonEvent","id":69}
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":276,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "janine_c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJanine]Janine: \\rI'm going to really apply myself and improve my skills."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJanine]\\rI want to become much better than my father and you!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":311,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":336,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "janine_c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJanine]Janine: \\rI'm going to really apply myself and improve my skills."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJanine]\\rI want to become much better than my father and you!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":767,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":331,"x":9,"y":32,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(1)",
+      "x": 11,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "janine_c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnUp"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnRight"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BEAUTY"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm Janine!\\nHow did you know I was real?\\nLet's battle!"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"turnRight"},
+                  {"move":"turnUp"},
+                  {"move":"turnLeft"},
+                  {"move":"turnDown"},
+                  {"move":"turnRight"},
+                  {"move":"turnLeft"},
+                  {"move":"turnUp"},
+                  {"move":"turnTowardPlayer"},
+                  {
+                    "move": "graphic",
+                    "characterName": "fk015",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 0
+                  },
+                  {"move":"turnTowardPlayer"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Or not!"},
+            {"cmd":"comment","lines":["EndSpeech: Você não é fraco..."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BEAUTY","LINDA",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnUp"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnRight"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I feel stronger dressing up as Janine."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(1)",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "janine_c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnUp"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnRight"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BEAUTY"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"turnDown"},
+                  {"move":"turnRight"},
+                  {"move":"turnUp"},
+                  {"move":"turnLeft"},
+                  {"move":"turnDown"},
+                  {"move":"turnRight"},
+                  {"move":"turnLeft"},
+                  {"move":"turnUp"},
+                  {"move":"turnTowardPlayer"},
+                  {
+                    "move": "graphic",
+                    "characterName": "fk015",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 0
+                  },
+                  {"move":"turnTowardPlayer"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Fooled you! Hahaha!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You betcha! I'm Janine!"},
+            {"cmd":"comment","lines":["EndSpeech: Droga!Eu queria vencer!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BEAUTY","CINDY",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer005c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnUp"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turnRight"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"forward"},
+              {"move":"turn180"}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Well? Wasn't my disguise perfect?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "ff",
+      "x": 12,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!\\nWhoops! Take a good look around you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Trainer all look like the Gym Leader, Janine."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Which of them is the real Janine?"}
+          ]
+        },
+        {
+          "condition": {"switch1":276,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"That was a great battle, Trainer from Johto!"}
+          ]
+        },
+        {
+          "condition": {"switch1":767,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Yo! Legend in the making!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Gym Leader is not here now. "},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "All the Gym Leaders are in Celadon for the Pokémon Association elections."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

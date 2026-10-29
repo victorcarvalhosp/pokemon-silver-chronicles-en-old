@@ -1,0 +1,332 @@
+{
+  "id": 295,
+  "name": "Unown Cave",
+  "tilesetId": 20,
+  "width": 24,
+  "height": 21,
+  "autoplayBgm": true,
+  "bgm": {"name":"CaveUnown","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,72,1174,1173,1174,1175,1172,1173,1174,1175,1172,1175,1174,1175,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1182,1181,1182,1183,1180,1181,1182,1183,1180,1183,1182,1183,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1172,1175,1174,1175,1172,1173,1174,1175,1172,1173,1172,1173,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1180,1183,1182,1183,1180,1181,1182,1183,1180,1181,1180,1181,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1174,1173,1172,1175,1172,1173,1172,1175,1174,1173,1174,1175,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1182,1181,1180,1183,1180,1181,1180,1183,1182,1181,1182,1183,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1172,1175,1172,1173,1172,1172,1173,1175,1172,1175,1174,1173,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1180,1183,1180,1181,1180,1180,1181,1183,1180,1183,1182,1181,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1174,1173,1172,1175,1172,1173,1174,1175,1172,1173,1174,1175,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1182,1181,1180,1183,1180,1181,1182,1183,1180,1181,1182,1183,64,48,48,48,48,48,48],
+      [48,48,48,48,72,1174,1173,1174,1175,1172,1173,1172,1175,1172,1173,1174,1175,64,48,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,84,1173,1172,82,68,68,68,68,49,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,50,68,68,49,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1129,1130,1129,1130,0,0,0,0,0,0,1129,1130,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1137,1138,1137,1138,0,0,0,0,0,0,1137,1138,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1094,1094,0,1094,1094,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1102,1102,0,1102,1102,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1154,1155,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1128,1129,1130,1129,1130,1129,1130,1129,1130,1129,1130,1129,1130,1131,0,0,0,0,0,0],
+      [0,0,0,0,1136,1080,1081,1137,1138,1137,1138,1137,1138,1137,1138,1082,1083,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,1088,1089,0,0,0,0,0,0,0,0,1090,1091,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,1096,1097,0,1084,1085,1094,1084,1085,0,0,1098,1099,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,0,1106,1107,1092,1093,1102,1092,1093,1106,1107,0,0,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,0,1114,1115,1100,1101,1087,1100,1101,1114,1115,0,0,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,0,1122,1123,0,0,0,0,0,1122,1123,0,0,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,0,0,0,1106,1107,0,1106,1107,0,0,0,0,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,0,0,0,1114,1115,0,1114,1115,0,0,0,0,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,1080,1081,0,1122,1123,0,1122,1123,0,0,1082,1083,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,1088,1089,0,0,0,0,0,0,0,0,1090,1091,1139,0,0,0,0,0,0],
+      [0,0,0,0,1136,1096,1097,0,0,0,0,0,0,0,0,1098,1099,1139,0,0,0,0,0,0],
+      [0,0,0,0,1144,1145,1145,1145,1145,1145,0,0,1145,1145,1145,1145,1145,1147,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":659,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1153,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":294,"x":18,"y":7,"direction":0,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbTilePuzzle","args":[1,"Kabuto"]}},
+              "then": [
+                {"cmd":"text","text":"Puzzle solved!"},
+                {"cmd":"playSe","audio":{"name":"Rock Smash","volume":80,"pitch":50}},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":2.0}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"switches","from":659,"to":659,"value":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":1.0}]}
+                },
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"playSe","audio":{"name":"014-Move02","volume":75,"pitch":150}},
+                {"cmd":"transfer","map":294,"x":18,"y":7,"direction":0,"fade":true},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ],
+              "else": [{"cmd":"text","text":"I give up..."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":659,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Já montei esse quebra cabeça..."},
+            {"cmd":"text","text":"O que será que ele faz?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":14,"x":29,"y":11,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 11,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":14,"x":29,"y":11,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 11,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dp_assistantwoman",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Welcome to this chamber!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We are reconstructing ancient Pokémon stone panels."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You can rotate-panel pieces by touching them for a short time."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"If you touch a piece and slide it, you can move it around."}
+          ]
+        }
+      ]
+    }
+  ]
+}

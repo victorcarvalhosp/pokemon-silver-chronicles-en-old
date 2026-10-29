@@ -1,0 +1,474 @@
+{
+  "id": 37,
+  "name": "Ruins of Alph - Research Center",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"Ruins_of_Alph","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,48,72,389,389,389,389,389,389,389,389,389,64,48,48,48,48,48],
+      [48,48,48,48,72,397,397,397,397,397,397,397,397,397,64,48,48,48,48,48],
+      [48,48,48,48,72,370,356,356,356,356,356,356,356,372,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,352,336,336,336,336,336,336,336,360,64,48,48,48,48,48],
+      [48,48,48,48,72,376,364,364,364,364,364,364,364,374,64,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,612,613,657,656,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,620,621,665,664,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,612,613,612,613,574,575,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,620,621,620,621,582,583,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,487,0,0,0,0,0,0,644,0,0,0,0,0,0,0],
+      [0,0,0,0,0,495,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,902,0,0,902,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,910,0,0,910,0,535,557,558,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,543,565,566,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"There are odd patterns drawn on the walls of the ruins."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"They must be the keys for unraveling the mystery of the ruins."},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"op":"!","value":{"call":"isQuestActive?","args":["RuinsOfAlphPuzzleOne"]}}
+              },
+              "then": [
+                {
+                  "cmd": "call",
+                  "fn": "activateQuest",
+                  "args": ["RuinsOfAlphPuzzleOne",{"call":"colorQuest","args":["blue"]}]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Bravo!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "A promising youth who is about to start the journey of archeology has just arrived!"
+            },
+            {"cmd":"showAnimation","character":-1,"animation":3},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "What? Just a visitor?\\nOh, I see...\\nYou got me excited for nothing."
+            },
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My staff here at the Ruins Research Center is excellent, and the research makes good progress with absolutely no effort on my part."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":63,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"isQuestActive?","args":["ArcheologyIsCool"]}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"$player.has_species?","args":["UNOWN"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "You've caught an Unown?!\\nAmazing!\\nLet me take a closer look at it"
+                    },
+                    {
+                      "cmd": "call",
+                      "fn": "pbSet",
+                      "args": [1,{"call":"switchPositionIfHasPokemon","args":["UNOWN"]}]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":1,"op":"==","value":0},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "Oh, he seems too tired to leave the Pokéball...\\nCome back once he's recovered, please!"
+                        }
+                      ],
+                      "else": [
+                        {"cmd":"wait","seconds":1.0},
+                        {
+                          "cmd": "call",
+                          "fn": "pbMoveRoute",
+                          "args": [{"call":"$game_player"},[{"call":"PBMoveRoute::Wait"},40]]
+                        },
+                        {
+                          "cmd": "call",
+                          "fn": "FollowingPkmn.animation",
+                          "args": [{"call":"FollowingPkmn::ANIMATION_EMOTE_HAPPY"}]
+                        },
+                        {"cmd":"call","fn":"pbSEPlay","args":["Player jump"]},
+                        {
+                          "cmd": "call",
+                          "fn": "FollowingPkmn.move_route",
+                          "args": [[{"call":"PBMoveRoute::Jump"},0,0]]
+                        },
+                        {
+                          "cmd": "call",
+                          "fn": "pbWait",
+                          "args": [{"op":"/","left":{"call":"Graphics.frame_rate"},"right":5}]
+                        },
+                        {"cmd":"call","fn":"pbSEPlay","args":["Player jump"]},
+                        {
+                          "cmd": "call",
+                          "fn": "FollowingPkmn.move_route",
+                          "args": [[{"call":"PBMoveRoute::Jump"},0,0]]
+                        },
+                        {
+                          "cmd": "call",
+                          "fn": "pbWait",
+                          "args": [{"op":"/","left":{"call":"Graphics.frame_rate"},"right":5}]
+                        },
+                        {"cmd":"call","fn":"pbSEPlay","args":["Player jump"]},
+                        {
+                          "cmd": "call",
+                          "fn": "FollowingPkmn.move_route",
+                          "args": [[{"call":"PBMoveRoute::Jump"},0,0]]
+                        },
+                        {
+                          "cmd": "call",
+                          "fn": "pbWait",
+                          "args": [{"op":"/","left":{"call":"Graphics.frame_rate"},"right":5}]
+                        },
+                        {"cmd":"wait","seconds":1.0},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"Incredible! Let me take some notes about it..."},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"This is perfect. Thank you for your help."},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"As promised, here's your Thunder Stone."},
+                        {"cmd":"call","fn":"pbReceiveItem","args":["THUNDERSTONE"]},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "There's so much we can learn from these enigmatic Pokémon.\\nGood luck on your journey!"
+                        },
+                        {"cmd":"call","fn":"completeQuest","args":["ArcheologyIsCool"]},
+                        {"cmd":"selfSwitch","ch":"B","value":true}
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "If you discover any form of Unown, feel free to bring them to me.\\nThere's so much we can learn from these enigmatic Pokémon..."
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Hello, trainer! I'm Albright, the lead researcher here at the Ruins of Alph.\\nI'm studying the mysterious Pokémon, Unown, and I need your help."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Could you catch one and bring it to me? If you do, I'll give you a Thunder Stone in return."
+                },
+                {"cmd":"call","fn":"activateQuest","args":["ArcheologyIsCool"]}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My staff here at the Ruins Research Center is excellent, and the research makes good progress with absolutely no effort on my part."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":14,"x":29,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 11,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "FossilManiac",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The ruins are about 1,500 years old.\\nThat's all we know about them."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"But it's not known why they were built...or by whom."},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"op":"!","value":{"call":"isQuestActive?","args":["RuinsOfAlphPuzzleOne"]}}
+              },
+              "then": [
+                {
+                  "cmd": "call",
+                  "fn": "activateQuest",
+                  "args": ["RuinsOfAlphPuzzleOne",{"call":"colorQuest","args":["blue"]},true]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

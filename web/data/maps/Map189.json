@@ -1,0 +1,784 @@
+{
+  "id": 189,
+  "name": "Room 2",
+  "tilesetId": 3,
+  "width": 21,
+  "height": 25,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,56,48,48,48,48,48,48,48,48,48,48],
+      [48,72,599,599,599,599,599,599,599,599,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,607,607,607,607,607,607,607,607,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,72,512,512,512,512,512,512,512,512,64,48,48,48,48,48,48,48,48,48,48],
+      [48,50,68,68,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,705,706,707,708,707,708,709,710,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,713,714,715,716,715,716,717,718,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,521,522,523,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,529,530,531,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,705,706,707,708,707,708,709,710,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,513,514,515,672,691,692,693,598,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,516,517,518,680,699,700,701,606,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,524,525,526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,432,433,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,528,440,441,528,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,598,0,0,0,0,0,0,598,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,606,0,496,497,498,0,0,606,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,504,505,506,0,0,0,0,90,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,90,0,67,93,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,65,68,74,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,64,48,72,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,64,48,72,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,88,76,86,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 4,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":535,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Prof Elm cell",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "text",
+              "text": "Hi \\PN!\\nCalling just to make sure you're not sleeping yet, hehe"
+            },
+            {
+              "cmd": "text",
+              "text": "Your first battle in the World Cup will start soon, everyone in New Bark is wishing you good luck!"
+            },
+            {"cmd":"text","text":"Bye!"},
+            {"cmd":"erasePicture","id":1},
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["FirstWorldCupBattle",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"switches","from":201,"to":201,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":201,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":536,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Prof Elm cell",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":204,"value":true},
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "Hi \\PN!\\nCalling to congratulate on your win in the first battle!"
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "Hi \\PN!\\nCalling to encourage you for your second battle!\\nForget about your loss and move forward with courage!"
+                }
+              ]
+            },
+            {"cmd":"text","text":"Your second battle in the World Cup will start soon, good luck!"},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"call","fn":"advanceQuestToStage","args":["SecondWorldCupBattle",2]},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":537,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Prof Elm cell",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":207,"value":true},
+              "then": [{"cmd":"text","text":"Hi \\PN!\\nCalling to congratulate on the win against Nessa!"}],
+              "else": [
+                {
+                  "cmd": "text",
+                  "text": "Hi \\PN!\\nCalling to encourage you for the third battle! \\nGive it your best!"
+                }
+              ]
+            },
+            {"cmd":"text","text":"Your third battle in the World Cup will start soon, good luck!"},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"call","fn":"advanceQuestToStage","args":["ThirdWorldCupBattle",2]},
+            {"cmd":"selfSwitch","ch":"C","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"C"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":214,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Prof Elm cell",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "text",
+              "text": "Hi \\PN!\\nCalling to congratulate you on the classification to the Round of 16!"
+            },
+            {"cmd":"text","text":"Can't wait to see the the draw and your next battle!"},
+            {"cmd":"erasePicture","id":1},
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["RoundOf16Battle",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"selfSwitch","ch":"B","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":217,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playMe","audio":{"name":"Phone","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Prof Elm cell",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "text",
+              "text": "Hi \\PN!\\nCalling to congratulate you on the classification to the Round of 8!"
+            },
+            {
+              "cmd": "text",
+              "text": "Your next battle will be against \\v[111], or Agen 017, as he likes to be called nowadays."
+            },
+            {"cmd":"erasePicture","id":1},
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["RoundOf8Battle",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"selfSwitch","ch":"C","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"C"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":213,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.0},
+            {"cmd":"text","text":"\\PN lost the World Cup..."},
+            {"cmd":"text","text":"But he still has a lot of potential to grow!"},
+            {"cmd":"text","text":"The journey continues!"},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+            {"cmd":"switches","from":224,"to":224,"value":true},
+            {"cmd":"selfSwitch","ch":"D","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"D"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 5,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":110,"x":9,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 3,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"text","text":"A comfy bed!\\nDo you want to rest a bit?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.75},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"text","text":"Ah, refreshed and restored!"},
+                  {"cmd":"call","fn":"completeQuest","args":["HotelCheckIn"]},
+                  {"cmd":"switches","from":535,"to":535,"value":true}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":535,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":203,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"text","text":"A comfy bed!\\nDo you want to rest a bit?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.75},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"text","text":"Ah, refreshed and restored!"},
+                  {"cmd":"switches","from":536,"to":536,"value":true}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":536,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":206,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"text","text":"A comfy bed!\\nDo you want to rest a bit?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.75},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"text","text":"Ah, refreshed and restored!"},
+                  {"cmd":"switches","from":537,"to":537,"value":true}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":537,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

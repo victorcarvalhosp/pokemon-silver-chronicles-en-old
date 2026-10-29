@@ -1,0 +1,307 @@
+{
+  "id": 473,
+  "name": "Topo",
+  "tilesetId": 25,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,72,130,116,116,116,116,116,116,116,116,116,64,48,48,48,48,48],
+      [48,48,48,72,112,96,96,96,96,96,96,96,96,120,64,48,48,48,48,48],
+      [48,48,48,72,112,96,96,96,96,96,96,96,96,120,64,48,48,48,48,48],
+      [48,48,48,72,112,96,96,96,96,96,96,96,96,120,64,48,48,48,48,48],
+      [48,48,48,72,112,96,96,96,96,96,96,96,96,120,64,48,48,48,48,48],
+      [48,48,48,72,112,96,96,96,96,96,96,0,96,96,64,48,48,48,48,48],
+      [48,48,48,72,112,124,124,124,124,124,124,0,124,100,64,48,48,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,406,406,406,406,406,406,406,406,406,406,0,0,0,0,0,0],
+      [0,0,0,0,414,414,414,414,414,414,414,414,414,414,0,0,0,0,0,0],
+      [0,0,0,0,138,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,128,0,0,558,559,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,137,0,0,566,567,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,423,0,691,692,0,418,419,464,465,0,0,0,0,0,0],
+      [0,0,0,0,0,431,0,699,700,0,426,427,472,473,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,480,481,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,558,673,0,639,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,566,567,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,142,0,0,639,639,0,0,138,0,0,0,0,0,0,0,0],
+      [0,0,0,0,2834,0,0,0,0,0,139,123,0,2834,0,0,0,0,0,0],
+      [0,0,0,0,2842,0,584,585,586,0,0,140,0,2842,0,0,0,0,0,0],
+      [0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":472,"x":8,"y":16,"direction":8,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Dp_gimboy",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bEspere um momento...\\nVocê não é \\PN?!"},
+            {"cmd":"text","text":"\\bEu o(a) conheço através da televisão!"},
+            {"cmd":"text","text":"\\bVocê é um(a) grande treinador(a)!"},
+            {"cmd":"text","text":"\\b..."},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "text",
+              "text": "\\bTenho um Pokémon aqui que não evolue, talvez ele precise um(a) treinador(a) como você para poder crescer forte!"
+            },
+            {"cmd":"text","text":"\\bGostaria de levar ele com você?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"op":"==","left":{"call":"$player.party.length"},"right":6}},
+                    "then": [
+                      {
+                        "cmd": "text",
+                        "text": "\\bSeu grupo está cheio!\\n Deposite um Pokémon e volte aqui."
+                      }
+                    ],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"switch":27,"value":true},
+                        "then": [
+                          {
+                            "cmd": "if",
+                            "cond": {"switch":227,"value":true},
+                            "then": [
+                              {"cmd":"text","text":"Oh, obrigado!"},
+                              {"cmd":"text","text":"Cuide bem dele por favor!"},
+                              {
+                                "cmd": "playMe",
+                                "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                              },
+                              {
+                                "cmd": "call",
+                                "fn": "pbAddPokemon",
+                                "args": [{"call":"PBSpecies::BULBASAUR"},25]
+                              },
+                              {"cmd":"selfSwitch","ch":"A","value":true}
+                            ],
+                            "else": [
+                              {"cmd":"text","text":"Oh, obrigado!"},
+                              {"cmd":"text","text":"Cuide bem dele por favor!"},
+                              {
+                                "cmd": "playMe",
+                                "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                              },
+                              {
+                                "cmd": "call",
+                                "fn": "pbAddPokemon",
+                                "args": [{"call":"PBSpecies::CHARMANDER"},25]
+                              },
+                              {"cmd":"selfSwitch","ch":"A","value":true}
+                            ]
+                          }
+                        ],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {"switch":28,"value":true},
+                            "then": [
+                              {
+                                "cmd": "if",
+                                "cond": {"switch":228,"value":true},
+                                "then": [
+                                  {"cmd":"text","text":"Oh, obrigado!"},
+                                  {"cmd":"text","text":"Cuide bem dele por favor!"},
+                                  {
+                                    "cmd": "playMe",
+                                    "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                                  },
+                                  {
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"PBSpecies::BULBASAUR"},25]
+                                  },
+                                  {"cmd":"selfSwitch","ch":"A","value":true}
+                                ],
+                                "else": [
+                                  {"cmd":"text","text":"Oh, obrigado!"},
+                                  {"cmd":"text","text":"Cuide bem dele por favor!"},
+                                  {
+                                    "cmd": "playMe",
+                                    "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                                  },
+                                  {
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"PBSpecies::SQUIRTLE"},25]
+                                  },
+                                  {"cmd":"selfSwitch","ch":"A","value":true}
+                                ]
+                              }
+                            ],
+                            "else": [
+                              {
+                                "cmd": "if",
+                                "cond": {"switch":228,"value":true},
+                                "then": [
+                                  {"cmd":"text","text":"Oh, obrigado!"},
+                                  {"cmd":"text","text":"Cuide bem dele por favor!"},
+                                  {
+                                    "cmd": "playMe",
+                                    "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                                  },
+                                  {
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"PBSpecies::CHARMANDER"},25]
+                                  },
+                                  {"cmd":"selfSwitch","ch":"A","value":true}
+                                ],
+                                "else": [
+                                  {"cmd":"text","text":"Oh, obrigado!"},
+                                  {"cmd":"text","text":"Cuide bem dele por favor!"},
+                                  {
+                                    "cmd": "playMe",
+                                    "audio": {"name":"pegapokemon","volume":100,"pitch":100}
+                                  },
+                                  {
+                                    "cmd": "call",
+                                    "fn": "pbAddPokemon",
+                                    "args": [{"call":"PBSpecies::SQUIRTLE"},25]
+                                  },
+                                  {"cmd":"selfSwitch","ch":"A","value":true}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [{"cmd":"text","text":"\\bOh...Que pena.\\nTenho certeza que ele ficaria feliz..."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Dp_gimboy",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bEu não consigo evoluir meus Pokémons..."},
+            {"cmd":"text","text":"\\bTalvez seja porque eu tenho preguiça de batalhar...rs"}
+          ]
+        }
+      ]
+    }
+  ]
+}

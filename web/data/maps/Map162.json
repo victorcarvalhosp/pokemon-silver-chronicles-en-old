@@ -1,0 +1,612 @@
+{
+  "id": 162,
+  "name": "Move Deleter House",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,384,384,384,384,384,384,384,384,384,384,64,48,48,48,48],
+      [48,48,48,48,72,392,392,392,392,392,392,392,392,392,392,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,584,585,594,557,558,0,0,551,555,556,0,0,0,0,0],
+      [0,0,0,0,0,592,593,602,565,566,0,0,559,563,564,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,626,627,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,634,635,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,487,0,0,0,0,0,0,0,0,487,0,0,0,0,0],
+      [0,0,0,0,0,495,0,1100,1101,1102,0,0,0,0,495,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,401,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,409,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 3,
+      "name": "Move Tutor",
+      "x": 11,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 10",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Your quest for power has brought you here..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Very well."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Let me reward your passion with some absolute astounding moves."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"They're the ultimate moves!"},
+            {"cmd":"label","name":"Start"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Shall I teach them to you Pokémon?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "Notice the choices here are correct, don't want to ",
+                      "teach the move to the initial Pokémon, because we ",
+                      "already gave the proper Z-Crystal for the initial type."
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"switch":996,"value":true},
+                    "then": [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"pbMoveTutorChoose","args":["BLASTBURN"]}},
+                        "then": [],
+                        "else": [{"cmd":"jump","label":"Start"}]
+                      }
+                    ],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"switch":997,"value":true},
+                        "then": [
+                          {
+                            "cmd": "if",
+                            "cond": {"script":{"call":"pbMoveTutorChoose","args":["HYDROCANNON"]}},
+                            "then": [],
+                            "else": [{"cmd":"jump","label":"Start"}]
+                          }
+                        ],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {"script":{"call":"pbMoveTutorChoose","args":["FRENZYPLANT"]}},
+                            "then": [],
+                            "else": [{"cmd":"jump","label":"Start"}]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Hmm... Well, that is fine, as well.\\nVisit if you have a change of heart."
+                  }
+                ]
+              ],
+              "cancel": 1
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Come back any time!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Move Tutor",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 11",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hohoho...\\nThey call me Grandma Wilma."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I sense a slight talent as a Dragon Tamer in you."},
+            {"cmd":"label","name":"Start"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Would you like me to teach a move to one of your Pokémon?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"pbMoveTutorChoose","args":["DRACOMETEOR"]}},
+                    "then": [],
+                    "else": [{"cmd":"jump","label":"Start"}]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Well, perhaps if you change your mind, do come back."}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Move Relearner",
+      "x": 5,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"isTempSwitchOff?","args":["A"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Me?\\nI'm the Pokémon Move Maniac."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I know every single move that Pokémon learn growing up."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"I'm also a collector of Heart Scales."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "If you bring me one, I'll teach a move to one of your Pokémon."
+                },
+                {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"$bag.has?","args":["HEARTSCALE"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Oh! That's it! That's an honest to goodness Heart Scale!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "Let me guess, you want me to teach one of your Pokémon a move?"
+                },
+                {
+                  "cmd": "choices",
+                  "choices": ["Yes","No"],
+                  "branches": [
+                    [
+                      {"cmd":"label","name":"ChoosePokemon"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"Which Pokémon needs tutoring?"},
+                      {
+                        "cmd": "script",
+                        "ruby": "pbChoosePokemon(1, 3, proc{ |pkmn|\n  pkmn.can_relearn_move?\n  }, true\n)"
+                      },
+                      {
+                        "cmd": "comment",
+                        "lines": [
+                          "If Game Variable 1 is less than 0, it means the player ",
+                          "has canceled choosing a Pokémon."
+                        ]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":1,"op":"<","value":0},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "If your Pokémon need to learn a move, come back with a Heart Scale."
+                          }
+                        ],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {"script":{"call":"egg?","on":{"call":"pbGetPokemon","args":[1]}}},
+                            "then": [
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "Hunh? There isn't a single move that I can teach an Egg."
+                              },
+                              {"cmd":"jump","label":"ChoosePokemon"}
+                            ]
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {"call":"shadowPokemon?","on":{"call":"pbGetPokemon","args":[1]}}
+                            },
+                            "then": [
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "No way, I don't want to go near a Shadow Pokémon."
+                              },
+                              {"cmd":"jump","label":"ChoosePokemon"}
+                            ]
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {
+                                "op": "!",
+                                "value": {"call":"can_relearn_move?","on":{"call":"pbGetPokemon","args":[1]}}
+                              }
+                            },
+                            "then": [
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {"cmd":"text","text":"Sorry..."},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "It doesn't appear as if I have any move I can teach to your \\v[3]."
+                              },
+                              {"cmd":"jump","label":"ChoosePokemon"}
+                            ]
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Which move should I teach to your \\v[3]?"},
+                          {
+                            "cmd": "if",
+                            "cond": {
+                              "script": {
+                                "call": "pbRelearnMoveScreen",
+                                "args": [{"call":"pbGetPokemon","args":[1]}]
+                              }
+                            },
+                            "then": [
+                              {"cmd":"call","fn":"$bag.remove","args":["HEARTSCALE"]},
+                              {"cmd":"text","text":"\\PN handed over one Heart Scale in exchange."},
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "If your Pokémon need to learn a move, come back with a Heart Scale."
+                              }
+                            ],
+                            "else": [
+                              {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                              {
+                                "cmd": "text",
+                                "text": "If your Pokémon need to learn a move, come back with a Heart Scale."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "If your Pokémon need to learn a move, come back with a Heart Scale."
+                      }
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "If your Pokémon need to learn a move, come back with a Heart Scale."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Move Deleter",
+      "x": 12,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 06",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bUh...\\nOh, yes, I'm the Move Deleter."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI can make Pokémon forget their moves."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWould you like me to do that?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"label","name":"ChoosePokemon"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bWhich Pokémon should forget a move?"},
+                  {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "If Game Variable 1 is less than 0, it means the player ",
+                      "has canceled choosing a Pokémon."
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"<","value":0},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "\\bCome again if there are moves that need to be forgotten."
+                      }
+                    ],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"egg?","on":{"call":"pbGetPokemon","args":[1]}}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\bWhat? No Egg should know any moves."},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"shadowPokemon?","on":{"call":"pbGetPokemon","args":[1]}}},
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bWhat? I can't make a Shadow Pokémon forget a move."
+                          },
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": "==",
+                            "left": {"call":"numMoves","on":{"call":"pbGetPokemon","args":[1]}},
+                            "right": 1
+                          }
+                        },
+                        "then": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"\\b\\v[3] seems to know only one move..."},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bWhich move should be forgotten?"},
+                      {
+                        "cmd": "call",
+                        "fn": "pbChooseMove",
+                        "args": [{"call":"pbGetPokemon","args":[1]},2,4]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":2,"op":"<","value":0},
+                        "then": [{"cmd":"jump","label":"ChoosePokemon"}],
+                        "else": [
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {
+                            "cmd": "text",
+                            "text": "\\bHm! \\v[3]'s \\v[4]? That move should be forgotten?"
+                          },
+                          {
+                            "cmd": "choices",
+                            "choices": ["Yes","No"],
+                            "branches": [
+                              [
+                                {
+                                  "cmd": "playMe",
+                                  "audio": {"name":"013-Gag02","volume":100,"pitch":100}
+                                },
+                                {"cmd":"wait","seconds":4.0},
+                                {
+                                  "cmd": "script",
+                                  "ruby": "pbGetPokemon(1).forget_move_at_index(\n   pbGet(2))"
+                                },
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {"cmd":"text","text":"\\bIt worked to perfection!"},
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {"cmd":"text","text":"\\b\\v[3] has forgotten \\v[4] completely."}
+                              ],
+                              [
+                                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                                {
+                                  "cmd": "text",
+                                  "text": "\\bCome again if there are moves that need to be forgotten."
+                                }
+                              ]
+                            ],
+                            "cancel": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\bCome again if there are moves that need to be forgotten."
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 8,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":158,"x":16,"y":46,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

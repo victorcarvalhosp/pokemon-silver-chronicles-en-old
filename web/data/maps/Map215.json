@@ -1,0 +1,247 @@
+{
+  "id": 215,
+  "name": "Casa  Name rater",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,384,384,384,384,384,384,384,384,384,384,64,48,48,48,48],
+      [48,48,48,48,72,392,392,392,392,392,392,392,392,392,392,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,72,429,429,429,429,429,429,429,429,429,429,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,584,585,594,557,558,0,0,551,555,556,0,0,0,0,0],
+      [0,0,0,0,0,592,593,602,565,566,0,0,559,563,564,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,626,627,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,604,634,635,604,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,487,0,0,0,0,0,0,0,0,487,0,0,0,0,0],
+      [0,0,0,0,0,495,0,1100,1101,1102,0,0,0,0,495,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,902,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,910,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Character17 nø6",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Oi, oi! Estou o Name Rater! Eu sou a fortuna - caixas de Nomes!"},
+            {"cmd":"text","text":"Vou estar satisfeito com a troca do apelido de seu  Pokemon."},
+            {
+              "cmd": "choices",
+              "choices": ["OK","CANCELA"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"Qual Pokemon que eu deveria trocar o nome?"},
+                  {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"<","value":0},
+                    "then": [{"cmd":"text","text":"Vejo. Vêm visitar novamente."},{"cmd":"exitEvent"}]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"egg?","on":{"call":"pbGetPokemon","args":[1]}}},
+                    "then": [
+                      {"cmd":"text","text":"Agora, agora ... Esse é apenas um ovo!"},
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {
+                      "script": {
+                        "call": "isForeign?",
+                        "on": {"call":"pbGetPokemon","args":[1]},
+                        "args": [{"call":"$player"}]
+                      }
+                    },
+                    "then": [
+                      {"cmd":"text","text":"Hmmm...  \\v[3] é isso!"},
+                      {
+                        "cmd": "text",
+                        "text": "Trata - se de um magnífico apelido! É impecavelmente Irrepreensível!"
+                      },
+                      {
+                        "cmd": "text",
+                        "text": "Você vai fazer o melhor para nutrir seu \\v[3] agora e para além dela."
+                      },
+                      {"cmd":"exitEvent"}
+                    ]
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "Hmmm...  \\v[3], is it?  That is quite a fine name you bestowed."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "Mas! Que dizer que, se eu estivesse a dar - lhe um nome melhor?"
+                  },
+                  {
+                    "cmd": "choices",
+                    "choices": ["SIM","NÃO"],
+                    "branches": [
+                      [
+                        {"cmd":"text","text":"Ah, bom. Então, qual deve ser o novo apelido?"},
+                        {
+                          "cmd": "script",
+                          "ruby": "pkmn=$player.party[\npbGet(1)]\nspecies=PBSpecies.getName(\npkmn.species)\npbTextEntry(\"#{species}'s nickname?\",\n0,10,5)"
+                        },
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {"op":"==","left":{"call":"$game_variables[]","args":[5]},"right":""},
+                              "right": {
+                                "op": "==",
+                                "left": {"call":"$game_variables[]","args":[5]},
+                                "right": {"call":"pbGet","args":[3]}
+                              }
+                            }
+                          },
+                          "then": [
+                            {
+                              "cmd": "text",
+                              "text": "Feito! De agora em diante, este será conhecido Pokemon Como \\v[3]!"
+                            },
+                            {
+                              "cmd": "text",
+                              "text": "Parece não diferente dos anteriores, e, no entanto, esta é Muito superiores!"
+                            },
+                            {"cmd":"text","text":"Sorte para você!"}
+                          ],
+                          "else": [
+                            {
+                              "cmd": "script",
+                              "ruby": "pkmn=$player.party[\npbGet(1)]\npkmn.name=pbGet(5)"
+                            },
+                            {
+                              "cmd": "text",
+                              "text": "Feito! De agora em diante, este Pokemon será conhecido  Como \\v[5]!"
+                            },
+                            {
+                              "cmd": "text",
+                              "text": "Trata - se de um nome melhor do que antes! Sorte para Você!"
+                            }
+                          ]
+                        }
+                      ],
+                      [{"cmd":"text","text":"Vejo. Vêm visitar novamente."}]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [{"cmd":"text","text":"Vejo. Vêm visitar novamente."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 8,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":209,"x":11,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

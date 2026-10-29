@@ -1,0 +1,338 @@
+{
+  "id": 462,
+  "name": "Celadon City - Dept. Store 4F",
+  "tilesetId": 2,
+  "width": 23,
+  "height": 18,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,72,1080,1080,1099,1099,1099,1099,1099,1099,1099,1099,1099,64,48,48,48],
+      [48,48,48,48,48,48,48,72,1080,1080,1107,1107,1107,1107,1107,1107,1107,1107,1107,64,48,48,48],
+      [48,48,48,48,48,48,52,86,1090,1090,1090,1090,1090,1090,1090,1090,1090,1090,1090,88,56,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1090,1090,1090,1090,1090,1090,1090,1099,1090,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1090,1090,1090,1090,1090,1090,1090,1107,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,72,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,1080,64,48,48],
+      [48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,1099,1099,1099,1099,1100,1101,1102,1099,1099,1099,1099,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1107,1107,1107,1107,1108,1109,1110,1107,1107,1238,1239,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1235,1236,1237,0,1125,1126,1127,0,0,1246,1247,0,0,0,0],
+      [0,0,0,0,0,0,0,1099,1099,1099,1245,0,0,0,0,0,1253,1066,1099,1099,0,0,0],
+      [0,0,0,0,0,0,0,1107,1107,1107,0,0,0,0,0,0,0,1074,1107,1107,0,0,0],
+      [0,0,0,0,0,0,0,1091,1091,1091,1091,1091,1091,1091,1091,1091,1091,1091,1091,1091,0,0,0],
+      [0,0,0,0,0,0,0,0,870,871,0,0,901,902,903,0,901,902,903,0,0,0,0],
+      [0,0,0,0,0,0,0,0,878,879,0,0,909,910,911,0,909,910,911,0,0,0,0],
+      [0,0,0,0,0,0,0,0,886,887,0,0,901,902,903,0,901,902,903,0,0,0,0],
+      [0,0,0,0,0,0,0,0,894,895,0,0,909,910,911,0,909,910,911,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1132,1129,1129,1143,1129,1129,1129,1134,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1144,1121,1121,1123,1121,1121,1121,1122,0,0,0,0,1173,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1138,0,439,439,0,1181,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1160,0,447,447,0,1189,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,384,0,0,0,0,420,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,428,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,1118,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,1067,0,0,0,0,0,0,0,0,885,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,1075,0,0,0,0,0,0,0,0,893,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk053-shopkeeper",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokemonMart","args":[["POKEDOLL","FLUFFYTAIL","POKETOY"]]}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 11,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Gifts to Express Yourself!\\n4F: Wiseman Gifts"}]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "EV027",
+      "x": 9,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"alwaysOnTopOn"},
+                  {"move":"throughOff"},
+                  {"move":"alwaysOnTopOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":461,"x":9,"y":2,"direction":6,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "EV028",
+      "x": 17,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"alwaysOnTopOn"},
+                  {"move":"throughOff"},
+                  {"move":"alwaysOnTopOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":463,"x":17,"y":2,"direction":4,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "EV029",
+      "x": 13,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":465,"x":7,"y":10,"direction":8,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "EV030",
+      "x": 6,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":29,"to":29,"op":"set","value":4}]
+        }
+      ]
+    }
+  ]
+}

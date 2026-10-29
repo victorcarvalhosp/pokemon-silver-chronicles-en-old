@@ -1,0 +1,1117 @@
+{
+  "id": 47,
+  "name": "Slowpoke Well",
+  "tilesetId": 8,
+  "width": 25,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"Cave","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [288,292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,328,296,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,328,296,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,290,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,289,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288]
+    ],
+    [
+      [288,292,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,316,296,288,288,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288,288,288],
+      [288,312,4374,4359,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4351,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,4515,0,0,0,0,4374,4374,4374,4374,4374,4374,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,0,4515,0,0,0,4382,4382,4382,4382,4382,4382,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,0,4515,0,0,0,0,0,4515,0,0,0,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,4515,4515,4515,0,0,0,0,4509,4510,0,0,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,0,0,0,0,4515,0,0,0,0,0,4517,4518,0,0,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,4515,0,0,0,4516,0,0,0,0,4516,4515,4515,0,0,0,4373,4374,304,288,288,288],
+      [288,312,4374,4375,4515,0,0,4515,4515,4515,4515,4515,4515,4515,4516,4515,0,0,0,4373,4374,328,316,296,288],
+      [288,312,4374,4375,0,0,0,4515,4515,4515,4516,4516,4515,4515,4515,4515,0,0,0,4373,4374,4374,4374,304,288],
+      [288,312,4374,4375,0,0,0,4515,4515,4516,4515,4515,4515,4515,4515,4515,0,0,0,4381,4382,4351,4374,304,288],
+      [288,312,4374,4375,0,0,0,4515,4516,4516,4515,4365,4366,4366,4366,4366,4367,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,0,0,0,4516,4515,4515,4515,4373,4374,4374,4374,4374,4375,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,0,0,4515,4365,4366,4366,4366,4364,4359,4382,4382,4382,4383,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,0,0,4515,4373,4374,4374,4374,4374,4375,274,260,260,276,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,274,260,276,4381,4382,4382,4382,4382,4383,256,240,240,264,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,256,240,242,260,260,260,276,4515,4515,256,240,240,264,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4375,280,268,268,268,268,268,278,4515,4515,280,268,268,278,0,0,0,0,4373,4374,304,288],
+      [288,312,4374,4363,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4364,4374,304,288],
+      [288,312,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,4374,304,288],
+      [288,290,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,308,289,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288],
+      [288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,4359,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4382,4351,0,0,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,4507,0,0,0,4365,4366,4366,4366,4366,4366,4366,4367,4373,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,0,4507,0,0,4373,4374,4374,4374,4374,4374,4374,4375,4373,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,0,4507,0,0,4381,4382,4343,4507,4382,4382,4343,4383,0,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,4507,4507,4507,0,0,0,0,0,0,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,0,4507,0,0,0,0,0,0,0,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,4507,0,0,0,4508,0,0,0,0,4508,4507,4507,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,4507,0,0,4507,4507,4507,4507,4507,4507,4507,4508,4507,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,4507,4507,4507,4508,4507,4507,4507,4507,4507,0,0,0,0,4373,0,0,0,0],
+      [0,0,4375,0,0,0,0,4507,4507,4507,4507,4507,4507,4507,4507,4507,0,0,0,0,4381,4382,4351,0,0],
+      [0,0,4375,0,0,0,0,4507,4508,4507,4507,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4375,0,0,0,0,4508,4507,4507,4507,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4375,0,0,0,4507,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4375,0,0,0,4507,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4544,0,0,4373,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,4507,4507,0,0,0,0,0,0,4552,0,0,4373,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,4507,4507,0,0,0,0,0,0,4560,4561,0,4373,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4373,0,0],
+      [0,0,4363,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4366,4364,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 19,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {
+              "cmd": "if",
+              "cond": {"character":-1,"direction":2},
+              "then": [
+                {"cmd":"switches","from":965,"to":965,"value":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"down"},
+                      {"move":"throughOff"},
+                      {"move":"speed","value":2},
+                      {"move":"frequency","value":2},
+                      {"move":"backward"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"throughOn"},
+                      {"move":"alwaysOnTopOn"},
+                      {"move":"speed","value":2},
+                      {"move":"frequency","value":2},
+                      {"move":"up"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":42,"x":51,"y":8,"direction":0,"fade":false},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"alwaysOnTopOff"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"switches","from":965,"to":965,"value":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":965,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4552,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 18,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "kurt",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bHey there, \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bThe guard up took off when I shouted at him."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bBut then I took a tumble down the well."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKurt]\\bI slammed down hard on my back, so I can't move very well."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKurt]\\bRats! If I were fit, my Pokémon would've punished them..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bAh, it can't be helped."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\b\\PN, show them how gutsy you are in my place!"}
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(4)",
+      "x": 16,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bHumph! I was standing guard up top when some old coot yelled at me."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bHe startled me so much that I fell down here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bHow about I vent my anger and take it out on you!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_Male","Grunt",1]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bSure, we've been hacking the tails off SLOWPOKE and selling them."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bTeam Rocket will do anything for money!"}
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(4)",
+      "x": 15,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk029-rocket-f",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Female"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceRocketgirl]\\rStop taking SlowpokeTails?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketgirl]\\rWhat?! You want us to disobey a direct order from Executive Proton?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketgirl]\\rIf you want to stop us, you'll have to defeat us all! Go ahead and try!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_Female","Grunt",1]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk029-rocket-f",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceRocketgirl]\\rSlowpokeTails grow back fast!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketgirl]\\rBesides, it was an order from Proton, so I'm more concerned about that!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 13,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 413,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["SUPERPOTION"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Trainer(4)",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bQuit taking SlowpokeTails?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bIf we listened to you, Team Rocket's rep would be ruined!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_Male","???",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bWe need the money, but selling SlowpokeTails?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bIt's tough being a Team Rocket Grunt!"}
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk085-slowpokesemcauda",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"A Slowpoke with its tail cut of..."},
+            {"cmd":"text","text":"Huh? It has Mail. Read it?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"\\PN read the Mail."},
+                  {
+                    "cmd": "text",
+                    "text": "Be good and look after the house with Grandpa and SLOWPOKE."
+                  },
+                  {"cmd":"text","text":"Love, Dad"}
+                ],
+                []
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "StrengthBoulder",
+      "x": 6,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 403,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [{"cmd":"call","fn":"pbPushThisBoulder","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk085-slowpokesemcauda",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"A Slowpoke with its tail cut of..."}]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Proton",
+      "x": 8,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer127c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_PROTON"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceProton]\\bProton: What do we have here?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceProton]\\bI am often labeled as the scariest and cruelest guy in Team Rocket..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceProton]\\bI strongly urge you not to interfere with our business!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_PROTON","Proton",1]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceProton]\\bHumph...\\nTeam Rocket was indeed broken up three years ago. But we continued our activities underground."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceProton]\\bA small obstacle like you won't be much of a problem for our mission."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceProton]\\bI advise you to be very afraid of what is to come!"
+                },
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":1.0},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.5},
+                {"cmd":"switches","from":47,"to":47,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 13,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "kurt",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"left"},{"move":"left"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bKurt: Way to go, \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bTeam Rocket has taken off."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKurt]\\bMy back's better, too.\\nLet's get out of here."},
+            {"cmd":"call","fn":"completeQuest","args":["SlowpokeWell"]},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":43,"x":6,"y":6,"direction":8,"fade":false},
+            {"cmd":"switches","from":51,"to":51,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":51,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 18,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":47,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk085-slowpoke",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 1,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Slowpoke:.."},
+            {"cmd":"text","text":"........"},
+            {"cmd":"text","text":"Yawn?"},
+            {"cmd":"playSe","audio":{"name":"079Cry","volume":80,"pitch":100}},
+            {"cmd":"call","fn":"WildBattle.start","args":["SLOWPOKE",15]},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 6,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 413,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["KINGSROCK"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

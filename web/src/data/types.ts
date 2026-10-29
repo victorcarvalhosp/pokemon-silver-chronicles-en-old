@@ -1,4 +1,5 @@
-// Shapes of the JSON files written by tools/convert/convert.rb.
+// Shapes of the game data JSON files in web/data/ (see docs/data.md; first
+// imported from the RPG Maker XP project by tools/convert/convert.rb).
 
 import type { Command, MoveRoute } from "./events";
 

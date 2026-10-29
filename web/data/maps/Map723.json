@@ -1,0 +1,616 @@
+{
+  "id": 723,
+  "name": "Rusturf Tunnel",
+  "tilesetId": 49,
+  "width": 36,
+  "height": 24,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [1201,1201,1216,1209,1209,1209,1209,1209,1209,1217,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1216,1209,1209,1209,1209,1209,1209,1217,1201,1201],
+      [1201,1201,1202,1184,1185,1185,1185,1184,1184,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1216,1209,1209,1209,1217,1201,1200,1201,1201],
+      [1202,1201,1184,1185,1185,1184,1184,1184,1184,1185,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1201,1202,1184,1184,1185,1200,1201,1200,1201,1201],
+      [1202,1201,1216,1209,1209,1209,1209,1190,1191,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1209,1185,1185,1185,1185,1200,1201,1201,1209,1217],
+      [1202,1201,1202,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1185,1184,1200,1201,1201,1201,1200],
+      [1202,1216,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1185,1217,1201,1201,1200],
+      [1202,1202,1216,1209,1190,1191,1209,1209,1217,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1185,1209,1217,1200],
+      [1202,1202,1202,1184,1184,1184,1184,1184,1200,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1184,1184,1184,1184,1184,1184,1200,1200],
+      [1202,1202,1202,1184,1184,1184,1184,1184,1200,1200,1201,1201,1201,1201,1201,1201,1212,1212,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1185,1184,1184,1184,1184,1185,1200,1200],
+      [1202,1202,1202,1184,1184,1184,1184,1184,1200,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1185,1184,1184,1185,1185,1185,1200,1200],
+      [1202,1202,1202,1185,1185,1185,1184,1184,1200,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1216,1190,1191,1209,1209,1217,1200,1200],
+      [1202,1202,1205,1185,1185,1185,1185,1185,1205,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1216,1209,1209,1209,1209,1209,1209,1201,1202,1184,1184,1184,1184,1200,1200,1200],
+      [1202,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1212,1201,1201,1202,1216,1209,1209,1209,1209,1209,1209,1185,1184,1184,1184,1184,1200,1200,1200],
+      [1202,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1216,1209,1209,1209,1201,1202,1184,1185,1185,1185,1184,1185,1184,1184,1184,1184,1184,1200,1200,1200],
+      [1202,1201,1201,1201,1201,1201,1201,1212,1201,1201,1201,1201,1201,1201,1201,1201,1202,1216,1209,1209,1209,1185,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1185,1201,1200,1200],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1200,1201,1200,1200],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1216,1201,1202,1184,1184,1184,1184,1184,1184,1184,1184,1184,1184,1185,1185,1185,1184,1200,1201,1201,1200],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1216,1185,1184,1184,1184,1184,1185,1184,1184,1184,1184,1184,1184,1184,1184,1184,1204,1200,1201,1200],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1202,1184,1184,1184,1184,1185,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1200],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1202,1184,1184,1184,1184,1200,1201,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1202,1185,1185,1185,1184,1200,1201,1201,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1202,1204,1184,1184,1184,1184,1201,1201,1201,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1202,1201,1201,1201,1201,1201,1201,1201,1201,1201,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201],
+      [1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1218,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1192,1205,1194,0,0,1192,1205,1205,1205,1194,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1208,1213,1210,0,0,1208,1213,1213,1213,1210,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,1212,1210,0,0,0,0,0,0,1208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1210,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1210,0,0,0,0,0,1208,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1208,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1192,0,0,0,0,0,0,0,0,0,0,0,1193,0,0,0,0,0,1194,0,0,0,0,1208,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1192,1204,1204,1194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1192,1194,0,0,1208,1212,1212,1214,0,0,1192,1194,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1208,1214,0,0,0,0,0,0,0,0,1208,1214,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1218,1205,1205,1205,1205,1205,1219,0,0,0,0,0,0,0,1192,1205,1194,0,0,0,0,0,0,0,0,1210,0,0,0,0,0,0,0,0],
+      [0,1218,1205,1205,1205,1205,1205,1205,1205,1219,0,0,0,0,0,0,1208,1213,1214,0,0,0,0,0,0,0,0,0,1210,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1192,1204,1204,1194,1192,1193,1193,1193,1193,1193,1194,0,0,0,0,1210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1192,1194,1208,1212,1212,1210,1200,0,0,1192,1194,0,1202,0,0,0,0,0,1210,0,0,0,0,0,0,0,0,0,0,1192,1219,0,0],
+      [1218,1193,1194,1208,1210,0,0,1192,1204,1219,0,0,1208,1210,1216,1210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1218,1194,0,0,1192,0,0,0,0,0,0,0,0,0,1210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1192,1219,0],
+      [0,0,0,1218,1204,1204,1219,0,0,0,0,0,0,0,0,0,0,1210,0,0,0,0,1192,1193,1193,1193,1193,1193,1193,1193,1193,1193,1219,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1192,1194,0,0,0,0,0,0,0,0,0,1192,1219,1192,1193,1193,1193,1193,1193,1193,1193,1193,1193,1219,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1208,1210,0,0,0,0,0,0,0,0,0,0,0,0,1192,1193,1193,1193,1193,1193,1193,1193,1193,1193,1193,1219],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1192,1219,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1218,1193,1193,1193,1193,1219,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1192,1205,1194,0,0,0,0,0,0,1218,1193,1193,1193,1193,1193,1193,1219,0,0,0,0,1192,1205,1194,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1208,1213,1210,0,0,0,0,0,1218,1193,1193,1193,1193,1193,1193,1193,1193,1193,1219,0,0,1211,1213,1210,0,0,0,0,0,0]
+    ],
+    [
+      [1188,1189,0,0,0,0,0,0,0,0,0,1189,0,0,0,0,0,1189,0,0,0,0,0,1188,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1189,0,0,0,0,0,0,0,0,0,0,0,1180,0,0,0,1189,0,0,0],
+      [1216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1188,1189,0,0,1189,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1180,0,0,0,0,0],
+      [0,0,0,1186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1188,0,0,0,0,0],
+      [0,0,0,1187,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1193,1193,1193,1193,1193,1193,1193,1193,1193,1193,1193,1180,1193,1193,1193,1193,1193,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1186,0,0,0,0,1180,0,1188,0,0,1186,0,0,0,0,0,0,0,0,1187,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1180,0,0,0,0,0,1188,0,0,0,0,0,1180,1186,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,1188,0,0,1186,0,0,0,0,0,0,0,0,1188,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1186,0,0,1189,0,0,0,0,1180,0,0,0,0,0,0,1186,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1195,1196,1197,0,0,0,0,0,0,0,0,0,1188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1187,1187,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1186,0,0,0],
+      [0,1180,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1186,0,0,0,1186,0,0,0,0,0,0,0,0,0],
+      [0,1188,0,0,0,0,0,0,0,0,0,1180,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1189,1188,0,0,0,0,0,0,0,0,1186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [1189,1180,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1186,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,1188,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1195,1196,1197,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1186,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1195,1196,1197,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 18,
+      "y": 21,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":672,"x":65,"y":13,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 29,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":285,"x":14,"y":6,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":884,"to":884,"value":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":883,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":285,"x":14,"y":6,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 29,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Trainer058_c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"You trying to get to Verdanturf?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"This can wait."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Verdanturf will still be there tomorrow.\\nBut the Great Butler's Magic Show?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm sure you can't wait to see his show!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Just go through the other exit to arrive there."}
+          ]
+        },
+        {
+          "condition": {"switch1":878,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "SmashRock",
+      "x": 18,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 360,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "SmashRock",
+      "x": 23,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 360,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 15,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dp_operario",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We are always working to keep everything in order in the tunnel."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 21,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dp_operario",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I enjoy working here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"This strengthens my muscles!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 20,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "geodude",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Geodude: Grhhhdudd!"},
+            {"cmd":"playSe","audio":{"name":"074Cry","volume":80,"pitch":100}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "SmashRock",
+      "x": 30,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk107-rocksmash",
+            "characterHue": 360,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbRockSmash"}},
+              "then": [
+                {"cmd":"call","fn":"pbEraseThisEvent","args":[]},
+                {"cmd":"call","fn":"pbRockSmashRandomEncounter","args":[]}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 3,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbItemBall","args":["GREATBALL",5]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 4,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"call","fn":"pbCaveExit","args":[]},
+            {"cmd":"transfer","map":672,"x":47,"y":11,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

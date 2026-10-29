@@ -1,0 +1,852 @@
+{
+  "id": 814,
+  "name": "Observatório",
+  "tilesetId": 17,
+  "width": 25,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"Team_Aqua_Magma_Hideout_2","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,628,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,628,628,628,628,628,628,628,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,628,628,628,628,628,628,628,625,625,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,628,628,628,628,628,628,628,625,625,617,0,0,0,0,0,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0],
+      [0,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,625,0,625,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,617,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,620,0,0,0,0,0,620,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,638,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,617,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,617,0,0,0,0,0,0,0,0,0,620,625,0,0,0,0,0],
+      [624,0,0,0,0,0,620,0,0,0,0,617,617,617,0,0,0,0,0,620,620,0,0,0,626],
+      [624,0,0,0,620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,0,0,635,0,0,0,0,0,0,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,625,0,0,0,0,0,0,0,625,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,627,0,0,0,0,0,0,0,629,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,627,0,0,0,0,0,0,0,629,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,627,0,0,0,0,0,0,0,629,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,627,0,0,0,0,0,0,0,629,0,0,0,0,0,0,0,626],
+      [624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,626]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,4167,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,619,4175,621,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,619,619,620,639,0,638,620,621,621,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,619,639,624,0,0,0,0,0,638,621,620,620,621,0,0,0,0,0],
+      [0,0,0,619,620,620,620,639,616,639,0,0,0,0,0,0,629,617,618,638,621,0,0,0,0],
+      [619,620,620,639,625,625,616,617,627,0,0,0,0,0,0,0,629,0,629,621,638,620,620,620,621],
+      [0,0,625,625,616,617,627,0,627,0,616,619,617,621,618,0,629,0,626,629,617,617,618,0,0],
+      [0,0,616,617,627,0,624,0,627,0,624,632,633,634,626,0,629,0,626,638,618,0,626,0,0],
+      [0,0,624,0,624,0,624,0,627,0,632,633,625,633,634,0,629,0,638,618,626,0,626,0,0],
+      [0,0,624,0,624,0,624,0,627,0,0,0,0,0,0,0,629,0,610,634,626,0,626,0,0],
+      [0,0,624,0,624,0,624,0,635,633,633,633,633,633,633,633,637,0,626,610,634,0,626,0,0],
+      [0,0,624,0,624,0,632,633,633,633,633,633,633,633,633,633,633,633,634,626,0,0,626,0,0],
+      [0,0,624,0,632,633,633,633,633,633,633,633,633,633,633,633,633,633,633,634,0,0,626,0,0],
+      [0,0,632,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,634,0,0],
+      [632,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,634],
+      [632,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,633,634]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 0,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"mapSettings","type":"panorama","parameters":["007-Ocean01",0]},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 15,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"switches","from":623,"to":623,"value":true},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"playMe","audio":{"name":"Encounter-Team_Magma","volume":100,"pitch":100}},
+            {"cmd":"scrollMap","direction":8,"distance":4,"speed":4},
+            {"cmd":"scrollMap","direction":4,"distance":4,"speed":4},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"text","text":"\\f[faceButler]\\bAinda não consigo observar o cometa..."},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bEsse telescópio é muito pequeno para os nossos propósitos!"
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bAssim corremos o risco de perder Jirachi!"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bÉ esse o plano genial e o investimento que vocês tem para mim?!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bPreciso um telescópio melhor ou todos os nossos planos irão por água abaixo!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facemagmalider]\\bFique tranquilo Butler, já estamos providenciando isso."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facemagmalider]\\bEstamos instalando um belo observatório para você na Cidade de Mosdeep, realmente temos uma estrutura impecável lá!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bEntão devemos ir para lá o mais rápido possível!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bSegundo meus cálculos o cometa estará passando pela órbita terrestre ainda essa semana."
+            },
+            {"cmd":"text","text":"\\f[facemagmalider]\\bJá podemos ir agora mesmo então."},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"scrollMap","direction":2,"distance":4,"speed":4},
+            {"cmd":"scrollMap","direction":6,"distance":4,"speed":4},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"turnUp"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.5},
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"down"},{"move":"down"},{"move":"right"},{"move":"right"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":625,"to":625,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.5},
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"restoreBgmBgs"},
+            {"cmd":"switches","from":624,"to":624,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":622,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":624,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "butler",
+      "x": 12,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Butler",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":624,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 12,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Magmachef",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":625,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 9,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"switches","from":622,"to":622,"value":true},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"playMe","audio":{"name":"Encounter-Team_Magma","volume":100,"pitch":100}},
+            {"cmd":"scrollMap","direction":8,"distance":4,"speed":4},
+            {"cmd":"scrollMap","direction":6,"distance":4,"speed":4},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"text","text":"\\f[faceButler]\\bAinda não consigo observar o cometa..."},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bEsse telescópio é muito pequeno para os nossos propósitos!"
+            },
+            {"cmd":"text","text":"\\f[faceButler]\\bAssim corremos o risco de perder Jirachi!"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bÉ esse o plano genial e o investimento que vocês tem para mim?!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bPreciso um telescópio melhor ou todos os nossos planos irão por água abaixo!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facemagmalider]\\bFique tranquilo Butler, já estamos providenciando isso."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facemagmalider]\\bEstamos instalando um belo observatório para você na Cidade de Mosdeep, realmente temos uma estrutura impecável lá!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bEntão devemos ir para lá o mais rápido possível!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceButler]\\bSegundo meus cálculos o cometa estará passando pela órbita terrestre ainda essa semana."
+            },
+            {"cmd":"text","text":"\\f[facemagmalider]\\bJá podemos ir agora mesmo então."},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"scrollMap","direction":2,"distance":4,"speed":4},
+            {"cmd":"scrollMap","direction":4,"distance":4,"speed":4},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"turnUp"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 4,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.5},
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"down"},{"move":"down"},{"move":"down"},{"move":"left"},{"move":"left"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":625,"to":625,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"left"},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.5},
+                  {"move":"playSe","audio":{"name":"Entering Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"restoreBgmBgs"},
+            {"cmd":"switches","from":624,"to":624,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":623,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":624,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 12,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 2,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::MAGMAKEY"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"playSe","audio":{"name":"Entering Door","volume":100,"pitch":100}},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transfer","map":804,"x":7,"y":9,"direction":0,"fade":true}
+              ],
+              "else": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 1,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"variables","from":105,"to":105,"op":"set","value":1}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 12,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Um grande telescópio para observar o céu."}]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,691 @@
+{
+  "id": 311,
+  "name": "Pokecenter",
+  "tilesetId": 3,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeCenter","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,72,385,385,385,64,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,72,393,393,393,64,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,72,401,401,401,64,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,50,68,68,68,49,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,0,0,0,0,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,384,385,385,385,385,385,385,385,385,385,385,385,386,0,0,0,0],
+      [0,0,0,392,393,393,393,494,495,0,393,393,393,393,393,394,0,0,0,0],
+      [0,0,0,400,401,401,401,502,503,0,401,401,401,401,401,402,0,0,0,0],
+      [0,0,0,439,409,409,409,409,409,409,409,409,409,409,409,410,0,0,0,0],
+      [0,0,0,439,409,409,409,409,453,454,455,409,409,409,409,409,0,0,0,0],
+      [0,0,0,439,409,409,409,409,461,462,463,409,409,409,409,409,0,0,0,0],
+      [0,0,0,439,409,409,409,409,469,470,471,409,409,409,409,409,0,0,0,0],
+      [0,0,0,439,409,409,409,409,409,409,409,409,409,409,409,409,0,0,0,0],
+      [0,0,0,492,409,409,409,409,409,409,409,409,409,409,409,493,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,387,388,0,0,0,0,0,0,0,411,0,0,0,0,0,0],
+      [0,0,0,0,395,396,412,0,0,0,0,501,415,419,0,0,0,0,0,0],
+      [0,0,0,0,403,404,420,422,421,422,422,509,423,427,0,0,0,0,0,0],
+      [0,0,0,0,0,0,428,430,429,430,430,430,431,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,446,447,0,0,0,0,0,0],
+      [0,0,0,0,389,0,0,0,0,0,0,0,432,433,0,447,0,0,0,0],
+      [0,0,0,0,397,0,0,0,0,0,0,0,440,441,0,446,0,0,0,0],
+      [0,0,0,0,405,0,0,0,496,497,498,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,504,505,506,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk046-nurse",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"text","text":"Seja bem vindo ao Centro Pokémon!"},
+            {"cmd":"text","text":"Você deseja que eu cure os seus Pokémons?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {"cmd":"text","text":"Espere alguns segundos..."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"op":"<=","left":{"call":"$player.pokemonCount"},"right":1}},
+                    "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":1}],
+                    "else": [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"op":"<=","left":{"call":"$player.pokemonCount"},"right":2}},
+                        "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":2}],
+                        "else": [
+                          {
+                            "cmd": "if",
+                            "cond": {"script":{"op":"<=","left":{"call":"$player.pokemonCount"},"right":3}},
+                            "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":3}],
+                            "else": [
+                              {
+                                "cmd": "if",
+                                "cond": {
+                                  "script": {"op":"<=","left":{"call":"$player.pokemonCount"},"right":4}
+                                },
+                                "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":4}],
+                                "else": [
+                                  {
+                                    "cmd": "if",
+                                    "cond": {
+                                      "script": {"op":"<=","left":{"call":"$player.pokemonCount"},"right":5}
+                                    },
+                                    "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":5}],
+                                    "else": [
+                                      {
+                                        "cmd": "if",
+                                        "cond": {
+                                          "script": {
+                                            "op": "<=",
+                                            "left": {"call":"$player.pokemonCount"},
+                                            "right": 6
+                                          }
+                                        },
+                                        "then": [{"cmd":"variables","from":43,"to":43,"op":"set","value":6}]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {"cmd":"wait","seconds":1.25},
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"recoverAll"},
+                  {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                  {"cmd":"wait","seconds":0.3},
+                  {"cmd":"variables","from":43,"to":43,"op":"set","value":0},
+                  {"cmd":"text","text":"Pronto!"},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                  },
+                  {"cmd":"text","text":"Seus Pokémons estão curados."},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 0,
+                    "route": {
+                      "repeat": false,
+                      "skippable": false,
+                      "list": [
+                        {
+                          "move": "graphic",
+                          "characterName": "fk046-nurse",
+                          "characterHue": 0,
+                          "direction": 2,
+                          "pattern": 1
+                        },
+                        {"move":"wait","seconds":0.25},
+                        {
+                          "move": "graphic",
+                          "characterName": "fk046-nurse",
+                          "characterHue": 0,
+                          "direction": 2,
+                          "pattern": 0
+                        },
+                        {"move":"turnDown"}
+                      ]
+                    }
+                  },
+                  {"cmd":"text","text":"Volte sempre!"}
+                ],
+                [{"cmd":"text","text":"Volte sempre!"}]
+              ],
+              "cancel": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 6,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk005",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "Eu dei um apelido ao meu Pokémon que não gostei, então fui ao Trocador de Nomes e troquei seu apelido."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 14,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Character17 nø6",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Dentro do Planalto Indigo está a Liga Pokémon."},
+            {
+              "cmd": "text",
+              "text": "Soube que os melhores treinadores vão lá de todos os cantos do país."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "direita",
+      "x": 8,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":0},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":1},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":2},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":3},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":4},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":5},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":6},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on right",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 13,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "esquerda",
+      "x": 7,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":0},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":1},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":2},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":3},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":4},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":5},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":{"id":43,"atLeast":6},"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "pokeballs on left",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":171,"x":30,"y":41,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

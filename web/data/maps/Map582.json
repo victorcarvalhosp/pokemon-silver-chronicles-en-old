@@ -1,0 +1,376 @@
+{
+  "id": 582,
+  "name": "Mikan Island - Gym",
+  "tilesetId": 32,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,52,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,969,969,969,969,969,64,48,48,48,48,48],
+      [48,48,48,48,48,48,52,76,86,977,977,977,977,977,88,76,56,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,1217,1217,1217,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,1217,1217,1217,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,1217,1217,1217,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,1217,1217,1217,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,72,506,506,506,506,506,506,506,506,506,64,48,48,48],
+      [48,48,48,48,48,48,50,68,68,68,68,68,68,50,68,68,49,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,1264,961,961,1268,1268,1268,1268,1268,961,961,1269,0,0,0],
+      [0,0,0,0,0,0,1272,969,969,0,0,0,0,0,969,969,1277,0,0,0],
+      [0,0,0,0,0,0,1272,977,977,0,0,0,0,0,977,977,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,0,0,0,0,0,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,0,0,0,0,0,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1208,1209,1209,1209,1210,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1216,0,0,0,1218,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1216,0,0,0,1218,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1216,0,0,0,1218,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1216,0,0,0,1218,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,1224,1225,1225,1225,1226,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1285,0,0,0,0,0,0,0,0,0,1293,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,451,452,453,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,1268,1268,1268,1268,1268,1268,1268,1268,1268,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,992,993,0,992,993,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1000,1001,0,1000,1001,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,417,0,0,0,417,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1272,0,0,425,0,0,0,425,0,0,1277,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 11,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "sissy_char",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\r..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facecissy]\\rNice to meet you.\\nI'm Cissy, Gym Leader of Mikan Island!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rWhat?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rWant to challenge me to a Pokémon battle?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rA Pokémon battle is always good, but..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rThings works a bit different here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facecissy]\\rYou need to beat me in a Pokémon surfing race first, then we can battle."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rSo? Are you in?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\f[facecissy]\\rLet's go then!"},
+                  {"cmd":"transfer","map":583,"x":15,"y":8,"direction":2,"fade":true}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "\\f[facecissy]\\rOk...\\nCome back later if you change your mind."
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":344,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "sissy_char",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facecissy]\\rNot bad! You handled those waves like a natural."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facecissy]\\rNow let’s see if your Pokémon can keep up the balance in a real battle!"
+            },
+            {
+              "cmd": "comment",
+              "lines": [
+                "EndSpeech: Muito boa luta.\\nAqui está a Insígnia Olho de Coral da Ilha de Mikan.\\nProva de que venceu a partida."
+              ]
+            },
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_CISSY","Cissy",0]}},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facecissy]Cissy: \\rYou stayed sharp in the race and the battle.\\nI like that."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facecissy]\\rYou've earned this Badge, proof that you can ride the waves and command the tide."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Coral Badge from Cissy!"},
+                {"cmd":"assign","target":"$player.badges[]","args":[16],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facecissy]\\rKeep that rhythm, and the currents of your journey will never drag you under."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facecissy]\\rI bet you’ll go far in the Orange League."},
+                {"cmd":"commonEvent","id":75},
+                {"cmd":"switches","from":345,"to":345,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [{"cmd":"switches","from":968,"to":968,"value":false}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":345,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "sissy_char",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facecissy]\\rKeep that rhythm, and the currents of your journey will never drag you under."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facecissy]\\rI bet you’ll go far in the Orange League."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 11,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":341,"x":27,"y":6,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 14,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Yo! Challenger!\\nDon’t think you can just walk up and battle the Leader."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You first need to prove that you can ride the waves, keep your balance, and then you’ll earn the right to battle!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":345,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 15",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Whoa! You crushed the race and the battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Speed on the waves, strength in the ring. You’ve got the full package, champ!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

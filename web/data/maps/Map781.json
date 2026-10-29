@@ -1,0 +1,530 @@
+{
+  "id": 781,
+  "name": "Wheater Institute",
+  "tilesetId": 47,
+  "width": 22,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"Team_Aqua_Magma_Hideout","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,495,64,48],
+      [503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,503,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,467,64,48],
+      [68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,501,0,0,0,501,576,577,576,577,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,501,0,0,0,501,584,585,584,585,0,531,532,0,0,0,0,0,0,0],
+      [0,0,0,501,0,0,0,501,592,593,592,593,0,539,540,0,0,0,0,0,0,0],
+      [0,0,0,501,0,0,0,501,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,509,0,0,0,509,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,517,0,0,0,517,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [2111,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2111,0,0],
+      [2119,487,487,496,0,0,0,472,487,487,487,487,487,487,487,487,487,487,487,2119,0,0],
+      [495,495,495,504,0,0,0,480,495,495,495,495,495,495,495,495,495,495,495,495,0,0],
+      [503,503,503,512,0,0,0,488,503,503,503,503,503,503,503,503,503,503,503,503,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,445,446,447,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,547,0,0,0,0,473,474,0,0],
+      [2323,2324,2325,0,0,0,0,0,0,0,0,0,0,555,0,0,0,0,481,482,0,0],
+      [2331,2332,2333,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,489,490,0,0],
+      [2339,2340,2341,0,0,0,0,0,0,0,0,534,533,0,0,0,534,533,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,570,542,541,570,0,570,542,541,570,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,550,549,0,0,0,550,549,0,0,0,0],
+      [487,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,487,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2111,0,0,0,2111,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,2119,0,0,0,2119,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 0,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\rEnquanto eu estava dormindo todos subiram as escadas!"}]
+        },
+        {
+          "condition": {"switch1":605,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rWow, você é realmente forte!"},
+            {"cmd":"text","text":"\\rDesejo ser um treinador como você."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 18,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":782,"x":18,"y":2,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(5)",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Aquagirl",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["TEAMAQUA_Female"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\rHuh?\\nO que uma criança está fazendo aqui?"},
+            {"cmd":"comment","lines":["EndSpeech: Huh?\\nEu perdi?!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::TEAMAQUA_Female"},"Grunt",1]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Aquagirl",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rOh não...\\nLevarei uma bronca por ter perdido para uma criança..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":605,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(5)",
+      "x": 14,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Aqua",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["TEAMAQUA_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\bO chefe está resolvendo algumas pesquisas aqui, e nos mandou proteger o local."
+            },
+            {"cmd":"text","text":"\\bVocê deveria sair!"},
+            {"cmd":"comment","lines":["EndSpeech: Surrado por uma criança..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::TEAMAQUA_Male"},"Grunt",9]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Aqua",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bNosso chefe sabe de tudo."},
+            {
+              "cmd": "text",
+              "text": "\\bMas eu sou apenas um vigia, como vou saber algo sobre um(a) garoto(a) sequestrado(a)..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":605,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 4,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnUp"},{"move":"turnRight"},{"move":"turnLeft"},{"move":"turnDown"}]
+          },
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 14,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":610,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk001",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bAchavamos que aqui era um lugar de pesquisas para o bem da região...\\nPelo visto estávamos enganados..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 18,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":610,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bAEstou analisando o HD desses computadores...\\nTem muita coisa interessante aqui..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":675,"x":6,"y":31,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

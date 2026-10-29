@@ -1,0 +1,367 @@
+{
+  "id": 670,
+  "name": "S.S. ANNE Captain's Room",
+  "tilesetId": 45,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"s.s.anne","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,120,924,924,924,924,924,924,924,112],
+      [0,0,0,0,0,0,0,0,0,0,112,102,129,129,129,129,129,129,129,125],
+      [0,0,0,0,0,0,0,0,0,0,112,120,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,136,134,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,925,929,929,929,929,929,929,929,923],
+      [0,0,0,0,0,0,0,0,0,0,0,922,937,937,937,937,937,937,937,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,0,1212,0,0,0,0,1154,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,1218,1219,1220,0,0,0,0,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,1226,1227,1228,0,0,0,0,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,0,0,0,0,0,0,0,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,0,0,0,0,0,0,1212,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,1067,1068,0,0,0,0,1212,920],
+      [0,0,0,0,0,0,0,0,0,0,0,922,1075,1076,0,0,0,0,0,920],
+      [0,0,0,0,0,0,0,0,0,0,0,952,953,953,953,953,953,953,953,954],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,128,0,931,0,0,931,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,939,0,0,939,935,935,1146,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,1212,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,1109,1110,1111,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,1067,1068,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,1109,1110,1111,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,137,129,129,129,129,129,129,129,129,129],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 13,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"alwaysOnTopOn"},
+                  {"move":"throughOff"},
+                  {"move":"alwaysOnTopOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":666,"x":51,"y":2,"direction":4,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 16,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cB",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                  "right": 4
+                }
+              },
+              "then": [
+                {
+                  "cmd": "text",
+                  "text": "\\bOh! Você foi rápido(a) ao adquirir suas conchas, será que foi sorte ou habilidade?"
+                },
+                {"cmd":"playMe","audio":{"name":"Jingle-Key_Item","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN entregou Conchas ao Capitão."},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\bBom, isso não importa agora, você pode participar do Desafio do Marujo, ele já está te esperando no convés."
+                },
+                {"cmd":"text","text":"\\bSe conseguir vencê-lo volte aqui para falar comigo."},
+                {"cmd":"switches","from":399,"to":399,"value":true}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"variable":104,"op":">=","value":5},
+                  "then": [
+                    {
+                      "cmd": "text",
+                      "text": "\\bOh! Você foi rápido(a) ao adquirir suas conchas, será que foi sorte ou habilidade?"
+                    },
+                    {"cmd":"playMe","audio":{"name":"Jingle-Key_Item","volume":100,"pitch":100}},
+                    {"cmd":"text","text":"\\PN entregou Conchas ao Capitão."},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::S_S_ANNE_CONCHA"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\bBom, isso não importa agora, você pode participar do Desafio do Marujo, ele já está te esperando no convés."
+                    },
+                    {"cmd":"text","text":"\\bSe conseguir vencê-lo volte aqui para falar comigo."},
+                    {"cmd":"switches","from":399,"to":399,"value":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\bVocê está atrás da conchas para o desafio do marujo?"},
+                    {"cmd":"text","text":"\\bTe desejo boa sorte!"}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":399,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cB",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {
+              "cmd": "text",
+              "text": "\\bOh! Você foi rápido(a) ao adquirir suas conchas, será que foi sorte ou habilidade?"
+            },
+            {
+              "cmd": "text",
+              "text": "\\bBom, isso não importa agora, você pode participar do Desafio do Marujo, ele já está te esperando no convés."
+            },
+            {"cmd":"text","text":"\\bSe conseguir vencê-lo volte aqui para falar comigo."}
+          ]
+        },
+        {
+          "condition": {"switch1":400,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cB",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"text","text":"\\bFui informado que você venceu o Desafio do Marujo."},
+            {"cmd":"text","text":"\\bParabéns garoto(a), leve esses itens como recompensa:"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::IRON"}]}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::PROTEIN"}]}},
+                  "then": []
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\bFaça bom uso deles!"},
+            {
+              "cmd": "text",
+              "text": "\\bO navio vai demorar um pouco para chegar em Hoenn, você pode descançar no seu quarto."
+            },
+            {"cmd":"switches","from":401,"to":401,"value":true},
+            {"cmd":"selfSwitch","ch":"A","value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cB",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bA viagem para Hoenn é longa..."}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [{"cmd":"screenShake","power":2,"speed":1,"seconds":0.05}]
+        },
+        {
+          "condition": {"switch1":398,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

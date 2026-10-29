@@ -1,0 +1,2704 @@
+{
+  "id": 478,
+  "name": "Lavender Town - TV Tower 4th",
+  "tilesetId": 5,
+  "width": 25,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"Association-evil-theme","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,52,76,76,76,76,56,48,48,48,48],
+      [52,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,64,48,48,48,48],
+      [72,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48,48],
+      [72,452,4201,4200,452,452,452,452,4201,4200,4201,82,68,84,4200,4201,4200,4201,4200,452,64,48,48,48,48],
+      [72,452,4209,4208,452,452,452,452,4209,4208,4209,64,48,72,4208,4209,4208,4209,4208,452,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [54,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,72,4189,4189,4189,4189,4189,4189,64,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,50,68,68,68,68,68,68,49,48,48,48,48],
+      [72,1202,1202,1202,1202,1202,1202,1202,1202,1202,1202,64,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [50,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2998,2999,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3006,3007,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3014,3015,0,0,0,0,0],
+      [0,0,4212,4214,4214,4214,4214,4214,4214,4214,4215,0,0,0,4212,4214,4214,4214,4215,0,0,0,0,0,0],
+      [0,0,0,0,4220,4221,4222,4223,0,0,0,0,0,0,0,4892,4893,4894,4895,0,0,0,0,0,0],
+      [0,0,0,0,4228,4229,4230,4231,0,0,0,0,0,0,0,4932,4933,4934,4935,0,0,0,0,0,0],
+      [0,0,0,4176,570,570,570,570,4178,0,0,0,0,0,0,4940,4941,4942,4943,0,0,0,0,0,0],
+      [0,0,570,4184,4185,4185,4185,4185,4186,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4192,4193,4193,4193,4193,4194,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,570,570,570,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,939,940,0,524,0,524,524,0,0,0,939,940,0,524,0,524,0,0,0,0,0,0],
+      [0,0,0,947,948,0,0,0,0,0,0,0,0,947,948,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4884,4885,4886,4887,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4892,4893,4894,4895,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4900,4901,4902,4903,0,0,0,0,0,0],
+      [0,0,0,4176,4177,4177,4177,4177,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4172,0,0,0,0,0,0,0,0,0,0,0,0,0,1626,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4910,4909,4910,4909,4910,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4918,4917,4918,4917,4918,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4926,4925,4926,4925,4926,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 21,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":477,"x":2,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Trainer(3)",
+      "x": 23,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bSou o encarregado da segurança da reunião."},
+            {"cmd":"comment","lines":["EndSpeech: Não esperava por isso..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::ROCKET_Male"},"ADM",4]}
+              },
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bMelhor você não entrar na reunião..."}]
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 1,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"\\f[facerival]\\b..."},
+            {"cmd":"text","text":"\\f[facerival]\\bVamos começar a transmissão em: \\n 3"},
+            {"cmd":"text","text":"\\f[facerival]\\b2"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bEi! Espere!"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bQuem é esse(a) muleque(a)?!"},
+            {"cmd":"text","text":"\\f[facerival]\\bJá sei quem é..."},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"left"},{"move":"turnUp"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bAgora mesmo vou informar a todos que o Grande Mart de Celadon está sob o comando da Equipe Rocket e que todos os seus fornecimentos estão temporariamente interrompidos!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bE dessa vez você não irá atrapalhar, vou dar um jeito em você agora mesmo!"
+            },
+            {"cmd":"text","text":"\\f[facerival]\\bVou te ensinar uma lição!"},
+            {"cmd":"text","text":"\\f[facerival]\\bVai Mewtwo!"},
+            {"cmd":"showAnimation","character":7,"animation":446},
+            {"cmd":"switches","from":270,"to":270,"value":true},
+            {"cmd":"text","text":"\\f[facerival]\\bMewtwo, mande ele(a) pra longe daqui!"},
+            {"cmd":"text","text":"\\f[facemewtwo]\\b..."},
+            {"cmd":"text","text":"\\f[facerival]\\bVai logo!"},
+            {"cmd":"text","text":"\\f[facerival]\\bPokémon insolente!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facemewtwo]\\bNão sou obrigado a aturar esse tipo de coisa! \\n Não conte comigo nessa batalha!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bEsse(a) muleque é mesmo tão fraco(a) que nem preciso de você para vencer..."
+            },
+            {"cmd":"comment","lines":["EndSpeech: Achei que não precisaria de Mewtwo..."]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::RIVAL_ROCKET"},"Agente017",2]
+                }
+              },
+              "then": [
+                {"cmd":"switches","from":271,"to":271,"value":true},
+                {"cmd":"text","text":"\\f[facerival]\\bNão posso acreditar nisso..."},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bVocê teve sorte, Mewtwo está indisposto no momento."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bVou deixar meus planos aqui para trás por enquanto..."
+                },
+                {"cmd":"text","text":"\\f[facerival]\\bMas não pense que isso ficará assim..."},
+                {"cmd":"text","text":"\\f[facerival]\\bAinda temos muitas cartas na manga."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.25},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"switches","from":272,"to":272,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25}
+              ],
+              "else": [
+                {"cmd":"switches","from":271,"to":271,"value":true},
+                {"cmd":"text","text":"\\f[facerival]\\bHahahaha! Seu fracote!"},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facerival]\\bNem mesmo precisei de Mewtwo para te derrotar."
+                },
+                {"cmd":"text","text":"\\f[facerival]\\bVocê atrapalhou meus planos por aqui..."},
+                {"cmd":"text","text":"\\f[facerival]\\bMas não pense que isso ficará assim..."},
+                {"cmd":"text","text":"\\f[facerival]\\bAinda temos muitas cartas na manga."},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"switches","from":272,"to":272,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.25}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bCadê aqueles Rockets?"},
+            {"cmd":"text","text":"\\bO quê?Eles já foram embora?!"},
+            {
+              "cmd": "text",
+              "text": "\\bA Equipe Rocket está aparecendo em toda parte e as forças policiais não estão conseguindo fazer nada..."
+            },
+            {"cmd":"text","text":"\\bVocê acha que poderia nos ajudar?!"},
+            {"cmd":"text","text":"\\bEntão tenho uma missão para você!"},
+            {"cmd":"text","text":"\\bHá um Pokémon dorminhoco ao sul de Lavender."},
+            {
+              "cmd": "text",
+              "text": "\\bJá tentamos de tudo para removê-lo de lá, mas foi tudo em vão..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bIsso está atrasando nossas investigações a respeito da Equipe Rocket..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bOuvi falar que o Pokémon dorminhoco pode acordar se ouvir a PokéFlauta."
+            },
+            {
+              "cmd": "text",
+              "text": "\\bOuvi dizer que um tal de Sr. Fuji tem uma dessas, tente encontrá-lo."
+            },
+            {"cmd":"text","text":"\\bObrigado, e te devo essa."},
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":273,"to":273,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":273,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Giovanni",
+      "x": 9,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer089c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "rival",
+      "x": 2,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Silverrocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Blaine",
+      "x": 7,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Koga",
+      "x": 6,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk064-koga",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Sabrina",
+      "x": 5,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk067-sabrina-rocket",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 7,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_2",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "rocket meeting",
+      "x": 6,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_5",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 14,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 1024,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "policial",
+      "x": 22,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":272,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk001",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":273,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "x": 19,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"text","text":"\\f[faceyellow]\\rWe need to start broadcasting the meeting now."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":799,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Lt. Surge",
+      "x": 4,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk062-lt-surge-rocket",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 5,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association01",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "x": 4,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_3",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Chuchu",
+      "x": 3,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":802,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "025f_7",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "x": 16,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":797,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4951,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":803,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4933,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "x": 17,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":798,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "topLeft",
+              "x": 290,
+              "y": 32,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 1.0
+            },
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "topLeft",
+              "x": 290,
+              "y": 32,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 1.0
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "EV020",
+      "x": 16,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"This switch seems to activate the live broadcast."},
+            {"cmd":"text","text":"Would you like to push it?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {"cmd":"playSe","audio":{"name":"032-Switch01","volume":80,"pitch":100}},
+                  {"cmd":"switches","from":797,"to":797,"value":true},
+                  {"cmd":"text","text":"\\PN activated the live transmission button."}
+                ],
+                [{"cmd":"text","text":"\\f[faceyellow]\\rWe need to hurry up!"}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":797,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4959,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":803,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4941,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "EV021",
+      "x": 17,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":797,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":1.0},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":0}]}
+            },
+            {"cmd":"transfer","map":478,"x":6,"y":11,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"wait","seconds":1.5},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+            {"cmd":"playBgm","audio":{"name":"XD 39 ONBS News Broadcast","volume":100,"pitch":100}},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "Camera",
+              "origin": "topLeft",
+              "x": -80,
+              "y": -100,
+              "zoomX": 125,
+              "zoomY": 125,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "showPicture",
+              "id": 2,
+              "name": "live",
+              "origin": "topLeft",
+              "x": 290,
+              "y": 32,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0
+            },
+            {"cmd":"switches","from":798,"to":798,"value":true},
+            {"cmd":"wait","seconds":3.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "Giovanni: \\bThe media is how we win control. Once the people see us as the true leaders, the entire region will follow. "
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\bFear is the key. Control the narrative, and you control the people."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\bMew's DNA will be the crown jewel of our operation. "},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\bWith it, we'll create more Mewtwos... and then we’ll begin catching the other legendaries. "
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\bMewtwo is just the start. I want power, and that’s how we’ll take Kanto."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\bThe other League members may try to stand in our way, but they won’t last long. We are the future. I will make sure of it."
+            },
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":1.0},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"erasePicture","id":2},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":255}]}
+            },
+            {"cmd":"transfer","map":478,"x":15,"y":10,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"wait","seconds":1.5},
+            {"cmd":"fadeOutBgm","seconds":2},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"switches","from":799,"to":799,"value":true},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playBgm","audio":{"name":"GSCTeamRocketEncounter","volume":100,"pitch":100}},
+            {
+              "cmd": "moveRoute",
+              "character": 22,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,22]},
+            {"cmd":"text","text":"What's going on here?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,22]},
+            {"cmd":"text","text":"Stop that right now!"},
+            {
+              "cmd": "moveRoute",
+              "character": 22,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"comment","lines":["adicionar som de desativaçao e switch event"]},
+            {"cmd":"playSe","audio":{"name":"032-Switch01","volume":80,"pitch":100}},
+            {"cmd":"switches","from":803,"to":803,"value":true},
+            {"cmd":"wait","seconds":0.7},
+            {
+              "cmd": "moveRoute",
+              "character": 22,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,22]},
+            {
+              "cmd": "text",
+              "text": "I'll take you to our boss, and you'll  receive the punishment you deserve for that."
+            },
+            {"cmd":"fadeOutBgm","seconds":2},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":1.0},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"transfer","map":478,"x":1,"y":8,"direction":0,"fade":true},
+            {"cmd":"scrollMap","direction":2,"distance":1,"speed":4},
+            {"cmd":"scrollMap","direction":6,"distance":3,"speed":4},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"setEventLocation","event":22,"direction":6,"x":2,"y":9},
+            {"cmd":"wait","seconds":1.5},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,22]},
+            {"cmd":"text","text":"These are the intruders that activated the live broadcast."},
+            {"cmd":"playBgm","audio":{"name":"Giovanni theme","volume":100,"pitch":100}},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]Giovanni: \\bHow did you let that happen?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bThis security is so incompetent, that allowed two kids to broadcast my plans to everyone!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bI'll now seek revenge, as you made me look like a fool in national television."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bNow let's go all of us against these two! Go!"
+            },
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"showAnimation","character":4,"animation":4},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bWhat is everyone waiting for?!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bWhy nobody is listening to my orders?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceProton]\\bSorry Giovanni, but your time as our boss comes to an end now..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceProton]\\bWe already choose a new leader for Team Rocket."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,10]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceProton]\\bEven before this broadcast went live we had already decided that."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bYou can't do that to me!\\nThat's a coup!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bWho is this new leader?\\nI challenge him to a Pokémon battle now!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {"cmd":"text","text":"\\f[facerival]\\bAre you sure about that?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {"cmd":"text","text":"\\f[facerival]\\bBecause I'm the new leader of Team Rocket."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bOf all people, you?! To whom I gave the most powerful Pokémon of all.\\nHow can this be?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bI can't believe that! Boohooohooo!"},
+            {"cmd":"showAnimation","character":4,"animation":461},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {"cmd":"text","text":"\\f[facerival]\\bEnough crying. It's pathetic to see a man cry."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bLet's go everyone, I have bigger plans than getting involved in politics."
+            },
+            {"cmd":"showAnimation","character":29,"animation":542},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"switches","from":801,"to":801,"value":true},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {"cmd":"text","text":"\\f[facerival]\\bMewtwo, use teleport now!"},
+            {"cmd":"showAnimation","character":29,"animation":100},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":1.0},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"switches","from":768,"to":768,"value":true},
+            {"cmd":"call","fn":"pbRemoveDependency2","args":["Yellow"]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"setEventLocation","event":28,"direction":6,"x":1,"y":10},
+            {"cmd":"wait","seconds":1.5},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,28]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceyellow]\\rI know he deserves it, but I don't like to see a man cry like that..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bI don't need anybody to feel sorry for me."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bBut all my soldiers are gone...  Sniff..."},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.0},
+            {"cmd":"playBgm","audio":{"name":"equipe rocket","volume":100,"pitch":100}},
+            {"cmd":"scrollMap","direction":2,"distance":2,"speed":4},
+            {"cmd":"scrollMap","direction":6,"distance":2,"speed":4},
+            {"cmd":"text","text":"\\rNot everyone great Giovanni..."},
+            {"cmd":"text","text":"\\bWe are still on your side..."},
+            {"cmd":"switches","from":287,"to":287,"value":true},
+            {"cmd":"text","text":"\\rFirst, let us introduce ourselves:"},
+            {"cmd":"text","text":"\\rPrepare for trouble!"},
+            {"cmd":"text","text":"\\bAnd make it double!"},
+            {"cmd":"text","text":"\\rTo protect the world from devastation!"},
+            {"cmd":"text","text":"\\bTo unite all peoples within our nation!"},
+            {"cmd":"text","text":"\\rTo denounce the evils of truth and love!"},
+            {"cmd":"text","text":"\\bTo extend our reach to the stars above!"},
+            {"cmd":"playSe","audio":{"name":"025-Door02","volume":95,"pitch":95}},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "lanterna",
+              "origin": "topLeft",
+              "x": -400,
+              "y": -250,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"wait","seconds":0.75},
+            {"cmd":"setEventLocation","event":25,"direction":2,"x":5,"y":13},
+            {"cmd":"call","fn":"pbCallBub","args":[2,25]},
+            {"cmd":"text","text":"\\f[faceJessie]\\rJessie!"},
+            {"cmd":"setEventLocation","event":24,"direction":2,"x":6,"y":13},
+            {"cmd":"call","fn":"pbCallBub","args":[2,24]},
+            {"cmd":"text","text":"\\f[faceJames]\\bJames!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,25]},
+            {"cmd":"text","text":"\\f[faceJessie]\\rTeam Rocket blasts off at the speed of light!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,24]},
+            {"cmd":"text","text":"\\f[faceJames]\\bSurrender now, or prepare to fight!"},
+            {"cmd":"setEventLocation","event":26,"direction":2,"x":6,"y":14},
+            {"cmd":"call","fn":"pbCallBub","args":[2,26]},
+            {"cmd":"text","text":"\\f[faceMeowth]\\bMeowth!\\nThat's right!"},
+            {
+              "cmd": "moveRoute",
+              "character": 25,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,25]},
+            {"cmd":"text","text":"\\f[faceJessie]\\rWe would never abandon you, boss!"},
+            {
+              "cmd": "moveRoute",
+              "character": 24,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,24]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJames]\\bLet's finish off these brats and start a new Team Rocket!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 26,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,26]},
+            {"cmd":"text","text":"\\f[faceMeowth]\\bLet's finish them off now! Meowth!"},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bThank you comrades..."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 28,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 24,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 25,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 26,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"comment","lines":["EndSpeech: Perdemos de novo..."]},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["EQUIPE_ROCKET","JESSIE & JAMES",1]}},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 28,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"backward"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"showAnimation","character":28,"animation":542},
+                {"cmd":"switches","from":802,"to":802,"value":true},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"setEventLocation","event":17,"direction":2,"x":1,"y":10},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"call","fn":"pbCallBub","args":[2,28]},
+                {"cmd":"text","text":"\\f[faceyellow]\\rChuchu, use Thunderbolt!"},
+                {"cmd":"showAnimation","character":17,"animation":471},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"showAnimation","character":26,"animation":452},
+                {"cmd":"wait","seconds":2.0},
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "céu",
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"text","text":"\\f[faceJessie]\\rTeam Rocket's blasting off again!"},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "rockets voando",
+                  "origin": "topLeft",
+                  "x": -50,
+                  "y": 250,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 24,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":0}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 25,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":0}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 26,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":0}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": 4,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"opacity","value":0}]}
+                },
+                {"cmd":"rotatePicture","id":2,"speed":5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 180,
+                  "y": 200,
+                  "zoomX": 50,
+                  "zoomY": 50,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 350,
+                  "y": 100,
+                  "zoomX": 25,
+                  "zoomY": 25,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 480,
+                  "y": -50,
+                  "zoomX": 1,
+                  "zoomY": 1,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {"cmd":"erasePicture","id":1},
+                {"cmd":"erasePicture","id":2},
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 28,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"turnDown"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"text","text":"\\f[faceyellow]\\rGreat job, \\PN!"},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceyellow]\\rI'm now worried about the red- haired boy plans for Team Rocket."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceyellow]\\rI'll look around for more information. \\nSee you later, \\PN!"
+                },
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"completeQuest","args":["LavenderTVTower"]},
+                {"cmd":"transfer","map":876,"x":2,"y":10,"direction":0,"fade":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.75},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"switches","from":800,"to":800,"value":true}
+              ],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "guard",
+      "x": 17,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":799,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "EV023",
+      "x": 6,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"switches","from":284,"to":284,"value":false},
+            {"cmd":"switches","from":288,"to":288,"value":true},
+            {"cmd":"call","fn":"pbRemoveDependency2","args":["Yellow"]},
+            {"cmd":"call","fn":"pbRemoveDependency2","args":["Ash"]},
+            {"cmd":"call","fn":"pbRemoveDependency2","args":["Pikachu"]},
+            {"cmd":"setEventLocation","event":36,"direction":8,"x":10,"y":16},
+            {"cmd":"setEventLocation","event":38,"direction":8,"x":9,"y":15},
+            {"cmd":"setEventLocation","event":37,"direction":8,"x":9,"y":16},
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_Male"]},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bOlha só quem está ai..."},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bSe não é \\PN, Ash e essa outra garotinha que eu não sei o nome."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bMas agora poderei me vingar de todos vocês, que um dia me fizeram passar papel de bobo."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceAshbravo]\\bÉ...Acho que dessa vez vai ser dificil...\\nAquele garoto que me derrotou facilmente também está ali..."
+            },
+            {"cmd":"text","text":"\\f[facerival]\\bO que foi?\\nEstão com medo de mim?\\nHehehe!"},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bVamos todos contra eles agora!\\nHaaaaa!"},
+            {
+              "cmd": "moveRoute",
+              "character": 18,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bVamos! o que estão esperando?!"},
+            {
+              "cmd": "moveRoute",
+              "character": 18,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bPorque ninguém está me ajudando?"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bÉ simples, cansamos de perder."},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bE escolhemos um novo líder."},
+            {"cmd":"text","text":"\\f[facegiovanni]\\bVocês não podem fazer isso comigo!"},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bClaro que podemos!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bE quem é esse novo líder?\\nEu o desafio para uma batalha Pokémon agora!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 23,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"},{"move":"turnLeft"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 18,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bTem certeza disso Giovanni?!\\nPorque eu sou o novo líder da Equipe Rocket!"
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bLogo você, a quem dei o Pokémon mais poderoso de todos.\\nComo pode?"
+            },
+            {"cmd":"text","text":"\\f[facegiovanni]\\bNão acredito nisso!\\nBuáááá!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bChega de chorar. É patético ver um homem chorar."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bVamos galera, tenho planos bem mais importantes do que conquistar essa empresinha mixuruca."
+            },
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"switches","from":286,"to":286,"value":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.75},
+            {"cmd":"wait","seconds":0.75},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"text","text":"\\f[faceyellow]\\rCoitado!\\nNão gosto de ver um homem chorar..."},
+            {
+              "cmd": "moveRoute",
+              "character": 18,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[facegiovanni]\\bNão precisam ficar com pena de mim...\\nTodos os meus soldados se foram..."
+            },
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.0},
+            {"cmd":"playBgm","audio":{"name":"equipe rocket","volume":100,"pitch":100}},
+            {"cmd":"text","text":"\\rNem todos grande Giovanni...\\n\\bAinda estamos do seu lado."},
+            {"cmd":"switches","from":287,"to":287,"value":true},
+            {"cmd":"text","text":"\\rAntes deixe-nos apresentar:"},
+            {"cmd":"text","text":"\\rPrepare-se para encrenca!"},
+            {"cmd":"text","text":"\\bEncrenca em dobro."},
+            {"cmd":"text","text":"\\rPara livrar o mundo da devastação."},
+            {"cmd":"text","text":"\\bPara unir os povos de nossa nação."},
+            {"cmd":"text","text":"\\rPara denunciar os males da verdade e do amor."},
+            {"cmd":"text","text":"\\bPara estender nosso poder as estrelas."},
+            {"cmd":"playSe","audio":{"name":"025-Door02","volume":95,"pitch":95}},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.0},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "lanterna",
+              "origin": "topLeft",
+              "x": -350,
+              "y": -380,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"setEventLocation","event":28,"direction":2,"x":9,"y":14},
+            {"cmd":"text","text":"\\f[faceJessie]\\rJessie!"},
+            {"cmd":"setEventLocation","event":29,"direction":2,"x":10,"y":14},
+            {"cmd":"text","text":"\\f[faceJames]\\bJames!"},
+            {"cmd":"text","text":"\\f[faceJessie]\\rEquipe Rocket entrando na velocidade da luz!"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJames]\\bRendam-se agora ou preparem-se para lutar, lutar, lutar."
+            },
+            {"cmd":"setEventLocation","event":30,"direction":2,"x":10,"y":15},
+            {"cmd":"text","text":"\\f[faceMeowth]\\bMeowth é isso ai!"},
+            {
+              "cmd": "moveRoute",
+              "character": 28,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceJessie]\\rNós nunca abandonariamos você chefe!"},
+            {
+              "cmd": "moveRoute",
+              "character": 29,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceJames]\\bVamos acabar com esse pirralhos e começar uma nova Equipe Rocket!"
+            },
+            {"cmd":"text","text":"\\f[facegiovanni]\\bObrigado colegas."},
+            {"cmd":"erasePicture","id":1},
+            {
+              "cmd": "moveRoute",
+              "character": 18,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"left"},{"move":"left"},{"move":"down"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 28,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 29,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\f[faceMeowth]\\bVamos acabar com eles agora! Miau!"},
+            {"cmd":"comment","lines":["EndSpeech: Perdemos de novo..."]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::EQUIPE_ROCKET"},"JESSIE & JAMES",1]
+                }
+              },
+              "then": [
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"text","text":"\\f[faceAsh]\\bPikachu, Choque do trovão!"},
+                {"cmd":"showAnimation","character":35,"animation":471},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"showAnimation","character":28,"animation":452},
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "céu",
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"switches","from":289,"to":289,"value":true},
+                {"cmd":"text","text":"\\f[faceJessie]\\rEquipe Rocket decolando de novo!!"},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "rockets voando",
+                  "origin": "topLeft",
+                  "x": -50,
+                  "y": 250,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"rotatePicture","id":2,"speed":5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 180,
+                  "y": 200,
+                  "zoomX": 50,
+                  "zoomY": 50,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 350,
+                  "y": 100,
+                  "zoomX": 25,
+                  "zoomY": 25,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 480,
+                  "y": -50,
+                  "zoomX": 1,
+                  "zoomY": 1,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 2.5
+                },
+                {"cmd":"wait","seconds":2.5},
+                {"cmd":"erasePicture","id":1},
+                {"cmd":"erasePicture","id":2},
+                {"cmd":"text","text":"\\f[faceyellow]\\rPara onde será que eles foram?"},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceAsh]\\bIsso não importa. O mais importante é que conseguimos livrar a Corporação SILPH das mãos da Equipe Rocket."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceyellow]\\rPra falar a verdade estou mesmo preocupada com aquele garoto de cabelos vermelhos..."
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceAsh]\\bÉ mesmo...\\nMas agora tenho outras coisas à resolver... Até mais!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceyellow]\\rE eu tenho que conseguir minhas insígnias.\\nAté mais \\PN!"
+                },
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"switches","from":290,"to":290,"value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.75},
+                {"cmd":"wait","seconds":0.75},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"switches","from":299,"to":299,"value":true}
+              ],
+              "else": [
+                {"cmd":"switches","from":287,"to":287,"value":true},
+                {"cmd":"switches","from":286,"to":286,"value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":299,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "james",
+      "x": 5,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":287,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-Rkt James",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "jessie",
+      "x": 6,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":287,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Avatar-Rkt Jessie",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "meowth",
+      "x": 7,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":287,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "poke052",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":800,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Yellow after coup",
+      "x": 3,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "yellow",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "mewtwo",
+      "x": 2,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":801,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "armored_mewtwo",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

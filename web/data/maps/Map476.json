@@ -1,0 +1,323 @@
+{
+  "id": 476,
+  "name": "Lavender Town - TV Tower 3rd",
+  "tilesetId": 5,
+  "width": 23,
+  "height": 18,
+  "autoplayBgm": true,
+  "bgm": {"name":"TorreRadio","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,48,48,48,48],
+      [52,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,812,56,48,48,48],
+      [72,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,820,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,3229,3229,3229,3229,3229,3229,3229,3229,3229,452,452,452,452,64,48,48,48],
+      [72,4200,4201,4200,4201,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48],
+      [72,4208,4209,4208,4209,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48],
+      [72,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,64,48,48,48],
+      [50,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,452,49,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,3001,0,0,0,0,0,0,3544,3545,3546,0,0,0,0,0,0,0,0,0,0,0],
+      [0,522,523,0,0,0,0,3232,3233,3552,3553,3554,3234,3235,0,0,0,0,0,0,0,0,0],
+      [0,530,531,0,0,0,0,3240,3241,0,0,0,3242,3243,0,0,0,0,0,0,0,0,0],
+      [0,538,539,0,0,0,0,0,0,4897,4898,4899,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4904,4905,4906,4907,4908,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4912,4913,4914,4915,4916,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,4993,0,0,4921,5037,4923,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,5001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,4200,4201,4200,4201,0,5009,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,4900,4901,4902,4903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,526,526,526,0,526,526,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,4944,0,0,0,0,0,0,0,0,0,4948,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4952,4957,4957,4954,4954,4954,4954,4954,4958,4958,4956,0,0,0,0,0,0,0],
+      [0,0,0,0,1016,4960,4965,4965,4962,4962,4962,4962,4962,4966,4966,4964,1016,524,525,0,0,0,0],
+      [0,0,0,0,0,4968,4973,4973,0,0,0,0,0,4974,4974,4972,0,532,533,0,0,0,0],
+      [0,0,0,0,0,4976,4978,4981,4978,4978,4978,4978,4978,4982,4978,4980,0,540,541,0,0,0,0],
+      [0,0,0,0,0,4984,4986,4989,4986,4986,4986,4986,4986,4990,4986,4988,0,0,0,0,0,0,0],
+      [0,0,0,4928,4929,4992,4993,4997,5017,5018,5019,5019,5020,4998,0,4996,0,0,0,0,0,0,0],
+      [0,526,0,4936,4937,4992,5001,0,5025,5026,0,5027,5028,0,0,4996,0,0,0,0,0,0,0],
+      [0,526,0,0,0,4992,4993,0,5033,5034,5037,5035,5036,0,0,4996,0,0,487,0,0,0,0],
+      [0,4884,4885,4886,4887,5000,5001,0,0,0,4931,0,0,0,0,5004,0,0,495,0,0,0,0],
+      [0,4892,4893,4894,4895,5008,0,0,0,0,4939,0,0,0,0,5012,0,0,487,0,0,0,0],
+      [0,4932,4933,4934,4935,0,0,0,0,0,4947,0,0,0,0,0,0,0,495,0,0,0,0],
+      [0,4940,4941,4942,4943,0,0,0,0,0,0,0,0,0,0,0,0,0,487,0,0,0,0],
+      [0,0,0,526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,495,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 2,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":475,"x":2,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 17,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":876,"x":18,"y":4,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "f",
+      "x": 3,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk010",
+            "characterHue": 360,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I can control all the cameras and the light from here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I control all the cameras and lights from here."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 8,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer024cM",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I can't talk right now, I'm working..."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 12,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer024cM",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I can't talk right now, I'm working..."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 09",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Mary: Now that our freedom of speech is back, I accepted to record a show for Television."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'll still keep my Radio Show, so it'll be a lot of work for me!"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

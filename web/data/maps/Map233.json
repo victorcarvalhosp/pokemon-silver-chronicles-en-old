@@ -1,0 +1,1383 @@
+{
+  "id": 233,
+  "name": "Littleroot Town - Birch's Lab",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 18,
+  "autoplayBgm": true,
+  "bgm": {"name":"Birch_Lab","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,52,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,72,386,386,64,48,48,48,48,48,48],
+      [48,48,48,52,76,76,76,76,76,56,72,394,394,64,48,48,48,48,48,48],
+      [48,48,48,72,1193,1194,1193,1193,1194,88,58,68,68,49,48,48,48,48,48,48],
+      [48,48,48,50,68,84,68,68,1193,1194,64,68,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,49,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,386,386,386,386,386,386,386,642,643,386,0,0,0,0,0,0],
+      [0,0,0,0,394,394,394,394,394,394,394,650,651,394,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1194,1193,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1193,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,1193,1194,1193,1194,1193,1194,1193,1194,1193,1194,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1272,1273,1274,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1384,1385,612,613,1280,1281,1282,597,598,503,0,0,0,0,0,0],
+      [0,0,0,0,1392,1393,620,621,1288,1289,1290,605,606,511,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1309,0,1296,1297,1298,1309,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1376,1377,1376,1377,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1384,1385,1384,1385,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1392,1393,1392,1393,0,0,0,0,656,657,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,664,665,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,652,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,503,0,0,0,0,0,0,0,0,503,0,0,0,0,0,0],
+      [0,0,0,0,511,0,0,0,1100,1101,1102,0,0,511,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "birch",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "professor",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bSo \\PN...\\nYou brought it with you.\\nThe Mysterious Ball."
+            },
+            {"cmd":"call","fn":"$bag.remove","args":["IVYSPARCEL"]},
+            {"cmd":"playMe","audio":{"name":"Jingle-Key_Item","volume":100,"pitch":100}},
+            {"cmd":"text","text":"\\PN handed the Mysterious Ball to Professor Birch!"},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"completeQuest","args":["GSBall2"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bI'll start analyzing it right away."},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"playSe","audio":{"name":"PC open","volume":80,"pitch":100}},
+                  {"move":"wait","seconds":0.5}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":862,"to":862,"value":true},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bI’ve seen a lot of unusual Pokémon behavior out here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bSpikes in energy. Patterns that repeat."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bThis Mysterious Ball is responding to the same phenomenon my team’s been tracking."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bPokémon trained outside Hoenn aren't adapting well to this environment."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bSo until we understand this better, I need you working with a Pokémon that’s fully attuned to Hoenn."
+            },
+            {"cmd":"call","fn":"FollowingPkmn.toggle","args":[false]},
+            {
+              "cmd": "script",
+              "ruby": "storage=$PokemonStorage\nfor i in 0...$player.party.length\n storage.pbStoreCaught($player.party.pop)\nend"
+            },
+            {"cmd":"switches","from":477,"to":477,"value":false},
+            {"cmd":"switches","from":476,"to":476,"value":false},
+            {"cmd":"switches","from":478,"to":478,"value":false},
+            {"cmd":"switches","from":479,"to":479,"value":true},
+            {"cmd":"switches","from":480,"to":480,"value":false},
+            {"cmd":"switches","from":481,"to":481,"value":false},
+            {"cmd":"switches","from":482,"to":482,"value":false},
+            {"cmd":"switches","from":483,"to":483,"value":false},
+            {"cmd":"text","text":"All your Pokémon were deposited."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bThese three were raised right here.\\nThey’re used to Hoenn’s climate, terrain, and energy."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bChoose one.\\nIt’ll be your partner while we continue investigating the Mysterious Ball."
+            },
+            {"cmd":"label","name":"escolha"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bWhich one do you want?"},
+            {
+              "cmd": "choices",
+              "choices": ["Torchic, fire type.","Treecko, grass type.","Mudkip, water type."],
+              "branches": [
+                [
+                  {
+                    "cmd": "showPicture",
+                    "id": 1,
+                    "name": "0tor",
+                    "origin": "topLeft",
+                    "x": 190,
+                    "y": 90,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 255,
+                    "blendType": 0
+                  },
+                  {"cmd":"text","text":"Do you really want Torchic, the Fire-type Pokémon?"},
+                  {
+                    "cmd": "choices",
+                    "choices": ["Yes","No"],
+                    "branches": [
+                      [
+                        {"cmd":"erasePicture","id":1},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bGood choice!"},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bThis is an amazing Pokémon!"},
+                        {"cmd":"call","fn":"pbAddPokemon","args":["TORCHIC",5]},
+                        {"cmd":"selfSwitch","ch":"A","value":true},
+                        {"cmd":"switches","from":155,"to":155,"value":true},
+                        {"cmd":"switches","from":408,"to":408,"value":true}
+                      ],
+                      [{"cmd":"erasePicture","id":1},{"cmd":"jump","label":"escolha"}]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [
+                  {
+                    "cmd": "showPicture",
+                    "id": 1,
+                    "name": "0tree",
+                    "origin": "topLeft",
+                    "x": 190,
+                    "y": 90,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 255,
+                    "blendType": 0
+                  },
+                  {"cmd":"text","text":"Do you really want Treecko, the Grass-type Pokémon?"},
+                  {
+                    "cmd": "choices",
+                    "choices": ["Yes","No"],
+                    "branches": [
+                      [
+                        {"cmd":"erasePicture","id":1},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bGood choice!"},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bThis is an amazing Pokémon!"},
+                        {"cmd":"call","fn":"pbAddPokemon","args":["TREECKO",5]},
+                        {"cmd":"selfSwitch","ch":"A","value":true},
+                        {"cmd":"switches","from":155,"to":155,"value":true},
+                        {"cmd":"switches","from":409,"to":409,"value":true}
+                      ],
+                      [{"cmd":"erasePicture","id":1},{"cmd":"jump","label":"escolha"}]
+                    ],
+                    "cancel": 1
+                  }
+                ],
+                [
+                  {
+                    "cmd": "showPicture",
+                    "id": 1,
+                    "name": "0mudk",
+                    "origin": "topLeft",
+                    "x": 190,
+                    "y": 90,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 255,
+                    "blendType": 0
+                  },
+                  {"cmd":"text","text":"Do you really want Mudkip, the Water-type Pokémon?"},
+                  {
+                    "cmd": "choices",
+                    "choices": ["Yes","No"],
+                    "branches": [
+                      [
+                        {"cmd":"erasePicture","id":1},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bGood choice!"},
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {"cmd":"text","text":"\\f[faceprofbirch]\\bThis is an amazing Pokémon!"},
+                        {"cmd":"call","fn":"pbAddPokemon","args":["MUDKIP",5]},
+                        {"cmd":"selfSwitch","ch":"A","value":true},
+                        {"cmd":"switches","from":155,"to":155,"value":true},
+                        {"cmd":"switches","from":410,"to":410,"value":true}
+                      ],
+                      [{"cmd":"erasePicture","id":1},{"cmd":"jump","label":"escolha"}]
+                    ],
+                    "cancel": 1
+                  }
+                ]
+              ],
+              "cancel": "disallow"
+            },
+            {"cmd":"call","fn":"FollowingPkmn.toggle","args":[true]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bNow you can properly start your journey in Hoenn!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bI bet you can't wait to start challenging the Gym Leaders from here!"
+            },
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["HoennGymChallenge",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {"cmd":"switches","from":402,"to":402,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":402,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "professor",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bSeveral good Trainers have already started their journey here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bThe last person from here to win the Hoenn League was Brendan."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bHe is know travelling in some far away regions...\\nJust like you!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":405,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "professor",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"variables","from":79,"to":79,"op":"set","value":1},
+            {"cmd":"variables","from":85,"to":85,"op":"set","value":0},
+            {"cmd":"variables","from":80,"to":80,"op":"set","value":3},
+            {
+              "cmd": "if",
+              "cond": {"switch":408,"value":true},
+              "then": [{"cmd":"variables","from":88,"to":88,"op":"set","value":2}],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":409,"value":true},
+                  "then": [{"cmd":"variables","from":88,"to":88,"op":"set","value":1}],
+                  "else": [{"cmd":"variables","from":88,"to":88,"op":"set","value":0}]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bOh! You’re back already!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bHm? And who’s this?"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\b…Hoho! Don’t tell me you already brought your boyfriend to meet the professor!\\nYou trainers grow up fast!"
+                },
+                {"cmd":"showAnimation","character":-1,"animation":461},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_shy_boy]\\bW-what?! N-no! I just..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bHahaha! I’m joking, I’m joking!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bNow, what seems to be the trouble?"},
+                {"cmd":"call","fn":"follower_move_route","args":["namorado"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"left"},{"move":"up"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bS-sorry, Professor...\\nMy Pokémon… they aren’t listening here. They’ve been acting strange since I arrived in Hoenn."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bSo I came to you."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bI see, I see!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bHoenn can feel pretty different if you came from another region."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAnd the Hoenn rules don’t make it any easier for new trainers, either."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAll right! If you’re going to travel in Hoenn, you’ll need a Hoenn Pokémon."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bHmm... what’s that Poké Ball?"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bIt's talking to me..."},
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bIs that... my starter?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bOh no! That’s a very special Ball. It was brought here for research."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,5,2]},
+                {"cmd":"text","text":"...Hello..."},
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bI told you...\\nIt's speaking to me!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bWh-what?! That Ball…! It’s reacting to you!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bI’ve been having these dreams lately.\\nAnd it sounded exactly like that!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bCan I hold it?\\nJust for a second!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\b...Hmmm...\\nAlright, but be careful!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"up"},{"move":"wait","seconds":0.5}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"switches","from":866,"to":866,"value":true},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"down"},{"move":"left"},{"move":"turnDown"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\b...It’s like it knows me."},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bProfessor, can I keep it?"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_boy]\\bI... I thought it was a starter, but... it wants to stay."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\b...I understand."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bIf it’s responding to you, forcing it away could be risky..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAll right! You can carry it under one condition."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bI want you two traveling together."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bFor safety... and because this Ball has chosen you as its link."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_shy_boy]\\bTogether…?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bYes. Hoenn can be kind, but it can also be... dangerous."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bSo... We have a deal?"},
+                {"cmd":"call","fn":"follower_move_route","args":["namorado"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"showAnimation","character":-1,"animation":458},
+                {"cmd":"call","fn":"follower_animation","args":["namorado"]},
+                {"cmd":"showAnimation","character":-1,"animation":458},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"call","fn":"follower_move_route","args":["namorado"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bOk, that works!"},
+                {"cmd":"playMe","audio":{"name":"Jingle-Key_Item","volume":100,"pitch":100}},
+                {"cmd":"text","text":"Prof. Birch handed the Mysterious Ball to \\v[77]"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bNow then! About your Hoenn Pokémon…"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bActually, you’re in luck! There’s one left!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bGo on! Take it!"},
+                {"cmd":"text","text":"All \\v[77] Pokémon were deposited!"},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":409,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofbirch]\\bIt's a Mudkip, an adorable water type Pokémon."
+                    },
+                    {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                    {"cmd":"text","text":"\\v[77] got a Mudkip!"},
+                    {"cmd":"wait","seconds":1.0}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":410,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofbirch]\\bIt's a Torchic, an adorable fire type Pokémon."
+                        },
+                        {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                        {"cmd":"text","text":"\\v[77] got a Torchic!"},
+                        {"cmd":"wait","seconds":1.0}
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofbirch]\\bIt's a Treecko, an adorable grass type Pokémon."
+                        },
+                        {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                        {"cmd":"text","text":"\\v[77] got a Treecko!"},
+                        {"cmd":"wait","seconds":1.0}
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\b…Hoho! Don’t tell me you already brought your girlfriend to meet the professor!\\nYou Trainers grow up fast!"
+                },
+                {"cmd":"showAnimation","character":-1,"animation":461},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_shy_girl]\\rW-what?! N-no! I just..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bHahaha! I’m joking, I’m joking!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bNow, what seems to be the trouble?"},
+                {"cmd":"call","fn":"follower_move_route","args":["namorada"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"left"},{"move":"up"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rS-sorry, Professor...\\nMy Pokémon… they aren’t listening here. They’ve been acting strange since I arrived in Hoenn."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorado"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rSo I came to you."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bI see, I see!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bHoenn can feel pretty different if you came from another region."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAnd the Hoenn rules don’t make it any easier for new trainers, either."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAll right! If you’re going to travel in Hoenn, you’ll need a Hoenn Pokémon."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rHmm... what’s that Poké Ball?"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rIt's talking to me..."},
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rIs that... my starter?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bOh no! That’s a very special Ball. It was brought here for research."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,5,2]},
+                {"cmd":"text","text":"...Hello..."},
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\bI told you...\\nIt's speaking to me!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bWh-what?! That Ball…! It’s reacting to you!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\bI’ve been having these dreams lately.\\nAnd it sounded exactly like that!"
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\bCan I hold it?\\nJust for a second!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\b...Hmmm...\\nAlright, but be careful!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"up"},{"move":"wait","seconds":0.5}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"switches","from":866,"to":866,"value":true},
+                {"cmd":"wait","seconds":0.5},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [{"move":"down"},{"move":"left"},{"move":"turnDown"}]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\r...It’s like it knows me."},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rProfessor, can I keep it?"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[face_namo_girl]\\rI... I thought it was a starter, but... it wants to stay."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\b...I understand."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bIf it’s responding to you, forcing it away could be risky..."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bAll right! You can carry it under one condition."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bI want you two traveling together."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bFor safety... and because this Ball has chosen you as its link."
+                },
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_shy_girl]\\rTogether…?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bYes. Hoenn can be kind, but it can also be... dangerous."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bSo... We have a deal?"},
+                {"cmd":"call","fn":"follower_move_route","args":["namorada"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnLeft"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"showAnimation","character":-1,"animation":458},
+                {"cmd":"call","fn":"follower_animation","args":["namorada"]},
+                {"cmd":"showAnimation","character":-1,"animation":458},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"call","fn":"follower_move_route","args":["namorada"]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rOk, that works!"},
+                {"cmd":"playMe","audio":{"name":"Jingle-Key_Item","volume":100,"pitch":100}},
+                {"cmd":"text","text":"Prof. Birch handed the Mysterious Ball to \\v[76]"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bNow then! About your Hoenn Pokémon…"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceprofbirch]\\bActually, you’re in luck! There’s one left!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceprofbirch]\\bGo on! Take it!"},
+                {"cmd":"text","text":"All \\v[76] Pokémon were deposited!"},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":409,"value":true},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceprofbirch]\\bIt's a Mudkip, an adorable water type Pokémon."
+                    },
+                    {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                    {"cmd":"text","text":"\\v[76] got a Mudkip!"},
+                    {"cmd":"wait","seconds":1.0}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":410,"value":true},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofbirch]\\bIt's a Torchic, an adorable fire type Pokémon."
+                        },
+                        {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                        {"cmd":"text","text":"\\v[76] got a Torchic!"},
+                        {"cmd":"wait","seconds":1.0}
+                      ],
+                      "else": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[faceprofbirch]\\bIt's a Treecko, an adorable grass type Pokémon."
+                        },
+                        {"cmd":"playMe","audio":{"name":"SEQ_FANFA4","volume":100,"pitch":100}},
+                        {"cmd":"text","text":"\\v[76] got a Treecko!"},
+                        {"cmd":"wait","seconds":1.0}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bThat Ball is no ordinary item, so please take good care of it."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bI'll keep the machines monitoring from here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bTell me right away if anything changes!"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_boy]\\bI will. I promise."}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBubFollower","args":[2,"namorada"]},
+                {"cmd":"text","text":"\\f[face_namo_girl]\\rI will. I promise."}
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofbirch]\\bAll right then! Your Hoenn adventure is about to begin!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bI wish you both good luck!"},
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [{"cmd":"call","fn":"completeQuest","args":["TakePartnerBoyToLab"]}],
+              "else": [{"cmd":"call","fn":"completeQuest","args":["TakePartnerGirlToLab"]}]
+            },
+            {"cmd":"switches","from":411,"to":411,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":411,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "professor",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbSetPokemonCenter","args":[]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceprofbirch]\\bI wish you both good luck!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "May",
+      "x": 12,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk003-may",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemay]\\rI'm sure we'll meet many times, as I do a lot of fieldwork too."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facemay]\\rWel...\\nThat's all for now.\\nThanks!"}
+          ]
+        },
+        {
+          "condition": {"switch1":405,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 6,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Prof. Birch is studying the habitats and distribution of Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Prof. enjoys May's help, too.\\nThere's a lot of love there."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 9,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":862,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 973,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":866,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": " size(4,1) noShadow",
+      "x": 8,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":402,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"variables","from":26,"to":26,"op":"set","value":{"character":-1,"property":"x"}},
+            {"cmd":"showAnimation","character":2,"animation":3},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"comment","lines":["12 equal top tile"]},
+            {
+              "cmd": "if",
+              "cond": {"variable":26,"op":"==","value":8},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 2,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"left"},
+                      {"move":"turnUp"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"variable":26,"op":"==","value":9},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": 2,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [{"move":"left"},{"move":"left"},{"move":"left"},{"move":"turnUp"}]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":26,"op":"==","value":10},
+                      "then": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": 2,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [{"move":"left"},{"move":"left"},{"move":"turnUp"}]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": 2,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [{"move":"left"},{"move":"turnUp"}]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {"cmd":"text","text":"\\f[facemay]\\r\\PN! My Dad forgot to share his phone number!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemay]\\rWe'll give you a call if we have any news about the Mysterious Ball."
+            },
+            {"cmd":"call","fn":"pbPhoneRegisterNPC","args":[49,"Professor Birch",233]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {"cmd":"text","text":"\\f[facemay]\\rAnd one more thing..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemay]\\rWhile you're in Hoenn, can you do some fieldwork for us?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemay]\\rPlease register as many Pokémon as you can in the Pokédex.\\nThis will help us to figure out why some Pokémon don't adapt well in Hoenn."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {"cmd":"text","text":"\\f[facemay]\\rLet me upgrade your Pokédex with the Hoenn mode."},
+            {"cmd":"playMe","audio":{"name":"Key item get","volume":100,"pitch":100}},
+            {"cmd":"call","fn":"$player.pokedex.unlock","args":[2]},
+            {"cmd":"text","text":"\\PN Pokedex was updated with the Hoenn mode."},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {
+              "cmd": "text",
+              "text": "\\f[facemay]\\rI'm sure we'll meet many times, as I do a lot of fieldwork too."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,2]},
+            {"cmd":"text","text":"\\f[facemay]\\rWel...\\nThat's all for now.\\nThanks!"},
+            {
+              "cmd": "call",
+              "fn": "activateQuest",
+              "args": ["HoennPokedex",{"call":"colorQuest","args":["blue"]},true]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":26,"op":"==","value":8},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": 2,
+                  "route": {
+                    "repeat": false,
+                    "skippable": false,
+                    "list": [
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"right"},
+                      {"move":"turnUp"}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"variable":26,"op":"==","value":9},
+                  "then": [
+                    {
+                      "cmd": "moveRoute",
+                      "character": 2,
+                      "route": {
+                        "repeat": false,
+                        "skippable": false,
+                        "list": [{"move":"right"},{"move":"right"},{"move":"right"},{"move":"turnUp"}]
+                      }
+                    },
+                    {"cmd":"waitForMoveCompletion"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":26,"op":"==","value":10},
+                      "then": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": 2,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [{"move":"right"},{"move":"right"},{"move":"turnUp"}]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "moveRoute",
+                          "character": 2,
+                          "route": {
+                            "repeat": false,
+                            "skippable": false,
+                            "list": [{"move":"right"},{"move":"turnUp"}]
+                          }
+                        },
+                        {"cmd":"waitForMoveCompletion"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"switches","from":864,"to":864,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":864,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 9,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":200,"x":15,"y":16,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

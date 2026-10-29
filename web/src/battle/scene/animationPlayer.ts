@@ -2,9 +2,8 @@
 // (AnimFrame, the point transforms, PBAnimTiming, PBAnimation(s),
 // pbSpriteSetAnimFrame and PBAnimationPlayerX), and the loaders from
 // 010_Data/002_PBS data/001_MiscPBSData.rb (pbLoadBattleAnimations,
-// pbLoadMoveToAnim). The animations are web/data/pkmn-animations.json, made by
-// tools/convert/convert.rb from Data/PkmnAnimations.rxdata and
-// Data/move2anim.dat. The editor-only parts (pbConvertRPGAnimation,
+// pbLoadMoveToAnim). The animations are web/data/pkmn-animations.json (imported
+// once from Data/PkmnAnimations.rxdata and Data/move2anim.dat). The editor-only parts (pbConvertRPGAnimation,
 // RPG::Animation#addAnimation, PBAnimTiming#to_s, PBAnimations#resize...) aren't
 // ported.
 //

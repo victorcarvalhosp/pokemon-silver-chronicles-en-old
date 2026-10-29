@@ -1,0 +1,791 @@
+{
+  "id": 468,
+  "name": "Celadon City - Gym",
+  "tilesetId": 32,
+  "width": 20,
+  "height": 23,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,76,56],
+      [48,48,48,48,48,48,48,72,643,626,625,625,626,625,626,625,625,626,624,64],
+      [48,48,48,48,48,48,48,72,634,628,633,633,633,633,633,633,633,633,633,64],
+      [48,48,48,48,48,48,48,72,634,633,633,633,628,633,628,633,633,628,633,64],
+      [48,48,48,48,48,48,48,72,643,633,628,628,633,633,633,633,633,633,633,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,72,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,64],
+      [48,48,48,48,48,48,48,72,1347,1348,1347,1348,1347,1348,1347,1348,1347,1348,1347,64],
+      [48,48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,49],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1402,1402,1402,0,0,0,0,0,1402,1402,1402,0],
+      [0,0,0,0,0,0,0,0,1410,1410,1410,0,0,0,0,0,1410,1410,1410,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,1377,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,600,576,576,0,576,592,592,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,600,600,584,0,584,600,600,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,608,608,0,0,0,608,608,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,592,592,0,0,0,592,592,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,600,600,0,0,0,600,600,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,608,608,0,0,0,608,608,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,451,452,453,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,1387,1388,1389,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1394,1394,1394,1394,1395,1396,1397,1394,1394,1394,1394,0],
+      [0,0,0,0,0,0,0,1359,1402,1402,1402,1402,1403,1404,1405,1402,1402,1402,1402,1358],
+      [0,0,0,0,0,0,0,1359,1355,1355,1356,1410,1411,1412,1413,1410,1356,1355,1356,1358],
+      [0,0,0,0,0,0,0,1359,1360,1360,1361,1362,1363,1364,1365,1366,1384,1385,1360,1358],
+      [0,0,0,0,0,0,0,1359,1360,1385,1369,1370,1371,1372,1373,1374,1392,1360,1360,1358],
+      [0,0,0,0,0,0,0,1359,1385,1361,592,0,1379,1380,1381,0,1400,1384,1385,1358],
+      [0,0,0,0,0,0,0,1359,1360,1369,0,0,0,0,0,0,0,1392,1360,1358],
+      [0,0,0,0,0,0,0,1359,1361,1377,0,0,0,0,0,0,0,1400,1384,1358],
+      [0,0,0,0,0,0,0,1359,1361,0,0,0,0,0,0,0,0,1355,1384,1358],
+      [0,0,0,0,0,0,0,1359,1361,0,0,0,0,0,0,0,0,1356,1384,1358],
+      [0,0,0,0,0,0,0,1359,1361,0,0,0,0,0,0,0,0,0,1384,1358],
+      [0,0,0,0,0,0,0,1359,1369,0,0,0,0,0,0,0,0,0,1392,1358],
+      [0,0,0,0,0,0,0,1359,1377,0,0,0,1355,0,0,0,0,1356,1400,1358],
+      [0,0,0,0,0,0,0,1359,1356,0,669,670,671,0,669,670,671,0,1355,1358],
+      [0,0,0,0,0,0,0,1359,0,0,677,678,679,0,677,678,679,0,0,1358],
+      [0,0,0,0,0,0,0,1359,0,0,0,686,0,0,0,686,0,0,0,1358],
+      [0,0,0,0,0,0,0,1375,0,0,0,0,0,0,0,0,0,0,0,1383],
+      [0,0,0,0,0,0,0,1375,0,0,0,0,0,0,0,0,0,0,0,1383],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 13,
+      "y": 19,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":386,"x":11,"y":34,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(4)",
+      "x": 11,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["LASS"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "There's no way I can let some unknown Trainer go straight to Erika!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Você é poderoso(a)!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["LASS","KAY"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm too ashamed to face Erika!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(3)",
+      "x": 16,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk018",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BEAUTY"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Do you think a girls-only Gym is rare?"},
+            {"cmd":"comment","lines":["EndSpeech: Meus Pokémons!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BEAUTY","BRIDGET"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk018",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Thanks for going easy on me!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Trainer(1)",
+      "x": 12,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk018",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BEAUTY"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "How can I get you to understand my hobby? Which is...\\ntalking in a deep voice!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Oh!Fantástico!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["BEAUTY","LORI",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk018",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The kindness of a woman and the strenght of a man..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I want to be a Trainer with both those qualities!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Trainer(1)",
+      "x": 12,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["LASS"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm going to protect Erika!"},
+            {"cmd":"comment","lines":["EndSpeech: Oh!Você!"]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["LASS","LISA",0]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"How come you're that strong?"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 13,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk063-erika",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceErika]Erika:\\r Hello...\\nLovely weather, isn't it?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rIt's so pleasant...\\nI'm afraid I might doze of..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rMy name is Erika.\\nI am the Leader of Celadon Gym."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\r...Oh? You're from Johto, you say?\\nHow nice..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rOh, I'm sorry, I didn't realize that you wished to challenge me."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceErika]\\rI know."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rI have been training myself on not only flower arrangement but also Pokemon battle."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceErika]\\rI shall not lose."},
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Erika","Erika",1]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_Erika","Erika",2]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_Erika","Erika",3]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_Erika","Erika",4]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"call":"TrainerBattle.start","args":["LEADER_Erika","Erika",5]}
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_Erika","Erika",6]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Erika","Erika",7]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_Erika","Erika",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"comment","lines":["1 == player won"]},
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceErika]Erika:\\r Oh!\\n I concede defeat..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceErika]\\rYou are remarkably strong...\\nI shall give you the Rainbow Badge..."
+                },
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Rainbow Badge."},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[11],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceErika]Erika:\\r That was a delightful match. I felt inspired."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceErika]\\rPlease, I wish you to have this TM19 as a special token."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceErika]\\rIt is Giga Drain.\\nIt is a wonderful move that drains half the damage it inflicts to heal your Pokemon."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceErika]\\rIt is indeed a horrifying move."},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["TM19"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceErika]Erika:\\r Losing leaves a bitter aftertaste..."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceErika]\\rBut knowing that there are strong Trainers spurs me to do better..."
+                    },
+                    {"cmd":"selfSwitch","ch":"A","value":true},
+                    {"cmd":"switches","from":267,"to":267,"value":true}
+                  ]
+                },
+                {"cmd":"commonEvent","id":69}
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":267,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk063-erika",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceErika]Erika:\\r Losing leaves a bitter aftertaste..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rBut knowing that there are strong Trainers spurs me to do better..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":311,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":336,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk063-erika",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceErika]Erika:\\r Losing leaves a bitter aftertaste..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceErika]\\rBut knowing that there are strong Trainers spurs me to do better..."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":767,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

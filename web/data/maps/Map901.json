@@ -1,0 +1,1440 @@
+{
+  "id": 901,
+  "name": "Campeonato",
+  "tilesetId": 48,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,48,48,48,48,72,408,408,408,408,408,408,408,408,64,48,48,48,48,48],
+      [48,48,48,48,48,72,416,416,416,416,416,416,416,416,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,72,384,384,384,384,384,384,384,384,64,48,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,52,76,86,408,408,408,408,408,408,408,408,88,56,0,0,0,0],
+      [0,0,0,72,435,0,416,416,416,416,416,416,416,416,0,64,0,0,0,0],
+      [0,0,0,72,443,0,0,0,0,392,393,394,0,0,91,57,0,0,0,0],
+      [0,0,0,72,0,0,0,0,0,400,401,402,0,0,0,64,0,0,0,0],
+      [0,0,0,72,0,0,520,521,522,523,524,525,0,0,0,64,0,0,0,0],
+      [0,0,0,72,0,0,528,529,530,531,532,533,0,0,0,64,0,0,0,0],
+      [0,0,0,72,0,0,536,537,538,539,540,541,0,0,0,64,0,0,0,0],
+      [0,0,0,72,0,0,544,545,546,547,548,549,0,0,0,64,0,0,0,0],
+      [0,0,0,72,0,0,552,553,554,555,556,557,0,0,0,64,0,0,0,0],
+      [0,0,0,50,84,0,0,0,0,0,0,0,0,0,82,49,0,0,0,0],
+      [0,0,0,48,50,68,68,68,68,68,68,68,68,68,49,48,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,461,462,463,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,469,470,471,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,520,521,522,523,524,525,526,527,0,0,0,0,0,0],
+      [0,0,0,0,0,0,528,529,530,531,532,533,534,535,0,0,0,0,0,0],
+      [0,0,0,0,0,0,536,537,538,539,540,541,542,543,0,0,0,0,0,0],
+      [0,0,0,0,0,0,544,545,546,547,548,549,550,551,0,0,0,0,0,0],
+      [0,0,0,0,0,0,552,553,554,555,556,557,558,559,0,0,0,0,0,0],
+      [0,0,0,0,0,0,385,0,0,0,0,0,0,386,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,413,414,415,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 1,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"turnRight"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bVamos ver do que são capazes!"},
+            {"cmd":"comment","lines":["EndSpeech: Precisamos de mais treino!"]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::Dupla_jovem"},"Mark & Julia",1]
+                }
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\bPrecisamos de treino urgente!"},
+            {
+              "cmd": "moveRoute",
+              "character": 3,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":467,"to":467,"value":true},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":5,"direction":0,"x":10,"y":3},
+            {"cmd":"setEventLocation","event":6,"direction":0,"x":10,"y":2},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bA união de experiência e juventude nos torna invencíveis!"},
+            {"cmd":"comment","lines":["EndSpeech: Você venceu com méritos..."]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::SRANDJR"},"Maglore & Caio",1]
+                }
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\bNem a experiência, nem a juventude conseguiram parar vocês..."},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 6,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":564,"to":564,"value":true},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":7,"direction":0,"x":10,"y":3},
+            {"cmd":"setEventLocation","event":8,"direction":0,"x":10,"y":2},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\rEstavamos cobrindo o evento e resolvemos participar."},
+            {"cmd":"comment","lines":["EndSpeech: Você não é um desconhecido para as câmeras..."]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::INTERVIEWERS"},"Mariah & Brad",1]
+                }
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\rVocê ainda fará muito sucesso!"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":565,"to":565,"value":true},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":9,"direction":0,"x":10,"y":3},
+            {"cmd":"setEventLocation","event":10,"direction":0,"x":10,"y":2},
+            {
+              "cmd": "moveRoute",
+              "character": 9,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 10,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bA experiência em batalhas é o que nos dará a vitória."},
+            {"cmd":"comment","lines":["EndSpeech: Você é um garoto(a) muito sabio(a)!"]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::OLDCOUPLE"},"Nevaresca & Carveci",1]
+                }
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\bParabéns a vocês, jovens."},
+            {
+              "cmd": "moveRoute",
+              "character": 9,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 10,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":566,"to":566,"value":true},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":11,"direction":0,"x":10,"y":3},
+            {"cmd":"setEventLocation","event":12,"direction":0,"x":10,"y":2},
+            {
+              "cmd": "moveRoute",
+              "character": 11,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\rNossos Pokémons são fofos, mas não são fracos!"},
+            {"cmd":"comment","lines":["EndSpeech: Não precisavam ser tão rudes!"]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::TWINS"},"Luma & Lais",1]}
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\rBuááá! hik hik."},
+            {
+              "cmd": "moveRoute",
+              "character": 11,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 12,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":567,"to":567,"value":true},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":13,"direction":0,"x":10,"y":3},
+            {"cmd":"setEventLocation","event":14,"direction":0,"x":10,"y":2},
+            {
+              "cmd": "moveRoute",
+              "character": 13,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 14,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"E essa é a grande final do Torneio de Duplas de Slateport!"},
+            {"cmd":"text","text":"Será uma batalha memorável!"},
+            {
+              "cmd": "text",
+              "text": "\\bEu e minha irmã treinamos juntos desde o dia em que ela nasceu!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Esse foi um desastre tamanho família!"]},
+            {"cmd":"call","fn":"setBattleRule","args":["double"]},
+            {"cmd":"call","fn":"setBattleRule","args":["canLose"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::SISANDBRO"},"Karine & Rafael",1]
+                }
+              },
+              "then": [],
+              "else": [
+                {"cmd":"variables","from":80,"to":80,"op":"sub","value":3},
+                {"cmd":"switches","from":467,"to":467,"value":false},
+                {"cmd":"switches","from":565,"to":565,"value":false},
+                {"cmd":"switches","from":566,"to":566,"value":false},
+                {"cmd":"switches","from":567,"to":567,"value":false},
+                {"cmd":"switches","from":568,"to":568,"value":false},
+                {"cmd":"switches","from":564,"to":564,"value":false},
+                {"cmd":"switches","from":569,"to":569,"value":false},
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {"cmd":"text","text":"\\f[facenamoradochoro]\\bIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ],
+                  "else": [
+                    {"cmd":"text","text":"\\f[facenamochoro]\\rIsso é muito ruim!"},
+                    {"cmd":"switches","from":466,"to":466,"value":false},
+                    {"cmd":"transfer","map":217,"x":9,"y":4,"direction":8,"fade":true}
+                  ]
+                }
+              ]
+            },
+            {"cmd":"text","text":"\\bFoi uma boa batalha.\\nParabéns campeões..."},
+            {
+              "cmd": "moveRoute",
+              "character": 13,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 14,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":568,"to":568,"value":true},
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":100,"pitch":100}},
+            {"cmd":"setEventLocation","event":15,"direction":0,"x":10,"y":3},
+            {
+              "cmd": "moveRoute",
+              "character": 15,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"text","text":"\\bParabéns à vocês dois!"},
+            {
+              "cmd": "text",
+              "text": "\\bVocês são os novos campeões do Torneio de Duplas de Slateport!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":141,"value":true},
+              "then": [{"cmd":"text","text":"\\bVamos dar os nossos parabéns a \\PN e  \\v[77] !"}],
+              "else": [{"cmd":"text","text":"\\bVamos dar os nossos parabéns a \\PN e  \\v[76] !"}]
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":570,"value":false},
+              "then": [
+                {"cmd":"text","text":"\\bComo prêmio pela conquista do torneio vocês levam isso."},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::BLACKGLASSES"}]}},
+                  "then": []
+                },
+                {"cmd":"text","text":"\\bE levem isso também."},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::AMULETCOIN"}]}},
+                  "then": []
+                },
+                {"cmd":"text","text":"\\bNos vemos na próxima edição do torneio!"},
+                {"cmd":"playSe","audio":{"name":"059-Applause01","volume":95,"pitch":100}},
+                {
+                  "cmd": "if",
+                  "cond": {"variable":79,"op":"==","value":0},
+                  "then": [{"cmd":"variables","from":78,"to":78,"op":"add","value":10}],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":79,"op":"==","value":1},
+                      "then": [{"cmd":"variables","from":78,"to":78,"op":"add","value":10}],
+                      "else": [{"cmd":"variables","from":78,"to":78,"op":"add","value":3}]
+                    }
+                  ]
+                },
+                {"cmd":"switches","from":570,"to":570,"value":true}
+              ],
+              "else": [
+                {"cmd":"text","text":"\\bNos vemos na próxima edição do torneio!"},
+                {"cmd":"playSe","audio":{"name":"059-Applause01","volume":95,"pitch":100}},
+                {
+                  "cmd": "if",
+                  "cond": {"variable":79,"op":"==","value":0},
+                  "then": [{"cmd":"variables","from":78,"to":78,"op":"add","value":10}],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":79,"op":"==","value":1},
+                      "then": [{"cmd":"variables","from":78,"to":78,"op":"add","value":10}],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"variable":78,"op":"==","value":2},
+                          "then": [{"cmd":"variables","from":78,"to":78,"op":"add","value":3}],
+                          "else": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"switches","from":569,"to":569,"value":true},
+            {"cmd":"transfer","map":209,"x":15,"y":9,"direction":0,"fade":true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "menina",
+      "x": 10,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer002c",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":467,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "menino",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer003cA",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":467,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "2°t1",
+      "x": 18,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer028c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":564,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "2°t2",
+      "x": 18,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer013c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":564,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "3°t1",
+      "x": 18,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer024cF",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":565,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "3°t2",
+      "x": 18,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer024cM",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":565,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "4°t1",
+      "x": 18,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer038c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":566,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "4°t2",
+      "x": 18,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":566,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "5°t1",
+      "x": 18,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":567,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "5°t2",
+      "x": 18,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer010c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":567,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "6°t1",
+      "x": 18,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer035cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":568,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "6°t2",
+      "x": 18,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer025cA",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":568,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "premiador",
+      "x": 18,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Dp_gimboy",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":569,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

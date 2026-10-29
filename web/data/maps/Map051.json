@@ -1,0 +1,514 @@
+{
+  "id": 51,
+  "name": "Intro",
+  "tilesetId": 1,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500],
+      [6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500,6500]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 0,
+      "y": 0,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"wait","seconds":0.75},
+            {"cmd":"text","text":"...\\n..."},
+            {"cmd":"text","text":"Hmm... Interesting...\\n..."},
+            {"cmd":"text","text":"Huh? Oh! Excuse me, sorry!\\nI was just reading this book here."},
+            {"cmd":"prepareTransition"},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"playBgm","audio":{"name":"GSC Intro","volume":95,"pitch":100}},
+            {"cmd":"executeTransition","name":""},
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "introbg",
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"executeTransition","name":""},
+            {
+              "cmd": "showPicture",
+              "id": 3,
+              "name": "introOak",
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0
+            },
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.75
+            },
+            {"cmd":"text","text":"Sorry to keep you waiting!"},
+            {"cmd":"text","text":"Welcome to the world of Pokémon!"},
+            {"cmd":"text","text":"My name is Professor Oak."},
+            {"cmd":"text","text":"But everyone calls me the Pokémon Professor."},
+            {"cmd":"label","name":"Help Choices"},
+            {
+              "cmd": "text",
+              "text": "Before we go any further, I'd like to tell you a few things you should know about this world!"
+            },
+            {
+              "cmd": "choices",
+              "choices": ["Controls","Adventure","No info needed"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbEventScreen","args":[{"call":"ButtonEventScene"}]},
+                  {"cmd":"jump","label":"Help Choices"}
+                ],
+                [
+                  {"cmd":"text","text":"\\bWell then, without further ado..."},
+                  {
+                    "cmd": "call",
+                    "fn": "pbToneChangeAll",
+                    "args": [{"call":"Tone.new","args":[-255,-255,-255,0]},10]
+                  },
+                  {"cmd":"wait","seconds":0.5},
+                  {
+                    "cmd": "showPicture",
+                    "id": 4,
+                    "name": "helpadventurebg",
+                    "origin": "topLeft",
+                    "x": 0,
+                    "y": 0,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 0,
+                    "blendType": 0
+                  },
+                  {
+                    "cmd": "movePicture",
+                    "id": 4,
+                    "origin": "topLeft",
+                    "x": 0,
+                    "y": 0,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 255,
+                    "blendType": 0,
+                    "seconds": 0.5
+                  },
+                  {"cmd":"wait","seconds":0.5},
+                  {"cmd":"textOptions","position":1,"frame":1},
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[3]You are about to enter a world\\nwhere you will embark on a grand\\nadventure of your very own."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[5]Speak to people and check things\\n wherever you go, be it in towns,\\nroads or caves.\\n Gather information and hints from\\n every possible source."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[3]New paths will open to you when\\n you help people in need, overcome\\n challenges, and solve mysteries."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[7]At times, you will be challenged\\n by others to a battle.\\n At other times, wild creatures\\nmay stand in your way.\\n\\n By overcoming such hurdles,\\nyou will gain great power."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[2]However, your adventure is not\\n solely about becoming powerful."
+                  },
+                  {
+                    "cmd": "text",
+                    "text": "<ac>\\c[0]\\l[7]On your travels, we hope that\\n you will meet countless people\\n and, through them, achieve\\npersonal growth.\\n\\n This is the most important\\nobjective of this adventure."
+                  },
+                  {
+                    "cmd": "movePicture",
+                    "id": 4,
+                    "origin": "topLeft",
+                    "x": 0,
+                    "y": 0,
+                    "zoomX": 100,
+                    "zoomY": 100,
+                    "opacity": 0,
+                    "blendType": 0,
+                    "seconds": 0.5
+                  },
+                  {"cmd":"wait","seconds":0.5},
+                  {"cmd":"erasePicture","id":4},
+                  {
+                    "cmd": "call",
+                    "fn": "pbToneChangeAll",
+                    "args": [{"call":"Tone.new","args":[0,0,0,0]},10]
+                  },
+                  {"cmd":"wait","seconds":0.5},
+                  {"cmd":"textOptions","position":2,"frame":0},
+                  {"cmd":"jump","label":"Help Choices"}
+                ],
+                []
+              ],
+              "cancel": 2
+            },
+            {"cmd":"wait","seconds":0.25},
+            {"cmd":"screenFlash","color":[255.0,255.0,255.0,255.0],"seconds":0.5},
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"erasePicture","id":3},
+            {
+              "cmd": "showPicture",
+              "id": 3,
+              "name": "introMarill",
+              "origin": "center",
+              "x": 256,
+              "y": 220,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0
+            },
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 220,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"text","text":"This world is widely inhabited by creatures known as Pokémon."},
+            {"cmd":"text","text":"We humans live alongside Pokémon as friends."},
+            {"cmd":"text","text":"At times we play together, and at other times we work together."},
+            {
+              "cmd": "text",
+              "text": "Some people use their Pokémon to battle and develop closer bonds with them."
+            },
+            {"cmd":"wait","seconds":0.25},
+            {"cmd":"screenFlash","color":[255.0,255.0,255.0,255.0],"seconds":0.5},
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 220,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"erasePicture","id":3},
+            {
+              "cmd": "showPicture",
+              "id": 3,
+              "name": "introOak",
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0
+            },
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"text","text":"Now, why don't you tell me a little bit about yourself?"},
+            {"cmd":"wait","seconds":0.25},
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "center",
+              "x": 256,
+              "y": 256,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 172,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 0,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"erasePicture","id":3},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"erasePicture","id":3},
+            {"cmd":"screenFlash","color":[255.0,255.0,255.0,255.0],"seconds":0.5},
+            {"cmd":"call","fn":"pbGenderSelector","args":[]},
+            {
+              "cmd": "if",
+              "cond": {"switch":140,"value":true},
+              "then": [
+                {
+                  "cmd": "showPicture",
+                  "id": 3,
+                  "name": "trainer000",
+                  "origin": "center",
+                  "x": 256,
+                  "y": 160,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 0,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "center",
+                  "x": 256,
+                  "y": 256,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 3,
+                  "origin": "center",
+                  "x": 256,
+                  "y": 160,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":141,"value":true},
+                  "then": [
+                    {
+                      "cmd": "showPicture",
+                      "id": 3,
+                      "name": "trainer001",
+                      "origin": "center",
+                      "x": 256,
+                      "y": 160,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 0,
+                      "blendType": 0
+                    },
+                    {
+                      "cmd": "movePicture",
+                      "id": 2,
+                      "origin": "center",
+                      "x": 256,
+                      "y": 256,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 255,
+                      "blendType": 0,
+                      "seconds": 0.5
+                    },
+                    {
+                      "cmd": "movePicture",
+                      "id": 3,
+                      "origin": "center",
+                      "x": 256,
+                      "y": 160,
+                      "zoomX": 100,
+                      "zoomY": 100,
+                      "opacity": 255,
+                      "blendType": 0,
+                      "seconds": 0.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"wait","seconds":0.25},
+            {"cmd":"text","text":"\\PN!\\nAre you ready?"},
+            {"cmd":"text","text":"Your very own tale of grand adventure is about to unfold."},
+            {
+              "cmd": "text",
+              "text": "Fun experiences, difficult experiences, there's so much waiting for you!"
+            },
+            {"cmd":"text","text":"Dreams! Adventure!\\nLet's go to the world of Pokémon!"},
+            {"cmd":"text","text":"I'll see you later!"},
+            {"cmd":"pictureTone","id":3,"tone":[255.0,255.0,255.0,0.0],"seconds":0.5},
+            {"cmd":"wait","seconds":0.5},
+            {
+              "cmd": "movePicture",
+              "id": 3,
+              "origin": "center",
+              "x": 256,
+              "y": 160,
+              "zoomX": 25,
+              "zoomY": 10,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 1.0
+            },
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"call","fn":"pbChangePlayer","args":[3]},
+            {"cmd":"erasePicture","id":1},
+            {"cmd":"erasePicture","id":2},
+            {"cmd":"erasePicture","id":3},
+            {"cmd":"fadeOutBgm","seconds":4},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,255.0],"seconds":0.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":1.5}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"switches","from":2,"to":2,"value":false},
+            {"cmd":"transfer","map":734,"x":12,"y":20,"direction":6,"fade":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

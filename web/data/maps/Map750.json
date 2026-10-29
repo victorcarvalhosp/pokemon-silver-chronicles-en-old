@@ -1,0 +1,186 @@
+{
+  "id": 750,
+  "name": "Verdanturf Town - House 3",
+  "tilesetId": 47,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"Dewford","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,60,76,76,76,76,76,56,48,48],
+      [48,72,643,643,643,643,643,643,643,643,643,80,643,643,643,643,643,64,48,48],
+      [48,72,651,651,651,651,651,651,651,651,651,92,651,651,651,651,651,64,48,48],
+      [48,72,130,116,116,116,116,116,116,116,116,116,116,116,116,116,132,64,48,48],
+      [48,72,112,96,96,96,96,96,96,96,96,96,96,96,96,96,120,64,48,48],
+      [48,72,112,96,96,96,96,96,96,96,96,96,96,96,96,96,120,64,48,48],
+      [48,72,112,96,96,96,96,96,96,96,96,96,96,96,96,96,120,64,48,48],
+      [48,72,112,96,96,96,96,96,96,96,96,96,96,96,96,96,120,64,48,48],
+      [48,72,112,96,96,96,96,96,96,96,96,96,96,96,96,96,120,64,48,48],
+      [48,72,136,124,124,124,124,124,124,124,124,124,124,124,124,124,134,64,48,48],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,643,643,0,0,643,643,643,675,643,643,644,645,643,0,0,0],
+      [0,0,0,0,651,651,0,0,651,651,651,683,651,651,652,653,651,0,0,0],
+      [0,0,0,0,752,0,0,0,0,0,0,683,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,683,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,683,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,691,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,699,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,2257,2366,2367,644,645,2342,2343,0,2271,0,0,0,0,0,0,0],
+      [0,0,2260,2261,2265,2374,2375,652,653,2350,2351,0,2279,0,0,0,0,0,0,0],
+      [0,0,2268,2269,2273,2382,2383,0,0,2358,2359,0,2287,2323,2324,2325,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,2239,0,0,2331,2332,2333,2239,0,0,0],
+      [0,0,0,0,2238,2216,2217,0,0,0,0,0,0,2339,2340,2341,0,0,0,0],
+      [0,0,0,0,2238,2224,2225,2238,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,2256,0,0,0,0,0,0,0,0,0,0,0,0,0,2256,0,0,0],
+      [0,0,2264,0,0,0,0,0,0,445,446,447,0,0,0,0,2264,0,0,0],
+      [0,0,0,0,0,0,0,0,0,453,454,455,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 8,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"My son Wally left for his Pokémon journey a while ago."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "He's now the Petalburg City Gym Leader, so he stays a lot of time there and don't come here that often anymore."
+            },
+            {
+              "cmd": "comment",
+              "lines": ["TODO: Add side mission here to deliver ","something to Wally"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 4,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk009",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My daughter's boyfriend is a very driven and passionate sort of person."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"He dug a tunnel nonstop just so he can see my daughter."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":285,"x":16,"y":19,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

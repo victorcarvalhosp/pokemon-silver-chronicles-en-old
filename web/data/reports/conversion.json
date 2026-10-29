@@ -1,0 +1,509 @@
+{
+  "untranslatedScripts": [
+    {
+      "code": "pbFadeOutIn(99999){\n}",
+      "count": 28,
+      "where": ["Map249/EV28/p0","Map249/EV28/p0","Map284/EV4/p0","Map284/EV4/p0","Map284/EV4/p2"]
+    },
+    {
+      "code": "sp = GameData::Species.get(pbGet(1))\npbSet(3, sp.name)",
+      "count": 4,
+      "where": ["Map80/EV12/p0","Map467/EV2/p0","Map633/EV34/p0","Map731/EV3/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:SNORLAX, 60)\npkmn.learn_move(:SURF)\npkmn.learn_move(:REST)\npkmn.learn_move(:SLEEPTALK)\npkmn.learn_move(:GIGAIMPACT)\nWildBattle.start(pkmn)",
+      "count": 3,
+      "where": ["Map538/EV5/p0","Map538/EV58/p0","Map538/EV60/p0"]
+    },
+    {
+      "code": "$game_map.events.values.each { |e|\n  e.removeThisEventfromMap if e.is_a?(Game_PokeEvent)\n}",
+      "count": 2,
+      "where": ["Map751/EV8/p0","Map751/EV9/p0"]
+    },
+    {
+      "code": "contest = pbBugContestState\ncontest.pbSetJudgingPoint(79, 9, 8)\ncontest.pbSetReception(79, 77)\ncontest.pbSetContestMap(261)\ncontest.pbSetPokemon(pbGet(1))\ncontest.pbStart(20)",
+      "count": 2,
+      "where": ["Map77/EV1/p0","Map79/EV1/p0"]
+    },
+    {
+      "code": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==:RAIKOU\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend",
+      "count": 2,
+      "where": ["CommonEvent5","CommonEvent6"]
+    },
+    {
+      "code": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==PBSpecies::CHIKORITA\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend",
+      "count": 2,
+      "where": ["CommonEvent2","CommonEvent2"]
+    },
+    {
+      "code": "itm = GameData::Item.get(pbGet(1))\npbSet(3, itm.name)",
+      "count": 2,
+      "where": ["Map80/EV2/p0","Map467/EV4/p0"]
+    },
+    {
+      "code": "pbGetPokemon(1).forget_move_at_index(\n   pbGet(2))",
+      "count": 2,
+      "where": ["Map162/EV6/p0","Map654/EV2/p0"]
+    },
+    {
+      "code": "pbPlayDecisionSE\n    pbFadeOutIn {\n      scene = \nPokemonPartnerTrainerCard_Scene.new\n      screen = \nPokemonPartnerTrainerCardScreen.new(\nscene)\n      screen.pbStartScreen\n    }",
+      "count": 2,
+      "where": ["CommonEvent23","CommonEvent24"]
+    },
+    {
+      "code": "pbSecretBaseMart([\n\"Brick Desk\",\"Camp Desk\",\n\"Comfort Desk\",\"Hard Desk\",\n\"Heavy Desk\",\"Pokémon Desk\",\n\"Ragged Desk\",\"Small Desk\",\n\"Brick Chair\",\"Camp Chair\",\n\"Comfort Chair\",\"Hard Chair\",\n\"Heavy Chair\",\"Pokémon Chair\",\n\"Pretty Chair\",\"Ragged Chair\",\n\"Small Chair\"\n],\"Welcome!\\nI have desks and chairs\"\n)",
+      "count": 2,
+      "where": ["Map209/EV13/p0","Map673/EV58/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:LITTEN,10)\npbAddPokemon(pkmn)",
+      "count": 2,
+      "where": ["Map588/EV8/p0","Map614/EV2/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:POPPLIO,10)\npbAddPokemon(pkmn)",
+      "count": 2,
+      "where": ["Map588/EV8/p0","Map614/EV2/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:SPRIGATITO,10)\npbAddPokemon(pkmn)",
+      "count": 2,
+      "where": ["Map588/EV8/p0","Map614/EV2/p0"]
+    },
+    {
+      "code": "pkmn = pbGetPokemon(1)\npkmn.name = nil\npbSet(3, pkmn.name)",
+      "count": 2,
+      "where": ["Map61/EV3/p0","Map519/EV3/p0"]
+    },
+    {
+      "code": "pkmn = pbGetPokemon(1)\npkmn.name = pbGet(5)",
+      "count": 2,
+      "where": ["Map61/EV3/p0","Map519/EV3/p0"]
+    },
+    {
+      "code": "pkmn = pbGetPokemon(1)\nspecies = pkmn.speciesName\npbSet(4, species)\npbTextEntry(\"#{species}'s nickname?\",\n  0, Pokemon::MAX_NAME_SIZE, 5)",
+      "count": 2,
+      "where": ["Map61/EV3/p0","Map519/EV3/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\npkmn = Pokemon.new(:VOLTORB, 24)\npkmn.learn_move(:EXPLOSION)\npkmn.learn_move(:THUNDER)\npkmn.learn_move(:METALSOUND)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)",
+      "count": 2,
+      "where": ["Map142/EV18/p0","Map142/EV19/p0"]
+    },
+    {
+      "code": "# Auto-skip after 2 seconds when text finishes\npbMessage(\"\\\\ts[2]\\\\bYou’re going to ruin your hair doing that...\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:CHAMPION)\nend",
+      "count": 1,
+      "where": ["Map190/EV1/p0"]
+    },
+    {
+      "code": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:CHAMPIONKANTO)\nend",
+      "count": 1,
+      "where": ["Map573/EV1/p0"]
+    },
+    {
+      "code": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:KANTOCHAMPION)\nend",
+      "count": 1,
+      "where": ["Map883/EV1/p0"]
+    },
+    {
+      "code": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:ORANGECHAMPION)\nend",
+      "count": 1,
+      "where": ["Map658/EV1/p0"]
+    },
+    {
+      "code": "Audio.bgm_stop\nsscene=PokemonLoadScene.new\nsscreen=PokemonLoad.new(sscene)\nsscreen.pbStartLoadScreen",
+      "count": 1,
+      "where": ["Map438/EV1/p1"]
+    },
+    {
+      "code": "Graphics.frame_rate=40\n$game_system.se_play(\n$data_system.decision_se)\nPBDebug.logonerr {       \nscene=HallofFameScene.new     \nscreen=HallofFame.new(scene)   \npbFadeOutIn(99999) { \nscreen.pbStartScreen }}",
+      "count": 1,
+      "where": ["CommonEvent32"]
+    },
+    {
+      "code": "evo_stones = [\n  :FIRESTONE, :THUNDERSTONE,\n  :WATERSTONE, :LEAFSTONE,\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)",
+      "count": 1,
+      "where": ["Map79/EV6/p0"]
+    },
+    {
+      "code": "evo_stones = [\n  :MOONSTONE, :SUNSTONE\n]\nitem = evo_stones.sample\npbSet(1, item)\ndata = GameData::Item.get(item)\npbSet(3, data.name)",
+      "count": 1,
+      "where": ["Map79/EV6/p0"]
+    },
+    {
+      "code": "for k in 0..5\nif $Trainer.party[k]\nif $Trainer.party[k].species==PBSpecies::BULBASAUR\nbox=$PokemonStorage\nbox.pbStoreCaught($Trainer.party[k])\n$Trainer.party[k]=nil\nend\nend\n$Trainer.party.compact!\nend",
+      "count": 1,
+      "where": ["CommonEvent7"]
+    },
+    {"code":"id=pbNextMysteryGiftID\npbReceiveMysteryGift(id)","count":1,"where":["Map33/EV5/p1"]},
+    {
+      "code": "if FollowingPkmn.active?\nFollowingPkmn.toggle(false,true)\nend",
+      "count": 1,
+      "where": ["CommonEvent77"]
+    },
+    {
+      "code": "if FollowingPkmn.active?\nFollowingPkmn.toggle(true,true)\nend",
+      "count": 1,
+      "where": ["CommonEvent77"]
+    },
+    {
+      "code": "names = []\nfor p in $player.party\n  next if p.egg?\n  names << p.speciesName\n  break if names.length >= 3\nend\n\n$game_variables[1] = names.length == 0 ? \"No usable Pokémon.\" :\n                     (names.length == 1 ? names[0] :\n                      names[0..-2].join(\", \") + \" and \" + names[-1])",
+      "count": 1,
+      "where": ["Map878/EV1/p0"]
+    },
+    {
+      "code": "pbChoosePokemon(1, 3, proc{ |pkmn|\n  pkmn.can_relearn_move?\n  }, true\n)",
+      "count": 1,
+      "where": ["Map162/EV5/p0"]
+    },
+    {
+      "code": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::RAICHU\n})",
+      "count": 1,
+      "where": ["Map516/EV5/p0"]
+    },
+    {
+      "code": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::VENONAT\n})",
+      "count": 1,
+      "where": ["Map516/EV6/p0"]
+    },
+    {
+      "code": "pbMaxRaidDen(\n  [nil],   # don't care about habitat; we’ll force species\n  {\n    :species => :PIKACHU,\n    :rank    => 3,                 # raid rank\n    :loot    => [:DRAGONFANG, :DYNAMAXCANDY]\n  },\n  { :gmaxfactor => false, :obtaintext => \"a stormy Max Raid Den\" }\n)",
+      "count": 1,
+      "where": ["Map851/EV6/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bBecause you shouldn’t have to.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bBut you’re just standing here like you’re posing.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bBut… given you’re still here.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bCute girls shouldn’t be left unattended on empty routes.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bHonestly… you look like someone who shouldn’t be out here alone.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bIt’s kind of impressive.\\\\nAlso kind of dangerous.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bI’m supposed to meet Professor Birch today.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bJust walk under the umbrella and pretend you’re not drenched.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bLet’s not prove my instincts wrong.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bLittleroot’s not far.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bNot because you can’t handle it.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\bYou know… most people run when it rains.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV19/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rAfter that, I’ll be fine. I promise.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rAnd I'm so tired, but I’m supposed to be brave.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rBut… you’re here.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rI just… don’t want to stand in the rain anymore...\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {"code":"pbMessage(\"\\\\ts[2]\\\\rI just…\\\\wtnp[40]\")","count":1,"where":["Map204/EV17/p0"]},
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rI wasn’t trying to make a scene. I'm just having a bad day.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rI’m okay. Really.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rI’m sorry. I didn’t mean to cry out here.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rI’m supposed to meet Professor Birch today.\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pbMessage(\"\\\\ts[2]\\\\rMy Pokémon are not obbeying me since I arived here too...\\\\wtnp[40]\")",
+      "count": 1,
+      "where": ["Map204/EV17/p0"]
+    },
+    {
+      "code": "pkmn = $player.first_pokemon\npkmn.giveRibbon(:EFFORT)",
+      "count": 1,
+      "where": ["Map159/EV3/p0"]
+    },
+    {
+      "code": "pkmn = $player.first_pokemon\ntotal = 0\npkmn.ev.each_value { |v| total += v }\nmaxed = 0\nif total >= Pokemon::EV_LIMIT\n  maxed = 1\nend\nmaxed = 2 if pkmn.hasRibbon?(:EFFORT)\npbSet(1, pkmn.name)\npbSet(2, maxed)",
+      "count": 1,
+      "where": ["Map159/EV3/p0"]
+    },
+    {
+      "code": "pkmn = $player.last_party\npkmn.item = :BERRYJUICE\npkmn.calc_stats",
+      "count": 1,
+      "where": ["Map121/EV3/p0"]
+    },
+    {
+      "code": "pkmn = $player.last_party\npkmn.item = :GRASSMAIL\npkmn.calc_stats",
+      "count": 1,
+      "where": ["Map76/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:AMAURA,20)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map105/EV14/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:BULBASAUR,10)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map382/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:CHARMANDER,10)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map382/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:FARFETCHD_1, 15)\npkmn.item = :LEEK\npbAddForeignPokemon(pkmn,15, _I(\"Clark\"), _I(\"Chark'd\"), 0)",
+      "count": 1,
+      "where": ["Map50/EV14/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:GYARADOS, 30)\npkmn.shiny = true\npkmn.learn_move(:BITE)\npkmn.learn_move(:DRAGONRAGE)\npkmn.learn_move(:TWISTER)\npkmn.learn_move(:LEER)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map139/EV6/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:HITMONCHAN,30)\npkmn.learn_move(:ENDURE)\npkmn.learn_move(:FIREPUNCH)\npkmn.learn_move(:COACHING)\npkmn.learn_move(:CLOSECOMBAT)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map377/EV10/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:HITMONLEE,30)\npkmn.learn_move(:ENDURE)\npkmn.learn_move(:BLAZEKICK)\npkmn.learn_move(:COACHING)\npkmn.learn_move(:HIGHJUMPKICK)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map377/EV9/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:LAPRAS, 50)\npkmn.shiny = true\npbAddToParty(pkmn)",
+      "count": 1,
+      "where": ["Map154/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:MEWTWO, 70)\npkmn.shiny = true\npkmn.learn_move(:PSYCHOCUT)\npkmn.ability_index = 2\npkmn.ace = true\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map851/EV5/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:MUDKIP,15)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map754/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:PINSIR, pbGetPokemon(1).level)\npkmn.item = :PINSIRITE\npbStartTrade(pbGet(1), pkmn,\"Pinsey\",\"Anya\")",
+      "count": 1,
+      "where": ["Map634/EV2/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:SQUIRTLE,10)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map382/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:TORCHIC,15)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map754/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:TREECKO,15)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map754/EV1/p0"]
+    },
+    {
+      "code": "pkmn = Pokemon.new(:TYRUNT,20)\npbAddPokemon(pkmn)",
+      "count": 1,
+      "where": ["Map50/EV85/p0"]
+    },
+    {
+      "code": "pkmn1 = Pokemon.new(:ARTICUNO, 75)\npkmn1.learn_move(:HURRICANE)\npkmn1.learn_move(:FREEZEDRY)\npkmn1.learn_move(:ROOST)\npkmn1.learn_move(:HAZE)\npkmn1.item = :LEFTOVERS\npkmn2 = Pokemon.new(:DEWGONG, 65)\npkmn2.ability = :STORMDRAIN\npkmn2.learn_move(:FOLLOWME)\npkmn2.learn_move(:PROTECT)\npkmn2.learn_move(:ICYWIND)\npkmn2.learn_move(:AQUARING)",
+      "count": 1,
+      "where": ["Map646/EV5/p0"]
+    },
+    {
+      "code": "pkmn1 = Pokemon.new(:MOLTRES, 75)\npkmn1.learn_move(:SKYATTACK)\npkmn1.learn_move(:HEATWAVE)\npkmn1.learn_move(:ROOST)\npkmn1.learn_move(:SUNNYDAY)\npkmn1.item = :LEFTOVERS\npkmn2 = Pokemon.new(:TURTONATOR, 65)\npkmn2.ability = :STORMDRAIN\npkmn2.learn_move(:FOLLOWME)\npkmn2.learn_move(:PROTECT)\npkmn2.learn_move(:SHELLTRAP)\npkmn2.learn_move(:WIDEGUARD)",
+      "count": 1,
+      "where": ["Map644/EV1/p0"]
+    },
+    {
+      "code": "pkmn1 = Pokemon.new(:ZAPDOS, 75)\npkmn1.learn_move(:HURRICANE)\npkmn1.learn_move(:THUNDER)\npkmn1.learn_move(:ROOST)\npkmn1.learn_move(:THUNDERWAVE)\npkmn1.item = :LEFTOVERS\npkmn2 = Pokemon.new(:TOGEDEMARU, 65)\npkmn2.ability = :STORMDRAIN\npkmn2.learn_move(:FOLLOWME)\npkmn2.learn_move(:PROTECT)\npkmn2.learn_move(:SPIKYSHIELD)\npkmn2.learn_move(:REFLECT)",
+      "count": 1,
+      "where": ["Map645/EV7/p0"]
+    },
+    {
+      "code": "pkmn2.item = :PASSHOBERRY\npkmn3 = Pokemon.new(:COALOSSAL, 65)\npkmn3.ability = :LIGHTNINGROD\npkmn3.learn_move(:WIDEGUARD)\npkmn3.learn_move(:PROTECT)\npkmn3.learn_move(:LAVAPLUME)\npkmn3.learn_move(:REFLECT)\npkmn3.item = :PASSHOBERRY\nWildBattle.start(pkmn3,pkmn1,pkmn2)",
+      "count": 1,
+      "where": ["Map644/EV1/p0"]
+    },
+    {
+      "code": "pkmn3 = Pokemon.new(:CLOYSTER, 65)\npkmn3.ability = :LIGHTNINGROD\npkmn3.learn_move(:WIDEGUARD)\npkmn3.learn_move(:PROTECT)\npkmn3.learn_move(:REFLECT)\npkmn3.learn_move(:FOLLOWME)\nWildBattle.start(pkmn3,pkmn1,pkmn2)",
+      "count": 1,
+      "where": ["Map646/EV5/p0"]
+    },
+    {
+      "code": "pkmn3 = Pokemon.new(:MAGNEZONE, 65)\npkmn3.ability = :LIGHTNINGROD\npkmn3.learn_move(:WIDEGUARD)\npkmn3.learn_move(:PROTECT)\npkmn3.learn_move(:LIGHTSCREEN)\npkmn3.learn_move(:THUNDERWAVE)\nWildBattle.start(pkmn3,pkmn1,pkmn2)",
+      "count": 1,
+      "where": ["Map645/EV7/p0"]
+    },
+    {
+      "code": "pkmn=$player.party[\npbGet(1)]\npkmn.name=pbGet(5)",
+      "count": 1,
+      "where": ["Map215/EV3/p0"]
+    },
+    {
+      "code": "pkmn=$player.party[\npbGet(1)]\nspecies=PBSpecies.getName(\npkmn.species)\npbTextEntry(\"#{species}'s nickname?\",\n0,10,5)",
+      "count": 1,
+      "where": ["Map215/EV3/p0"]
+    },
+    {
+      "code": "pkmn=Pokemon.new(:TYROGUE, 25)\npkmn.item = :BLACKBELT\npbSet(1, pkmn)",
+      "count": 1,
+      "where": ["Map132/EV2/p0"]
+    },
+    {
+      "code": "poke=pbGetPokemon(1)\npoke.changeHappiness(\"groom\")\npoke.beauty+=40",
+      "count": 1,
+      "where": ["Map59/EV6/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Alex\", 0, 5, [\"elements\", \"noprize\"], \n[:CHINCHOU,:SANDSHREW,:VULPIX,:PARAS,:MACHOP])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map85/EV1/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"George\", 0, 5, [\"elements\", \"noprize\"], \n[:MAGIKARP,:SENTRET,:MARILL,:TOGEPI,:HOPPIP])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map46/EV5/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Heather\", 0, 5, [\"elements\", \"noprize\"], \n[:DITTO,:ABRA,:VENONAT,:CLEFFA,:LEDYBA])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map73/EV4/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PICHU,:HOPPIP])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map35/EV5/p1"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Jack\", 0, 5, [\"elements\", \"noprize\"], \n[:RATTATA,:WEEDLE,:CATERPIE,:PIKACHU,:BELLSPROUT])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map35/EV12/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Jack\", 0, 5, [\"samewins\", \"elements\", \"noprize\"], \n[:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS,:ARCEUS], \n:CATERPIE)\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map35/EV6/p0"]
+    },
+    {
+      "code": "result = pbTriadDuel(\"Pedro\", 0, 5, [\"elements\", \"noprize\"], \n[:ELEKID,:METAPOD,:CLEFFA,:TOGEPI,:LEDYBA])\npbSet(2, result)",
+      "count": 1,
+      "where": ["Map38/EV9/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\npkmn = Pokemon.new(:VOLTORB, 24)\npkmn.learn_move(:THUNDER)\npkmn.learn_move(:METALSOUND)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map142/EV17/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:ONIX_1, 55)\npkmn.learn_move(:SURF)\npkmn.learn_move(:DIG)\npkmn.learn_move(:ROCKTHROW)\npkmn.learn_move(:ICEBEAM)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map599/EV3/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\npkmn = Pokemon.new(:RHYHORN_1, 55)\npkmn.learn_move(:EARTHQUAKE)\npkmn.learn_move(:DIG)\npkmn.learn_move(:MEGAHORN)\npkmn.learn_move(:LIGHTSCREEN)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map524/EV36/p2"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\nsetBattleRule(\"disablePokeBalls\")\npkmn = Pokemon.new(:LUGIA, 70)\npkmn.learn_move(:HYDROPUMP)\npkmn.learn_move(:EXTRASENSORY)\npkmn.learn_move(:AEROBLAST)\npkmn.learn_move(:RECOVER)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map739/EV5/p0"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\nsetBattleRule(\"disablePokeBalls\")\nsetBattleRule(\"backdrop\",\"beach\")\npkmn = Pokemon.new(:LUGIA, 80)\npkmn.learn_move(:HYDROPUMP)\npkmn.learn_move(:EXTRASENSORY)\npkmn.learn_move(:AEROBLAST)\npkmn.learn_move(:RECOVER)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map547/EV3/p3"]
+    },
+    {
+      "code": "setBattleRule(\"cannotRun\")\nsetBattleRule(\"canLose\")\nsetBattleRule(\"disablePokeBalls\")\nsetBattleRule(\"roamerflees\")\npkmn = Pokemon.new(:MEWTWO_3, 70)\nWildBattle.start(pkmn)",
+      "count": 1,
+      "where": ["Map384/EV31/p2"]
+    },
+    {
+      "code": "storage=$PokemonStorage\nfor i in 0...$player.party.length\n storage.pbStoreCaught($player.party.pop)\nend",
+      "count": 1,
+      "where": ["Map233/EV1/p0"]
+    }
+  ],
+  "untranslatedConditions": [
+    {
+      "code": "pbGetPokemon(1).species === :SPEAROW && pbGetPokemon(1).name === 'Kenya' && pbGetPokemon(1).item === :GRASSMAIL",
+      "count": 1,
+      "where": ["Map9/EV10/p1"]
+    }
+  ],
+  "unknownCommandCodes": []
+}

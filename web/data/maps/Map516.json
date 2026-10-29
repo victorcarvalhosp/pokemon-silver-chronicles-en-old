@@ -1,0 +1,1692 @@
+{
+  "id": 516,
+  "name": "CINNABAR POKEMON LAB Inside",
+  "tilesetId": 2,
+  "width": 55,
+  "height": 24,
+  "autoplayBgm": true,
+  "bgm": {"name":"cinnabar","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393,64,48,48,48,72,393,393,393,393,393,393,393,393,393,393,393,393,393,393,393],
+      [68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [406,406,406,406,406,406,406,406,406,406,406,406,406,406,406,0,0,0,0,0,406,406,406,406,406,406,406,406,406,406,406,406,406,406,406,0,0,0,0,0,406,406,406,406,406,406,406,406,406,406,406,406,406,406,406],
+      [414,414,414,414,414,414,414,414,414,414,414,414,414,414,414,0,0,0,0,0,414,414,414,414,414,414,414,414,414,414,414,414,414,414,414,0,0,0,0,0,414,414,414,414,414,414,414,414,414,414,414,414,414,414,414],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1445,1446,1446,1446,1446,1446,1447,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,439,439,439,0,0,0,0,0,0,0,0,528,529,0,0,0,0,0,0,0,0,0,0],
+      [450,0,0,0,1453,1454,1454,1454,1454,1454,1455,0,0,0,450,0,0,0,0,0,0,0,535,535,0,0,0,535,535,0,0,0,447,447,447,0,0,0,0,0,0,0,0,536,537,0,0,535,535,0,0,563,564,565,0],
+      [450,0,0,0,1453,1454,1454,1454,1454,1454,1455,0,0,0,450,0,0,0,0,0,0,398,542,542,398,0,398,542,542,398,0,0,0,0,0,0,0,0,0,0,0,0,0,544,545,0,398,542,542,398,0,552,553,554,399],
+      [450,0,0,0,1453,1454,1454,1454,1454,1454,1455,0,0,0,450,0,0,0,0,0,0,398,550,542,398,0,398,550,542,398,0,508,509,508,509,0,0,0,0,0,0,0,0,528,529,0,398,550,542,398,0,552,553,554,0],
+      [0,0,0,0,1461,1462,1462,1462,1462,1462,1463,0,0,0,0,0,0,0,0,0,0,0,541,541,0,0,0,541,541,0,0,516,517,516,517,0,0,0,0,0,0,0,0,536,537,0,0,541,541,0,0,560,561,562,399],
+      [439,439,0,0,0,0,0,0,0,0,0,0,0,439,439,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,524,525,524,525,0,0,0,0,0,0,0,0,544,545,0,0,0,0,0,0,0,0,0,0],
+      [447,447,0,0,0,0,584,585,586,0,0,0,0,447,447,0,0,0,0,0,0,0,0,0,0,0,584,585,586,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,584,585,586,0,0,0,0,0,0],
+      [0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,508,509,0,0,416,0,417,0,416,0,0,508,509,0,384,384,384,384,384,693,694,695,693,694,695,693,694,510,504,505,508,509,508,509,384,384,384,384,384,0,471,0,693,694,695,693,694,695,693,694,510,504,505,0],
+      [0,516,517,464,465,424,0,425,0,424,464,465,516,517,0,384,384,384,384,384,701,702,703,701,702,703,701,702,518,512,513,516,517,516,517,384,384,384,384,384,0,479,0,701,702,703,701,702,703,701,702,518,512,513,0],
+      [0,524,525,472,473,0,0,0,0,0,472,473,524,525,0,384,384,384,384,384,709,710,711,709,710,711,709,710,526,520,521,524,525,524,525,384,384,384,384,384,0,487,0,709,710,711,709,710,711,709,710,526,520,521,0],
+      [0,0,0,0,0,0,563,564,565,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,398,552,553,554,398,0,0,0,0,0,384,384,384,384,384,0,0,549,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,552,553,554,0,0,0,0,0,0,384,384,384,384,384,0,0,0,533,0,0,0,0,533,0,0,0,0,0,0,384,384,384,384,384,0,0,0,399,0,0,0,0,533,0,0,0,495,0,0],
+      [0,0,0,0,0,398,560,561,562,398,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,549,0,0,0,0,0,503,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,399,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,384,384,384,384,384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [384,384,384,384,384,384,0,0,0,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0,0,0,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,0,0,0,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 27,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":515,"x":19,"y":5,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 47,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":515,"x":25,"y":5,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kris/Ethan",
+      "x": 46,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":781,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Hero_female_walk",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKris]\\rHey \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKris]\\rProf. Oak asked me to wait for you here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKris]\\rThat special Pokémon he entrusted to you… how  is it going?"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":227,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"$player.has_species?","args":["CHARIZARD"]}},
+                  "then": [
+                    {
+                      "cmd": "call",
+                      "fn": "pbSet",
+                      "args": [1,{"call":"switchPositionIfHasPokemon","args":["CHARIZARD"]}]
+                    },
+                    {"cmd":"commonEvent","id":72},
+                    {"cmd":"jump","label":"End"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {
+                          "op": "||",
+                          "left": {"call":"$player.has_species?","args":["CHARMANDER"]},
+                          "right": {"call":"$player.has_species?","args":["CHARMELEON"]}
+                        }
+                      },
+                      "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                      "else": [{"cmd":"jump","label":"Not in party yet"}]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":228,"value":true},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"$player.has_species?","args":["BLASTOISE"]}},
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "pbSet",
+                          "args": [1,{"call":"switchPositionIfHasPokemon","args":["BLASTOISE"]}]
+                        },
+                        {"cmd":"commonEvent","id":72},
+                        {"cmd":"jump","label":"End"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {"call":"$player.has_species?","args":["WARTORTLE"]},
+                              "right": {"call":"$player.has_species?","args":["SQUIRTLE"]}
+                            }
+                          },
+                          "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                          "else": [{"cmd":"jump","label":"Not in party yet"}]
+                        }
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"$player.has_species?","args":["VENUSAUR"]}},
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "pbSet",
+                          "args": [1,{"call":"switchPositionIfHasPokemon","args":["VENUSAUR"]}]
+                        },
+                        {"cmd":"commonEvent","id":72},
+                        {"cmd":"jump","label":"End"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {"call":"$player.has_species?","args":["IVYSAUR"]},
+                              "right": {"call":"$player.has_species?","args":["BULBASAUR"]}
+                            }
+                          },
+                          "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                          "else": [{"cmd":"jump","label":"Not in party yet"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"label","name":"Not evolved yet"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKris]\\rHmm… it seems your partner still has some growing to do."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKris]\\rKeep training, keep evolving, build your bond.\\nWhen your Pokémon’s ready, come back."
+            },
+            {"cmd":"label","name":"Not in party yet"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKris]\\rOh, please put it on your party.\\nI need to take a look on how  he's looking like."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKris]\\rThere’s still much to learn about Mega Evolution… and with your help, I know we’ll uncover its true potential."
+            },
+            {"cmd":"label","name":"End"}
+          ]
+        },
+        {
+          "condition": {"switch1":781,"switch2":141,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "hero_male_walk",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceEthan]\\bHey \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceEthan]\\bProf. Oak asked me to wait for you here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEthan]\\bThat special Pokémon he entrusted to you… how  is it going?"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":227,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"$player.has_species?","args":["CHARIZARD"]}},
+                  "then": [
+                    {
+                      "cmd": "call",
+                      "fn": "pbSet",
+                      "args": [1,{"call":"switchPositionIfHasPokemon","args":["CHARIZARD"]}]
+                    },
+                    {"cmd":"commonEvent","id":72},
+                    {"cmd":"jump","label":"End"}
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {
+                        "script": {
+                          "op": "||",
+                          "left": {"call":"$player.has_species?","args":["CHARMANDER"]},
+                          "right": {"call":"$player.has_species?","args":["CHARMELEON"]}
+                        }
+                      },
+                      "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                      "else": [{"cmd":"jump","label":"Not in party yet"}]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":228,"value":true},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"$player.has_species?","args":["BLASTOISE"]}},
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "pbSet",
+                          "args": [1,{"call":"switchPositionIfHasPokemon","args":["BLASTOISE"]}]
+                        },
+                        {"cmd":"commonEvent","id":72},
+                        {"cmd":"jump","label":"End"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {"call":"$player.has_species?","args":["WARTORTLE"]},
+                              "right": {"call":"$player.has_species?","args":["SQUIRTLE"]}
+                            }
+                          },
+                          "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                          "else": [{"cmd":"jump","label":"Not in party yet"}]
+                        }
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"$player.has_species?","args":["VENUSAUR"]}},
+                      "then": [
+                        {
+                          "cmd": "call",
+                          "fn": "pbSet",
+                          "args": [1,{"call":"switchPositionIfHasPokemon","args":["VENUSAUR"]}]
+                        },
+                        {"cmd":"commonEvent","id":72},
+                        {"cmd":"jump","label":"End"}
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {
+                              "op": "||",
+                              "left": {"call":"$player.has_species?","args":["IVYSAUR"]},
+                              "right": {"call":"$player.has_species?","args":["BULBASAUR"]}
+                            }
+                          },
+                          "then": [{"cmd":"jump","label":"Not evolved yet"}],
+                          "else": [{"cmd":"jump","label":"Not in party yet"}]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"label","name":"Not evolved yet"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEthan]\\bHmm… it seems your partner still has some growing to do."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEthan]\\bKeep training, keep evolving, build your bond.\\nWhen your Pokémon’s ready, come back."
+            },
+            {"cmd":"label","name":"Not in party yet"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEthan]\\bOh, please put it on your party.\\nI need to take a look on how  he's looking like."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceEthan]\\bThere’s still much to learn about Mega Evolution… and with your help, I know we’ll uncover its true potential."
+            },
+            {"cmd":"label","name":"End"}
+          ]
+        },
+        {
+          "condition": {"switch1":782,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceprofcarvalho]\\bHi \\PN!\\nThe Kanto Pokémon Association’s vote is today, you know.\\nYou should head to Celadon, trainers like you have an important voice in all this."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 5,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Very old fossils were found on Mt. Moon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"They were rare and prehistoric Pokémon."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 4,
+      "y": 23,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bOlá! Você por acaso tem um RAICHU?"},
+            {"cmd":"text","text":"\\bConcorda em trocá-lo pelo meu ELECTRODE?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {
+                    "cmd": "script",
+                    "ruby": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::RAICHU\n})"
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"==","value":-1},
+                    "then": [{"cmd":"text","text":"Bem, se você não tem..."}],
+                    "else": [
+                      {"cmd":"text","text":"OK, vamos começar."},
+                      {
+                        "cmd": "call",
+                        "fn": "pbStartTrade",
+                        "args": [
+                          {"call":"pbGet","args":[1]},
+                          {"call":"PBSpecies::ELECTRODE"},
+                          "ESFERA",
+                          "CLIFTON"
+                        ]
+                      },
+                      {"cmd":"text","text":"\\PN trocou RAICHU pelo ELECTRODE!"},
+                      {"cmd":"text","text":"\\bObrigado!"},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  }
+                ],
+                [{"cmd":"text","text":"\\bBem, se você não quer..."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bO ELECTRODE que troquei com você, está mais forte?"}]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 8,
+      "y": 23,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\rOlá!\\nVocê tem um VENONAT?"},
+            {"cmd":"text","text":"\\rQuer trocar pelo meu TANGELA?"},
+            {
+              "cmd": "choices",
+              "choices": ["Sim","Não"],
+              "branches": [
+                [
+                  {
+                    "cmd": "script",
+                    "ruby": "pbChoosePokemon(1,2,\nproc {|poke|\n !poke.egg? and \n  poke.species==PBSpecies::VENONAT\n})"
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"==","value":-1},
+                    "then": [{"cmd":"text","text":"\\rIsso é ruim."}],
+                    "else": [
+                      {"cmd":"text","text":"OK, vamos começar."},
+                      {
+                        "cmd": "call",
+                        "fn": "pbStartTrade",
+                        "args": [
+                          {"call":"pbGet","args":[1]},
+                          {"call":"PBSpecies::TANGELA"},
+                          "TANGENY",
+                          "NORMA"
+                        ]
+                      },
+                      {"cmd":"text","text":"\\PN trocou VENONAT pelo TANGELA!"},
+                      {"cmd":"text","text":"\\rMuito obrigado!"},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  }
+                ],
+                [{"cmd":"text","text":"\\rIsso é ruim."}]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\rComo vai meu velho TANGELA? Meu VENONAT vai indo muito bem!"}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 29,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Eevee can evolve into one of eight Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Or would there be more?!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 24,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Tch-tch-tch!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 51,
+      "y": 23,
+      "pages": [
+        {
+          "condition": {"switch1":40,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bOlá!"},
+            {"cmd":"text","text":"\\bEu sou um importante doutor Pokémon. Muito prazer."},
+            {"cmd":"text","text":"\\bAqui eu estudo fósseis Pokémon.\\nEstudo o tempo todo."},
+            {"cmd":"text","text":"\\bVocê tem algo para me entregar?"},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::METEORITE"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"text","text":"\\bOh!\\nIsso é um estranho meteorito vindo da Lua!?"},
+                {
+                  "cmd": "text",
+                  "text": "\\bVocê acha que tem algo a ver com o poderoso Pokémon DEOXYS?!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\bVou usar todas as minhas máquinas para tentar trazer este Pokémon."
+                },
+                {"cmd":"text","text":"\\bEntão!\\nVocê precisa me dar isto por uns tempos!"},
+                {"cmd":"text","text":"\\PN deu o METEORITE ao Professor."},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::METEORITE"}]},
+                {"cmd":"text","text":"\\bAcredito que isto pode demorar bastante."},
+                {
+                  "cmd": "text",
+                  "text": "\\bMe dê seu telefone, assim que tiver novas informações te ligarei."
+                },
+                {"cmd":"text","text":"\\bAté mais!"},
+                {"cmd":"switches","from":300,"to":300,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [{"cmd":"text","text":"\\bVocê não tem nada demais com você."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bAgora nossas pesquisas estão todas focadas no seu METEORITE."},
+            {"cmd":"text","text":"\\bJá estamos conseguindo avanços."},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::CLAWFOSSIL"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"text","text":"\\bOh!\\nVocê tem outro fóssil com você?!"},
+                {"cmd":"text","text":"\\bPode deixá-lo aqui que estudaremos ele."},
+                {
+                  "cmd": "text",
+                  "text": "\\bVou usar todas as minhas máquinas para tentar trazer este Pokémon."
+                },
+                {"cmd":"text","text":"\\bEntão!\\nVocê precisa me dar isto por uns tempos!"},
+                {"cmd":"text","text":"\\PN deu o Fóssil ao Professor."},
+                {"cmd":"call","fn":"$bag.remove","args":[{"call":"PBItems::CLAWFOSSIL"}]},
+                {"cmd":"text","text":"\\bAcredito que isto pode demorar bastante."},
+                {
+                  "cmd": "text",
+                  "text": "\\bMe dê seu telefone, assim que tiver novas informações te ligarei."
+                },
+                {"cmd":"text","text":"\\bAté mais!"},
+                {"cmd":"switches","from":392,"to":392,"value":true}
+              ],
+              "else": [{"cmd":"text","text":"\\bVocê não tem nada demais com você."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":388,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\bAgora nossas pesquisas estão todas focadas no seu METEORITE."},
+            {"cmd":"text","text":"\\bJá estamos conseguindo avanços."},
+            {"cmd":"text","text":"\\bTambém estamos estudando o outro fóssil."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 51,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "We study ancient fossils here too - but Mega Evolution? That’s like discovering the future."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 7,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":515,"x":13,"y":5,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "association 1",
+      "x": 47,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":784,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":786,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "association 2",
+      "x": 48,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":785,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":786,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "x": 50,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":786,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We’ll be observing operations here for the time being. Carry on."}
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 51,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":786,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Association03",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We’ll be observing operations here for the time being. Carry on."}
+          ]
+        },
+        {
+          "condition": {"switch1":768,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "x": 52,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":40,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We do lot's of research's here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Sometimes it old fossils, other times are rare Mega Stones."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We never stop!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "x": 9,
+      "y": 23,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI collect Pokémon\\nDo you have Bellsprout?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bWant to trade it for my Onix?"},
+            {
+              "cmd": "choices",
+              "choices": ["Yes","No"],
+              "branches": [
+                [
+                  {
+                    "cmd": "comment",
+                    "lines": [
+                      "The chosen Pokémon's party index goes in game ",
+                      "variable 1. A value of -1 means no Pokémon was ",
+                      "chosen.",
+                      "The chosen Pokémon's name goes in game variable 2."
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbChoosePokemonForTrade","args":[1,2,"BELLSPROUT"]},
+                  {
+                    "cmd": "if",
+                    "cond": {"variable":1,"op":"==","value":-1},
+                    "then": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bYou don't want to trade?  Aww..."},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bCome back if you change your mind."},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"call":"isQuestActive?","args":["BellsproutTrade"]}},
+                        "then": [],
+                        "else": [{"cmd":"call","fn":"activateQuest","args":["BellsproutTrade"]}]
+                      }
+                    ],
+                    "else": [
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bOK, let's get started."},
+                      {
+                        "cmd": "call",
+                        "fn": "pbStartTrade",
+                        "args": [{"call":"pbGet","args":[1]},"ONIX","Rocky","Andy"]
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\PN traded Bellsprout for Onix!"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {"cmd":"text","text":"\\bThanks!"},
+                      {"cmd":"call","fn":"completeQuest","args":["BellsproutTrade"]},
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  }
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bYou don't want to trade? Aww..."},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"\\bCome back if you change your mind."},
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"isQuestActive?","args":["BellsproutTrade"]}},
+                    "then": [],
+                    "else": [{"cmd":"call","fn":"activateQuest","args":["BellsproutTrade"]}]
+                  }
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk015",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI collect Pokémon.\\nI want to catch them all!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bAnd how is Rocky doing?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bBELLSPROUT is having a lot of fun here with me."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "x": 28,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hi!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm an important Pokémon Fossil Researcher.\\nNice to meet you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Here I study fossil Pokémon all the time."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Do you have something for me?"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":">","left":{"call":"$bag.quantity","args":["DOMEFOSSIL"]},"right":0}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Oh! That's a Pokémon fossil!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "If it's in good condition this machine can revive it for you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let me try it."},
+                {"cmd":"call","fn":"$bag.remove","args":["DOMEFOSSIL"]},
+                {"cmd":"text","text":"\\PN gave the Dome Fossil to the Researcher."},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"playSe","audio":{"name":"PC access","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"playSe","audio":{"name":"PC open","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"The fossil is in amazing condition..."},
+                {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"This is amazing!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Everything worked well. Here it is your fossil Pokémon."},
+                {"cmd":"call","fn":"pbAddPokemon","args":["KABUTO",30]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Please come backwhen you have more fossils!"},
+                {"cmd":"call","fn":"advanceQuestToStage","args":["FossilOwnerAptitudeTest1",2]},
+                {"cmd":"switches","from":940,"to":940,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [{"cmd":"text","text":"No? That's ok. Come back if you have some fossil with you."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":939,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hi!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm an important Pokémon Fossil Researcher.\\nNice to meet you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Here I study fossil Pokémon all the time."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Do you have something for me?"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":">","left":{"call":"$bag.quantity","args":["HELIXFOSSIL"]},"right":0}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Oh! That's a Pokémon fossil!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "If it's in good condition this machine can revive it for you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let me try it."},
+                {"cmd":"call","fn":"$bag.remove","args":["HELIXFOSSIL"]},
+                {"cmd":"text","text":"\\PN gave the Helix Fossil to the Researcher."},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"playSe","audio":{"name":"PC access","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"playSe","audio":{"name":"PC open","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"The fossil is in amazing condition..."},
+                {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"This is amazing!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Everything worked well. Here it is your fossil Pokémon."},
+                {"cmd":"call","fn":"pbAddPokemon","args":["OMANYTE",30]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Please come backwhen you have more fossils!"},
+                {"cmd":"call","fn":"advanceQuestToStage","args":["FossilOwnerAptitudeTest2",2]},
+                {"cmd":"switches","from":940,"to":940,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [{"cmd":"text","text":"No? That's ok. Come back if you have some fossil with you."}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":938,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk035",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Hi!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I'm an important Pokémon Fossil Researcher.\\nNice to meet you."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Here I study fossil Pokémon all the time."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Do you have something for me?"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":">","left":{"call":"$bag.quantity","args":["OLDAMBER"]},"right":0}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Oh! That's a Pokémon fossil!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "If it's in good condition this machine can revive it for you!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Let me try it."},
+                {"cmd":"call","fn":"$bag.remove","args":["OLDAMBER"]},
+                {"cmd":"text","text":"\\PN gave the Helix Fossil to the Researcher."},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"playSe","audio":{"name":"PC access","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":0.5},
+                {"cmd":"playSe","audio":{"name":"PC open","volume":80,"pitch":100}},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"The fossil is in amazing condition..."},
+                {"cmd":"playMe","audio":{"name":"014-Inn01","volume":100,"pitch":130}},
+                {"cmd":"wait","seconds":2.0},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"This is amazing!"},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Everything worked well. Here it is your fossil Pokémon."},
+                {"cmd":"call","fn":"pbAddPokemon","args":["AERODACTYL",30]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Please come backwhen you have more fossils!"},
+                {"cmd":"switches","from":940,"to":940,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [{"cmd":"text","text":"No? That's ok. Come back if you have some fossil with you."}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "EV031",
+      "x": 41,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    }
+  ]
+}

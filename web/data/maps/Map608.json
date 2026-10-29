@@ -1,0 +1,351 @@
+{
+  "id": 608,
+  "name": "Trovita Island - Lighthouse 4th",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"Observatory","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,52,76,76,76,76,56,48,48,48,48,48,48,48],
+      [48,48,48,52,76,76,76,86,1644,1646,1646,1644,88,76,76,76,56,48,48,48],
+      [48,48,52,86,1645,1646,1646,1644,1644,1644,1644,1644,1644,1646,1646,1644,88,56,48,48],
+      [48,52,86,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1645,88,56,48],
+      [48,72,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1645,64,48],
+      [48,72,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1645,64,48],
+      [48,72,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1645,64,48],
+      [48,72,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1645,64,48],
+      [48,50,84,1645,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,1644,82,49,48],
+      [48,48,50,84,1645,1645,1645,1645,1644,1644,1644,1644,1644,1644,1644,1644,82,49,48,48],
+      [48,48,48,50,68,68,68,84,1645,1645,1645,1645,82,68,68,68,49,48,48,48],
+      [48,48,48,48,48,48,48,50,68,68,68,68,49,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1627,1627,1627,1627,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1627,1627,1627,1627,1635,1635,1635,1635,1627,1627,1627,1627,0,0,0,0],
+      [0,0,0,1627,1635,1635,1635,1635,1643,1643,1643,1643,1635,1635,1635,1635,1627,0,0,0],
+      [0,0,1627,1635,1643,1643,1643,1643,0,0,0,0,1643,1643,1643,1643,1635,1627,0,0],
+      [0,0,1635,1643,0,0,0,0,0,0,0,0,0,0,0,0,1643,1635,0,0],
+      [0,0,1643,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1643,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,626,627,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,634,635,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1636,1637,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1636,1637,0,2586,2586,2587,0,0,1636,1637,0,0,0,0,0],
+      [0,0,0,0,0,0,2586,2586,2594,2594,2595,0,2586,2586,2586,2586,0,0,0,0],
+      [0,0,0,0,2613,2614,2594,2594,0,0,0,0,2594,2594,2594,2594,0,0,0,0],
+      [0,0,0,0,2621,2622,2623,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,626,721,1309,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,634,720,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1309,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2427,2428,2429,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,2435,2436,2437,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Bill",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"switches","from":351,"to":351,"value":true},
+            {"cmd":"showAnimation","character":0,"animation":17},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[facebill]\\bHey! There's nothing for you here!"},
+            {"cmd":"comment","lines":["EndSpeech: Err...\\nMe desculpe..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::PkMnTRAINER_Bill"},"Bill",0]
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bOh, sorry \\PN, it's dark here, so when I saw you come in I thought it was an intruder."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bI've been living in this lighthouse for quite some time now."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bI'm searching for the legendary Pokémon that lives in these seas."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bIf I could see it, it would be a great achievement for me."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bAnyway, I made another one of my inventions, I don't know yet if it's working, but maybe you can try it somewhere in your journey?"
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["BILLSENGINE"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebill]\\bIt's a more modern and portable version of the machine that can bring fossil Pokémon back to life, that you probably saw in Cinnabar Island."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebill]\\bIf it works, it you'll be able to reanimate dormant fossil cells.\\nThe bigger machine in Cinnabar is still needed in most cases, but if the fossil is just dormant this should work!"
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebill]\\bThere's a cave east from here that might contain some dormant fossils. You could test it there."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebill]\\bMeanwhile, I'll stay here to observe the legends of the Orange Archipelago."
+                    },
+                    {"cmd":"call","fn":"activateQuest","args":["BillsEngine"]},
+                    {"cmd":"selfSwitch","ch":"A","value":true}
+                  ],
+                  "else": [{"cmd":"comment","lines":["-- The item couldn't be added"]}]
+                }
+              ],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Bill",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":352,"value":true},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facebill]\\bSo you confirm my new invention works?!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[facebill]\\bThat's amazing!"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bI'll write a paper about it and share with other researchers around the world!"
+                }
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bIf my new invention works, you'll be able to reanimate dormant fossil cells."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bIn other words, it can bring fossil Pokémon back to life!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bThere's a cave east from here that might contain some fossils. You could test it there."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facebill]\\bMeanwhile, I'll stay here to observe the legends of the Orange Archipelago."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":607,"x":4,"y":14,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[-80.0,-80.0,-80.0,51.0],"seconds":0.0},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

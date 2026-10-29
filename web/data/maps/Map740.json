@@ -1,0 +1,575 @@
+{
+  "id": 740,
+  "name": "Pokémon League HQ",
+  "tilesetId": 15,
+  "width": 21,
+  "height": 34,
+  "autoplayBgm": true,
+  "bgm": {"name":"Indigo-Plateau-Pokemon-Heart-Gold-and-Soul-Silver","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,76,56,48],
+      [48,72,1534,3346,3347,3346,3347,3346,3347,3346,3348,3346,3347,3346,3347,3346,3347,3346,3347,64,48],
+      [48,72,1653,3354,3355,3354,3355,3354,3355,3354,815,3354,3355,3354,3355,3354,3355,3354,3355,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,0,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,0,64,48],
+      [48,72,0,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,0,64,48],
+      [48,72,3347,3346,3347,3346,3347,3346,3347,3348,3321,3348,3347,3346,3347,3346,3347,3346,3347,64,48],
+      [48,72,3355,3354,3355,3354,3355,3354,3355,3356,3321,3356,3355,3354,3355,3354,3355,3354,3355,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,3321,64,48],
+      [48,72,2009,2009,2009,2009,2009,2009,3321,3321,3321,3321,3321,2009,2009,2009,2009,2009,2009,64,48],
+      [48,50,68,68,68,68,68,84,3321,3321,3321,3321,3321,82,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,72,3321,3321,3321,3321,3321,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,50,68,68,68,68,68,49,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,1628,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1627,1527,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1535,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,1320,1336,1320,1336,1320,1321,1322,1323,1324,1325,1336,1320,1336,1320,1336,1653,0,0],
+      [0,0,1542,1627,1627,1627,1627,1627,1329,1330,1331,1332,1333,1627,1627,1627,1627,1627,1543,0,0],
+      [0,0,1534,0,0,0,0,0,1337,1338,1339,1340,1341,0,0,0,0,0,1535,0,0],
+      [0,0,1653,0,0,0,0,0,1345,1346,1347,1348,1349,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,1353,1354,1355,1356,1357,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,1361,1362,1363,1364,1365,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,2845,0,0,2847,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,2845,0,0,2847,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,2845,0,0,2847,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,1965,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,2869,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1653,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1653,0,0],
+      [0,0,1542,1627,1627,1627,1627,1627,1629,0,0,0,1628,1627,1627,1627,1627,1627,1543,0,0],
+      [0,0,3346,3347,3346,3347,3346,3347,1535,0,0,0,1534,3347,3346,3347,3346,3347,3346,0,0],
+      [0,0,3354,3355,3354,3355,3354,3355,1653,0,0,0,1653,3355,3354,3355,3354,3355,3354,0,0],
+      [0,0,0,0,0,0,0,0,1653,0,0,0,1653,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1653,0,0,0,1653,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1653,0,0,0,1653,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1653,0,0,0,1653,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3347,0,0,0,3347,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,3355,0,0,0,3355,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3664,3665,3666,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3672,3673,3674,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3680,3681,3682,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,1320,1336,1320,1336,1320,0,0,0,0,0,1336,1320,1336,1320,1336,0,0,0],
+      [0,0,0,1328,1344,1328,1344,1328,0,0,0,0,0,1344,1328,1344,1328,1344,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3077,3078,3079,3125,3126,3127,3367,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3085,3086,3087,3133,3134,3135,3375,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3093,3094,3095,3141,3142,3143,3383,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3101,3102,3103,3149,3150,3151,3391,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3109,3110,3111,3157,3158,3159,3399,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,3117,3118,3119,3165,3166,3167,3407,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,3362,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3363,0,0],
+      [0,0,3370,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3371,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1647,0,0,0,1647,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,1655,1100,1101,1102,1655,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "lance",
+      "x": 10,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Karen",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rI am Karen of the Elite Four."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKaren]\\rYou're \\PN? How amusing.\\nI love Dark-type Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rI'm known for my overpowering tactics."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKaren]\\rThink you can take them?\\nJust try to entertain me."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rLet's go."},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::ELITEFOUR_Karen"},"Karen"]
+                }
+              },
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceKaren]\\rStrong Pokémon."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceKaren]\\rWeak Pokémon."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceKaren]\\rThat is only the selfish perception of people."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceKaren]\\rTruly skilled Trainers should try to win with the Pokémon they love best."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceKaren]\\rI like your style\\nYou understand what's important."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceKaren]\\rGo on--the Champion is waiting."},
+                {"cmd":"playSe","audio":{"name":"029-Door06","volume":50,"pitch":115}},
+                {"cmd":"switches","from":556,"to":556,"value":true}
+              ],
+              "else": [
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"switches","from":131,"to":131,"value":false},
+                {"cmd":"switches","from":132,"to":132,"value":false},
+                {"cmd":"switches","from":133,"to":133,"value":false},
+                {"cmd":"switches","from":137,"to":137,"value":false},
+                {"cmd":"switches","from":138,"to":138,"value":false},
+                {"cmd":"switches","from":556,"to":556,"value":false}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":556,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Karen",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rStrong Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rWeak Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rThat is only the selfish perception of people."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKaren]\\rTruly skilled Trainers should try to win with the Pokémon they love best."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceKaren]\\rI like your style\\nYou understand what's important."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceKaren]\\rGo on--the Champion is waiting."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 12,
+      "y": 29,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 4,
+          "list": [
+            {"cmd":"mapSettings","type":"fog","parameters":["001-Fog01",0,80,0,200,2,2]},
+            {"cmd":"screenTone","tone":[-50.0,-50.0,-50.0,0.0],"seconds":0.0}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Particle effect - soot",
+      "x": 16,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 29,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"text","text":"Can't go back now..."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "portao",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":556,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":186,"x":9,"y":33,"direction":8,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Particle effect - soot",
+      "x": 16,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Particle effect - soot",
+      "x": 16,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Particle effect - soot",
+      "x": 4,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Particle effect - soot",
+      "x": 4,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Particle effect - soot",
+      "x": 4,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 240,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 4,
+          "moveFrequency": 6,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": true,
+          "directionFix": true,
+          "through": true,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": [{"cmd":"comment","lines":["Particle Engine Type","soot"]}]
+        }
+      ]
+    }
+  ]
+}

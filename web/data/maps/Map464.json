@@ -1,0 +1,556 @@
+{
+  "id": 464,
+  "name": "Celadon City - Dept. Store Roof",
+  "tilesetId": 2,
+  "width": 28,
+  "height": 23,
+  "autoplayBgm": true,
+  "bgm": {"name":"PokeMart","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1081,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1180,1180,1180,1180,1180],
+      [1180,1180,1180,1180,1180,1180,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1082,1180,1180,1180,1180,1180]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1213,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1214,1228,0,0,0,0],
+      [0,0,0,0,0,1200,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,0,1187,0,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1221,1081,0,0,0,0,0,0,0,0,1279,1279,1279,0,1195,0,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1221,1081,0,668,669,669,670,0,0,0,0,0,0,0,0,0,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1221,1081,0,676,677,677,678,0,0,0,0,0,0,0,0,0,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1221,1081,0,676,677,677,678,0,0,0,0,0,0,0,0,511,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1221,1081,0,684,685,685,686,0,0,0,0,0,0,0,0,519,0,0,1230,0,0,0,0],
+      [0,0,0,0,0,1208,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,1215,0,0,1210,0,0,0,0],
+      [0,0,0,0,0,1229,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1201,1231,0,0,0,0],
+      [0,0,0,0,0,1192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1184,0,0,0,0],
+      [0,0,0,0,0,1192,0,1140,1141,1142,1140,1141,1142,1140,1141,1142,1140,1141,1142,1140,1141,1142,0,1184,0,0,0,0],
+      [0,0,0,0,0,1192,0,1148,1149,1150,1148,1149,1150,1148,1149,1150,1148,1149,1150,1148,1149,1150,0,1184,0,0,0,0],
+      [0,0,0,0,0,1192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1184,0,0,0,0],
+      [0,0,0,0,0,1192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1184,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1197,1198,1198,1198,1199,0,0,0,0,0],
+      [0,0,0,0,0,0,688,0,0,0,0,0,0,0,0,0,0,0,1205,1206,1206,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,696,0,0,0,0,0,0,0,0,1169,1169,1169,1186,407,1187,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,704,0,0,0,0,0,0,0,1081,1177,1177,1177,1194,415,1195,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1232,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,399,453,454,399,0,689,689,689,689,689,0,0,1240,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,399,461,462,399,0,697,697,697,697,697,0,0,1248,1206,1207,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,705,705,705,705,705,0,0,0,1186,1196,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1222,1223,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 15,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 05",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"A vending machine with a prize roulette..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "It makes you happy when you get something for free even if it's worth only $200."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Happiness does not come from how much things are worth."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It's up to the heart of the one to receive it..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer013c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Aww! There are no games here!\\nI wanted to play..."},
+            {"cmd":"text","text":"Minha irmã é uma treinadora, acredite ou não."},
+            {"cmd":"text","text":"Mas ela é muito imatura as vezes."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 19,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Have a Break at the Vending Machines\\n6F: Rooftop Atrium"}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 17,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Uma máquina de venda! O que será que vende?"},
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  {"call":"PBItems::FRESHWATER"},
+                  {"call":"PBItems::SODAPOP"},
+                  {"call":"PBItems::LEMONADE"}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 16,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"Uma máquina de venda! O que será que vende?"},
+            {
+              "cmd": "call",
+              "fn": "pbPokemonMart",
+              "args": [
+                [
+                  {"call":"PBItems::FRESHWATER"},
+                  {"call":"PBItems::SODAPOP"},
+                  {"call":"PBItems::LEMONADE"}
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 20,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"alwaysOnTopOn"},
+                  {"move":"throughOff"},
+                  {"move":"alwaysOnTopOff"}
+                ]
+              }
+            },
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":463,"x":9,"y":2,"direction":6,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "rival",
+      "x": 10,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Silverrocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "THIS IS AN OLD EVENT FROM THE OLD STORY - KEEPING IT HERE JUST FOR HISTORICAL PURPOSES"
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":269,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "rocket",
+      "x": 9,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk057-rocket",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "THIS IS AN OLD EVENT FROM THE OLD STORY - KEEPING IT HERE JUST FOR HISTORICAL PURPOSES"
+              ]
+            },
+            {"cmd":"text","text":"\\bNós estamos executando vários planos..."},
+            {"cmd":"text","text":"\\bVocê jamais conseguirá nos deter!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 11,
+      "y": 22,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "THIS IS AN OLD EVENT FROM THE OLD STORY - KEEPING IT HERE JUST FOR HISTORICAL PURPOSES"
+              ]
+            },
+            {"cmd":"scrollMap","direction":4,"distance":10,"speed":4},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"playBgm","audio":{"name":"GSCTeamRocketHideout","volume":100,"pitch":100}},
+            {"cmd":"text","text":"\\f[faceRocketman]\\bEsse plano foi uma cartada de mestre."},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bSe tivéssemos você antes conosco, a Equipe Rocket não estária assim no fundo do poço..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bMe informe como anda o esse plano, pois tenho outros assuntos a resolver."
+            },
+            {"cmd":"text","text":"\\f[faceRocketman]\\bEstá bem..."},
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bAté agora não tivemos nenhum sinal do(a) intrometido(a) \\PN e a polícia não tem forças para nos combater..."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bE com a domínio desse Mart, que é o principal, logo logo os Centros Pokémons e outros Marts ficaram sem poções e outro itens."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[faceRocketman]\\bAssim mais Pokémons ficariam fracos e cansados e seriam presas fáceis a Equipe Rocket."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bEntão agora vou a cidade de Lavender ver como andam as coisas por lá..."
+            },
+            {"cmd":"scrollMap","direction":6,"distance":10,"speed":4},
+            {
+              "cmd": "moveRoute",
+              "character": 8,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "text",
+              "text": "(Ele saber que sei dos planos deles não seria nada bom, melhor sair daqui antes que ele perceba...)"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"script","ruby":"pbFadeOutIn(99999){\n}"},
+            {"cmd":"transfer","map":463,"x":10,"y":2,"direction":8,"fade":true},
+            {"cmd":"switches","from":269,"to":269,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":269,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

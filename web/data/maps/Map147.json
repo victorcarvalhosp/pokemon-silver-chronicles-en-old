@@ -1,0 +1,1180 @@
+{
+  "id": 147,
+  "name": "Goldenrod City - Radio Tower 5F",
+  "tilesetId": 5,
+  "width": 21,
+  "height": 20,
+  "autoplayBgm": false,
+  "bgm": {"name":"Goldenrod","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [52,76,76,76,76,76,76,56,52,76,76,76,76,76,76,76,76,76,76,76,56],
+      [72,4196,4197,4196,4197,4196,4197,64,72,4197,4196,4197,4196,4197,4196,4197,4197,4196,4197,4196,64],
+      [72,4204,4205,4204,4205,4204,4205,64,72,4205,4204,4205,4204,4205,4204,4205,4205,4204,4205,4204,64],
+      [72,4180,4182,4182,4182,4182,4182,64,72,4199,4198,4199,4198,4199,4198,4199,4198,4199,4198,4199,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,4207,4206,4207,4206,4207,4206,4207,4206,4207,4206,4207,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,4207,4206,4207,4206,4207,4206,4207,4206,4207,4206,4207,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,322,308,308,308,308,308,308,308,308,308,324,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,304,288,288,288,288,288,288,288,288,288,312,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,304,288,288,288,288,288,288,288,288,288,312,64],
+      [72,4181,4190,4190,4190,4190,4190,64,72,328,316,316,316,316,316,316,316,316,316,326,64],
+      [50,68,68,68,68,68,68,49,50,68,68,68,68,68,68,68,68,68,68,68,49],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4216,4217,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4224,4225,574,575,574,575,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,582,583,582,583,0],
+      [0,0,0,0,0,0,0,0,0,538,539,4212,4213,4214,4215,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4200,4201,4220,4221,4222,4223,4201,4200,4201,0,0,0],
+      [0,0,1595,1596,4176,4177,4178,0,0,4208,4209,4228,4229,4230,4231,4209,4208,4209,0,0,0],
+      [0,0,1603,1604,4184,4185,4186,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4192,4193,4194,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,1626,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,522,523,0,894,462,462,0,0,522,523,0,0,0,0,0,0,0,0,0,0],
+      [0,530,531,0,0,478,478,0,0,530,531,0,0,0,0,0,0,0,0,0,0],
+      [0,538,539,0,0,0,0,0,0,4173,4173,4212,4213,4214,4215,4173,4173,4173,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1606,1607,0,1624,1625,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,721,0,0,1614,1615,0,1632,1633,1626,0,0,0,0,0,0],
+      [0,0,0,0,0,0,720,0,0,0,0,1626,1640,1641,1626,0,0,0,0,462,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,478,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Chefe",
+      "x": 5,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":97,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {"cmd":"text","text":"Ahem, do you hear me?"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {"cmd":"text","text":"...I am the Director."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "We have decided to broadcast wonderful show to praise Team Rocket!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "Everyone, I don't want to hear you complain. Just do a good job to..."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"directionFixOff"},
+                  {"move":"turnLeft"},
+                  {"move":"directionFixOn"},
+                  {"move":"awayFromPlayer"},
+                  {"move":"directionFixOff"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {"cmd":"text","text":"Yikes!\\nI am busy impersonating the...\\nWho are you?"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {"cmd":"text","text":"...Oh no, it's you again, \\PN?"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"frequency","value":6},
+                  {"move":"turnDown"},
+                  {"move":"turnLeft"},
+                  {"move":"turnRight"},
+                  {"move":"turnUp"},
+                  {"move":"turnDown"},
+                  {"move":"turnLeft"},
+                  {"move":"turnRight"},
+                  {"move":"turnUp"},
+                  {"move":"turnDown"},
+                  {"move":"turnLeft"},
+                  {"move":"turnRight"},
+                  {"move":"turnUp"},
+                  {
+                    "move": "graphic",
+                    "characterName": "rocket_4",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  },
+                  {"move":"wait","seconds":0.5},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePetrel]Petrel: No, no, no! I was pretending to be the Director to influence the entire region to support Team Rocket!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePetrel]This time I won't hold back!\\nGive me all you've got!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Certo vou te contar onde ele está."]},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_EXECUTIVE3","Petrel",2]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+                {"cmd":"text","text":"\\f[facePetrel]Petrel: Listen carefully."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facePetrel]We stashed the real Director in the underground warehouse."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+                {"cmd":"text","text":"\\f[facePetrel]It's at the far end of the Goldenrod Tunnel."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[facePetrel]I am a nice guy. I will give you the Basement Key to get to the underground warehouse. Take with gratitude!"
+                },
+                {"cmd":"call","fn":"pbReceiveItem","args":["BASEMENTKEY"]},
+                {"cmd":"call","fn":"advanceQuestToStage","args":["TeamRockerGoldenrod",2]},
+                {"cmd":"switches","from":709,"to":709,"value":true},
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_4",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePetrel]Petrel: We stashed the Director in the underground warehouse."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {"cmd":"text","text":"\\f[facePetrel]It's at the far end of the Goldenrod Tunnel."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePetrel]hahaha...\\nI doubt a child like you'll get that far."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":108,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Director: Hello, it is you! You know, I really love Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "I built this Radio Tower just so I could express my love of Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It would be nice if people enjoyed our programs."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 2,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":146,"x":2,"y":7,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"wait","seconds":0.05},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"throughOn"},
+                  {"move":"turnLeft"},
+                  {"move":"speed","value":1},
+                  {"move":"frequency","value":1},
+                  {"move":"lowerLeft"},
+                  {"move":"throughOff"}
+                ]
+              }
+            },
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.2},
+            {"cmd":"wait","seconds":0.2},
+            {"cmd":"playSe","audio":{"name":"Door exit","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":146,"x":15,"y":7,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"speed","value":3},{"move":"frequency","value":3},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 1,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"right"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "whitney",
+      "x": 11,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":729,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer073c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"call","fn":"follower_move_route","args":[]},
+            {
+              "cmd": "comment",
+              "lines": [
+                "Give the follower a different move route depending ",
+                "on where the player currently is, to ensure it ends up ",
+                "at the correct position. Note that Through is set ON ",
+                "because the follower will be moved into the tile ",
+                "occupied by the event it will be replaced with."
+              ]
+            },
+            {"cmd":"variables","from":26,"to":26,"op":"set","value":{"character":-1,"property":"x"}},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnRight"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"playBgm","audio":{"name":"Gym","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "if",
+              "cond": {"variable":26,"op":"==","value":19},
+              "then": [
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"left"}]}
+                },
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {"cmd":"waitForMoveCompletion"}
+              ],
+              "else": [
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"up"},{"move":"turnLeft"}]}
+                },
+                {"cmd":"showAnimation","character":0,"animation":3},
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[whitney]Whitney:\\c[5] Hey \\PN!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]I came here as fast as I could, but there was a lot of Rocket Team members at my Gym, so took me a while to defeat them."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]My Pokémon are not in condition to keep battling, I'll need to go to the Pokémon Center as fast as I can."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]But before that, I thought it was important to bring you this, so you can fight Team Rocket before they conclude the Radio Transmission."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[whitney]\\c[5]Take this as a recognition of your bravery."},
+            {"cmd":"call","fn":"pbGetKeyItem","args":["ZPOWERRING"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]This is a ring that allows a Trainer and their Pokémon to gather the Z-Power required to perform Z-Moves."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]A Z-Move is a special type of move, in which a Trainer and their Pokémon's wishes combine to unleash an attack comprising the full power of both!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[whitney]\\c[5]Take this as well."},
+            {
+              "cmd": "if",
+              "cond": {"switch":997,"value":true},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["FIRIUMZ"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[whitney]\\c[5]Firium Z converts Z-Power into crystals that upgrade Fire-type moves to Fire-type Z-Moves."
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":996,"value":true},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":["GRASSIUMZ"]}},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[whitney]\\c[5]Grassium Z converts Z-Power into crystals that upgrade Grass-type moves to Grass-type Z-Moves."
+                        }
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":["WATERIUMZ"]}},
+                      "then": [
+                        {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                        {
+                          "cmd": "text",
+                          "text": "\\f[whitney]\\c[5]Waterium Z converts Z-Power into crystals that upgrade Water-type moves to Water-type Z-Moves."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]You'll be able to use any Z-Move as long as your Pokémon is holding an appropriate Z-Crystal and has an appropriate move."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[whitney]\\c[5]Hope you find this useful on your next battle!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[whitney]\\c[5]I need to go to the Pokémon Center now, good luck!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"restoreBgmBgs"},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"switches","from":728,"to":728,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(1)",
+      "x": 19,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKET_EXECUTIVE2"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]Ariana:\\r Hey, you...\\nRemember me from the hideout in Mahogany Town?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceAriana]\\rThis time..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]\\rHee hee hee. This time...it looks like you're really all alone. All alone..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]\\rSo it should be quite easy.\\nBring it! Let's finish this!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKET_EXECUTIVE2","Ariana",2]}},
+              "then": [
+                {"cmd":"selfSwitch","ch":"B","value":true},
+                {"cmd":"setEventLocation","event":4,"direction":0,"x":11,"y":7},
+                {"cmd":"switches","from":729,"to":729,"value":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"B"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_2",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]\\rWhat a waste...\\nnot to use your strength to do bad things!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]\\rFeh... People like you will never in a million years understand our brilliance!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceAriana]\\rIt's too bad... I've really come to respect your strength."
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":107,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Rocket final",
+      "x": 12,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "rocket_sublider",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["ROCKETLEADER"]},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnTowardPlayer"}]}
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceArcher]Archer:\\c[4] Oh? You managed to get this far...?\\nYou must be quite the Trainer."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceArcher]\\c[4]We intend to take over this Radio Tower and officially announce our comeback."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceArcher]\\c[4]That should bring our boss Giovanni back from his solitary training."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceArcher]\\c[4]We are going to regain our former glory..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceArcher]\\c[4]I will not allow you to interfere with our meticulous plans!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ROCKETLEADER","Archer"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceArcher]Archer: \\c[4]How could this be...?"},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceArcher]\\c[4]Our dream have come to naught. I was not up to the task after all."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceArcher]\\c[4]This will not be the last time you'll hear from us.\\nWe'll leave the Radio Tower, but this will not be the last time you'll hear about Team Rocket!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceArcher]\\c[4]Rest assured we'll be back!"},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {"cmd":"recoverAll"},
+                {"cmd":"switches","from":107,"to":107,"value":true},
+                {"cmd":"transfer","map":147,"x":14,"y":12,"direction":6,"fade":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"up"},{"move":"turnRight"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.5},
+                {"cmd":"wait","seconds":0.5}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"playBgm","audio":{"name":"Goldenrod","volume":70,"pitch":100}},
+            {"cmd":"memorizeBgmBgs"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"down"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"Director: Oh...!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"You have already defeated them?\\nThank you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"Your courageous actions have saved the Pokémon nationwide."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"You are well worth this.\\nPlease take it!"},
+            {"cmd":"call","fn":"pbReceiveItem","args":["SILVERWING"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"There used to be a tower right here."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "When the tower was replaced by the Radio Tower, that Silver Wing was found at the top of the tower."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "I heard from a friend from Cianwood City that you can go down the cave at Whirl Islands when you have a Silver Wing."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"I have to get back to my office.\\nSee you!"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"},{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":7,"animation":3},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"wait","seconds":1.0},{"move":"turnLeft"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"Oh, I almost forgot!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "According to my friend from Cianwood City, the legendary Pokémon will not appear if you just go down the cave at Whirl Islands with only that Silver Wing. "
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "Apparently there is something else you need... Or something like that."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"I wonder what it was..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"I can't remember."},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":7,"animation":3},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"wait","seconds":1.0},{"move":"turnLeft"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"Are you expecting something?\\nThis is what they call Fake Out."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"I really must go back to my office this time. See ya!"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"turnLeft"},
+                  {"move":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"completeQuest","args":["TeamRockerGoldenrod"]},
+            {"cmd":"switches","from":108,"to":108,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":108,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Diretor",
+      "x": 11,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":107,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk036-gentleman",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":108,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

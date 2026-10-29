@@ -1,0 +1,410 @@
+{
+  "id": 190,
+  "name": "Hall da Fama Johto",
+  "tilesetId": 15,
+  "width": 20,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"HallOfFame","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,52,76,76,76,56,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,2992,2992,2992,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,2992,2992,2992,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,1203,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,1203,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,72,1203,3334,1203,64,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,50,68,68,68,49,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3344,3344,3344,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3352,3352,3352,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,0,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3342,1101,3335,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3659,3660,3661,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3667,3668,3669,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3675,3676,3677,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3683,3684,3685,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,3272,3273,3274,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,1108,1109,1110,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk071-lance",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "assign",
+              "target": "$stats.hall_of_fame_entry_count",
+              "args": [],
+              "op": "+=",
+              "value": 1
+            },
+            {"cmd":"variables","from":13,"to":13,"op":"add","value":1},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"turnLeft"}
+                ]
+              }
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"turnRight"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]Lance:\\b It's been a long time since I last came here."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bThis is where we commemorate the League Champions for all eternity."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[lance]\\bTheir courageous Pokémon are also inducted."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bHere today, we witnessed the rise of a a new League Champion--\\na Trainer who feels compassion for, and trust toward, all Pokémon."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bA Trainer who succeeded through perseverance and determination."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\bThe new League Champion who has all the makings of greatness!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[lance]\\b\\PN, allow me to register you and your partners as Champions!"
+            },
+            {"cmd":"call","fn":"FollowingPkmn.toggle","args":[false]},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":true,"list":[{"move":"up"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Select","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"shiny","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"playSe","audio":{"name":"computeropen","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"recoverAll"},
+            {
+              "cmd": "script",
+              "ruby": "$player.pokemon_party.each do |pkmn|\n  pkmn.giveRibbon(:CHAMPION)\nend"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 2,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 0
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 2
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 2,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 0
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 6,
+                    "pattern": 3
+                  },
+                  {"move":"wait","seconds":0.25},
+                  {
+                    "move": "graphic",
+                    "characterName": "halldafamaballs",
+                    "characterHue": 0,
+                    "direction": 4,
+                    "pattern": 1
+                  },
+                  {"move":"wait","seconds":0.25}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"comment","lines":["Record an entry in the Hall of Fame."]},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"call","fn":"$stats.set_time_to_hall_of_fame","args":[]},
+            {"cmd":"call","fn":"pbHallOfFameEntry","args":[]},
+            {"cmd":"comment","lines":["Play the credits."]},
+            {
+              "cmd": "assign",
+              "target": "$scene",
+              "args": [],
+              "op": "=",
+              "value": {"call":"Scene_Credits.new"}
+            },
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"switches","from":131,"to":131,"value":false},
+            {"cmd":"switches","from":132,"to":132,"value":false},
+            {"cmd":"switches","from":133,"to":133,"value":false},
+            {"cmd":"switches","from":137,"to":137,"value":false},
+            {"cmd":"switches","from":138,"to":138,"value":false},
+            {"cmd":"switches","from":166,"to":166,"value":true},
+            {"cmd":"switches","from":556,"to":556,"value":false},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"recoverAll"},
+            {"cmd":"call","fn":"FollowingPkmn.toggle","args":[true]},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":2,"x":10,"y":8,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"switches","from":176,"to":176,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"variable":13,"op":"==","value":1},
+              "then": [{"cmd":"call","fn":"completeQuest","args":["JohtoPokemonLeague"]}]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"wait","seconds":2.0}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"selfSwitch","ch":"A","value":false},
+            {"cmd":"switches","from":176,"to":176,"value":false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "balls",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

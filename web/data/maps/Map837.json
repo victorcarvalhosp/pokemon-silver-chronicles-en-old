@@ -1,0 +1,241 @@
+{
+  "id": 837,
+  "name": "Elevador",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"Team_Aqua_Magma_Hideout_2","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,56,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,3275,3275,3275,3275,3275,3275,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,3275,3276,3276,3276,3276,3275,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,3275,3276,3276,3276,3276,3275,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,72,3275,3275,3275,3275,3275,3275,64,48,48,48,48,48,48,48,48],
+      [48,48,48,48,50,68,68,68,68,68,68,49,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,3579,3580,3581,3581,3582,3583,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,3587,3588,3589,3589,3590,3591,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,3595,3596,3597,3597,3598,3599,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,660,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,1100,1101,1102,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,1057,1057,1108,1109,1110,0,1056,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,91,81,93,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"variable":106,"op":"==","value":1},
+              "then": [
+                {"cmd":"text","text":"Deseja subir?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "playSe",
+                        "audio": {"name":"elevador funcionando","volume":80,"pitch":100}
+                      },
+                      {"cmd":"screenShake","power":3,"speed":3,"seconds":4.75},
+                      {"cmd":"wait","seconds":5.0},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [
+                            {"move":"down"},
+                            {"move":"left"},
+                            {"move":"left"},
+                            {"move":"left"},
+                            {"move":"down"},
+                            {"move":"down"}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"transfer","map":838,"x":13,"y":3,"direction":0,"fade":true},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                      }
+                    ],
+                    []
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"text","text":"Deseja descer?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["Sim","Não"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "playSe",
+                        "audio": {"name":"elevador funcionando","volume":80,"pitch":100}
+                      },
+                      {"cmd":"screenShake","power":3,"speed":3,"seconds":4.75},
+                      {"cmd":"wait","seconds":5.0},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": true,
+                          "list": [
+                            {"move":"down"},
+                            {"move":"left"},
+                            {"move":"left"},
+                            {"move":"left"},
+                            {"move":"down"},
+                            {"move":"down"}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"transfer","map":836,"x":2,"y":5,"direction":0,"fade":true},
+                      {
+                        "cmd": "moveRoute",
+                        "character": -1,
+                        "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                      }
+                    ],
+                    []
+                  ],
+                  "cancel": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 7,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"variable":105,"op":"==","value":0},
+              "then": [
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {"cmd":"transfer","map":818,"x":11,"y":19,"direction":0,"fade":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ],
+              "else": [
+                {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+                {"cmd":"transfer","map":814,"x":12,"y":17,"direction":0,"fade":true},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

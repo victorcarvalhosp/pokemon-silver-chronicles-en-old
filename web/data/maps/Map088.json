@@ -1,0 +1,618 @@
+{
+  "id": 88,
+  "name": "Ecruteak City - Tower",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 23,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,52,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48],
+      [48,48,48,48,72,178,164,164,164,164,164,164,164,164,180,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,160,144,144,144,144,144,144,144,144,168,64,48,48,48,48],
+      [48,48,48,48,72,184,172,172,172,172,172,172,172,172,182,64,48,48,48,48],
+      [48,48,48,48,50,68,68,68,84,704,705,82,68,68,68,49,48,48,48,48],
+      [48,48,48,48,48,48,48,48,50,68,68,49,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,384,384,384,384,384,384,384,384,384,384,0,0,0,0,0],
+      [0,0,0,0,0,392,392,392,392,392,392,392,392,392,392,0,0,0,0,0],
+      [0,0,0,0,0,0,0,1000,522,523,0,0,1001,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,986,530,531,0,0,987,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,986,538,539,0,0,987,0,0,0,0,0,0,0],
+      [0,0,0,0,0,994,984,1003,0,0,0,0,1002,984,995,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,1002,984,0,0,0,0,0,0,984,1003,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,1002,984,0,0,0,0,0,0,984,1003,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,985,0,0,0,0,0,0,0,0,986,0,0,0,0,0],
+      [0,0,0,0,0,984,984,984,995,0,0,994,984,984,984,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,986,0,0,987,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,986,0,0,987,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,970,0,0,0,0,0,0,0,0,970,0,0,0,0,0],
+      [0,0,0,0,0,978,0,0,0,0,0,0,0,0,978,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,970,0,0,0,0,0,0,0,0,970,0,0,0,0,0],
+      [0,0,0,0,0,978,0,0,0,0,0,0,0,0,978,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 7,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk021",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Johto region has two legends."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "One is the legend about Whirl Islands.\\nThe other is the Bell Tower legend..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "We have been passing down the Bell Tower legend for generations in Ecruteak City."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": " ",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The rainbow-hued Pokémon flying gracefully over the tower..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The silvery, sparkling Pokémon resting gently upon the whirling seabed..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"All of this is far beyound my imagination."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "carinha",
+      "x": 11,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::CLEARBELL"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"text","text":"Não pode passar, há coisas proibidas por aqui."},
+                {"cmd":"text","text":"O que? Tem o rarissimo CLEARBELL?!"},
+                {"cmd":"text","text":"Pode passar!"},
+                {"cmd":"switches","from":150,"to":150,"value":true}
+              ],
+              "else": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"You are just a young kid, you can't pass here."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"Sorry, but you'll have to leave."}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":150,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Há Pokémon lendários por aqui."}]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::CLEARBELL"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"text","text":"Não pode passar, há coisas proibidas por aqui."},
+                {"cmd":"text","text":"O que? Tem o rarissimo CLEARBELL?!"},
+                {"cmd":"text","text":"Pode passar!"},
+                {"cmd":"switches","from":150,"to":150,"value":true}
+              ],
+              "else": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"You are just a young kid, you can't pass here."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"Sorry, but you'll have to leave."},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":150,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::CLEARBELL"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"text","text":"Não pode passar, há coisas proibidas por aqui."},
+                {"cmd":"text","text":"O que? Tem o rarissimo CLEARBELL?!"},
+                {"cmd":"text","text":"Pode passar!"},
+                {"cmd":"switches","from":150,"to":150,"value":true}
+              ],
+              "else": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"You are just a young kid, you can't pass here."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"Sorry, but you'll have to leave."},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":150,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 9,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "op": ">",
+                  "left": {"call":"$bag.quantity","args":[{"call":"PBItems::CLEARBELL"}]},
+                  "right": 0
+                }
+              },
+              "then": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"text","text":"Não pode passar, há coisas proibidas por aqui."},
+                {"cmd":"text","text":"O que? Tem o rarissimo CLEARBELL?!"},
+                {"cmd":"text","text":"Pode passar!"},
+                {"cmd":"switches","from":150,"to":150,"value":true}
+              ],
+              "else": [
+                {"cmd":"showAnimation","character":3,"animation":17},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"You are just a young kid, you can't pass here."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,3]},
+                {"cmd":"text","text":"Sorry, but you'll have to leave."},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":150,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 10,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":83,"x":22,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"transfer","map":199,"x":9,"y":13,"direction":0,"fade":true},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 9,
+      "y": 20,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":83,"x":21,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

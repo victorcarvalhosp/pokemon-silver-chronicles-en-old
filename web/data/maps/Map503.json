@@ -1,0 +1,257 @@
+{
+  "id": 503,
+  "name": "Saffron City - Copycat Girl House",
+  "tilesetId": 2,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"viridiancity","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,72,405,405,405,405,405,405,405,405,405,405,405,405],
+      [48,48,48,48,48,48,48,72,413,413,413,413,413,413,413,413,413,413,413,413],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,72,411,411,411,411,411,411,411,411,411,411,411,411],
+      [48,48,48,48,48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,469,470,416,468,437,438,0,581,582],
+      [0,0,0,0,0,0,0,0,675,466,467,477,478,424,476,445,446,0,589,590],
+      [0,0,0,0,0,0,0,0,683,474,475,485,486,0,484,0,0,511,597,598],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,519,0,0],
+      [0,0,0,0,0,0,0,0,439,0,0,0,0,0,0,0,0,0,0,439],
+      [0,0,0,0,0,0,0,0,447,0,0,0,0,0,0,0,0,0,0,447],
+      [0,0,0,0,0,0,0,0,439,0,0,0,0,0,0,0,0,0,0,439],
+      [0,0,0,0,0,0,0,0,447,0,0,0,0,0,0,0,0,0,0,447],
+      [0,0,0,0,0,0,0,0,0,0,584,585,586,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,592,593,594,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,399,493,494,399,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,399,501,502,399,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,384,384,384,0,0,0,384,384,384,384,384,384,384],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 15,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk014",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "My daughter likes to mimix people.\\nHer mimicry has earned her the nickname Copycat around here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk009",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "She recently lost the Poke Doll that a boy have her four years ago."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Ever since then, she's gotten even better at mimicry..."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 11,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "242",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 1,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"Pokemon.play_cry","args":["BLISSEY"]},
+            {"cmd":"call","fn":"$player.pokedex.register","args":["BLISSEY"]},
+            {"cmd":"text","text":"Blissey: Bliisil!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 18,
+      "y": 2,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":504,"x":17,"y":2,"direction":6,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"right"}]}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 11,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":384,"x":23,"y":21,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

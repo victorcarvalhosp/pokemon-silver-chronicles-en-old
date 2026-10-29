@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit && tsc --noEmit -p tools/pbs/tsconfig.json",
     "test": "vitest run",
     "pbs": "node tools/pbs/compile.ts",
-    "convert": "ruby tools/convert/convert.rb",
+    "import-rxdata": "ruby tools/convert/convert.rb",
     "audio": "node tools/sound/convert.ts"
   },
   "dependencies": {

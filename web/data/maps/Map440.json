@@ -1,0 +1,606 @@
+{
+  "id": 440,
+  "name": "Day Care",
+  "tilesetId": 35,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": false,
+  "bgm": {"name":"","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,52,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48,48,48],
+      [48,72,424,416,416,416,440,440,440,440,440,440,440,440,64,48,48,48,48,48],
+      [48,72,432,432,432,432,440,441,442,442,442,442,443,440,64,48,48,48,48,48],
+      [48,72,440,440,440,440,440,449,450,450,450,450,451,440,64,48,48,48,48,48],
+      [48,72,440,440,440,440,440,449,450,450,450,450,451,440,64,48,48,48,48,48],
+      [48,72,440,440,440,440,440,457,458,458,458,458,459,440,64,48,48,48,48,48],
+      [48,72,440,440,440,440,440,440,440,440,440,440,440,440,64,48,48,48,48,48],
+      [48,50,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,444,445,445,445,445,445,445,445,445,445,445,446,0,0,0,0,0,0],
+      [0,0,452,453,453,453,453,453,453,453,453,453,453,454,0,0,0,0,0,0],
+      [0,0,460,0,0,0,0,0,0,0,0,0,0,462,0,0,0,0,0,0],
+      [0,0,484,485,0,492,493,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,413,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,405,0,0,0,0,0,0,0,0,0,0,405,0,0,0,0,0,0],
+      [0,0,413,0,0,389,390,391,0,0,0,0,0,413,0,0,0,0,0,0],
+      [0,0,0,0,0,397,398,399,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,430,430,0,0,0,430,430,0,0,407,0,0,0,0,0,0,0],
+      [0,0,0,438,438,0,486,0,438,438,0,0,415,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,494,0,0,0,0,0,423,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,422,402,403,422,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,422,410,411,422,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 11,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk022",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"DayCare.egg_generated?"}},
+              "then": [{"cmd":"text","text":"Meu marido quer falar com você."},{"cmd":"exitEvent"}]
+            },
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":0}},
+              "then": [
+                {"cmd":"text","text":"Sou a criadora mulher."},
+                {"cmd":"text","text":"Eu posso treinar os seus Pokémons."},
+                {"cmd":"text","text":"Você quer deixar um Pokémon conosco?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["SIM","NÃO"],
+                  "branches": [
+                    [
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"op":"<=","left":{"call":"$player.pokemonCount"},"right":1}},
+                        "then": [
+                          {"cmd":"text","text":"Oh?  Você só tem um Pokémon."},
+                          {"cmd":"text","text":"Volte outra hora."},
+                          {"cmd":"selfSwitch","ch":"A","value":false},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"text","text":"Qual Pokémon quer que eu treine para você?"},
+                      {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                      {
+                        "cmd": "if",
+                        "cond": {"variable":1,"op":"<","value":0},
+                        "then": [
+                          {"cmd":"text","text":"Ok.Venha novamente."},
+                          {"cmd":"selfSwitch","ch":"A","value":false},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "op": ">",
+                            "left": {"call":"eggsteps","on":{"call":"pbGetPokemon","args":[1]}},
+                            "right": 0
+                          }
+                        },
+                        "then": [
+                          {"cmd":"text","text":"I'm afraid that Pokemon is actually an Egg."},
+                          {"cmd":"selfSwitch","ch":"A","value":false},
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"call","fn":"DayCare.deposit","args":[{"call":"pbGet","args":[1]}]},
+                      {"cmd":"text","text":"Ok,  trainaremos o seu \\v[3] por um tempo."},
+                      {"cmd":"text","text":"Volte para isso depois."},
+                      {"cmd":"label","name":"RaiseAnother"},
+                      {
+                        "cmd": "text",
+                        "text": "Você pode treinar dois de seus Pokémons. Quer deixar mais um?"
+                      },
+                      {
+                        "cmd": "choices",
+                        "choices": ["SIM","NÃO"],
+                        "branches": [
+                          [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"<=","left":{"call":"$player.pokemonCount"},"right":1}
+                              },
+                              "then": [
+                                {"cmd":"text","text":"Oh?  Você só tem um Pokémon."},
+                                {"cmd":"text","text":"Volte outra hora."},
+                                {"cmd":"selfSwitch","ch":"A","value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            },
+                            {"cmd":"text","text":"Qual Pokémon podemos treinar para você?"},
+                            {"cmd":"call","fn":"pbChoosePokemon","args":[1,3]},
+                            {
+                              "cmd": "if",
+                              "cond": {"variable":1,"op":"<","value":0},
+                              "then": [
+                                {"cmd":"text","text":"Ok.Venha novamente."},
+                                {"cmd":"selfSwitch","ch":"A","value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            },
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {
+                                  "op": ">",
+                                  "left": {"call":"eggsteps","on":{"call":"pbGetPokemon","args":[1]}},
+                                  "right": 0
+                                }
+                              },
+                              "then": [
+                                {"cmd":"text","text":"Esse Pokémon é atualmente um Ovo."},
+                                {"cmd":"selfSwitch","ch":"A","value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            },
+                            {
+                              "cmd": "call",
+                              "fn": "DayCare.deposit",
+                              "args": [{"call":"pbGet","args":[1]}]
+                            },
+                            {"cmd":"text","text":"Ok,  trainaremos o seu \\v[3] por um tempo."},
+                            {"cmd":"text","text":"Volte para isso depois."}
+                          ],
+                          [
+                            {
+                              "cmd": "if",
+                              "cond": {"selfSwitch":"A","value":true},
+                              "then": [{"cmd":"jump","label":"TakeBack"}],
+                              "else": [{"cmd":"text","text":"Ok.Venha novamente."}]
+                            }
+                          ]
+                        ],
+                        "cancel": 1
+                      }
+                    ],
+                    [{"cmd":"text","text":"Ok.Volte sempre."}]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {"cmd":"text","text":"Oh!É tão bom te ver aqui."},
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "op": "&&",
+                      "left": {"call":"DayCare.get_level_gain","args":[0,3,6]},
+                      "right": {"op":">","left":{"call":"$game_variables[]","args":[6]},"right":0}
+                    }
+                  },
+                  "then": [{"cmd":"text","text":"Seu \\v[3]'s passou \\v[6].leveis"}]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "op": "&&",
+                      "left": {"call":"DayCare.get_level_gain","args":[1,3,6]},
+                      "right": {"op":">","left":{"call":"$game_variables[]","args":[6]},"right":0}
+                    }
+                  },
+                  "then": [{"cmd":"text","text":"Seu \\v[3]'s passou \\v[6].leveis"}]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":1}},
+                  "then": [{"cmd":"selfSwitch","ch":"A","value":true},{"cmd":"jump","label":"RaiseAnother"}],
+                  "else": [
+                    {"cmd":"label","name":"TakeBack"},
+                    {"cmd":"text","text":"Quer pegar o Pokémon de volta?"},
+                    {
+                      "cmd": "choices",
+                      "choices": ["SIM","NÃO"],
+                      "branches": [
+                        [
+                          {"cmd":"label","name":"TakeBackChosen"},
+                          {
+                            "cmd": "if",
+                            "cond": {"script":{"op":"==","left":{"call":"$player.party.length"},"right":6}},
+                            "then": [
+                              {"cmd":"text","text":"Seu time está cheio..."},
+                              {"cmd":"selfSwitch","ch":"A","value":false},
+                              {"cmd":"exitEvent"}
+                            ]
+                          },
+                          {
+                            "cmd": "call",
+                            "fn": "DayCare.choose",
+                            "args": [{"call":"_I","args":["Which one will you take?"]},1]
+                          },
+                          {
+                            "cmd": "if",
+                            "cond": {"variable":1,"op":"<","value":0},
+                            "then": [
+                              {"cmd":"text","text":"Ok. Volte sempre."},
+                              {"cmd":"selfSwitch","ch":"A","value":false},
+                              {"cmd":"exitEvent"}
+                            ]
+                          },
+                          {
+                            "cmd": "call",
+                            "fn": "DayCare.get_details",
+                            "args": [{"call":"pbGet","args":[1]},6,7]
+                          },
+                          {"cmd":"text","text":"Se quiser o \\v[6] de volta, custará $\\v[7]."},
+                          {
+                            "cmd": "choices",
+                            "choices": ["SIM","NÃO"],
+                            "branches": [
+                              [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "op": "<",
+                                      "left": {"call":"$player.money"},
+                                      "right": {"call":"pbGet","args":[7]}
+                                    }
+                                  },
+                                  "then": [
+                                    {"cmd":"text","text":"Não tem dinheiro suficiente..."},
+                                    {"cmd":"selfSwitch","ch":"A","value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                },
+                                {
+                                  "cmd": "assign",
+                                  "target": "$player.money",
+                                  "args": [],
+                                  "op": "-=",
+                                  "value": {"call":"pbGet","args":[7]}
+                                },
+                                {
+                                  "cmd": "call",
+                                  "fn": "DayCare.withdraw",
+                                  "args": [{"call":"pbGet","args":[1]}]
+                                },
+                                {"cmd":"text","text":"Perfeito.  Aqui está o seu Pokémon."},
+                                {"cmd":"text","text":"\\PN pegou \\v[6] de volta da Day-Care Lady."},
+                                {
+                                  "cmd": "if",
+                                  "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":1}},
+                                  "then": [
+                                    {"cmd":"text","text":"Quer pegar o outro também?"},
+                                    {
+                                      "cmd": "choices",
+                                      "choices": ["SIM","NÃO"],
+                                      "branches": [
+                                        [{"cmd":"jump","label":"TakeBackChosen"}],
+                                        [{"cmd":"text","text":"Ok.Venha novamente."}]
+                                      ],
+                                      "cancel": 1
+                                    }
+                                  ],
+                                  "else": [{"cmd":"text","text":"Ok.Venha novamente."}]
+                                }
+                              ],
+                              [{"cmd":"text","text":"Ok.Venha novamente."}]
+                            ],
+                            "cancel": 1
+                          }
+                        ],
+                        [{"cmd":"text","text":"Ok.Venha novamente."}]
+                      ],
+                      "cancel": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {"cmd":"selfSwitch","ch":"A","value":false}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 8,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"DayCare.egg_generated?"}},
+              "then": [
+                {"cmd":"text","text":"Ah, it's you!"},
+                {
+                  "cmd": "text",
+                  "text": "We were raising your Pokemon, and my goodness, were we surprised!"
+                },
+                {"cmd":"text","text":"Your Pokemon had an Egg!"},
+                {"cmd":"text","text":"We don't know how it got there, but your Pokemon had it."},
+                {"cmd":"text","text":"You do want it, yes?"},
+                {
+                  "cmd": "choices",
+                  "choices": ["YES","NO"],
+                  "branches": [
+                    [
+                      {"cmd":"label","name":"ReceiveEgg"},
+                      {
+                        "cmd": "if",
+                        "cond": {"script":{"op":">=","left":{"call":"$player.party.length"},"right":6}},
+                        "then": [
+                          {
+                            "cmd": "text",
+                            "text": "You have no room for it.  Come back when you've made room."
+                          },
+                          {"cmd":"exitEvent"}
+                        ]
+                      },
+                      {"cmd":"text","text":"\\PN received the Egg from the Day-Care Man."},
+                      {"cmd":"text","text":"Take good care of it."},
+                      {"cmd":"call","fn":"DayCare.collect_egg","args":[]},
+                      {
+                        "cmd": "assign",
+                        "target": "$PokemonGlobal.daycareEgg",
+                        "args": [],
+                        "op": "=",
+                        "value": 0
+                      },
+                      {
+                        "cmd": "assign",
+                        "target": "$PokemonGlobal.daycareEggSteps",
+                        "args": [],
+                        "op": "=",
+                        "value": 0
+                      },
+                      {"cmd":"selfSwitch","ch":"B","value":false},
+                      {"cmd":"selfSwitch","ch":"A","value":true},
+                      {"cmd":"exitEvent"}
+                    ],
+                    [
+                      {"cmd":"text","text":"I really will keep it.  You do want this, yes?"},
+                      {
+                        "cmd": "choices",
+                        "choices": ["YES","NO"],
+                        "branches": [
+                          [{"cmd":"jump","label":"ReceiveEgg"}],
+                          [
+                            {"cmd":"text","text":"Well then, I'll keep it.  Thanks!"},
+                            {
+                              "cmd": "assign",
+                              "target": "$PokemonGlobal.daycareEgg",
+                              "args": [],
+                              "op": "=",
+                              "value": 0
+                            },
+                            {
+                              "cmd": "assign",
+                              "target": "$PokemonGlobal.daycareEggSteps",
+                              "args": [],
+                              "op": "=",
+                              "value": 0
+                            },
+                            {"cmd":"selfSwitch","ch":"B","value":false},
+                            {"cmd":"selfSwitch","ch":"A","value":true},
+                            {"cmd":"exitEvent"}
+                          ]
+                        ],
+                        "cancel": 1
+                      }
+                    ]
+                  ],
+                  "cancel": 1
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":0}},
+                  "then": [
+                    {"cmd":"text","text":"I'm the Day-Care Man."},
+                    {"cmd":"text","text":"I help take care of the precious Pokemon of Trainers."},
+                    {
+                      "cmd": "text",
+                      "text": "If you'd like me to raise your Pokemon, have a word with my wife."
+                    }
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":1}},
+                  "then": [
+                    {"cmd":"call","fn":"DayCare.get_details","args":[-1,6,-1]},
+                    {
+                      "cmd": "text",
+                      "text": "Ah, it's you!  Good to see you.  Your \\v[6]'s doing fine."
+                    }
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"DayCare.count"},"right":2}},
+                  "then": [
+                    {"cmd":"call","fn":"DayCare.get_details","args":[0,6,-1]},
+                    {"cmd":"call","fn":"DayCare.get_details","args":[1,7,-1]},
+                    {"cmd":"call","fn":"DayCare.get_compatibility","args":[8]},
+                    {"cmd":"text","text":"Ah, it's you!  Your \\v[6] and \\v[7] are doing fine."},
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":8,"op":"==","value":0},
+                      "then": [
+                        {
+                          "cmd": "text",
+                          "text": "The two prefer to play with other Pokemon than each other."
+                        }
+                      ]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":8,"op":"==","value":1},
+                      "then": [{"cmd":"text","text":"The two don't seem to like each other."}]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":8,"op":"==","value":2},
+                      "then": [{"cmd":"text","text":"The two seem to get along."}]
+                    },
+                    {
+                      "cmd": "if",
+                      "cond": {"variable":8,"op":"==","value":3},
+                      "then": [{"cmd":"text","text":"The two seem to get along very well."}]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 12,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"call","fn":"pbPokeCenterPC","args":[]}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "EV005",
+      "x": 6,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":379,"x":23,"y":25,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

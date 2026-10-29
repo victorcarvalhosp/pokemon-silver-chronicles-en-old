@@ -1,0 +1,475 @@
+{
+  "id": 514,
+  "name": "Route 20 - Gym",
+  "tilesetId": 23,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96],
+      [96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96,96]
+    ],
+    [
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1200,1193,1193,1193,1193,1193,1193,1193,1201,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1186,1242,1242,0,0,0,0,1242,1184,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1186,1242,0,0,0,0,0,1242,1184,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1186,0,0,0,0,0,0,1242,1184,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1186,1242,0,0,0,0,0,0,1184,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1208,1177,1177,1232,1233,1234,1177,1177,1209,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185],
+      [1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185,1185]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,1242,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.15},
+            {"cmd":"transfer","map":423,"x":57,"y":51,"direction":2,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+            },
+            {"cmd":"switches","from":815,"to":815,"value":true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceBlaine]Blaine: \\bHey, you!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bMy Gym in Cinnabar Island was burned down by the eruption!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bBut I will not give up!\\nTake a look at this cave."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bI have turned it into a Gym, and I am still acting as a Gym Leader!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bI will give you the Gym Badge if you manage to defeat me!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\f[faceBlaine]\\bAre you ready? Here we go!"},
+            {"cmd":"switches","from":968,"to":968,"value":true},
+            {
+              "cmd": "if",
+              "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":8}},
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_BLAINE","Blaine",1]}},
+                  "then": [],
+                  "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                }
+              ],
+              "else": [
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":9}},
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"TrainerBattle.start","args":["LEADER_BLAINE","Blaine",2]}},
+                      "then": [],
+                      "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":10}},
+                      "then": [
+                        {
+                          "cmd": "if",
+                          "cond": {
+                            "script": {"call":"TrainerBattle.start","args":["LEADER_BLAINE","Blaine",3]}
+                          },
+                          "then": [],
+                          "else": [{"cmd":"switches","from":968,"to":968,"value":false},{"cmd":"exitEvent"}]
+                        }
+                      ],
+                      "else": [
+                        {
+                          "cmd": "if",
+                          "cond": {"script":{"op":"==","left":{"call":"$player.badge_count"},"right":11}},
+                          "then": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"call":"TrainerBattle.start","args":["LEADER_BLAINE","Blaine",4]}
+                              },
+                              "then": [],
+                              "else": [
+                                {"cmd":"switches","from":968,"to":968,"value":false},
+                                {"cmd":"exitEvent"}
+                              ]
+                            }
+                          ],
+                          "else": [
+                            {
+                              "cmd": "if",
+                              "cond": {
+                                "script": {"op":"==","left":{"call":"$player.badge_count"},"right":12}
+                              },
+                              "then": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {
+                                      "call": "TrainerBattle.start",
+                                      "args": ["LEADER_BLAINE","Blaine",5]
+                                    }
+                                  },
+                                  "then": [],
+                                  "else": [
+                                    {"cmd":"switches","from":968,"to":968,"value":false},
+                                    {"cmd":"exitEvent"}
+                                  ]
+                                }
+                              ],
+                              "else": [
+                                {
+                                  "cmd": "if",
+                                  "cond": {
+                                    "script": {"op":"==","left":{"call":"$player.badge_count"},"right":13}
+                                  },
+                                  "then": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {
+                                          "call": "TrainerBattle.start",
+                                          "args": ["LEADER_BLAINE","Blaine",6]
+                                        }
+                                      },
+                                      "then": [],
+                                      "else": [
+                                        {"cmd":"switches","from":968,"to":968,"value":false},
+                                        {"cmd":"exitEvent"}
+                                      ]
+                                    }
+                                  ],
+                                  "else": [
+                                    {
+                                      "cmd": "if",
+                                      "cond": {
+                                        "script": {"op":"==","left":{"call":"$player.badge_count"},"right":14}
+                                      },
+                                      "then": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_BLAINE","Blaine",7]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ],
+                                      "else": [
+                                        {
+                                          "cmd": "if",
+                                          "cond": {
+                                            "script": {
+                                              "call": "TrainerBattle.start",
+                                              "args": ["LEADER_BLAINE","Blaine",8]
+                                            }
+                                          },
+                                          "then": [],
+                                          "else": [
+                                            {"cmd":"switches","from":968,"to":968,"value":false},
+                                            {"cmd":"exitEvent"}
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "cmd": "if",
+              "cond": {"variable":1,"op":"==","value":1},
+              "then": [
+                {"cmd":"switches","from":968,"to":968,"value":false},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceBlaine]Blaine: \\bAwesome. I have burned out..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\f[faceBlaine]\\bTake this Volcano Badge!"},
+                {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                {"cmd":"text","text":"\\PN received the Volcano Badge from Blaine!"},
+                {"cmd":"wait","seconds":1.0},
+                {"cmd":"assign","target":"$player.badges[]","args":[14],"op":"=","value":true},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceBlaine]Blaine: \\bHere, I will give you this, too. \\nIt's called Overheat!"
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceBlaine]\\bIt has a slight drawback, but it's powerful and well worth it!"
+                },
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbReceiveItem","args":["TM50"]}},
+                  "then": [
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceBlaine]Blaine: \\bI did lose this time, but I'm going to win next time."
+                    },
+                    {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[faceBlaine]\\bWhen I rebuild my Cinnabar Gym, we have to hold a rematch."
+                    },
+                    {"cmd":"selfSwitch","ch":"A","value":true},
+                    {"cmd":"switches","from":297,"to":297,"value":true}
+                  ]
+                },
+                {"cmd":"commonEvent","id":69}
+              ]
+            },
+            {"cmd":"switches","from":968,"to":968,"value":false}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]Blaine: \\bMy Fire-type Pokemon will be even stronger! Just you watch!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":767,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 8,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dragons den fire",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 10,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "dragons den fire",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": true,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

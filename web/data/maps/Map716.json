@@ -1,0 +1,1211 @@
+{
+  "id": 716,
+  "name": "gim",
+  "tilesetId": 46,
+  "width": 20,
+  "height": 29,
+  "autoplayBgm": true,
+  "bgm": {"name":"PkmRS-Gym","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [402,403,403,403,404,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [410,411,411,411,412,384,384,384,384,384,384,384,384,384,384,384,384,384,64,48],
+      [48,48,48,48,72,418,419,82,68,68,68,68,68,68,68,68,68,68,49,48]
+    ],
+    [
+      [86,438,438,438,438,438,438,438,438,438,438,438,438,438,438,438,88,86,0,0],
+      [413,403,403,428,429,403,403,398,438,397,403,398,438,438,397,403,398,401,0,0],
+      [420,411,411,436,437,411,411,400,438,401,411,402,398,438,401,411,400,401,0,0],
+      [420,0,424,425,426,427,0,408,403,404,0,410,402,398,401,0,400,401,0,0],
+      [420,0,432,433,434,435,0,416,411,412,0,0,410,402,404,0,400,401,0,0],
+      [421,396,0,0,0,0,394,395,395,395,395,396,0,410,412,0,400,401,0,0],
+      [400,405,395,395,395,395,413,403,403,403,403,404,0,0,394,395,406,401,0,0],
+      [400,397,403,398,438,438,401,411,411,411,411,412,0,0,400,397,403,414,0,0],
+      [413,409,411,408,403,398,405,395,396,0,392,393,0,394,406,401,411,420,0,0],
+      [420,417,0,416,411,400,438,438,401,0,400,401,0,400,438,401,0,420,0,0],
+      [420,0,0,392,395,406,438,438,401,0,400,401,0,413,403,404,0,420,0,0],
+      [421,393,0,400,438,438,397,403,404,0,400,401,0,420,411,412,0,420,0,0],
+      [400,401,0,400,397,403,404,411,412,0,408,409,0,421,395,393,0,420,0,0],
+      [413,404,0,400,401,411,412,0,0,0,416,417,0,400,438,401,0,420,0,0],
+      [420,412,0,408,409,0,394,395,395,393,0,0,0,400,438,401,0,420,0,0],
+      [420,0,0,416,417,0,400,438,438,405,393,0,394,406,438,401,0,420,0,0],
+      [420,0,0,394,395,395,406,397,403,398,401,0,400,397,403,404,0,420,0,0],
+      [421,393,0,400,438,438,438,401,411,400,401,0,408,409,411,412,0,420,0,0],
+      [400,405,395,406,438,438,438,401,0,400,401,0,416,417,0,0,394,422,0,0],
+      [400,397,403,398,438,438,438,401,0,408,409,0,0,394,395,395,406,401,0,0],
+      [400,401,411,408,403,403,403,404,0,416,417,0,0,402,403,403,398,401,0,0],
+      [400,401,0,416,411,411,411,412,0,0,0,0,0,410,411,411,400,401,0,0],
+      [400,405,393,0,0,0,0,0,394,395,395,396,0,394,395,395,406,401,0,0],
+      [400,438,405,393,391,0,0,391,400,438,438,401,0,400,438,438,438,401,0,0],
+      [400,438,438,401,399,0,0,399,400,438,438,401,0,400,438,438,438,401,0,0],
+      [400,438,438,405,396,0,0,394,406,438,438,405,395,406,438,438,438,401,0,0],
+      [0,0,0,0,0,0,0,402,403,403,403,403,403,403,403,403,403,404,90,0],
+      [0,0,0,0,0,0,0,410,411,411,411,411,411,411,411,411,411,412,92,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,407,0,0,0,0,407,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,415,0,0,0,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 5,
+      "y": 24,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Dp_gimboy",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bO líder Brawly usa Pokémons do tipo lutador, aconselho usar tipo Voador ou Psíquico na luta."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Trainer(3)",
+      "x": 12,
+      "y": 25,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BATTLEGIRL"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\rNão me responsabilizo se você chorar!"},
+            {"cmd":"comment","lines":["EndSpeech: Whoaaa!\\nEu perdi!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BATTLEGIRL"},"LAURA",1]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rEu batalho no escuro para fazer meu coração mais forte. \\rMas, por causa da escuridão, eu nunca vi o rosto de Brawly..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(3)",
+      "x": 16,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BATTLEGIRL"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\rVocê tem medo do escuro?"},
+            {"cmd":"comment","lines":["EndSpeech: Oh, você...\\nNão foi um prazer te conhecer!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BATTLEGIRL"},"Lilith",1]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rVocê tem que estar preparado para perder e ter que entrar pela entrada de novo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(3)",
+      "x": 14,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["SAILOR"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bVou te mostrar a coragem dos marinheiros!"},
+            {"cmd":"comment","lines":["EndSpeech: O que aconteceu?\\nEu não perco desse jeito!"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::SAILOR"},"Brenden",1]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer046cA",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bPenso que você seja forte o suficiente para enfrentar o líder."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(3)",
+      "x": 2,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bLutar é certo!\\nVamos lá!"},
+            {"cmd":"comment","lines":["EndSpeech: Sem poder suficiente..."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {"call":"TrainerBattle.start","args":[{"call":"PBTrainers::BLACKBELT"},"TAKAO",1]}
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\bSuas habilidades ganham da minha força.\\nSua técnica é extraordinária."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Trainer(3)",
+      "x": 7,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BLACKBELT"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"text","text":"\\bSe você quer passar, tem que ser mais forte do que eu."},
+            {"cmd":"comment","lines":["EndSpeech: Awww!\\nPoder sobrecarregado."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::BLACKBELT"},"Cristian",1]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer016c",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"\\bVocê ganhou!\\nVá até o líder ganhar sua Insígnia."}]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Trainer(3)",
+      "x": 15,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["BATTLEGIRL"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {
+              "cmd": "text",
+              "text": "\\rNão tem motivos para envolver Brawly. \\rEu mesma vou te quebrar!"
+            },
+            {"cmd":"comment","lines":["EndSpeech: Mas... Como?\\nComo pude perder tão facilmente?"]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::BATTLEGIRL"},"JOCELYN",1]
+                }
+              },
+              "then": [
+                {
+                  "cmd": "if",
+                  "cond": {"switch":431,"value":true},
+                  "then": [{"cmd":"variables","from":85,"to":85,"op":"add","value":1}]
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "trainer033c",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 5,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {"move":"turnDown"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnLeft"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnRight"},
+              {"move":"wait","seconds":0.35},
+              {"move":"turnUp"},
+              {"move":"wait","seconds":0.35}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\rNão vou me aborrcer com esta derrota.\\nVou usá-la como incentivo para treinar mais! \\rUm dia, me tornarei uma líder de ginásio."
+            },
+            {"cmd":"text","text":"\\rNão, me tornarei uma Campeã da Liga!"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 4,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "brawly",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\f[facebrawly]\\bSou Brawly!\\nLíder do Ginásio de Dewford!"},
+            {
+              "cmd": "text",
+              "text": "\\f[facebrawly]\\bEu treinei meus Pokémons em grandes ondas e em cavernas escuras."
+            },
+            {
+              "cmd": "text",
+              "text": "\\f[facebrawly]\\bEntão você quer me desafiar?\\nVamos ver do que é capaz!"
+            },
+            {
+              "cmd": "if",
+              "cond": {"switch":431,"value":true},
+              "then": [
+                {"cmd":"switches","from":431,"to":431,"value":false},
+                {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+                {"cmd":"memorizeBgmBgs"},
+                {
+                  "cmd": "playBgm",
+                  "audio": {"name":"Pkmn_FRLG_Battle_RS_Trainer","volume":100,"pitch":100}
+                },
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "versusbatle",
+                  "origin": "topLeft",
+                  "x": 380,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "versusBrawly",
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 98,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"pictureTone","id":2,"tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.05},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 280,
+                  "y": 98,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.3
+                },
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"pictureTone","id":2,"tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":1.0},
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "EndSpeech: Wow! Você fez um estrago muito maior do que eu imaginava!\\nVocê me derrotou.\\nOk, tome esta Insígnia."
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "call": "TrainerBattle.start",
+                      "args": [{"call":"PBTrainers::LEADER_Brawly"},"Brawly"]
+                    }
+                  },
+                  "then": [
+                    {
+                      "cmd": "if",
+                      "cond": {"switch":141,"value":true},
+                      "then": [{"cmd":"commonEvent","id":37}],
+                      "else": [{"cmd":"commonEvent","id":36}]
+                    },
+                    {"cmd":"erasePicture","id":1},
+                    {"cmd":"erasePicture","id":2},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":1.0},
+                    {"cmd":"restoreBgmBgs"},
+                    {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                    {
+                      "cmd": "text",
+                      "text": "\\PN foi presenteado com uma Insígnia de Knuckle do Ginásio da Cidade de Dewford."
+                    },
+                    {"cmd":"assign","target":"$player.badges[]","args":[17],"op":"=","value":true},
+                    {"cmd":"text","text":"\\f[facebrawly]\\bTome este TM também:"},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM08"}]}},
+                      "then": []
+                    },
+                    {"cmd":"text","text":"\\f[facebrawly]\\bTM 08 contém BULCK UP."},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebrawly]\\bÉ um movimento que melhora o Ataque e a Defesa do Pokémon."
+                    },
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebrawly]\\bAgora você também pode retirar seus Pokémons de outra região, até o level 25."
+                    },
+                    {"cmd":"switches","from":451,"to":451,"value":true}
+                  ]
+                }
+              ],
+              "else": [
+                {"cmd":"memorizeBgmBgs"},
+                {
+                  "cmd": "playBgm",
+                  "audio": {"name":"Pkmn_FRLG_Battle_RS_Trainer","volume":100,"pitch":100}
+                },
+                {
+                  "cmd": "showPicture",
+                  "id": 1,
+                  "name": "versusbatle",
+                  "origin": "topLeft",
+                  "x": 380,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 0,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "showPicture",
+                  "id": 2,
+                  "name": "versusBrawly",
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0
+                },
+                {"cmd":"pictureTone","id":2,"tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.05},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 280,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.3
+                },
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":0.3},
+                {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                {"cmd":"pictureTone","id":2,"tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+                {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+                {"cmd":"wait","seconds":1.0},
+                {
+                  "cmd": "movePicture",
+                  "id": 1,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 0,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "movePicture",
+                  "id": 2,
+                  "origin": "topLeft",
+                  "x": 500,
+                  "y": 85,
+                  "zoomX": 100,
+                  "zoomY": 100,
+                  "opacity": 255,
+                  "blendType": 0,
+                  "seconds": 0.5
+                },
+                {
+                  "cmd": "comment",
+                  "lines": [
+                    "EndSpeech: Wow! Você fez um estrago muito maior do que eu imaginava!\\nVocê me derrotou.\\nOk, tome esta Insígnia."
+                  ]
+                },
+                {
+                  "cmd": "if",
+                  "cond": {
+                    "script": {
+                      "call": "TrainerBattle.start",
+                      "args": [{"call":"PBTrainers::LEADER_Brawly"},"Brawly"]
+                    }
+                  },
+                  "then": [
+                    {"cmd":"erasePicture","id":1},
+                    {"cmd":"erasePicture","id":2},
+                    {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
+                    {"cmd":"restoreBgmBgs"},
+                    {"cmd":"playMe","audio":{"name":"PkmRS-Badge","volume":100,"pitch":100}},
+                    {
+                      "cmd": "text",
+                      "text": "\\PN foi presenteado com uma Insígnia de Knuckle do Ginásio da Cidade de Dewford."
+                    },
+                    {"cmd":"assign","target":"$player.badges[]","args":[21],"op":"=","value":true},
+                    {"cmd":"text","text":"\\f[facebrawly]\\bTome este TM também:"},
+                    {
+                      "cmd": "if",
+                      "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::TM08"}]}},
+                      "then": []
+                    },
+                    {"cmd":"text","text":"\\f[facebrawly]\\bTM 08 contém BULCK UP."},
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebrawly]\\bÉ um movimento que melhora o Ataque e a Defesa do Pokémon."
+                    },
+                    {
+                      "cmd": "text",
+                      "text": "\\f[facebrawly]\\bAgora você também pode retirar seus Pokémons de outra região, até o level 25."
+                    },
+                    {"cmd":"switches","from":451,"to":451,"value":true}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":451,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "brawly",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\f[facebrawly]\\bEu posso ver seu talento se tornando uma gigante onda, para causar uma tempestade de punição para os mal treinadores, um dia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 6,
+      "y": 28,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":207,"x":13,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 5,
+      "y": 28,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":207,"x":13,"y":17,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    }
+  ]
+}

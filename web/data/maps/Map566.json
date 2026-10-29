@@ -1,0 +1,497 @@
+{
+  "id": 566,
+  "name": "7°gim",
+  "tilesetId": 40,
+  "width": 20,
+  "height": 15,
+  "autoplayBgm": true,
+  "bgm": {"name":"POKEKANTOGYM","volume":100,"pitch":50},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,52,76,76,76,76,76,76,76,56,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,800,800,800,800,800,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,800,800,800,800,800,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,856,857,858,859,860,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,864,865,866,867,868,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,872,873,874,875,876,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,880,881,882,883,884,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,888,889,890,891,892,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,896,897,898,899,900,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,800,800,800,800,800,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,800,800,800,800,800,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,72,800,800,800,800,800,800,800,64,48,48,48,48,48,48],
+      [48,48,48,48,48,50,68,68,68,68,68,68,68,49,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,465,465,465,465,465,465,465,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,468,468,468,468,468,468,468,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,472,473,474,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,480,481,482,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,488,489,490,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,649,649,642,643,644,649,649,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "EV001",
+      "x": 9,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"text","text":"\\f[faceBlaine]\\bWaaah!"},
+            {"cmd":"text","text":"\\f[faceBlaine]\\bSua criancinha!!"},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bVocê vai se arrepender de ter me vencido na ultima batalha!!"
+            },
+            {"cmd":"text","text":"\\f[faceBlaine]\\bWaaah!"},
+            {"cmd":"text","text":"\\f[faceBlaine]\\bVamos começar isso logo!"},
+            {"cmd":"memorizeBgmBgs"},
+            {
+              "cmd": "playBgm",
+              "audio": {"name":"Pkmn_FRLG_Battle_RS_Trainer","volume":100,"pitch":100}
+            },
+            {
+              "cmd": "showPicture",
+              "id": 1,
+              "name": "versusbatle",
+              "origin": "topLeft",
+              "x": 380,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {
+              "cmd": "movePicture",
+              "id": 1,
+              "origin": "topLeft",
+              "x": 0,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"wait","seconds":0.3},
+            {
+              "cmd": "showPicture",
+              "id": 2,
+              "name": "versusBlaine",
+              "origin": "topLeft",
+              "x": 500,
+              "y": 98,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0
+            },
+            {"cmd":"pictureTone","id":2,"tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.05},
+            {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "topLeft",
+              "x": 300,
+              "y": 98,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.3
+            },
+            {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"pictureTone","id":1,"tone":[102.0,68.0,136.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+            {"cmd":"pictureTone","id":2,"tone":[0.0,0.0,0.0,0.0],"seconds":0.25},
+            {"cmd":"pictureTone","id":1,"tone":[0.0,0.0,0.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":1.0},
+            {
+              "cmd": "movePicture",
+              "id": 1,
+              "origin": "topLeft",
+              "x": 500,
+              "y": 0,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {
+              "cmd": "movePicture",
+              "id": 2,
+              "origin": "topLeft",
+              "x": 500,
+              "y": 85,
+              "zoomX": 100,
+              "zoomY": 100,
+              "opacity": 255,
+              "blendType": 0,
+              "seconds": 0.5
+            },
+            {"cmd":"comment","lines":["EndSpeech: Suma da minha frente, sua criança molhada."]},
+            {
+              "cmd": "if",
+              "cond": {
+                "script": {
+                  "call": "TrainerBattle.start",
+                  "args": [{"call":"PBTrainers::LEADER_BLAINE"},"BLAINE"]
+                }
+              },
+              "then": [
+                {"cmd":"erasePicture","id":1},
+                {"cmd":"erasePicture","id":2},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"transfer","map":566,"x":9,"y":7,"direction":8,"fade":true},
+                {"cmd":"switches","from":318,"to":318,"value":true},
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceBlaine]\\bVocê não está achando que vai ser assim fácil...?!"
+                },
+                {
+                  "cmd": "text",
+                  "text": "\\f[faceBlaine]\\bVocê não conseguirá vencer esse torneio, pois \"Agente 017\" vai vencer e se tornar um membro da Elite dos Quatro!"
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true}
+              ],
+              "else": [
+                {"cmd":"erasePicture","id":1},
+                {"cmd":"erasePicture","id":2},
+                {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
+                {"cmd":"restoreBgmBgs"},
+                {"cmd":"switches","from":312,"to":312,"value":false},
+                {"cmd":"switches","from":313,"to":313,"value":false},
+                {"cmd":"switches","from":314,"to":314,"value":false},
+                {"cmd":"switches","from":315,"to":315,"value":false},
+                {"cmd":"switches","from":316,"to":316,"value":false},
+                {"cmd":"switches","from":317,"to":317,"value":false},
+                {"cmd":"switches","from":318,"to":318,"value":false},
+                {"cmd":"switches","from":319,"to":319,"value":false},
+                {"cmd":"transfer","map":551,"x":11,"y":4,"direction":0,"fade":true}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":318,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk066-blaine",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\\f[faceBlaine]\\bAgora estou em novos negócios, meus Pokémons de fogo serão ainda mais fortes.Aguarde e verá!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 9,
+      "y": 13,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [{"cmd":"text","text":"Não tem volta."}]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 9,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":320,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"Tem uma barreira impedindo a passagem!"}]
+        },
+        {
+          "condition": {"switch1":318,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transfer","map":567,"x":9,"y":13,"direction":0,"fade":false},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "EV004",
+      "x": 13,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"showAnimation","character":5,"animation":17},
+            {
+              "cmd": "moveRoute",
+              "character": 5,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"up"},
+                  {"move":"left"},
+                  {"move":"up"},
+                  {"move":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"switches","from":320,"to":320,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":320,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "rival",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Silverrocket",
+            "characterHue": 0,
+            "direction": 4,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":320,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

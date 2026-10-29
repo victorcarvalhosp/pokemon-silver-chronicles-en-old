@@ -1,4 +1,5 @@
-// Event command JSON written by tools/convert/events.rb.
+// Event command JSON in web/data/maps and common-events.json (see docs/data.md;
+// first written by tools/convert/events.rb, now edited directly).
 
 export type Expr =
   | number

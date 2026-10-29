@@ -1,0 +1,1137 @@
+{
+  "id": 32,
+  "name": "Violet City - Sprout Tower 3F",
+  "tilesetId": 5,
+  "width": 22,
+  "height": 20,
+  "autoplayBgm": true,
+  "bgm": {"name":"SproutTower","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,72,4832,4833,4834,4832,4833,4834,4832,4833,4833,4833,4834,4832,4833,4834,4832,4833,4834,64,48],
+      [48,48,72,4840,4841,4842,4840,4841,4842,4840,4841,4841,4841,4842,4840,4841,4842,4840,4841,4842,64,48],
+      [48,48,72,4848,4849,4850,4848,4849,4850,4848,4849,4849,4849,4850,4848,4849,4850,4848,4849,4850,64,48],
+      [48,48,72,4774,4773,4774,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4773,4774,4773,64,48],
+      [48,48,72,4782,4781,4782,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4781,4782,4781,64,48],
+      [48,48,72,4790,4789,4790,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4789,4790,4789,64,48],
+      [48,48,72,4774,4773,4774,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4773,4774,4773,64,48],
+      [48,48,72,4782,4781,4782,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4781,4782,4781,64,48],
+      [48,48,72,4790,4789,4790,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4789,4790,4789,64,48],
+      [48,48,72,4774,4773,4774,4773,4774,4736,4737,4738,4739,4736,4737,4738,4773,4774,4773,4774,4773,64,48],
+      [48,48,72,4782,4781,4782,4781,4782,4744,4745,4746,4747,4744,4745,4746,4781,4782,4781,4782,4781,64,48],
+      [48,48,72,4790,4789,4790,4789,4790,4752,4753,4754,4755,4752,4753,4754,4789,4790,4789,4790,4789,64,48],
+      [48,48,72,4774,4773,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4774,4773,64,48],
+      [48,48,72,4782,4781,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4782,4781,64,48],
+      [48,48,72,4790,4789,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4790,4789,64,48],
+      [48,48,72,4774,4773,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4774,4773,64,48],
+      [48,48,72,4782,4781,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4782,4781,64,48],
+      [48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4713,0,0,0,4713,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,4720,4721,4722,0,4720,4721,4722,0,0,0,0,0,0,0],
+      [0,0,0,4859,4860,4861,0,0,4728,4729,4730,0,4728,4729,4730,0,0,4859,4860,4861,0,0],
+      [0,0,0,4875,0,4877,0,0,0,0,0,0,0,0,0,0,0,4875,0,4877,0,0],
+      [0,0,0,4875,0,4877,0,0,0,0,0,0,0,0,0,0,0,4875,0,4877,0,0],
+      [0,0,0,4875,0,4877,0,0,4812,0,0,0,0,0,4809,0,0,4875,0,4877,0,0],
+      [0,0,0,4875,0,4877,4822,4818,4820,0,0,0,0,0,4817,4818,4822,4875,0,4877,0,0],
+      [0,0,0,4875,0,4877,4830,4826,4828,4760,4761,4762,4763,4764,4825,4826,4830,4875,0,4877,0,0],
+      [0,0,0,4875,0,0,4868,4869,4814,4768,4769,4770,4771,4772,4814,4867,4868,0,0,4877,0,0],
+      [0,0,0,4875,0,0,0,4877,4814,4776,4777,4778,4779,4780,4814,4875,0,0,0,4877,0,0],
+      [0,0,0,4875,0,4809,0,4877,4814,4784,4785,4786,4787,4788,4814,4875,0,4812,0,4877,0,0],
+      [0,0,0,4875,4877,4817,4818,4818,4820,0,0,0,0,0,4817,4818,4818,4820,4875,4877,0,0],
+      [0,0,0,4875,4877,4825,4826,4826,4828,0,0,0,0,0,4825,4826,4826,4828,4875,4877,0,0],
+      [0,0,0,4875,4877,4814,0,0,0,0,0,0,0,0,0,0,0,4814,4875,4877,0,0],
+      [0,0,0,4875,4877,4822,0,0,0,0,0,0,0,0,0,0,0,4822,4875,4877,0,0],
+      [0,0,0,4875,4877,4830,0,0,0,0,0,0,0,0,0,0,0,4830,4875,4877,0,0],
+      [0,0,0,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,4765,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,4856,4857,4858,962,980,0,0,4856,4857,4858,0,0,962,980,4856,4857,4858,0,0],
+      [0,0,0,0,0,0,960,961,0,0,0,0,0,0,0,960,961,0,0,0,0,0],
+      [0,0,0,0,0,0,956,957,0,0,4864,4865,4866,0,0,956,957,0,0,0,0,0],
+      [0,0,0,0,0,0,964,965,0,0,4872,4873,4874,0,0,964,965,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,4811,0,0,0,0,0,0,0,0,0,4811,0,0,0,0,0],
+      [0,0,0,0,0,0,4819,0,4806,0,0,0,0,0,4806,0,4819,0,0,0,0,0],
+      [0,0,0,0,0,0,4827,0,4814,0,0,0,0,0,4814,0,4827,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,4814,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4809,0,0,4812,0,0,0,0,0,4809,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4806,0,4713,4820,0,0,0,0,0,4817,4713,0,4806,0,0,0,0],
+      [0,0,0,0,0,4814,4720,4721,4722,0,0,0,0,0,4720,4721,4722,4814,0,0,0,0],
+      [0,0,0,0,0,4813,4728,4729,4730,0,4268,4269,4270,0,4728,4729,4730,4813,0,0,0,0],
+      [0,0,0,0,0,4821,0,0,0,0,4276,4277,4278,0,0,0,0,4821,0,0,0,0],
+      [0,0,0,0,0,4829,0,0,0,0,0,0,0,0,0,0,0,4829,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "noShadow stairDetail",
+      "x": 10,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4371,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 16,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["POTION"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Trainer(4)",
+      "x": 9,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["MONGE"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I train to find enlightenment in Pokémon!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["MONGE","Jin"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"As Pokémon grow stronger, so does the Trainer."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"No, wait. As the Trainer grows stronger, so do the Pokémon."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(4)",
+      "x": 11,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["MONGE"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"The Elder's HM lights even pitch-black darkness."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["MONGE","Neal"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Let there be light on your journey."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(1)",
+      "x": 9,
+      "y": 9,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["MONGE"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Let me see how much you trust your Pokémon."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["MONGE","Troy"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"It is not far to the Elder."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 13,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"screenShake","power":6,"speed":4,"seconds":0.5},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"up"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"scrollMap","direction":8,"distance":2,"speed":4},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {
+              "cmd": "text",
+              "text": "\\bElder: You showed us what you've got, and it is indeed good..."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {"cmd":"text","text":"\\bTake this Dynamax Band."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {"cmd":"text","text":"\\bHowever, you should care more about your Pokémon."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {"cmd":"text","text":"\\bThe way you treat your Pokémon can be too harsh..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {"cmd":"text","text":"\\bRemember, Pokémon are not tools of war..."},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"turnDown"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"memorizeBgmBgs"},
+            {"cmd":"playBgm","audio":{"name":"GSCRival","volume":100,"pitch":100}},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"\\f[facerival]\\b..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\b...Humph!\\nHe calls himself the Elder, but he was no match for me."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bSure enough, those who lecture how you should be \"nice\" to Pokémon...\\nThey cannot defeat me."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {
+              "cmd": "text",
+              "text": "\\f[facerival]\\bAll I care about are strong Pokémon that win every time."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,7]},
+            {"cmd":"text","text":"\\f[facerival]\\bThe rest of them don't mean anything to me."},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": false,
+                "list": [{"move":"right"},{"move":"right"},{"move":"turnLeft"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 7,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"speed","value":5},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"down"},
+                  {"move":"left"},
+                  {"move":"left"},
+                  {"move":"down"},
+                  {"move":"down"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"restoreBgmBgs"},
+            {"cmd":"selfSwitch","ch":"A","value":true},
+            {"cmd":"switches","from":158,"to":158,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Rival",
+      "x": 9,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "Silver",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":158,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["ESCAPEROPE"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 9,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "velhoSabio",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"scrollMap","direction":8,"distance":2,"speed":4},
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bSo good of you to come here!"},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bThe Sprout Tower is a towering testament to ancient architecture and the grace of Bellsprout and is enveloped in an extraordinary legend."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bCenturies ago, it is said that a Bellsprout, revered and majestic, experienced a rare and powerful Dynamax transformation, growing to a staggering height of 100 feet. "
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bThis event gave birth to the legend of the Sprout Tower."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\bSince then, people and Pokémon test their bonds to build a bright future together.\\nI am the final test."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bAllow me to check the ties between you and your Pokémon!"},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["ELDER","Li"]}},
+              "then": [
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bHmmm...\\nThe way you battle is quite elegant."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bYou should be able to stand up to Falkner."},
+                {"cmd":"call","fn":"completeQuest","args":["SproutTower"]},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bAnd you should be able to make good use of this..."},
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {"cmd":"text","text":"\\bIt is a Dynamax Band..\\nTake it with you!"},
+                {
+                  "cmd": "if",
+                  "cond": {"script":{"call":"pbGetKeyItem","args":["DYNAMAXBAND"]}},
+                  "then": []
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "There's a number of conditions you must meet if you hope to have your Pokémon Dynamax and take on that gigantic form."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "But don't worry, it will glow whenever you have the opportunity to Dynamax a Pokémon."
+                },
+                {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                {
+                  "cmd": "text",
+                  "text": "You can try it on BELLSPROUT when you have the opportunity..."
+                },
+                {"cmd":"selfSwitch","ch":"A","value":true},
+                {"cmd":"switches","from":40,"to":40,"value":true},
+                {"cmd":"scrollMap","direction":2,"distance":2,"speed":4}
+              ]
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "velhoSabio",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"\\bI hope you learn and grow from your journey."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 16,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\"In honor of the legendary Dynamax Bellsprout, whose towering presence birthed the myth of this venerable Sprout Tower. A testament to the extraordinary harmony between nature's wonders and ancient Johto's spirit.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "sprout tower pillar",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 11,
+      "y": 14,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[31,11,17]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "noShadow stairDetail",
+      "x": 11,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4372,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "noShadow stairDetail",
+      "x": 12,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4373,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "x": 15,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\"In honor of the legendary Dynamax Bellsprout, whose towering presence birthed the myth of this venerable Sprout Tower. A testament to the extraordinary harmony between nature's wonders and ancient Johto's spirit.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "x": 7,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\"In honor of the legendary Dynamax Bellsprout, whose towering presence birthed the myth of this venerable Sprout Tower. A testament to the extraordinary harmony between nature's wonders and ancient Johto's spirit.\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "x": 6,
+      "y": 4,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "text",
+              "text": "\"In honor of the legendary Dynamax Bellsprout, whose towering presence birthed the myth of this venerable Sprout Tower. A testament to the extraordinary harmony between nature's wonders and ancient Johto's spirit.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

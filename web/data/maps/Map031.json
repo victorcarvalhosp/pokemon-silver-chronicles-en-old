@@ -1,0 +1,1241 @@
+{
+  "id": 31,
+  "name": "Violet City - Sprout Tower 2F",
+  "tilesetId": 5,
+  "width": 20,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"SproutTower","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [72,4832,4833,4834,4835,4836,4837,4832,4833,4834,4832,4833,4834,4835,4836,4837,4832,4833,4834,64],
+      [72,4840,4841,4842,4843,4844,4845,4840,4841,4842,4840,4841,4842,4843,4844,4845,4840,4841,4842,64],
+      [72,4848,4849,4850,4851,4852,4853,4848,4849,4850,4848,4849,4850,4851,4852,4853,4848,4849,4850,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [72,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,4754,4755,4752,4753,64],
+      [72,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,4738,4739,4736,4737,64],
+      [72,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,4746,4747,4744,4745,64],
+      [50,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,49],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,0,0,4773,4774,4773,4774,4773,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,0,0,4781,4782,4781,4782,4781,0,0,0,0,0,0],
+      [0,0,0,0,4814,0,0,4773,4774,4760,4761,4762,4763,4764,4773,4774,0,4811,0,0],
+      [0,0,0,0,4814,0,0,4781,4782,4768,4769,4770,4771,4772,4781,4782,0,4819,0,0],
+      [0,0,0,0,4814,0,0,4789,4790,4776,4777,4778,4779,4780,4789,4790,984,4827,984,0],
+      [0,0,0,0,4814,0,0,4773,4774,4784,4785,4786,4787,4788,4773,4774,0,4814,0,0],
+      [0,0,0,0,4814,0,0,0,0,4773,4774,4773,4774,4773,0,0,0,4814,0,0],
+      [0,0,0,0,4814,0,0,0,0,4781,4782,4781,4782,4781,0,0,0,4814,0,0],
+      [0,0,0,0,4814,0,0,0,0,0,0,0,0,0,0,0,0,4814,0,0],
+      [0,0,0,0,4817,4818,4818,4818,4818,4818,4818,4818,4818,4818,4818,4818,4818,4822,0,0],
+      [0,0,0,0,4825,4826,4826,4826,4826,4826,4826,4826,4826,4826,4826,4826,4826,4830,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,4806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4268,4269,4270,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,4276,4277,4278,0,4867,4868,4868,4868,4869,4268,4269,4270,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4875,0,0,0,4877,4276,4277,4278,0,0,0],
+      [0,0,0,0,0,0,0,4867,4869,4760,4761,4762,4763,4764,4867,4869,4811,0,4811,0],
+      [0,0,0,0,0,0,0,4875,4877,4768,4769,4770,4771,4772,4875,4877,4819,4806,4819,0],
+      [0,4268,4269,4270,0,0,0,4875,4877,4776,4777,4778,4779,4780,4875,4877,4827,4814,4827,0],
+      [0,4276,4277,4278,0,0,0,4875,4877,4784,4785,4786,4787,4788,4875,4877,0,0,0,0],
+      [0,0,0,0,0,0,0,4765,4765,4867,4868,4868,4868,4869,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,4875,0,0,0,4877,0,0,0,0,0,0],
+      [0,0,0,0,4809,0,0,0,0,0,0,0,0,0,0,0,0,4812,0,0],
+      [0,0,0,0,4817,0,4713,0,0,0,0,0,0,0,4713,0,0,4820,0,0],
+      [0,0,0,0,4825,4720,4721,4722,0,0,4300,4301,4302,4720,4721,4722,0,4828,0,0],
+      [0,0,0,0,0,4728,4729,4730,0,0,4308,4309,4310,4728,4729,4730,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,4316,4317,4318,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "noShadow",
+      "x": 11,
+      "y": 18,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "invisible",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {
+              "cmd": "comment",
+              "lines": [
+                "Notice that invisible character needs to be used here, ",
+                "otherwise it has a small glitch where the user goes ",
+                "behind the stair for a frame."
+              ]
+            },
+            {
+              "cmd": "comment",
+              "lines": ["Check the second page of the event as well, as it is important!"]
+            },
+            {"cmd":"call","fn":"CustomStairs.transferUp","args":[32,11,15]}
+          ]
+        },
+        {
+          "condition": {"switch1":965,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4317,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": true,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 18,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["DYNAMAXCANDY"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "noShadow stairDetail",
+      "x": 14,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4371,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trainer(3)",
+      "x": 8,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [{"move":"turnDown"},{"move":"turnLeft"},{"move":"turnRight"},{"move":"turnUp"}]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["MONGE"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"However hard we battle, the towe will stand strong."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["MONGE","Nico"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [{"cmd":"text","text":"The flexible pillar protects the tower, even from earthquakes."}]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Trainer(2)",
+      "x": 1,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 2,
+          "list": [
+            {"cmd":"call","fn":"pbTrainerIntro","args":["MONGE"]},
+            {"cmd":"call","fn":"pbNoticePlayer","args":[{"call":"get_self"}]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I sway like leaves in the wind..."},
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"TrainerBattle.start","args":["MONGE","Edmond"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}]
+            },
+            {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "monge",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I tried to copy BELLSPROUT's gentle movements for battle..."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"But I didn't train well enough."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 5,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "bellsprout tower fire",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 14,
+      "y": 1,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "bellsprout tower fire",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "bellsprout tower fire",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "x": 16,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["POKEBALL",5]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "x": 2,
+      "y": 3,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "itemball",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": true,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"pbReceiveItem","args":["XACCURACY"]}},
+              "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
+              "else": []
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":"A"},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "x": 11,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "sprout tower pillar",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 3,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {
+            "repeat": true,
+            "skippable": false,
+            "list": [
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 4,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 3
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 2
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 1
+              },
+              {"move":"wait","seconds":0.2},
+              {
+                "move": "graphic",
+                "characterName": "sprout tower pillar",
+                "characterHue": 0,
+                "direction": 2,
+                "pattern": 0
+              },
+              {"move":"wait","seconds":0.2}
+            ]
+          },
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "x": 6,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[30,7,7]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "noShadow stairDetail",
+      "x": 7,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4373,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "noShadow stairDetail",
+      "x": 6,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4372,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "noShadow stairDetail",
+      "x": 5,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4371,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "noShadow stairDetail",
+      "x": 1,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4371,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "noShadow stairDetail",
+      "x": 2,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4372,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "noShadow stairDetail",
+      "x": 3,
+      "y": 11,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4373,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "x": 2,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[30,3,8]}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "noShadow stairDetail",
+      "x": 15,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4372,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "noShadow stairDetail",
+      "x": 16,
+      "y": 7,
+      "pages": [
+        {
+          "condition": {"switch1":966,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 4373,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "EV022",
+      "x": 15,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"switch":966,"value":false},
+              "then": [{"cmd":"call","fn":"CustomStairs.transferDown","args":[30,17,8]}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

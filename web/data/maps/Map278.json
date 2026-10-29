@@ -1,0 +1,1129 @@
+{
+  "id": 278,
+  "name": "Grand Hotel",
+  "tilesetId": 3,
+  "width": 21,
+  "height": 25,
+  "autoplayBgm": true,
+  "bgm": {"name":"Coliseum Town","volume":100,"pitch":100},
+  "autoplayBgs": false,
+  "bgs": {"name":"","volume":80,"pitch":100},
+  "encounterStep": 30,
+  "layers": [
+    [
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,52,76,76,76,76,76,76,76,76,76,76,76,76,76,56,48,48,48],
+      [48,48,48,72,599,599,599,599,599,599,599,599,599,599,599,599,599,64,48,48,48],
+      [48,48,48,72,607,607,607,607,607,607,607,607,607,607,607,607,607,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,72,512,512,512,512,512,512,512,512,512,512,512,512,512,64,48,48,48],
+      [48,48,48,50,68,68,68,68,68,68,68,68,68,68,68,68,68,49,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48],
+      [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,656,657,641,657,641,657,658,675,676,677,0,0,0,0],
+      [0,0,0,0,598,0,0,664,665,664,665,666,665,666,683,684,685,0,0,0,0],
+      [0,0,0,0,606,0,0,0,422,0,0,0,422,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,430,0,0,0,430,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ],
+    [
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,673,674,0,0,0,0,0,0,0,675,676,677,0,0,0,0],
+      [0,0,0,0,0,681,682,412,579,0,0,0,0,415,683,684,685,0,0,0,0],
+      [0,0,0,0,0,0,0,420,418,422,421,422,418,423,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,428,426,430,429,430,426,431,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,601,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,601,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,601,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,432,433,0,601,593,594,0,432,433,0,0,0,0,0,0],
+      [0,0,0,0,0,528,440,441,528,601,593,594,528,440,441,528,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,601,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,601,593,594,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,598,0,0,0,0,603,593,604,0,0,0,0,598,0,0,0,0],
+      [0,0,0,0,606,0,0,0,0,496,497,498,0,0,0,0,606,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,504,505,506,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Team Yell left",
+      "x": 9,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "team_yell_female_grunt_by_diegowt_dg3t5z5",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"We're trying to do the check-in, back off!"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":532,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "EV002",
+      "x": 10,
+      "y": 17,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {"cmd":"playSe","audio":{"name":"Exit Door","volume":80,"pitch":100}},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.3},
+            {"cmd":"transfer","map":256,"x":21,"y":41,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "x": 10,
+      "y": 6,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01_1",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Welcome to the Grand Hotel."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "You must be one of the Pokémon Trainers participating in the World Cup?"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Yes, young Master \\PN...\\nI see the League has booked a room for you."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "And if I might, thank you for helping us out of a sticky situation with those hoolingans earlier."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Here's the key to your room."},
+            {"cmd":"call","fn":"pbReceiveItem","args":["GRANDHOTELKEY"]},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I hope you have a pleasant stay here with us."},
+            {"cmd":"switches","from":534,"to":534,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":534,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "NPC 01_1",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"Welcome to the Grand Hotel."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {"cmd":"text","text":"I hope you have a pleasant stay here with us."}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Team Yell right",
+      "x": 11,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "team_yell_male_grunt_by_diegowt_dg3t620",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Were here to cheer in the World Cup.\\nAnd we want a nice place to stay too!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":532,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "o",
+      "x": 10,
+      "y": 16,
+      "pages": [
+        {
+          "condition": {"switch1":199,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk002-brendan",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBrendan]\\bIf I win the World Cup, I'm sure I'll have a lot of fans too!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":533,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "EV006",
+      "x": 5,
+      "y": 12,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk016",
+            "characterHue": 0,
+            "direction": 6,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "The check-in seems to be taking a while...\\nI'll just rest here for now."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "x": 10,
+      "y": 8,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "team_yell_male_grunt_by_diegowt_dg3t620",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "This girl is giving us a hard time with the hotel check- in!\\nShe is saying there's no more rooms available, but I'm sure there's some!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"turnUp"}]}
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":197,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "team_yell_male_grunt_by_diegowt_dg3t620",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "We came all the way out to Poketopia so that we could properly cheer on Pier's matches!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "Team Yell is here to help, after all!\\nYou're in for a battle if you wanna stop us!"
+            },
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {"repeat":false,"skippable":false,"list":[{"move":"backward"},{"move":"up"}]}
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "choices",
+              "choices": ["I'm up for that!","Sorry to bother you"],
+              "branches": [
+                [
+                  {"cmd":"call","fn":"pbTrainerIntro","args":["YELL_Male"]},
+                  {
+                    "cmd": "moveRoute",
+                    "character": 1,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                  },
+                  {
+                    "cmd": "moveRoute",
+                    "character": 4,
+                    "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                  },
+                  {"cmd":"waitForMoveCompletion"},
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Didn't we tell you, mate?\\nYou get in our way, and you're in for a battle!"
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "Team Yell's all about helpin'... Helpin' one very special Trainer to win the World Cup, that is!"
+                  },
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {
+                    "cmd": "text",
+                    "text": "We wanna make sure he gets cheered on nice and proper... And now you're gonna help us make some noise!"
+                  },
+                  {
+                    "cmd": "if",
+                    "cond": {"script":{"call":"TrainerBattle.start","args":["YELL_Male","Grunt",1]}},
+                    "then": [
+                      {"cmd":"call","fn":"pbTrainerIntro","args":["YELL_Male"]},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                      {
+                        "cmd": "text",
+                        "text": "Oi, gimme a break here!\\nTeal Yell! Get revenge for me, wouldja?"
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": 1,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [{"move":"down"},{"move":"turnRight"}]
+                        }
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": 4,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [{"move":"down"},{"move":"turnLeft"}]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,1]},
+                      {"cmd":"switches","from":199,"to":199,"value":true},
+                      {
+                        "cmd": "text",
+                        "text": "Course I've got you covered, mate! What could be better than a battle in a lovely hotel lobby?"
+                      },
+                      {
+                        "cmd": "moveRoute",
+                        "character": 5,
+                        "route": {
+                          "repeat": false,
+                          "skippable": false,
+                          "list": [
+                            {"move":"up"},
+                            {"move":"up"},
+                            {"move":"up"},
+                            {"move":"up"},
+                            {"move":"up"},
+                            {"move":"left"},
+                            {"move":"up"}
+                          ]
+                        }
+                      },
+                      {"cmd":"waitForMoveCompletion"},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[faceBrendan]\\bI wasn't expecting checking in would be such a big fuss!"
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[faceBrendan]\\bI need to get some training in, so I'm joining!"
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[faceBrendan]\\bI'm Brendan, one of this year's World Cup participants!\\nAnd the one who's gonna be the next Champion!"
+                      },
+                      {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+                      {
+                        "cmd": "text",
+                        "text": "\\f[faceBrendan]\\bNow let's have us a nice two-on- two!"
+                      },
+                      {
+                        "cmd": "call",
+                        "fn": "pbRegisterPartner",
+                        "args": ["PkMnTRAINER_Malen","Brendan",1]
+                      },
+                      {"cmd":"comment","lines":["EndSpeech: Nao é possivel!"]},
+                      {"cmd":"call","fn":"setBattleRule","args":["double"]},
+                      {"cmd":"call","fn":"pbCallBub","args":[2,4]},
+                      {
+                        "cmd": "text",
+                        "text": "I can already hear my victory comin'!\\nThe only sound you'll make is a whimper of defeat!"
+                      },
+                      {
+                        "cmd": "if",
+                        "cond": {
+                          "script": {
+                            "call": "TrainerBattle.start",
+                            "args": ["YELL_Male","Grunt",2,"YELL_Female","Grunt",1]
+                          }
+                        },
+                        "then": [
+                          {"cmd":"call","fn":"pbDeregisterPartner","args":[]},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"switches","from":531,"to":531,"value":true},
+                          {
+                            "cmd": "text",
+                            "text": "Guess it was a defeat that I heard comin'...\\nI think I'm about to cry..."
+                          },
+                          {
+                            "cmd": "moveRoute",
+                            "character": 9,
+                            "route": {
+                              "repeat": false,
+                              "skippable": false,
+                              "list": [{"move":"up"},{"move":"up"},{"move":"up"},{"move":"up"}]
+                            }
+                          },
+                          {"cmd":"waitForMoveCompletion"},
+                          {
+                            "cmd": "moveRoute",
+                            "character": -1,
+                            "route": {"repeat":false,"skippable":false,"list":[{"move":"down"}]}
+                          },
+                          {
+                            "cmd": "moveRoute",
+                            "character": 5,
+                            "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                          },
+                          {
+                            "cmd": "moveRoute",
+                            "character": 1,
+                            "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                          },
+                          {
+                            "cmd": "moveRoute",
+                            "character": 4,
+                            "route": {"repeat":false,"skippable":false,"list":[{"move":"turnDown"}]}
+                          },
+                          {"cmd":"waitForMoveCompletion"},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+                          {"cmd":"text","text":"\\f[facePiers]\\bWhat are you lot doin' here?"},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"Piers?!"},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                          {"cmd":"text","text":"N-n-nothin'... We was just..."},
+                          {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[facePiers]\\bI know you are all terribly curious 'bout the other World Cup participants, but you gotta show a bit of restraint."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[facePiers]\\bSorry 'bout them! They're just a bunch of my fans. Call themselves Team Yell and follow me around, cheerin' for me."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[facePiers]\\bI think they've let it all go to their heads a bit..."
+                          },
+                          {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+                          {
+                            "cmd": "text",
+                            "text": "\\f[facePiers]\\bCome on, you lot!\\nGo find another hotel to stay.\\nYou already lost the open ceremony, go get some rest and prepare to cheer on my battle!"
+                          },
+                          {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.5},
+                          {"cmd":"wait","seconds":1.5},
+                          {"cmd":"switches","from":532,"to":532,"value":true},
+                          {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.5},
+                          {"cmd":"wait","seconds":0.5}
+                        ],
+                        "else": [
+                          {"cmd":"switches","from":531,"to":531,"value":false},
+                          {"cmd":"switches","from":199,"to":199,"value":false}
+                        ]
+                      },
+                      {"cmd":"selfSwitch","ch":"A","value":true}
+                    ]
+                  },
+                  {"cmd":"call","fn":"pbTrainerEnd","args":[]}
+                ],
+                [
+                  {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+                  {"cmd":"text","text":"Ok, great. Now back off!"}
+                ]
+              ],
+              "cancel": 1
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":532,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": false,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Home door",
+      "x": 15,
+      "y": 5,
+      "pages": [
+        {
+          "condition": {"switch1":null,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [{"cmd":"text","text":"You don't have the Room Key, so you can't take the elevator."}]
+        },
+        {
+          "condition": {"switch1":534,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 1,
+          "list": [
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnUp"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": -1,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [{"move":"throughOn"},{"move":"up"},{"move":"throughOff"}]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"transparent","value":true},
+            {"cmd":"call","fn":"Followers.follow_into_door","args":[]},
+            {"cmd":"waitForMoveCompletion"},
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnRight"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnLeft"},
+                  {"move":"wait","seconds":0.1},
+                  {"move":"turnDown"},
+                  {"move":"wait","seconds":0.1}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"screenTone","tone":[-255.0,-255.0,-255.0,0.0],"seconds":0.3},
+            {"cmd":"wait","seconds":0.4},
+            {"cmd":"transparent","value":false},
+            {"cmd":"text","text":"Going to your floor..."},
+            {"cmd":"playSe","audio":{"name":"elevador funcionando","volume":80,"pitch":100}},
+            {"cmd":"wait","seconds":1.0},
+            {"cmd":"stopSe"},
+            {"cmd":"transfer","map":110,"x":16,"y":5,"direction":0,"fade":true},
+            {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.3}
+          ]
+        },
+        {
+          "condition": {"switch1":22,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "porta5",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {
+              "cmd": "if",
+              "cond": {"script":{"call":"get_self.onEvent?"}},
+              "then": [
+                {"cmd":"transparent","value":true},
+                {"cmd":"call","fn":"Followers.hide_followers","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"playSe","audio":{"name":"Door enter","volume":100,"pitch":100}},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnUp"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"transparent","value":false},
+                {
+                  "cmd": "moveRoute",
+                  "character": -1,
+                  "route": {"repeat":false,"skippable":true,"list":[{"move":"down"}]}
+                },
+                {"cmd":"waitForMoveCompletion"},
+                {"cmd":"call","fn":"Followers.put_followers_on_player","args":[]},
+                {
+                  "cmd": "moveRoute",
+                  "character": 0,
+                  "route": {
+                    "repeat": false,
+                    "skippable": true,
+                    "list": [
+                      {"move":"turnRight"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnLeft"},
+                      {"move":"wait","seconds":0.1},
+                      {"move":"turnDown"},
+                      {"move":"wait","seconds":0.1}
+                    ]
+                  }
+                },
+                {"cmd":"waitForMoveCompletion"}
+              ]
+            },
+            {"cmd":"call","fn":"setTempSwitchOn","args":["A"]}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Piers",
+      "x": 10,
+      "y": 15,
+      "pages": [
+        {
+          "condition": {"switch1":531,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "piers_galar",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        },
+        {
+          "condition": {"switch1":532,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "piers_galar",
+            "characterHue": 0,
+            "direction": 8,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 3,
+          "list": [
+            {"cmd":"wait","seconds":0.5},
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePiers]\\bThey just so caught up with wantin' to support me and all that they tend to get a bit shirty with other Trainers."
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {"cmd":"text","text":"\\f[facePiers]\\bSorry they caused any trouble."},
+            {"cmd":"call","fn":"pbCallBub","args":[2,5]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBrendan]\\bTeam Yell, was it? Pretty impressive that you have a set of fans to call your own!"
+            },
+            {"cmd":"call","fn":"pbCallBub","args":[2,9]},
+            {
+              "cmd": "text",
+              "text": "\\f[facePiers]\\b...\\nIt's about time for me to go, I'll have an important match tomorrow."
+            },
+            {
+              "cmd": "moveRoute",
+              "character": 0,
+              "route": {
+                "repeat": false,
+                "skippable": true,
+                "list": [
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"right"},
+                  {"move":"up"},
+                  {"move":"up"},
+                  {"move":"up"}
+                ]
+              }
+            },
+            {"cmd":"waitForMoveCompletion"},
+            {"cmd":"playSe","audio":{"name":"Door enter","volume":80,"pitch":100}},
+            {"cmd":"switches","from":533,"to":533,"value":true}
+          ]
+        },
+        {
+          "condition": {"switch1":533,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": true,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "x": 9,
+      "y": 10,
+      "pages": [
+        {
+          "condition": {"switch1":533,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "fk002-brendan",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": [
+            {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
+            {
+              "cmd": "text",
+              "text": "\\f[faceBrendan]\\bIf I win the World Cup, I'm sure I'll have a lot of fans too!"
+            }
+          ]
+        },
+        {
+          "condition": {"switch1":201,"switch2":null,"variable":null,"selfSwitch":null},
+          "graphic": {
+            "tileId": 0,
+            "characterName": "",
+            "characterHue": 0,
+            "direction": 2,
+            "pattern": 0,
+            "opacity": 255,
+            "blendType": 0
+          },
+          "moveType": 0,
+          "moveSpeed": 3,
+          "moveFrequency": 3,
+          "moveRoute": {"repeat":true,"skippable":false,"list":[]},
+          "walkAnime": true,
+          "stepAnime": false,
+          "directionFix": false,
+          "through": false,
+          "alwaysOnTop": false,
+          "trigger": 0,
+          "list": []
+        }
+      ]
+    }
+  ]
+}

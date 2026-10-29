@@ -1,13 +1,13 @@
-# Converts the RPG Maker XP project data (Data/*.rxdata) into the JSON files
-# the web runtime reads from web/data/.
+# One-time import of the RPG Maker XP project data (Data/*.rxdata) into the
+# JSON files in web/data/. Since the cut-over (2026-10-29) web/data/ is the
+# game's source and is edited directly; RPG Maker XP is no longer used, so
+# running this again OVERWRITES those edits. It refuses unless REIMPORT=1:
 #
-#   ruby web/tools/convert/convert.rb            # everything
-#   ruby web/tools/convert/convert.rb 51 1 2     # only these maps (+ shared data)
+#   REIMPORT=1 ruby web/tools/convert/convert.rb          # everything
+#   REIMPORT=1 ruby web/tools/convert/convert.rb 51 1 2   # only these maps (+ shared data)
 #
 # Event command lists are translated into named commands by events.rb; what
 # couldn't be translated is listed in web/data/reports/conversion.json.
-# Fixes to the game's events live in tools/convert/patches/*.json and are
-# applied to the converted maps (see Convert.apply_patches).
 require "fileutils"
 require "json"
 require_relative "rxdata"
@@ -124,27 +124,6 @@ module Convert
       "layers" => table3(iv(m, :data)),
       "events" => iv(m, :events).keys.sort.map { |k| event(iv(m, :events)[k], id) }
     }
-  end
-
-  # Each patch file holds a patch or an array of them: { "map", "event", "page",
-  # "comment", "before" or "after": a command (matches the first command in the
-  # page's top-level list whose keys all have these values), "commands": [...]
-  # to insert there }. Patches apply in file order. A patch whose anchor isn't
-  # found raises, so a changed event is noticed.
-  PATCHES = Dir[File.join(__dir__, "patches", "*.json")].sort.flat_map do |f|
-    Array(JSON.parse(File.read(f, encoding: "UTF-8"))).map { |patch| [f, patch] }
-  end
-
-  def apply_patches(data)
-    PATCHES.each do |file, patch|
-      next unless patch["map"] == data["id"]
-      ev = data["events"].find { |e| e["id"] == patch["event"] } or raise "#{file}: no event #{patch["event"]}"
-      list = ev["pages"].dig(patch["page"], "list") or raise "#{file}: no page #{patch["page"]}"
-      anchor = patch["before"] || patch["after"]
-      i = list.index { |c| anchor.all? { |k, v| c[k] == v } } or raise "#{file}: anchor not found"
-      list.insert(patch["before"] ? i : i + 1, *patch["commands"])
-    end
-    data
   end
 
   def map_infos
@@ -328,6 +307,11 @@ module Convert
 end
 
 if $PROGRAM_NAME == __FILE__
+  if ENV["REIMPORT"] != "1"
+    warn "web/data/ is the game's source since the cut-over and is edited directly; this import would\n" \
+         "overwrite those edits from the old .rxdata files. Run with REIMPORT=1 if that's really wanted."
+    exit 1
+  end
   only = ARGV.map(&:to_i)
   infos = Rxdata.load(File.join(DATA_IN, "MapInfos.rxdata"))
   Convert.write(File.join(DATA_OUT, "system.json"), Convert.system)
@@ -342,7 +326,7 @@ if $PROGRAM_NAME == __FILE__
   failures = []
   dims = {}
   ids.each do |id|
-    data = Convert.apply_patches(Convert.map(id, infos[id]))
+    data = Convert.map(id, infos[id])
     dims[id] = [data["width"], data["height"]]
     Convert.write(File.join(DATA_OUT, "maps", format("Map%03d.json", id)), data)
   rescue StandardError => e
