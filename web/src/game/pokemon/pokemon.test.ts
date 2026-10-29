@@ -120,7 +120,7 @@ describe("Pokemon", () => {
     expect(p.pokerusStage()).toBe(2);
   });
 
-  it("happiness changes (with the soft cap) and its Ruby clamp error above 179", () => {
+  it("happiness changes with the soft cap (above 179 gains add nothing; the original crashed)", () => {
     const p = new Pokemon("PIKACHU", 50, null);
     p.happiness = 100;
     p.changeHappiness("walking");
@@ -129,7 +129,11 @@ describe("Pokemon", () => {
     p.changeHappiness("levelup");
     expect(p.happiness).toBe(179);
     p.happiness = 200;
-    expect(() => p.changeHappiness("walking")).toThrow(RangeError);
+    p.changeHappiness("walking");
+    expect(p.happiness).toBe(200);
+    p.changeHappiness("faint");
+    expect(p.happiness).toBe(199);
+    p.happiness = 200;
     p.changeHappiness("evberry");
     expect(p.happiness).toBe(202);
   });

@@ -914,8 +914,10 @@ export class Pokemon {
       if (this.obtainMap === G.gameMap?.mapId) gain += 1;
       if (this.pokeBall === "LUXURYBALL") gain += 1;
       if (this.hasItem("SOOTHEBELL")) gain = Math.floor(gain * 1.5);
-      // NOTE: like Ruby's Integer#clamp, this throws if happiness is above 179 (min > max).
-      if (Settings.APPLY_HAPPINESS_SOFT_CAP && method !== "evberry") gain = clamp(gain, 0, 179 - this.happiness);
+      // Deliberate fix: Ruby's gain.clamp(0, 179 - happiness) raises (and the
+      // original game crashes) once happiness is above 179. The soft cap means
+      // these gains stop at 179, so above it they add nothing.
+      if (Settings.APPLY_HAPPINESS_SOFT_CAP && method !== "evberry") gain = Math.max(0, Math.min(gain, 179 - this.happiness));
     }
     this.happiness = clamp(this.happiness + gain, 0, 255);
   }
