@@ -1,6 +1,7 @@
 // Port of 012_Overworld/003_Overworld_Time.rb: PBDayNight and pbDayNightTint.
 // Uses the real clock, like Essentials.
 
+import { _INTL } from "../core/intl";
 import { Tone } from "../rgss/types";
 import { Graphics } from "../rgss/Graphics";
 import { FRAME_RATE } from "./GameCharacter";
@@ -72,9 +73,111 @@ export function pbDayNightTint(object: { tone: Tone }): void {
   else object.tone.set(0, 0, 0, 0);
 }
 
-/** pbIsWeekday(wdayVariable, *arg) (012_Overworld/003_Overworld_Time.rb). */
+//===============================================================================
+// Moon phases and Zodiac
+//===============================================================================
+/**
+ * Calculates the phase of the moon (in UTC): 0 New Moon, 1 Waxing Crescent,
+ * 2 First Quarter, 3 Waxing Gibbous, 4 Full Moon, 5 Waning Gibbous,
+ * 6 Last Quarter, 7 Waning Crescent.
+ */
+export function moonphase(time: Date | null = null): number {
+  time ??= pbGetTimeNow();
+  const transitions = [
+    1.8456618033125, 5.5369854099375, 9.2283090165625, 12.9196326231875,
+    16.6109562298125, 20.3022798364375, 23.9936034430625, 27.6849270496875,
+  ];
+  const mon = time.getMonth() + 1;
+  const yy = time.getFullYear() - Math.floor((12 - mon) / 10.0);
+  let j = Math.floor(365.25 * (4712 + yy)) + Math.floor(((mon + 9) % 12) * 30.6 + 0.5) + time.getDate() + 59;
+  if (j > 2_299_160) j -= Math.floor(Math.floor(yy / 100.0 + 49) * 0.75) - 38;
+  // NOTE (Ruby parity): hours are counted as minutes (hour * 60 + min * 60),
+  // so the time of day barely moves the phase (003_Overworld_Time.rb:151).
+  j += (time.getHours() * 60 + time.getMinutes() * 60 + time.getSeconds()) / 86_400.0;
+  let v = (j - 2_451_550.1) / 29.530588853;
+  v = v - Math.floor(v) + (v < 0 ? 1 : 0);
+  const ag = v * 29.53;
+  for (let i = 0; i < transitions.length; i++) if (ag <= transitions[i]!) return i;
+  return 0;
+}
+
+/** The zodiac sign for a month (1 = January) and day: 0 is Aries, 11 is Pisces. */
+export function zodiac(month: number, day: number): number {
+  const time = [
+    3, 21, 4, 19, // Aries
+    4, 20, 5, 20, // Taurus
+    5, 21, 6, 20, // Gemini
+    6, 21, 7, 20, // Cancer
+    7, 23, 8, 22, // Leo
+    8, 23, 9, 22, // Virgo
+    9, 23, 10, 22, // Libra
+    10, 23, 11, 21, // Scorpio
+    11, 22, 12, 21, // Sagittarius
+    12, 22, 1, 19, // Capricorn
+    1, 20, 2, 18, // Aquarius
+    2, 19, 3, 20, // Pisces
+  ];
+  for (let i = 0; i < time.length / 4; i++) {
+    if (month === time[i * 4] && day >= time[i * 4 + 1]!) return i;
+    if (month === time[i * 4 + 2] && day <= time[i * 4 + 3]!) return i;
+  }
+  return 0;
+}
+
+/** The opposite of the given zodiac sign (0 is Aries, 11 is Pisces). */
+export const zodiacOpposite = (sign: number) => (sign + 6) % 12;
+export const zodiacPartners = (sign: number) => [(sign + 4) % 12, (sign + 8) % 12];
+export const zodiacComplements = (sign: number) => [(sign + 1) % 12, (sign + 11) % 12];
+
+//===============================================================================
+// Days of the week
+//===============================================================================
+/** pbIsWeekday(wdayVariable, *arg) */
 export function pbIsWeekday(wdayVariable: number, ...days: number[]): boolean {
   const wday = pbGetTimeNow().getDay();
-  if (wdayVariable > 0) G.gameVariables.set(wdayVariable, ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][wday]);
+  if (wdayVariable > 0) {
+    G.gameVariables.set(wdayVariable, [_INTL("Sunday"), _INTL("Monday"), _INTL("Tuesday"), _INTL("Wednesday"),
+      _INTL("Thursday"), _INTL("Friday"), _INTL("Saturday")][wday]);
+    if (G.gameMap) (G.gameMap as unknown as { needRefresh: boolean }).needRefresh = true;
+  }
   return days.includes(wday);
 }
+
+//===============================================================================
+// Months (pbGetMonthName is in ui/summary, pbGetAbbrevMonthName in ui/trainerCard)
+//===============================================================================
+const MONTHS = () => [_INTL("January"), _INTL("February"), _INTL("March"), _INTL("April"), _INTL("May"), _INTL("June"),
+  _INTL("July"), _INTL("August"), _INTL("September"), _INTL("October"), _INTL("November"), _INTL("December")];
+
+export function pbIsMonth(monVariable: number, ...months: number[]): boolean {
+  const thismon = pbGetTimeNow().getMonth() + 1;
+  if (monVariable > 0) {
+    G.gameVariables.set(monVariable, MONTHS()[thismon - 1]); // pbGetMonthName(thismon)
+    if (G.gameMap) (G.gameMap as unknown as { needRefresh: boolean }).needRefresh = true;
+  }
+  return months.includes(thismon);
+}
+
+//===============================================================================
+// Seasons (pbGetSeason is in game/pokemon/formHandlers.ts)
+//===============================================================================
+const seasonNow = () => (pbGetTimeNow().getMonth() + 1 - 1) % 4; // pbGetSeason
+
+export function pbGetSeasonName(season: number): string {
+  return [_INTL("Spring"), _INTL("Summer"), _INTL("Autumn"), _INTL("Winter")][season]!;
+}
+
+export function pbIsSeason(seasonVariable: number, ...seasons: number[]): boolean {
+  const thisseason = seasonNow();
+  if (seasonVariable > 0) {
+    G.gameVariables.set(seasonVariable, pbGetSeasonName(thisseason));
+    if (G.gameMap) (G.gameMap as unknown as { needRefresh: boolean }).needRefresh = true;
+  }
+  return seasons.includes(thisseason);
+}
+
+export const pbIsSpring = () => pbIsSeason(0, 0); // Jan, May, Sep
+export const pbIsSummer = () => pbIsSeason(0, 1); // Feb, Jun, Oct
+export const pbIsAutumn = () => pbIsSeason(0, 2); // Mar, Jul, Nov
+export const pbIsFall = () => pbIsAutumn();
+export const pbIsWinter = () => pbIsSeason(0, 3); // Apr, Aug, Dec

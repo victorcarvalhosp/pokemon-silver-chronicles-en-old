@@ -2,8 +2,7 @@
 // with the fields this game's plugins add to it:
 // - Essentials Deluxe: birthdate.
 // - ZUD Mechanics: has_raid_database.
-// - Social Links: social_links / bond_effects (data only; the plugin's
-//   SocialLinks object is created by that port — null until then).
+// - Social Links: social_links (a plugins/socialLinks SocialLinks) / bond_effects.
 // - TC Wardrobe: outfit_unlocked, pbUnlockOutfit.
 // - Mr. Gela's HGSS Trainer Card: score, stars, halloffame, tclass.
 // - Apricorn To Ball: ball_for_apricorn(_count), next_run.
@@ -13,7 +12,11 @@ import { Metadata } from "../../data/gameData/metadata";
 import { PlayerMetadata } from "../../data/gameData/playerMetadata";
 import { Settings } from "../../data/gameData/settings";
 import { TrainerType } from "../../data/gameData/trainerType";
+import { _INTL } from "../../data/gameData/gameData";
+import { rand } from "../../core/random";
 import { G } from "../globals";
+import { Pokemon, type PokemonJSON } from "../pokemon/Pokemon";
+import { SocialLinks, type SocialLinksJSON } from "../../plugins/socialLinks/player";
 import { Pokedex, type PokedexJSON } from "./Pokedex";
 import { Trainer, pbGetLanguage, randomTrainerID, type TrainerJSON } from "./Trainer";
 
@@ -45,7 +48,7 @@ export interface PlayerJSON extends TrainerJSON {
   mysteryGifts: unknown[];
   birthdate: number | null;
   hasRaidDatabase: boolean;
-  socialLinks: unknown;
+  socialLinks: SocialLinksJSON | null;
   bondEffects: BondEffects | null;
   outfitUnlocked: string[];
   score: number | null;
@@ -55,6 +58,8 @@ export interface PlayerJSON extends TrainerJSON {
   ballForApricorn: Id | null;
   ballForApricornCount: number | null;
   nextRun: unknown;
+  hasSnagMachine?: boolean;
+  seenPurifyChamber?: boolean;
 }
 
 export class Player extends Trainer {
@@ -73,6 +78,9 @@ export class Player extends Trainer {
   hasBoxLink = false;
   seenStorageCreator = false;
   hasExpAll = false;
+  // Shadow Pokémon (016_UI/022_UI_PurifyChamber.rb)
+  hasSnagMachine = false;
+  seenPurifyChamber = false;
   mysteryGiftUnlocked = false;
   mysteryGifts: unknown[] = [];
   // Essentials Deluxe (seconds since the epoch; null = $PokemonGlobal.startTime)
@@ -80,7 +88,7 @@ export class Player extends Trainer {
   // ZUD Mechanics
   hasRaidDatabase = false;
   // Social Links
-  socialLinks: unknown = null;
+  socialLinks: SocialLinks | null = null;
   private _bondEffects: BondEffects | null = null;
   // TC Wardrobe
   outfitUnlocked: string[] = [];
@@ -113,8 +121,11 @@ export class Player extends Trainer {
     this.hasExpAll = false;
     this.mysteryGiftUnlocked = false;
     this.mysteryGifts = [];
+    // --- 022_UI_PurifyChamber.rb ---
+    this.hasSnagMachine = false;
+    this.seenPurifyChamber = false;
     // --- Social Links ---
-    this.socialLinks = null;
+    this.socialLinks = new SocialLinks();
     this._bondEffects = { EXP: [], Shiny: [], CatchRate: [] };
     // --- TC Wardrobe: calls Trainer#initialize a second time (new ID and language, empty party) ---
     this._trainerType = TrainerType.get(trainerType).id;
@@ -186,7 +197,7 @@ export class Player extends Trainer {
     return now.getDate() === d.getDate() && now.getMonth() === d.getMonth() && now.getFullYear() > d.getFullYear();
   }
 
-  // --- Social Links (data only) -----------------------------------------------
+  // --- Social Links (the logic is plugins/socialLinks/player.ts) -------------
   get bondEffects(): BondEffects {
     if (!this._bondEffects) this._bondEffects = { EXP: [], Shiny: [], CatchRate: [] };
     if (!this._bondEffects.CatchRate) this._bondEffects.CatchRate = [];
@@ -196,7 +207,9 @@ export class Player extends Trainer {
 
   // --- TC Wardrobe --------------------------------------------------------------
   pbUnlockOutfit(outfitIndex: number): void {
-    const outfitUnlock = WARDROBE_OUTFITS[outfitIndex]!;
+    // NOTE (Ruby parity): Map003 calls pbUnlockOutfit(4), past the 4 outfits, which pushes nil.
+    // null (not undefined) so it survives a save and is found by includes afterwards.
+    const outfitUnlock = (WARDROBE_OUTFITS[outfitIndex] ?? null) as string;
     if (!this.outfitUnlocked.includes(outfitUnlock)) {
       this.outfitUnlocked.push(outfitUnlock);
       console.log(`Outfit ${outfitUnlock} Unlocked`);
@@ -214,6 +227,27 @@ export class Player extends Trainer {
   set halloffame(v: unknown[]) { this._halloffame = v; }
   get tclass(): string { return (this._tclass ??= "PKMN Trainer"); }
   set tclass(v: string) { this._tclass = v; }
+  /** fullname2: "<class> <name>" (only a commented-out line of the card uses it). */
+  fullname2(): string { return _INTL("{1} {2}", (G.player as unknown as Player).tclass, (G.player as unknown as Player).name); }
+  /** getForeignID(number = nil): a random ID other than this Trainer's ID. */
+  getForeignID(number: number | null = null): number {
+    // NOTE (Ruby parity): Mr. Gela's HGSS Trainer Card Scene.rb:53 assigns
+    // `number` and then the loop overwrites it, so it's ignored.
+    let fid = 0;
+    if (number != null) fid = number;
+    for (;;) {
+      fid = rand(256);
+      fid |= rand(256) << 8;
+      fid |= rand(256) << 16;
+      fid = (fid | (rand(256) << 24)) >>> 0;
+      if (fid !== this.id) break;
+    }
+    return fid;
+  }
+  /** setForeignID(other, number = nil) */
+  setForeignID(other: Player, number: number | null = null): void {
+    this.id = other.getForeignID(number);
+  }
 
   //=============================================================================
 
@@ -226,13 +260,12 @@ export class Player extends Trainer {
       hasBoxLink: this.hasBoxLink, seenStorageCreator: this.seenStorageCreator, hasExpAll: this.hasExpAll,
       mysteryGiftUnlocked: this.mysteryGiftUnlocked, mysteryGifts: JSON.parse(JSON.stringify(this.mysteryGifts)) as unknown[],
       birthdate: this._birthdate, hasRaidDatabase: this.hasRaidDatabase,
-      socialLinks: this.socialLinks && typeof (this.socialLinks as { toJSON?: unknown }).toJSON === "function"
-        ? (this.socialLinks as { toJSON(): unknown }).toJSON() : this.socialLinks,
+      socialLinks: this.socialLinks ? this.socialLinks.toJSON() : null,
       bondEffects: this._bondEffects ? JSON.parse(JSON.stringify(this._bondEffects)) as BondEffects : null,
       outfitUnlocked: [...this.outfitUnlocked], score: this._score, stars: this._stars,
       halloffame: this._halloffame ? JSON.parse(JSON.stringify(this._halloffame)) as unknown[] : null,
       tclass: this._tclass, ballForApricorn: this.ballForApricorn, ballForApricornCount: this.ballForApricornCount,
-      nextRun: this.nextRun,
+      nextRun: this.nextRun, hasSnagMachine: this.hasSnagMachine, seenPurifyChamber: this.seenPurifyChamber,
     };
   }
 
@@ -254,10 +287,13 @@ export class Player extends Trainer {
     p.seenStorageCreator = json.seenStorageCreator;
     p.hasExpAll = json.hasExpAll;
     p.mysteryGiftUnlocked = json.mysteryGiftUnlocked;
-    p.mysteryGifts = JSON.parse(JSON.stringify(json.mysteryGifts ?? [])) as unknown[];
+    // A Pokémon gift ([id, 0, pokemon, name]) is saved as the Pokémon's JSON (Pokemon#toJSON).
+    p.mysteryGifts = (JSON.parse(JSON.stringify(json.mysteryGifts ?? [])) as unknown[]).map((g) =>
+      (Array.isArray(g) && g[1] === 0 && g[2] && typeof g[2] === "object"
+        ? [g[0], 0, Pokemon.fromJSON(g[2] as PokemonJSON), ...g.slice(3)] : g));
     p._birthdate = json.birthdate ?? null;
     p.hasRaidDatabase = json.hasRaidDatabase ?? false;
-    p.socialLinks = json.socialLinks ?? null;
+    p.socialLinks = json.socialLinks ? SocialLinks.fromJSON(json.socialLinks) : null;
     p._bondEffects = json.bondEffects ? JSON.parse(JSON.stringify(json.bondEffects)) as BondEffects : null;
     p.outfitUnlocked = [...(json.outfitUnlocked ?? [])];
     p._score = json.score ?? null;
@@ -267,6 +303,8 @@ export class Player extends Trainer {
     p.ballForApricorn = json.ballForApricorn ?? null;
     p.ballForApricornCount = json.ballForApricornCount ?? null;
     p.nextRun = json.nextRun ?? null;
+    p.hasSnagMachine = json.hasSnagMachine ?? false;
+    p.seenPurifyChamber = json.seenPurifyChamber ?? false;
     return p;
   }
 }

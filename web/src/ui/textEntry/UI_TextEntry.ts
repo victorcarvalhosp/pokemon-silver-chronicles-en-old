@@ -29,6 +29,9 @@ import { addBackgroundPlane, TrainerWalkingCharSprite } from "../planes";
 import { BitmapSprite, IconSprite } from "../SpriteWrapper";
 import { Window_DrawableCommand, Window_UnformattedTextPokemon } from "../windows/SpriteWindowText";
 import { KeyboardInput } from "./keyboard";
+import type { Pokemon } from "../../game/pokemon/Pokemon";
+import { PictureOrigin } from "../scenes/PictureEx";
+import { PokemonIconSprite, preloadPokemonIcons } from "../sprites/pokemonIcon";
 import { CharacterEntryHelper, Window_TextEntry, Window_TextEntry_Keyboard, chars } from "./TextEntry";
 
 /** The few Pokémon methods the naming screen reads (no Pokémon class yet). */
@@ -136,8 +139,11 @@ function addSubjectSprites(
     case 2: // Pokémon
       if (pokemon) {
         shadow();
-        // TODO(pokemon): PokemonIconSprite.new(pokemon) centred at (88, 54)
-        // once Pokémon icons are ported.
+        const icon = new PokemonIconSprite(pokemon as Pokemon, viewport);
+        icon.setOffset(PictureOrigin.CENTER);
+        icon.x = 88;
+        icon.y = 54;
+        sprites["subject"] = icon;
         const gender = new BitmapSprite(32, 32, viewport);
         gender.x = 430;
         gender.y = 54;
@@ -823,7 +829,7 @@ export async function preloadTextEntry(mode: Subject = 0, pokemon: unknown = nul
   } else if (mode === 3 && pokemon != null) {
     paths.push(`Graphics/Characters/${String(pokemon)}`);
   }
-  await preloadBitmaps(paths);
+  await Promise.all([preloadBitmaps(paths), mode === 2 && pokemon ? preloadPokemonIcons([pokemon as Pokemon]) : null]);
 }
 
 export async function pbEnterText(

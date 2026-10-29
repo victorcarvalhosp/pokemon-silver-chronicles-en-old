@@ -88,9 +88,7 @@ function setFlutes(white: boolean, black: boolean): void {
 
 /** $game_system.setDefaultBGM(name) (a default BGM overrides the maps' own). */
 function setDefaultBGM(name: string | null): void {
-  const sys = G.gameSystem as unknown as { setDefaultBGM?: (n: string | null) => void };
-  if (sys.setDefaultBGM) sys.setDefaultBGM(name);
-  else if (name) pbBGMPlay(name);
+  G.gameSystem.setDefaultBGM(name);
 }
 
 let bgmKeys: string[] = [];

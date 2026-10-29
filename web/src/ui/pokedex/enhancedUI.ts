@@ -44,6 +44,21 @@ export const EGG_GROUP_HASH: Record<string, number> = {
   Overlord: 18, Nebulous: 19, Enchanted: 20, Ancestor: 21, Ultra: 22, Unused1: 23, Unused2: 24, Unknown: 25,
 };
 
+/**
+ * Essentials Deluxe's legendary_egg_group?(groups) ([000] Essentials
+ * Patches/Pokemon.rb:189): whether either group is one of the legendary
+ * groups after Undiscovered. (Nothing in this game calls it.)
+ */
+export function legendaryEggGroup(groups: string[]): boolean {
+  // An unknown group is nil in Ruby (`nil > 13` raises NoMethodError).
+  const rank = (g: string): number => {
+    const v = EGG_GROUP_HASH[g];
+    if (v === undefined) throw new TypeError("undefined method `>' for nil:NilClass");
+    return v;
+  };
+  return rank(groups[0]!) > 13 || (groups[1] != null && rank(groups[1]) > 13);
+}
+
 type SpeciesLike = Pokemon | Species | Id;
 
 function speciesOf(pokemon: SpeciesLike): Species {

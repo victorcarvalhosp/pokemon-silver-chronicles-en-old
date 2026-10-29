@@ -475,7 +475,7 @@ ItemHandlers.UseInField.add("TOWNMAP", async () => {
   if (FieldActions.flyToNewLocation) {
     await FieldActions.flyToNewLocation();
   } else {
-    // TODO(items): pbFlyToNewLocation (Fly) isn't ported.
+    // FieldActions.flyToNewLocation is set by game/field (pbFlyToNewLocation); without it:
     notPorted("pbFlyToNewLocation");
   }
   return true;

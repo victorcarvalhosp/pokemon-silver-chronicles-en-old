@@ -12,6 +12,7 @@ import type { IBattleScene } from "../../battle/BattleSceneInterface";
 import { BattleScene } from "../../battle/scene/BattleScene";
 import "../../battle/deluxe"; // Essentials Deluxe / Enhanced UI scene additions (midbattle scripts, Battle Info...)
 import "../../battle/zud/scene"; // ZUD Mechanics scene additions (Dynamax / Z-Move / Ultra Burst cinematics)
+import "../../battle/scene/ArceusTransform"; // Generation 9 Pack: Legend Plate Arceus transform
 import { rand } from "../../core/random";
 import type { Id } from "../../data/gameData/gameData";
 import { BattleTerrain } from "../../data/gameData/battleTerrain";

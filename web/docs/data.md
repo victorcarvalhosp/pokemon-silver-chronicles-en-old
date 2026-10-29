@@ -100,6 +100,15 @@ it, and on a static host the commands say in the message window that they
 can't write. The browser side is `src/debug/devFiles.ts`
 (`DevFiles.write/read/list/move/compilePbs`, `devWriteOrExplain`).
 
+The editors (Debug menu > Editors…, `src/debug/editors/`) keep their edits
+in the loaded data, so the game uses them at once, and save through the same
+endpoint: the PBS files (items, Pokémon, trainers, encounters, metadata, map
+metadata, map connections, regional Dexes, sprite metrics), and
+`web/data/tilesets.json` (terrain tags) and `web/data/pkmn-animations.json`
+(battle animations) in the importer's layout, so a save only changes the
+lines that were edited. Mystery Gift's `MysteryGiftMaster.txt` and
+`MysteryGift.txt` go in `web/data/` (the game folder isn't writable).
+
 After Compile Data the game reloads `web/data/pbs/` itself; after writing a
 PBS file, run Compile Data (or `pnpm pbs`) for the game to use it. Changed
 files are ordinary working-tree changes: review them with `git diff`.

@@ -16,6 +16,7 @@ import "./battle/Battle_ActionSwitching";
 import "./battle/Battle_ActionUseItem";
 import "./battle/Battle_ActionRunning";
 import "./battle/Battle_ActionOther";
+import "./battle/Battle_LegendPlate";
 import "./battle/Battle_CommandPhase";
 import "./battle/Battle_AttackPhase";
 import "./battle/Battle_EndOfRoundPhase";

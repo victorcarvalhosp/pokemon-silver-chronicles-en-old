@@ -9,8 +9,12 @@ import { pbMessage } from "../ui/messages";
 type Screen = () => Promise<void>;
 
 export const EditorScreens: {
+  /** pbMetadataScreen (001_Editor screens/001_EditorScreens.rb: global and player metadata) */
+  pbMetadataScreen?: Screen;
   /** pbEditMetadata (001_Editor screens/001_EditorScreens.rb) */
   pbEditMetadata?: Screen;
+  /** pbEditMapMetadata(map_id) */
+  pbEditMapMetadata?: (mapId: number) => Promise<void>;
   /** pbMapMetadataScreen(map_id) */
   pbMapMetadataScreen?: (mapId: number) => Promise<void>;
   /** pbConnectionsEditor (002_EditorScreens_MapConnections.rb) */

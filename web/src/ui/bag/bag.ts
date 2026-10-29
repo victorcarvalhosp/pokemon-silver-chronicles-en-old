@@ -645,7 +645,10 @@ export class PokemonBagScreen {
             this.scene.pbRefresh();
             if (newqty === 0) break;
           }
-          // Make Mystery Gift: pbCreateMysteryGift (016_UI/023_UI_MysteryGift.rb) isn't ported.
+          else if (command === 1) { // Make Mystery Gift
+            const { openEditorScreen } = await import("../../debug/editorScreens");
+            await openEditorScreen("pbCreateMysteryGift", 1, item);
+          }
         }
       }
     }

@@ -9,6 +9,7 @@
 import { G } from "../../game/globals";
 import { pbPlayBuzzerSE, pbPlayCursorSE } from "../../game/GameSystem";
 import { playerMetadata } from "../../game/metadata";
+import { WARDROBE_OUTFITS } from "../../game/trainer/Player";
 import { Viewport } from "../../rgss/display";
 import { Graphics } from "../../rgss/Graphics";
 import { Input } from "../../rgss/Input";
@@ -34,12 +35,7 @@ export const WardrobeConfig = {
   TYPE: 1,
 
   // Outfit Names in order of number index (must keep/consist of base outfit)
-  OUTFITS: [
-    "Basic Clothes",
-    "Winter Clothes",
-    "Rocket Uniform",
-    "Kanto Clothes",
-  ],
+  OUTFITS: WARDROBE_OUTFITS, // ["Basic Clothes", "Winter Clothes", "Rocket Uniform", "Kanto Clothes"]
 
   // Change background style (only works if TYPE is 1):
   // 0 - Basic Background
@@ -55,14 +51,14 @@ interface WardrobePlayer {
   characterID: number;
   outfit: number;
   /** attr_accessor :outfit_unlocked (added by this plugin) */
-  outfitUnlocked?: (string | undefined)[];
+  outfitUnlocked?: (string | null)[];
 }
 
 const player = () => G.player as unknown as WardrobePlayer;
 
 /** $player.outfit_unlocked; Player#initialize sets it to [OUTFITS[0]]. */
-export function outfitUnlocked(p: WardrobePlayer = player()): (string | undefined)[] {
-  p.outfitUnlocked ??= [WardrobeConfig.OUTFITS[0]];
+export function outfitUnlocked(p: WardrobePlayer = player()): (string | null)[] {
+  p.outfitUnlocked ??= [WardrobeConfig.OUTFITS[0]!];
   return p.outfitUnlocked;
 }
 
@@ -71,17 +67,14 @@ function trainerType(): string {
   return String(playerMetadata(player().characterID || 1)?.trainerType ?? "");
 }
 
-/** $player.outfit = value (Player#outfit= also refreshes the player's charset). */
+/** $player.outfit = value (Player#outfit= refreshes the player's charset). */
 function setOutfit(value: number): void {
-  const p = player();
-  if (p.outfit === value) return;
-  p.outfit = value;
-  (G.gamePlayer as unknown as { refreshCharset?(): void } | null)?.refreshCharset?.();
+  player().outfit = value;
 }
 
 /** Player#pbUnlockOutfit */
 export function playerUnlockOutfit(outfitIndex: number): void {
-  const outfitUnlock = WardrobeConfig.OUTFITS[outfitIndex];
+  const outfitUnlock = WardrobeConfig.OUTFITS[outfitIndex] ?? null; // (index 4: nil, see Player.pbUnlockOutfit)
   const unlocked = outfitUnlocked();
   if (!unlocked.includes(outfitUnlock)) {
     unlocked.push(outfitUnlock);

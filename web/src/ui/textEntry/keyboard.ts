@@ -33,6 +33,10 @@ const CODES: Record<string, string[]> = {
   KP_PLUS: ["NumpadAdd"],
   KP_MINUS: ["NumpadSubtract"],
   F5: ["F5"],
+  // The map connections editor (debug/editors/MapConnections.ts)
+  A: ["KeyA"],
+  D: ["KeyD"],
+  S: ["KeyS"],
 };
 
 /** Same repeat timing as rgss/Input (15 and 4 frames at 40 fps). */

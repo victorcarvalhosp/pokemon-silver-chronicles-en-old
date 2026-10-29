@@ -3,6 +3,8 @@
 // with save/load/new-game procs. Saves are versioned JSON in IndexedDB
 // instead of a Marshal file; "Game" and "Game.bak" mirror Game.rxdata/.bak.
 
+import { runSaveConversions } from "./SaveConversions";
+
 export interface SaveValue {
   id: string;
   /** Loaded at boot even before choosing Continue (options, system). */
@@ -155,6 +157,8 @@ function runConversions(hash: SaveHash): SaveHash {
   const format = Number(hash.__format ?? 0);
   if (format > SAVE_FORMAT) throw new Error("Save made by a newer version of the game");
   hash.__format = SAVE_FORMAT;
+  // SaveData.run_conversions (003_SaveData_Conversion.rb; the conversions are in SaveConversions.ts)
+  runSaveConversions(hash as Record<string, unknown>, "20.1", "1.0.0");
   return hash;
 }
 

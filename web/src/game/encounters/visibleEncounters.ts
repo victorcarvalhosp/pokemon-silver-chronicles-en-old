@@ -106,7 +106,7 @@ declare module "../globals" {
   interface PokemonGlobalMetadata {
     creatingSpawningPokemon?: boolean;
     battlingSpawnedPokemon?: boolean;
-    /** Roaming Pokémon (005_Overworld_RoamingPokemon.rb, not ported): [index, species, level, BGM]. */
+    /** Roaming Pokémon (005_Overworld_RoamingPokemon.rb, game/battle/roaming.ts): [index, species, level, BGM]. */
     roamEncounter?: unknown[] | null;
     roamedAlready?: boolean;
   }

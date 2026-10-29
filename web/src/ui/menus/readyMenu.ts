@@ -2,7 +2,7 @@
 // opened with the SPECIAL key), with pbUseKeyItem as Improved Field Skills
 // ([001] Field Skills.rb) overrides it in this game.
 //
-// The Bag, Pokémon and move/item data aren't ported yet: the bag is read from
+// To stay free of the data model's imports, the bag is read from
 // G.bag (registeredItems, readyMenuSelection, has(), quantity()), Pokémon
 // through PokemonLike, names/icons through MenuData and field moves through
 // FieldActions (menuScreens.ts). With no bag and no usable field moves this
@@ -292,7 +292,7 @@ export class PokemonReadyMenu {
       if (command[0] === 0) { // Use a move
         const move = commands[0][command[1]]![0];
         const user = menuPlayer()?.party?.[commands[0][command[1]]![3] ?? 0];
-        // pbUseHiddenMove isn't ported yet: buzzer, like an unregistered screen.
+        // Without the pbUseHiddenMove hook (game/field sets it): buzzer, like an unregistered screen.
         if (!FieldActions.useHiddenMove) {
           pbPlayBuzzerSE();
           continue;
@@ -323,7 +323,7 @@ export class PokemonReadyMenu {
         }
       } else { // Use an item
         const item = commands[1][command[1]]![0];
-        // pbUseKeyItemInField isn't ported yet: buzzer, like an unregistered screen.
+        // Without the pbUseKeyItemInField hook (game/scripts/partyBag.ts sets it): buzzer, like an unregistered screen.
         if (!FieldActions.useKeyItemInField) {
           pbPlayBuzzerSE();
           continue;

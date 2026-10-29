@@ -257,14 +257,7 @@ beforeAll(async () => {
 });
 
 // Not ported yet, with why.
-const PENDING: Record<string, string> = {
-  // Plugins/Social Links (data + its phone/social-media UI) is plugin-UI work
-  // that hasn't been ported; only Map 890 ("Other features", a demo map) calls it.
-  pbAddSocialLink: "Social Links plugin",
-  pbAddSocialLinksFromPhone: "Social Links plugin",
-  pbGainSocialLinkBond: "Social Links plugin",
-  pbSocialMedia: "Social Links plugin",
-};
+const PENDING: Record<string, string> = {};
 
 describe("event scripts", () => {
   it("call only names the port has", () => {

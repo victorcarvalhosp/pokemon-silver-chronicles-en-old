@@ -1080,7 +1080,7 @@ MenuHandlers.add("debug_menu", "set_metadata", {
   parent: "editors_menu",
   description: "Edit global metadata and player character metadata.",
   effect: async () => {
-    await openEditorScreen("pbEditMetadata"); // pbMetadataScreen
+    await openEditorScreen("pbMetadataScreen");
   },
 });
 

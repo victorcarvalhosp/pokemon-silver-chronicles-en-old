@@ -1,0 +1,363 @@
+[
+  {
+    "name": "fire/flying",
+    "case": {
+      "name": "fire/flying",
+      "foe": {
+        "s": "CHARIZARD"
+      }
+    },
+    "judgment": "ROCK",
+    "sampled": null,
+    "best": "ROCK",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "grass/steel",
+    "case": {
+      "name": "grass/steel",
+      "foe": {
+        "s": "FERROTHORN"
+      }
+    },
+    "judgment": "FIRE",
+    "sampled": null,
+    "best": "FIRE",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "water/ice",
+    "case": {
+      "name": "water/ice",
+      "foe": {
+        "s": "LAPRAS"
+      }
+    },
+    "judgment": "GRASS",
+    "sampled": [
+      "GRASS"
+    ],
+    "best": "GRASS",
+    "sampledBest": [
+      "GRASS"
+    ],
+    "has": true
+  },
+  {
+    "name": "levitate",
+    "case": {
+      "name": "levitate",
+      "foe": {
+        "s": "BRONZONG",
+        "a": "LEVITATE"
+      }
+    },
+    "judgment": "FIRE",
+    "sampled": [
+      "FIRE"
+    ],
+    "best": "FIRE",
+    "sampledBest": [
+      "FIRE"
+    ],
+    "has": true
+  },
+  {
+    "name": "water absorb",
+    "case": {
+      "name": "water absorb",
+      "foe": {
+        "s": "VAPOREON",
+        "a": "WATERABSORB"
+      }
+    },
+    "judgment": "GRASS",
+    "sampled": [
+      "GRASS"
+    ],
+    "best": "GRASS",
+    "sampledBest": [
+      "GRASS"
+    ],
+    "has": true
+  },
+  {
+    "name": "thick fat",
+    "case": {
+      "name": "thick fat",
+      "foe": {
+        "s": "SNORLAX",
+        "a": "THICKFAT"
+      }
+    },
+    "judgment": "FIGHTING",
+    "sampled": null,
+    "best": "FIGHTING",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "flash fire",
+    "case": {
+      "name": "flash fire",
+      "foe": {
+        "s": "HEATRAN",
+        "a": "FLASHFIRE"
+      }
+    },
+    "judgment": "GROUND",
+    "sampled": null,
+    "best": "GROUND",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "wonder guard",
+    "case": {
+      "name": "wonder guard",
+      "foe": {
+        "s": "SHEDINJA",
+        "a": "WONDERGUARD"
+      }
+    },
+    "judgment": "FIGHTING",
+    "sampled": [
+      "FIGHTING",
+      "FLYING",
+      "POISON",
+      "STEEL",
+      "FIRE",
+      "FAIRY"
+    ],
+    "best": "FIGHTING",
+    "sampledBest": [
+      "FIGHTING",
+      "FLYING",
+      "POISON",
+      "STEEL",
+      "FIRE",
+      "FAIRY"
+    ],
+    "has": true
+  },
+  {
+    "name": "wonder guard keeps ghost",
+    "case": {
+      "name": "wonder guard keeps ghost",
+      "foe": {
+        "s": "SHEDINJA",
+        "a": "WONDERGUARD"
+      },
+      "check": "FLYING"
+    },
+    "judgment": "FLYING",
+    "sampled": null,
+    "best": "FLYING",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "rain",
+    "case": {
+      "name": "rain",
+      "foe": {
+        "s": "RHYDON"
+      },
+      "weather": "Rain"
+    },
+    "judgment": "WATER",
+    "sampled": null,
+    "best": "WATER",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "sun",
+    "case": {
+      "name": "sun",
+      "foe": {
+        "s": "GYARADOS"
+      },
+      "weather": "Sun"
+    },
+    "judgment": "ELECTRIC",
+    "sampled": null,
+    "best": "ELECTRIC",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "heavy rain",
+    "case": {
+      "name": "heavy rain",
+      "foe": {
+        "s": "SCIZOR"
+      },
+      "weather": "HeavyRain"
+    },
+    "judgment": "WATER",
+    "sampled": null,
+    "best": "WATER",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "electric terrain + charge",
+    "case": {
+      "name": "electric terrain + charge",
+      "foe": {
+        "s": "GYARADOS"
+      },
+      "terrain": "Electric",
+      "charge": true
+    },
+    "judgment": "ELECTRIC",
+    "sampled": null,
+    "best": "ELECTRIC",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "misty terrain",
+    "case": {
+      "name": "misty terrain",
+      "foe": {
+        "s": "SALAMENCE"
+      },
+      "terrain": "Misty"
+    },
+    "judgment": "ICE",
+    "sampled": null,
+    "best": "ICE",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "mud sport",
+    "case": {
+      "name": "mud sport",
+      "foe": {
+        "s": "GYARADOS"
+      },
+      "field": {
+        "MudSportField": 5
+      }
+    },
+    "judgment": "ELECTRIC",
+    "sampled": null,
+    "best": "ELECTRIC",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "water sport",
+    "case": {
+      "name": "water sport",
+      "foe": {
+        "s": "SCIZOR"
+      },
+      "field": {
+        "WaterSportField": 5
+      }
+    },
+    "judgment": "FIRE",
+    "sampled": null,
+    "best": "FIRE",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "trick-or-treat",
+    "case": {
+      "name": "trick-or-treat",
+      "foe": {
+        "s": "TAUROS"
+      },
+      "type3": "GHOST"
+    },
+    "judgment": "DARK",
+    "sampled": null,
+    "best": "DARK",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "dark aura",
+    "case": {
+      "name": "dark aura",
+      "foe": {
+        "s": "ALAKAZAM"
+      },
+      "ally_ability": "DARKAURA"
+    },
+    "judgment": "NORMAL",
+    "sampled": null,
+    "best": "DARK",
+    "sampledBest": [
+      "DARK"
+    ],
+    "has": false
+  },
+  {
+    "name": "air balloon",
+    "case": {
+      "name": "air balloon",
+      "foe": {
+        "s": "HEATRAN",
+        "i": "AIRBALLOON"
+      }
+    },
+    "judgment": "GROUND",
+    "sampled": null,
+    "best": "GROUND",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "normal",
+    "case": {
+      "name": "normal",
+      "foe": {
+        "s": "TAUROS"
+      }
+    },
+    "judgment": "FIGHTING",
+    "sampled": null,
+    "best": "FIGHTING",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "check type kept",
+    "case": {
+      "name": "check type kept",
+      "foe": {
+        "s": "SHEDINJA",
+        "a": "WONDERGUARD"
+      },
+      "check": "FIRE"
+    },
+    "judgment": "FIRE",
+    "sampled": null,
+    "best": "FIRE",
+    "sampledBest": null,
+    "has": true
+  },
+  {
+    "name": "fainted foe",
+    "case": {
+      "name": "fainted foe",
+      "foe": {
+        "s": "TAUROS"
+      },
+      "faint": true
+    },
+    "judgment": "NORMAL",
+    "sampled": null,
+    "best": "FIGHTING",
+    "sampledBest": null,
+    "has": true
+  }
+]

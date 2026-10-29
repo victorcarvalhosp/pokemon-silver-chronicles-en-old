@@ -6,7 +6,10 @@
 // which branch was taken; the caller opens PokemonLoadScreen (and does the
 // final Graphics.freeze, which in Ruby happens after the load screen).
 
+import { rand } from "../../core/random";
+import { Species } from "../../data/gameData/species";
 import { Data } from "../../data/store";
+import { SpeciesFiles } from "../sprites/pokemonSprite";
 import { pbBGMPlay, pbBGMStop } from "../../game/GameSystem";
 import { Graphics } from "../../rgss/Graphics";
 import { Input } from "../../rgss/Input";
@@ -104,9 +107,9 @@ export class IntroEventScene extends EventScene {
     this.onUpdate.clear();
     this.onCTrigger.clear();
     // Play random cry
-    // TODO(cries): species_keys = GameData::Species.keys;
-    //   Pokemon.play_cry(species.species, species.form) for a random species
-    //   once Pokémon cries are ported.
+    const speciesKeys = Species.keys();
+    const speciesData = Species.get(speciesKeys[rand(speciesKeys.length)]!);
+    SpeciesFiles.playCryFromSpecies(speciesData.species, speciesData.form);
     this.pic.moveXY(0, 20, 0, 0); // Adds 20 ticks (1 second) pause
     await this.pictureWait();
     // Fade out

@@ -36,13 +36,32 @@ export class GameSystem {
   private memorizedBgm: AudioRef | null = null;
   private memorizedBgs: AudioRef | null = null;
 
+  /** @defaultBGM: the Jukebox's custom track, played instead of every other BGM while set. */
+  defaultBGM: AudioRef | null = null;
+
+  /** bgm_play / bgm_play_internal */
   bgmPlay(bgm: AudioRef | null): void {
     this.playingBgm = bgm ? { ...bgm } : null;
     if (bgm && bgm.name) {
-      Audio.bgmPlay(bgm.name, Math.floor((bgm.volume * G.pokemonSystem.bgmvolume) / 100), bgm.pitch);
+      if (!this.defaultBGM) Audio.bgmPlay(bgm.name, Math.floor((bgm.volume * G.pokemonSystem.bgmvolume) / 100), bgm.pitch);
     } else {
       this.playingBgm = null;
-      Audio.bgmStop();
+      if (!this.defaultBGM) Audio.bgmStop();
+    }
+    if (this.defaultBGM) {
+      Audio.bgmPlay(this.defaultBGM.name, Math.floor((this.defaultBGM.volume * G.pokemonSystem.bgmvolume) / 100), this.defaultBGM.pitch);
+    }
+  }
+
+  /** setDefaultBGM(bgm, volume, pitch): nil goes back to the playing BGM. */
+  setDefaultBGM(bgm: AudioRef | string | null, volume = 80, pitch = 100): void {
+    if (typeof bgm === "string") bgm = { name: bgm, volume, pitch };
+    this.defaultBGM = null;
+    if (bgm && bgm.name !== "") {
+      this.bgmPlay(bgm);
+      this.defaultBGM = { ...bgm };
+    } else {
+      this.bgmPlay(this.playingBgm);
     }
   }
 

@@ -4,3 +4,5 @@ dist/
 # Only the PBS compilation is generated: `pnpm pbs` from ../PBS.
 /data/pbs/
 .audio-cache/
+# Logs written by the game on the dev server (Luka's ErrorLogger)
+/data/logs/

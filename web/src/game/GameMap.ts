@@ -12,6 +12,8 @@ import { G } from "./globals";
 import { pbBGMPlay, pbBGSPlay } from "./GameSystem";
 import { mapMetadata } from "./metadata";
 import { autoplayAsCue } from "./mapAudio";
+import { assetExists } from "../core/assets";
+import { PBDayNight } from "./dayNight";
 
 /** GameData::TerrainTag#can_surf_freely */
 const canSurfFreely = (t: TerrainTag) => !!t.canSurf && !t.waterfall && !t.waterfallCrest;
@@ -121,8 +123,13 @@ export class GameMap {
     if (row && x >= 0 && x < row.length) row[x] = id;
   }
 
+  eraseTile(x: number, y: number, layer: number): void {
+    this.setTile(x, y, layer, 0);
+  }
+
+  /** Game_Map#bgm_name: "<name>_n" at night when that file exists. */
   bgmName(): string {
-    // TODO(day/night): Essentials plays "<name>_n" at night when it exists.
+    if (PBDayNight.isNight() && assetExists("Audio/BGM/" + this.map.bgm.name + "_n")) return this.map.bgm.name + "_n";
     return this.map.bgm.name;
   }
 

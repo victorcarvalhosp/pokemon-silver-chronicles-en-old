@@ -8,8 +8,8 @@
 // The handlers are registered here (so the Bag shows "Use" and the items can
 // be registered, as in Ruby) and call the hooks below; until a hook is set,
 // using the item warns and does nothing (returns 0, item not used). The
-// Triple Triad hooks are set by web/src/minigames/scripts.ts.
-// TODO(items): the Unown Report scene isn't ported.
+// Triple Triad hooks are set by web/src/minigames/scripts.ts, the Unown
+// Report one by web/src/plugins/unownReport/ItemUnownReport.ts.
 
 import type { Id } from "../../data/gameData/gameData";
 import { ItemHandlers } from "./ItemHandlers";

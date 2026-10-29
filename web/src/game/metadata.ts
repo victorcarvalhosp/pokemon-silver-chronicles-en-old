@@ -77,3 +77,14 @@ export function playerMetadata(id: number): PlayerMetadata | undefined {
 export function metadata(): Metadata {
   return global;
 }
+
+/**
+ * The editors (debug/editors/EditorScreens.ts) replace one record after
+ * GameData::*Metadata.register, as Ruby's lookups then see the new data.
+ * The records have the compiled JSON's keys (data/pbs/types.ts).
+ */
+export const MetadataRecords = {
+  setMap(record: MapMetadata): void { maps.set(Number(record.id), record); },
+  setPlayer(record: PlayerMetadata): void { players.set(Number(record.id), record); },
+  setGlobal(record: Metadata): void { global = record; },
+};

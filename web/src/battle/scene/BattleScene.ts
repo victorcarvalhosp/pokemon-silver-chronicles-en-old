@@ -24,8 +24,7 @@
 // in web/src/battle/deluxe, which installs them on this class.
 // ZUD's Dynamax/Z-Move/Ultra Burst cinematics are in web/src/battle/zud/scene,
 // which installs them on this class the same way.
-// Not ported (see the report): ZUD's Max Raid cinematics,
-// Generation 9 Pack's pbArceusTransform, the debug menu (F9).
+// Generation 9 Pack's pbArceusTransform is in ArceusTransform.ts. (The F9 debug menu is wired in pbFrameUpdate / Battle_CommandPhase.ts.)
 //
 // Every loop that calls Graphics.update in Ruby awaits it here, so the scene's
 // methods are async. Timing: Ruby counts frames at Graphics.frame_rate (40);

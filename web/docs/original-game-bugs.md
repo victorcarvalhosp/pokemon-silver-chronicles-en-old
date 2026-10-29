@@ -233,6 +233,24 @@ Only reachable in Debug mode (the dev server, or `?debug=1`).
 | chooseMapPoint and pbPropertyList never dispose their viewport (small leak) | `002_Editor_DataTypes.rb:685, 1551` | `src/debug/EditorDataTypes.ts:794, 1689` |
 | ZUD `write_power_moves` writes `species.first` for flagged entries, which compile_power_moves already replaced: `PIKASHUNIUMZ` comes out as `Species = ` and recompiling fails | ZUD `[000] General/Compiler.rb:426, 454` (`:377`) | `src/compiler/WritePBS.ts:1199, 1233` |
 
+### Editor screens (`web/src/debug/editors`, `web/src/ui/MysteryGift.ts`)
+
+Paths under `020_Debug/001_Editor screens/` unless noted.
+
+| Bug | Original | Port |
+|---|---|---|
+| Encounters editor: after adding or copying an encounter type, the cursor goes to the type's row in the *sorted* list while the list shows the types in their own order | `001_EditorScreens.rb:202, 231` | `src/debug/editors/EditorScreens.ts:221` |
+| Trainer Pokémon editor (Essentials Deluxe): the moves are read from index 7, so the 4th move is dropped and a Shadow Pokémon gets `true` as its first move | Essentials Deluxe `[000] Essentials Patches/Trainer Data.rb:233` | `src/debug/editors/EditorScreens.ts:741` |
+| Player metadata editor: "Home" is edited but left out of the saved hash | `001_EditorScreens.rb:783-793` | `src/debug/editors/EditorScreens.ts:931` |
+| Species editor: the saved hash has no species/form or Mega/ZUD/Field Skills properties, which go back to their defaults (an item's HeldDescription/portion names likewise in the item editor) | `001_EditorScreens.rb:1109`, `:911` | `src/debug/editors/EditorScreens.ts:1225` |
+| Regional Dex editor: saving an empty Dex loops forever (`dex.slice!(-1) until dex[-1]`). **Not reproduced**: the port stops at an empty Dex so the tab doesn't hang | `001_EditorScreens.rb:1254` | `src/debug/editors/EditorScreens.ts:1397` |
+| Tileset editor compares the chosen row with the old tag's ID (harmless: the tags have no gaps) | `002_EditorScreens_TerrainTags.rb:215` | `src/debug/editors/TerrainTags.ts:306` |
+| Map connections editor: `putNeighbors` records the wrong map, so a map can be placed again from its other neighbours | `003_EditorScreens_MapConnections.rb:177` | `src/debug/editors/MapConnections.ts:301` |
+| Map connections editor: "Save changes? No" reloads the encounters, not the connections | `003_EditorScreens_MapConnections.rb:561` | `src/debug/editors/MapConnections.ts:654` |
+| Auto-position Dynamax sprites: species without their own Dynamax metrics share the arrays, so `+8` also moves their normal front sprite down each run | ZUD `[000] General/Editors.rb:341`, `[001] Data/Data_Species.rb:168` | `src/debug/editors/SpritePositioning.ts:133` |
+| `getPassabilityMinimap` (unused) calls `minimap.disposes` (NoMethodError) | `006_Map renderer/004_TileDrawingHelper.rb:229` | `src/debug/editors/TileDrawingHelper.ts:261` |
+| Manage Mystery Gifts never writes the Master file back: edits and deletions are lost | `016_UI/023_UI_MysteryGift.rb:196, 212` | `src/ui/MysteryGift.ts:253` |
+
 ### Battle animation editor (`web/src/debug/editors`)
 
 Paths under `020_Debug/002_Animation editor/` unless noted.
@@ -330,6 +348,76 @@ crashes below can't happen from events. `TT` = `017_Minigames/002_Minigame_Tripl
 | Every opening and every return from the switch screen costs 2 Enjoyment and plays a Following Pokémon line | `:710-712` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
 | Most maps' BattleBack (cave1, tunnel, battle1, indoor2…) has no picture in `Graphics/Pictures/Pokemon Amie`, so the backdrop is blank (black) there | `:876-901` | `src/plugins/pokemonAmie/PokeAmieScene.ts` |
 
+## Social Links (`web/src/plugins/socialLinks`; paths under `Plugins/Social Links/`)
+
+| Bug | Original | Port |
+|---|---|---|
+| Bond Effects (EXP rate, shiny rolls, catch rate) are tracked and announced but do nothing: no script calls `active_bond_effect?` | `004_Player.rb:36` | `player.ts` (`activeBondEffect`, unused) |
+| `pbSetSocialLinkBond` doesn't clamp (`bond.clamp` discards its result): bonds can go past the max or below 0 | `004_Player.rb:221` | `player.ts` (`pbSetLinkBond`) |
+| `pbSetSocialLinkBond` reaching exactly the max (not silent) raises NoMethodError (`MAXED_BOND_MESSAGE ""` is a method call) after the sound effect and the new bond, before moments reset and effects refresh | `004_Player.rb:234` | `player.ts` (`pbSetLinkBond`) |
+| `pbSetSocialLinkMoment` doesn't clamp, and its "shared a moment" message compares the old moments with the bond | `004_Player.rb:315, 323` | `player.ts` (`pbSetLinkMoment`) |
+| `toggle_favorite(val)` sets `val` and then toggles it too | `001_Data.rb:39-42` | `data.ts` (`toggleFavorite`) |
+| `pbSetSocialLinkLocation` / `FavoritePokemon` / `Status` (a String) on a link the player doesn't have raise NoMethodError | `004_Player.rb:352-372` | `player.ts` |
+| Viewing a profile rewrites its stored status with the replaced text (`gsub!` on `@current_status`), freezing `\v[n]` values; a variable holding its own `\v[n]` loops forever | `003_SocialUI.rb:631, 711-737` | `SocialUI.ts`, `sceneLogic.ts` |
+| Most profiles (Mother, Elm, Ivy, Kris, Yellow, Red, the route trainers) have no picture in `Graphics/UI/Social Links/Profile Pictures`: Ruby raises Errno::ENOENT drawing the list/profile; the port draws nothing there (as its pbDrawImagePositions/IconSprite do for any missing graphic) | `003_SocialUI.rb:323, 579` | `SocialUI.ts` |
+| SocialMediaScreen's pbUpdate/pbRefresh/pbDisplay/pbDisplayForcedCommands/pbConfirm/pbShowCommands call scene methods that don't exist (unused) | `003_SocialUI.rb:762-784` | `SocialUI.ts` |
+| The Script Variables setup (editing Game_Event's variable condition) was never applied, so `varValue?` is unused | `005_Script Variables.rb`, `008_Game_Event.rb:188` | `scriptVariables.ts` |
+
+## Luka's Scripting Utilities (`web/src/plugins/lukasUtilities`; paths under `Plugins/Luka's Scripting Utilities/script.rb`)
+
+Nothing in the game calls these helpers, so none of this shows in play.
+
+| Bug | Original | Port |
+|---|---|---|
+| `Hash#deep_merge` returns the last non-Hash value (`h = hash[key]`) or merges into the top level; replaces Essentials' correct version (only `deep_merge!` is used) | `script.rb:214-226` | `extensions.ts:125` |
+| `Color.new(n)` doesn't pad the hex (`0x00FF00` is red; `255` raises ArgumentError); `Color.new("r,g,b")` misreads; `Color.new()` raises | `script.rb:728-746` | `colors.ts:27` |
+| `Color#to_rgb` doesn't strip `#` | `script.rb:759-765` | `colors.ts:60` |
+| `Color.from_i` reads an undefined `clr` (NameError) | `script.rb:781-787` | `colors.ts:76` |
+| `Color.parse` on a string without `#` calls the nonexistent `String#include` (NoMethodError) | `script.rb:797` | `colors.ts:86` |
+| `Viewport#sprites` never increments its key: only the last sprite, under 0 | `script.rb:236-245` | `sprites.ts:69` |
+| `Sprite#skew` skips row 0 (and blits row `height`); past 90° `@calMidX` halves the new bitmap's own width | `script.rb:361-366` | `sprites.ts:162` |
+| `Sprite#avg_color` counts transparent samples in the divisor; a bitmap smaller than `freq` divides by 0 | `script.rb:395-414` | `sprites.ts:226` |
+| `Sprite#create_outline` uses an undefined `r` (NameError) | `script.rb:423` | `sprites.ts:256` |
+| `Sprite#colorize` swaps red and blue when blending (`amt` < 255) | `script.rb:457-471` | `sprites.ts:267` |
+| `Sprite#mask` calls the nonexistent `Bitmap#mask` (NoMethodError); `Bitmap#mask!` returns a new bitmap | `script.rb:527, 611-639` | `sprites.ts:342`, `bitmaps.ts:131` |
+| `TrailingSprite` copies call `center` (a getter) instead of `center!`; faded copies are never freed | `script.rb:928, 938-946` | `spriteClasses.ts:96` |
+| `CallbackWrapper`'s `@params = {}` is a class-level variable: `execute` before `set` raises NoMethodError | `script.rb:1090` | `env.ts:75` |
+| `Env.path` calls an undefined `getKnownFolder` | `script.rb:1194` | `env.ts:205` |
+| `Env.interpret` cuts sections out with `gsub!` (repeated text and section names misparse), counts `""`/`-`/`.` as numbers, makes blank lines sub-sections named `""`, and raises NoMethodError on a file without sections | `script.rb:1248-1334` | `env.ts:259` |
+| `getPolygonPoints` steps `360 / n` in integer division | `script.rb:1397` | `globals.ts:13` |
+
+## Experiment with Scene, Unown Report, the Mega Evolution plugin, TC Wardrobe (`web/src/plugins/experimentWithScene`, `web/src/plugins/unownReport`, `web/src/plugins/megaEvolution`, `web/src/ui/scenes/Wardrobe.ts`; paths under `Plugins/`)
+
+| Bug | Original | Port |
+|---|---|---|
+| MyUI::Scene#pbStartScene raises TypeError: `@vector.spoof(@vector)` splats the Vector as x with every other value nil (`Math.cos(nil)`), so pbMyUI/pbEndScene never run and the scene stays on screen. Nothing in the game opens this scene | `ExperimentWithScene/MyUI_Scene.rb:153` | `src/plugins/experimentWithScene/MyUIScene.ts` |
+| pbStartScene replaces the player IconSprite with an empty Sprite without disposing it: the front sprite stays drawn at (0, 0) | `ExperimentWithScene/MyUI_Scene.rb:130` | `src/plugins/experimentWithScene/MyUIScene.ts` |
+| MyUI.get_vector returns the :PLAYER vector for every key once it exists; add_vector(:CAMERA_MOTION, ...) appends the trailing 1 to the list instead of to each vector (only :CAMERA does that) | `ExperimentWithScene/MyUI Module.rb:26, 46, 101` | `src/plugins/experimentWithScene/MyUIModule.ts` |
+| Vector starts @set as [x, y, scale, angle, …] but update reads [2] as the angle and [3] as the scale (swapped until the first set) | `ExperimentWithScene/Math Functions.rb:22, 135-136` | `src/plugins/experimentWithScene/MathFunctions.ts` |
+| Battle::Scene#alignSprites / getRealVector, MyUI::Scene#spoof and #disposed? call methods that don't exist here (Elite Battle: DX's getCenter, doublebattle?, @scene, @sprite): NoMethodError. Nothing calls them | `Math Functions.rb:191, 199`; `MyUI_Scene.rb:48`; `Scene Camera.rb:127` | `src/plugins/experimentWithScene/` |
+| Unown Report: USE on a page does nothing (empty `if`), so the report only lists the names of the forms seen | `Unown Report/Unown_Report_Mechanic.rb:214-216` | `src/plugins/unownReport/UnownReportMechanic.ts` |
+| Mega Evolution plugin (SceneMegaEvolution; never runs in play, Essentials Deluxe's pbMegaEvolve replaces the plugin's): restoreColor restores nothing; the Pokémon is `Bitmap.new` of its front sprite file, a whole animation strip, shown centred with several frames side by side; the Mega strip then keeps the first strip's ox/oy, so it's drawn off screen (Ampharos); @viewport is never disposed | `Mega Evolution/Mega Evolution.rb:50, 146, 224-226, 271-276` | `src/plugins/megaEvolution/SceneMegaEvolution.ts` |
+| TC Wardrobe: Map003's `pbUnlockOutfit(4)` is past the 4 outfits and unlocks nil (kept as null in the save) | `TC Wardrobe/001_main.rb:17`; `web/data/maps/Map003.json` | `src/game/trainer/Player.ts`, `src/ui/scenes/Wardrobe.ts` |
+
+## Shadow Pokémon purification (`web/src/ui/purifyChamber`, `web/src/game/pokemon/shadowPokemonOther.ts`)
+
+| Bug | Original | Port |
+|---|---|---|
+| Leaving the set editor (EDIT) while a set is ready for purification hangs the game: "There is a Pokémon that is ready to open its heart!\1" goes through UIHelper.pbDisplay, which adds another `\1`; the first is a pause before the end, the window stays busy while paused, and UIHelper.pbDisplay only resumes a window that isn't busy (purification still works when the chamber is opened with a set ready) | `016_UI/022_UI_PurifyChamber.rb:542`, `016_UI/018_UI_ItemStorage.rb:211` | `src/ui/purifyChamber/PurifyChamberScreen.ts` (pbOpenSetDetail) |
+| Past that hang (unreachable as is), pbDoPurify opens the set again over the open one (`@sprites` replaced, not disposed): the old set view would stay on screen until Ruby's GC frees it (the port disposes it when the scene ends) | `022_UI_PurifyChamber.rb:541-545`, `:1111` | `src/ui/purifyChamber/PurifyChamberScene.ts` (pbOpenSet, pbEnd) |
+| SUMMARY on a set's Shadow Pokémon does nothing while the set has no regular Pokémon (the loop covers `setCount * 2` positions) | `022_UI_PurifyChamber.rb:1267` | `src/ui/purifyChamber/PurifyChamberScene.ts` (pbSummary) |
+| `PurifyChamber#debugAdd` builds a `PseudoPokemon`, which v20.1 doesn't define (NameError; nothing calls it) | `022_UI_PurifyChamber.rb:279` | `src/ui/purifyChamber/PurifyChamber.ts` |
+| The Time Flute only works on a Shadow Pokémon whose heart gauge isn't 0, then calls pbPurify, which returns unless it is 0: the flute is used up and does nothing (not in this game's items) | `014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:289-292` | `src/game/pokemon/shadowPokemonOther.ts` |
+
+## Plugin audit leftovers (Generation 9 Pack, Mr. Gela's HGSS Trainer Card)
+
+| Bug | Original | Port |
+|---|---|---|
+| Walking-evolution step handler crashes (NoMethodError on nil) on every step when the party has only Eggs and fainted Pokémon | Gen 9 Pack `[000] General/[000] Pokemon.rb:256` | `src/plugins/gen9Pack/stepHandlers.ts` |
+| Mirror Herb: the comment says every 100 steps, the code waits for 256 | Gen 9 Pack `[000] General/[000] Pokemon.rb:280` | `src/plugins/gen9Pack/stepHandlers.ts` |
+| Legend Plate transform animation brightens its tone table in place (`col = variances[3]; col.red += 255`), so each type's fourth tone (the plate's starting tone, the particles') gets brighter every time it plays | Gen 9 Pack `[001] Battle/[006] Legend Plate Functions.rb:279-282` | `src/battle/scene/ArceusTransform.ts` |
+| `getForeignID(number)` ignores `number` (the loop overwrites it) | `Mr. Gela's HGSS Trainer Card Scene.rb:53` | `src/game/trainer/Player.ts` |
+
 ## Event scripts (`web/data/maps`, `web/data/common-events.json`; port in `src/game/scripts/eventScripts.ts`, `src/game/scripts/rubyErrors.ts`)
 
 Calls in the game's events that the original game (v20.1 and its plugins) doesn't define, left over from the older Essentials the game started on. Each raises when it runs (NameError / NoMethodError → EventScriptError) and the game stops with the error box; the port raises the same (`rubyErrors.ts`). `data/eventScripts.test.ts` checks every other call resolves.
@@ -348,3 +436,14 @@ Calls in the game's events that the original game (v20.1 and its plugins) doesn'
 | Common event 32 ("Call HallofFame", unused): `HallofFameScene` (v20: `HallOfFame_Scene`) raises inside `PBDebug.logonerr`, which shows the error and carries on | common event 32 | `callHallOfFameCommonEvent` |
 | Common events 2, 5, 6, 7: `$Trainer.party.compact!` runs inside the `for k in 0..5` loop, so the Pokémon after a stored one is skipped | common events 2, 5-7 | `storePartySpecies` |
 | Messages with a stray backslash show it as written: `\v [77]` / `\v [76]` (a space; Map 251 event 31), `\Olá` (Map 314), `\Hm!` (Map 678) | events | `data/eventScripts.test.ts` |
+
+## Core overworld, saves and utilities (`web/src/game/field/stepHandlers.ts`, `web/src/game/dayNight.ts`, `web/src/game/save/SaveConversions.ts`, `web/src/core`)
+| Bug | Original | Port |
+|---|---|---|
+| Pokérus never counts down: the `:pokerus_counter` frame handler returns while `$PokemonGlobal.pokerusTime` is nil, and nothing ever sets it | `012_Overworld/001_Overworld.rb:5-16`, `002_Overworld_Metadata.rb:105` | `src/game/field/stepHandlers.ts` |
+| `moonphase` adds `hour * 60 + min * 60` seconds, counting hours as minutes | `012_Overworld/003_Overworld_Time.rb:151` | `src/game/dayNight.ts` |
+| Scene_Map#autofade: at night, with a map's "_n" BGM already playing, the second test (`playingBGM.name != map.bgm.name`) is still true, so the night music fades and restarts on every transfer between maps sharing it | `003_Game processing/002_Scene_Map.rb:62-63` | `src/scenes/SceneMap.ts` |
+| `Numeric#to_word` checks `self <= ret.length`, so 21 returns nil | `001_Technical/002_RubyUtilities.rb:78` | `src/core/rubyUtilities.ts` |
+| `pbPostData` only posts to `http://` URLs; anything else (https included) returns "" | `001_Technical/002_Files/003_HTTP_Utilities.rb:7` | `src/core/httpUtilities.ts` |
+| Save conversion `v20_refactor_day_care_variables`: an empty old slot becomes a Lv.50 Manaphy, and `next if slot.filled?` keeps looping, so the first old Pokémon fills every empty slot | `002_Save data/005_Game_SaveConversions.rb:176-183` | `src/game/save/SaveConversions.ts` |
+| Save conversion `v20_rename_bag_variables` clears `@lastPocket` instead of `@lastpocket` | `005_Game_SaveConversions.rb:221` | `src/game/save/SaveConversions.ts` |

@@ -61,3 +61,8 @@ export async function loadAssetIndex(): Promise<void> {
 export function assetExists(path: string): boolean {
   return assetIndex.has(path.toLowerCase());
 }
+
+/** Every indexed asset path (lowercased), for Dir.get/Dir.all (core/fileTests.ts). */
+export function assetPaths(): string[] {
+  return [...assetIndex];
+}

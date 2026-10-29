@@ -40,6 +40,11 @@ interface Displayable {
   sync(): void;
 }
 
+/** Every live sprite, viewport and plane (ObjectSpace.each_object, for pbHideVisibleObjects). */
+export function liveObjects(): readonly unknown[] {
+  return [...live];
+}
+
 export function syncDisplay(): void {
   for (const d of live) d.sync();
 }

@@ -168,7 +168,7 @@ export function setForgetMoveHook(fn: (pkmn: Pokemon, moveToLearn: Id) => Promis
 }
 
 export async function pbForgetMove(pkmn: Pokemon, moveToLearn: Id): Promise<number> {
-  if (!forgetMoveHook) throw new Error("pbForgetMove needs the summary screen, which isn't ported yet");
+  if (!forgetMoveHook) throw new Error("pbForgetMove: the summary screen hook isn't set (game/scripts/partyBag.ts sets it)");
   return forgetMoveHook(pkmn, moveToLearn);
 }
 

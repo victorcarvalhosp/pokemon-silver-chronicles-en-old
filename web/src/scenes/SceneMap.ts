@@ -4,7 +4,7 @@ import { DEBUG } from "../core/debug";
 import { connectionsFor, getMapData, preloadMaps } from "../data/store";
 import { Data } from "../data/store";
 import { EventHandlers } from "../game/eventHandlers";
-import { pbDayNightTint } from "../game/dayNight";
+import { PBDayNight, pbDayNightTint } from "../game/dayNight";
 import type { GameMap } from "../game/GameMap";
 import { pbCancelVehicles, type GamePlayer } from "../game/GamePlayer";
 import { G } from "../game/globals";
@@ -18,6 +18,7 @@ import { Input } from "../rgss/Input";
 import { preloadMapGraphics } from "../sprites/cache";
 import { SpritesetGlobal, SpritesetMap, mapViewports } from "../sprites/spritesets";
 import { preloadOverworldVisuals } from "../game/weather/Overlays";
+import { assetExists } from "../core/assets";
 
 const factory = () => G.mapFactory as unknown as PokemonMapFactory;
 const gameMap = () => G.gameMap as unknown as GameMap;
@@ -96,7 +97,14 @@ export class SceneMap {
     const playingBGS = G.gameSystem.playingBgs;
     if (!playingBGM && !playingBGS) return;
     const map = getMapData(mapid);
-    if (playingBGM && map.autoplayBgm && playingBGM.name !== map.bgm.name) pbBGMFade(0.8);
+    if (playingBGM && map.autoplayBgm) {
+      // NOTE (Ruby parity): the second test is true while the "_n" night version
+      // plays, so its own map fades it out and starts it again (002_Scene_Map.rb:62-63).
+      if ((PBDayNight.isNight() && assetExists("Audio/BGM/" + map.bgm.name + "_n") &&
+          playingBGM.name !== map.bgm.name + "_n") || playingBGM.name !== map.bgm.name) {
+        pbBGMFade(0.8);
+      }
+    }
     if (playingBGS && map.autoplayBgs && playingBGS.name !== map.bgs.name) pbBGMFade(0.8);
   }
 

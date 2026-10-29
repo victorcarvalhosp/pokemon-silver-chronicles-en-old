@@ -20,6 +20,7 @@ import "./DebugPokemonCommands";
 import "../battle/zud/Debug";
 import "../game/maxRaid/Debug"; // ZUD Debug.rb's Max Raid / Dynamax Adventure options (same file, next in order)
 import "./DebugPokemonCommands_EnhancedUI";
+import "./editors"; // the editor screens (EditorScreens)
 
 import { SceneMapHooks } from "../scenes/SceneMap";
 import { pbFadeOutIn } from "../ui/fades";

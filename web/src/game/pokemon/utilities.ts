@@ -38,7 +38,7 @@ export async function pbNickname(pkmn: Pokemon): Promise<void> {
   if (G.pokemonSystem.givenicknames !== 0) return;
   const speciesName = pkmn.speciesName();
   if (await pbConfirmMessageHook(_INTL("Would you like to give a nickname to {1}?", speciesName))) {
-    if (!PokemonUIHooks.enterPokemonName) throw new Error("The naming screen isn't ported yet");
+    if (!PokemonUIHooks.enterPokemonName) throw new Error("pbNickname: the naming screen hook isn't set (game/scripts/pokemon.ts sets it)");
     pkmn.name = await PokemonUIHooks.enterPokemonName(_INTL("{1}'s nickname?", speciesName), 0, Pokemon.MAX_NAME_SIZE, "", pkmn);
   }
 }
@@ -76,7 +76,7 @@ async function showNewDexEntry(pkmn: Pokemon, message: string): Promise<void> {
   await pbMessageHook(message);
   player().pokedex.registerLastSeen(pkmn);
   if (PokemonUIHooks.dexEntry) await PokemonUIHooks.dexEntry(pkmn.species);
-  else console.warn("pbAddPokemon: the Pokédex entry screen isn't ported yet");
+  else console.warn("pbAddPokemon: the Pokédex entry hook isn't set (game/scripts/infoScreens.ts sets it)");
 }
 
 export async function pbAddPokemon(pkmn: Pokemon | Id | null, level = 1, seeForm = true): Promise<boolean> {

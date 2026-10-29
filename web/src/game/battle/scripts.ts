@@ -9,7 +9,8 @@ import "../encounters/visibleEncounters";
 import { defineScript } from "../scriptApi";
 import { pbGetTrainerBattleBGM, pbGetWildBattleBGM, pbGetWildCaptureME, pbGetWildVictoryBGM, pbPlayTrainerIntroBGM } from "./battleAudio";
 import { pbBattleAnimation } from "./BattleIntroAnim";
-import { pbCanDoubleBattle, pbCanTripleBattle, pbGetEnvironment, setBattleRule, TrainerBattle, WildBattle } from "./BattleStarting";
+import { BattleCreationHelperMethods, pbCanDoubleBattle, pbCanTripleBattle, pbGetEnvironment, setBattleRule, TrainerBattle, WildBattle } from "./BattleStarting";
+import { Deprecation } from "../../debug/Deprecation";
 import { pbStartOver } from "./startOver";
 import { SpeciesFiles } from "../../ui/sprites/pokemonSprite";
 
@@ -35,8 +36,10 @@ defineScript("pbGetTrainerBattleBGM", (_c, t) => pbGetTrainerBattleBGM(t as neve
 defineScript("pbPlayTrainerIntroBGM", (_c, t) => pbPlayTrainerIntroBGM(t as Id));
 
 // Deprecated in v21, still used by events.
+const deprecated = (name: string, alternative: string) => Deprecation.warnMethod(name, "v21", alternative);
 defineScript("pbWildBattle", (_c, ...a: Args) => {
   const [species, level, outcomeVar = 1, canRun = true, canLose = false] = a;
+  deprecated("pbWildBattle", "WildBattle.start(species, level)");
   if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
   if (!canRun) setBattleRule("cannotRun");
   if (canLose) setBattleRule("canLose");
@@ -44,6 +47,7 @@ defineScript("pbWildBattle", (_c, ...a: Args) => {
 });
 defineScript("pbDoubleWildBattle", (_c, ...a: Args) => {
   const [s1, l1, s2, l2, outcomeVar = 1, canRun = true, canLose = false] = a;
+  deprecated("pbDoubleWildBattle", "WildBattle.start(pkmn1, pkmn2)");
   if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
   if (!canRun) setBattleRule("cannotRun");
   if (canLose) setBattleRule("canLose");
@@ -52,6 +56,7 @@ defineScript("pbDoubleWildBattle", (_c, ...a: Args) => {
 });
 defineScript("pbTrainerBattle", (_c, ...a: Args) => {
   const [trainerID, trainerName, _endSpeech, doubleBattle = false, trainerPartyID = 0, canLose = false, outcomeVar = 1] = a;
+  deprecated("pbTrainerBattle", "TrainerBattle.start(trainer_type, trainer_name, trainer_version)");
   if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
   if (canLose) setBattleRule("canLose");
   if (doubleBattle) setBattleRule("double");
@@ -59,10 +64,49 @@ defineScript("pbTrainerBattle", (_c, ...a: Args) => {
 });
 defineScript("pbDoubleTrainerBattle", (_c, ...a: Args) => {
   const [id1, name1, party1, _s1, id2, name2, party2 = 0, _s2, canLose = false, outcomeVar = 1] = a;
+  deprecated("pbDoubleTrainerBattle", "TrainerBattle.start(trainer1, trainer2)");
   if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
   if (canLose) setBattleRule("canLose");
   setBattleRule("double");
   return TrainerBattle.start([id1, name1, party1, id2, name2, party2] as never);
+});
+// The other deprecated methods (001_Overworld_BattleStarting.rb:748-842).
+defineScript("pbNewBattleScene", () => {
+  deprecated("pbNewBattleScene", "BattleCreationHelperMethods.create_battle_scene");
+  return BattleCreationHelperMethods.createBattleScene();
+});
+defineScript("pbPrepareBattle", (_c, battle) => {
+  deprecated("pbPrepareBattle", "BattleCreationHelperMethods.prepare_battle(battle)");
+  BattleCreationHelperMethods.prepareBattle(battle as never);
+});
+defineScript("pbWildBattleCore", (_c, ...a: Args) => {
+  deprecated("pbWildBattleCore", "WildBattle.start_core(species, level)");
+  return WildBattle.startCore(a as never);
+});
+defineScript("pbTripleWildBattle", (_c, ...a: Args) => {
+  const [s1, l1, s2, l2, s3, l3, outcomeVar = 1, canRun = true, canLose = false] = a;
+  deprecated("pbTripleWildBattle", "WildBattle.start(pkmn1, pkmn2, pkmn3)");
+  if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
+  if (!canRun) setBattleRule("cannotRun");
+  if (canLose) setBattleRule("canLose");
+  setBattleRule("triple");
+  return WildBattle.start([s1, l1, s2, l2, s3, l3] as never);
+});
+defineScript("pbTrainerBattleCore", (_c, ...a: Args) => {
+  deprecated("pbTrainerBattleCore", "TrainerBattle.start_core(trainer_type, trainer_name, trainer_version)");
+  return TrainerBattle.startCore(a as never);
+});
+defineScript("pbTripleTrainerBattle", (_c, ...a: Args) => {
+  const [id1, name1, party1, _s1, id2, name2, party2, _s2, id3, name3, party3 = 0, _s3, canLose = false, outcomeVar = 1] = a;
+  deprecated("pbTripleTrainerBattle", "TrainerBattle.start(trainer1, trainer2, trainer3)");
+  if (outcomeVar !== 1) setBattleRule("outcomeVar", outcomeVar);
+  if (canLose) setBattleRule("canLose");
+  setBattleRule("triple");
+  return TrainerBattle.start([id1, name1, party1, id2, name2, party2, id3, name3, party3] as never);
+});
+defineScript("pbAfterBattle", (_c, outcome, canLose) => {
+  deprecated("pbAfterBattle", "BattleCreationHelperMethods.after_battle(outcome, can_lose)");
+  return BattleCreationHelperMethods.afterBattle(Number(outcome), !!canLose);
 });
 
 // Pokemon.play_cry(species, form = 0, volume = 90, pitch = 100) (014_Pokemon/001_Pokemon.rb);

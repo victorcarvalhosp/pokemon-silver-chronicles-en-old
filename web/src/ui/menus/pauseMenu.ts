@@ -6,7 +6,9 @@
 //
 // Screens it opens that live elsewhere (Pokédex, party, Bag, Pokégear, Town
 // Map, Trainer Card, Debug) come from the MenuScreens registry; see
-// menuScreens.ts. Easy Mouse System's $mouse hovering/clicking isn't ported.
+// menuScreens.ts. The menu's mouse code (Script.rb:300-309) reads `$mouse`,
+// which nothing in this game defines (Easy Mouse System's API is the `Mouse`
+// module, plugins/easyMouse/Mouse.ts), so it never runs in the original.
 
 import { G, pbUpdateSceneMap } from "../../game/globals";
 import { pbBGMFade, pbBGSFade, pbPlayBuzzerSE, pbPlayCancelSE, pbPlayCursorSE, pbPlayDecisionSE, pbSEPlay } from "../../game/GameSystem";
@@ -358,7 +360,8 @@ export class DP_PauseMenu {
         if (this.option === -1) this.option = this.count - 1;
         changed = true;
       }
-      // ($mouse hover/click from Easy Mouse System isn't ported.)
+      // (`if $mouse` hover/click, DP Pause Menu/Script.rb:300-309: $mouse is
+      // always nil in this game, so the mouse doesn't drive this menu.)
       let confirmed = Input.trigger(Input.C);
       if (changed) {
         pbPlayCursorSE();

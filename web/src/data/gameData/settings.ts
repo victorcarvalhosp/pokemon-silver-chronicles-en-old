@@ -47,6 +47,12 @@ export const Settings = {
   MOVE_RELEARNER_CAN_TEACH_MORE_MOVES: MECHANICS_GENERATION >= 6,
   NUM_STORAGE_BOXES: 40,
   HEAL_STORED_POKEMON: MECHANICS_GENERATION >= 8,
+  /** Whether poisoned Pokémon will lose HP while walking around in the field. */
+  POISON_IN_FIELD: MECHANICS_GENERATION <= 4,
+  /** Whether poisoned Pokémon will faint while walking around in the field (true), or survive the poisoning with 1 HP (false). */
+  POISON_FAINT_IN_FIELD: MECHANICS_GENERATION <= 3,
+  /** The ID of the animation played when the player steps on grass (grass rustling). */
+  GRASS_ANIMATION_ID: 1,
   /**
    * An array of available languages in the game, and their corresponding message
    * file in the Data folder (served from web/data as .json, see core/intl.ts).

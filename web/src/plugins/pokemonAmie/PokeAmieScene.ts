@@ -44,6 +44,7 @@ import { ItemIconSprite, itemIconFilename, preloadItemIcons } from "../../ui/spr
 import { PokemonIconSprite, preloadPokemonIcons } from "../../ui/sprites/pokemonIcon";
 import { PokemonSprite, SpeciesFiles, preloadPokemonSprite } from "../../ui/sprites/pokemonSprite";
 import { Mouse } from "../easyMouse/Mouse";
+import { maskBang } from "../lukasUtilities/bitmaps";
 import { EATABLE_ITEMS, POKEMON_ZOOM, amieItemScene, setAmiePokemon } from "./amie";
 
 const AMIE = "Graphics/Pictures/Pokemon Amie/";
@@ -127,8 +128,7 @@ const maskedBitmaps = new WeakSet<Bitmap>();
  * sprite.maskOLD(mask, xpush, ypush): masks the sprite's current bitmap with
  * another (a Bitmap, a Sprite or a graphic's path): the result is the mask's
  * size, centred on the bitmap, each pixel taking the lower of the two alphas.
- * Returns the new bitmap, or false. Ruby copies pixel by pixel with
- * get_pixel/set_pixel; the same pixels are copied here in one go.
+ * Returns the new bitmap, or false.
  */
 export function maskOLD(sprite: Sprite, mask: Bitmap | Sprite | string | null = null, xpush = 0, ypush = 0): Bitmap | false {
   // exits out of the function if the sprite currently has no bitmap to mask
@@ -142,35 +142,8 @@ export function maskOLD(sprite: Sprite, mask: Bitmap | Sprite | string | null = 
   else if (typeof mask === "string") mbmp = RPGCache.loadBitmap("", mask); // accepts Strings
   else return false; // exits if non-matching type
   if (!mbmp) throw new Error(`Errno::ENOENT: File not found - ${String(mask)}`);
-  // creates a new bitmap
-  const ret = new Bitmap(mbmp.width, mbmp.height);
-  // calculates the dimension metrics for pixel transfer
-  const ox = idiv(old.width - mbmp.width, 2);
-  const oy = idiv(old.height - mbmp.height, 2);
-  const src = old.ctx.getImageData(0, 0, old.width, old.height).data;
-  const mpx = mbmp.ctx.getImageData(0, 0, mbmp.width, mbmp.height).data;
-  const out = ret.ctx.createImageData(mbmp.width, mbmp.height);
-  for (let y = 0; y < mbmp.height; y++) {
-    for (let x = 0; x < mbmp.width; x++) {
-      // gets pixel of mask / of the current bitmap (transparent outside it)
-      const sx = x + ox - xpush;
-      const sy = y + oy - ypush;
-      const inside = sx >= 0 && sy >= 0 && sx < old.width && sy < old.height;
-      const si = (sy * old.width + sx) * 4;
-      const di = (y * mbmp.width + x) * 4;
-      // sets the new alpha to use the value of the mask alpha
-      let alpha = mpx[di + 3]!;
-      const calpha = inside ? src[si + 3]! : 0;
-      if (calpha < alpha) alpha = calpha;
-      // draws new pixels onto the Sprite's bitmap
-      out.data[di] = inside ? src[si]! : 0;
-      out.data[di + 1] = inside ? src[si + 1]! : 0;
-      out.data[di + 2] = inside ? src[si + 2]! : 0;
-      out.data[di + 3] = alpha;
-    }
-  }
-  // A new bitmap: its texture is made from the canvas when first drawn.
-  ret.ctx.putImageData(out, 0, 0);
+  // the same pixel transfer as Scripting Utilities' Bitmap#mask! (plugins/lukasUtilities)
+  const ret = maskBang(old, mbmp, xpush, ypush) as Bitmap;
   sprite.setBitmap(ret);
   maskedBitmaps.add(ret);
   if (maskedBitmaps.has(old)) old.dispose();

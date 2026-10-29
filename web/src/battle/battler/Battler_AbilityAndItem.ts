@@ -162,12 +162,8 @@ const methods = {
         target = battler;
         break;
       }
-      // Battle#pbGetBestTypeJudgment (Legend Plate Functions.rb:34) isn't part of Battle.ts yet.
-      const battle = this.battle as unknown as {
-        pbGetBestTypeJudgment?(user: Battler, target: Battler | null, move: Move | null,
-          checkType: Id | null): Promise<Id | null> | Id | null;
-      };
-      return (await battle.pbGetBestTypeJudgment?.(this, target, null, checkType)) || "NORMAL";
+      // Battle#pbGetBestTypeJudgment: battle/Battle_LegendPlate.ts.
+      return (await this.battle.pbGetBestTypeJudgment(this, target, null, checkType)) || "NORMAL";
     }
     return "NORMAL";
   },

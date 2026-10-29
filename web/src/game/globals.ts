@@ -50,7 +50,7 @@ export class PokemonGlobalMetadata {
   timeTaken = 0;
   /** Whether the Following Pokémon is holding an item it found. */
   followerHoldItem = false;
-  /** The Pokémon currently surfing / diving (surfing isn't ported yet). */
+  /** The Pokémon currently surfing / diving (Following Pokemon EX, game/field/followingFieldMoves.ts). */
   currentSurfing: unknown = null;
   currentDiving: unknown = null;
   /** A queued Following Pokémon refresh: [queued, animate, steps to wait]. */
