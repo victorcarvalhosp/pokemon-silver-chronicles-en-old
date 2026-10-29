@@ -11,6 +11,8 @@ import "./scripts/menus";
 import "./scripts/pauseMenu";
 import "./scripts/phone";
 import "./scripts/pokemon";
+import "./scripts/infoScreens";
+import "./scripts/partyBag";
 import { GameData } from "../data/gameData";
 import { loadQuestData } from "./quests";
 import { initMessageSystem } from "../ui/messageConfig";

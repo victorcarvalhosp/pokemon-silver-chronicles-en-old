@@ -24,6 +24,9 @@ import { addBackgroundOrColoredPlane, pbGetMapNameFromId, TrainerWalkingCharSpri
 import { PokemonOption_Scene, PokemonOptionScreen } from "../options/options";
 import { preloadBitmaps } from "../rpgCache";
 import { Window_CommandPokemon } from "../windows/SpriteWindowText";
+import type { Pokemon } from "../../game/pokemon/Pokemon";
+import { PictureOrigin } from "../scenes/PictureEx";
+import { PokemonIconSprite, preloadPokemonIcons } from "../sprites/pokemonIcon";
 
 
 /** The trainer fields the panel reads (Player once the data model lands). */
@@ -204,7 +207,14 @@ export class PokemonLoad_Scene {
       }
       this.sprites.player = player;
     }
-    // TODO(model): PokemonIconSprite for each party member once Pokemon icons are ported.
+    (trainer.party as Pokemon[]).forEach((pkmn, i) => {
+      const icon = new PokemonIconSprite(pkmn, this.viewport);
+      icon.setOffset(PictureOrigin.CENTER);
+      icon.x = 334 + 66 * (i % 2);
+      icon.y = 112 + 50 * Math.floor(i / 2);
+      icon.z = 99999;
+      this.sprites[`party${i}`] = icon;
+    });
   }
 
   async pbChoose(commands: string[]): Promise<number> {
@@ -314,7 +324,7 @@ export class PokemonLoadScreen {
     const mapId = showContinue ? savedMapId(this.saveData) : 0;
     const stats = (this.saveData.stats as { playTime?: number; play_time?: number } | undefined) ?? null;
     if (showContinue) {
-      await preloadBitmaps(walkCharsetPaths(trainer));
+      await Promise.all([preloadBitmaps(walkCharsetPaths(trainer)), preloadPokemonIcons((trainer?.party ?? []) as Pokemon[])]);
     }
     this.scene.pbStartScene(commands, showContinue, trainer, Number(this.saveData.frame_count ?? 0), stats ? { playTime: stats.playTime ?? stats.play_time } : null, mapId);
     if (showContinue) this.scene.pbSetParty(trainer);

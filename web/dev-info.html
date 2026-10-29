@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info screens demo</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+      #screen { position: absolute; inset: 0; display: grid; place-items: center; }
+      #screen canvas { image-rendering: pixelated; }
+      #hud { position: absolute; left: 8px; top: 8px; color: #ccc; font: 12px/1.4 ui-monospace, monospace; pointer-events: none; white-space: pre; }
+    </style>
+  </head>
+  <body>
+    <div id="screen"></div>
+    <div id="hud"></div>
+    <script type="module" src="/src/dev/infoDemo.ts"></script>
+  </body>
+</html>
