@@ -3,7 +3,7 @@ import { extname, join, relative, resolve } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vitest/config";
 
-const GAME_ROOT = resolve(__dirname, "..");
+const GAME_ROOT = resolve(import.meta.dirname, "..");
 const ASSET_DIRS = ["Graphics", "Audio", "Fonts"];
 const MIME: Record<string, string> = {
   ".png": "image/png",
