@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "rpgmaker-xp": {
+      "command": "npx",
+      "args": ["-y", "rpgmaker-xp-mcp@1.1.3"],
+      "env": {
+        "RPGMAKER_PROJECT_PATH": "/Users/victor/Documents/Pokemon Silver Chronicles/Pokemon Silver Chronicles"
+      }
+    }
+  }
+}
