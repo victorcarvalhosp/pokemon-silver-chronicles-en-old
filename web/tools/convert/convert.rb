@@ -4,10 +4,11 @@
 #   ruby web/tools/convert/convert.rb            # everything
 #   ruby web/tools/convert/convert.rb 51 1 2     # only these maps (+ shared data)
 #
-# Event command lists are kept as RPG Maker command codes here; translating
-# them into named commands is done by events.rb.
+# Event command lists are translated into named commands by events.rb; what
+# couldn't be translated is listed in web/data/reports/conversion.json.
 require "fileutils"
 require_relative "rxdata"
+require_relative "events"
 
 ROOT = File.expand_path("../../..", __dir__)
 DATA_IN = File.join(ROOT, "Data")
@@ -15,6 +16,8 @@ DATA_OUT = File.join(ROOT, "web", "data")
 
 module Convert
   module_function
+
+  REPORT = Events::Report.new
 
   def iv(obj, name)
     Rxdata.ivar(obj, name)
@@ -59,7 +62,7 @@ module Convert
     end
   end
 
-  def page(pg)
+  def page(pg, where)
     cond = iv(pg, :condition)
     gfx = iv(pg, :graphic)
     {
@@ -81,24 +84,24 @@ module Convert
       "moveType" => iv(pg, :move_type),
       "moveSpeed" => iv(pg, :move_speed),
       "moveFrequency" => iv(pg, :move_frequency),
-      "moveRoute" => move_route(iv(pg, :move_route)),
+      "moveRoute" => Events.move_route(move_route(iv(pg, :move_route)), where, REPORT),
       "walkAnime" => iv(pg, :walk_anime),
       "stepAnime" => iv(pg, :step_anime),
       "directionFix" => iv(pg, :direction_fix),
       "through" => iv(pg, :through),
       "alwaysOnTop" => iv(pg, :always_on_top),
       "trigger" => iv(pg, :trigger),
-      "list" => commands(iv(pg, :list))
+      "list" => Events.translate(commands(iv(pg, :list)), where, REPORT)
     }
   end
 
-  def event(e)
+  def event(e, map_id)
     {
       "id" => iv(e, :id),
       "name" => Rxdata.str(iv(e, :name)),
       "x" => iv(e, :x),
       "y" => iv(e, :y),
-      "pages" => iv(e, :pages).map { |pg| page(pg) }
+      "pages" => iv(e, :pages).each_with_index.map { |pg, i| page(pg, "Map#{map_id}/EV#{iv(e, :id)}/p#{i}") }
     }
   end
 
@@ -116,7 +119,7 @@ module Convert
       "bgs" => audio(iv(m, :bgs)),
       "encounterStep" => iv(m, :encounter_step),
       "layers" => table3(iv(m, :data)),
-      "events" => iv(m, :events).keys.sort.map { |k| event(iv(m, :events)[k]) }
+      "events" => iv(m, :events).keys.sort.map { |k| event(iv(m, :events)[k], id) }
     }
   end
 
@@ -159,7 +162,7 @@ module Convert
       {
         "id" => iv(c, :id), "name" => Rxdata.str(iv(c, :name)),
         "trigger" => iv(c, :trigger), "switchId" => iv(c, :switch_id),
-        "list" => commands(iv(c, :list))
+        "list" => Events.translate(commands(iv(c, :list)), "CommonEvent#{iv(c, :id)}", REPORT)
       }
     end.reject { |c| c["name"].to_s.empty? && c["list"].size <= 1 }
   end
@@ -184,13 +187,25 @@ module Convert
     }
   end
 
-  # Pretty JSON, but arrays of plain numbers stay on one line so tile rows
-  # read like a grid.
+  # Pretty JSON where anything short (and every array of plain numbers, so tile
+  # rows read like a grid) stays on one line.
+  def pretty(obj, indent = "")
+    flat = JSON.generate(obj)
+    return flat if flat.length + indent.length <= 100 || (obj.is_a?(Array) && obj.all? { |v| v.is_a?(Numeric) })
+    inner = indent + "  "
+    case obj
+    when Array
+      "[\n" + obj.map { |v| inner + pretty(v, inner) }.join(",\n") + "\n" + indent + "]"
+    when Hash
+      "{\n" + obj.map { |k, v| inner + JSON.generate(k.to_s) + ": " + pretty(v, inner) }.join(",\n") + "\n" + indent + "}"
+    else
+      flat
+    end
+  end
+
   def write(path, obj)
     FileUtils.mkdir_p(File.dirname(path))
-    text = JSON.pretty_generate(obj)
-    text = text.gsub(/\[\s*(-?\d+(?:\.\d+)?(?:,\s*-?\d+(?:\.\d+)?)*)\s*\]/m) { "[" + $1.gsub(/\s+/, "") + "]" }
-    File.write(path, text + "\n")
+    File.write(path, pretty(obj) + "\n")
   end
 end
 
@@ -210,7 +225,12 @@ if $PROGRAM_NAME == __FILE__
   rescue StandardError => e
     failures << "Map#{id}: #{e.class}: #{e.message}"
   end
+  Convert.write(File.join(DATA_OUT, "reports", "conversion.json"), Convert::REPORT.to_h)
+  r = Convert::REPORT
   puts "converted #{ids.size - failures.size}/#{ids.size} maps"
+  puts "untranslated: #{r.scripts.size} distinct scripts (#{r.scripts.values.sum(&:size)} uses), " \
+       "#{r.conditions.size} distinct conditions (#{r.conditions.values.sum(&:size)} uses), " \
+       "#{r.unknown_codes.size} unknown command codes"
   puts failures unless failures.empty?
   exit(failures.empty? ? 0 : 1)
 end
