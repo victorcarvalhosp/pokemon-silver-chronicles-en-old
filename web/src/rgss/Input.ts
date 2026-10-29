@@ -23,6 +23,8 @@ const REPEAT_START = 15 / 40;
 const REPEAT_EVERY = 4 / 40;
 
 const down = new Set<number>(); // raw state from events
+/** Pressed since the last update(), so a tap shorter than a frame still counts once. */
+const tapped = new Set<number>();
 const pressedAt = new Map<number, number>(); // button -> order it was pressed (for dir4/dir8)
 let order = 0;
 let held = new Map<number, number>(); // button -> seconds held, as of the last update()
@@ -37,6 +39,7 @@ if (typeof addEventListener !== "undefined") {
     for (const b of buttons) {
       if (!down.has(b)) pressedAt.set(b, ++order);
       down.add(b);
+      tapped.add(b);
     }
   });
   addEventListener("keyup", (e) => {
@@ -68,7 +71,8 @@ export const Input = {
   USE: C, BACK: B, ACTION: A, JUMPUP: X, JUMPDOWN: Y, SPECIAL: Z, AUX1: L, AUX2: R,
 
   update(dt = 1 / 60): void {
-    const now = new Set([...down, ...padButtons()]);
+    const now = new Set([...down, ...tapped, ...padButtons()]);
+    tapped.clear();
     for (const b of now) if (!pressedAt.has(b)) pressedAt.set(b, ++order);
     prevHeld = held;
     held = new Map();

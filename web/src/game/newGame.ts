@@ -13,6 +13,8 @@ import { setMetadata } from "./metadata";
 import { Player } from "./Player";
 import type { GameMap } from "./GameMap";
 import "./scripts/overworld";
+import "./scripts/messages";
+import { initMessageSystem } from "../ui/messageConfig";
 
 async function pbs<T>(file: string): Promise<T> {
   const res = await fetch(`/data/pbs/${file}`);
@@ -23,6 +25,7 @@ async function pbs<T>(file: string): Promise<T> {
 /** Game.initialize: loads the data every scene relies on. */
 export async function initializeGame(): Promise<void> {
   await Promise.all([loadGameData(), loadAssetIndex()]);
+  await initMessageSystem();
   const [maps, players, meta, connections] = await Promise.all([
     pbs<unknown>("map-metadata.json"),
     pbs<unknown>("player-metadata.json"),

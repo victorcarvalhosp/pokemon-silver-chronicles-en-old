@@ -3,6 +3,7 @@
 
 import type { AudioRef } from "../data/events";
 import { Data } from "../data/store";
+import { assetExists } from "../core/assets";
 import { Audio } from "../rgss/Audio";
 import { Graphics } from "../rgss/Graphics";
 import { G } from "./globals";
@@ -101,12 +102,14 @@ export function pbSEPlay(param: AudioParam, volume?: number, pitch?: number): vo
 }
 export function pbSEStop(): void { Audio.seStop(); }
 
-const systemSound = (key: string) => () => {
+/** pbPlayCursorSE etc. (008_Audio/002_Audio_Play.rb): System sound, else "GUI sel ..." at 80. */
+const systemSound = (key: string, fallback: string) => () => {
   const se = Data.system?.sounds[key];
-  if (se) G.gameSystem.sePlay(se);
+  if (se?.name) G.gameSystem.sePlay(se);
+  else if (fallback && assetExists(`Audio/SE/${fallback}`)) pbSEPlay(fallback, 80);
 };
-export const pbPlayCursorSE = systemSound("cursorSe");
-export const pbPlayDecisionSE = systemSound("decisionSe");
-export const pbPlayCancelSE = systemSound("cancelSe");
-export const pbPlayBuzzerSE = systemSound("buzzerSe");
-export const pbPlaySaveSE = systemSound("saveSe");
+export const pbPlayCursorSE = systemSound("cursorSe", "GUI sel cursor");
+export const pbPlayDecisionSE = systemSound("decisionSe", "GUI sel decision");
+export const pbPlayCancelSE = systemSound("cancelSe", "GUI sel cancel");
+export const pbPlayBuzzerSE = systemSound("buzzerSe", "GUI sel buzzer");
+export const pbPlaySaveSE = systemSound("saveSe", "");

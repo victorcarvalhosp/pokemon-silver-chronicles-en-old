@@ -20,7 +20,9 @@ export class Font {
   color = Font.defaultColor.clone();
 
   css(): string {
-    return `${this.italic ? "italic " : ""}${this.bold ? "bold " : ""}${this.size}px "${this.name}"`;
+    // mkxp-z opens TTFs at size * 0.90 (int), so Power Green 27 draws at 24px.
+    const px = Math.trunc(this.size * 0.9);
+    return `${this.italic ? "italic " : ""}${this.bold ? "bold " : ""}${px}px "${this.name}"`;
   }
 
   clone(): Font {
