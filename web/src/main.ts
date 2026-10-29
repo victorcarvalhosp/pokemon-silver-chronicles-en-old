@@ -2,6 +2,7 @@
 // click (browsers only allow sound after a user gesture), Game.set_up_system,
 // and the $scene loop: title -> load screen -> Scene_Map -> back to title.
 
+import { PBDebug } from "./battle/other/PBDebug";
 import { createScreen } from "./core/screen";
 import { Data } from "./data/store";
 import { Game } from "./game/Game";
@@ -25,6 +26,9 @@ const FONT_FILES = [
 ];
 
 const hud = document.getElementById("hud")!;
+// PBDebug.logonerr: as in the original, an error in a battle phase is reported
+// (in the console here) and the battle carries on. Tests leave this off.
+PBDebug.continueOnError = true;
 const app = await createScreen(document.getElementById("screen")!);
 initGraphics(app);
 hud.textContent = "Loading…";
