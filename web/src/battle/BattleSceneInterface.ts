@@ -151,9 +151,9 @@ export interface IBattleScene {
   pbRevertBattlerEnd?(): Promise<void>;
   /** Essentials Deluxe: a wild Pokémon fleeing (e.g. boss flee). */
   pbBattlerFlee?(battler: Battler, msg?: string | null): Promise<void>;
-  /** Essentials Deluxe midbattle scripting (Midbattle_Triggers.rb:26). Deferred: no-op when absent. */
+  /** Essentials Deluxe midbattle scripting (Midbattle_Triggers.rb:26; web/src/battle/deluxe installs it on BattleScene). No-op when absent. */
   pbDeluxeTriggers?(idxBattler: number | Battler | null, idxTarget: number | Battler | null, triggers: string[]): Promise<void>;
-  /** ZUD Mechanics (deferred). */
+  /** ZUD Mechanics (the cinematics are in zud/scene, installed on BattleScene by importing it). */
   pbShowZMove?(idxBattler: number, moveId: Id): Promise<void>;
   pbShowUltraBurst?(idxBattler: number): Promise<void>;
   pbShowDynamax?(idxBattler: number): Promise<void>;

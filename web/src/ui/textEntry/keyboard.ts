@@ -20,6 +20,9 @@ const CODES: Record<string, string[]> = {
   HOME: ["Home"],
   END: ["End"],
   TAB: ["Tab"],
+  // Enhanced UI's battle windows (MOVE_INFO_KEY / BATTLE_INFO_KEY)
+  M: ["KeyM"],
+  N: ["KeyN"],
 };
 
 /** Same repeat timing as rgss/Input (15 and 4 frames at 40 fps). */

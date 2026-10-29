@@ -68,5 +68,6 @@ defineScript("PBDayNight.isMorning?", (_c, t) => PBDayNight.isMorning(t as Date 
 defineScript("PBDayNight.isAfternoon?", (_c, t) => PBDayNight.isAfternoon(t as Date | undefined));
 defineScript("PBDayNight.isEvening?", (_c, t) => PBDayNight.isEvening(t as Date | undefined));
 // Script switches 25-30: features that arrive later; false until then.
-for (const name of ["pbInSafari?", "pbBugContestUndecided?", "pbBugContestDecided?", "pbInChallenge?"]) defineScript(name, () => false);
+// (pbInSafari?, pbBugContestUndecided?, pbBugContestDecided?: game/battle/safari.ts, bugContest.ts)
+for (const name of ["pbInChallenge?"]) defineScript(name, () => false);
 defineScript("pbNextMysteryGiftID", () => 0);

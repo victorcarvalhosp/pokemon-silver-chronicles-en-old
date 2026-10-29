@@ -181,7 +181,7 @@ export async function pbOnStepTaken(eventTriggered: boolean): Promise<void> {
   const repelActive = (g.repel ?? 0) > 0;
   EventHandlers.triggerSync("on_player_step_taken");
   const handled: (boolean | null)[] = [null];
-  EventHandlers.triggerSync("on_player_step_taken_can_transfer", handled);
+  await EventHandlers.trigger("on_player_step_taken_can_transfer", handled); // (the Safari step counter shows messages)
   if (handled[0]) return;
   if (!eventTriggered && !G.gameTemp.inMenu) {
     if (pbBattleOrSpawnOnStepTaken(repelActive)) await pbBattleOnStepTaken(repelActive); // STANDARD WILD BATTLE

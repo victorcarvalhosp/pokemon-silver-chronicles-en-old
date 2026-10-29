@@ -1,8 +1,9 @@
 // Essentials Deluxe's pbHideMoveInfo / pbHideBattleInfo / pbHideFocusPanel
 // ([000] Essentials Patches/Fight Menu.rb:572-605). They hide Enhanced UI's
 // Move Info / Battle Info windows (whose sprites Battle::Scene#pbInitSprites
-// creates); the windows themselves (toggled with M/N in the fight/command
-// menus) aren't ported. Focus Meter System isn't installed.
+// creates; the windows themselves, toggled with M/N in the fight/command
+// menus, are in web/src/battle/deluxe/EnhancedBattleUI.ts). Focus Meter
+// System isn't installed.
 
 /** The parts of the scene these touch. */
 interface PluginUIScene {

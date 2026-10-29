@@ -48,7 +48,7 @@ export const Followers = {
       factory().removeAllExceptFollowingPkmn();
     } else {
       factory().removeAllFollowers();
-      // TODO(partner trainers): pbDeregisterPartner rescue nil (partner battles aren't ported).
+      G.pokemonGlobal.partner = null; // pbDeregisterPartner rescue nil (game/trainers/trainerEvents.ts)
     }
     void FollowingPkmn.refresh(false);
   },

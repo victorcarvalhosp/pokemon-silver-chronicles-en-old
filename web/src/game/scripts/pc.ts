@@ -1,28 +1,32 @@
 // The PC menus (016_UI/019_UI_PC.rb, the :pokemon_storage handler as the
 // v20.1 Hotfixes fix it, and Following Pokémon EX's refresh after
-// pbPokeCenterPC). The Pokémon Storage screen and the item storage scenes
-// (WithdrawItemScene / TossItemScene) and Mail display aren't ported yet;
-// those options say so and return to the menu.
+// pbPokeCenterPC). The screens they open are in ui/storage (Pokémon storage,
+// WithdrawItemScene / TossItemScene), ui/bag (PokemonBagScreen's item storage
+// screens) and ui/party (Mail display, giving Mail).
 
 import { Metadata } from "../../data/gameData/metadata";
+import { PokemonBag_Scene, PokemonBagScreen } from "../../ui/bag/bag";
+import { pbFadeOutIn } from "../../ui/fades";
 import { FieldActions } from "../../ui/menus/menuScreens";
 import { MenuHandlers } from "../../ui/menus/menuHandlers";
 import { _INTL } from "../../ui/messageConfig";
-import { pbMessage, pbShowCommands, pbShowCommandsWithHelp } from "../../ui/messages";
+import { pbConfirmMessage, pbMessage, pbShowCommands, pbShowCommandsWithHelp } from "../../ui/messages";
 import { pbPlayCloseMenuSE } from "../../ui/options/options";
+import { pbDisplayMail } from "../../ui/party/mail";
+import { PokemonParty_Scene, PokemonPartyScreen } from "../../ui/party/party";
+import { TossItemScene, WithdrawItemScene } from "../../ui/storage/ItemStorage";
+import { pbOpenPokemonStorage } from "../../ui/storage/PokemonStorageScene";
 import { pbSEPlay } from "../GameSystem";
 import { G } from "../globals";
+import { PCItemStorage, type PokemonBag } from "../items/PokemonBag";
+import type { Mail } from "../pokemon/Mail";
 import type { Player } from "../trainer/Player";
 import { defineScript } from "../scriptApi";
 
 const player = () => G.player as unknown as Player;
+const bag = () => G.bag as PokemonBag;
 
-async function notPorted(what: string): Promise<void> {
-  console.warn(`${what} isn't ported yet`);
-  await pbMessage(`(${what} isn't ported yet.)`);
-}
-
-type Global = { pcItemStorage?: { empty(): boolean } | null; mailbox?: { sender: string }[] | null };
+type Global = { pcItemStorage: PCItemStorage | null; mailbox: Mail[] | null };
 const global = () => G.pokemonGlobal as unknown as Global;
 
 /** pbPCItemStorage */
@@ -33,33 +37,78 @@ export async function pbPCItemStorage(): Promise<void> {
       [_INTL("Withdraw Item"), _INTL("Deposit Item"), _INTL("Toss Item"), _INTL("Exit")],
       [_INTL("Take out items from the PC."), _INTL("Store items in the PC."),
         _INTL("Throw away items stored in the PC."), _INTL("Go back to the previous menu.")], -1, command);
-    switch (command) {
-      case 0: // Withdraw Item
-      case 2: // Toss Item
-        if (!global().pcItemStorage || global().pcItemStorage!.empty()) await pbMessage(_INTL("There are no items."));
-        else await notPorted(command === 0 ? "WithdrawItemScene" : "TossItemScene"); // TODO(pc)
-        break;
-      case 1: // Deposit Item
-        await notPorted("The Deposit Item screen"); // TODO(pc): PokemonBagScreen#pbDepositItemScreen with the bag scene
-        break;
-      default:
-        return;
+    if (command === 0) { // Withdraw Item
+      if (!global().pcItemStorage) global().pcItemStorage = new PCItemStorage();
+      if (global().pcItemStorage!.empty()) {
+        await pbMessage(_INTL("There are no items."));
+      } else {
+        await pbFadeOutIn(async () => {
+          const scene = new WithdrawItemScene();
+          const screen = new PokemonBagScreen(scene as never, bag());
+          await screen.pbWithdrawItemScreen();
+        });
+      }
+    } else if (command === 1) { // Deposit Item
+      await pbFadeOutIn(async () => {
+        const scene = new PokemonBag_Scene();
+        const screen = new PokemonBagScreen(scene, bag());
+        await screen.pbDepositItemScreen();
+      });
+    } else if (command === 2) { // Toss Item
+      if (!global().pcItemStorage) global().pcItemStorage = new PCItemStorage();
+      if (global().pcItemStorage!.empty()) {
+        await pbMessage(_INTL("There are no items."));
+      } else {
+        await pbFadeOutIn(async () => {
+          const scene = new TossItemScene();
+          const screen = new PokemonBagScreen(scene as never, bag());
+          await screen.pbTossItemScreen();
+        });
+      }
+    } else {
+      break;
     }
   }
 }
 
 /** pbPCMailbox */
 export async function pbPCMailbox(): Promise<void> {
-  const mailbox = global().mailbox;
-  if (!mailbox || mailbox.length === 0) {
+  if (!global().mailbox || global().mailbox!.length === 0) {
     await pbMessage(_INTL("There's no Mail here."));
     return;
   }
   for (;;) {
-    const commands = [...mailbox.map((m) => m.sender), _INTL("Cancel")];
-    const command = await pbShowCommands(null, commands, -1, 0);
-    if (command < 0 || command >= mailbox.length) break;
-    await notPorted("The Mailbox"); // TODO(pc): Read / Move to Bag / Give
+    let command = 0;
+    const commands: string[] = [];
+    for (const mail of global().mailbox!) commands.push(mail.sender);
+    commands.push(_INTL("Cancel"));
+    command = await pbShowCommands(null, commands, -1, command);
+    if (command >= 0 && command < global().mailbox!.length) {
+      const mailIndex = command;
+      const commandMail = await pbMessage(
+        _INTL("What do you want to do with {1}'s Mail?", global().mailbox![mailIndex]!.sender),
+        [_INTL("Read"), _INTL("Move to Bag"), _INTL("Give"), _INTL("Cancel")], -1);
+      if (commandMail === 0) { // Read
+        await pbFadeOutIn(() => pbDisplayMail(global().mailbox![mailIndex]!));
+      } else if (commandMail === 1) { // Move to Bag
+        if (await pbConfirmMessage(_INTL("The message will be lost. Is that OK?"))) {
+          if (bag().add(global().mailbox![mailIndex]!.item)) {
+            await pbMessage(_INTL("The Mail was returned to the Bag with its message erased."));
+            global().mailbox!.splice(mailIndex, 1);
+          } else {
+            await pbMessage(_INTL("The Bag is full."));
+          }
+        }
+      } else if (commandMail === 2) { // Give
+        await pbFadeOutIn(async () => {
+          const sscene = new PokemonParty_Scene();
+          const sscreen = new PokemonPartyScreen(sscene, player().party);
+          await sscreen.pbPokemonGiveMailScreen(mailIndex);
+        });
+      }
+    } else {
+      break;
+    }
   }
 }
 
@@ -123,21 +172,22 @@ MenuHandlers.add("pc_menu", "pokemon_storage", {
         [_INTL("Organize the Pokémon in Boxes and in your party."), _INTL("Move Pokémon stored in Boxes to your party."),
           _INTL("Store Pokémon in your party in Boxes."), _INTL("Return to the previous menu.")], -1, command);
       if (command < 0) break;
-      if (command === 0) {
-        await notPorted("PokemonStorageScreen"); // TODO(pc): pbStartScreen(0)
-      } else if (command === 1) {
-        if (player().partyFull()) {
+      if (command === 0) { // Organize
+        await pbOpenPokemonStorage(0);
+      } else if (command === 1) { // Withdraw
+        if (G.storage.partyFull()) {
           await pbMessage(_INTL("Your party is full!"));
           continue;
         }
-        await notPorted("PokemonStorageScreen"); // TODO(pc): pbStartScreen(1)
-      } else if (command === 2) {
-        const count = player().party.filter((p) => p && !p.egg() && p.hp > 0).length;
+        await pbOpenPokemonStorage(1);
+      } else if (command === 2) { // Deposit
+        let count = 0;
+        for (const p of G.storage.party) if (p && !p.egg() && p.hp > 0) count += 1;
         if (count <= 1) {
           await pbMessage(_INTL("Can't deposit the last Pokémon!"));
           continue;
         }
-        await notPorted("PokemonStorageScreen"); // TODO(pc): pbStartScreen(2)
+        await pbOpenPokemonStorage(2);
       } else {
         break;
       }

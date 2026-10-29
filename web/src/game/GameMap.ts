@@ -13,6 +13,9 @@ import { pbBGMPlay, pbBGSPlay } from "./GameSystem";
 import { mapMetadata } from "./metadata";
 import { autoplayAsCue } from "./mapAudio";
 
+/** GameData::TerrainTag#can_surf_freely */
+const canSurfFreely = (t: TerrainTag) => !!t.canSurf && !t.waterfall && !t.waterfallCrest;
+
 const SCREEN_W = 512;
 const SCREEN_H = 384;
 
@@ -155,10 +158,19 @@ export class GameMap {
     for (const i of [2, 1, 0]) {
       const tileId = this.tile(x, y, i);
       const terrain = terrainTag(this.terrainTags[tileId] ?? 0);
-      // Essentials checks can_surf_freely here (a plugin-defined flag); no
-      // terrain tag in this game sets it.
-      if (terrain.ice) return false;
-      if (selfEvent && selfEvent.x === x && selfEvent.y === y) {
+      // If already on water, only allow movement to another water tile
+      // (GameData::TerrainTag#can_surf_freely: can_surf, not a waterfall or crest)
+      if (selfEvent && canSurfFreely(terrain)) {
+        for (const j of [2, 1, 0]) {
+          const facing = this.tile(newx, newy, j);
+          if (facing === 0) continue;
+          const ft = terrainTag(this.terrainTags[facing] ?? 0);
+          if (ft.id !== "None" && !ft.ignorePassability) return canSurfFreely(ft);
+        }
+        return false;
+      } else if (terrain.ice) { // Can't walk onto ice
+        return false;
+      } else if (selfEvent && selfEvent.x === x && selfEvent.y === y) {
         for (const j of [2, 1, 0]) {
           const facing = this.tile(newx, newy, j);
           if (facing === 0) continue;
@@ -288,6 +300,23 @@ export class GameMap {
   scrollDown(d: number): void { this.displayY += d; }
   scrollLeft(d: number): void { this.displayX -= d; }
   scrollRight(d: number): void { this.displayX += d; }
+  // Diagonal scrolling (005_Game_Map_Autoscroll.rb), used by autoscroll.
+  scrollDownright(d: number): void {
+    this.displayX = Math.min(this.displayX + d, (this.width - SCREEN_W / TILE_WIDTH) * REAL_RES_X);
+    this.displayY = Math.min(this.displayY + d, (this.height - SCREEN_H / TILE_HEIGHT) * REAL_RES_Y);
+  }
+  scrollDownleft(d: number): void {
+    this.displayX = Math.max(this.displayX - d, 0);
+    this.displayY = Math.min(this.displayY + d, (this.height - SCREEN_H / TILE_HEIGHT) * REAL_RES_Y);
+  }
+  scrollUpright(d: number): void {
+    this.displayX = Math.min(this.displayX + d, (this.width - SCREEN_W / TILE_WIDTH) * REAL_RES_X);
+    this.displayY = Math.max(this.displayY - d, 0);
+  }
+  scrollUpleft(d: number): void {
+    this.displayX = Math.max(this.displayX - d, 0);
+    this.displayY = Math.max(this.displayY - d, 0);
+  }
 
   startScroll(direction: number, distance: number, speed: number): void {
     this.scrollDirection = direction;
@@ -326,10 +355,14 @@ export class GameMap {
     if (this.scrollRest > 0) {
       const distance = Math.min(((1 << this.scrollSpeed) * 40) / FRAME_RATE, this.scrollRest);
       switch (this.scrollDirection) {
+        case 1: this.scrollDownleft(distance); break;
         case 2: this.scrollDown(distance); break;
+        case 3: this.scrollDownright(distance); break;
         case 4: this.scrollLeft(distance); break;
         case 6: this.scrollRight(distance); break;
+        case 7: this.scrollUpleft(distance); break;
         case 8: this.scrollUp(distance); break;
+        case 9: this.scrollUpright(distance); break;
       }
       this.scrollRest -= distance;
     }

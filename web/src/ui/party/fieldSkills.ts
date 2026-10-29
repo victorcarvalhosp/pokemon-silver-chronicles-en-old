@@ -217,7 +217,7 @@ MenuHandlers.add("party_menu", "field_skill", {
           await pbHealPartySkill(pkmn, movename, screen, party, partyIdx);
         }
       } else { // Performs HM and miscellaneous field skill effects.
-        if (canUseHiddenMove(pkmn, skill)) {
+        if (FieldActions.canUseHiddenMoveAsync ? await FieldActions.canUseHiddenMoveAsync(pkmn, skill, true) : canUseHiddenMove(pkmn, skill)) {
           if (await FieldActions.confirmUseHiddenMove?.(pkmn, skill)) {
             await screen.scene.pbEndScene();
             if (skill === "FLY") {

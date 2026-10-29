@@ -23,8 +23,8 @@ export const ESSENTIALS_FRAME_RATE = 40;
  * pbTurnTowardEvent(event, otherEvent) — Marin's Enhanced Staircases version.
  * Marin's reads the old $MapFactory global, which v20.1 only sets when a save
  * is loaded (it falls back to plain coordinates in a new session); both give
- * the same answer for characters on the same map. Marin's stairs aren't
- * ported, so the "middle of a stair" case never applies.
+ * the same answer for characters on the same map. The stair state is
+ * game/field/EnhancedStaircases.ts'.
  */
 export function pbTurnTowardEvent(event: GameCharacter, otherEvent: GameCharacter): void {
   let sx: number, sy: number;
@@ -38,7 +38,10 @@ export function pbTurnTowardEvent(event: GameCharacter, otherEvent: GameCharacte
   sx += (event.width - otherEvent.width) / 2;
   sy -= (event.height - otherEvent.height) / 2;
   if (sx === 0 && sy === 0) return;
-  // TODO(stairs): Marin's `event.on_middle_of_stair? && !otherEvent.on_middle_of_stair?` turns sideways.
+  if (event.onMiddleOfStair?.() && !otherEvent.onMiddleOfStair?.()) {
+    sx > 0 ? event.turnLeft() : event.turnRight();
+    return;
+  }
   if (Math.abs(sx) > Math.abs(sy)) sx > 0 ? event.turnLeft() : event.turnRight();
   else sy > 0 ? event.turnUp() : event.turnDown();
 }

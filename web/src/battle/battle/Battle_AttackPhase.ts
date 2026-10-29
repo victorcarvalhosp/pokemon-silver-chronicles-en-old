@@ -4,7 +4,7 @@
 //   Styles/Terastallize/ZodiacPower/Focus placeholders; Mega Evolution.rb:109: pbAttackPhaseMegaEvolution
 //   (wild aces may Mega Evolve); [001] Plugin Patches/_Custom Placeholder_.rb:34: pbAttackPhaseCustom.
 // - ZUD Mechanics ([003] Battle/Battle.rb:236-326): pbAttackPhaseZMoves, pbAttackPhaseUltraBurst,
-//   pbAttackPhaseDynamax (Ultra Burst and Dynamax themselves are deferred).
+//   pbAttackPhaseDynamax (pbUltraBurst and pbDynamax are in ../zud/Battle.ts).
 // pbPursuit (Ruby line 24, redefined by Essentials Deluxe Battle.rb:248) is ported
 // separately, not in this file.
 

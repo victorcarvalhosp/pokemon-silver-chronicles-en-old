@@ -65,7 +65,8 @@ export async function pbStartOver(gameover = false): Promise<void> {
 
 async function startOver(gameover: boolean): Promise<void> {
   if (pbInBugContest()) {
-    // TODO(bug contest): pbBugContestStartOver
+    const { pbBugContestStartOver } = await import("./bugContest"); // (bugContest.ts imports this module's importers)
+    await pbBugContestStartOver();
     return;
   }
   G.stats.blackedOutCount += 1;

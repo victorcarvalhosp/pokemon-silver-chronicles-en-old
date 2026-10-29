@@ -73,7 +73,8 @@ runGame(
       else continue; // Quit Game can't close a browser tab: back to the title.
       const scene = new SceneMap();
       G.scene = scene as never;
-      await scene.main();
+      // mainFunction: `$scene.main while $scene` (events can switch to Scene_Credits and back).
+      while (G.scene) await (G.scene as unknown as { main(): Promise<void> }).main();
     }
   },
   (e) => {

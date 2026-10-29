@@ -306,8 +306,8 @@ ItemHandlers.UseInField.add("WHITEFLUTE", async (item) => {
 
 ItemHandlers.UseInField.add("HONEY", async (item) => {
   await pbUseItemMessage(item);
-  // TODO(items): pbSweetScent (012_Overworld/004_Overworld_FieldMoves.rb) isn't ported.
-  notPorted("pbSweetScent");
+  const { pbSweetScent } = await import("../field/FieldMoves");
+  await pbSweetScent();
   return true;
 });
 
@@ -378,13 +378,11 @@ ItemHandlers.UseInField.add("SACREDASH", async () => {
 
 ItemHandlers.UseInField.add("BICYCLE", async () => {
   if (await pbBikeCheck()) {
-    // TODO(items): the bicycle isn't ported: pbMountBike / pbDismountBike
-    // (004_Game classes/009_Game_Player.rb, with Following Pokemon EX's
-    // refresh around them).
+    const { pbDismountBike, pbMountBike } = await import("../field/bicycle");
     if (G.pokemonGlobal.bicycle) {
-      notPorted("pbDismountBike");
+      await pbDismountBike();
     } else {
-      notPorted("pbMountBike");
+      await pbMountBike();
     }
     return true;
   }
@@ -393,13 +391,10 @@ ItemHandlers.UseInField.add("BICYCLE", async () => {
 
 ItemHandlers.UseInField.copy("BICYCLE", "MACHBIKE", "ACROBIKE");
 
-/**
- * pbFishing(hasEncounter, rodType) (012_Overworld/005_Overworld_Fishing.rb).
- * TODO(items): fishing isn't ported, so nothing ever bites.
- */
-async function pbFishing(_hasEncounter: boolean, _rodType: number): Promise<boolean> {
-  notPorted("pbFishing");
-  return false;
+/** pbFishing(hasEncounter, rodType) (game/field/Fishing.ts). */
+async function pbFishing(hasEncounter: boolean, rodType: number): Promise<boolean> {
+  const { pbFishing: fish } = await import("../field/Fishing");
+  return fish(hasEncounter, rodType);
 }
 
 /** The three rods' UseInField handler (identical but for the encounter type and rod number). */

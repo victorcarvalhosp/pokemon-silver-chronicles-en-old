@@ -1,0 +1,5248 @@
+{
+ "_doc": "Scenarios for zud_reference.rb (see its header). p/o: party specs (sp species, lv, m moves, it item, ab ability, hp fraction, st status, form, gmax G-Max Factor, dlvl Dynamax level); turns: one action per battler per round: 'N' move N, 'N>T' at battler T, 'Nd'/'Nz'/'Nu' with Dynamax/Z-Move/Ultra Burst toggled, 'sN' switch to party N, 'ai' the battle AI. trainer: the foe is a trainer (trainerType, trainerItems); battlescene: $PokemonSystem.battlescene (0 = animations on); double; bag: the player's key items (Dynamax Band and Z-Ring by default).",
+ "scenarios": [
+  {
+   "name": "dynamax: Max Flare, Max Airstream, Max Wyrmwind, then it ends",
+   "p": [
+    {
+     "sp": "CHARIZARD",
+     "lv": 50,
+     "m": [
+      "FLAMETHROWER",
+      "AIRSLASH",
+      "DRAGONCLAW",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "dynamax without animations: trainer recall/send-out path, Max Guard",
+   "p": [
+    {
+     "sp": "BLASTOISE",
+     "lv": 50,
+     "dlvl": 10,
+     "m": [
+      "SURF",
+      "PROTECT",
+      "ICEBEAM",
+      "EARTHQUAKE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "MACHAMP",
+     "lv": 50,
+     "m": [
+      "CROSSCHOP",
+      "FEINT"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 30
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "1",
+     "1"
+    ],
+    [
+     "2",
+     "0"
+    ]
+   ],
+   "battlescene": 1,
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "foe Dynamaxes (trainer): Max Strike into Protect, Max Guard vs Feint/Mean Look",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "PROTECT",
+      "FEINT",
+      "MEANLOOK",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE",
+      "GROWL"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "0d"
+    ],
+    [
+     "1",
+     "1"
+    ],
+    [
+     "2",
+     "1"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Dynamax immunities: Low Kick, Encore, Disable, Torment, flinching, Destiny Bond",
+   "p": [
+    {
+     "lv": 55,
+     "m": [
+      "LOWKICK",
+      "ENCORE",
+      "DISABLE",
+      "TORMENT"
+     ]
+    },
+    {
+     "lv": 55,
+     "m": [
+      "FAKEOUT",
+      "DESTINYBOND",
+      "GRASSKNOT",
+      "ROAR"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 50,
+     "m": [
+      "TACKLE",
+      "DEFENSECURL"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "0d"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Dynamax immunities 2 (party member): Fake Out, Destiny Bond, Grass Knot, Roar",
+   "p": [
+    {
+     "lv": 55,
+     "m": [
+      "FAKEOUT",
+      "DESTINYBOND",
+      "GRASSKNOT",
+      "ROAR"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 50,
+     "m": [
+      "TACKLE",
+      "DEFENSECURL"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "0d"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "switching out ends Dynamax",
+   "p": [
+    {
+     "sp": "GENGAR",
+     "lv": 50,
+     "m": [
+      "SHADOWBALL",
+      "SLUDGEBOMB"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "s1",
+     "0"
+    ],
+    [
+     "s1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "fainting ends Dynamax; Dynamax HP halves damage; healing scales down",
+   "p": [
+    {
+     "lv": 70,
+     "m": [
+      "PSYCHIC",
+      "RECOVER"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "PIKACHU",
+     "lv": 40,
+     "hp": 0.5,
+     "m": [
+      "THUNDERBOLT",
+      "RECOVER"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 30
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "0d"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Dynamax: Max Ooze/Knuckle/Quake/Steelspike, double battle allies",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SLUDGEBOMB",
+      "DRAINPUNCH",
+      "EARTHQUAKE",
+      "IRONHEAD"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d>2",
+     "0>0",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "1>2",
+     "0>2",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "2",
+     "0>3",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "3>3",
+     "0>3",
+     "0>0",
+     "0>1"
+    ]
+   ],
+   "double": true,
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Dynamax: Max Phantasm/Darkness/Flutterby/Strike, double battle foes",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SHADOWBALL",
+      "DARKPULSE",
+      "BUGBUZZ",
+      "HYPERVOICE"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d>2",
+     "0>0",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "1>2",
+     "0>2",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "2>3",
+     "0>3",
+     "0>0",
+     "0>1"
+    ]
+   ],
+   "double": true,
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Dynamax: Max Geyser/Rockfall/Hailstorm weather, Max Lightning/Overgrowth terrain",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SURF",
+      "ROCKSLIDE",
+      "ICEBEAM",
+      "THUNDERBOLT"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "3d",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Dynamax: Max Overgrowth, Max Starfall, Max Mindstorm (terrains)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "ENERGYBALL",
+      "MOONBLAST",
+      "PSYCHIC",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Dynamax: Max Move retyped by the base move (Weather Ball in rain), Struggle",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "WEATHERBALL",
+      "RAINDANCE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "SUNNYDAY",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0d",
+     "1"
+    ],
+    [
+     "0",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Dynamax: Taunt blocks Max Guard; Gravity allows Max Airstream?",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SWORDSDANCE",
+      "AIRSLASH",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TAUNT",
+      "GRAVITY",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "2",
+     "0"
+    ],
+    [
+     "0d",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "2"
+    ]
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Vine Lash",
+   "p": [
+    {
+     "sp": "VENUSAUR",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "VINEWHIP",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Wildfire",
+   "p": [
+    {
+     "sp": "CHARIZARD",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "FLAMETHROWER",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Cannonade",
+   "p": [
+    {
+     "sp": "BLASTOISE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "WATERGUN",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Befuddle",
+   "p": [
+    {
+     "sp": "BUTTERFREE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "BUGBUZZ",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Volt Crash",
+   "p": [
+    {
+     "sp": "PIKACHU",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "THUNDERSHOCK",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Gold Rush",
+   "p": [
+    {
+     "sp": "MEOWTH",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "SCRATCH",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Chi Strike",
+   "p": [
+    {
+     "sp": "MACHAMP",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "KARATECHOP",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Terror",
+   "p": [
+    {
+     "sp": "GENGAR",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "SHADOWBALL",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Foam Burst",
+   "p": [
+    {
+     "sp": "KINGLER",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "BUBBLEBEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Resonance",
+   "p": [
+    {
+     "sp": "LAPRAS",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "ICEBEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Cuddle",
+   "p": [
+    {
+     "sp": "EEVEE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "TACKLE",
+      "GROWL"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Replenish",
+   "p": [
+    {
+     "sp": "SNORLAX",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "TACKLE",
+      "DEFENSECURL"
+     ],
+     "it": "SITRUSBERRY",
+     "hp": 0.6
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Malodor",
+   "p": [
+    {
+     "sp": "GARBODOR",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "SLUDGE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Meltdown",
+   "p": [
+    {
+     "sp": "MELMETAL",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "IRONHEAD",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Drum Solo",
+   "p": [
+    {
+     "sp": "RILLABOOM",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "RAZORLEAF",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Hydrosnipe",
+   "p": [
+    {
+     "sp": "INTELEON",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "WATERGUN",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Fireball",
+   "p": [
+    {
+     "sp": "CINDERACE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "EMBER",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Wind Rage",
+   "p": [
+    {
+     "sp": "CORVIKNIGHT",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "WINGATTACK",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "2"
+    ],
+    [
+     "0d",
+     "2"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Gravitas",
+   "p": [
+    {
+     "sp": "ORBEETLE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "CONFUSION",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Stonesurge",
+   "p": [
+    {
+     "sp": "DREDNAW",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "WATERGUN",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Volcalith",
+   "p": [
+    {
+     "sp": "COALOSSAL",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "ROCKTHROW",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Tartness",
+   "p": [
+    {
+     "sp": "FLAPPLE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "RAZORLEAF",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Sweetness",
+   "p": [
+    {
+     "sp": "APPLETUN",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "RAZORLEAF",
+      "TACKLE"
+     ],
+     "st": "BURN"
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Sandblast",
+   "p": [
+    {
+     "sp": "SANDACONDA",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "MUDSHOT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Stun Shock",
+   "p": [
+    {
+     "sp": "TOXTRICITY",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "SHOCKWAVE",
+      "TACKLE"
+     ],
+     "form": 0
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Centiferno",
+   "p": [
+    {
+     "sp": "CENTISKORCH",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "EMBER",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Smite",
+   "p": [
+    {
+     "sp": "HATTERENE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "DAZZLINGGLEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Snooze",
+   "p": [
+    {
+     "sp": "GRIMMSNARL",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "BITE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Finale",
+   "p": [
+    {
+     "sp": "ALCREMIE",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "DAZZLINGGLEAM",
+      "TACKLE"
+     ],
+     "form": 3,
+     "hp": 0.5
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Steelsurge",
+   "p": [
+    {
+     "sp": "COPPERAJAH",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "IRONHEAD",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "0",
+     "s1"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Depletion",
+   "p": [
+    {
+     "sp": "DURALUDON",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "DRAGONCLAW",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max One Blow",
+   "p": [
+    {
+     "sp": "URSHIFU",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "DARKESTLARIAT",
+      "TACKLE"
+     ],
+     "form": 0
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "gigantamax: G-Max Rapid Flow",
+   "p": [
+    {
+     "sp": "URSHIFU",
+     "lv": 50,
+     "gmax": true,
+     "m": [
+      "WATERFALL",
+      "TACKLE"
+     ],
+     "form": 1
+    }
+   ],
+   "o": [
+    {
+     "lv": 48,
+     "m": [
+      "TACKLE",
+      "PROTECT",
+      "SPIKES"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "2"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Z-Move: Inferno Overdrive power table (Ember/Flamethrower/Fire Blast/Overheat)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "FIRIUMZ",
+     "m": [
+      "EMBER",
+      "FLAMETHROWER",
+      "FIREBLAST",
+      "OVERHEAT"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1z",
+     "0"
+    ],
+    [
+     "2z",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-Move: Breakneck Blitz power table, one per battle",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "m": [
+      "TACKLE",
+      "HYPERVOICE",
+      "GIGAIMPACT",
+      "HORNDRILL"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "3z",
+     "0"
+    ],
+    [
+     "2z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-Move into Protect: couldn't fully protect",
+   "p": [
+    {
+     "lv": 50,
+     "it": "ELECTRIUMZ",
+     "m": [
+      "THUNDERBOLT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 45,
+     "m": [
+      "PROTECT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Z-Move: Weather Ball in sun becomes Inferno Overdrive",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "m": [
+      "WEATHERBALL",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "SUNNYDAY",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0z",
+     "1"
+    ],
+    [
+     "0",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Splash, Z-Celebrate",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "m": [
+      "SPLASH",
+      "CELEBRATE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Swords Dance resets lowered stats, Z-Haze heals",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "hp": 0.6,
+     "m": [
+      "SWORDSDANCE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "GROWL",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Haze restores HP",
+   "p": [
+    {
+     "lv": 50,
+     "it": "ICIUMZ",
+     "hp": 0.6,
+     "m": [
+      "HAZE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "GROWL",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Curse (non-Ghost) and Z-Curse (Ghost)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "GHOSTIUMZ",
+     "m": [
+      "CURSE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Curse (Ghost user heals)",
+   "p": [
+    {
+     "sp": "GENGAR",
+     "lv": 50,
+     "hp": 0.5,
+     "it": "GHOSTIUMZ",
+     "m": [
+      "CURSE",
+      "SHADOWBALL"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Memento heals the switch-in",
+   "p": [
+    {
+     "lv": 50,
+     "it": "DARKINIUMZ",
+     "m": [
+      "MEMENTO",
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40,
+     "hp": 0.3
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Sleep Talk (crit) calls a Z-Powered move",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "st": "SLEEP",
+     "m": [
+      "SLEEPTALK",
+      "FLAMETHROWER"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Z-status: Z-Destiny Bond (focus), Z-Tail Whip (Atk+1) in a double battle",
+   "p": [
+    {
+     "lv": 50,
+     "it": "GHOSTIUMZ",
+     "m": [
+      "DESTINYBOND",
+      "TAILWHIP"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40,
+     "it": "NORMALIUMZ",
+     "m": [
+      "TAILWHIP",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0>2",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "1>2",
+     "1z>2",
+     "0>0",
+     "0>1"
+    ]
+   ],
+   "double": true,
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Catastropika",
+   "p": [
+    {
+     "sp": "PIKACHU",
+     "lv": 50,
+     "it": "PIKANIUMZ",
+     "m": [
+      "VOLTTACKLE",
+      "THUNDERBOLT"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Extreme Evoboost",
+   "p": [
+    {
+     "sp": "EEVEE",
+     "lv": 50,
+     "it": "EEVIUMZ",
+     "m": [
+      "LASTRESORT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Genesis Supernova (Psychic Terrain)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "MEWNIUMZ",
+     "m": [
+      "PSYCHIC",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Guardian of Alola",
+   "p": [
+    {
+     "sp": "TAPUKOKO",
+     "lv": 50,
+     "it": "TAPUNIUMZ",
+     "m": [
+      "NATURESMADNESS",
+      "THUNDERBOLT"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Stoked Sparksurfer (Alolan Raichu)",
+   "p": [
+    {
+     "sp": "RAICHU",
+     "form": 1,
+     "lv": 50,
+     "it": "ALORAICHIUMZ",
+     "m": [
+      "THUNDERBOLT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Clangorous Soulblaze (double battle)",
+   "p": [
+    {
+     "sp": "KOMMOO",
+     "lv": 50,
+     "it": "KOMMONIUMZ",
+     "m": [
+      "CLANGINGSCALES",
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0>2",
+     "0>0",
+     "0>1"
+    ],
+    [
+     "1>2",
+     "0>2",
+     "0>0",
+     "0>1"
+    ]
+   ],
+   "double": true,
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Splintered Stormshards, Searing Sunraze Smash",
+   "p": [
+    {
+     "sp": "LYCANROC",
+     "lv": 50,
+     "it": "LYCANIUMZ",
+     "m": [
+      "STONEEDGE",
+      "TACKLE"
+     ],
+     "form": 0
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "ELECTRICTERRAIN",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0z",
+     "1"
+    ],
+    [
+     "0",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Searing Sunraze Smash ignores Protect (Ruby parity)",
+   "p": [
+    {
+     "sp": "SOLGALEO",
+     "lv": 50,
+     "it": "SOLGANIUMZ",
+     "m": [
+      "SUNSTEELSTRIKE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "PROTECT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Ultra Burst, then Light That Burns the Sky",
+   "p": [
+    {
+     "sp": "NECROZMA",
+     "form": 1,
+     "lv": 60,
+     "it": "ULTRANECROZIUMZ",
+     "m": [
+      "PHOTONGEYSER",
+      "SUNSTEELSTRIKE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1u",
+     "0"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Ultra Burst without animations",
+   "p": [
+    {
+     "sp": "NECROZMA",
+     "form": 2,
+     "lv": 60,
+     "it": "ULTRANECROZIUMZ",
+     "m": [
+      "PHOTONGEYSER",
+      "MOONGEISTBEAM"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1u",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "battlescene": 1
+  },
+  {
+   "name": "AI: trainer uses a Z-Move",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "it": "FIRIUMZ",
+     "m": [
+      "FLAMETHROWER",
+      "TACKLE",
+      "GROWL"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ]
+   ],
+   "trainer": true,
+   "trainerType": "LEADER_Falkner",
+   "trainerItems": [
+    "ZRING"
+   ]
+  },
+  {
+   "name": "AI: trainer Dynamaxes its last Pokemon and picks Max Moves",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "CHARIZARD",
+     "lv": 55,
+     "m": [
+      "FLAMETHROWER",
+      "AIRSLASH",
+      "DRAGONCLAW",
+      "PROTECT"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ]
+   ],
+   "trainer": true,
+   "trainerType": "LEADER_Falkner",
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "AI: trainer Gigantamax with every kind of move",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "sp": "VENUSAUR",
+     "lv": 55,
+     "gmax": true,
+     "m": [
+      "VINEWHIP",
+      "SLUDGEBOMB",
+      "EARTHQUAKE",
+      "SLEEPPOWDER"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ],
+    [
+     "0",
+     "ai"
+    ]
+   ],
+   "trainer": true,
+   "trainerType": "LEADER_Falkner",
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Z-Move while Encored (Encore is restored afterwards)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "m": [
+      "TACKLE",
+      "GROWL"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "ENCORE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "1",
+     "0"
+    ],
+    [
+     "0z",
+     "1"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "0",
+     "1"
+    ]
+   ]
+  },
+  {
+   "name": "Grudge against a Max Move; Destiny Bond fails on a Dynamaxed user",
+   "p": [
+    {
+     "lv": 55,
+     "m": [
+      "PSYCHIC",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 60,
+     "hp": 0.2,
+     "m": [
+      "GRUDGE",
+      "DESTINYBOND"
+     ]
+    },
+    {
+     "lv": 60,
+     "hp": 0.2,
+     "m": [
+      "DESTINYBOND"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "Transform into a Dynamaxed Pokemon copies its base moves",
+   "p": [
+    {
+     "sp": "DITTO",
+     "lv": 50,
+     "m": [
+      "TRANSFORM"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE",
+      "FLAMETHROWER"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0",
+     "0d"
+    ],
+    [
+     "0",
+     "1"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "a holder of a usable Z-Crystal can't Dynamax (ZUD priority)",
+   "p": [
+    {
+     "lv": 80,
+     "it": "NORMALIUMZ",
+     "m": [
+      "HYPERVOICE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 20,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0z",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND",
+    "ZRING"
+   ]
+  },
+  {
+   "name": "generic Z-Move: NORMAL (TACKLE + NORMALIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "NORMALIUMZ",
+     "m": [
+      "TACKLE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: FIGHTING (KARATECHOP + FIGHTINIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "FIGHTINIUMZ",
+     "m": [
+      "KARATECHOP",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: FLYING (WINGATTACK + FLYINIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "FLYINIUMZ",
+     "m": [
+      "WINGATTACK",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: POISON (SLUDGE + POISONIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "POISONIUMZ",
+     "m": [
+      "SLUDGE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: GROUND (MUDSHOT + GROUNDIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "GROUNDIUMZ",
+     "m": [
+      "MUDSHOT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: ROCK (ROCKTHROW + ROCKIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "ROCKIUMZ",
+     "m": [
+      "ROCKTHROW",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: BUG (BUGBITE + BUGINIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "BUGINIUMZ",
+     "m": [
+      "BUGBITE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: GHOST (SHADOWBALL + GHOSTIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "GHOSTIUMZ",
+     "m": [
+      "SHADOWBALL",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: STEEL (IRONHEAD + STEELIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "STEELIUMZ",
+     "m": [
+      "IRONHEAD",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: FIRE (EMBER + FIRIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "FIRIUMZ",
+     "m": [
+      "EMBER",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: WATER (WATERGUN + WATERIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "WATERIUMZ",
+     "m": [
+      "WATERGUN",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: GRASS (VINEWHIP + GRASSIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "GRASSIUMZ",
+     "m": [
+      "VINEWHIP",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: ELECTRIC (THUNDERSHOCK + ELECTRIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "ELECTRIUMZ",
+     "m": [
+      "THUNDERSHOCK",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: PSYCHIC (CONFUSION + PSYCHIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "PSYCHIUMZ",
+     "m": [
+      "CONFUSION",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: ICE (ICEBEAM + ICIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "ICIUMZ",
+     "m": [
+      "ICEBEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: DRAGON (DRAGONCLAW + DRAGONIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "DRAGONIUMZ",
+     "m": [
+      "DRAGONCLAW",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: DARK (BITE + DARKINIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "DARKINIUMZ",
+     "m": [
+      "BITE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "generic Z-Move: FAIRY (DAZZLINGGLEAM + FAIRIUMZ)",
+   "p": [
+    {
+     "lv": 50,
+     "it": "FAIRIUMZ",
+     "m": [
+      "DAZZLINGGLEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "Max Move: NORMAL (TACKLE)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "TACKLE",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: FIGHTING (KARATECHOP)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "KARATECHOP",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: FLYING (WINGATTACK)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "WINGATTACK",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: POISON (SLUDGE)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SLUDGE",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: GROUND (MUDSHOT)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "MUDSHOT",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: ROCK (ROCKTHROW)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "ROCKTHROW",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: BUG (BUGBITE)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "BUGBITE",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: GHOST (SHADOWBALL)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "SHADOWBALL",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: STEEL (IRONHEAD)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "IRONHEAD",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: FIRE (EMBER)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "EMBER",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: WATER (WATERGUN)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "WATERGUN",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: GRASS (VINEWHIP)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "VINEWHIP",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: ELECTRIC (THUNDERSHOCK)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "THUNDERSHOCK",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: PSYCHIC (CONFUSION)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "CONFUSION",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: ICE (ICEBEAM)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "ICEBEAM",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: DRAGON (DRAGONCLAW)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "DRAGONCLAW",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: DARK (BITE)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "BITE",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "Max Move: FAIRY (DAZZLINGGLEAM)",
+   "p": [
+    {
+     "lv": 50,
+     "m": [
+      "DAZZLINGGLEAM",
+      "GROWL"
+     ]
+    },
+    {
+     "sp": "SENTRET",
+     "lv": 40
+    }
+   ],
+   "o": [
+    {
+     "lv": 55,
+     "m": [
+      "TACKLE"
+     ]
+    },
+    {
+     "sp": "RATTATA",
+     "lv": 45
+    }
+   ],
+   "turns": [
+    [
+     "0d",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ],
+   "trainer": true,
+   "trainerItems": [
+    "DYNAMAXBAND"
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: 10,000,000 Volt Thunderbolt is unreachable (no Pikachu forms above 7)",
+   "p": [
+    {
+     "sp": "PIKACHU",
+     "lv": 60,
+     "it": "PIKASHUNIUMZ",
+     "m": [
+      "THUNDERBOLT",
+      "TACKLE"
+     ],
+     "form": 5
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Pulverizing Pancake",
+   "p": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "it": "SNORLIUMZ",
+     "m": [
+      "GIGAIMPACT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Sinister Arrow Raid",
+   "p": [
+    {
+     "sp": "DECIDUEYE",
+     "lv": 60,
+     "it": "DECIDIUMZ",
+     "m": [
+      "SPIRITSHACKLE",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "MEW",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Malicious Moonsault",
+   "p": [
+    {
+     "sp": "INCINEROAR",
+     "lv": 60,
+     "it": "INCINIUMZ",
+     "m": [
+      "DARKESTLARIAT",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Oceanic Operetta",
+   "p": [
+    {
+     "sp": "PRIMARINA",
+     "lv": 60,
+     "it": "PRIMARIUMZ",
+     "m": [
+      "SPARKLINGARIA",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Let's Snuggle Forever",
+   "p": [
+    {
+     "sp": "MIMIKYU",
+     "lv": 60,
+     "it": "MIMIKIUMZ",
+     "m": [
+      "PLAYROUGH",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "SNORLAX",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Menacing Moonraze Maelstrom",
+   "p": [
+    {
+     "sp": "LUNALA",
+     "lv": 60,
+     "it": "LUNALIUMZ",
+     "m": [
+      "MOONGEISTBEAM",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "MEW",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Soul-Stealing 7-Star Strike",
+   "p": [
+    {
+     "sp": "MARSHADOW",
+     "lv": 60,
+     "it": "MARSHADIUMZ",
+     "m": [
+      "SPECTRALTHIEF",
+      "TACKLE"
+     ]
+    }
+   ],
+   "o": [
+    {
+     "sp": "MEW",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  {
+   "name": "exclusive Z-Moves: Menacing Moonraze Maelstrom (Dawn Wings Necrozma)",
+   "p": [
+    {
+     "sp": "NECROZMA",
+     "lv": 60,
+     "it": "LUNALIUMZ",
+     "m": [
+      "MOONGEISTBEAM",
+      "TACKLE"
+     ],
+     "form": 2
+    }
+   ],
+   "o": [
+    {
+     "sp": "MEW",
+     "lv": 60,
+     "m": [
+      "TACKLE",
+      "SWORDSDANCE"
+     ]
+    }
+   ],
+   "turns": [
+    [
+     "1",
+     "1"
+    ],
+    [
+     "0z",
+     "0"
+    ],
+    [
+     "0",
+     "0"
+    ]
+   ]
+  }
+ ]
+}

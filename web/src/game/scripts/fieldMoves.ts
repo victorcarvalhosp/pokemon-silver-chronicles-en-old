@@ -1,41 +1,133 @@
-// Field moves events call directly (012_Overworld/004_Overworld_FieldMoves.rb).
-// Only what the slice's maps use: pbCut (Route 29's tree).
+// Field move, vehicle and overworld-movement functions that event scripts call
+// (the ports are in game/field). Importing this registers them, loads the
+// whole field module and hooks it into the menus (FieldActions).
 
-import { Move } from "../../data/gameData/move";
-import { Settings } from "../../data/gameData/settings";
-import { _INTL } from "../../ui/messageConfig";
-import { pbConfirmMessage, pbMessage } from "../../ui/messages";
-import { G } from "../globals";
-import type { Player } from "../trainer/Player";
-import { defineScript } from "../scriptApi";
+import type { GameEvent } from "../GameEvent";
+import type { GamePlayer } from "../GamePlayer";
+import { pbCancelVehicles } from "../GamePlayer";
+import { G, pbUpdateSceneMap } from "../globals";
+import { defineScript, type ScriptContext } from "../scriptApi";
+import type { Pokemon } from "../pokemon/Pokemon";
+import type { PokemonMapMetadata } from "../PokemonMapMetadata";
+import type { GameStats } from "../trainer/GameStats";
+import { Graphics } from "../../rgss/Graphics";
+import { Input } from "../../rgss/Input";
+import "../field";
+import { pbDismountBike, pbMountBike } from "../field/bicycle";
+import {
+  FieldMoves, pbCut, pbEraseEscapePoint, pbHiddenMoveEvent, pbTransferSurfing, pbTransferUnderwater, pbRockSmash, pbRockSmashRandomEncounter, pbSmashEvent, pbStrength, pbSweetScent,
+} from "../field/FieldMoves";
+import { pbFishing } from "../field/Fishing";
+import { pbCanUseHiddenMove, pbCheckHiddenMoveBadge, pbUseHiddenMove } from "../field/HiddenMoveHandlers";
+import { pbHiddenMoveAnimation } from "../field/hiddenMoveAnimation";
+import { pbBridgeOff, pbBridgeOn, pbJumpToward, pbSetEscapePoint, pbSlideOnIce } from "../field/overworld";
+import { pbEraseWhirlpoolEvent, pbWhirlpool } from "../field/Whirlpool";
 
-const player = () => G.player as unknown as Player;
-const FIELD_MOVES_COUNT_BADGES = true; // Settings::FIELD_MOVES_COUNT_BADGES
+export { pbCheckHiddenMoveBadge, pbCut };
 
-/** pbCheckHiddenMoveBadge(badge = -1, showmsg = true) */
-export async function pbCheckHiddenMoveBadge(badge = -1, showmsg = true): Promise<boolean> {
-  if (badge < 0) return true; // No badge requirement
-  // ($DEBUG skips the check.)
-  if (FIELD_MOVES_COUNT_BADGES ? player().badgeCount() >= badge : player().badges[badge]) return true;
-  if (showmsg) await pbMessage(_INTL("Sorry, a new Badge is required."));
-  return false;
-}
+const gamePlayer = () => G.gamePlayer as unknown as GamePlayer;
+/** The running interpreter's @index (Interpreter methods that skip the next command). */
+const bumpIndex = (ctx: ScriptContext) => { (ctx.interpreter as unknown as { index: number }).index += 1; };
 
-/** pbCut: offers to cut the tree the player faces. */
-export async function pbCut(): Promise<boolean> {
-  const move = "CUT";
-  const movefinder = player().getPokemonWithMove(move);
-  if (!(await pbCheckHiddenMoveBadge(Settings.BADGE_FOR_CUT, false)) || !movefinder) {
-    await pbMessage(_INTL("This tree looks like it can be cut down."));
-    return false;
-  }
-  if (await pbConfirmMessage(_INTL("This tree looks like it can be cut down!\nWould you like to cut it?"))) {
-    G.stats.cutCount += 1;
-    const speciesname = movefinder ? movefinder.name : player().name;
-    await pbMessage(_INTL("{1} used {2}!", speciesname, Move.get(move).name));
-    // TODO(field moves): pbHiddenMoveAnimation(movefinder).
-    return true;
-  }
-  return false;
-}
 defineScript("pbCut", () => pbCut());
+defineScript("pbHeadbutt", (_c, event) => FieldMoves.pbHeadbutt((event as GameEvent | undefined) ?? null));
+defineScript("pbRockSmash", () => pbRockSmash());
+defineScript("pbRockSmashRandomEncounter", () => pbRockSmashRandomEncounter());
+defineScript("pbStrength", () => pbStrength());
+defineScript("pbSurf", () => FieldMoves.pbSurf());
+defineScript("pbDive", () => FieldMoves.pbDive());
+defineScript("pbSurfacing", () => FieldMoves.pbSurfacing());
+defineScript("pbWaterfall", () => FieldMoves.pbWaterfall());
+defineScript("pbAscendWaterfall", () => FieldMoves.pbAscendWaterfall());
+defineScript("pbDescendWaterfall", () => FieldMoves.pbDescendWaterfall());
+defineScript("pbSweetScent", () => pbSweetScent());
+defineScript("pbWhirlpool", () => pbWhirlpool());
+defineScript("pbSmashEvent", (_c, event) => pbSmashEvent(event as GameEvent | null));
+defineScript("pbHiddenMoveAnimation", (_c, pkmn, fieldMove) => pbHiddenMoveAnimation(pkmn as Pokemon | null, !!fieldMove));
+defineScript("pbCanUseHiddenMove?", (_c, pkmn, move, showmsg) => pbCanUseHiddenMove(pkmn as Pokemon, String(move), showmsg !== false));
+defineScript("pbUseHiddenMove", (_c, pkmn, move) => pbUseHiddenMove(pkmn as Pokemon, String(move)));
+defineScript("pbCheckHiddenMoveBadge", (_c, badge, showmsg) => pbCheckHiddenMoveBadge(Number(badge ?? -1), showmsg !== false));
+defineScript("pbHiddenMoveEvent", () => pbHiddenMoveEvent());
+defineScript("pbTransferUnderwater", (_c, m, x, y, d) => pbTransferUnderwater(Number(m), Number(x), Number(y), d == null ? undefined : Number(d)));
+defineScript("pbTransferSurfing", (_c, m, x, y, d) => pbTransferSurfing(Number(m), Number(x), Number(y), d == null ? undefined : Number(d)));
+defineScript("pbFishing", (_c, hasEncounter, rodType) => pbFishing(!!hasEncounter, Number(rodType ?? 1)));
+
+// Vehicles and movement (012_Overworld/001_Overworld.rb, 009_Game_Player.rb)
+defineScript("pbMountBike", () => pbMountBike());
+defineScript("pbDismountBike", () => pbDismountBike());
+defineScript("Kernel.pbMountBike", () => pbMountBike());
+defineScript("Kernel.pbDismountBike", () => pbDismountBike());
+defineScript("pbCancelVehicles", (_c, destination, cancelSwimming) =>
+  pbCancelVehicles(destination == null ? null : Number(destination), cancelSwimming !== false));
+defineScript("pbJumpToward", (_c, dist, playSound, cancelSurf) => pbJumpToward(Number(dist ?? 1), !!playSound, !!cancelSurf));
+defineScript("pbSlideOnIce", () => pbSlideOnIce());
+defineScript("pbBridgeOn", (_c, height) => pbBridgeOn(height == null ? 2 : Number(height)));
+defineScript("pbBridgeOff", () => pbBridgeOff());
+defineScript("pbSetEscapePoint", () => pbSetEscapePoint());
+defineScript("pbEraseEscapePoint", () => pbEraseEscapePoint());
+
+/** pbSetPokemonCenter (012_Overworld/001_Overworld.rb:701): where the player returns after blacking out. */
+export function pbSetPokemonCenter(): void {
+  const g = G.pokemonGlobal;
+  const p = gamePlayer();
+  g.pokecenterMapId = G.gameMap!.mapId;
+  g.pokecenterX = p.x;
+  g.pokecenterY = p.y;
+  g.pokecenterDirection = p.direction;
+}
+defineScript("pbSetPokemonCenter", () => pbSetPokemonCenter());
+
+//===============================================================================
+// Interpreter methods (003_Game processing/003_Interpreter.rb, Whilrpool HM.rb)
+//===============================================================================
+/** Interpreter#pbPushThisEvent: boulder events, pushed the way the player faces. */
+async function pbPushThisEvent(ctx: ScriptContext): Promise<void> {
+  const event = ctx.event as GameEvent;
+  const oldX = event.x;
+  const oldY = event.y;
+  const p = gamePlayer();
+  // Apply strict version of passable, which treats tiles that are passable
+  // only from certain directions as fully impassible
+  if (!event.canMoveInDirection(p.direction, true)) return;
+  (G.stats as GameStats).strengthPushCount += 1;
+  switch (p.direction) {
+    case 2: event.moveDown(); break;
+    case 4: event.moveLeft(); break;
+    case 6: event.moveRight(); break;
+    case 8: event.moveUp(); break;
+  }
+  (G as unknown as { pokemonMap: PokemonMapMetadata | null }).pokemonMap?.addMovedEvent(event.id);
+  if (oldX !== event.x || oldY !== event.y) {
+    p.lock();
+    for (;;) {
+      await Graphics.update();
+      Input.update();
+      await pbUpdateSceneMap();
+      if (!event.moving()) break;
+    }
+    p.unlock();
+  }
+}
+defineScript("pbPushThisEvent", (ctx) => pbPushThisEvent(ctx));
+
+/** Interpreter#pbPushThisBoulder */
+defineScript("pbPushThisBoulder", async (ctx) => {
+  if ((G as unknown as { pokemonMap: PokemonMapMetadata }).pokemonMap.strengthUsed) await pbPushThisEvent(ctx);
+  return true;
+});
+
+/** Interpreter#pbSmashThisEvent */
+defineScript("pbSmashThisEvent", async (ctx) => {
+  const event = ctx.event as GameEvent | null;
+  if (event) await pbSmashEvent(event);
+  bumpIndex(ctx);
+  return true;
+});
+
+/** pbEraseWhirlpoolThisEvent (Whilrpool HM.rb: runs in the interpreter, like pbSmashThisEvent) */
+defineScript("pbEraseWhirlpoolThisEvent", async (ctx) => {
+  const event = ctx.event as GameEvent | null;
+  if (event) await pbEraseWhirlpoolEvent(event);
+  bumpIndex(ctx);
+  return true;
+});

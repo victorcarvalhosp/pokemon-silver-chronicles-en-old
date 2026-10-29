@@ -69,3 +69,20 @@ defineScript("pbDoubleTrainerBattle", (_c, ...a: Args) => {
 // scripts/overworld.ts had it as an M4 TODO.
 defineScript("Pokemon.play_cry", (_c, species, form, volume, pitch) =>
   SpeciesFiles.playCryFromSpecies(species as Id, Number(opt(form, 0)), Number(opt(volume, 90)), Number(opt(pitch, 100))));
+
+// Trainer events, partner trainers, phone rematches and the special battle
+// types (each registers its own scripts and handlers).
+// Import order is Ruby's load order where handlers share an event
+// (:on_calling_wild_battle: roaming, Safari, Bug Contest; :on_wild_species_chosen:
+// roaming, then the Poké Radar).
+import "./globalExtras";
+import "../trainers/trainerEvents";
+import "../trainers/phoneRematch";
+import "../trainers/pokemonSelection";
+import "./roaming";
+import "./pokeRadar";
+import "./safari";
+import "./bugContest";
+import "./battlePalace";
+import "./battleArena";
+import "./recordedBattle";

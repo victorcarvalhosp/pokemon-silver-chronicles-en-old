@@ -2,9 +2,9 @@
 // the parts of 013_Items/004_Item_Phone.rb the phone screen uses: calling a
 // contact (pbCallTrainer, pbPhoneGenerateCall, pbPhoneCall...) and the
 // rematch counters' data helpers (pbPhoneRegister, pbPhoneIncrement...).
-// Registering NPC contacts is in game/scripts/phone.ts. Not ported: the
-// :phone_call_counter frame handler (rematch countdowns and random calls from
-// trainer contacts; this game only registers NPC contacts, which it skips).
+// Registering NPC contacts is in game/scripts/phone.ts; the :phone_call_counter
+// frame handler (rematch countdowns and random calls) is in
+// game/trainers/phoneRematch.ts.
 // Also here: pbCommonEvent (019_Utilities/001_Utilities.rb), which NPC
 // contacts' calls run.
 

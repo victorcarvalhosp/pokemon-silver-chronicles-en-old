@@ -9,6 +9,8 @@ import type { GameMap } from "../game/GameMap";
 import { Cache } from "./cache";
 import { SpriteAnimations } from "./SpriteAnimation";
 import { Data } from "../data/store";
+import { G } from "../game/globals";
+import { SpriteSurfBase } from "../game/field/SpriteSurfBase";
 
 /** BushBitmap: the character sheet with its bottom `depth` pixels faded. */
 const bushCache = new WeakMap<Bitmap, Map<string, Bitmap>>();
@@ -48,14 +50,19 @@ export class SpriteCharacter {
   private cw = 0;
   private ch = 0;
   private animations: SpriteAnimations;
+  /** Sprite_SurfBase, for the player only. */
+  private surfbase: SpriteSurfBase | null = null;
 
   constructor(readonly viewport: Viewport, readonly character: GameCharacter, private tileBitmap: TileTextureSource) {
     this.sprite = new Sprite(viewport);
     this.animations = new SpriteAnimations(this);
+    if (character === (G.gamePlayer as unknown)) this.surfbase = new SpriteSurfBase(this.sprite, character, viewport);
     this.update();
   }
 
   dispose(): void {
+    this.surfbase?.dispose();
+    this.surfbase = null;
     this.animations.dispose();
     this.sprite.dispose();
   }
@@ -124,6 +131,7 @@ export class SpriteCharacter {
       if (animation) this.animations.animation(animation, true);
       c.animationId = 0;
     }
+    this.surfbase?.update();
   }
 }
 

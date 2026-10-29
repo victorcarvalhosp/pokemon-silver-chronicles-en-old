@@ -208,6 +208,8 @@ export class GameCharacter {
   }
 
   passable(x: number, y: number, d: number, strict = false): boolean {
+    const stair = CharacterHooks.passable?.(this, x, y, d);
+    if (stair !== undefined) return stair;
     const newX = x + (d === 6 ? 1 : d === 4 ? -1 : 0);
     const newY = y + (d === 2 ? 1 : d === 8 ? -1 : 0);
     if (!this.map.valid(newX, newY)) return false;
@@ -686,6 +688,7 @@ export class GameCharacter {
   // --- per-frame update -------------------------------------------------------
 
   update(): void {
+    CharacterHooks.beforeUpdate?.(this);
     this.movedLastFrame = this.movedThisFrame;
     this.stoppedLastFrame = this.stoppedThisFrame;
     this.movedThisFrame = false;
@@ -695,6 +698,7 @@ export class GameCharacter {
       this.moving() || this.jumping() ? this.updateMove() : this.updateStop();
     }
     this.updatePattern();
+    CharacterHooks.afterUpdate?.(this);
   }
 
   protected updateCommand(): void {
@@ -775,6 +779,19 @@ export class GameCharacter {
 function mod(a: number, n: number): number {
   return ((a % n) + n) % n;
 }
+
+/**
+ * Plugin aliases of Game_Character methods that GamePlayer inlines (so a
+ * prototype wrapper wouldn't reach the player) or that must sit under
+ * Following Pokemon EX's own alias: Marin's Enhanced Staircases' passable?
+ * and update (game/field/EnhancedStaircases.ts). passable returns undefined
+ * to fall through to the normal check.
+ */
+export const CharacterHooks: {
+  passable?: (c: GameCharacter, x: number, y: number, d: number) => boolean | undefined;
+  beforeUpdate?: (c: GameCharacter) => void;
+  afterUpdate?: (c: GameCharacter) => void;
+} = {};
 
 // Late-bound hooks, filled in by modules that would otherwise import this one.
 type MapFactoryApi = { getNewMap(x: number, y: number, mapId?: number): [GameMap, number, number] | null };

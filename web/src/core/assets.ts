@@ -10,6 +10,8 @@ export function assetUrl(path: string): string {
 async function fetchBlob(path: string): Promise<Blob | null> {
   const res = await fetch(assetUrl(path));
   if (!res.ok) return null;
+  // A file that doesn't exist falls through to the dev server's index.html.
+  if ((res.headers.get("content-type") ?? "").startsWith("text/html")) return null;
   return res.blob();
 }
 

@@ -10,6 +10,8 @@
 import { Battle } from "../../battle";
 import type { IBattleScene } from "../../battle/BattleSceneInterface";
 import { BattleScene } from "../../battle/scene/BattleScene";
+import "../../battle/deluxe"; // Essentials Deluxe / Enhanced UI scene additions (midbattle scripts, Battle Info...)
+import "../../battle/zud/scene"; // ZUD Mechanics scene additions (Dynamax / Z-Move / Ultra Burst cinematics)
 import { rand } from "../../core/random";
 import type { Id } from "../../data/gameData/gameData";
 import { BattleTerrain } from "../../data/gameData/battleTerrain";
@@ -34,6 +36,7 @@ import { G } from "../globals";
 import { pbMapInterpreter } from "../Interpreter";
 import type { GameMap } from "../GameMap";
 import { mapMetadata } from "../metadata";
+import { pbItemEvolutionScene } from "../items/itemUtilities";
 import { Pokemon } from "../pokemon/Pokemon";
 import { pbLoadTrainer } from "../trainer/loadAndNew";
 import type { Player } from "../trainer/Player";
@@ -677,9 +680,8 @@ export async function pbEvolutionCheck(): Promise<void> {
     if (before != null && before < pkmn.level) newSpecies = pkmn.checkEvolutionOnLevelUp() as Id | null;
     newSpecies ??= pkmn.checkEvolutionAfterBattle(i) as Id | null;
     if (newSpecies == null) continue;
-    // Evolve Pokémon if possible
-    // TODO(evolution): PokemonEvolutionScene isn't ported yet (016_UI/... Evolution.rb).
-    console.warn(`PokemonEvolutionScene isn't ported yet: ${pkmn.species} would evolve into ${newSpecies}`);
+    // Evolve Pokémon if possible (no fade: evo.pbStartScreen / pbEvolution / pbEndScreen)
+    await pbItemEvolutionScene(pkmn, newSpecies, true, undefined, false);
   }
 }
 

@@ -77,9 +77,10 @@ export const MultipleForms = {
 const player = () => G.player as unknown as Player;
 /** $game_map.metadata */
 const mapMetadata = () => (G.gameMap ? MapMetadata.tryGet(G.gameMap.mapId) : null);
+/** $game_temp.dx_pokemon? || $game_temp.dx_midbattle? (Essentials Deluxe; both are hashes) */
 const inDxBattle = () => {
-  const t = G.gameTemp as unknown as { dxPokemon?: unknown[]; dxMidbattle?: unknown[] };
-  return (!!t.dxPokemon && t.dxPokemon.length > 0) || (!!t.dxMidbattle && t.dxMidbattle.length > 0);
+  const t = G.gameTemp;
+  return (!!t.dxPokemon && Object.keys(t.dxPokemon).length > 0) || (!!t.dxMidbattle && Object.keys(t.dxMidbattle).length > 0);
 };
 const pbMessage = (text: string) => pbMessageHook(text);
 const moveExists = (m: Id | null) => m != null && MoveData.exists(m);

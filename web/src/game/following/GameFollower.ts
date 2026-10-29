@@ -3,7 +3,7 @@
 //   fancy_moveto (diagonal steps on StairLeft/StairRight tiles, the follower
 //   turns towards its leader after each step);
 // - Marin's Enhanced Staircases redefines follow_leader (its stair checks
-//   only apply on a Marin stair, which isn't ported);
+//   apply on its stairs, game/field/EnhancedStaircases.ts);
 // - Following Pokemon EX (New Event Type/Following Event.rb) adds
 //   show_dust_animation and the Game_FollowingPkmn subclass, and
 //   (Script Additions/Compatibility.rb) calculates the bush depth on creation.
@@ -146,10 +146,10 @@ export class GameFollower extends GameEvent {
     const newTag = this.map.terrainTag(this.x, this.y).id;
     if (oldX !== this.x) {
       if ((oldTag !== "StairLeft" && newTag === "StairLeft") || (oldTag !== "StairRight" && newTag === "StairRight")) {
-        // TODO(side stairs): self.offset_y = -16 (the stair's drawing offset isn't ported).
+        this.offsetY = -16; // game/field/SideStairs.ts draws it
         if ((newTag === "StairLeft" && direction === 4) || (newTag === "StairRight" && direction === 6)) this.y += 1;
       } else if ((oldTag === "StairLeft" && newTag !== "StairLeft") || (oldTag === "StairRight" && newTag !== "StairRight")) {
-        // TODO(side stairs): self.offset_y = 0
+        this.offsetY = 0;
       }
     }
     this.turnTowardsLeader(leader);
@@ -238,14 +238,15 @@ export class GameFollower extends GameEvent {
     this.realY = this.y * REAL_RES_Y;
   }
 
-  /** Marin's Enhanced Staircases version (its on_stair? checks never apply here). */
+  /** Marin's Enhanced Staircases version. */
   followLeader(leader: GameCharacter, instant = false, _leaderIsTrueLeader = true): void {
     const mapsConnected = factory().areConnected(leader.map.mapId, this.map.mapId);
     let target: [number, number, number];
     // Get the target tile that self wants to move to
     if (mapsConnected) {
       target = this.followTarget(leader);
-      // TODO(stairs): Marin's on_stair? adjustments (no Marin stairs are ported).
+      // Added (game/field/EnhancedStaircases.ts)
+      this.stairFollowTarget?.(leader, target);
     } else {
       // Map transfer to an unconnected map
       target = [leader.map.mapId, leader.x, leader.y];
@@ -404,7 +405,8 @@ export class GameFollowingPkmn extends GameFollower {
       const p = player();
       if (currentTag === "StairLeft") target[2] += target[1] > p.x ? -1 : 1;
       else if (currentTag === "StairRight") target[2] += target[1] < p.x ? -1 : 1;
-      // TODO(stairs): the `defined?(on_stair?) && on_stair?` block (Marin's stairs aren't ported).
+      // `if defined?(on_stair?) && on_stair?` (game/field/EnhancedStaircases.ts)
+      this.stairFollowTarget?.(leader, target);
     } else {
       // Map transfer to an unconnected map
       target = [leader.map.mapId, leader.x, leader.y];

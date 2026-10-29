@@ -4,16 +4,25 @@
 // Where Ruby switches on the parameter's class (an array of Pokémon/battle
 // moves, a Battle::PowerMove, a Battle::Move or Pokemon::Move, or an ID),
 // this takes the same shapes: an array of { id, type } moves, a single
-// { id, type } move (pass { powerMove: true } for a Battle::PowerMove), or a
-// move/type ID string.
+// { id, type } move (pass { powerMove: true } for a Battle::PowerMove; a
+// Battle::Move object works too), or a move/type ID string.
 
 import type { PowerMoveData, StagedMoves } from "../pbs/types";
 import { type Id, SymbolData } from "./gameData";
 import { Move } from "./move";
 import { Type } from "./type";
 
-export interface MoveLike { id: Id; type: Id; powerMove?: boolean }
+export interface MoveLike { id: Id; type: Id | null; powerMove?: boolean | (() => boolean) }
 type MoveParam = MoveLike[] | MoveLike | Id;
+
+/**
+ * `when Battle::PowerMove`: { powerMove: true }, or a Battle::PowerMove
+ * instance (battle/zud/Battle_PowerMove.ts marks them with isPowerMoveClass).
+ * A Battle::Move's powerMove() method doesn't count.
+ */
+function isBattlePowerMove(param: MoveLike): boolean {
+  return param.powerMove === true || (param as { isPowerMoveClass?: boolean }).isPowerMoveClass === true;
+}
 
 export class PowerMove extends SymbolData {
   static DATA = new Map<Id, PowerMove>();
@@ -127,7 +136,7 @@ export class PowerMove extends SymbolData {
       if (item === pm.item || item == null) {
         if (Array.isArray(param)) {
           for (const move of param) if (move.id === pm.move || move.type === pm.type) ret = pm.zmove;
-        } else if (typeof param === "object" && param.powerMove) {
+        } else if (typeof param === "object" && isBattlePowerMove(param)) {
           if (param.id === pm.zmove) ret = pm.zmove;
         } else if (typeof param === "object") {
           if (param.id === pm.move || param.id === pm.zmove || param.type === pm.type) ret = pm.zmove;
@@ -159,7 +168,7 @@ export class PowerMove extends SymbolData {
       if (pm.exclusive() && (!pm.species.includes(species) || !gmax)) continue;
       if (Array.isArray(param)) {
         for (const move of param) if (move.type === pm.type) ret = pm.maxmove;
-      } else if (typeof param === "object" && param.powerMove) {
+      } else if (typeof param === "object" && isBattlePowerMove(param)) {
         if (param.id === pm.maxmove) ret = pm.maxmove;
       } else if (typeof param === "object") {
         if (param.type === pm.type) ret = pm.maxmove;

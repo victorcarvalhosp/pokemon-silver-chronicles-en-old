@@ -11,9 +11,8 @@
 //   pbRaidStyleCapture, wild_boss_flee.
 // - ZUD Mechanics ([004] Battle_Battler/Battler_Overrides.rb): pbReduceHP,
 //   pbRecoverHP, pbRecoverHPFromDrain (Dynamax HP), pbFaint (un-Dynamax,
-//   un-Ultra Burst), pbTransform; ([004] Battle_Battler/Battler_MoveConversion.rb):
-//   display_power_moves, convert_zmove, convert_maxmove, calc_power_move
-//   (deferred stubs).
+//   un-Ultra Burst), pbTransform. ([004] Battle_Battler/Battler_MoveConversion.rb
+//   is in ../zud/Battler_MoveConversion.ts.)
 // Alias chains: pbReduceHP/pbRecoverHP = ZUD( core );
 //   pbRecoverHPFromDrain = ZUD( Hotfixes ); pbChangeTypes/pbResetTypes/
 //   pbCheckFormOnWeatherChange = Gen 9( core ); pbFaint = ZUD( Deluxe( Gen 9( core ) ) );
@@ -284,12 +283,12 @@ const methods = {
   // capture with the [:raidcapture] rule.
   //=============================================================================
   /**
-   * Deferred: the capture prompt, bag screen and Poké Ball throw of the
-   * [:raidcapture] rule (Battle_Deluxe.rb:425-474). Only the early returns are
-   * ported; the Pokémon then flees as if "Don't Catch" was chosen.
+   * pbRaidStyleCapture: instead of fainting, the wild Pokémon offers itself
+   * to be caught (Catch: pick a Poké Ball from the Bag; with a chance, the
+   * catch is decided by it through the [:setcapture] rule) or flees.
    */
-  async pbRaidStyleCapture(this: Battler, target: Battler, _chance = 0, msg: string | null = null,
-    _bgm: string | null = null): Promise<void> {
+  async pbRaidStyleCapture(this: Battler, target: Battler, chance = 0, msg: string | null = null,
+    bgm: string | null = null): Promise<void> {
     if (this.battle.pbAllFainted()) return;
     if (this.battle.raidBattle && target.effects[PBEffects.KnockOutCount] <= 0) return;
     let faintedCount = 0;
@@ -298,10 +297,54 @@ const methods = {
       faintedCount += 1;
     }
     if (faintedCount >= this.battle.pbSideSize(0)) return;
-    // Deferred: BGM change, "{1} is weak!\nThrow a Poké Ball now!" prompt, Catch/Don't Catch
-    // command, bag screen and pbThrowPokeBall (Battle_Deluxe.rb:434-473).
-    PBDebug.log(`[Deferred] raid-style capture of ${target.pbThis()} skipped`);
-    await target.wildBossFlee(msg);
+    // (UI modules loaded on use: the battle core runs headless in tests)
+    const { pbBGMFade, pbBGMPlay, pbPlayDecisionSE, resolveAudio } = await import("../../game/GameSystem");
+    const { pbWait } = await import("../../ui/scenes/frames");
+    if (resolveAudio(bgm)) {
+      pbBGMFade(0.2);
+      await pbWait(Math.round(0.2 * 60));
+      pbBGMPlay(bgm);
+    }
+    await this.battle.pbDisplayPaused(_INTL("{1} is weak!\nThrow a Poké Ball now!", target.name));
+    await pbWait(30);
+    let cmd = 0;
+    cmd = await this.battle.pbShowCommands("", ["Catch", "Don't Catch"], 1);
+    switch (cmd) {
+      case 0:
+        pbPlayDecisionSE();
+        this.battle.sendToBoxes = 1;
+        if (G.storage.full()) {
+          await this.battle.pbDisplay(_INTL("But there is no room left in the PC!"));
+          await target.wildBossFlee(msg);
+        } else {
+          let ball: Id | null = null;
+          const { PokemonBag_Scene, PokemonBagScreen } = await import("../../ui/bag/bag");
+          const { pbFadeOutIn } = await import("../../ui/fades");
+          const { Item } = await import("../../data/gameData/item");
+          await pbFadeOutIn(async () => {
+            const scene = new PokemonBag_Scene();
+            const screen = new PokemonBagScreen(scene, G.bag);
+            ball = await screen.pbChooseItemScreen((item) => Item.get(item).isPokeBall());
+          });
+          if (ball) {
+            G.bag.remove(ball, 1);
+            if (chance > 0) {
+              const r = this.battle.pbRandom(100);
+              // ($DEBUG && Input.press?(Input::CTRL): $DEBUG is off)
+              const capture = r < chance || ball === "MASTERBALL";
+              dxRules()!.setcapture = capture;
+            }
+            await this.battle.pbThrowPokeBall(target.index, ball);
+            if (this.battle.pokeBallFailed) await target.wildBossFlee(msg);
+          } else {
+            await target.wildBossFlee(msg);
+          }
+        }
+        break;
+      default:
+        pbPlayDecisionSE();
+        await target.wildBossFlee(msg);
+    }
   },
 
   /** wild_boss_flee */
@@ -373,32 +416,9 @@ const methods = {
     this.baseMoves.length = 0;
   },
 
-  //=============================================================================
   // ZUD Mechanics ([004] Battle_Battler/Battler_MoveConversion.rb): converting
-  // the user's moves into Power Moves. Deferred: Z-Moves and Max Moves.
-  //=============================================================================
-  /** display_power_moves — Deferred: Z-Move/Max Move conversion (Battler_MoveConversion.rb:8). */
-  displayPowerMoves(this: Battler, _mode: number | string = 0): void {
-    // Deferred: ZUD Mechanics/[004] Battle_Battler/Battler_MoveConversion.rb:8
-  },
-
-  /** convert_zmove — Deferred (Battler_MoveConversion.rb:33): returns the base move unchanged. */
-  convertZmove(this: Battler, move: Move, _item: Id | null = null, _transform: Id | null = null): Move {
-    // Deferred: Battle::PowerMove.from_pokemon_move(@battle, Z-Move) (Battler_MoveConversion.rb:33)
-    return move;
-  },
-
-  /** convert_maxmove — Deferred (Battler_MoveConversion.rb:47): returns the base move unchanged. */
-  convertMaxmove(this: Battler, move: Move, _transform: Id | null = null): Move {
-    // Deferred: Battle::PowerMove.from_pokemon_move(@battle, Max Move) (Battler_MoveConversion.rb:47)
-    return move;
-  },
-
-  /** calc_power_move — Deferred (Battler_MoveConversion.rb:57): returns the move unchanged. */
-  calcPowerMove(this: Battler, move: Move): Move {
-    // Deferred: retyping Power Moves from the base move's type (Battler_MoveConversion.rb:57)
-    return move;
-  },
+  // the user's moves into Power Moves (display_power_moves, convert_zmove,
+  // convert_maxmove, calc_power_move) is in ../zud/Battler_MoveConversion.ts.
 
   //=============================================================================
   // Change type

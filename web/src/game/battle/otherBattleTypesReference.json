@@ -1,0 +1,1182 @@
+[
+  {
+    "name": "palace 3v3",
+    "kind": "palace",
+    "seed": 11,
+    "turns": 25,
+    "p1": [
+      {
+        "s": "MACHOKE",
+        "n": "BRAVE",
+        "m": [
+          "KARATECHOP",
+          "PROTECT",
+          "BULKUP",
+          "COUNTER"
+        ],
+        "l": 50
+      },
+      {
+        "s": "GOLBAT",
+        "n": "TIMID",
+        "m": [
+          "WINGATTACK",
+          "CONFUSERAY",
+          "SWIFT",
+          "HAZE"
+        ],
+        "l": 46
+      },
+      {
+        "s": "SLOWBRO",
+        "n": "RELAXED",
+        "m": [
+          "WATERGUN",
+          "AMNESIA",
+          "YAWN",
+          "CONFUSION"
+        ],
+        "l": 44
+      }
+    ],
+    "p2": [
+      {
+        "s": "ARCANINE",
+        "n": "ADAMANT",
+        "m": [
+          "BITE",
+          "FLAMEWHEEL",
+          "ROAR",
+          "LEER"
+        ],
+        "l": 50
+      },
+      {
+        "s": "JOLTEON",
+        "n": "HASTY",
+        "m": [
+          "THUNDERSHOCK",
+          "DOUBLEKICK",
+          "SANDATTACK",
+          "AGILITY"
+        ],
+        "l": 48
+      },
+      {
+        "s": "SNORLAX",
+        "n": "GENTLE",
+        "m": [
+          "BODYSLAM",
+          "REST",
+          "DEFENSECURL",
+          "AMNESIA"
+        ],
+        "l": 45
+      }
+    ],
+    "decision": 1,
+    "log": [
+      "You are challenged by YOUNGSTER Joey!",
+      "YOUNGSTER Joey sent out Arcanine!",
+      "[sendout] 1: Arcanine",
+      "Go! Machoke!",
+      "[sendout] 0: Machoke",
+      "== round 1",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 ARCANINE hp=165/165 st=NONE",
+      "The opposing Arcanine appears incapable of using its power!",
+      "Machoke used Karate Chop!",
+      "== round 2",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 ARCANINE hp=123/165 st=NONE",
+      "The opposing Arcanine appears incapable of using its power!",
+      "Machoke used Karate Chop!",
+      "A glint appears in the opposing Arcanine's eyes!",
+      "== round 3",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 ARCANINE hp=80/165 st=NONE",
+      "The opposing Arcanine appears incapable of using its power!",
+      "Machoke used Bulk Up!",
+      "Machoke's Attack rose!",
+      "Machoke's Defense rose!",
+      "== round 4",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 ARCANINE hp=80/165 st=NONE",
+      "Machoke used Protect!",
+      "Machoke protected itself!",
+      "The opposing Arcanine used Bite!",
+      "Machoke protected itself!",
+      "== round 5",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 ARCANINE hp=80/165 st=NONE",
+      "YOUNGSTER Joey withdrew Arcanine!",
+      "[recall] 1",
+      "YOUNGSTER Joey sent out Jolteon!",
+      "[sendout] 1: Jolteon",
+      "Machoke used Karate Chop!",
+      "A glint appears in the opposing Jolteon's eyes!",
+      "== round 6",
+      "#0 MACHOKE hp=155/155 st=NONE",
+      "#1 JOLTEON hp=39/135 st=NONE",
+      "The opposing Jolteon used Double Kick!",
+      "Hit 2 times!",
+      "Machoke used Karate Chop!",
+      "The opposing Jolteon fainted!",
+      "[faint] The opposing Jolteon",
+      "[confirm] YOUNGSTER Joey is about to send out Arcanine. Will you switch your Pokémon?",
+      "Machoke, that's enough! Come back!",
+      "[recall] 0",
+      "You're in charge, Golbat!",
+      "[sendout] 0: Golbat",
+      "YOUNGSTER Joey sent out Arcanine!",
+      "[sendout] 1: Arcanine",
+      "A glint appears in the opposing Arcanine's eyes!",
+      "== round 7",
+      "#0 GOLBAT hp=139/139 st=NONE",
+      "#1 ARCANINE hp=80/165 st=NONE",
+      "The opposing Arcanine used Flame Wheel!",
+      "Golbat used Swift!",
+      "== round 8",
+      "#0 GOLBAT hp=71/139 st=NONE",
+      "#1 ARCANINE hp=60/165 st=NONE",
+      "The opposing Arcanine used Bite!",
+      "A critical hit!",
+      "Golbat used Wing Attack!",
+      "Golbat began growling deeply!",
+      "== round 9",
+      "#0 GOLBAT hp=3/139 st=NONE",
+      "#1 ARCANINE hp=32/165 st=NONE",
+      "Good job, Golbat! Come back!",
+      "[recall] 0",
+      "Your opponent's weak! Get 'em, Slowbro!",
+      "[sendout] 0: Slowbro",
+      "The opposing Arcanine used Bite!",
+      "It's super effective!",
+      "== round 10",
+      "#0 SLOWBRO hp=91/151 st=NONE",
+      "#1 ARCANINE hp=32/165 st=NONE",
+      "The opposing Arcanine used Bite!",
+      "It's super effective!",
+      "Slowbro used Water Gun!",
+      "It's super effective!",
+      "The opposing Arcanine fainted!",
+      "[faint] The opposing Arcanine",
+      "[confirm] YOUNGSTER Joey is about to send out Snorlax. Will you switch your Pokémon?",
+      "Good job, Slowbro! Come back!",
+      "[recall] 0",
+      "You're in charge, Machoke!",
+      "[sendout] 0: Machoke",
+      "YOUNGSTER Joey sent out Snorlax!",
+      "[sendout] 1: Snorlax",
+      "== round 11",
+      "#0 MACHOKE hp=138/155 st=NONE",
+      "#1 SNORLAX hp=212/212 st=NONE",
+      "Machoke used Karate Chop!",
+      "It's super effective!",
+      "The opposing Snorlax used Rest!",
+      "The opposing Snorlax slept and became healthy!",
+      "The opposing Snorlax's HP was restored.",
+      "== round 12",
+      "#0 MACHOKE hp=138/155 st=NONE",
+      "#1 SNORLAX hp=212/212 st=DROWSY",
+      "Machoke used Karate Chop!",
+      "It's super effective!",
+      "The opposing Snorlax used Rest!",
+      "But it failed!",
+      "A glint appears in the opposing Snorlax's eyes!",
+      "== round 13",
+      "#0 MACHOKE hp=138/155 st=NONE",
+      "#1 SNORLAX hp=50/212 st=DROWSY",
+      "Machoke used Protect!",
+      "Machoke protected itself!",
+      "The opposing Snorlax is too drowsy to move!",
+      "== round 14",
+      "#0 MACHOKE hp=138/155 st=NONE",
+      "#1 SNORLAX hp=50/212 st=DROWSY",
+      "Machoke used Karate Chop!",
+      "It's super effective!",
+      "The opposing Snorlax fainted!",
+      "[faint] The opposing Snorlax",
+      "You defeated YOUNGSTER Joey!",
+      "...",
+      "== end decision=1",
+      "#0 MACHOKE hp=138/155 st=NONE",
+      "#1 SNORLAX hp=0/212 st=NONE FAINTED"
+    ],
+    "errors": [
+
+    ]
+  },
+  {
+    "name": "palace pinch natures",
+    "kind": "palace",
+    "seed": 905,
+    "turns": 25,
+    "p1": [
+      {
+        "s": "NIDOKING",
+        "n": "SASSY",
+        "m": [
+          "POISONSTING",
+          "THRASH",
+          "LEER",
+          "FOCUSENERGY"
+        ],
+        "l": 50
+      },
+      {
+        "s": "KADABRA",
+        "n": "CALM",
+        "m": [
+          "CONFUSION",
+          "REFLECT",
+          "RECOVER",
+          "DISABLE"
+        ],
+        "l": 40
+      }
+    ],
+    "p2": [
+      {
+        "s": "GOLEM",
+        "n": "LAX",
+        "m": [
+          "ROCKTHROW",
+          "DEFENSECURL",
+          "SELFDESTRUCT",
+          "MAGNITUDE"
+        ],
+        "l": 50
+      },
+      {
+        "s": "STARMIE",
+        "n": "MODEST",
+        "m": [
+          "WATERGUN",
+          "RECOVER",
+          "MINIMIZE",
+          "SWIFT"
+        ],
+        "l": 42
+      }
+    ],
+    "decision": 1,
+    "log": [
+      "You are challenged by YOUNGSTER Joey!",
+      "YOUNGSTER Joey sent out Golem!",
+      "[sendout] 1: Golem",
+      "Go! Nidoking!",
+      "[sendout] 0: Nidoking",
+      "== round 1",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 GOLEM hp=155/155 st=NONE",
+      "Nidoking used Poison Sting!",
+      "A critical hit!",
+      "It's not very effective...",
+      "The opposing Golem was poisoned!",
+      "The opposing Golem appears incapable of using its power!",
+      "The opposing Golem was hurt by poison!",
+      "== round 2",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 GOLEM hp=133/155 st=POISON",
+      "Nidoking used Thrash!",
+      "It's not very effective...",
+      "The opposing Golem used Defense Curl!",
+      "The opposing Golem's Defense rose!",
+      "The opposing Golem was hurt by poison!",
+      "== round 3",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 GOLEM hp=96/155 st=POISON",
+      "Nidoking used Thrash!",
+      "It's not very effective...",
+      "Nidoking became confused due to fatigue!",
+      "The opposing Golem appears incapable of using its power!",
+      "The opposing Golem was hurt by poison!",
+      "The opposing Golem began growling deeply!",
+      "== round 4",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 GOLEM hp=63/155 st=POISON",
+      "YOUNGSTER Joey withdrew Golem!",
+      "[recall] 1",
+      "YOUNGSTER Joey sent out Starmie!",
+      "[sendout] 1: Starmie",
+      "Nidoking is confused!",
+      "Nidoking used Thrash!",
+      "The opposing Starmie is getting into position!",
+      "== round 5",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 STARMIE hp=42/115 st=NONE",
+      "The opposing Starmie used Recover!",
+      "The opposing Starmie's HP was restored.",
+      "Nidoking is confused!",
+      "Nidoking used Thrash!",
+      "== round 6",
+      "#0 NIDOKING hp=156/156 st=NONE",
+      "#1 STARMIE hp=27/115 st=NONE",
+      "YOUNGSTER Joey withdrew Starmie!",
+      "[recall] 1",
+      "YOUNGSTER Joey sent out Golem!",
+      "[sendout] 1: Golem",
+      "Nidoking is confused!",
+      "It hurt itself in its confusion!",
+      "The opposing Golem was hurt by poison!",
+      "The opposing Golem began growling deeply!",
+      "== round 7",
+      "#0 NIDOKING hp=132/156 st=NONE",
+      "#1 GOLEM hp=44/155 st=POISON",
+      "Nidoking is confused!",
+      "Nidoking used Thrash!",
+      "It's not very effective...",
+      "The opposing Golem appears incapable of using its power!",
+      "The opposing Golem was hurt by poison!",
+      "== round 8",
+      "#0 NIDOKING hp=132/156 st=NONE",
+      "#1 GOLEM hp=8/155 st=POISON",
+      "YOUNGSTER Joey withdrew Golem!",
+      "[recall] 1",
+      "YOUNGSTER Joey sent out Starmie!",
+      "[sendout] 1: Starmie",
+      "Nidoking snapped out of its confusion.",
+      "Nidoking used Thrash!",
+      "The opposing Starmie fainted!",
+      "[faint] The opposing Starmie",
+      "YOUNGSTER Joey sent out Golem!",
+      "[sendout] 1: Golem",
+      "The opposing Golem began growling deeply!",
+      "== round 9",
+      "#0 NIDOKING hp=132/156 st=NONE",
+      "#1 GOLEM hp=8/155 st=POISON",
+      "Nidoking used Thrash!",
+      "It's not very effective...",
+      "The opposing Golem fainted!",
+      "[faint] The opposing Golem",
+      "Nidoking became confused due to fatigue!",
+      "You defeated YOUNGSTER Joey!",
+      "...",
+      "== end decision=1",
+      "#0 NIDOKING hp=132/156 st=NONE",
+      "#1 GOLEM hp=0/155 st=NONE FAINTED"
+    ],
+    "errors": [
+
+    ]
+  },
+  {
+    "name": "arena 2v2",
+    "kind": "arena",
+    "seed": 3,
+    "turns": 14,
+    "choices": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "p1": [
+      {
+        "s": "HERACROSS",
+        "n": "ADAMANT",
+        "m": [
+          "HORNATTACK",
+          "PROTECT",
+          "ENDURE",
+          "COUNTER"
+        ],
+        "l": 50
+      },
+      {
+        "s": "DRAGONAIR",
+        "n": "MODEST",
+        "m": [
+          "TWISTER",
+          "THUNDERWAVE",
+          "SLAM",
+          "AGILITY"
+        ],
+        "l": 40
+      }
+    ],
+    "p2": [
+      {
+        "s": "SCIZOR",
+        "n": "JOLLY",
+        "m": [
+          "METALCLAW",
+          "SWORDSDANCE",
+          "FURYCUTTER",
+          "QUICKATTACK"
+        ],
+        "l": 45
+      },
+      {
+        "s": "LANTURN",
+        "n": "BOLD",
+        "m": [
+          "SPARK",
+          "CONFUSERAY",
+          "WATERGUN",
+          "FLAIL"
+        ],
+        "l": 44
+      }
+    ],
+    "decision": 2,
+    "log": [
+      "You are challenged by YOUNGSTER Joey!",
+      "YOUNGSTER Joey sent out Scizor!",
+      "[sendout] 1: Scizor",
+      "Go! Heracross!",
+      "[sendout] 0: Heracross",
+      "[arena] Heracross VS Scizor",
+      "== round 1",
+      "#0 HERACROSS hp=155/155 st=NONE",
+      "#1 SCIZOR hp=131/131 st=NONE",
+      "Heracross used Horn Attack!",
+      "It's not very effective...",
+      "The opposing Scizor used Metal Claw!",
+      "== round 2",
+      "#0 HERACROSS hp=112/155 st=NONE",
+      "#1 SCIZOR hp=110/131 st=NONE",
+      "Heracross used Horn Attack!",
+      "It's not very effective...",
+      "The opposing Scizor used Swords Dance!",
+      "The opposing Scizor's Attack rose sharply!",
+      "== round 3",
+      "#0 HERACROSS hp=112/155 st=NONE",
+      "#1 SCIZOR hp=90/131 st=NONE",
+      "Heracross used Protect!",
+      "Heracross protected itself!",
+      "The opposing Scizor used Metal Claw!",
+      "Heracross protected itself!",
+      "[judgment] Heracross [0, 0, 2] Scizor [2, 2, 0]",
+      "Heracross lost to the opponent\nScizor in a referee's decision!",
+      "[faint] Heracross",
+      "Go for it, Dragonair!",
+      "[sendout] 0: Dragonair",
+      "== round 4",
+      "#0 DRAGONAIR hp=111/111 st=NONE",
+      "#1 SCIZOR hp=90/131 st=NONE",
+      "The opposing Scizor used Swords Dance!",
+      "The opposing Scizor's Attack rose sharply!",
+      "Dragonair used Twister!",
+      "It's not very effective...",
+      "[judgment] Dragonair [1, 0, 2] Scizor [1, 2, 0]",
+      "Dragonair tied the opponent\nScizor in a referee's decision!",
+      "[faint] Dragonair",
+      "[faint] The opposing Scizor",
+      "You have no more Pokémon that can fight!",
+      "You lost against YOUNGSTER Joey!",
+      "You blacked out!",
+      "== end decision=2",
+      "#0 DRAGONAIR hp=0/111 st=NONE FAINTED",
+      "#1 SCIZOR hp=0/131 st=NONE FAINTED"
+    ],
+    "errors": [
+
+    ]
+  },
+  {
+    "name": "arena tie",
+    "kind": "arena",
+    "seed": 77,
+    "turns": 8,
+    "choices": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "p1": [
+      {
+        "s": "CHANSEY",
+        "n": "BOLD",
+        "m": [
+          "POUND",
+          "PROTECT"
+        ],
+        "l": 50
+      },
+      {
+        "s": "PIDGEY",
+        "n": "HARDY",
+        "m": [
+          "TACKLE"
+        ],
+        "l": 20
+      }
+    ],
+    "p2": [
+      {
+        "s": "BLISSEY",
+        "n": "BOLD",
+        "m": [
+          "POUND",
+          "PROTECT"
+        ],
+        "l": 50
+      },
+      {
+        "s": "RATTATA",
+        "n": "HARDY",
+        "m": [
+          "TACKLE"
+        ],
+        "l": 20
+      }
+    ],
+    "decision": 2,
+    "log": [
+      "You are challenged by YOUNGSTER Joey!",
+      "YOUNGSTER Joey sent out Blissey!",
+      "[sendout] 1: Blissey",
+      "Go! Chansey!",
+      "[sendout] 0: Chansey",
+      "[arena] Chansey VS Blissey",
+      "== round 1",
+      "#0 CHANSEY hp=325/325 st=NONE",
+      "#1 BLISSEY hp=330/330 st=NONE",
+      "The opposing Blissey used Protect!",
+      "The opposing Blissey protected itself!",
+      "Chansey used Protect!",
+      "But it failed!",
+      "== round 2",
+      "#0 CHANSEY hp=325/325 st=NONE",
+      "#1 BLISSEY hp=330/330 st=NONE",
+      "The opposing Blissey used Protect!",
+      "But it failed!",
+      "Chansey used Protect!",
+      "But it failed!",
+      "== round 3",
+      "#0 CHANSEY hp=325/325 st=NONE",
+      "#1 BLISSEY hp=330/330 st=NONE",
+      "The opposing Blissey used Protect!",
+      "The opposing Blissey protected itself!",
+      "Chansey used Protect!",
+      "But it failed!",
+      "[judgment] Chansey [1, 0, 1] Blissey [1, 2, 1]",
+      "Chansey lost to the opponent\nBlissey in a referee's decision!",
+      "[faint] Chansey",
+      "You're in charge, Pidgey!",
+      "[sendout] 0: Pidgey",
+      "== round 4",
+      "#0 PIDGEY hp=52/52 st=NONE",
+      "#1 BLISSEY hp=330/330 st=NONE",
+      "Pidgey has no moves left!",
+      "The opposing Blissey used Protect!",
+      "The opposing Blissey protected itself!",
+      "Pidgey used Struggle!",
+      "The opposing Blissey protected itself!",
+      "[judgment] Pidgey [2, 0, 0] Blissey [0, 2, 2]",
+      "Pidgey lost to the opponent\nBlissey in a referee's decision!",
+      "[faint] Pidgey",
+      "You have no more Pokémon that can fight!",
+      "You lost against YOUNGSTER Joey!",
+      "You blacked out!",
+      "== end decision=2",
+      "#0 PIDGEY hp=0/52 st=NONE FAINTED",
+      "#1 BLISSEY hp=330/330 st=NONE"
+    ],
+    "errors": [
+
+    ]
+  },
+  {
+    "name": "recorded",
+    "kind": "recorded",
+    "seed": 21,
+    "turns": 12,
+    "choices": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        "s1",
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        "s1"
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "p1": [
+      {
+        "s": "QUILAVA",
+        "n": "HARDY",
+        "m": [
+          "EMBER",
+          "QUICKATTACK",
+          "SMOKESCREEN",
+          "SWIFT"
+        ],
+        "l": 30
+      },
+      {
+        "s": "PIDGEOTTO",
+        "n": "HARDY",
+        "m": [
+          "GUST",
+          "QUICKATTACK",
+          "SANDATTACK",
+          "WINGATTACK"
+        ],
+        "l": 28
+      }
+    ],
+    "p2": [
+      {
+        "s": "ONIX",
+        "n": "HARDY",
+        "m": [
+          "ROCKTHROW",
+          "BIND",
+          "HARDEN",
+          "TACKLE"
+        ],
+        "l": 28
+      },
+      {
+        "s": "GEODUDE",
+        "n": "HARDY",
+        "m": [
+          "TACKLE",
+          "ROCKTHROW",
+          "DEFENSECURL",
+          "MAGNITUDE"
+        ],
+        "l": 27
+      }
+    ],
+    "decision": 2,
+    "log": [
+      "You are challenged by YOUNGSTER Joey!",
+      "YOUNGSTER Joey sent out Onix!",
+      "[sendout] 1: Onix",
+      "Go! Quilava!",
+      "[sendout] 0: Quilava",
+      "== round 1",
+      "#0 QUILAVA hp=84/84 st=NONE",
+      "#1 ONIX hp=66/66 st=NONE",
+      "Quilava used Ember!",
+      "It's not very effective...",
+      "The opposing Onix used Rock Throw!",
+      "It's super effective!",
+      "== round 2",
+      "#0 QUILAVA hp=52/84 st=NONE",
+      "#1 ONIX hp=52/66 st=NONE",
+      "Quilava used Quick Attack!",
+      "It's not very effective...",
+      "The opposing Onix used Rock Throw!",
+      "A critical hit!",
+      "It's super effective!",
+      "== round 3",
+      "#0 QUILAVA hp=4/84 st=NONE",
+      "#1 ONIX hp=49/66 st=NONE",
+      "Good job, Quilava! Come back!",
+      "[recall] 0",
+      "Go for it, Pidgeotto!",
+      "[sendout] 0: Pidgeotto",
+      "The opposing Onix used Harden!",
+      "The opposing Onix's Defense rose!",
+      "== round 4",
+      "#0 PIDGEOTTO hp=81/81 st=NONE",
+      "#1 ONIX hp=49/66 st=NONE",
+      "Pidgeotto used Gust!",
+      "It's not very effective...",
+      "The opposing Onix used Bind!",
+      "Pidgeotto was squeezed by the opposing Onix!",
+      "Pidgeotto is hurt by Bind!",
+      "== round 5",
+      "#0 PIDGEOTTO hp=66/81 st=NONE",
+      "#1 ONIX hp=40/66 st=NONE",
+      "Pidgeotto used Gust!",
+      "It's not very effective...",
+      "The opposing Onix used Rock Throw!",
+      "It's super effective!",
+      "Pidgeotto is hurt by Bind!",
+      "== round 6",
+      "#0 PIDGEOTTO hp=19/81 st=NONE",
+      "#1 ONIX hp=31/66 st=NONE",
+      "YOUNGSTER Joey withdrew Onix!",
+      "[recall] 1",
+      "YOUNGSTER Joey sent out Geodude!",
+      "[sendout] 1: Geodude",
+      "Pidgeotto used Sand Attack!",
+      "The opposing Geodude's accuracy fell!",
+      "== round 7",
+      "#0 PIDGEOTTO hp=19/81 st=NONE",
+      "#1 GEODUDE hp=66/66 st=NONE",
+      "Pidgeotto used Gust!",
+      "It's not very effective...",
+      "The opposing Geodude used Tackle!",
+      "== round 8",
+      "#0 PIDGEOTTO hp=7/81 st=NONE",
+      "#1 GEODUDE hp=54/66 st=NONE",
+      "Pidgeotto used Gust!",
+      "It's not very effective...",
+      "The opposing Geodude used Magnitude!",
+      "Magnitude 7!",
+      "It doesn't affect Pidgeotto...",
+      "== round 9",
+      "#0 PIDGEOTTO hp=7/81 st=NONE",
+      "#1 GEODUDE hp=42/66 st=NONE",
+      "Pidgeotto used Gust!",
+      "It's not very effective...",
+      "The opposing Geodude used Tackle!",
+      "Pidgeotto fainted!",
+      "[faint] Pidgeotto",
+      "Just a little more! Hang in there, Quilava!",
+      "[sendout] 0: Quilava",
+      "== round 10",
+      "#0 QUILAVA hp=4/84 st=NONE",
+      "#1 GEODUDE hp=31/66 st=NONE",
+      "Quilava used Quick Attack!",
+      "It's not very effective...",
+      "The opposing Geodude used Tackle!",
+      "The opposing Geodude's attack missed!",
+      "== round 11",
+      "#0 QUILAVA hp=4/84 st=NONE",
+      "#1 GEODUDE hp=26/66 st=NONE",
+      "Quilava used Ember!",
+      "It's not very effective...",
+      "The opposing Geodude used Tackle!",
+      "Quilava fainted!",
+      "[faint] Quilava",
+      "You have no more Pokémon that can fight!",
+      "You lost against YOUNGSTER Joey!",
+      "You blacked out!",
+      "== end decision=2",
+      "#0 QUILAVA hp=0/84 st=NONE FAINTED",
+      "#1 GEODUDE hp=7/66 st=NONE"
+    ],
+    "errors": [
+
+    ],
+    "record": {
+      "type": 0,
+      "rounds": [
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+
+          ],
+          [
+
+          ]
+        ]
+      ],
+      "switches": [
+        0
+      ],
+      "randomCount": 66
+    },
+    "playback": {
+      "decision": 2,
+      "log": [
+        "You are challenged by YOUNGSTER Joey!",
+        "YOUNGSTER Joey sent out Onix!",
+        "[sendout] 1: Onix",
+        "Go! Quilava!",
+        "[sendout] 0: Quilava",
+        "== round 1",
+        "#0 QUILAVA hp=84/84 st=NONE",
+        "#1 ONIX hp=66/66 st=NONE",
+        "Quilava used Ember!",
+        "It's not very effective...",
+        "The opposing Onix used Rock Throw!",
+        "It's super effective!",
+        "== round 2",
+        "#0 QUILAVA hp=52/84 st=NONE",
+        "#1 ONIX hp=52/66 st=NONE",
+        "Quilava used Quick Attack!",
+        "It's not very effective...",
+        "The opposing Onix used Rock Throw!",
+        "A critical hit!",
+        "It's super effective!",
+        "== round 3",
+        "#0 QUILAVA hp=4/84 st=NONE",
+        "#1 ONIX hp=49/66 st=NONE",
+        "Good job, Quilava! Come back!",
+        "[recall] 0",
+        "Go for it, Pidgeotto!",
+        "[sendout] 0: Pidgeotto",
+        "The opposing Onix used Harden!",
+        "The opposing Onix's Defense rose!",
+        "== round 4",
+        "#0 PIDGEOTTO hp=81/81 st=NONE",
+        "#1 ONIX hp=49/66 st=NONE",
+        "Pidgeotto used Gust!",
+        "It's not very effective...",
+        "The opposing Onix used Bind!",
+        "Pidgeotto was squeezed by the opposing Onix!",
+        "Pidgeotto is hurt by Bind!",
+        "== round 5",
+        "#0 PIDGEOTTO hp=66/81 st=NONE",
+        "#1 ONIX hp=40/66 st=NONE",
+        "Pidgeotto used Gust!",
+        "It's not very effective...",
+        "The opposing Onix used Rock Throw!",
+        "It's super effective!",
+        "Pidgeotto is hurt by Bind!",
+        "== round 6",
+        "#0 PIDGEOTTO hp=19/81 st=NONE",
+        "#1 ONIX hp=31/66 st=NONE",
+        "YOUNGSTER Joey withdrew Onix!",
+        "[recall] 1",
+        "YOUNGSTER Joey sent out Geodude!",
+        "[sendout] 1: Geodude",
+        "Pidgeotto used Sand Attack!",
+        "The opposing Geodude's accuracy fell!",
+        "== round 7",
+        "#0 PIDGEOTTO hp=19/81 st=NONE",
+        "#1 GEODUDE hp=66/66 st=NONE",
+        "Pidgeotto used Gust!",
+        "It's not very effective...",
+        "The opposing Geodude used Tackle!",
+        "== round 8",
+        "#0 PIDGEOTTO hp=7/81 st=NONE",
+        "#1 GEODUDE hp=54/66 st=NONE",
+        "Pidgeotto used Gust!",
+        "It's not very effective...",
+        "The opposing Geodude used Magnitude!",
+        "Magnitude 7!",
+        "It doesn't affect Pidgeotto...",
+        "== round 9",
+        "#0 PIDGEOTTO hp=7/81 st=NONE",
+        "#1 GEODUDE hp=42/66 st=NONE",
+        "Pidgeotto used Gust!",
+        "It's not very effective...",
+        "The opposing Geodude used Tackle!",
+        "Pidgeotto fainted!",
+        "[faint] Pidgeotto",
+        "Just a little more! Hang in there, Quilava!",
+        "[sendout] 0: Quilava",
+        "== round 10",
+        "#0 QUILAVA hp=4/84 st=NONE",
+        "#1 GEODUDE hp=31/66 st=NONE",
+        "Quilava used Quick Attack!",
+        "It's not very effective...",
+        "The opposing Geodude used Tackle!",
+        "The opposing Geodude's attack missed!",
+        "== round 11",
+        "#0 QUILAVA hp=4/84 st=NONE",
+        "#1 GEODUDE hp=26/66 st=NONE",
+        "Quilava used Ember!",
+        "It's not very effective...",
+        "The opposing Geodude used Tackle!",
+        "Quilava fainted!",
+        "[faint] Quilava",
+        "You have no more Pokémon that can fight!",
+        "You lost against YOUNGSTER Joey!",
+        "You blacked out!",
+        "== end decision=2",
+        "#0 QUILAVA hp=0/84 st=NONE FAINTED",
+        "#1 GEODUDE hp=7/66 st=NONE"
+      ],
+      "errors": [
+
+      ]
+    }
+  }
+]

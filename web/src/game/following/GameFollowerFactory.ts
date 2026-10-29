@@ -310,7 +310,7 @@ export class GameFollowerFactory implements FollowerFactoryLike {
         follower.invisibleAfterTransfer = false;
         event.turnTowardsLeader(p);
       }
-      event.through = false; // event.on_stair? (Marin's stairs aren't ported)
+      event.through = event.onStair?.() ?? false; // Added
       event.copyMoveSpeedReal(leader);
       event.transparent = !follower.isVisible();
       updateShowsShadow(event); // Overworld Shadows EX's transparent= alias

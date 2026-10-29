@@ -1012,14 +1012,14 @@ export class SlideSpriteAppear extends Animation {
   private idxTrainer: number | null = null;
   private guestSpeaker = false;
 
-  constructor(sprites: SceneSprites, viewport: Viewport | null, id: number | string | unknown[], private battle: SceneBattle,
+  constructor(sprites: SceneSprites, viewport: Viewport | null, id: number | string | unknown[] | null, private battle: SceneBattle,
     private scene: SlideSpriteScene) {
     super(sprites, viewport);
     if (typeof id === "number") {
       this.idxTrainer = id + 1;
       const trainer = this.battle.opponent![id];
       this.scene.pbUpdateNameWindow(trainer, false);
-    } else {
+    } else if (typeof id === "string" || Array.isArray(id)) { // Ruby: when Symbol, Array (nil shows no one)
       if (!this.scene.guestSpeaker) this.scene.pbUpdateGuestSprite(id);
       this.guestSpeaker = true;
     }

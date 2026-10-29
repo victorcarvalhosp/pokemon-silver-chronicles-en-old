@@ -61,8 +61,8 @@ const player = () => G.player as unknown as Player;
 
 /** Screens the party screen opens that are ported elsewhere (set by those ports). */
 export const PartyHooks: {
-  /** pbFadeOutIn { PokemonStorageScreen.new(PokemonStorageScene.new, $PokemonStorage).pbStartScreen(0) } (Box Link) */
-  pokemonStorage?: () => Promise<void>;
+  /** pbFadeOutIn { PokemonStorageScreen.new(PokemonStorageScene.new, $PokemonStorage).pbStartScreen(0); pbHardRefresh } (Box Link) */
+  pokemonStorage?: (hardRefresh: () => void) => Promise<void>;
   /** PokemonPartyScreen#pbPokemonDebug(pkmn, pkmnid) (only with $DEBUG) */
   pokemonDebug?: (screen: PokemonPartyScreen, pkmn: Pokemon, pkmnid: number) => Promise<void>;
 } = {};
@@ -880,10 +880,7 @@ export class PokemonParty_Scene {
       const cancelsprite = Settings.MAX_PARTY_SIZE + (this.multiselect ? 1 : 0);
       if (Input.trigger(Input.SPECIAL) && this.canAccessStorage && canswitch !== 2) {
         pbPlayDecisionSE();
-        if (PartyHooks.pokemonStorage) {
-          await PartyHooks.pokemonStorage();
-          this.pbHardRefresh();
-        }
+        if (PartyHooks.pokemonStorage) await PartyHooks.pokemonStorage(() => this.pbHardRefresh());
       } else if (Input.trigger(Input.ACTION) && canswitch === 1 && this.activecmd !== cancelsprite) {
         pbPlayDecisionSE();
         return [1, this.activecmd];
@@ -1346,7 +1343,9 @@ export class PokemonPartyScreen {
           }
           this.scene.pbSelect(oldPartyIdx);
           this.pbRefresh();
-        } else if (FieldActions.canUseHiddenMove?.(pkmn, move.id, true)) {
+        } else if (FieldActions.canUseHiddenMoveAsync
+          ? await FieldActions.canUseHiddenMoveAsync(pkmn, move.id, true)
+          : FieldActions.canUseHiddenMove?.(pkmn, move.id, true)) {
           if (await FieldActions.confirmUseHiddenMove?.(pkmn, move.id)) {
             await this.scene.pbEndScene();
             if (move.id === "FLY") {

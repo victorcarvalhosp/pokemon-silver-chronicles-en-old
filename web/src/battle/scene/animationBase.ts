@@ -2,8 +2,8 @@
 // Battle::Scene::Animation (the base of all hardcoded battle animations) and
 // the BallAnimationMixin (here a subclass, BallAnimation), plus Essentials
 // Deluxe's Animation helpers ([000] Essentials Patches/Battle_Scene.rb:150-584:
-// addPokeSprite, darkenBattlefield, revertBattlefield; the dx* cinematic
-// helpers used by Mega Evolution/Dynamax/midbattle cinematics aren't ported).
+// addPokeSprite, darkenBattlefield, revertBattlefield and the dx* cinematic
+// helpers used by the Mega Evolution/Primal Reversion/ZUD cinematics).
 //
 // PictureEx counts 60 Hz ticks with delays/durations in 1/20 s (see
 // PictureEx.ts), and update() runs once per tick, so these last as long in
@@ -12,8 +12,10 @@
 // Graphics used here must be preloaded (rpgCache) before an animation is
 // created: IconSprite#setBitmap reads them synchronously, as in Ruby.
 
+import { assetExists } from "../../core/assets";
 import { rand } from "../../core/random";
 import type { Id } from "../../data/gameData/gameData";
+import { SpeciesMetrics } from "../../data/gameData/speciesMetrics";
 import type { Pokemon } from "../../game/pokemon/Pokemon";
 import type { Viewport } from "../../rgss/display";
 import { Color, Tone } from "../../rgss/types";
@@ -157,7 +159,352 @@ export class Animation {
       box.moveTone(delay, 6, tone);
     }
   }
+
+  //-----------------------------------------------------------------------------
+  // Essentials Deluxe: cinematic helpers ([000] Battle_Scene.rb:219-583).
+  // Every graphic they load must be preloaded (see dxPreloadCinematic).
+  //-----------------------------------------------------------------------------
+  /** @opposes of the cinematic subclasses (read by dxSetBases). */
+  protected opposes = false;
+
+  /** Sets the backdrop. */
+  dxSetBackdrop(checkfile: string, defaultFile: string, delay: number): [PictureEx, number] {
+    let zoom = 1;
+    let file: string;
+    if (assetExists(checkfile)) {
+      file = checkfile;
+    } else if (assetExists(defaultFile)) {
+      zoom = 1.5;
+      file = defaultFile;
+    } else {
+      file = "Graphics/Pictures/evolutionbg";
+    }
+    const pictureBG = this.addNewSprite(0, 0, file);
+    pictureBG.setVisible(delay, false);
+    const spriteBG = this.pictureEx.length - 1;
+    this.pictureSprites[spriteBG]!.z = 999;
+    pictureBG.setZ(delay, this.pictureSprites[spriteBG]!.z);
+    pictureBG.setZoom(delay, 100 * zoom);
+    return [pictureBG, spriteBG];
+  }
+
+  /** Sets the battle bases. Only sets one if a trainer doesn't appear. */
+  dxSetBases(checkfile: string, defaultFile: string, delay: number, xpos: number, ypos: number, offset = false): [PictureEx[], number] {
+    let trBaseOffset = 0;
+    const file = assetExists(checkfile) ? checkfile : defaultFile;
+    const pictureBASES: PictureEx[] = [];
+    if (offset) {
+      const base = this.addNewSprite(0, 0, file);
+      base.setVisible(delay, false);
+      const s = this.pictureSprites[this.pictureEx.length - 1]!;
+      s.x = this.opposes ? SCREEN_W : -bitmapWidth(s);
+      s.y = ypos - 33;
+      s.z = 999;
+      trBaseOffset = Math.floor(bitmapWidth(s) / 4);
+      base.setXY(delay, s.x, s.y);
+      base.setZ(delay, s.z);
+      pictureBASES.push(base);
+    }
+    const base = this.addNewSprite(0, 0, file);
+    base.setVisible(delay, false);
+    const s = this.pictureSprites[this.pictureEx.length - 1]!;
+    s.x = xpos - Math.floor(bitmapWidth(s) / 2);
+    s.y = ypos;
+    if (offset) s.y += 20;
+    s.z = 999;
+    base.setXY(delay, s.x, s.y);
+    base.setZ(delay, s.z);
+    pictureBASES.push(base);
+    return [pictureBASES, trBaseOffset];
+  }
+
+  /** Places a Pokémon sprite where the cinematics show it (dxSetPokemon/dxSetPokemonWithOutline). */
+  private dxPlacePokeSprite(poke: Pokemon | unknown[], sprite: AnySprite, dx: number, dy: number, mirror: boolean, offset: boolean, useSet: boolean): void {
+    const battlePos = AnimationDxHooks.battlerPosition(1, 1);
+    sprite.mirror = mirror;
+    sprite.x = battlePos[0] + dx - 128;
+    sprite.y = battlePos[1] + dy + 80;
+    if (offset) sprite.y += 20;
+    sprite.ox = Math.floor(bitmapWidth(sprite) / 2);
+    sprite.oy = bitmapHeight(sprite);
+    sprite.z = 999;
+    if (Array.isArray(poke)) {
+      const set = useSet ? (poke[8] ? 2 : poke[7] ? 1 : 0) : 0;
+      SpeciesMetrics.getSpeciesForm(poke[0] as Id, poke[2] as number)?.applyMetricsToSprite(sprite, 1, false, set);
+    } else {
+      poke.speciesData().applyMetricsToSprite(sprite, 1);
+    }
+  }
+
+  /** Sets a Pokemon sprite. */
+  dxSetPokemon(poke: Pokemon | unknown[], delay: number, mirror = false, offset = false, opacity = 100, zoom = 100): [PictureEx, number] {
+    const picturePOKE = this.addPokeSprite(poke, PictureOrigin.BOTTOM);
+    picturePOKE.setVisible(delay, false);
+    const spritePOKE = this.pictureEx.length - 1;
+    const s = this.pictureSprites[spritePOKE]!;
+    this.dxPlacePokeSprite(poke, s, 0, 0, mirror, offset, false);
+    picturePOKE.setXY(delay, s.x, s.y);
+    picturePOKE.setZ(delay, s.z);
+    if (zoom !== 100) picturePOKE.setZoom(delay, zoom);
+    if (opacity !== 100) picturePOKE.setOpacity(delay, opacity);
+    return [picturePOKE, spritePOKE];
+  }
+
+  /** Sets a Pokemon sprite with an outline. */
+  dxSetPokemonWithOutline(poke: Pokemon | unknown[], delay: number, mirror = false, offset = false, color: Color = new Color(255, 255, 255)): [PictureEx, number][] {
+    const picturePOKE: [PictureEx, number][] = [];
+    for (const i of OUTLINE_OFFSETS) {
+      const outline = this.addPokeSprite(poke, PictureOrigin.BOTTOM);
+      outline.setVisible(delay, false);
+      const sprite = this.pictureEx.length - 1;
+      const s = this.pictureSprites[sprite]!;
+      this.dxPlacePokeSprite(poke, s, i[0], i[1], mirror, offset, true);
+      outline.setXY(delay, s.x, s.y);
+      outline.setZ(delay, s.z);
+      if (i[0] !== 0 || i[1] !== 0) outline.setColor(delay, color);
+      picturePOKE.push([outline, sprite]);
+    }
+    return picturePOKE;
+  }
+
+  /** Sets up a trainer sprite along with an item sprite to be 'used'. */
+  dxSetTrainerWithItem(trainer: string, item: string, delay: number, mirror = false, color: Color = new Color(255, 255, 255)): [PictureEx, number, number, [PictureEx, number][]] {
+    const pictureTRAINER = this.addNewSprite(0, 0, trainer);
+    pictureTRAINER.setVisible(delay, false);
+    const spriteTRAINER = this.pictureEx.length - 1;
+    const ts = this.pictureSprites[spriteTRAINER]!;
+    ts.y = 105;
+    let trainerEndX: number;
+    if (mirror) {
+      ts.mirror = true;
+      ts.x = -bitmapWidth(ts);
+      trainerEndX = 0;
+    } else {
+      ts.x = SCREEN_W;
+      trainerEndX = SCREEN_W - bitmapWidth(ts);
+    }
+    ts.z = 999;
+    const trainerX = ts.x, trainerY = ts.y;
+    pictureTRAINER.setXY(delay, trainerX, trainerY);
+    pictureTRAINER.setZ(delay, ts.z);
+    const pictureITEM: [PictureEx, number][] = [];
+    for (const i of OUTLINE_OFFSETS) {
+      const outline = this.addNewSprite(0, 0, item, PictureOrigin.BOTTOM);
+      outline.setVisible(delay, false);
+      const sprite = this.pictureEx.length - 1;
+      const s = this.pictureSprites[sprite]!;
+      s.x = trainerEndX + Math.floor(bitmapWidth(ts) / 2) + i[0];
+      s.y = 97 + i[1];
+      s.oy = bitmapHeight(s);
+      s.z = 999;
+      outline.setXY(delay, s.x, s.y);
+      outline.setZ(delay, s.z);
+      outline.setOpacity(delay, 0);
+      if (i[0] !== 0 || i[1] !== 0) outline.setColor(delay, color);
+      pictureITEM.push([outline, sprite]);
+    }
+    return [pictureTRAINER, trainerEndX, trainerY, pictureITEM];
+  }
+
+  /** Sets a sprite. */
+  dxSetSprite(file: string, delay: number, xpos: number, ypos: number, offset = false, opacity = 100, zoom = 100): [PictureEx, number] {
+    const pictureSPRITE = this.addNewSprite(0, 0, file, PictureOrigin.CENTER);
+    pictureSPRITE.setVisible(delay, false);
+    const spriteSPRITE = this.pictureEx.length - 1;
+    const s = this.pictureSprites[spriteSPRITE]!;
+    s.x = xpos;
+    s.y = ypos;
+    if (offset) s.y += 20;
+    s.z = 999;
+    s.oy = bitmapHeight(s);
+    pictureSPRITE.setXY(delay, s.x, s.y);
+    pictureSPRITE.setZ(delay, s.z);
+    if (zoom !== 100) pictureSPRITE.setZoom(delay, zoom);
+    if (opacity !== 100) pictureSPRITE.setOpacity(delay, opacity);
+    return [pictureSPRITE, spriteSPRITE];
+  }
+
+  /** Sets a sprite with an outline. */
+  dxSetSpriteWithOutline(file: string | null, delay: number, xpos: number, ypos: number, color: Color = new Color(255, 255, 255)): [PictureEx, number][] {
+    const pictureSPRITE: [PictureEx, number][] = [];
+    if (file && assetExists(file)) {
+      for (const i of OUTLINE_OFFSETS) {
+        const outline = this.addNewSprite(0, 0, file, PictureOrigin.BOTTOM);
+        outline.setVisible(delay, false);
+        const sprite = this.pictureEx.length - 1;
+        const s = this.pictureSprites[sprite]!;
+        s.x = xpos + i[0];
+        s.y = ypos + i[1];
+        s.z = 999;
+        s.oy = bitmapHeight(s);
+        outline.setXY(delay, s.x, s.y);
+        outline.setZ(delay, s.z);
+        outline.setOpacity(delay, 0);
+        if (i[0] !== 0 || i[1] !== 0) outline.setColor(delay, color);
+        pictureSPRITE.push([outline, sprite]);
+      }
+    }
+    return pictureSPRITE;
+  }
+
+  /** Sets a sprite to act as a title. */
+  dxSetTitleWithOutline(file: string | null, delay: number, upper = false, color: Color = new Color(255, 255, 255)): [PictureEx, number][] {
+    const pictureTITLE: [PictureEx, number][] = [];
+    if (file && assetExists(file)) {
+      for (const i of OUTLINE_OFFSETS) {
+        const outline = this.addNewSprite(0, 0, file, PictureOrigin.CENTER);
+        outline.setVisible(delay, false);
+        const sprite = this.pictureEx.length - 1;
+        const s = this.pictureSprites[sprite]!;
+        s.x = (SCREEN_W - Math.floor(bitmapWidth(s) / 2)) + i[0];
+        if (upper) {
+          s.y = Math.floor(bitmapHeight(s) / 2) + i[1];
+        } else {
+          s.y = (SCREEN_H - Math.floor(bitmapHeight(s) / 2)) + i[1];
+        }
+        s.z = 999;
+        outline.setXY(delay, s.x, s.y);
+        outline.setZ(delay, s.z);
+        outline.setZoom(delay, 300);
+        outline.setOpacity(delay, 0);
+        if (i[0] !== 0 || i[1] !== 0) outline.setColor(delay, color);
+        outline.setTone(delay, new Tone(255, 255, 255, 255));
+        pictureTITLE.push([outline, sprite]);
+      }
+    }
+    return pictureTITLE;
+  }
+
+  /** Sets an overlay. */
+  dxSetOverlay(file: string, delay: number): [PictureEx, number] {
+    const pictureOVERLAY = this.addNewSprite(0, 0, file);
+    pictureOVERLAY.setVisible(delay, false);
+    const spriteOVERLAY = this.pictureEx.length - 1;
+    this.pictureSprites[spriteOVERLAY]!.z = 999;
+    pictureOVERLAY.setZ(delay, 999);
+    pictureOVERLAY.setOpacity(delay, 0);
+    return [pictureOVERLAY, spriteOVERLAY];
+  }
+
+  /** Sets a set of four particle sprites by repeating an image: [picture, origin x, origin y]. */
+  dxSetParticles(file: string, delay: number, xpos: number, ypos: number, range: number, offset = false): [PictureEx, number, number][] {
+    const picturePARTICLES: [PictureEx, number, number][] = [];
+    for (let i = 0; i < 4; i++) {
+      const particle = this.addNewSprite(0, 0, file, PictureOrigin.CENTER);
+      particle.setVisible(delay, false);
+      const s = this.pictureSprites[this.pictureEx.length - 1]!;
+      s.x = (i === 0 || i === 2) ? xpos - range : xpos + range;
+      s.y = (i < 2) ? ypos - range : ypos + range;
+      if (offset) s.y += 20;
+      s.z = 999;
+      const originX = s.x, originY = s.y;
+      particle.setXY(delay, originX, originY);
+      particle.setZ(delay, s.z);
+      picturePARTICLES.push([particle, originX, originY]);
+    }
+    return picturePARTICLES;
+  }
+
+  /** Sets a set of four particle sprites cut up from a single image: [picture, x, y]. */
+  dxSetParticlesRect(file: string, delay: number, width: number, length: number, range: number, offset = false,
+    inwards = false, idxBattler: number | null = null): [PictureEx, number, number][] {
+    const picturePARTICLES: [PictureEx, number, number][] = [];
+    let xpos: number, ypos: number, zpos: number;
+    if (idxBattler != null) {
+      const batSprite = this.sprites[`pokemon_${idxBattler}`];
+      const pos = AnimationDxHooks.battlerPosition(idxBattler, batSprite.sideSize);
+      xpos = pos[0];
+      ypos = pos[1] - Math.floor(bitmapWidth(batSprite) / 2);
+      zpos = batSprite.z;
+    } else {
+      xpos = SCREEN_W / 2;
+      ypos = SCREEN_H / 2;
+      zpos = 999;
+    }
+    for (let i = 0; i < 4; i++) {
+      const particle = this.addNewSprite(0, 0, file, PictureOrigin.CENTER);
+      particle.setVisible(delay, false);
+      const s = this.pictureSprites[this.pictureEx.length - 1]!;
+      const hWidth = Math.round(width / 2);
+      const hLength = Math.round(length / 2);
+      let startX = 0, startY = 0, endX = 0, endY = 0;
+      switch (i) {
+        case 0:
+          particle.setSrc(delay, 0, 0);
+          particle.setSrcSize(delay, hWidth, hLength);
+          [startX, startY] = [xpos - range, ypos - range];
+          [endX, endY] = [-range, -range];
+          break;
+        case 1:
+          particle.setSrc(delay, hWidth, 0);
+          particle.setSrcSize(delay, width, hLength);
+          [startX, startY] = [xpos + hWidth + range, ypos - range];
+          [endX, endY] = [SCREEN_W + range, -range];
+          break;
+        case 2:
+          particle.setSrc(delay, 0, hLength);
+          particle.setSrcSize(delay, hWidth, length);
+          [startX, startY] = [xpos - range, ypos + hLength + range];
+          [endX, endY] = [-range, SCREEN_H + range];
+          break;
+        case 3:
+          particle.setSrc(delay, hWidth, hLength);
+          particle.setSrcSize(delay, width, length);
+          [startX, startY] = [xpos + hWidth + range, ypos + hLength + range];
+          [endX, endY] = [SCREEN_W + range, SCREEN_H + range];
+          break;
+      }
+      s.z = zpos;
+      particle.setZ(delay, s.z);
+      if (inwards) {
+        if (offset) startY += 20;
+        s.x = startX;
+        s.y = startY;
+        particle.setXY(delay, s.x, s.y);
+        picturePARTICLES.push([particle, startX, startY]);
+      } else {
+        s.x = xpos + Math.round(width / 4);
+        s.y = ypos + Math.round(length / 4);
+        if (offset) s.y += 20;
+        particle.setXY(delay, s.x, s.y);
+        picturePARTICLES.push([particle, endX, endY]);
+      }
+    }
+    return picturePARTICLES;
+  }
+
+  /** Sets the skip button. */
+  dxSetSkipButton(delay: number): PictureEx {
+    const pictureBUTTON = this.addNewSprite(0, SCREEN_H, DX_ANIM_PATH + "skip_button");
+    this.pictureSprites[this.pictureEx.length - 1]!.z = 999;
+    pictureBUTTON.setZ(delay, 999);
+    return pictureBUTTON;
+  }
+
+  /** Sets a fade-in/fade-out overlay. */
+  dxSetFade(delay: number): PictureEx {
+    const pictureFADE = this.addNewSprite(0, 0, DX_ANIM_PATH + "fade");
+    this.pictureSprites[this.pictureEx.length - 1]!.z = 999;
+    pictureFADE.setZ(delay, 999);
+    pictureFADE.setOpacity(delay, 0);
+    return pictureFADE;
+  }
 }
+
+const SCREEN_H = 384;
+/** Essentials Deluxe's cinematic graphics folder. */
+export const DX_ANIM_PATH = "Graphics/Plugins/Essentials Deluxe/Animations/";
+/** The outline offsets the dx*WithOutline helpers draw (the last one is the sprite itself). */
+const OUTLINE_OFFSETS: readonly (readonly [number, number])[] = [[2, 0], [-2, 0], [0, 2], [0, -2], [2, 2], [-2, -2], [2, -2], [-2, 2], [0, 0]];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const bitmapWidth = (s: any): number => s.bitmap?.width ?? 0;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const bitmapHeight = (s: any): number => s.bitmap?.height ?? 0;
+
+/** Battle::Scene.pbBattlerPosition for the dx helpers (set by BattleScene, like AnimationHooks). */
+export const AnimationDxHooks: { battlerPosition: (index: number, sideSize?: number) => [number, number] } = {
+  battlerPosition: () => [0, 0],
+};
 
 //===============================================================================
 // Mixin module for certain hardcoded battle animations that involve Poké Balls.

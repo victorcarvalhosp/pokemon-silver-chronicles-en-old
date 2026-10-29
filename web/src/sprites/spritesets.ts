@@ -1,6 +1,7 @@
 // Ports of 005_Sprites/007_Spriteset_Map.rb, 006_Spriteset_Global.rb and
 // 001_Sprite_Picture.rb.
 
+import { EventHandlers } from "../game/eventHandlers";
 import { Plane, Sprite, Viewport } from "../rgss/display";
 import { Bitmap } from "../rgss/Bitmap";
 import type { GameMap } from "../game/GameMap";
@@ -45,6 +46,13 @@ class NamedPlane extends Plane {
   }
 }
 
+/** What addUserSprite takes: an animation, the darkness overlay, ... */
+export interface UserSprite {
+  update(): void;
+  dispose(): void;
+  isDisposed(): boolean;
+}
+
 export class SpritesetMap {
   private panorama: NamedPlane;
   private fog: NamedPlane;
@@ -54,7 +62,7 @@ export class SpritesetMap {
   private fogName: string | null = null;
   private fogHue = 0;
   /** 008_Sprite_AnimationSprite.rb: @usersprites */
-  private usersprites: (AnimationSprite | null)[] = [];
+  private usersprites: (UserSprite | null)[] = [];
 
   constructor(readonly map: GameMap, renderer: TilemapRenderer) {
     const { v0, v1 } = mapViewports();
@@ -69,6 +77,7 @@ export class SpritesetMap {
     for (const id of [...map.events.keys()].sort((a, b) => a - b)) {
       this.characterSprites.push(new SpriteCharacter(v1, map.events.get(id)!, tileBitmap));
     }
+    EventHandlers.triggerSync("on_new_spriteset_map", this, v1);
     this.update();
   }
 
@@ -102,7 +111,7 @@ export class SpritesetMap {
     return sprite;
   }
 
-  addUserSprite(newSprite: AnimationSprite): void {
+  addUserSprite(newSprite: UserSprite): void {
     for (let i = 0; i < this.usersprites.length; i++) {
       const sprite = this.usersprites[i];
       if (sprite && !sprite.isDisposed()) continue;

@@ -174,9 +174,27 @@ export class Sprite implements Displayable {
   visible = true;
   color = new Color(0, 0, 0, 0);
   tone = new Tone();
+  /**
+   * mkxp-z's Sprite#pattern: a bitmap tiled over the sprite's own pixels
+   * (in bitmap coordinates, from patternScroll, scaled by patternZoom) and
+   * blended onto them with patternBlendType at patternOpacity. ZUD Mechanics
+   * colours Dynamax Pokémon with it. Approximation: the pattern is drawn
+   * under the sprite's tone/color (mkxp-z blends it in the same shader), and
+   * the bush part isn't patterned.
+   */
+  pattern: Bitmap | null = null;
+  patternOpacity = 255;
+  patternBlendType = 0;
+  patternScrollX = 0;
+  patternScrollY = 0;
+  patternZoomX = 1;
+  patternZoomY = 1;
   readonly node = new Container();
   private main = new PixiSprite();
   private bush = new PixiSprite();
+  private patternSprite: TilingSprite | null = null;
+  private patternMask: PixiSprite | null = null;
+  private lastPattern: Bitmap | null = null;
   private lastBitmap: Bitmap | null = null;
   private lastRect = new Rect(-1, -1, -1, -1);
   private lastBush = -1;
@@ -186,11 +204,24 @@ export class Sprite implements Displayable {
 
   private stamp = nextStamp++;
 
-  constructor(public viewport: Viewport | null = null) {
+  private _viewport: Viewport | null;
+
+  constructor(viewport: Viewport | null = null) {
+    this._viewport = viewport;
     this.node.addChild(this.main, this.bush);
     this.bush.alpha = 0.5;
     (viewport ? viewport.node : stage!).addChild(this.node);
     live.add(this);
+  }
+
+  get viewport(): Viewport | null { return this._viewport; }
+  /** mkxp-z's Sprite#viewport=: moves the sprite into another viewport. */
+  set viewport(value: Viewport | null) {
+    if (value === this._viewport) return;
+    this._viewport = value;
+    if (this.disposed) return;
+    this.node.removeFromParent();
+    (value ? value.node : stage!).addChild(this.node);
   }
 
   /** Assigning a bitmap resets src_rect to cover it, as in RGSS. */
@@ -246,7 +277,41 @@ export class Sprite implements Displayable {
     n.alpha = this.opacity / 255;
     n.zIndex = zIndexOf(this.z, this.stamp);
     n.blendMode = BLEND[this.blendType] ?? "normal";
+    this.syncPattern(flip);
     effects(n, this.filterHolder, this.tone, this.color, f === "hide" ? null : f);
+  }
+
+  /** mkxp-z Sprite#pattern (see the field). */
+  private syncPattern(flip: number): void {
+    const pat = this.pattern && !this.pattern.isDisposed() ? this.pattern : null;
+    if (!pat || this.patternOpacity <= 0) {
+      if (this.patternSprite) this.patternSprite.visible = false;
+      return;
+    }
+    if (!this.patternSprite) {
+      this.patternMask = new PixiSprite();
+      this.patternSprite = new TilingSprite({ texture: Texture.EMPTY, width: 1, height: 1 });
+      this.patternSprite.mask = this.patternMask;
+      this.node.addChild(this.patternMask, this.patternSprite);
+    }
+    const ps = this.patternSprite;
+    const mask = this.patternMask!;
+    if (pat !== this.lastPattern) {
+      ps.texture = pat.texture(pat.rect());
+      this.lastPattern = pat;
+    } else {
+      pat.textureSource();
+    }
+    ps.visible = true;
+    mask.texture = this.main.texture;
+    mask.scale.x = ps.scale.x = flip;
+    mask.x = ps.x = this.main.x;
+    ps.width = this.srcRect.width;
+    ps.height = Math.max(0, this.srcRect.height - Math.max(0, Math.min(this.bushDepth, this.srcRect.height)));
+    ps.tileScale.set(this.patternZoomX, this.patternZoomY);
+    ps.tilePosition.set(this.patternScrollX - this.srcRect.x, this.patternScrollY - this.srcRect.y);
+    ps.alpha = this.patternOpacity / 255;
+    ps.blendMode = BLEND[this.patternBlendType] ?? "normal";
   }
 }
 

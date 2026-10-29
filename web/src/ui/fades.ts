@@ -120,6 +120,25 @@ export async function pbFadeOutIn<T>(block?: () => Promise<T> | T, z = 99999, no
   return val;
 }
 
+/**
+ * pbFadeOutInWithMusic { ... } (002_MessageConfig.rb): pbFadeOutIn that pauses
+ * the map BGM/BGS (1 s fade) and resumes them where they were afterwards.
+ */
+export async function pbFadeOutInWithMusic<T>(block?: () => Promise<T> | T, z = 99999): Promise<void> {
+  const sys = G.gameSystem;
+  const playingBGS = sys.getPlayingBGS();
+  const playingBGM = sys.getPlayingBGM();
+  sys.bgmPause(1.0);
+  sys.bgsPause(1.0);
+  const pos = sys.bgmPosition;
+  await pbFadeOutIn(async () => {
+    if (block) await block();
+    sys.bgmPosition = pos;
+    sys.bgmResume(playingBGM);
+    sys.bgsResume(playingBGS);
+  }, z);
+}
+
 export async function pbFadeOutInWithUpdate<T>(z: number, sprites: SpriteHash, block?: () => Promise<T> | T, nofadeout = false): Promise<void> {
   const col = new Color(0, 0, 0, 0);
   const viewport = new Viewport(0, 0, Graphics.width, Graphics.height);

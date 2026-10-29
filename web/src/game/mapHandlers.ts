@@ -47,4 +47,4 @@ EventHandlers.add("on_enter_map", "add_to_trail", () => {
   g.mapTrail = [map().mapId, ...g.mapTrail];
 });
 
-// TODO(bicycle): :force_cycling (pbMountBike / pbDismountBike) arrives with the bike.
+// :force_cycling (pbMountBike / pbDismountBike) is in game/field/bicycle.ts.

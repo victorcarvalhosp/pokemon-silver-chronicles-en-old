@@ -14,12 +14,14 @@
 //      shadows (shadow_filename).
 // Not ported: Max Raid boss databoxes (draw_raid_shield/_counters, raid name,
 // status, shiny and owned icons; ZUD [005] Scene_PokemonDataBox.rb:8-169),
-// the Dynamax colour pattern (mkxp-z Sprite#pattern, ZUD [000] Sprite.rb:18-24).
+// the Dynamax colour pattern (mkxp-z Sprite#pattern, ZUD [000] Sprite.rb:18-24;
+// see ../zud/scene/dynamaxSprite.ts).
 //
 // Timing: Ruby scales these by Graphics.frame_rate (40); here they are scaled
 // by the 60 Hz tick (FRAME_RATE = 60), so they last the same in seconds.
 
 import { Settings } from "../../data/gameData/settings";
+import { applyDynamax as zudApplyDynamax, unDynamax as zudUnDynamax } from "../zud/scene/dynamaxSprite";
 import { SpeciesMetrics } from "../../data/gameData/speciesMetrics";
 import { Status } from "../../data/gameData/status";
 import { FRAME_RATE } from "../../game/GameCharacter";
@@ -695,18 +697,17 @@ export class BattlerSprite extends SpriteProxy {
     if (!battler) return;
     this.resetEffects();
     const dynamax = "index" in battler ? !!battler.dynamax?.() : battler.dynamax;
-    if (dynamax) this.applyDynamax();
+    if (dynamax) this.applyDynamax(battler);
   }
 
-  /** ZUD's Sprite#applyDynamax: double size (SHOW_DYNAMAX_SIZE); the colour pattern isn't supported. */
-  applyDynamax(): void {
-    if (Settings.SHOW_DYNAMAX_SIZE) this.zoomX = this.zoomY = 2;
+  /** ZUD's Sprite#applyDynamax: double size (SHOW_DYNAMAX_SIZE), Dynamax pattern (SHOW_DYNAMAX_COLOR). */
+  applyDynamax(pokemon: SceneBattler | Pokemon | null = null): void {
+    zudApplyDynamax(this.sprite, pokemon as never);
   }
 
   /** ZUD's Sprite#unDynamax */
   unDynamax(): void {
-    if (this.zoomX > 1) this.zoomX = 1;
-    if (this.zoomY > 1) this.zoomY = 1;
+    zudUnDynamax(this.sprite);
   }
 
   resetEffects(): void {

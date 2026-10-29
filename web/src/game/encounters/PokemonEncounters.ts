@@ -40,7 +40,7 @@ declare module "../globals" {
   interface GameTemp {
     encounterType?: Id | null;
     forceSingleBattle?: boolean | null;
-    /** Poké Radar state (013_Items/005_Item_PokeRadar.rb); not ported, so always nil. */
+    /** Poké Radar state (013_Items/005_Item_PokeRadar.rb, game/battle/pokeRadar.ts). */
     pokeRadarData?: unknown;
   }
   interface PokemonGlobalMetadata {
@@ -66,19 +66,25 @@ export function setPokemonEncounters(value: PokemonEncounters | null): void {
   (G as unknown as { pokemonEncounters?: PokemonEncounters | null }).pokemonEncounters = value;
 }
 
-// Features from other script sections that aren't ported; their checks are
-// false until they are (each is what Ruby returns when the feature is unused).
+// Checks from other script sections, set by their modules (game/battle/
+// pokeRadar.ts, bugContest.ts, safari.ts); each default is what Ruby returns
+// when the feature is unused.
+export const specialBattleHooks = {
+  pokeRadarOnShakingGrass: (): boolean => false,
+  inBugContest: (): boolean => false,
+  inSafari: (): boolean => false,
+};
 /** pbPokeRadarOnShakingGrass (013_Items/005_Item_PokeRadar.rb): pbPokeRadarGetShakingGrass >= 0. */
 export function pbPokeRadarOnShakingGrass(): boolean {
-  return false; // TODO(poke radar): $game_temp.poke_radar_data is never set yet.
+  return specialBattleHooks.pokeRadarOnShakingGrass();
 }
 /** pbInBugContest? (018_Alternate battle modes/002_BugContest.rb) */
 export function pbInBugContest(): boolean {
-  return false; // TODO(bug contest)
+  return specialBattleHooks.inBugContest();
 }
 /** pbInSafari? (018_Alternate battle modes/001_SafariZone.rb) */
 export function pbInSafari(): boolean {
-  return false; // TODO(safari)
+  return specialBattleHooks.inSafari();
 }
 
 export class PokemonEncounters {

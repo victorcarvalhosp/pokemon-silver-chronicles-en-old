@@ -7,9 +7,8 @@
 // - Generation 9 Pack ([001] Battle/[001] Battle.rb:148): pbReviveInParty (Revival Blessing).
 // - Essentials Deluxe ([000] Essentials Patches/Battle.rb:93-134): pbSetBattleMechanicUsage,
 //   pbCanUseBattleMechanic?; [001] Plugin Patches/_Custom Placeholder_.rb: custom mechanic placeholders.
-// - ZUD Mechanics ([003] Battle/Battle.rb): Z-Rings, Dynamax Bands, eligibility checks, Ultra
-//   Burst/Dynamax, registering Z-Moves/Ultra Burst/Dynamax (Z-Moves, Ultra Burst and Dynamax
-//   themselves are deferred: the pbCan* checks return false).
+// - ZUD Mechanics ([003] Battle/Battle.rb): Z-Rings, Dynamax Bands, registering Z-Moves/Ultra
+//   Burst/Dynamax (the eligibility checks, pbUltraBurst and pbDynamax are in ../zud/Battle.ts).
 
 import { _INTL } from "../../data/gameData/gameData";
 import { Item } from "../../data/gameData/item";
@@ -419,22 +418,9 @@ const methods = {
   },
 
   //-----------------------------------------------------------------------------
-  // Eligibility checks.
+  // Eligibility checks (pbCanZMove?, pbCanUltraBurst?, pbCanDynamax?) and
+  // pbUltraBurst/pbDynamax (Battle.rb:64-178): see ../zud/Battle.ts.
   //-----------------------------------------------------------------------------
-  /** pbCanZMove? — Deferred: Z-Moves (ZUD Mechanics/[003] Battle/Battle.rb:64). */
-  pbCanZMove(this: Battle, _idxBattler: number): boolean { return false; },
-  /** pbCanUltraBurst? — Deferred: Ultra Burst (ZUD Mechanics/[003] Battle/Battle.rb:76). */
-  pbCanUltraBurst(this: Battle, _idxBattler: number): boolean { return false; },
-  /** pbCanDynamax? — Deferred: Dynamax (ZUD Mechanics/[003] Battle/Battle.rb:88). */
-  pbCanDynamax(this: Battle, _idxBattler: number): boolean { return false; },
-
-  //-----------------------------------------------------------------------------
-  // Uses the eligible battle mechanic.
-  //-----------------------------------------------------------------------------
-  /** Deferred: Ultra Burst (ZUD Mechanics/[003] Battle/Battle.rb:113). */
-  async pbUltraBurst(this: Battle, _idxBattler: number): Promise<void> {},
-  /** Deferred: Dynamax (ZUD Mechanics/[003] Battle/Battle.rb:149). */
-  async pbDynamax(this: Battle, _idxBattler: number): Promise<void> {},
 
   //-----------------------------------------------------------------------------
   // Registering Z-Moves.

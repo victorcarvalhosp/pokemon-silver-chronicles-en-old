@@ -9,7 +9,7 @@
 //   pbHitEffectivenessMessages is redefined to fire midbattle triggers.
 // - ZUD Mechanics ([006] Battle_Move/Battle_Move.rb:27): pbInflictHPDamage
 //   (Dynamax HP), :35 pbNumHits (no Parental Bond for Power Moves), :63
-//   pbDisplayUseMessage (Z-Move messages), :84 status_zmove_effect (deferred).
+//   pbDisplayUseMessage (Z-Move messages); :84 status_zmove_effect is in ../zud/Battle_Move.ts.
 // Alias chains (load order Hotfixes → Gen 9 → Mega → Deluxe → ZUD):
 //   pbEffectivenessMessage = Deluxe( Hotfixes( core ) )
 //   pbHitEffectivenessMessages = Deluxe (redefined, no alias)
@@ -65,7 +65,7 @@
 //   pbHitEffectivenessMessages      | async
 //   pbEndureKOMessage               | async
 //   pbRecordDamageLost              | sync
-//   status_zmove_effect             | async (statusZmoveEffect; deferred)
+//   status_zmove_effect             | async (statusZmoveEffect, ../zud/Battle_Move.ts)
 //   --- Move_UsageCalculations.ts ---
 //   pbBaseType, pbCalcType          | sync
 //   pbCalcTypeModSingle, pbCalcTypeMod | sync
@@ -176,13 +176,8 @@ const methods = {
   pbShowFailMessages(this: Move, _targets: Battler[]): boolean { return true; },
   async pbMissMessage(this: Move, _user: Battler, _target: Battler): Promise<boolean> { return false; },
 
-  /**
-   * status_zmove_effect (ZUD Mechanics, [006] Battle_Move/Battle_Move.rb:84):
-   * the effects of a Z-Powered status move.
-   */
-  async statusZmoveEffect(this: Move, _user: Battler): Promise<void> {
-    // Deferred: Z-Move status effects (ZUD Mechanics/[006] Battle_Move/Battle_Move.rb:84-152)
-  },
+  // status_zmove_effect (ZUD Mechanics, [006] Battle_Move/Battle_Move.rb:84),
+  // the effects of a Z-Powered status move: see ../zud/Battle_Move.ts.
 
   //=============================================================================
   //

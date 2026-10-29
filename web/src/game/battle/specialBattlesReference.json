@@ -1,0 +1,6513 @@
+{
+  "trainers": [
+    {
+      "id": [
+        "Rival",
+        "???",
+        1
+      ],
+      "name": "???",
+      "type": "Rival",
+      "baseMoney": 100,
+      "skill": 100,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Hmm... Are you happy you won?!",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "level": 5,
+          "item": null,
+          "hp": 19,
+          "totalhp": 19
+        },
+        {
+          "species": "CHIKORITA",
+          "level": 6,
+          "item": null,
+          "hp": 21,
+          "totalhp": 21
+        }
+      ],
+      "gain": [
+        600,
+        603,
+        2600,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "Rival",
+        "???",
+        2
+      ],
+      "name": "???",
+      "type": "Rival",
+      "baseMoney": 100,
+      "skill": 100,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Hmm... Are you happy you won?!",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "level": 5,
+          "item": null,
+          "hp": 19,
+          "totalhp": 19
+        },
+        {
+          "species": "CYNDAQUIL",
+          "level": 6,
+          "item": null,
+          "hp": 20,
+          "totalhp": 20
+        }
+      ],
+      "gain": [
+        600,
+        603,
+        2600,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "Rival",
+        "???",
+        3
+      ],
+      "name": "???",
+      "type": "Rival",
+      "baseMoney": 100,
+      "skill": 100,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Hmm... Are you happy you won?!",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "level": 5,
+          "item": null,
+          "hp": 19,
+          "totalhp": 19
+        },
+        {
+          "species": "TOTODILE",
+          "level": 6,
+          "item": null,
+          "hp": 22,
+          "totalhp": 22
+        }
+      ],
+      "gain": [
+        600,
+        603,
+        2600,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "YOUNGSTER",
+        "Joey",
+        0
+      ],
+      "name": "Joey",
+      "type": "YOUNGSTER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Oh...I'm out of Pokémon that can fight...",
+      "party": [
+        {
+          "species": "RATTATA",
+          "level": 4,
+          "item": null,
+          "hp": 16,
+          "totalhp": 16
+        }
+      ],
+      "gain": [
+        120,
+        123,
+        2120,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "YOUNGSTER",
+        "Joey",
+        1
+      ],
+      "name": "Joey",
+      "type": "YOUNGSTER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Oh...I'm out of Pokémon that can fight...",
+      "party": [
+        {
+          "species": "RATTATA",
+          "level": 12,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        },
+        {
+          "species": "RATTATA",
+          "level": 12,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        }
+      ],
+      "gain": [
+        360,
+        363,
+        2360,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BUGCATCHER",
+        "Don",
+        0
+      ],
+      "name": "Don",
+      "type": "BUGCATCHER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I need to train more.",
+      "party": [
+        {
+          "species": "CATERPIE",
+          "level": 3,
+          "item": null,
+          "hp": 15,
+          "totalhp": 15
+        },
+        {
+          "species": "CATERPIE",
+          "level": 3,
+          "item": null,
+          "hp": 15,
+          "totalhp": 15
+        }
+      ],
+      "gain": [
+        90,
+        93,
+        2090,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "YOUNGSTER",
+        "Mario",
+        0
+      ],
+      "name": "Mario",
+      "type": "YOUNGSTER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "That's strange. I won before.",
+      "party": [
+        {
+          "species": "PIDGEY",
+          "level": 2,
+          "item": null,
+          "hp": 13,
+          "totalhp": 13
+        },
+        {
+          "species": "RATTATA",
+          "level": 4,
+          "item": null,
+          "hp": 16,
+          "totalhp": 16
+        }
+      ],
+      "gain": [
+        120,
+        123,
+        2120,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BEAUTY",
+        "Samantha",
+        0
+      ],
+      "name": "Samantha",
+      "type": "BEAUTY",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "No! Oh, MEOWTH, I'm so sorry!",
+      "party": [
+        {
+          "species": "MEOWTH",
+          "level": 16,
+          "item": null,
+          "hp": 41,
+          "totalhp": 41
+        },
+        {
+          "species": "MEOWTH",
+          "level": 16,
+          "item": null,
+          "hp": 41,
+          "totalhp": 41
+        }
+      ],
+      "gain": [
+        480,
+        483,
+        2480,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LASS",
+        "Carrie",
+        0
+      ],
+      "name": "Carrie",
+      "type": "LASS",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Gosh... I thought you was weak...",
+      "party": [
+        {
+          "species": "SNUBBULL",
+          "level": 18,
+          "item": null,
+          "hp": 52,
+          "totalhp": 52
+        }
+      ],
+      "gain": [
+        540,
+        543,
+        2540,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Whitney",
+        "Whitney",
+        0
+      ],
+      "name": "Whitney",
+      "type": "LEADER_Whitney",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Ugh...",
+      "party": [
+        {
+          "species": "JIGGLYPUFF",
+          "level": 18,
+          "item": null,
+          "hp": 72,
+          "totalhp": 72
+        },
+        {
+          "species": "MILTANK",
+          "level": 20,
+          "item": null,
+          "hp": 71,
+          "totalhp": 71
+        },
+        {
+          "species": "GIRAFARIG",
+          "level": 19,
+          "item": null,
+          "hp": 58,
+          "totalhp": 58
+        },
+        {
+          "species": "MEOWTH",
+          "level": 21,
+          "item": null,
+          "hp": 51,
+          "totalhp": 51
+        },
+        {
+          "species": "LICKITUNG",
+          "level": 19,
+          "item": null,
+          "hp": 66,
+          "totalhp": 66
+        },
+        {
+          "species": "BIBAREL",
+          "level": 18,
+          "item": null,
+          "hp": 59,
+          "totalhp": 59
+        }
+      ],
+      "gain": [
+        1680,
+        1683,
+        3680,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Whitney",
+        "Whitney",
+        3
+      ],
+      "name": "Whitney",
+      "type": "LEADER_Whitney",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND",
+          "ZRING",
+          "MEGARING"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Ugh...",
+      "party": [
+        {
+          "species": "WIGGLYTUFF",
+          "level": 50,
+          "item": null,
+          "hp": 221,
+          "totalhp": 221
+        },
+        {
+          "species": "MILTANK",
+          "level": 50,
+          "item": "NORMALIUMZ",
+          "hp": 176,
+          "totalhp": 176
+        },
+        {
+          "species": "FARIGIRAF",
+          "level": 50,
+          "item": null,
+          "hp": 201,
+          "totalhp": 201
+        },
+        {
+          "species": "MEOWTH",
+          "level": 50,
+          "item": null,
+          "hp": 121,
+          "totalhp": 121
+        },
+        {
+          "species": "KANGASKHAN",
+          "level": 54,
+          "item": "KANGASKHANITE",
+          "hp": 202,
+          "totalhp": 202
+        },
+        {
+          "species": "BIBAREL",
+          "level": 50,
+          "item": null,
+          "hp": 160,
+          "totalhp": 160
+        }
+      ],
+      "gain": [
+        4320,
+        4323,
+        6320,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BUGCATCHER",
+        "Wade",
+        0
+      ],
+      "name": "Wade",
+      "type": "BUGCATCHER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Arrgh!.",
+      "party": [
+        {
+          "species": "CATERPIE",
+          "level": 2,
+          "item": null,
+          "hp": 13,
+          "totalhp": 13
+        },
+        {
+          "species": "CATERPIE",
+          "level": 2,
+          "item": null,
+          "hp": 13,
+          "totalhp": 13
+        },
+        {
+          "species": "CATERPIE",
+          "level": 2,
+          "item": null,
+          "hp": 13,
+          "totalhp": 13
+        },
+        {
+          "species": "WEEDLE",
+          "level": 3,
+          "item": null,
+          "hp": 15,
+          "totalhp": 15
+        }
+      ],
+      "gain": [
+        90,
+        93,
+        2090,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "YOUNGSTER",
+        "Albert",
+        0
+      ],
+      "name": "Albert",
+      "type": "YOUNGSTER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "You're strong!",
+      "party": [
+        {
+          "species": "RATTATA",
+          "level": 6,
+          "item": null,
+          "hp": 19,
+          "totalhp": 19
+        },
+        {
+          "species": "ZUBAT",
+          "level": 8,
+          "item": null,
+          "hp": 24,
+          "totalhp": 24
+        }
+      ],
+      "gain": [
+        240,
+        243,
+        2240,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "PICNICKER",
+        "Liz",
+        0
+      ],
+      "name": "Liz",
+      "type": "PICNICKER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "So strong!",
+      "party": [
+        {
+          "species": "NIDORANfE",
+          "level": 9,
+          "item": null,
+          "hp": 29,
+          "totalhp": 29
+        }
+      ],
+      "gain": [
+        270,
+        273,
+        2270,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "FISHERMAN",
+        "Henry",
+        0
+      ],
+      "name": "Henry",
+      "type": "FISHERMAN",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Splash?",
+      "party": [
+        {
+          "species": "POLIWAG",
+          "level": 8,
+          "item": null,
+          "hp": 24,
+          "totalhp": 24
+        },
+        {
+          "species": "POLIWAG",
+          "level": 8,
+          "item": null,
+          "hp": 24,
+          "totalhp": 24
+        }
+      ],
+      "gain": [
+        240,
+        243,
+        2240,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "CAMPER",
+        "Roland",
+        0
+      ],
+      "name": "Roland",
+      "type": "CAMPER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Hmmm.That's disapointing...",
+      "party": [
+        {
+          "species": "NIDORANmA",
+          "level": 9,
+          "item": null,
+          "hp": 27,
+          "totalhp": 27
+        }
+      ],
+      "gain": [
+        270,
+        273,
+        2270,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BIRDKEEPER",
+        "Peter",
+        0
+      ],
+      "name": "Peter",
+      "type": "BIRDKEEPER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I know what my weaknesses are.",
+      "party": [
+        {
+          "species": "PIDGEY",
+          "level": 6,
+          "item": null,
+          "hp": 21,
+          "totalhp": 21
+        },
+        {
+          "species": "PIDGEY",
+          "level": 6,
+          "item": null,
+          "hp": 21,
+          "totalhp": 21
+        },
+        {
+          "species": "SPEAROW",
+          "level": 8,
+          "item": null,
+          "hp": 24,
+          "totalhp": 24
+        }
+      ],
+      "gain": [
+        240,
+        243,
+        2240,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "PSYCHIC_Male",
+        "Mark",
+        0
+      ],
+      "name": "Mark",
+      "type": "PSYCHIC_Male",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I was wrong.",
+      "party": [
+        {
+          "species": "ABRA",
+          "level": 14,
+          "item": null,
+          "hp": 32,
+          "totalhp": 32
+        },
+        {
+          "species": "ABRA",
+          "level": 14,
+          "item": null,
+          "hp": 32,
+          "totalhp": 32
+        },
+        {
+          "species": "KADABRA",
+          "level": 16,
+          "item": null,
+          "hp": 41,
+          "totalhp": 41
+        }
+      ],
+      "gain": [
+        480,
+        483,
+        2480,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "MONGE",
+        "Chow",
+        0
+      ],
+      "name": "Chow",
+      "type": "MONGE",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "T-Thank you.",
+      "party": [
+        {
+          "species": "BELLSPROUT",
+          "level": 3,
+          "item": null,
+          "hp": 16,
+          "totalhp": 16
+        },
+        {
+          "species": "BELLSPROUT",
+          "level": 3,
+          "item": null,
+          "hp": 16,
+          "totalhp": 16
+        },
+        {
+          "species": "BELLSPROUT",
+          "level": 3,
+          "item": null,
+          "hp": 16,
+          "totalhp": 16
+        }
+      ],
+      "gain": [
+        90,
+        93,
+        2090,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "ELDER",
+        "Li",
+        0
+      ],
+      "name": "Li",
+      "type": "ELDER",
+      "baseMoney": 40,
+      "skill": 40,
+      "items": [
+        [
+          "DYNAMAXBAND"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Ah, excellent!",
+      "party": [
+        {
+          "species": "BELLSPROUT",
+          "level": 12,
+          "item": null,
+          "hp": 35,
+          "totalhp": 35
+        },
+        {
+          "species": "HOOTHOOT",
+          "level": 12,
+          "item": null,
+          "hp": 37,
+          "totalhp": 37
+        },
+        {
+          "species": "BELLSPROUT",
+          "level": 12,
+          "item": null,
+          "hp": 35,
+          "totalhp": 35
+        },
+        {
+          "species": "BELLSPROUT",
+          "level": 12,
+          "item": null,
+          "hp": 35,
+          "totalhp": 35
+        }
+      ],
+      "gain": [
+        480,
+        483,
+        2480,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BIRDKEEPER",
+        "Abe",
+        0
+      ],
+      "name": "Abe",
+      "type": "BIRDKEEPER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "It can't be real!",
+      "party": [
+        {
+          "species": "SPEAROW",
+          "level": 9,
+          "item": null,
+          "hp": 26,
+          "totalhp": 26
+        },
+        {
+          "species": "HOOTHOOT",
+          "level": 9,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        }
+      ],
+      "gain": [
+        270,
+        273,
+        2270,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Falkner",
+        "Falkner",
+        0
+      ],
+      "name": "Falkner",
+      "type": "LEADER_Falkner",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I understand...I'll blow out gracefully...",
+      "party": [
+        {
+          "species": "PIDGEY",
+          "level": 10,
+          "item": null,
+          "hp": 28,
+          "totalhp": 28
+        },
+        {
+          "species": "SPEAROW",
+          "level": 12,
+          "item": null,
+          "hp": 32,
+          "totalhp": 32
+        },
+        {
+          "species": "SKARMORY",
+          "level": 12,
+          "item": null,
+          "hp": 38,
+          "totalhp": 38
+        },
+        {
+          "species": "PIDGEOTTO",
+          "level": 12,
+          "item": null,
+          "hp": 38,
+          "totalhp": 38
+        },
+        {
+          "species": "NATU",
+          "level": 12,
+          "item": null,
+          "hp": 32,
+          "totalhp": 32
+        },
+        {
+          "species": "NOCTOWL",
+          "level": 16,
+          "item": null,
+          "hp": 60,
+          "totalhp": 60
+        }
+      ],
+      "gain": [
+        1280,
+        1283,
+        3280,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Falkner",
+        "Falkner",
+        2
+      ],
+      "name": "Falkner",
+      "type": "LEADER_Falkner",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND",
+          "ZRING",
+          "MEGARING"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I understand...I'll blow out gracefully...",
+      "party": [
+        {
+          "species": "SKARMORY",
+          "level": 50,
+          "item": null,
+          "hp": 146,
+          "totalhp": 146
+        },
+        {
+          "species": "MANTINE",
+          "level": 50,
+          "item": null,
+          "hp": 166,
+          "totalhp": 166
+        },
+        {
+          "species": "TALONFLAME",
+          "level": 50,
+          "item": null,
+          "hp": 159,
+          "totalhp": 159
+        },
+        {
+          "species": "PIDGEOT",
+          "level": 50,
+          "item": "PIDGEOTITE",
+          "hp": 164,
+          "totalhp": 164
+        },
+        {
+          "species": "TOGEKISS",
+          "level": 50,
+          "item": "FLYINIUMZ",
+          "hp": 166,
+          "totalhp": 166
+        },
+        {
+          "species": "NOCTOWL",
+          "level": 54,
+          "item": null,
+          "hp": 197,
+          "totalhp": 197
+        }
+      ],
+      "gain": [
+        4320,
+        4323,
+        6320,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "HIKER",
+        "Daniel",
+        0
+      ],
+      "name": "Daniel",
+      "type": "HIKER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Whoa! I'm beaten big time.",
+      "party": [
+        {
+          "species": "ONIX",
+          "level": 9,
+          "item": null,
+          "hp": 25,
+          "totalhp": 25
+        }
+      ],
+      "gain": [
+        270,
+        273,
+        2270,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "KINDLER",
+        "Bill",
+        0
+      ],
+      "name": "Bill",
+      "type": "KINDLER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "I flamed out!",
+      "party": [
+        {
+          "species": "KOFFING",
+          "level": 6,
+          "item": null,
+          "hp": 21,
+          "totalhp": 21
+        },
+        {
+          "species": "KOFFING",
+          "level": 6,
+          "item": null,
+          "hp": 21,
+          "totalhp": 21
+        }
+      ],
+      "gain": [
+        180,
+        183,
+        2180,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "POKeMANIAC",
+        "Larry",
+        0
+      ],
+      "name": "Larry",
+      "type": "POKeMANIAC",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Ugh!My poor Pokémon...",
+      "party": [
+        {
+          "species": "SLOWPOKE",
+          "level": 10,
+          "item": null,
+          "hp": 38,
+          "totalhp": 38
+        }
+      ],
+      "gain": [
+        300,
+        303,
+        2300,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "HIKER",
+        "Anthony",
+        1
+      ],
+      "name": "Anthony",
+      "type": "HIKER",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "So strong!",
+      "party": [
+        {
+          "species": "GEODUDE",
+          "level": 16,
+          "item": null,
+          "hp": 41,
+          "totalhp": 41
+        },
+        {
+          "species": "MACHOKE",
+          "level": 17,
+          "item": null,
+          "hp": 56,
+          "totalhp": 56
+        }
+      ],
+      "gain": [
+        510,
+        513,
+        2510,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "Rival",
+        "???",
+        4
+      ],
+      "name": "???",
+      "type": "Rival",
+      "baseMoney": 100,
+      "skill": 100,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Humpf! Useless Pokémon!",
+      "party": [
+        {
+          "species": "GASTLY",
+          "level": 15,
+          "item": null,
+          "hp": 35,
+          "totalhp": 35
+        },
+        {
+          "species": "MAGNEMITE",
+          "level": 15,
+          "item": null,
+          "hp": 34,
+          "totalhp": 34
+        },
+        {
+          "species": "ZUBAT",
+          "level": 16,
+          "item": null,
+          "hp": 41,
+          "totalhp": 41
+        },
+        {
+          "species": "QUILAVA",
+          "level": 18,
+          "item": null,
+          "hp": 51,
+          "totalhp": 51
+        }
+      ],
+      "gain": [
+        1800,
+        1803,
+        3800,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "ROCKET_Male",
+        "Grunt",
+        1
+      ],
+      "name": "Grunt",
+      "type": "ROCKET_Male",
+      "baseMoney": 32,
+      "skill": 32,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Arrgh! This is NOT my day!",
+      "party": [
+        {
+          "species": "RATTATA",
+          "level": 9,
+          "item": null,
+          "hp": 25,
+          "totalhp": 25
+        },
+        {
+          "species": "RATTATA",
+          "level": 9,
+          "item": null,
+          "hp": 25,
+          "totalhp": 25
+        }
+      ],
+      "gain": [
+        288,
+        291,
+        2288,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "ROCKET_Female",
+        "Grunt",
+        1
+      ],
+      "name": "Grunt",
+      "type": "ROCKET_Female",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "You rotten kid!",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "level": 9,
+          "item": null,
+          "hp": 26,
+          "totalhp": 26
+        },
+        {
+          "species": "EKANS",
+          "level": 11,
+          "item": null,
+          "hp": 29,
+          "totalhp": 29
+        }
+      ],
+      "gain": [
+        330,
+        333,
+        2330,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "ROCKET_PROTON",
+        "Proton",
+        1
+      ],
+      "name": "Proton",
+      "type": "ROCKET_PROTON",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Grr... For a kid to be this good...",
+      "party": [
+        {
+          "species": "ZUBAT",
+          "level": 14,
+          "item": null,
+          "hp": 36,
+          "totalhp": 36
+        },
+        {
+          "species": "KOFFING",
+          "level": 13,
+          "item": null,
+          "hp": 34,
+          "totalhp": 34
+        },
+        {
+          "species": "EKANS",
+          "level": 13,
+          "item": null,
+          "hp": 33,
+          "totalhp": 33
+        },
+        {
+          "species": "GOLBAT",
+          "level": 16,
+          "item": null,
+          "hp": 52,
+          "totalhp": 52
+        },
+        {
+          "species": "RATTATA",
+          "level": 15,
+          "item": null,
+          "hp": 35,
+          "totalhp": 35
+        }
+      ],
+      "gain": [
+        1280,
+        1283,
+        3280,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "TWINS",
+        "Amy & May",
+        0
+      ],
+      "name": "Amy & May",
+      "type": "TWINS",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Oh, goodness!",
+      "party": [
+        {
+          "species": "LEDYBA",
+          "level": 11,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        },
+        {
+          "species": "SPINARAK",
+          "level": 11,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        }
+      ],
+      "gain": [
+        330,
+        333,
+        2330,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Bugsy",
+        "Bugsy",
+        0
+      ],
+      "name": "Bugsy",
+      "type": "LEADER_Bugsy",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Aw, that's the end of it...",
+      "party": [
+        {
+          "species": "PINECO",
+          "level": 16,
+          "item": null,
+          "hp": 44,
+          "totalhp": 44
+        },
+        {
+          "species": "BUTTERFREE",
+          "level": 18,
+          "item": null,
+          "hp": 52,
+          "totalhp": 52
+        },
+        {
+          "species": "SCYTHER",
+          "level": 16,
+          "item": null,
+          "hp": 50,
+          "totalhp": 50
+        },
+        {
+          "species": "BEEDRILL",
+          "level": 16,
+          "item": null,
+          "hp": 49,
+          "totalhp": 49
+        },
+        {
+          "species": "LEDIAN",
+          "level": 16,
+          "item": null,
+          "hp": 45,
+          "totalhp": 45
+        },
+        {
+          "species": "HERACROSS",
+          "level": 19,
+          "item": null,
+          "hp": 62,
+          "totalhp": 62
+        }
+      ],
+      "gain": [
+        1520,
+        1523,
+        3520,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Bugsy",
+        "Bugsy",
+        2
+      ],
+      "name": "Bugsy",
+      "type": "LEADER_Bugsy",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+          "DYNAMAXBAND",
+          "ZRING",
+          "MEGARING"
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Aw, that's the end of it...",
+      "party": [
+        {
+          "species": "FORRETRESS",
+          "level": 50,
+          "item": null,
+          "hp": 156,
+          "totalhp": 156
+        },
+        {
+          "species": "BUTTERFREE",
+          "level": 50,
+          "item": null,
+          "hp": 141,
+          "totalhp": 141
+        },
+        {
+          "species": "KLEAVOR",
+          "level": 50,
+          "item": null,
+          "hp": 151,
+          "totalhp": 151
+        },
+        {
+          "species": "BEEDRILL",
+          "level": 50,
+          "item": "BEEDRILLITE",
+          "hp": 146,
+          "totalhp": 146
+        },
+        {
+          "species": "LEDIAN",
+          "level": 50,
+          "item": null,
+          "hp": 136,
+          "totalhp": 136
+        },
+        {
+          "species": "HERACROSS",
+          "level": 54,
+          "item": "BUGINIUMZ",
+          "hp": 175,
+          "totalhp": 175
+        }
+      ],
+      "gain": [
+        4320,
+        4323,
+        6320,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "TIMETRAVELER",
+        "Hideyoshi",
+        0
+      ],
+      "name": "Hideyoshi",
+      "type": "TIMETRAVELER",
+      "baseMoney": 0,
+      "skill": 0,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "You're strong!",
+      "party": [
+        {
+          "species": "DONPHAN",
+          "level": 28,
+          "item": null,
+          "hp": 95,
+          "totalhp": 95
+        },
+        {
+          "species": "MAGCARGO",
+          "level": 28,
+          "item": null,
+          "hp": 78,
+          "totalhp": 78
+        },
+        {
+          "species": "RATICATE",
+          "level": 28,
+          "item": null,
+          "hp": 86,
+          "totalhp": 86
+        }
+      ],
+      "gain": [
+        0,
+        3,
+        2000,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "POKeFAN_Male",
+        "Brandon",
+        0
+      ],
+      "name": "Brandon",
+      "type": "POKeFAN_Male",
+      "baseMoney": 30,
+      "skill": 30,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "Why does it end this way??",
+      "party": [
+        {
+          "species": "SNUBBULL",
+          "level": 13,
+          "item": null,
+          "hp": 39,
+          "totalhp": 39
+        }
+      ],
+      "gain": [
+        390,
+        393,
+        2390,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "SUPERNERD",
+        "Eric",
+        0
+      ],
+      "name": "Eric",
+      "type": "SUPERNERD",
+      "baseMoney": 50,
+      "skill": 50,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "...Grumble...",
+      "party": [
+        {
+          "species": "GRIMER",
+          "level": 16,
+          "item": null,
+          "hp": 53,
+          "totalhp": 53
+        },
+        {
+          "species": "GRIMER",
+          "level": 15,
+          "item": null,
+          "hp": 50,
+          "totalhp": 50
+        },
+        {
+          "species": "LICKITUNG",
+          "level": 13,
+          "item": null,
+          "hp": 47,
+          "totalhp": 47
+        }
+      ],
+      "gain": [
+        800,
+        803,
+        2800,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "BOYFRIEND",
+        "Boy",
+        1
+      ],
+      "name": "Boy",
+      "type": "BOYFRIEND",
+      "baseMoney": 60,
+      "skill": 60,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "...",
+      "party": [
+        {
+          "species": "MUDKIP",
+          "level": 5,
+          "item": null,
+          "hp": 20,
+          "totalhp": 20
+        }
+      ],
+      "gain": [
+        300,
+        303,
+        2300,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "GIRLFRIEND",
+        "Girl",
+        4
+      ],
+      "name": "Girl",
+      "type": "GIRLFRIEND",
+      "baseMoney": 60,
+      "skill": 60,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "...",
+      "party": [
+        {
+          "species": "MUDKIP",
+          "level": 10,
+          "item": null,
+          "hp": 30,
+          "totalhp": 30
+        },
+        {
+          "species": "ZIGZAGOON",
+          "level": 5,
+          "item": null,
+          "hp": 18,
+          "totalhp": 18
+        }
+      ],
+      "gain": [
+        600,
+        603,
+        2600,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    },
+    {
+      "id": [
+        "LEADER_Whitney",
+        "Whitney",
+        2
+      ],
+      "name": "Whitney",
+      "type": "LEADER_Whitney",
+      "baseMoney": 80,
+      "skill": 80,
+      "items": [
+        [
+
+        ]
+      ],
+      "starts": [
+        0
+      ],
+      "loseText": "...",
+      "party": [
+        {
+          "species": "MILTANK",
+          "level": 38,
+          "item": null,
+          "hp": 132,
+          "totalhp": 132
+        },
+        {
+          "species": "JIGGLYPUFF",
+          "level": 36,
+          "item": null,
+          "hp": 139,
+          "totalhp": 139
+        },
+        {
+          "species": "LICKITUNG",
+          "level": 36,
+          "item": null,
+          "hp": 121,
+          "totalhp": 121
+        }
+      ],
+      "gain": [
+        3040,
+        3043,
+        5040,
+        999999
+      ],
+      "lose": [
+        0,
+        0,
+        4888,
+        0,
+        0,
+        4776,
+        0,
+        0,
+        4664,
+        0,
+        0,
+        4496,
+        0,
+        0,
+        4328,
+        0,
+        0,
+        4104,
+        0,
+        0,
+        3880,
+        0,
+        0,
+        3600,
+        0,
+        0,
+        3320,
+        0,
+        0,
+        3320
+      ]
+    }
+  ],
+  "doubleFoes": {
+    "names": [
+      "Joey",
+      "Don"
+    ],
+    "items": [
+      [
+
+      ],
+      [
+
+      ]
+    ],
+    "starts": [
+      0,
+      1
+    ],
+    "party": [
+      {
+        "species": "RATTATA",
+        "level": 4,
+        "item": null,
+        "hp": 16,
+        "totalhp": 16
+      },
+      {
+        "species": "CATERPIE",
+        "level": 3,
+        "item": null,
+        "hp": 15,
+        "totalhp": 15
+      },
+      {
+        "species": "CATERPIE",
+        "level": 3,
+        "item": null,
+        "hp": 15,
+        "totalhp": 15
+      }
+    ],
+    "gain": 3210
+  },
+  "safariEscapeRate": [
+    125,
+    125,
+    100,
+    100,
+    75,
+    75,
+    50,
+    50,
+    25,
+    25
+  ],
+  "safari": [
+    {
+      "species": "NIDORANfE",
+      "level": 22,
+      "commands": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start": 1000,
+      "decision": 4,
+      "balls": 4,
+      "log": [
+        "Wild Nidoran♀ appeared!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 3 false 1 true",
+        "Gah! It was so close, too!",
+        "Nidoran♀ is watching carefully!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 4 false 1 true",
+        "Gotcha! Nidoran♀ was caught!",
+        "success",
+        "Nidoran♀ has been added to your party.",
+        "end 4"
+      ],
+      "partySize": 2
+    },
+    {
+      "species": "RHYHORN",
+      "level": 25,
+      "commands": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start": 2000,
+      "decision": 4,
+      "balls": 4,
+      "log": [
+        "Wild Rhyhorn appeared!",
+        "cmd 1",
+        "Gold threw some bait at the Rhyhorn!",
+        "Rhyhorn is eating!",
+        "cmd 1",
+        "Gold threw some bait at the Rhyhorn!",
+        "Rhyhorn is eating!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 0 false 1 true",
+        "Oh no! The Pokémon broke free!",
+        "Rhyhorn is watching carefully!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 4 false 1 true",
+        "Gotcha! Rhyhorn was caught!",
+        "success",
+        "Rhyhorn has been added to your party.",
+        "end 4"
+      ],
+      "partySize": 2
+    },
+    {
+      "species": "CHANSEY",
+      "level": 23,
+      "commands": [
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0
+      ],
+      "start": 3000,
+      "decision": 3,
+      "balls": 6,
+      "log": [
+        "Wild Chansey appeared!",
+        "cmd 2",
+        "Gold threw a rock at the Chansey!",
+        "Chansey fled!",
+        "end 3"
+      ],
+      "partySize": 1
+    },
+    {
+      "species": "SCYTHER",
+      "level": 25,
+      "commands": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start": 4000,
+      "decision": 3,
+      "balls": 6,
+      "log": [
+        "Wild Scyther appeared!",
+        "cmd 2",
+        "Gold threw a rock at the Scyther!",
+        "Scyther fled!",
+        "end 3"
+      ],
+      "partySize": 1
+    },
+    {
+      "species": "EXEGGCUTE",
+      "level": 24,
+      "commands": [
+        3
+      ],
+      "start": 5000,
+      "decision": 3,
+      "balls": 6,
+      "log": [
+        "Wild Exeggcute appeared!",
+        "cmd 3",
+        "You got away safely!",
+        "end 3"
+      ],
+      "partySize": 1
+    },
+    {
+      "species": "VENONAT",
+      "level": 22,
+      "commands": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "start": 6000,
+      "decision": 3,
+      "balls": 6,
+      "log": [
+        "Wild Venonat appeared!",
+        "cmd 1",
+        "Gold threw some bait at the Venonat!",
+        "Venonat is eating!",
+        "cmd 2",
+        "Gold threw a rock at the Venonat!",
+        "Venonat is angry!",
+        "cmd 1",
+        "Gold threw some bait at the Venonat!",
+        "Venonat fled!",
+        "end 3"
+      ],
+      "partySize": 1
+    },
+    {
+      "species": "TAUROS",
+      "level": 28,
+      "commands": [
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "start": 7000,
+      "decision": 3,
+      "balls": 3,
+      "log": [
+        "Wild Tauros appeared!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 1 false 1 true",
+        "Aww! It appeared to be caught!",
+        "Tauros is watching carefully!",
+        "cmd 1",
+        "Gold threw some bait at the Tauros!",
+        "Tauros is eating!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 3 false 1 true",
+        "Gah! It was so close, too!",
+        "Tauros is watching carefully!",
+        "cmd 2",
+        "Gold threw a rock at the Tauros!",
+        "Tauros is angry!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 3 false 1 true",
+        "Gah! It was so close, too!",
+        "Tauros fled!",
+        "end 3"
+      ],
+      "partySize": 1
+    },
+    {
+      "species": "KANGASKHAN",
+      "level": 25,
+      "commands": [
+        0,
+        0
+      ],
+      "start": 8000,
+      "decision": 2,
+      "balls": 0,
+      "log": [
+        "Wild Kangaskhan appeared!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 2 false 1 true",
+        "Aargh! Almost had it!",
+        "Kangaskhan is watching carefully!",
+        "cmd 0",
+        "Gold threw a Safari Ball!",
+        "throw SAFARIBALL 0 false 1 true",
+        "Oh no! The Pokémon broke free!",
+        "PA: You have no Safari Balls left! Game over!",
+        "end 2"
+      ],
+      "partySize": 1
+    }
+  ],
+  "bugContestScores": [
+    {
+      "species": "CATERPIE",
+      "level": 7,
+      "iv": {
+        "HP": 31,
+        "ATTACK": 0,
+        "DEFENSE": 1,
+        "SPECIAL_ATTACK": 3,
+        "SPECIAL_DEFENSE": 4,
+        "SPEED": 2
+      },
+      "hp": 25,
+      "score": 320
+    },
+    {
+      "species": "WEEDLE",
+      "level": 10,
+      "iv": {
+        "HP": 0,
+        "ATTACK": 1,
+        "DEFENSE": 2,
+        "SPECIAL_ATTACK": 4,
+        "SPECIAL_DEFENSE": 5,
+        "SPEED": 3
+      },
+      "hp": 14,
+      "score": 198
+    },
+    {
+      "species": "SCYTHER",
+      "level": 13,
+      "iv": {
+        "HP": 20,
+        "ATTACK": 21,
+        "DEFENSE": 22,
+        "SPECIAL_ATTACK": 24,
+        "SPECIAL_DEFENSE": 25,
+        "SPEED": 23
+      },
+      "hp": 14,
+      "score": 619
+    },
+    {
+      "species": "PINSIR",
+      "level": 14,
+      "iv": {
+        "HP": 15,
+        "ATTACK": 16,
+        "DEFENSE": 17,
+        "SPECIAL_ATTACK": 19,
+        "SPECIAL_DEFENSE": 20,
+        "SPEED": 18
+      },
+      "hp": 39,
+      "score": 582
+    },
+    {
+      "species": "VENONAT",
+      "level": 12,
+      "iv": {
+        "HP": 31,
+        "ATTACK": 0,
+        "DEFENSE": 1,
+        "SPECIAL_ATTACK": 3,
+        "SPECIAL_DEFENSE": 4,
+        "SPEED": 2
+      },
+      "hp": 4,
+      "score": 250
+    },
+    {
+      "species": "BUTTERFREE",
+      "level": 12,
+      "iv": {
+        "HP": 7,
+        "ATTACK": 8,
+        "DEFENSE": 9,
+        "SPECIAL_ATTACK": 11,
+        "SPECIAL_DEFENSE": 12,
+        "SPEED": 10
+      },
+      "hp": 37,
+      "score": 431
+    },
+    {
+      "species": "BEEDRILL",
+      "level": 13,
+      "iv": {
+        "HP": 25,
+        "ATTACK": 26,
+        "DEFENSE": 27,
+        "SPECIAL_ATTACK": 29,
+        "SPECIAL_DEFENSE": 30,
+        "SPEED": 28
+      },
+      "hp": 32,
+      "score": 758
+    },
+    {
+      "species": "PARAS",
+      "level": 10,
+      "iv": {
+        "HP": 3,
+        "ATTACK": 4,
+        "DEFENSE": 5,
+        "SPECIAL_ATTACK": 7,
+        "SPECIAL_DEFENSE": 8,
+        "SPEED": 6
+      },
+      "hp": 16,
+      "score": 265
+    },
+    {
+      "species": "METAPOD",
+      "level": 9,
+      "iv": {
+        "HP": 30,
+        "ATTACK": 31,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 2,
+        "SPECIAL_DEFENSE": 3,
+        "SPEED": 1
+      },
+      "hp": 1,
+      "score": 335
+    },
+    {
+      "species": "KAKUNA",
+      "level": 8,
+      "iv": {
+        "HP": 12,
+        "ATTACK": 13,
+        "DEFENSE": 14,
+        "SPECIAL_ATTACK": 16,
+        "SPECIAL_DEFENSE": 17,
+        "SPEED": 15
+      },
+      "hp": 10,
+      "score": 430
+    }
+  ],
+  "bugContestDraws": [
+    {
+      "start": 0,
+      "contestants": [
+        1,
+        4,
+        7,
+        3,
+        6
+      ],
+      "party": [
+        "PIDGEY"
+      ],
+      "other": [
+        "CYNDAQUIL"
+      ]
+    },
+    {
+      "start": 77,
+      "contestants": [
+        5,
+        1,
+        4,
+        7,
+        3
+      ],
+      "party": [
+        "PIDGEY"
+      ],
+      "other": [
+        "CYNDAQUIL"
+      ]
+    },
+    {
+      "start": 4242,
+      "contestants": [
+        5,
+        0,
+        4,
+        7,
+        2
+      ],
+      "party": [
+        "PIDGEY"
+      ],
+      "other": [
+        "CYNDAQUIL"
+      ]
+    }
+  ],
+  "bugContestPlaces": [
+    0,
+    1,
+    3
+  ],
+  "roaming": [
+    {
+      "switch752": false,
+      "switch999": false,
+      "steps": [
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            152
+          ]
+        ]
+      ]
+    },
+    {
+      "switch752": true,
+      "switch999": false,
+      "steps": [
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            136
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            136
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            136
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            78
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            78
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ]
+      ]
+    },
+    {
+      "switch752": true,
+      "switch999": true,
+      "steps": [
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            53
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            136
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            136
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            152
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            41
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            78
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            169
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            82
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            93
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            69
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            31
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            13
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            95
+          ]
+        ],
+        [
+          [
+            0,
+            850
+          ],
+          [
+            1,
+            850
+          ],
+          [
+            2,
+            21
+          ],
+          [
+            3,
+            849
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        [
+          [
+            0,
+            849
+          ],
+          [
+            1,
+            849
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            850
+          ],
+          [
+            4,
+            41
+          ]
+        ]
+      ]
+    }
+  ],
+  "roamReset": [
+    true,
+    true,
+    false,
+    false,
+    true
+  ],
+  "pokeRadar": [
+    {
+      "player": [
+        10,
+        10
+      ],
+      "chain": 0,
+      "holes": [
+
+      ],
+      "start": 1010,
+      "grasses": [
+        [
+          9,
+          11,
+          0,
+          0
+        ],
+        [
+          8,
+          12,
+          1,
+          0
+        ],
+        [
+          9,
+          7,
+          2,
+          0
+        ],
+        [
+          6,
+          7,
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "player": [
+        1,
+        1
+      ],
+      "chain": 0,
+      "holes": [
+        [
+          3,
+          3
+        ]
+      ],
+      "start": 101,
+      "grasses": [
+        [
+          2,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          0
+        ],
+        [
+          1,
+          5,
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "player": [
+        20,
+        15
+      ],
+      "chain": 5,
+      "holes": [
+
+      ],
+      "start": 2020,
+      "grasses": [
+        [
+          20,
+          14,
+          0,
+          0
+        ],
+        [
+          21,
+          13,
+          1,
+          0
+        ],
+        [
+          22,
+          12,
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "player": [
+        12,
+        8
+      ],
+      "chain": 45,
+      "holes": [
+        [
+          11,
+          7
+        ],
+        [
+          13,
+          9
+        ]
+      ],
+      "start": 1253,
+      "grasses": [
+        [
+          11,
+          8,
+          0,
+          0
+        ],
+        [
+          14,
+          7,
+          1,
+          0
+        ],
+        [
+          15,
+          6,
+          2,
+          0
+        ],
+        [
+          11,
+          12,
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "player": [
+        0,
+        0
+      ],
+      "chain": 2,
+      "holes": [
+
+      ],
+      "start": 2,
+      "grasses": [
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

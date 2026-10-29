@@ -57,12 +57,6 @@ const nowSeconds = () => Math.floor(pbGetTimeNow().getTime() / 1000);
 const player = () => G.player as unknown as Player | null;
 const stats = () => (G as unknown as { stats?: GameStats }).stats;
 
-/** Hook for the evolution scene (PokemonEvolutionScene), used by trigger_event_evolution. */
-let evolutionSceneHook: ((pkmn: Pokemon, newSpecies: Id) => Promise<void>) | null = null;
-export function setEvolutionSceneHook(fn: (pkmn: Pokemon, newSpecies: Id) => Promise<void>): void {
-  evolutionSceneHook = fn;
-}
-
 export class Pokemon {
   /** Max total IVs. */
   static readonly IV_STAT_LIMIT = 31;
@@ -970,12 +964,13 @@ export class Pokemon {
     return null;
   }
 
-  /** trigger_event_evolution(number): runs the evolution scene (via the hook) if an Event evolution matches. */
+  /** trigger_event_evolution(number): runs the evolution scene (pbFadeOutInWithMusic) if an Event evolution matches. */
   async triggerEventEvolution(number: number): Promise<boolean> {
     const newSpecies = this.checkEvolutionByEvent(number);
     if (newSpecies) {
-      if (!evolutionSceneHook) throw new Error("The evolution scene isn't ported yet");
-      await evolutionSceneHook(this, newSpecies);
+      // The one evolution scene path (game/items/itemUtilities.ts), loaded on demand to avoid an import cycle.
+      const { pbItemEvolutionScene } = await import("../items/itemUtilities");
+      await pbItemEvolutionScene(this, newSpecies, true);
       return true;
     }
     return false;

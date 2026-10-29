@@ -937,10 +937,11 @@ const methods = {
         battler.moves.forEach((move, i) => {
           if (move.maxMove()) return;
           battler.baseMoves[i] = move;
-          // Ruby then does `move = battler.convert_maxmove(move)` and copies pp and
-          // total_pp onto the new Max Move, but only reassigns the block's local
-          // variable, so battler.moves is unchanged (ZUD bug, preserved).
-          // Deferred: convert_maxmove (ZUD Mechanics/[004] Battle_Battler/Battler_MoveConversion.rb:47)
+          // NOTE (Ruby parity): Ruby then does `move = battler.convert_maxmove(move)`
+          // and copies pp and total_pp onto the new Max Move, but only reassigns
+          // the block's local variable, so battler.moves is unchanged
+          // (Battle_Overrides.rb:240-244); building that discarded Max Move has no
+          // other effect, so it's skipped here.
         });
       }
       battler.effects[PBEffects.Dynamax] -= 1;

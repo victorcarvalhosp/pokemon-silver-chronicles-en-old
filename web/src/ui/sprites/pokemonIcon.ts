@@ -9,8 +9,8 @@
 //   shadow/dmax/gmax/celestial params). "Pokémon Birthsigns" isn't installed,
 //   so the celestial hue is always 0.
 // - Essentials Deluxe / ZUD's Sprite#applyIconEffects: Dynamax icons are
-//   zoomed 1.5x (only in battle; out of battle no Pokémon is Dynamaxed). The
-//   Dynamax pattern overlay (mkxp-z Sprite#pattern) isn't supported.
+//   zoomed 1.5x and patterned (only in battle; out of battle no Pokémon is
+//   Dynamaxed; see battle/zud/scene/dynamaxSprite.ts).
 //
 // The original counts the icon animation in Graphics.frame_rate frames, one
 // per update call; at our 60 Hz that's FRAME_RATE = 60 (GameCharacter.ts).
@@ -19,6 +19,7 @@
 // exact file each Pokémon will use and fetches it.
 
 import { assetExists } from "../../core/assets";
+import { applyDynamaxIcon as zudApplyDynamaxIcon, unDynamax as zudUnDynamax } from "../../battle/zud/scene/dynamaxSprite";
 import type { Id } from "../../data/gameData/gameData";
 import { Species } from "../../data/gameData/species";
 import { FRAME_RATE } from "../../game/GameCharacter";
@@ -280,13 +281,8 @@ export class PokemonIconSprite extends Sprite {
   /** Sprite#applyIconEffects (Essentials Deluxe + ZUD) */
   applyIconEffects(): void {
     // resetEffects -> unDynamax / unTera
-    if (this.zoomX > 1) this.zoomX = 1;
-    if (this.zoomY > 1) this.zoomY = 1;
-    if (this._pokemon?.dynamax) {
-      // applyDynamaxIcon: Settings::SHOW_DYNAMAX_SIZE (the pattern overlay isn't supported)
-      if (this.bitmap && this.bitmap.height <= 64) this.zoomX = this.zoomY = 1.5;
-      else this.zoomX = this.zoomY = 1;
-    }
+    zudUnDynamax(this);
+    if (this._pokemon?.dynamax) zudApplyDynamaxIcon(this, this._pokemon);
   }
 
   setOffset(offset: number = PictureOrigin.CENTER): void {

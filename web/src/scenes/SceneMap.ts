@@ -48,6 +48,8 @@ export async function prepareMap(id: number, renderer?: TilemapRenderer): Promis
 export const SceneMapHooks = {
   pauseMenu: async (): Promise<void> => {},
   useKeyItem: async (): Promise<void> => {},
+  /** Marin's Enhanced Staircases' transfer_player alias (game/field/EnhancedStaircases.ts). */
+  afterTransferPlayer: (): void => {},
 };
 
 export class SceneMap {
@@ -118,6 +120,7 @@ export class SceneMap {
     }
     gameMap().autoplay();
     Input.update();
+    SceneMapHooks.afterTransferPlayer();
   }
 
   async miniupdate(): Promise<void> {
@@ -163,7 +166,7 @@ export class SceneMap {
     this.renderer!.update(Graphics.deltaS);
     const maps = [gameMap(), ...f.maps.filter((m) => m !== gameMap())];
     this.renderer!.draw(maps.map(tilemapSource), G.pokemonGlobal.bridge);
-    EventHandlers.triggerSync("on_frame_update");
+    await EventHandlers.trigger("on_frame_update"); // handlers may show messages (Bug Contest, phone calls)
   }
 
   async update(): Promise<void> {

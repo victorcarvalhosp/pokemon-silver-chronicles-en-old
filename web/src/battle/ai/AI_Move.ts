@@ -7,14 +7,13 @@
 //   the user's Z-Moves to its choices when it can use one).
 // Alias chain: pbChooseMoves = ZUD( Improved AI ). Core's pbChooseMoves and
 // pbGetMoveScoreDamage are replaced and aren't ported.
-//
-// Deferred: ZUD's Z-Move branch of pbChooseMoves (Battle_AI.rb:55-87; the
-// core defers Z-Moves, so pbCanZMove? is always false).
 
 import type { Battler } from "../battler/Battler";
 import type { Move } from "../move/Move";
+import type { Pokemon } from "../../game/pokemon/Pokemon";
 import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
+import { powerMoveParam } from "../zud/Battle_PowerMove";
 import { AI, type AIChoice, PBTrainerAI } from "./Battle_AI";
 
 /** Improved AI/settings.rb */
@@ -30,8 +29,47 @@ const methods = {
     const user = this.battle.battlers[idxBattler]!;
     const elig = user.wild() ? user.ace() : true;
     if (this.battle.pbCanZMove(idxBattler) && elig && !this.battle.pbScriptedMechanic(idxBattler, "zmove")) {
-      // Deferred: Z-Moves (ZUD Mechanics/[003] Battle/Battle_AI.rb:55-87).
+      // Adds every eligible Z-Move to the user's movepool selection if the user
+      // has the Z-Move option available to use.
+      const newMoves: (Move | null)[] = [];
+      user.baseMoves.length = 0;
+      const species = user.effects[PBEffects.Transform]
+        ? (user.effects[PBEffects.TransformPokemon] as Pokemon).speciesData().id : null;
+      user.moves.forEach((m) => { // eachMoveWithIndex
+        user.baseMoves.push(m);
+        let zmove: Move | null;
+        if (user.pokemon!.compatZmove(powerMoveParam(m), null, species)) {
+          zmove = user.convertZmove(m, user.itemId, species);
+          zmove.pp = m.pp;
+        } else {
+          zmove = null;
+        }
+        newMoves.push(zmove);
+      });
+      if (newMoves.length > 0) {
+        for (const m of newMoves) if (m) user.moves.push(m);
+      }
       await this.improvedAI_pbChooseMoves(idxBattler);
+      // Registers the Z-Move mechanic if the AI determined a Z-Move is the best
+      // move to use.
+      const chosen = this.battle.choices[idxBattler]![2] as Move | null;
+      // NOTE (Ruby parity): if the AI chose to switch instead, choices[2] is nil
+      //       and Ruby raises NoMethodError here (Battle_AI.rb:75), leaving the
+      //       Z-Moves in the user's moves.
+      if (!chosen) throw new TypeError("undefined method `zMove?' for nil:NilClass");
+      if (chosen.zMove()) {
+        this.battle.pbRegisterZMove(idxBattler);
+        user.powerTrigger = true;
+        user.selectedMoveIsZMove = true;
+        newMoves.forEach((m, i) => {
+          if (m !== chosen) return;
+          user.powerIndex = i;
+        });
+      }
+      if (user.baseMoves.length > 0) {
+        user.moves.length = 0;
+        for (const m of user.baseMoves) user.moves.push(m as Move);
+      }
     } else {
       await this.improvedAI_pbChooseMoves(idxBattler);
     }

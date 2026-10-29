@@ -8,8 +8,7 @@
 // - Essentials Deluxe ([001] Plugin Patches/_Custom Placeholder_.rb:41):
 //   pbEnemyShouldCustom?.
 // - ZUD Mechanics ([003] Battle/Battle_AI.rb:10,29): pbEnemyShouldUltraBurst?,
-//   pbEnemyShouldDynamax? (both always false here: the core defers Ultra Burst
-//   and Dynamax, so pbCanUltraBurst?/pbCanDynamax? are false).
+//   pbEnemyShouldDynamax? (the Z-Move choice is in AI_Move.ts's pbChooseMoves).
 //
 // The rest of Battle::AI is in the other files of this folder (one per Ruby
 // file); ai/AI.ts imports them in load order. Import AI from there.

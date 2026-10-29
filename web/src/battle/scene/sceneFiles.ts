@@ -166,3 +166,22 @@ export function cryLength(pkmn: Pokemon | null | undefined, pitch: number | null
   }
   return ret / (pitch / 100); // Sound played at a lower pitch lasts longer
 }
+
+/** Loads what crySpeciesLength(species, form) needs. */
+export async function preloadCrySpeciesLength(species: Id, form = 0): Promise<void> {
+  const file = pbResolveAudioSE(SpeciesFiles.cryFilename(species, form));
+  if (file) await fetchPlayTime(file);
+}
+
+/** GameData::Species.cry_length(species, form, pitch) for a species (needs preloadCrySpeciesLength). */
+export function crySpeciesLength(species: Id, form = 0, pitch = 100): number {
+  if (pitch <= 0) return 0;
+  const file = pbResolveAudioSE(SpeciesFiles.cryFilename(species, form));
+  let ret = 0.0;
+  if (file) {
+    const t = knownPlayTimes.get(file);
+    if (t === undefined) void fetchPlayTime(file);
+    ret = t ?? 0;
+  }
+  return ret / (pitch / 100);
+}

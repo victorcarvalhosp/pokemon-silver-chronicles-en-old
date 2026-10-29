@@ -19,11 +19,12 @@
 //      the Z-Move/Ultra Burst/Dynamax fight menu toggles.
 //   34 Enhanced UI ([002] Battle UI.rb:27-71): the (hidden) move/battle info sprites.
 //
-// Not ported (see the report): Enhanced UI's Move Info / Battle Info windows
-// (M/N keys; [002] Battle UI.rb:75-956), Essentials Deluxe's midbattle scripting
-// (dx_midbattle, Midbattle_Main.rb) and Mega/Primal cinematics
-// ([000] Mega Evolution.rb:250-700, unused while the Common:MegaEvolution
-// animation exists), ZUD's Dynamax/Z-Move/Ultra Burst/Max Raid cinematics,
+// Essentials Deluxe's midbattle scripting (pbDeluxeTriggers, dx_midbattle), the
+// Mega/Primal cinematics and Enhanced UI's Move Info / Battle Info windows are
+// in web/src/battle/deluxe, which installs them on this class.
+// ZUD's Dynamax/Z-Move/Ultra Burst cinematics are in web/src/battle/zud/scene,
+// which installs them on this class the same way.
+// Not ported (see the report): ZUD's Max Raid cinematics,
 // Generation 9 Pack's pbArceusTransform, the debug menu (F9).
 //
 // Every loop that calls Graphics.update in Ruby awaits it here, so the scene's
@@ -58,6 +59,7 @@ import { Audio } from "../../rgss/Audio";
 import { Viewport } from "../../rgss/display";
 import { Graphics } from "../../rgss/Graphics";
 import { Input } from "../../rgss/Input";
+import { KeyboardInput } from "../../ui/textEntry/keyboard";
 import { Color, Tone } from "../../rgss/types";
 import { PokemonBag_Scene } from "../../ui/bag/bag";
 import { pbFadeInAndShow, pbFadeOutAndHide, pbFadeOutIn } from "../../ui/fades";
@@ -74,7 +76,7 @@ import { Window_AdvancedTextPokemon, Window_CommandPokemon } from "../../ui/wind
 import type { IBattleScene } from "../BattleSceneInterface";
 import { PBDebug } from "../other/PBDebug";
 import { PBEffects } from "../other/PBEffects";
-import { ballGraphics, BURST_GRAPHICS, type Animation as SceneAnimation } from "./animationBase";
+import { AnimationDxHooks, ballGraphics, BURST_GRAPHICS, type Animation as SceneAnimation } from "./animationBase";
 import {
   FOCUSTARGET_X, FOCUSTARGET_Y, FOCUSUSER_X, FOCUSUSER_Y, PBAnimationPlayerX, pbLoadBattleAnimations, pbLoadMoveToAnim,
   preloadAnimationGraphics, preloadBattleAnimations, type MoveToAnim, type PBAnimation,
@@ -116,16 +118,10 @@ export const DXTriggers = {
 export const BattleSceneHooks: {
   /** pbInSafari? */
   inSafari: () => boolean;
-  /** $game_temp.dx_midbattle? (Essentials Deluxe midbattle scripts) */
-  dxMidbattle: () => boolean;
-  /** dx_midbattle(idxBattler, idxTarget, *triggers) (not ported) */
-  dxMidbattleRun: ((scene: BattleScene, idxBattler: number | null, idxTarget: number | null, triggers: string[]) => Promise<void>) | null;
   /** $DEBUG (F9 opens the battle debug menu) */
   debug: () => boolean;
 } = {
   inSafari: () => false,
-  dxMidbattle: () => false,
-  dxMidbattleRun: null,
   debug: () => false,
 };
 
@@ -238,12 +234,16 @@ export class BattleScene implements IBattleScene {
   private briefMessage = false;
   private bagLastPocket: number | null = null;
   private bagChoices: number[] = [];
-  // Essentials Deluxe midbattle state (Midbattle_Triggers.rb)
-  private midbattleVar = 0;
-  private midbattleChoice: unknown = null;
-  private midbattleDecision = 0;
-  private namePanelName: string | null = null;
-  private namePanelSkin: unknown = null;
+  // Essentials Deluxe midbattle state (Midbattle_Triggers.rb:13-20); the
+  // midbattle methods (pbDeluxeTriggers, dx_midbattle) are installed by
+  // web/src/battle/deluxe.
+  midbattleVar = 0;
+  midbattleChoice: unknown = null;
+  midbattleDecision = 0;
+  midbattleDelay: string[] = [];
+  midbattleIgnore: string[] = [];
+  namePanelName: string | null = null;
+  namePanelSkin: unknown = null;
   // Enhanced UI
   moveUIToggle = false;
   infoUIToggle = false;
@@ -329,6 +329,7 @@ export class BattleScene implements IBattleScene {
 
   pbInputUpdate(): void {
     Input.update();
+    KeyboardInput.update(); // Input.triggerex? (Enhanced UI's M/N keys)
     if (Input.trigger(Input.BACK) && this.abortable && !this.aborted) {
       this.aborted = true;
       this.b.pbAbort();
@@ -685,6 +686,7 @@ export class BattleScene implements IBattleScene {
   constructor() {
     setBattlerPositionFunction(BattleScene.pbBattlerPosition);
     AnimationHooks.battlerPosition = BattleScene.pbBattlerPosition;
+    AnimationDxHooks.battlerPosition = BattleScene.pbBattlerPosition;
     AnimationHooks.trainerPosition = BattleScene.pbTrainerPosition;
     AnimationHooks.numBalls = BattleScene.NUM_BALLS;
   }
@@ -722,7 +724,7 @@ export class BattleScene implements IBattleScene {
     if (guest) paths.add(guest);
     const pokemon: Pokemon[] = [];
     for (let side = 0; side < 2; side++) {
-      for (const pkmn of this.b.pbParty(side)) if (pkmn) pokemon.push(pkmn);
+      for (const pkmn of this.b.pbParty(side) ?? []) if (pkmn) pokemon.push(pkmn); // (a SafariBattle has no party 0)
     }
     for (const pkmn of pokemon) {
       for (const back of [false, true]) {
@@ -738,8 +740,12 @@ export class BattleScene implements IBattleScene {
       preloadPokemonIcons(pokemon),
       preloadBattleAnimations(),
       ...pokemon.flatMap((p) => [preloadCryLength(p), preloadCryLength(p, "_faint")]),
+      ...BattleScene.extraPreloads.map((f) => f(this)),
     ]);
   }
+
+  /** What plugins' scene additions draw, fetched with the rest (web/src/battle/deluxe registers one). */
+  static extraPreloads: ((scene: BattleScene) => Promise<void>)[] = [];
 
   pbInitSprites(): void {
     this.sprites = {};
@@ -1053,6 +1059,9 @@ export class BattleScene implements IBattleScene {
         this.pbHidePluginUI();
         ret = -2;
         break;
+      } else if (this.pbToggleBattleInfo && KeyboardInput.triggerex("N")) { // Enhanced UI: Battle Info
+        pbHideFocusPanel(this);
+        await this.pbToggleBattleInfo();
       }
     }
     return ret;
@@ -1114,7 +1123,11 @@ export class BattleScene implements IBattleScene {
       } else if (Input.trigger(Input.DOWN)) {
         if (battler.moves[cw.index + 2]?.id && (cw.index & 2) === 0) cw.index += 2;
       }
-      if (cw.index !== oldIndex) pbPlayCursorSE();
+      if (cw.index !== oldIndex) {
+        pbPlayCursorSE();
+        // Enhanced UI (installed by web/src/battle/deluxe)
+        this.pbUpdateMoveInfoWindow?.(battler as never, cw.index);
+      }
       //-------------------------------------------------------------------------
       // Confirm Selection
       if (Input.trigger(Input.USE)) {
@@ -1143,7 +1156,9 @@ export class BattleScene implements IBattleScene {
           needRefresh = true;
         }
       }
-      // (Enhanced UI's M/N toggles aren't ported; Focus Meter isn't installed.)
+      //-------------------------------------------------------------------------
+      // Other Commands (Enhanced UI's M/N windows; Focus Meter isn't installed)
+      await this.pbFightMenu_EnhancedUI?.(battler as never, cw);
     }
     this.pbHidePluginUI();
     this.lastMove[idxBattler] = cw.index;
@@ -2402,7 +2417,7 @@ export class BattleScene implements IBattleScene {
     w.visible = !(!newName || !visible);
   }
 
-  async pbShowSlideSprite(id: number | string | unknown[]): Promise<void> {
+  async pbShowSlideSprite(id: number | string | unknown[] | null): Promise<void> {
     const appearAnim = new SlideSpriteAppear(this.sprites, this.viewport, id, this.b, this);
     this.animations.push(appearAnim);
     while (this.inPartyAnimation()) await this.pbUpdate();
@@ -2493,47 +2508,6 @@ export class BattleScene implements IBattleScene {
       tone -= toneDiff;
       this.viewport.tone.set(tone, tone, tone, 0);
       if (tone <= 0) break;
-    }
-  }
-
-  /**
-   * Essentials Deluxe (Midbattle_Triggers.rb): compiles a list of all viable
-   * triggers of each type to check for. Midbattle scripts themselves
-   * (dx_midbattle) aren't ported; BattleSceneHooks.dxMidbattleRun can run them.
-   */
-  async pbDeluxeTriggers(idxBattler: number | SceneBattler | null, idxTarget: number | null, triggers: string[]): Promise<void> {
-    if (!BattleSceneHooks.dxMidbattle()) return;
-    let array: string[] = [];
-    if (idxBattler != null && typeof idxBattler !== "number") idxBattler = idxBattler.index;
-    if (idxBattler != null) {
-      const battler = this.b.battlers[idxBattler]! as SceneBattler & { pbOwnedByPlayer?(): boolean };
-      for (const t of triggers) array.push(battler.pbOwnedByPlayer?.() ? t : battler.opposes() ? t + "_foe" : t + "_ally");
-    } else {
-      array = [...triggers];
-    }
-    const run = BattleSceneHooks.dxMidbattleRun;
-    if (!run) return;
-    const oldvar = this.midbattleVar;
-    if (array.length > 0) await run(this, idxBattler, idxTarget, array);
-    if (this.midbattleChoice != null && this.midbattleDecision > 0) {
-      for (;;) {
-        const choice: unknown = this.midbattleChoice;
-        const tag = Array.isArray(choice) ? String(choice[0]) : String(choice);
-        const trig = [`choice_${tag}_${this.midbattleDecision}`];
-        if (Array.isArray(choice)) {
-          trig.push(`choice_${tag}_${this.midbattleDecision === choice[1] ? "correct" : "incorrect"}`);
-        }
-        await run(this, idxBattler, idxTarget, trig);
-        if (this.midbattleChoice === choice) break;
-      }
-      this.midbattleChoice = null;
-      this.midbattleDecision = 0;
-    }
-    if (this.midbattleVar !== oldvar) {
-      const trig = [`variable_${this.midbattleVar}`, `variable_under_${this.midbattleVar + 1}`];
-      for (let i = 0; i < this.midbattleVar; i++) trig.push(`variable_over_${i}`);
-      trig.push(`variable_${this.midbattleVar > oldvar ? "up" : "down"}`);
-      await run(this, idxBattler, idxTarget, trig);
     }
   }
 

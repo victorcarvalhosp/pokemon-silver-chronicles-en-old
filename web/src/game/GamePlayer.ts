@@ -10,7 +10,7 @@ import { rand } from "../core/random";
 import { Input } from "../rgss/Input";
 import { Graphics } from "../rgss/Graphics";
 import { EventHandlers } from "./eventHandlers";
-import { GameCharacter, REAL_RES_X, REAL_RES_Y, TILE_HEIGHT, TILE_WIDTH, FRAME_RATE } from "./GameCharacter";
+import { CharacterHooks, GameCharacter, REAL_RES_X, REAL_RES_Y, TILE_HEIGHT, TILE_WIDTH, FRAME_RATE } from "./GameCharacter";
 import type { GameEvent } from "./GameEvent";
 import { eventCanReachPlayer, pbEventFacesPlayer } from "./GameEvent";
 import type { GameMap } from "./GameMap";
@@ -22,6 +22,8 @@ import { terrainTag, type TerrainTag } from "../data/gameData/terrainTag";
 const SCREEN_CENTER_X = (512 / 2 - TILE_WIDTH / 2) * 4;
 const SCREEN_CENTER_Y = (384 / 2 - TILE_HEIGHT / 2) * 4;
 const BOB_FRAME_SPEED = 1 / 15;
+/** Settings::DUST_ANIMATION_ID */
+const DUST_ANIMATION_ID = 2;
 
 /** $player as the overworld needs it, until the full Player class lands. */
 export interface OverworldTrainer {
@@ -94,28 +96,29 @@ export class GamePlayer extends GameCharacter {
     return (G.pokemonSystem.runstyle === 1) !== Input.press(Input.BACK);
   }
 
+  /** The v20.1 Hotfixes' set_movement_type (Overworld bug fixes.rb): this game's copy cycles at speed 6. */
   setMovementType(type: string): void {
     const meta = playerMetadata(trainer()?.characterID ?? 1);
     let charset: string | null | undefined = null;
     const force = !this.moveRouteForcing;
     switch (type) {
-      case "fishing": charset = pbGetPlayerCharset(meta?.fishCharset); break;
-      case "surf_fishing": charset = pbGetPlayerCharset(meta?.surfFishCharset); break;
+      case "fishing": charset = pbGetPlayerCharset(fishCharset(meta)); break;
+      case "surf_fishing": charset = pbGetPlayerCharset(meta?.surfFishCharset ?? fishCharset(meta)); break;
       case "diving": case "diving_fast": case "diving_jumping": case "diving_stopped":
         if (force) this.moveSpeed = 3;
-        charset = pbGetPlayerCharset(meta?.diveCharset);
+        charset = pbGetPlayerCharset(meta?.diveCharset ?? surfCharset(meta));
         break;
       case "surfing": case "surfing_fast": case "surfing_jumping": case "surfing_stopped":
         if (force) this.moveSpeed = type === "surfing_jumping" ? 3 : 4;
-        charset = pbGetPlayerCharset(meta?.surfCharset);
+        charset = pbGetPlayerCharset(surfCharset(meta));
         break;
       case "cycling": case "cycling_fast": case "cycling_jumping": case "cycling_stopped":
-        if (force) this.moveSpeed = type === "cycling_jumping" ? 3 : 5;
-        charset = pbGetPlayerCharset(meta?.cycleCharset);
+        if (force) this.moveSpeed = type === "cycling_jumping" ? 3 : 6;
+        charset = pbGetPlayerCharset(cycleCharset(meta));
         break;
       case "running":
         if (force) this.moveSpeed = 4;
-        charset = pbGetPlayerCharset(meta?.runCharset);
+        charset = pbGetPlayerCharset(runCharset(meta));
         break;
       case "ice_sliding":
         if (force) this.moveSpeed = 4;
@@ -131,7 +134,7 @@ export class GamePlayer extends GameCharacter {
   refreshCharset(): void {
     const meta = playerMetadata(trainer()?.characterID ?? 1);
     const g = G.pokemonGlobal;
-    const charset = g.diving ? meta?.diveCharset : g.surfing ? meta?.surfCharset : g.bicycle ? meta?.cycleCharset : meta?.walkCharset;
+    const charset = g.diving ? meta?.diveCharset ?? surfCharset(meta) : g.surfing ? surfCharset(meta) : g.bicycle ? cycleCharset(meta) : meta?.walkCharset;
     const resolved = pbGetPlayerCharset(charset);
     if (resolved) this.characterName = resolved;
   }
@@ -151,6 +154,7 @@ export class GamePlayer extends GameCharacter {
         if (this.pbLedge(xo, yo)) return;
         if (this.pbEndSurf(xo, yo)) return;
         this.turnGeneric(dir, true);
+        PlayerHooks.beforeStep?.(this, dir); // Marin's Enhanced Staircases' `yield`
         if (!G.gameTemp.encounterTriggered) {
           this.x += xo;
           this.y += yo;
@@ -197,7 +201,9 @@ export class GamePlayer extends GameCharacter {
           Input.update();
           await pbUpdateSceneMap();
         }
-        // TODO(animations): dust animation (Settings::DUST_ANIMATION_ID).
+        // $scene.spriteset.addUserAnimation(Settings::DUST_ANIMATION_ID, x, y, true, 1)
+        const scene = G.scene as unknown as { spriteset?(): { addUserAnimation(id: number, x: number, y: number, t: boolean, h: number): unknown } | undefined };
+        scene.spriteset?.()?.addUserAnimation(DUST_ANIMATION_ID, this.x, this.y, true, 1);
         this.increaseSteps();
         this.checkEventTriggerHere([1, 2]);
       };
@@ -214,10 +220,9 @@ export class GamePlayer extends GameCharacter {
     }
   }
 
-  private pbEndSurf(_xo: number, _yo: number): boolean {
-    if (!G.pokemonGlobal.surfing) return false;
-    // TODO(surf): ending a surf arrives with field moves.
-    return false;
+  /** pbEndSurf (012_Overworld/004_Overworld_FieldMoves.rb): game/field/FieldMoves.ts. */
+  private pbEndSurf(xo: number, yo: number): boolean {
+    return PlayerHooks.endSurf(xo, yo);
   }
 
   pbTriggeredTrainerEvents(triggers: number[], checkIfRunning = true, trainerOnly = false): GameEvent[] {
@@ -386,23 +391,24 @@ export class GamePlayer extends GameCharacter {
 
   override async update(): Promise<void> {
     const lastRealX = this.realX, lastRealY = this.realY;
-    // Game_Character#update, with an await point for blocking movement.
+    // Game_Character#update, with await points for blocking movement (after
+    // the command: ledges/surf; after the move: what :on_step_taken starts).
+    CharacterHooks.beforeUpdate?.(this);
     this.movedLastFrame = this.movedThisFrame;
     this.stoppedLastFrame = this.stoppedThisFrame;
     this.movedThisFrame = false;
     this.stoppedThisFrame = false;
     if (!G.gameTemp.inMenu) {
       this.updateCommand();
-      if (this.blocking) {
-        const b = this.blocking;
-        this.blocking = null;
-        await b();
-      }
+      await this.runBlocking();
       this.moving() || this.jumping() ? this.updateMove() : this.updateStop();
+      await this.runBlocking();
     }
     this.updatePattern();
+    CharacterHooks.afterUpdate?.(this);
     if (G.gameTemp.inMenu && this.stoppedLastFrame) this.updateStop();
     this.updateScreenPosition(lastRealX, lastRealY);
+    PlayerHooks.afterScreenPosition?.(this);
     // Update dependent events
     if ((!this.movedLastFrame || this.stoppedLastFrame || (this.stoppedThisFrame && G.pokemonGlobal.sliding)) &&
         (this.moving() || this.jumping())) {
@@ -410,7 +416,21 @@ export class GamePlayer extends GameCharacter {
     }
     await G.gameTemp.followers?.update();
     if (this.bumpSe > 0) this.bumpSe -= 1;
+    // Finish up dismounting from surfing
+    if (G.gameTemp.endingSurf && !this.moving()) {
+      pbCancelVehicles();
+      (G.gameTemp as unknown as { surfBaseCoords: unknown }).surfBaseCoords = null;
+      G.gameTemp.endingSurf = false;
+    }
     await this.updateEventTriggering();
+  }
+
+  private async runBlocking(): Promise<void> {
+    while (this.blocking) {
+      const b = this.blocking;
+      this.blocking = null;
+      await b();
+    }
   }
 
   protected override updateCommandNew(): void {
@@ -505,6 +525,23 @@ export class GamePlayer extends GameCharacter {
     }
   }
 }
+
+type CharsetMeta = ReturnType<typeof playerMetadata>;
+/** GameData::PlayerMetadata's charset fallbacks (run -> walk, cycle -> run, surf -> cycle, fish -> walk). */
+const runCharset = (m: CharsetMeta) => m?.runCharset ?? m?.walkCharset;
+const cycleCharset = (m: CharsetMeta) => m?.cycleCharset ?? runCharset(m);
+const surfCharset = (m: CharsetMeta) => m?.surfCharset ?? cycleCharset(m);
+const fishCharset = (m: CharsetMeta) => m?.fishCharset ?? m?.walkCharset;
+
+/** Overworld code the player's update calls into (game/field). */
+export const PlayerHooks: {
+  /** pbEndSurf(x_offset, y_offset): true if it took over the move. */
+  endSurf: (xOffset: number, yOffset: number) => boolean;
+  /** Marin's Enhanced Staircases: the block move_up/move_down pass to move_generic. */
+  beforeStep?: (p: GamePlayer, dir: number) => void;
+  /** Marin's Enhanced Staircases: its moving? alias re-centres the screen here. */
+  afterScreenPosition?: (p: GamePlayer) => void;
+} = { endSurf: () => false };
 
 /** pbOnStepTaken (012_Overworld/001_Overworld.rb), without wild encounters. */
 async function pbOnStepTakenBase(eventTriggered: boolean): Promise<void> {

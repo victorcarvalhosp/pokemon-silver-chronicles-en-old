@@ -11,7 +11,7 @@
 // Messages go through the message system (ui/messages pbMessage); tests and
 // headless code can swap it with setMessageHook, and the two screens the
 // level/Exp. helpers open with setTopRightWindowHook (pbTopRightWindow) and
-// setItemEvolutionSceneHook (PokemonEvolutionScene, not ported yet).
+// setItemEvolutionSceneHook (PokemonEvolutionScene, ui/evolution).
 
 import type { Id } from "../../data/gameData/gameData";
 import { _INTL } from "../../data/gameData/gameData";
@@ -340,12 +340,14 @@ export function isPartyScreen(scene: unknown): boolean {
  *     evo.pbEndScreen
  *     <after>
  *   }
- * PokemonEvolutionScene (016_UI/..._UI_Evolution.rb) isn't ported, so the
- * scene is a hook the evolution port (or a test) sets. `after` is what the
- * caller runs inside the fade (refreshing the party screen).
+ * This is the one path to PokemonEvolutionScene (ui/evolution/Evolution.ts,
+ * loaded on demand): items, events (Pokemon#trigger_event_evolution), battle
+ * ends (fadeWithMusic false) and trades all come here; tests replace it with
+ * setItemEvolutionSceneHook. `after` is what the caller runs inside the fade
+ * (refreshing the party screen).
  */
 export type ItemEvolutionSceneFn = (pkmn: Pokemon, newSpecies: Id, canCancel: boolean,
-  after: () => void | Promise<void>) => Promise<void>;
+  after: () => void | Promise<void>, fadeWithMusic?: boolean) => Promise<void>;
 let itemEvolutionScene: ItemEvolutionSceneFn | null = null;
 
 export function setItemEvolutionSceneHook(fn: ItemEvolutionSceneFn | null): void {
@@ -353,11 +355,11 @@ export function setItemEvolutionSceneHook(fn: ItemEvolutionSceneFn | null): void
 }
 
 export async function pbItemEvolutionScene(pkmn: Pokemon, newSpecies: Id, canCancel = true,
-  after: () => void | Promise<void> = () => {}): Promise<void> {
-  if (itemEvolutionScene) return itemEvolutionScene(pkmn, newSpecies, canCancel, after);
-  // TODO(evolution): PokemonEvolutionScene isn't ported yet (016_UI/..._UI_Evolution.rb).
-  console.warn(`PokemonEvolutionScene isn't ported yet: ${pkmn.species} would evolve into ${newSpecies}`);
-  await after();
+  after: () => void | Promise<void> = () => {}, fadeWithMusic = true): Promise<void> {
+  if (itemEvolutionScene) return itemEvolutionScene(pkmn, newSpecies, canCancel, after, fadeWithMusic);
+  // Loaded on demand: this module also runs in node and in the battle code.
+  const { pbEvolutionScene } = await import("../../ui/evolution/Evolution");
+  await pbEvolutionScene(pkmn, newSpecies, canCancel, after, fadeWithMusic);
 }
 
 //===============================================================================

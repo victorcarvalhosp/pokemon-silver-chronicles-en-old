@@ -54,16 +54,20 @@ export const MenuScreens: {
 export const FieldActions: {
   /** pbUseHiddenMove(pokemon, move) */
   useHiddenMove?: (pkmn: unknown, move: string) => Promise<boolean>;
-  /** pbCanUseHiddenMove?(pokemon, move, showmsg) */
+  /** pbCanUseHiddenMove?(pokemon, move, showmsg) without its message (for showmsg = false). */
   canUseHiddenMove?: (pkmn: unknown, move: string, showmsg: boolean) => boolean;
+  /** pbCanUseHiddenMove?(pokemon, move, showmsg), showing why it can't be used. */
+  canUseHiddenMoveAsync?: (pkmn: unknown, move: string, showmsg: boolean) => Promise<boolean>;
   /** pbConfirmUseHiddenMove(pokemon, move) */
   confirmUseHiddenMove?: (pkmn: unknown, move: string) => Promise<boolean>;
   /** HiddenMoveHandlers.hasHandler(move) */
   hasHiddenMoveHandler?: (move: string) => boolean;
   /** pbBadgeFromSkill(skill) (Improved Field Skills) */
   badgeFromSkill?: (skill: string) => number;
-  /** pbCheckHiddenMoveBadge(badge, showmsg) */
+  /** pbCheckHiddenMoveBadge(badge, showmsg) without its message (for showmsg = false). */
   checkHiddenMoveBadge?: (badge: number, showmsg: boolean) => boolean;
+  /** pbCheckHiddenMoveBadge(badge, showmsg), showing "Sorry, a new Badge is required." */
+  checkHiddenMoveBadgeAsync?: (badge: number, showmsg: boolean) => Promise<boolean>;
   /** pbUseKeyItemInField(item): true if the item was used. */
   useKeyItemInField?: (item: string) => Promise<boolean>;
   /** ItemHandlers.triggerConfirmUseInField(item) */

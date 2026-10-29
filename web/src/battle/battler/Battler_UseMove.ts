@@ -216,9 +216,9 @@ const methods = {
     const side = this.battle.opposes(this.index) ? 1 : 0;
     const owner = this.battle.pbGetOwnerIndexFromBattlerIndex(this.index);
     if (this.battle.zMove[side]![owner] === this.index) {
-      // Deferred: z_move = convert_zmove(choice[2], nil, @effects[PBEffects::TransformSpecies]);
-      // z_move.specialUseZMove = true; choice[2] = z_move
-      // (ZUD Mechanics/[004] Battle_Battler/Battler_Overrides.rb:137, Battler_MoveConversion.rb:33)
+      const zMove = this.convertZmove(choice[2] as Move, null, this.effects[PBEffects.TransformSpecies] as Id | null);
+      zMove.specialUseZMove = true;
+      choice[2] = zMove;
       await this.pbUseMove(choice, specialUsage);
     } else {
       await this.pbUseMove(choice, specialUsage);
@@ -233,8 +233,7 @@ const methods = {
     this.lastMoveUsedIsZMove = false;
     if ((choice[2] as Move).powerMove()) {
       if (this.powerIndex === -1) this.powerIndex = choice[1];
-      // Deferred: choice[2] = calc_power_move(choice[2])
-      // (ZUD Mechanics/[004] Battle_Battler/Battler_Overrides.rb:96, Battler_MoveConversion.rb:57)
+      choice[2] = this.calcPowerMove(choice[2] as Move);
       if (this.selectedMoveIsZMove) {
         (choice[2] as Move).specialUseZMove = specialUsage;
       }

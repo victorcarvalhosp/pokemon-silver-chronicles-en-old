@@ -351,8 +351,11 @@ export class Interpreter {
   }
 
   pbEraseThisEvent(): boolean {
-    (G.gameMap as unknown as GameMap).events.get(this.eventId)?.erase();
-    // TODO($PokemonMap): addErasedEvent once PokemonMapMetadata is ported.
+    const event = (G.gameMap as unknown as GameMap).events.get(this.eventId);
+    if (event) {
+      event.erase();
+      (G as unknown as { pokemonMap?: { addErasedEvent(id: number): void } | null }).pokemonMap?.addErasedEvent(this.eventId);
+    }
     this.index += 1;
     return true;
   }
@@ -370,9 +373,9 @@ export class Interpreter {
     } while (interp.running());
   }
 
+  /** game/trainers/trainerEvents.ts replaces this with the full version (trainer type check, intro BGM). */
   pbTrainerIntro(_symbol: string): boolean {
     this.pbGlobalLock();
-    // TODO(M4): pbPlayTrainerIntroBGM(tr_type) once trainer types are loaded.
     return true;
   }
 

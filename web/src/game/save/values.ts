@@ -12,6 +12,8 @@ import { Interpreter, type InterpreterState } from "../Interpreter";
 import { PokemonMapFactory } from "../MapFactory";
 import { Player } from "../Player";
 import { PokemonMapMetadata } from "../PokemonMapMetadata";
+import { PCItemStorage, type ItemSlot } from "../items/PokemonBag";
+import { Mail } from "../pokemon/Mail";
 import { SaveData } from "./SaveData";
 import { decodeJson, encodeJson, restore, snapshot } from "./snapshot";
 
@@ -141,7 +143,14 @@ SaveData.register({
 SaveData.register({
   id: "global_metadata",
   save: () => snapshot(G.pokemonGlobal),
-  load: (v) => { G.pokemonGlobal = new PokemonGlobalMetadata(); restore(G.pokemonGlobal, v); },
+  load: (v) => {
+    G.pokemonGlobal = new PokemonGlobalMetadata();
+    restore(G.pokemonGlobal, v);
+    // The PC's item storage and mailbox come back as plain objects.
+    const g = G.pokemonGlobal;
+    if (g.pcItemStorage) g.pcItemStorage = PCItemStorage.fromJSON(g.pcItemStorage as unknown as { items: ItemSlot[] });
+    if (g.mailbox) g.mailbox = g.mailbox.map((m) => Mail.fromJSON(m as unknown as Parameters<typeof Mail.fromJSON>[0]));
+  },
   newGame: () => { G.pokemonGlobal = new PokemonGlobalMetadata(); },
 });
 

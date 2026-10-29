@@ -49,6 +49,8 @@ import "./abilities"; // the ability handlers (008_Battle_AbilityEffects.rb + pl
 import "./other/ItemEffects";
 import "./items"; // the item handlers (009_Battle_ItemEffects.rb, 013_Items/002-003 + plugins)
 import "./other/PokeBallEffects";
+// ZUD Mechanics: Z-Moves, Ultra Burst, Dynamax (Power Move classes, pbDynamax etc.)
+import "./zud";
 
 export { Battle } from "./battle/Battle";
 export type { BattleChoice, BattleTrainer } from "./battle/Battle";

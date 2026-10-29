@@ -9,7 +9,8 @@
 import type { GameEvent } from "./GameEvent";
 import type { GameScreen } from "./GameScreen";
 import type { GameSystem } from "./GameSystem";
-import type { PokemonBag } from "./items/PokemonBag";
+import type { PCItemStorage, PokemonBag } from "./items/PokemonBag";
+import type { Mail } from "./pokemon/Mail";
 import type { PokemonStorage } from "./pokemon/PokemonStorage";
 import type { GameStats } from "./trainer/GameStats";
 
@@ -62,8 +63,16 @@ export class PokemonGlobalMetadata {
   pokecenterY = -1;
   pokecenterDirection = -1;
   escapePoint: number[] = [];
+  /** Whether Flash lit up the current dark map. */
+  flashUsed = false;
+  /** [map, x, y] Teleport takes the player to (set on entering a map with a teleport destination). */
+  healingSpot: number[] | null = null;
   visitedMaps: boolean[] = [];
   playerID = -1;
+  /** The PC's item storage (created on first use, 019_UI_PC.rb). */
+  pcItemStorage: PCItemStorage | null = null;
+  /** Mail stored in the PC (pbMoveToMailbox). */
+  mailbox: Mail[] | null = null;
 }
 
 /** What the rest of the game needs from PokemonMapFactory. */
@@ -134,6 +143,15 @@ export class GameTemp {
   debugCalling = false;
   titleScreenCalling = false;
   endingSurf = false;
+  // Field moves (game/field)
+  /** [map, x, y] chosen on the Fly map, or null. */
+  flyDestination: [number, number, number] | null = null;
+  /** [x, y] of the surf base while jumping on/off the water, or null. */
+  surfBaseCoords: [number, number] | null = null;
+  /** DarknessSprite on dark maps (game/field/DarknessSprite.ts), or null. */
+  darknessSprite: { dispose(): void } | null = null;
+  /** Following Pokemon EX: skip the follower's part of the field move animation. */
+  noFollowerFieldMove = false;
   battlebackName = "";
   /** pbPushFade/pbPopFade depth. */
   fadestate = 0;
@@ -149,6 +167,16 @@ export class GameTemp {
   /** 0 default, 1 force top, 2 force bottom. */
   speechbubblePosition = 0;
   speechbubbleFollowerEvent: CharacterLike | null = null;
+  /** In the Pokémon storage screen (forms that only change outside storage check it). */
+  inStorage = false;
+  /** item -> [buy price, sell price] set by the Interpreter's setPrice/setSellPrice (-1 = default). */
+  martPrices: Record<string, [number, number]> = {};
+  clearMartPrices(): void { this.martPrices = {}; }
+  // Essentials Deluxe ([002] Battle Deluxe/Battle_Deluxe.rb:8): deluxe battle
+  // settings (see web/src/battle/deluxe/DeluxeTemp.ts).
+  dxRules: Record<string, unknown> | null = null;
+  dxPokemon: Record<string, unknown> | null = null;
+  dxMidbattle: Record<string, unknown> | null = null;
 }
 
 export class GameSwitches {

@@ -48,8 +48,8 @@ const FIELD_MOVES_COUNT_BADGES = true;
 
 /**
  * Settings::ROAMING_SPECIES, the fields Roaming Icon reads: [species, level,
- * game switch]. (Roaming itself isn't ported; with no $PokemonGlobal.roamPosition
- * no icons show.)
+ * game switch] (the full list is in game/battle/roaming.ts; $PokemonGlobal.roamPosition
+ * is set once roaming Pokémon start roaming).
  */
 export const ROAMING_SPECIES: [string, number, number][] = [
   ["RATTATA", 5, 999],
@@ -88,7 +88,7 @@ export function currentMapMetadata(): MapMetadata | null {
 
 /** pbCheckHiddenMoveBadge(badge, showmsg) (012_Overworld/004_Overworld_FieldMoves.rb). */
 async function pbCheckHiddenMoveBadge(badge = -1, showmsg = true): Promise<boolean> {
-  if (FieldActions.checkHiddenMoveBadge) return FieldActions.checkHiddenMoveBadge(badge, showmsg);
+  if (FieldActions.checkHiddenMoveBadgeAsync) return FieldActions.checkHiddenMoveBadgeAsync(badge, showmsg);
   if (badge < 0) return true; // No badge requirement
   if (MenuFlags.DEBUG) return true;
   const p = player();

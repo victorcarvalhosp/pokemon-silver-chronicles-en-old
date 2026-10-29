@@ -340,9 +340,11 @@ export class Battle {
       const lose = rules.losetext as (string | null)[] | undefined;
       if (lose) this.opponent.forEach((t, i) => { t.loseText = lose[i] ?? null; });
     }
-    const scripted = rules.scripted as Record<string, string[]> | undefined;
+    const scripted = rules.scripted as Record<string, unknown[]> | undefined;
     if (!scripted) return;
-    for (const [mechanic, trainers] of Object.entries(scripted)) {
+    for (const [mechanic, trainerSyms] of Object.entries(scripted)) {
+      // The trainers are Symbols (:Player, :FoeSide...): Syms in a deluxe hash (battle/deluxe/rubyData.ts).
+      const trainers = trainerSyms.map((t) => String(t));
       this.scriptedMechanics[mechanic] = [
         new Array<boolean>(this.player ? this.player.length : 1).fill(false),
         new Array<boolean>(this.opponent ? this.opponent.length : 1).fill(false),
