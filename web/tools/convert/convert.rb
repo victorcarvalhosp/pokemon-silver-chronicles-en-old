@@ -183,6 +183,18 @@ module Convert
     end
   end
 
+  # Plugins/MQS quest definitions (QuestModule constants), in definition order.
+  def quests
+    mod = Module.new
+    Object.const_set(:QuestModule, mod) unless defined?(QuestModule)
+    verbose, $VERBOSE = $VERBOSE, nil # the file redefines a key; Ruby keeps the last one
+    load File.join(ROOT, "Plugins", "MQS", "004_Quest_Data.rb")
+    $VERBOSE = verbose
+    QuestModule.constants.each_with_object({}) do |name, out|
+      out[name.to_s] = QuestModule.const_get(name).each_with_object({}) { |(k, v), h| h[k.to_s] = v.is_a?(String) ? Rxdata.str(v) : v }
+    end
+  end
+
   def common_events
     Rxdata.load(File.join(DATA_IN, "CommonEvents.rxdata")).compact.map do |c|
       {
@@ -244,6 +256,7 @@ if $PROGRAM_NAME == __FILE__
   Convert.write(File.join(DATA_OUT, "tilesets.json"), Convert.tilesets)
   Convert.write(File.join(DATA_OUT, "common-events.json"), Convert.common_events)
   Convert.write(File.join(DATA_OUT, "animations.json"), Convert.animations)
+  Convert.write(File.join(DATA_OUT, "quests.json"), Convert.quests)
 
   ids = Dir[File.join(DATA_IN, "Map[0-9]*.rxdata")].map { |f| File.basename(f)[/\d+/].to_i }.sort
   ids &= only unless only.empty?

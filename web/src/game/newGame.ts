@@ -7,6 +7,8 @@ import "./scripts/overworld";
 import "./scripts/messages";
 import "./save/values";
 import "./scripts/menus";
+import "./scripts/phone";
+import { loadQuestData } from "./quests";
 import { initMessageSystem } from "../ui/messageConfig";
 
 async function pbs<T>(file: string): Promise<T> {
@@ -18,7 +20,7 @@ async function pbs<T>(file: string): Promise<T> {
 /** Game.initialize: loads the data every scene relies on. */
 export async function initializeGame(): Promise<void> {
   await Promise.all([loadGameData(), loadAssetIndex()]);
-  await initMessageSystem();
+  await Promise.all([initMessageSystem(), loadQuestData()]);
   const [maps, players, meta, connections] = await Promise.all([
     pbs<unknown>("map-metadata.json"),
     pbs<unknown>("player-metadata.json"),

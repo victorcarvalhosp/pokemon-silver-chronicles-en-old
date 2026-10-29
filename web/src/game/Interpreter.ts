@@ -21,6 +21,7 @@ import { messages } from "./messageBridge";
 import { pbBGMFade, pbBGMPlay, pbBGSFade, pbBGSPlay, pbMEPlay, pbSEPlay, pbSEStop } from "./GameSystem";
 import { evaluateAsync, runStatements, truthy, type ScriptContext } from "./scriptApi";
 import { rand } from "../core/random";
+import { pbGetTimeNow } from "./dayNight";
 import { FRAME_RATE } from "./GameCharacter";
 
 type Instr =
@@ -300,6 +301,17 @@ export class Interpreter {
   pbSet(id: number, value: unknown): void {
     G.gameVariables.set(id, value);
     (G.gameMap as unknown as GameMap).needRefresh = true;
+  }
+
+  /** Records now as this event's time and turns its self switch A on (also for `others`). */
+  pbSetEventTime(...others: number[]): void {
+    const time = Math.floor(pbGetTimeNow().getTime() / 1000);
+    this.pbSetSelfSwitch(this.eventId, "A", true);
+    G.pokemonGlobal.eventvars[`${this.mapId},${this.eventId}`] = time;
+    for (const other of others) {
+      this.pbSetSelfSwitch(other, "A", true);
+      G.pokemonGlobal.eventvars[`${this.mapId},${other}`] = time;
+    }
   }
 
   pbEraseThisEvent(): boolean {
