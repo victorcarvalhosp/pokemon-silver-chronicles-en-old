@@ -18,6 +18,7 @@ import "./scripts/fieldMoves";
 import "./scripts/pc";
 import "./battle/scripts";
 import "./following";
+import "./speedUp";
 import { GameData } from "../data/gameData";
 import { loadQuestData } from "./quests";
 import { initMessageSystem } from "../ui/messageConfig";
