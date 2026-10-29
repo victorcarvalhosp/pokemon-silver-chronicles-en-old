@@ -1,0 +1,216 @@
+# Converts the RPG Maker XP project data (Data/*.rxdata) into the JSON files
+# the web runtime reads from web/data/.
+#
+#   ruby web/tools/convert/convert.rb            # everything
+#   ruby web/tools/convert/convert.rb 51 1 2     # only these maps (+ shared data)
+#
+# Event command lists are kept as RPG Maker command codes here; translating
+# them into named commands is done by events.rb.
+require "fileutils"
+require_relative "rxdata"
+
+ROOT = File.expand_path("../../..", __dir__)
+DATA_IN = File.join(ROOT, "Data")
+DATA_OUT = File.join(ROOT, "web", "data")
+
+module Convert
+  module_function
+
+  def iv(obj, name)
+    Rxdata.ivar(obj, name)
+  end
+
+  def audio(a)
+    return nil if a.nil?
+    name = Rxdata.str(iv(a, :name)).to_s
+    { "name" => name, "volume" => iv(a, :volume), "pitch" => iv(a, :pitch) }
+  end
+
+  # Table[x, y, z] -> layers[z][y][x]
+  def table3(t)
+    (0...t.zsize).map do |z|
+      (0...t.ysize).map { |y| t.data[(z * t.ysize + y) * t.xsize, t.xsize] }
+    end
+  end
+
+  def move_route(r)
+    {
+      "repeat" => iv(r, :repeat),
+      "skippable" => iv(r, :skippable),
+      "list" => iv(r, :list).map { |c| { "code" => iv(c, :code), "parameters" => params(iv(c, :parameters)) } }
+    }
+  end
+
+  def params(list)
+    list.map do |p|
+      case p
+      when RPG::AudioFile then { "audio" => audio(p) }
+      when RPG::MoveRoute then { "moveRoute" => move_route(p) }
+      when Tone then { "tone" => p.values }
+      when Color then { "color" => p.values }
+      else Rxdata.plain(p)
+      end
+    end
+  end
+
+  def commands(list)
+    list.map do |c|
+      { "code" => iv(c, :code), "indent" => iv(c, :indent), "parameters" => params(iv(c, :parameters)) }
+    end
+  end
+
+  def page(pg)
+    cond = iv(pg, :condition)
+    gfx = iv(pg, :graphic)
+    {
+      "condition" => {
+        "switch1" => iv(cond, :switch1_valid) ? iv(cond, :switch1_id) : nil,
+        "switch2" => iv(cond, :switch2_valid) ? iv(cond, :switch2_id) : nil,
+        "variable" => iv(cond, :variable_valid) ? { "id" => iv(cond, :variable_id), "atLeast" => iv(cond, :variable_value) } : nil,
+        "selfSwitch" => iv(cond, :self_switch_valid) ? Rxdata.str(iv(cond, :self_switch_ch)) : nil
+      },
+      "graphic" => {
+        "tileId" => iv(gfx, :tile_id),
+        "characterName" => Rxdata.str(iv(gfx, :character_name)).to_s,
+        "characterHue" => iv(gfx, :character_hue),
+        "direction" => iv(gfx, :direction),
+        "pattern" => iv(gfx, :pattern),
+        "opacity" => iv(gfx, :opacity),
+        "blendType" => iv(gfx, :blend_type)
+      },
+      "moveType" => iv(pg, :move_type),
+      "moveSpeed" => iv(pg, :move_speed),
+      "moveFrequency" => iv(pg, :move_frequency),
+      "moveRoute" => move_route(iv(pg, :move_route)),
+      "walkAnime" => iv(pg, :walk_anime),
+      "stepAnime" => iv(pg, :step_anime),
+      "directionFix" => iv(pg, :direction_fix),
+      "through" => iv(pg, :through),
+      "alwaysOnTop" => iv(pg, :always_on_top),
+      "trigger" => iv(pg, :trigger),
+      "list" => commands(iv(pg, :list))
+    }
+  end
+
+  def event(e)
+    {
+      "id" => iv(e, :id),
+      "name" => Rxdata.str(iv(e, :name)),
+      "x" => iv(e, :x),
+      "y" => iv(e, :y),
+      "pages" => iv(e, :pages).map { |pg| page(pg) }
+    }
+  end
+
+  def map(id, info)
+    m = Rxdata.load(File.join(DATA_IN, format("Map%03d.rxdata", id)))
+    {
+      "id" => id,
+      "name" => info ? Rxdata.str(iv(info, :name)) : "",
+      "tilesetId" => iv(m, :tileset_id),
+      "width" => iv(m, :width),
+      "height" => iv(m, :height),
+      "autoplayBgm" => iv(m, :autoplay_bgm),
+      "bgm" => audio(iv(m, :bgm)),
+      "autoplayBgs" => iv(m, :autoplay_bgs),
+      "bgs" => audio(iv(m, :bgs)),
+      "encounterStep" => iv(m, :encounter_step),
+      "layers" => table3(iv(m, :data)),
+      "events" => iv(m, :events).keys.sort.map { |k| event(iv(m, :events)[k]) }
+    }
+  end
+
+  def map_infos
+    infos = Rxdata.load(File.join(DATA_IN, "MapInfos.rxdata"))
+    infos.keys.sort.map do |id|
+      i = infos[id]
+      {
+        "id" => id, "name" => Rxdata.str(iv(i, :name)), "parentId" => iv(i, :parent_id),
+        "order" => iv(i, :order), "expanded" => iv(i, :expanded),
+        "scrollX" => iv(i, :scroll_x), "scrollY" => iv(i, :scroll_y)
+      }
+    end
+  end
+
+  def tilesets
+    Rxdata.load(File.join(DATA_IN, "Tilesets.rxdata")).compact.map do |t|
+      {
+        "id" => iv(t, :id),
+        "name" => Rxdata.str(iv(t, :name)),
+        "tilesetName" => Rxdata.str(iv(t, :tileset_name)),
+        "autotileNames" => iv(t, :autotile_names).map { |n| Rxdata.str(n) },
+        "panoramaName" => Rxdata.str(iv(t, :panorama_name)),
+        "panoramaHue" => iv(t, :panorama_hue),
+        "fog" => {
+          "name" => Rxdata.str(iv(t, :fog_name)), "hue" => iv(t, :fog_hue),
+          "opacity" => iv(t, :fog_opacity), "blendType" => iv(t, :fog_blend_type),
+          "zoom" => iv(t, :fog_zoom), "sx" => iv(t, :fog_sx), "sy" => iv(t, :fog_sy)
+        },
+        "battlebackName" => Rxdata.str(iv(t, :battleback_name)),
+        "passages" => iv(t, :passages).data,
+        "priorities" => iv(t, :priorities).data,
+        "terrainTags" => iv(t, :terrain_tags).data
+      }
+    end
+  end
+
+  def common_events
+    Rxdata.load(File.join(DATA_IN, "CommonEvents.rxdata")).compact.map do |c|
+      {
+        "id" => iv(c, :id), "name" => Rxdata.str(iv(c, :name)),
+        "trigger" => iv(c, :trigger), "switchId" => iv(c, :switch_id),
+        "list" => commands(iv(c, :list))
+      }
+    end.reject { |c| c["name"].to_s.empty? && c["list"].size <= 1 }
+  end
+
+  def system
+    s = Rxdata.load(File.join(DATA_IN, "System.rxdata"))
+    names = ->(list) { list.each_with_index.map { |n, i| [i, Rxdata.str(n)] }.drop(1).reject { |_, n| n.to_s.empty? }.to_h }
+    sounds = %i[cursor_se decision_se cancel_se buzzer_se equip_se shop_se save_se load_se
+                battle_start_se escape_se actor_collapse_se enemy_collapse_se]
+    {
+      "startMapId" => iv(s, :start_map_id), "startX" => iv(s, :start_x), "startY" => iv(s, :start_y),
+      "windowskinName" => Rxdata.str(iv(s, :windowskin_name)),
+      "titleName" => Rxdata.str(iv(s, :title_name)),
+      "titleBgm" => audio(iv(s, :title_bgm)),
+      "battleBgm" => audio(iv(s, :battle_bgm)),
+      "battleEndMe" => audio(iv(s, :battle_end_me)),
+      "gameoverMe" => audio(iv(s, :gameover_me)),
+      "battleTransition" => Rxdata.str(iv(s, :battle_transition)),
+      "sounds" => sounds.to_h { |k| [Rxdata.camel(k.to_s), audio(iv(s, k))] },
+      "switches" => names.call(iv(s, :switches)),
+      "variables" => names.call(iv(s, :variables))
+    }
+  end
+
+  # Pretty JSON, but arrays of plain numbers stay on one line so tile rows
+  # read like a grid.
+  def write(path, obj)
+    FileUtils.mkdir_p(File.dirname(path))
+    text = JSON.pretty_generate(obj)
+    text = text.gsub(/\[\s*(-?\d+(?:\.\d+)?(?:,\s*-?\d+(?:\.\d+)?)*)\s*\]/m) { "[" + $1.gsub(/\s+/, "") + "]" }
+    File.write(path, text + "\n")
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  only = ARGV.map(&:to_i)
+  infos = Rxdata.load(File.join(DATA_IN, "MapInfos.rxdata"))
+  Convert.write(File.join(DATA_OUT, "system.json"), Convert.system)
+  Convert.write(File.join(DATA_OUT, "map-infos.json"), Convert.map_infos)
+  Convert.write(File.join(DATA_OUT, "tilesets.json"), Convert.tilesets)
+  Convert.write(File.join(DATA_OUT, "common-events.json"), Convert.common_events)
+
+  ids = Dir[File.join(DATA_IN, "Map[0-9]*.rxdata")].map { |f| File.basename(f)[/\d+/].to_i }.sort
+  ids &= only unless only.empty?
+  failures = []
+  ids.each do |id|
+    Convert.write(File.join(DATA_OUT, "maps", format("Map%03d.json", id)), Convert.map(id, infos[id]))
+  rescue StandardError => e
+    failures << "Map#{id}: #{e.class}: #{e.message}"
+  end
+  puts "converted #{ids.size - failures.size}/#{ids.size} maps"
+  puts failures unless failures.empty?
+  exit(failures.empty? ? 0 : 1)
+end
