@@ -20,7 +20,9 @@ import {
 import { pbFishing } from "../field/Fishing";
 import { pbCanUseHiddenMove, pbCheckHiddenMoveBadge, pbUseHiddenMove } from "../field/HiddenMoveHandlers";
 import { pbHiddenMoveAnimation } from "../field/hiddenMoveAnimation";
-import { pbBridgeOff, pbBridgeOn, pbJumpToward, pbSetEscapePoint, pbSlideOnIce } from "../field/overworld";
+import {
+  pbBridgeOff, pbBridgeOn, pbCaveEntrance, pbCaveEntranceEx, pbCaveExit, pbJumpToward, pbSetEscapePoint, pbSlideOnIce,
+} from "../field/overworld";
 import { pbEraseWhirlpoolEvent, pbWhirlpool } from "../field/Whirlpool";
 
 export { pbCheckHiddenMoveBadge, pbCut };
@@ -65,6 +67,10 @@ defineScript("pbBridgeOn", (_c, height) => pbBridgeOn(height == null ? 2 : Numbe
 defineScript("pbBridgeOff", () => pbBridgeOff());
 defineScript("pbSetEscapePoint", () => pbSetEscapePoint());
 defineScript("pbEraseEscapePoint", () => pbEraseEscapePoint());
+// 001_Overworld visuals/003_Overworld_MapTransitionAnims.rb
+defineScript("pbCaveEntrance", () => pbCaveEntrance());
+defineScript("pbCaveExit", () => pbCaveExit());
+defineScript("pbCaveEntranceEx", (_c, exiting) => pbCaveEntranceEx(!!exiting));
 
 /** pbSetPokemonCenter (012_Overworld/001_Overworld.rb:701): where the player returns after blacking out. */
 export function pbSetPokemonCenter(): void {

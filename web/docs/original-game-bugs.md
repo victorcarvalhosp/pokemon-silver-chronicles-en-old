@@ -170,6 +170,9 @@ written for one (`web/src/battle/deluxe`).
 | A "Slope" event without an "Offset:" (or "Width:") comment hands nil to slope() for what's missing | `Marin's Enhanced Staircases/script.rb:136` | `src/game/field/EnhancedStaircases.ts` (`getStairData`) |
 | Cable car going down: the player's graphic is chosen by switch 140, not by gender (the gender check is commented out) | `Cable Car/Script.rb:203-205` | `src/game/field/CableCar.ts` |
 | Fly Animation's NPC version (Gen 4 bird) arcs by height / 3 instead of / 4 | `Fly Animation/[004]Fly Animation Other Players.rb:63,66` | `src/game/field/FlyAnimation.ts` |
+| Waterfall: pbAscendWaterfall / pbDescendWaterfall set `move_speed = 2`, but each step's `update_move` calls `set_movement_type(:surfing)`, which puts it back to 4: waterfalls go by at surfing speed | Following Pokemon EX `Script Additions/Field Moves.rb:130-178`, v20.1 Hotfixes `Overworld bug fixes.rb:105` | `src/game/field/followingFieldMoves.ts` |
+| Waterfall: Following Pokemon EX's pbHiddenMoveAnimation gives the follower a 3-second Wait route that outlasts the ~2-second banner, so it is still on it during the climb (`follow_leader` returns early): the follower stays at the foot of the waterfall until the next step | Following Pokemon EX `Script Additions/Animations.rb:8` | `src/game/field/hiddenMoveAnimation.ts` |
+| pbAscendWaterfall loops forever when the waterfall runs off the top of the map (`move_up` fails, the tile stays a waterfall); Seafoam Islands B3F (map 451) has one, but no transfer leads to that map | Following Pokemon EX `Script Additions/Field Moves.rb:139-148` | `src/game/field/followingFieldMoves.ts` |
 
 ## Trainer battles, battle intros and special battle types (`web/src/game/battle`, `web/src/game/trainers`)
 | Bug | Original | Port |

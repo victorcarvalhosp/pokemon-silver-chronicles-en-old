@@ -34,11 +34,12 @@ export async function pbWaitSeconds(seconds: number): Promise<void> {
 }
 
 /** pbToneChangeAll(tone, duration) (001_Game_Screen.rb): duration in 1/20 s. */
-defineScript("pbToneChangeAll", (_c, tone, duration) => {
-  const seconds = Number(duration) / 20;
-  G.gameScreen.startToneChange(tone as Tone, seconds);
-  for (const p of G.gameScreen.pictures) p.startToneChange(tone as Tone, seconds);
-});
+export function pbToneChangeAll(tone: Tone, duration: number): void {
+  const seconds = duration / 20;
+  G.gameScreen.startToneChange(tone, seconds);
+  for (const p of G.gameScreen.pictures) p.startToneChange(tone, seconds);
+}
+defineScript("pbToneChangeAll", (_c, tone, duration) => pbToneChangeAll(tone as Tone, Number(duration)));
 defineScript("pbShake", (_c, power, speed, frames) => G.gameScreen.startShake(Number(power), Number(speed), Number(frames) / 20));
 defineScript("pbFlash", (_c, color, frames) => G.gameScreen.startFlash(color as never, Number(frames) / 20));
 

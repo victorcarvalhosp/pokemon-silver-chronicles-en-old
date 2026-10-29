@@ -1,16 +1,23 @@
 // Player movement helpers from 012_Overworld/001_Overworld.rb: pbJumpToward
 // (564-666), pbSlideOnIce, the :auto_move_player step handler (waterfall
-// crests and ice), pbBridgeOn / pbBridgeOff and pbSetEscapePoint.
+// crests and ice), pbBridgeOn / pbBridgeOff and pbSetEscapePoint; and the
+// cave entrance/exit animations from 001_Overworld visuals/
+// 003_Overworld_MapTransitionAnims.rb (pbCaveEntrance / pbCaveExit, which
+// set and erase the escape point Dig and the Escape Rope return to).
 // (pbLedge is in GamePlayer.ts: it runs inside the player's move.)
 
 import { Graphics } from "../../rgss/Graphics";
 import { Input } from "../../rgss/Input";
+import { Color, Rect, Tone } from "../../rgss/types";
+import { BitmapSprite } from "../../ui/SpriteWrapper";
 import { pokemonEncounters } from "../encounters/PokemonEncounters";
 import { EventHandlers } from "../eventHandlers";
+import { FRAME_RATE } from "../GameCharacter";
 import type { GamePlayer } from "../GamePlayer";
 import { pbSEPlay } from "../GameSystem";
 import { G, pbUpdateSceneMap } from "../globals";
-import { FieldMoves } from "./FieldMoves";
+import { pbToneChangeAll } from "../scripts/overworld";
+import { FieldMoves, pbEraseEscapePoint } from "./FieldMoves";
 
 const gamePlayer = () => G.gamePlayer as unknown as GamePlayer;
 
@@ -123,4 +130,77 @@ export function pbSetEscapePoint(): void {
     case 8: yco += 1; dir = 2; break; // Up
   }
   g.escapePoint = [G.gameMap!.mapId, xco, yco, dir];
+}
+
+//===============================================================================
+// Entering/exiting cave animations (003_Overworld_MapTransitionAnims.rb)
+//===============================================================================
+/** pbCaveEntranceEx(exiting): bands closing in to white (entering) or black (exiting), then a fade. */
+export async function pbCaveEntranceEx(exiting: boolean): Promise<void> {
+  // Create bitmap
+  const sprite = new BitmapSprite(Graphics.width, Graphics.height);
+  sprite.z = 100000;
+  // Define values used for the animation
+  const totalFrames = Math.floor(FRAME_RATE * 0.4);
+  const increment = Math.ceil(255.0 / totalFrames);
+  const totalBands = 15;
+  const bandheight = ((Graphics.height / 2.0) - 10) / totalBands;
+  const bandwidth = ((Graphics.width / 2.0) - 12) / totalBands;
+  // Create initial array of band colors (black if exiting, white if entering)
+  const grays = new Array<number>(totalBands).fill(exiting ? 0 : 255);
+  // Animate bands changing color
+  for (let j = 0; j < totalFrames; j++) {
+    let x = 0;
+    let y = 0;
+    // Calculate color of each band
+    for (let k = 0; k < totalBands; k++) {
+      if (k >= Math.floor((totalBands * j) / totalFrames)) continue;
+      let inc = increment;
+      if (exiting) inc *= -1;
+      grays[k]! -= inc;
+      if (grays[k]! < 0) grays[k] = 0;
+    }
+    // Draw gray rectangles
+    let rectwidth = Graphics.width;
+    let rectheight = Graphics.height;
+    for (let i = 0; i < totalBands; i++) {
+      const currentGray = grays[i]!;
+      sprite.bitmap!.fillRect(new Rect(x, y, rectwidth, rectheight), new Color(currentGray, currentGray, currentGray));
+      x += bandwidth;
+      y += bandheight;
+      rectwidth -= bandwidth * 2;
+      rectheight -= bandheight * 2;
+    }
+    await Graphics.update();
+    Input.update();
+  }
+  // Set the tone at end of band animation
+  if (exiting) pbToneChangeAll(new Tone(255, 255, 255), 0);
+  else pbToneChangeAll(new Tone(-255, -255, -255), 0);
+  // Animate fade to white (if exiting) or black (if entering)
+  for (let j = 0; j < totalFrames; j++) {
+    sprite.color = exiting ? new Color(255, 255, 255, j * increment) : new Color(0, 0, 0, j * increment);
+    await Graphics.update();
+    Input.update();
+  }
+  // Set the tone at end of fading animation
+  pbToneChangeAll(new Tone(0, 0, 0), 8);
+  // Pause briefly
+  for (let i = 0; i < Math.floor(FRAME_RATE / 10); i++) {
+    await Graphics.update();
+    Input.update();
+  }
+  sprite.dispose();
+}
+
+/** pbCaveEntrance */
+export async function pbCaveEntrance(): Promise<void> {
+  pbSetEscapePoint();
+  await pbCaveEntranceEx(false);
+}
+
+/** pbCaveExit */
+export async function pbCaveExit(): Promise<void> {
+  pbEraseEscapePoint();
+  await pbCaveEntranceEx(true);
 }

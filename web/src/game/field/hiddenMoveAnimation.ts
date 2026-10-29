@@ -165,6 +165,10 @@ async function hiddenMoveAnimationCore(pokemon: Pokemon | null): Promise<boolean
 export async function pbHiddenMoveAnimation(pokemon: Pokemon | null, fieldMove = false): Promise<boolean> {
   const t = G.gameTemp as unknown as { noFollowerFieldMove?: boolean };
   const noFieldMove = !fieldMove || !!t.noFollowerFieldMove;
+  // NOTE (Ruby parity): the 3-second wait outlasts the ~2-second banner, so
+  // a waterfall climb right after it starts while the follower is still on
+  // this forced route: follow_leader returns early and the follower stays at
+  // the foot of the waterfall until the player's next step.
   if (pokemon && FollowingPkmn.active()) FollowingPkmn.moveRoute([PBMoveRoute.Wait, 60]);
   const ret = await hiddenMoveAnimationCore(pokemon);
   if (!ret || noFieldMove || !FollowingPkmn.active() || pokemon !== FollowingPkmn.getPokemon()) return ret;

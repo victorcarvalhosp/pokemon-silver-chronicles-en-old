@@ -153,6 +153,9 @@ async function waitWhileMoving(): Promise<void> {
 
 // Waterfall ascending/descending that waits for each step so the Following
 // Pokemon properly climbs the waterfall with the player (replaces the core's).
+// NOTE (Ruby parity): `move_speed = 2` only lasts one frame: each step's
+// Game_Player#update_move calls set_movement_type(:surfing), which sets it
+// back to 4, so waterfalls go by at surfing speed.
 FieldMoves.pbAscendWaterfall = async () => {
   const p = gamePlayer();
   if (p.direction !== 8) return; // Can't ascend if not facing up
@@ -163,6 +166,9 @@ FieldMoves.pbAscendWaterfall = async () => {
   const oldmovespeed = p.moveSpeed;
   p.through = true;
   p.moveSpeed = 2;
+  // NOTE (Ruby parity): nothing stops the loop if the waterfall runs off the
+  // top of the map (move_up fails and the tile stays a waterfall), as on
+  // Seafoam Islands B3F (map 451, which no transfer leads to): it never ends.
   for (;;) {
     p.moveUp();
     terrain = p.pbTerrainTag();

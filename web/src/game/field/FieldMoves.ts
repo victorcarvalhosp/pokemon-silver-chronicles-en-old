@@ -693,7 +693,9 @@ function pbEndSurfCore(_xOffset: number, _yOffset: number): boolean {
   const p = gamePlayer();
   const x = p.x;
   const y = p.y;
-  if (gameMap().terrainTag(x, y).canSurf && !canSurfFreely(p.pbFacingTerrainTag())) {
+  // `can_surf`, not `can_surf_freely`: a waterfall (or its crest) ahead is
+  // still water, so climbing/descending one doesn't jump off onto it.
+  if (gameMap().terrainTag(x, y).canSurf && !p.pbFacingTerrainTag().canSurf) {
     temp().surfBaseCoords = [x, y];
     if (pbJumpTowardStart(1, false, true)) {
       p.queueBlocking(async () => {
