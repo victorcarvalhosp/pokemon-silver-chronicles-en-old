@@ -17,6 +17,7 @@ import { LOAD_SCREEN_BITMAPS, PokemonLoad_Scene, PokemonLoadScreen } from "./ui/
 import { preloadBitmaps } from "./ui/rpgCache";
 import { pbSaveScreen } from "./ui/save/saveScreen";
 import { runTitleScreen } from "./ui/scenes/SplashesAndTitleScreen";
+import { MenuScreens } from "./ui/menus/menuScreens";
 
 const FONT_FILES = [
   "power clear bold.ttf", "power clear.ttf", "power green narrow.ttf", "power green small.ttf",
@@ -47,7 +48,7 @@ const __step = async (n: number) => {
   for (let i = 0; i < n; i++) await runTick();
   render();
 };
-Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, missingScripts, app, __step });
+Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, MenuScreens, missingScripts, app, __step });
 
 runGame(
   async () => {
