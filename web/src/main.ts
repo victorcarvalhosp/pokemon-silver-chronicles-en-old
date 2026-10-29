@@ -48,7 +48,7 @@ const __step = async (n: number) => {
   for (let i = 0; i < n; i++) await runTick();
   render();
 };
-Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, MenuScreens, missingScripts, app, __step });
+Object.assign(window, { G, Data, SaveData, Game, pbSaveScreen, MenuScreens, missingScripts, app, __step, Graphics });
 
 runGame(
   async () => {

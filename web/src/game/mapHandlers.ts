@@ -29,7 +29,8 @@ EventHandlers.add("on_enter_map", "setup_new_map", (oldMapId) => {
   const meta = mapMetadata(map().mapId);
   if (meta?.teleportDestination) global().healingSpot = meta.teleportDestination;
   (G as unknown as { pokemonMap?: { clear(): void } }).pokemonMap?.clear();
-  // TODO(M4): $PokemonEncounters.setup($game_map.map_id).
+  // Setup new wild encounter tables
+  (G as unknown as { pokemonEncounters?: { setup(id: number): void } }).pokemonEncounters?.setup(map().mapId);
   global().visitedMaps[map().mapId] = true;
   if (old === 0 || old === map().mapId) return;
   const weather = weatherOf(map().mapId);

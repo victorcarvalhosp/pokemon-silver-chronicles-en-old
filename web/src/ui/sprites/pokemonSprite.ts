@@ -445,10 +445,10 @@ export class EBDXBitmapWrapper {
 }
 
 /** [file, scale] of the bitmap for a sprite request, or null. */
-type BitmapRequest = { file: string; scale: number } | null;
+export type BitmapRequest = { file: string; scale: number } | null;
 
 /** front_sprite_bitmap / back_sprite_bitmap / egg_sprite_bitmap: which file at which scale. */
-function spriteBitmapRequest(data: SpriteParams): BitmapRequest {
+export function spriteBitmapRequest(data: SpriteParams): BitmapRequest {
   // A nil species looks up "" and then falls back to the "000" graphic, as in Ruby.
   if (data.egg) {
     if (!data.species) return null;
@@ -467,7 +467,7 @@ function spriteBitmapRequest(data: SpriteParams): BitmapRequest {
   return { file, scale };
 }
 
-function pokemonBitmapRequest(pkmn: Pokemon, back = false, species: Id | null = null, setDmax: "none" | "dmax" | "gmax" | null = null): BitmapRequest {
+export function pokemonBitmapRequest(pkmn: Pokemon, back = false, species: Id | null = null, setDmax: "none" | "dmax" | "gmax" | null = null): BitmapRequest {
   const sp = Species.get(species ?? pkmn.species).species;
   if (pkmn.egg()) return spriteBitmapRequest(speciesSpriteParams(sp, pkmn.form, 0, false, false, false, true));
   let dmax: boolean;

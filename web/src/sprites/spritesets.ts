@@ -8,6 +8,8 @@ import type { GamePicture } from "../game/GameScreen";
 import { G } from "../game/globals";
 import { X_SUBPIXELS, Y_SUBPIXELS, type GameCharacter } from "../game/GameCharacter";
 import type { TilemapRenderer } from "../map/TilemapRenderer";
+import { FollowerSprites } from "../game/following/FollowerSprites";
+import { AnimationSprite } from "./AnimationSprite";
 import { Cache } from "./cache";
 import { SpriteCharacter } from "./SpriteCharacter";
 
@@ -51,6 +53,8 @@ export class SpritesetMap {
   private panoramaHue = 0;
   private fogName: string | null = null;
   private fogHue = 0;
+  /** 008_Sprite_AnimationSprite.rb: @usersprites */
+  private usersprites: (AnimationSprite | null)[] = [];
 
   constructor(readonly map: GameMap, renderer: TilemapRenderer) {
     const { v0, v1 } = mapViewports();
@@ -73,6 +77,39 @@ export class SpritesetMap {
     this.fog.dispose();
     for (const s of this.characterSprites) s.dispose();
     this.characterSprites = [];
+    for (const s of this.usersprites) s?.dispose();
+    this.usersprites = [];
+  }
+
+  /**
+   * Visible Overworld Wild Encounters (attr_reader :character_sprites): a
+   * sprite for an event added after the map loaded / removed before it unloads.
+   */
+  addCharacter(character: GameCharacter): void {
+    this.characterSprites.push(new SpriteCharacter(mapViewports().v1, character, () => null));
+  }
+  removeCharacter(character: GameCharacter): void {
+    const i = this.characterSprites.findIndex((s) => s.character === character);
+    if (i < 0) return;
+    this.characterSprites[i]!.dispose();
+    this.characterSprites.splice(i, 1);
+  }
+
+  /** addUserAnimation(animID, x, y, tinting, height): plays an animation on a map tile. */
+  addUserAnimation(animId: number, x: number, y: number, tinting = false, height = 3): AnimationSprite {
+    const sprite = new AnimationSprite(animId, this.map, x, y, mapViewports().v1, tinting, height);
+    this.addUserSprite(sprite);
+    return sprite;
+  }
+
+  addUserSprite(newSprite: AnimationSprite): void {
+    for (let i = 0; i < this.usersprites.length; i++) {
+      const sprite = this.usersprites[i];
+      if (sprite && !sprite.isDisposed()) continue;
+      this.usersprites[i] = newSprite;
+      return;
+    }
+    this.usersprites.push(newSprite);
   }
 
   update(): void {
@@ -107,6 +144,7 @@ export class SpritesetMap {
     v3.color = G.gameScreen.flashColor;
     v1.update();
     v3.update();
+    for (const s of this.usersprites) if (s && !s.isDisposed()) s.update();
   }
 }
 
@@ -166,24 +204,27 @@ class SpritePicture {
 }
 
 export class SpritesetGlobal {
+  readonly followerSprites: FollowerSprites;
   readonly playerSprite: SpriteCharacter;
   private pictureSprites: SpritePicture[] = [];
 
   constructor(player: GameCharacter) {
     const { v1, v2 } = mapViewports();
-    // TODO(followers): FollowerSprites.
+    this.followerSprites = new FollowerSprites(v1);
     this.playerSprite = new SpriteCharacter(v1, player, () => null);
     for (let i = 1; i <= 100; i++) this.pictureSprites.push(new SpritePicture(v2, G.gameScreen.pictures[i]!));
     this.update();
   }
 
   dispose(): void {
+    this.followerSprites.dispose();
     this.playerSprite.dispose();
     for (const s of this.pictureSprites) s.dispose();
     this.pictureSprites = [];
   }
 
   update(): void {
+    this.followerSprites.update();
     this.playerSprite.update();
     for (const s of this.pictureSprites) s.update();
   }

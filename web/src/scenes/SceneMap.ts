@@ -108,7 +108,7 @@ export class SceneMap {
       case 8: p.turnUp(); break;
     }
     p.straighten();
-    // TODO(followers): $game_temp.followers.map_transfer_followers.
+    G.gameTemp.followers?.mapTransferFollowers();
     await gameMap().update();
     this.disposeSpritesets();
     await this.createSpritesets();
@@ -186,9 +186,8 @@ export class SceneMap {
     }
     if (t.transitionProcessing) {
       t.transitionProcessing = false;
-      // Essentials uses Graphics/Transitions/<name> for named transitions over
-      // 40 frames; named transitions fall back to a fade for now.
-      await Graphics.transition(t.transitionName === "" ? 0.2 : 1.0);
+      if (t.transitionName === "") await Graphics.transition();
+      else await Graphics.transition(40 / 20, "Graphics/Transitions/" + t.transitionName);
     }
     if (t.messageWindowShowing) return;
     if (!pbMapInterpreter().running()) {

@@ -6,6 +6,7 @@
 //   $scene -> G.scene
 // Classes that grow large live in their own modules and are assigned here.
 
+import type { GameEvent } from "./GameEvent";
 import type { GameScreen } from "./GameScreen";
 import type { GameSystem } from "./GameSystem";
 import type { PokemonBag } from "./items/PokemonBag";
@@ -38,8 +39,21 @@ export class PokemonGlobalMetadata {
   fishing = false;
   bridge = 0;
   runningShoes = false;
-  /** Partner trainers / followers (Following Pokémon EX keeps its own). */
+  /** FollowerData of every follower (game/following/GameFollowerFactory.ts). */
   followers: unknown[] = [];
+  // Following Pokemon EX (New Event Type/Misc.rb); game/following/FollowingPkmn.ts
+  // has the accessors with the plugin's side effects (follower_toggled=, call_refresh).
+  /** Whether the Following Pokémon has been toggled on. */
+  followerToggled = false;
+  /** Frames (at FRAME_RATE) the Following Pokémon has been behind the player. */
+  timeTaken = 0;
+  /** Whether the Following Pokémon is holding an item it found. */
+  followerHoldItem = false;
+  /** The Pokémon currently surfing / diving (surfing isn't ported yet). */
+  currentSurfing: unknown = null;
+  currentDiving: unknown = null;
+  /** A queued Following Pokémon refresh: [queued, animate, steps to wait]. */
+  callRefresh: unknown[] = [false, false];
   /** [mapId, eventId] -> value (Interpreter#setVariable / pbSetEventTime). */
   eventvars: Record<string, unknown> = {};
   nextBattleBGM: unknown = null;
@@ -57,8 +71,48 @@ export interface MapFactoryLike {
   areConnected(a: number, b: number): boolean;
 }
 
+/** What other systems need from Game_FollowerFactory ($game_temp.followers, game/following). */
+export interface FollowerFactoryLike {
+  readonly lastUpdate: number;
+  /** each_follower: [event, FollowerData] pairs. */
+  eachFollower(): [GameEvent, { direction: number }][];
+  getFollowerByName(name: string): GameEvent | null;
+  getFollowerByIndex(index?: number): GameEvent | null;
+  moveFollowers(): void;
+  turnFollowers(): void;
+  mapTransferFollowers(): void;
+  update(): Promise<void>;
+}
+
+let createFollowerFactory: (() => FollowerFactoryLike) | null = null;
+/** Registers Game_FollowerFactory (game/following/index.ts). */
+export function setFollowerFactoryClass(create: () => FollowerFactoryLike): void {
+  createFollowerFactory = create;
+}
+
 /** Port of Game_Temp's fields used across systems (004_Game classes). */
 export class GameTemp {
+  private followers_: FollowerFactoryLike | null = null;
+  private followersGlobal: PokemonGlobalMetadata | null = null;
+  /**
+   * $game_temp.followers: created on first use from $PokemonGlobal.followers.
+   * Ruby keeps one for the whole session; here it's also rebuilt when
+   * $PokemonGlobal is replaced (new game, loading a save after returning to
+   * the title), which Ruby would otherwise carry over stale.
+   */
+  get followers(): FollowerFactoryLike | null {
+    if (!this.followers_ || this.followersGlobal !== G.pokemonGlobal) {
+      if (!createFollowerFactory) return null;
+      this.followersGlobal = G.pokemonGlobal;
+      this.followers_ = createFollowerFactory();
+    }
+    return this.followers_;
+  }
+  set followers(value: FollowerFactoryLike | null) {
+    this.followers_ = value;
+    this.followersGlobal = G.pokemonGlobal;
+  }
+
   messageWindowShowing = false;
   inMenu = false;
   inBattle = false;

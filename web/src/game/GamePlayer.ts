@@ -59,6 +59,26 @@ export class GamePlayer extends GameCharacter {
     return this.map.mapId;
   }
 
+  /** Queues a blocking action for this frame's await point (wild battles started while turning). */
+  queueBlocking(fn: () => Promise<void>): void {
+    const prev = this.blocking;
+    this.blocking = prev ? async () => { await prev(); await fn(); } : fn;
+  }
+
+  hasFollower(): boolean {
+    return G.pokemonGlobal.followers.length > 0;
+  }
+
+  /** Following Pokemon EX aliases this (game/following/aliases.ts). */
+  canMapTransferWithFollower(): boolean {
+    return G.pokemonGlobal.followers.length === 0;
+  }
+
+  /** Following Pokemon EX aliases this (game/following/aliases.ts). */
+  canRideVehicleWithFollower(): boolean {
+    return G.pokemonGlobal.followers.length === 0;
+  }
+
   override screenZ(height = 0): number {
     return super.screenZ(height) + 1;
   }
@@ -383,9 +403,14 @@ export class GamePlayer extends GameCharacter {
     this.updatePattern();
     if (G.gameTemp.inMenu && this.stoppedLastFrame) this.updateStop();
     this.updateScreenPosition(lastRealX, lastRealY);
-    // TODO(followers): $game_temp.followers.move_followers / update.
+    // Update dependent events
+    if ((!this.movedLastFrame || this.stoppedLastFrame || (this.stoppedThisFrame && G.pokemonGlobal.sliding)) &&
+        (this.moving() || this.jumping())) {
+      G.gameTemp.followers?.moveFollowers();
+    }
+    await G.gameTemp.followers?.update();
     if (this.bumpSe > 0) this.bumpSe -= 1;
-    this.updateEventTriggering();
+    await this.updateEventTriggering();
   }
 
   protected override updateCommandNew(): void {
@@ -466,13 +491,13 @@ export class GamePlayer extends GameCharacter {
     this.map.displayY = this.realY - SCREEN_CENTER_Y;
   }
 
-  private updateEventTriggering(): void {
+  private async updateEventTriggering(): Promise<void> {
     if (this.moving()) return;
     if (this.movedThisFrame) {
-      // TODO(followers): $game_temp.followers.turn_followers.
+      G.gameTemp.followers?.turnFollowers();
       let result = this.pbCheckEventTriggerFromDistance([2]);
       result = this.checkEventTriggerHere([1, 2]) || result;
-      pbOnStepTaken(result);
+      await pbOnStepTaken(result);
     }
     if (Input.trigger(Input.USE) && !G.gameTemp.inMiniUpdate) {
       this.checkEventTriggerHere([0]);
@@ -481,8 +506,8 @@ export class GamePlayer extends GameCharacter {
   }
 }
 
-/** pbOnStepTaken (012_Overworld/001_Overworld.rb). Wild encounters arrive in M4. */
-export function pbOnStepTaken(eventTriggered: boolean): void {
+/** pbOnStepTaken (012_Overworld/001_Overworld.rb), without wild encounters. */
+async function pbOnStepTakenBase(eventTriggered: boolean): Promise<void> {
   const p = G.gamePlayer as unknown as GamePlayer;
   if (p.moveRouteForcing || pbMapInterpreterRunning()) {
     EventHandlers.triggerSync("on_step_taken", p);
@@ -491,9 +516,17 @@ export function pbOnStepTaken(eventTriggered: boolean): void {
   const g = G.pokemonGlobal as unknown as { stepcount?: number };
   g.stepcount = ((g.stepcount ?? 0) + 1) & 0x7fffffff;
   EventHandlers.triggerSync("on_player_step_taken");
-  // TODO(M4): on_player_step_taken_can_transfer + pbBattleOnStepTaken.
   void eventTriggered;
   G.gameTemp.encounterTriggered = false;
+}
+
+/**
+ * pbOnStepTaken: Visible Overworld Wild Encounters replaces it with the one
+ * that also starts wild battles / spawns Pokémon (game/encounters/visibleEncounters.ts).
+ */
+export let pbOnStepTaken: (eventTriggered: boolean) => Promise<void> = pbOnStepTakenBase;
+export function setOnStepTaken(fn: (eventTriggered: boolean) => Promise<void>): void {
+  pbOnStepTaken = fn;
 }
 
 /** pbGetPlayerCharset: the charset, or its "_<outfit>" variant when that file exists. */

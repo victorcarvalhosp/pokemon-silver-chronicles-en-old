@@ -1,0 +1,23 @@
+// The Settings constants the wild encounter and battle-starting scripts read
+// (001_Settings.rb, 002_BattleSettings.rb), with this game's values
+// (MECHANICS_GENERATION = 8). Kept here rather than in data/gameData/settings.ts
+// so this slice doesn't collide with the data model's own list.
+
+import { MECHANICS_GENERATION, Settings } from "../../data/gameData/settings";
+
+export const EncounterSettings = {
+  POKERUS_CHANCE: Settings.POKERUS_CHANCE,
+  SHINY_WILD_POKEMON_SWITCH: Settings.SHINY_WILD_POKEMON_SWITCH,
+  STARTING_OVER_SWITCH: Settings.STARTING_OVER_SWITCH,
+  MAX_PARTY_SIZE: Settings.MAX_PARTY_SIZE,
+  TIME_SHADING: true,
+  REPEL_COUNTS_FAINTED_POKEMON: MECHANICS_GENERATION >= 6,
+  MORE_ABILITIES_AFFECT_WILD_ENCOUNTERS: MECHANICS_GENERATION >= 8,
+  FLUTES_CHANGE_WILD_ENCOUNTER_LEVELS: MECHANICS_GENERATION >= 6,
+  HIGHER_SHINY_CHANCES_WITH_NUMBER_BATTLED: MECHANICS_GENERATION >= 8,
+  OVERWORLD_WEATHER_SETS_BATTLE_TERRAIN: MECHANICS_GENERATION >= 8,
+  // 002_BattleSettings.rb
+  NEW_CAPTURE_CAN_REPLACE_PARTY_MEMBER: MECHANICS_GENERATION >= 7,
+  CHECK_EVOLUTION_AFTER_ALL_BATTLES: MECHANICS_GENERATION >= 6,
+  CHECK_EVOLUTION_FOR_FAINTED_POKEMON: true,
+};

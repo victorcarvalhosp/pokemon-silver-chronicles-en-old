@@ -45,14 +45,7 @@ defineScript("pbFlash", (_c, color, frames) => G.gameScreen.startFlash(color as 
 // pbGenderSelector, pbEventScreen, pbGetKeyItem, pbWardrobe and
 // pbUnlockOutfit are registered in scenes.ts.
 
-// --- Following Pokémon EX / Followers (plugins) --------------------------------
-// TODO(followers): port Following Pokémon EX; these keep events running meanwhile.
-for (const name of [
-  "Followers.follow_into_door", "Followers.hide_followers", "Followers.put_followers_on_player",
-  "FollowingPkmn.toggle", "FollowingPkmn.move_route", "pbCallBubFollower",
-]) defineScript(name, () => null);
-defineScript("follower_move_route", () => null);
-defineScript("pbMapInterpreter.follower_move_route", () => null);
+// Followers / Following Pokémon EX register their commands in game/following/scripts.ts.
 
 // --- Scenes not ported yet (M3) ----------------------------------------------
 const todo = (name: string, milestone: string) =>

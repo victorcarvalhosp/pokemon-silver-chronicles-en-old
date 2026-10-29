@@ -16,6 +16,16 @@ import { Color, Rect, Tone } from "./types";
 let stage: Container | null = null;
 const live = new Set<Displayable>();
 
+// mkxp breaks z ties by creation order (SceneElement's creation stamp). Pixi
+// sorts children in place, so a tie keeps whatever order an earlier sort
+// left; the stamp goes into zIndex as a fraction instead (z needs 17 bits,
+// leaving 36 for the stamp).
+let nextStamp = 1;
+const STAMP_STEP = 2 ** -36;
+function zIndexOf(z: number, stamp: number): number {
+  return z + stamp * STAMP_STEP;
+}
+
 export function attachStage(s: Container): void {
   stage = s;
   s.sortableChildren = true;
@@ -85,14 +95,25 @@ export class Viewport implements Displayable {
   preTone = new Tone();
   readonly node = new Container({ sortableChildren: true });
   private mask = new PixiGraphics();
+  /**
+   * The viewport's color/flash. RGSS (mkxp) blends it over the whole viewport
+   * rect, including what's under it, so an empty viewport with color fades the
+   * screen (pbFadeOutIn, battle intros, screen flashes).
+   */
+  private overlay = new PixiSprite(Texture.WHITE);
   private flashState = new Flash();
   private filterHolder = { filter: null as ToneFilter | null, pre: null as ToneFilter | null };
   private disposed = false;
+
+  private stamp = nextStamp++;
 
   constructor(x: number | Rect = 0, y = 0, width = 512, height = 384) {
     this.rect = x instanceof Rect ? x.clone() : new Rect(x, y, width, height);
     stage!.addChild(this.node);
     this.node.addChild(this.mask);
+    this.overlay.zIndex = Number.MAX_SAFE_INTEGER;
+    this.overlay.visible = false;
+    this.node.addChild(this.overlay);
     live.add(this);
   }
 
@@ -111,13 +132,24 @@ export class Viewport implements Displayable {
     const n = this.node;
     const f = this.flashState.current();
     n.visible = this.visible && f !== "hide";
-    n.zIndex = this.z;
+    n.zIndex = zIndexOf(this.z, this.stamp);
     n.position.set(this.rect.x, this.rect.y);
     this.mask.clear().rect(0, 0, this.rect.width, this.rect.height).fill(0xffffff);
     n.mask = this.mask;
-    effects(n, this.filterHolder, this.tone, this.color, f === "hide" ? null : f, this.preTone);
+    const flash = f === "hide" ? null : f;
+    const c = flash && (!this.color.alpha || flash.alpha > this.color.alpha) ? flash : this.color;
+    this.overlay.visible = c.alpha > 0;
+    if (this.overlay.visible) {
+      this.overlay.tint = (c.red << 16) | (c.green << 8) | c.blue;
+      this.overlay.alpha = c.alpha / 255;
+      this.overlay.width = this.rect.width;
+      this.overlay.height = this.rect.height;
+    }
+    effects(n, this.filterHolder, this.tone, NO_COLOR, null, this.preTone);
   }
 }
+
+const NO_COLOR = new Color(0, 0, 0, 0);
 
 export class Sprite implements Displayable {
   bitmap: Bitmap | null = null;
@@ -146,6 +178,8 @@ export class Sprite implements Displayable {
   private flashState = new Flash();
   private filterHolder = { filter: null as ToneFilter | null };
   private disposed = false;
+
+  private stamp = nextStamp++;
 
   constructor(public viewport: Viewport | null = null) {
     this.node.addChild(this.main, this.bush);
@@ -205,7 +239,7 @@ export class Sprite implements Displayable {
     this.main.x = this.bush.x = this.mirror ? this.srcRect.width : 0;
     n.angle = -this.angle;
     n.alpha = this.opacity / 255;
-    n.zIndex = this.z;
+    n.zIndex = zIndexOf(this.z, this.stamp);
     n.blendMode = BLEND[this.blendType] ?? "normal";
     effects(n, this.filterHolder, this.tone, this.color, f === "hide" ? null : f);
   }
@@ -228,6 +262,8 @@ export class Plane implements Displayable {
   private lastBitmap: Bitmap | null = null;
   private filterHolder = { filter: null as ToneFilter | null };
   private disposed = false;
+
+  private stamp = nextStamp++;
 
   constructor(public viewport: Viewport | null = null) {
     this.node = new TilingSprite({ texture: Texture.EMPTY, width: 512, height: 384 });
@@ -260,7 +296,7 @@ export class Plane implements Displayable {
     this.node.tileScale.set(this.zoomX, this.zoomY);
     this.node.tilePosition.set(-this.ox, -this.oy);
     this.node.alpha = this.opacity / 255;
-    this.node.zIndex = this.z;
+    this.node.zIndex = zIndexOf(this.z, this.stamp);
     this.node.blendMode = BLEND[this.blendType] ?? "normal";
     effects(this.node, this.filterHolder, this.tone, this.color, null);
   }

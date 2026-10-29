@@ -41,6 +41,12 @@ module RPG
   class Animation; class Frame; end; class Timing; end; end
 end
 
+# Essentials' battle animations (Data/PkmnAnimations.rxdata): PBAnimations and
+# PBAnimation are Arrays with instance variables, PBAnimTiming a plain object.
+class PBAnimations < Array; end
+class PBAnimation < Array; end
+class PBAnimTiming; end
+
 module Rxdata
   module_function
 

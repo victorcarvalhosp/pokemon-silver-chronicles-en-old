@@ -216,7 +216,7 @@ export async function runStatements(stmts: Command[], ctx: ScriptContext): Promi
   let last: unknown = null;
   for (const s of stmts) {
     if (s.cmd === "call") {
-      last = await evaluateAsync({ call: s.fn as string, args: s.args as Expr[] }, ctx);
+      last = await evaluateAsync({ call: s.fn as string, args: s.args as Expr[], ...(s.on !== undefined ? { on: s.on as Expr } : {}) }, ctx);
     } else if (s.cmd === "assign") {
       const value = await evaluateAsync(s.value as Expr, ctx);
       const args: unknown[] = [];

@@ -7,9 +7,17 @@
 // Graphics.update() (the tick's work is done), then moves on. Rendering
 // happens once per display refresh.
 
-import { Container, Sprite as PixiSprite, Texture, type Application } from "pixi.js";
+import { Container, Rectangle, Sprite as PixiSprite, Texture, type Application } from "pixi.js";
 import { TICK } from "../core/loop";
+import { Bitmap } from "./Bitmap";
 import { attachStage, syncDisplay } from "./display";
+import { TransitionFilter } from "./TransitionFilter";
+
+/** A coded transition (Essentials' Transitions::*), updated once per frame until disposed. */
+export interface SpecialTransition {
+  update(): void;
+  disposed(): boolean;
+}
 
 let app: Application;
 let root: Container;
@@ -68,17 +76,68 @@ export const Graphics = {
     app.stage.addChild(frozen);
   },
 
-  /** Fades from the frozen image to the current screen. */
-  async transition(seconds = 0.2): Promise<void> {
+  /**
+   * Essentials' Graphics.judge_special_transition (009_Scenes/001_Transitions.rb):
+   * builds the coded transition for a name, or null. Set by game/battle/transitions.ts.
+   */
+  specialTransition: null as ((name: string, seconds: number) => Promise<SpecialTransition | null>) | null,
+
+  /**
+   * Graphics.transition(duration, filename, vague) as Essentials overrides it
+   * (009_Scenes/001_Transitions.rb), with the duration in seconds. A name with
+   * a coded transition swaps to the new screen at once and plays that over
+   * it; otherwise a "Graphics/Transitions/..." image gives a threshold
+   * transition (RGSS), and without one (or if it's missing) the frozen screen
+   * fades out.
+   */
+  async transition(seconds = 8 / 20, filename = "", vague = 20): Promise<void> {
+    if (filename && Graphics.specialTransition) {
+      const base = filename.split("/").pop()!.toLowerCase();
+      const special = await Graphics.specialTransition(base, seconds);
+      if (special) {
+        dropFrozen();
+        // STOP_WHILE_TRANSITION: wait for it, updating it after every frame.
+        while (!special.disposed()) {
+          await Graphics.update();
+          special.update();
+        }
+        return;
+      }
+    }
     if (!frozen) return;
     const f = frozen;
     const ticks = Math.max(1, Math.round(seconds / TICK));
-    for (let i = 1; i <= ticks; i++) {
-      f.alpha = 1 - i / ticks;
-      if (i < ticks) await Graphics.update();
+    const map = filename ? await Bitmap.load(filename) : null;
+    if (map) {
+      const mapSprite = new PixiSprite(new Texture({ source: map.textureSource() }));
+      mapSprite.width = Graphics.width;
+      mapSprite.height = Graphics.height;
+      app.stage.addChild(mapSprite);
+      const filter = new TransitionFilter(mapSprite);
+      f.filters = [filter];
+      for (let i = 0; i < ticks; i++) {
+        filter.set(i / ticks, vague);
+        await Graphics.update();
+      }
+      mapSprite.destroy();
+      map.dispose();
+    } else {
+      for (let i = 1; i <= ticks; i++) {
+        f.alpha = 1 - i / ticks;
+        if (i < ticks) await Graphics.update();
+      }
     }
     f.destroy({ texture: true });
     if (frozen === f) frozen = null;
+  },
+
+  /** Graphics.snap_to_bitmap: the current screen as a Bitmap. */
+  snapToBitmap(): Bitmap {
+    syncDisplay();
+    const texture = app.renderer.generateTexture({ target: root, frame: new Rectangle(0, 0, Graphics.width, Graphics.height) });
+    const canvas = app.renderer.extract.canvas(texture) as unknown as OffscreenCanvas;
+    texture.destroy(true);
+    return Bitmap.fromImage(canvas);
   },
 
   /** Fades brightness to `target` over `seconds`. */
@@ -91,6 +150,11 @@ export const Graphics = {
     }
   },
 };
+
+function dropFrozen(): void {
+  frozen?.destroy({ texture: true });
+  frozen = null;
+}
 
 /** Sets up the stage hierarchy. Game objects go into `root`. */
 export function initGraphics(application: Application): void {

@@ -1,0 +1,1351 @@
+{
+  "damage": [
+    {
+      "attacker": "PIKACHU",
+      "attackerLevel": 50,
+      "defender": "SQUIRTLE",
+      "defenderLevel": 50,
+      "move": "THUNDERBOLT",
+      "critical": false,
+      "random": 0,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 134,
+      "moveClass": "Battle::Move::ParalyzeTarget"
+    },
+    {
+      "attacker": "PIKACHU",
+      "attackerLevel": 50,
+      "defender": "SQUIRTLE",
+      "defenderLevel": 50,
+      "move": "THUNDERBOLT",
+      "critical": true,
+      "random": 15,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 105,
+      "moveClass": "Battle::Move::ParalyzeTarget"
+    },
+    {
+      "attacker": "PIKACHU",
+      "attackerLevel": 50,
+      "defender": "GEODUDE",
+      "defenderLevel": 50,
+      "move": "THUNDERBOLT",
+      "critical": false,
+      "random": 7,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 0,
+      "damage": 1,
+      "moveClass": "Battle::Move::ParalyzeTarget"
+    },
+    {
+      "attacker": "CHARIZARD",
+      "attackerLevel": 100,
+      "defender": "VENUSAUR",
+      "defenderLevel": 100,
+      "move": "FLAMETHROWER",
+      "critical": false,
+      "random": 15,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 249,
+      "moveClass": "Battle::Move::BurnTarget"
+    },
+    {
+      "attacker": "CHARIZARD",
+      "attackerLevel": 100,
+      "defender": "BLASTOISE",
+      "defenderLevel": 100,
+      "move": "FLAMETHROWER",
+      "critical": false,
+      "random": 3,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 4,
+      "damage": 53,
+      "moveClass": "Battle::Move::BurnTarget"
+    },
+    {
+      "attacker": "MACHAMP",
+      "attackerLevel": 70,
+      "defender": "SNORLAX",
+      "defenderLevel": 72,
+      "move": "CROSSCHOP",
+      "critical": false,
+      "random": 9,
+      "atkStage": 2,
+      "defStage": -1,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 804,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "MACHAMP",
+      "attackerLevel": 70,
+      "defender": "SNORLAX",
+      "defenderLevel": 72,
+      "move": "CROSSCHOP",
+      "critical": true,
+      "random": 9,
+      "atkStage": -2,
+      "defStage": 2,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 71,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "MACHAMP",
+      "attackerLevel": 70,
+      "defender": "SNORLAX",
+      "defenderLevel": 72,
+      "move": "CROSSCHOP",
+      "critical": false,
+      "random": 12,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "BURN",
+      "typeMod": 16,
+      "damage": 140,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "CYNDAQUIL",
+      "attackerLevel": 5,
+      "defender": "PIDGEY",
+      "defenderLevel": 3,
+      "move": "TACKLE",
+      "critical": false,
+      "random": 0,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 8,
+      "damage": 8,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "CYNDAQUIL",
+      "attackerLevel": 5,
+      "defender": "PIDGEY",
+      "defenderLevel": 3,
+      "move": "TACKLE",
+      "critical": false,
+      "random": 15,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 8,
+      "damage": 6,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "PIDGEY",
+      "attackerLevel": 3,
+      "defender": "CYNDAQUIL",
+      "defenderLevel": 5,
+      "move": "TACKLE",
+      "critical": false,
+      "random": 8,
+      "atkStage": 0,
+      "defStage": -1,
+      "status": "NONE",
+      "typeMod": 8,
+      "damage": 6,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "GENGAR",
+      "attackerLevel": 60,
+      "defender": "ALAKAZAM",
+      "defenderLevel": 60,
+      "move": "SHADOWBALL",
+      "critical": false,
+      "random": 5,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 151,
+      "moveClass": "Battle::Move::LowerTargetSpDef1"
+    },
+    {
+      "attacker": "GENGAR",
+      "attackerLevel": 60,
+      "defender": "SNORLAX",
+      "defenderLevel": 60,
+      "move": "SHADOWBALL",
+      "critical": false,
+      "random": 5,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 0,
+      "damage": 1,
+      "moveClass": "Battle::Move::LowerTargetSpDef1"
+    },
+    {
+      "attacker": "GYARADOS",
+      "attackerLevel": 45,
+      "defender": "ONIX",
+      "defenderLevel": 40,
+      "move": "WATERFALL",
+      "critical": false,
+      "random": 11,
+      "atkStage": 1,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 32,
+      "damage": 236,
+      "moveClass": "Battle::Move::FlinchTarget"
+    },
+    {
+      "attacker": "TYRANITAR",
+      "attackerLevel": 80,
+      "defender": "SCIZOR",
+      "defenderLevel": 75,
+      "move": "EARTHQUAKE",
+      "critical": false,
+      "random": 2,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 8,
+      "damage": 76,
+      "moveClass": "Battle::Move::DoublePowerIfTargetUnderground"
+    },
+    {
+      "attacker": "SCIZOR",
+      "attackerLevel": 75,
+      "defender": "TYRANITAR",
+      "defenderLevel": 80,
+      "move": "XSCISSOR",
+      "critical": true,
+      "random": 6,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 142,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "LUCARIO",
+      "attackerLevel": 50,
+      "defender": "BLISSEY",
+      "defenderLevel": 50,
+      "move": "AURASPHERE",
+      "critical": false,
+      "random": 10,
+      "atkStage": 0,
+      "defStage": 6,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 26,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "BLISSEY",
+      "attackerLevel": 50,
+      "defender": "LUCARIO",
+      "defenderLevel": 50,
+      "move": "SEISMICTOSS",
+      "critical": false,
+      "random": 0,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 50,
+      "moveClass": "Battle::Move::FixedDamageUserLevel"
+    },
+    {
+      "attacker": "DRAGONITE",
+      "attackerLevel": 55,
+      "defender": "GARCHOMP",
+      "defenderLevel": 55,
+      "move": "DRAGONCLAW",
+      "critical": false,
+      "random": 14,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 16,
+      "damage": 146,
+      "moveClass": "Battle::Move::None"
+    },
+    {
+      "attacker": "SHEDINJA",
+      "attackerLevel": 30,
+      "defender": "SNORLAX",
+      "defenderLevel": 30,
+      "move": "SHADOWSNEAK",
+      "critical": false,
+      "random": 4,
+      "atkStage": 0,
+      "defStage": 0,
+      "status": "NONE",
+      "typeMod": 0,
+      "damage": 1,
+      "moveClass": "Battle::Move::None"
+    }
+  ],
+  "speed": [
+    {
+      "stage": -6,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 35
+    },
+    {
+      "stage": -5,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 40
+    },
+    {
+      "stage": -4,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 47
+    },
+    {
+      "stage": -3,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 56
+    },
+    {
+      "stage": -2,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 70
+    },
+    {
+      "stage": -1,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 94
+    },
+    {
+      "stage": 0,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 141
+    },
+    {
+      "stage": 1,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 211
+    },
+    {
+      "stage": 2,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 282
+    },
+    {
+      "stage": 3,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 352
+    },
+    {
+      "stage": 4,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 423
+    },
+    {
+      "stage": 5,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 493
+    },
+    {
+      "stage": 6,
+      "status": "NONE",
+      "speed": 141,
+      "pbSpeed": 564
+    },
+    {
+      "stage": -6,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 18
+    },
+    {
+      "stage": -5,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 20
+    },
+    {
+      "stage": -4,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 24
+    },
+    {
+      "stage": -3,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 28
+    },
+    {
+      "stage": -2,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 35
+    },
+    {
+      "stage": -1,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 47
+    },
+    {
+      "stage": 0,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 71
+    },
+    {
+      "stage": 1,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 106
+    },
+    {
+      "stage": 2,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 141
+    },
+    {
+      "stage": 3,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 176
+    },
+    {
+      "stage": 4,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 212
+    },
+    {
+      "stage": 5,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 247
+    },
+    {
+      "stage": 6,
+      "status": "PARALYSIS",
+      "speed": 141,
+      "pbSpeed": 282
+    }
+  ],
+  "stageChanges": [
+    {
+      "start": 0,
+      "increment": 2,
+      "dir": "raise",
+      "changed": 2,
+      "result": 2
+    },
+    {
+      "start": 5,
+      "increment": 3,
+      "dir": "raise",
+      "changed": 1,
+      "result": 6
+    },
+    {
+      "start": -6,
+      "increment": 1,
+      "dir": "raise",
+      "changed": 1,
+      "result": -5
+    },
+    {
+      "start": 0,
+      "increment": 2,
+      "dir": "lower",
+      "changed": 2,
+      "result": -2
+    },
+    {
+      "start": -5,
+      "increment": 3,
+      "dir": "lower",
+      "changed": 1,
+      "result": -6
+    },
+    {
+      "start": 6,
+      "increment": 1,
+      "dir": "lower",
+      "changed": 1,
+      "result": 5
+    }
+  ],
+  "accuracy": [
+    {
+      "move": "TACKLE",
+      "accStage": 0,
+      "evaStage": 0,
+      "hits": 100
+    },
+    {
+      "move": "HYPNOSIS",
+      "accStage": 0,
+      "evaStage": 0,
+      "hits": 60
+    },
+    {
+      "move": "HYPNOSIS",
+      "accStage": 1,
+      "evaStage": 0,
+      "hits": 79
+    },
+    {
+      "move": "HYPNOSIS",
+      "accStage": 0,
+      "evaStage": 2,
+      "hits": 35
+    },
+    {
+      "move": "STONEEDGE",
+      "accStage": -2,
+      "evaStage": 0,
+      "hits": 48
+    },
+    {
+      "move": "STONEEDGE",
+      "accStage": 3,
+      "evaStage": -1,
+      "hits": 100
+    },
+    {
+      "move": "FOCUSBLAST",
+      "accStage": 6,
+      "evaStage": 0,
+      "hits": 100
+    },
+    {
+      "move": "FOCUSBLAST",
+      "accStage": -6,
+      "evaStage": 6,
+      "hits": 7
+    },
+    {
+      "move": "SWIFT",
+      "accStage": -6,
+      "evaStage": 6,
+      "hits": 100
+    },
+    {
+      "move": "THUNDER",
+      "accStage": 0,
+      "evaStage": 1,
+      "hits": 52
+    },
+    {
+      "move": "SANDATTACK",
+      "accStage": 0,
+      "evaStage": -3,
+      "hits": 100
+    },
+    {
+      "move": "ZAPCANNON",
+      "accStage": 2,
+      "evaStage": 2,
+      "hits": 50
+    }
+  ],
+  "critical": [
+    {
+      "move": "TACKLE",
+      "focusEnergy": 0,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 0,
+      "random": 1,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 0,
+      "random": 2,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 0,
+      "random": 7,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 1,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 1,
+      "random": 1,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 1,
+      "random": 2,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 1,
+      "random": 7,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 2,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 2,
+      "random": 1,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 2,
+      "random": 2,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 2,
+      "random": 7,
+      "critical": false
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 3,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 3,
+      "random": 1,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 3,
+      "random": 2,
+      "critical": true
+    },
+    {
+      "move": "TACKLE",
+      "focusEnergy": 3,
+      "random": 7,
+      "critical": true
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 0,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 0,
+      "random": 1,
+      "critical": false
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 0,
+      "random": 2,
+      "critical": false
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 0,
+      "random": 7,
+      "critical": false
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 2,
+      "random": 0,
+      "critical": true
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 2,
+      "random": 1,
+      "critical": true
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 2,
+      "random": 2,
+      "critical": true
+    },
+    {
+      "move": "SLASH",
+      "focusEnergy": 2,
+      "random": 7,
+      "critical": true
+    }
+  ],
+  "priority": [
+    {
+      "cases": [
+        [
+          "PIKACHU",
+          50,
+          "TACKLE"
+        ],
+        [
+          "SNORLAX",
+          50,
+          "TACKLE"
+        ],
+        [
+          "JOLTEON",
+          50,
+          "TACKLE"
+        ],
+        [
+          "SLOWBRO",
+          50,
+          "TACKLE"
+        ]
+      ],
+      "order": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "speeds": [
+        110,
+        50,
+        150,
+        50
+      ]
+    },
+    {
+      "cases": [
+        [
+          "SNORLAX",
+          50,
+          "QUICKATTACK"
+        ],
+        [
+          "JOLTEON",
+          50,
+          "TACKLE"
+        ],
+        [
+          "SLOWBRO",
+          50,
+          "EXTREMESPEED"
+        ],
+        [
+          "PIKACHU",
+          50,
+          "PROTECT"
+        ]
+      ],
+      "order": [
+        3,
+        2,
+        0,
+        1
+      ],
+      "speeds": [
+        50,
+        150,
+        50,
+        110
+      ]
+    },
+    {
+      "cases": [
+        [
+          "MEW",
+          50,
+          "TACKLE"
+        ],
+        [
+          "MEW",
+          50,
+          "TACKLE"
+        ],
+        [
+          "MEW",
+          50,
+          "TACKLE"
+        ],
+        [
+          "MEW",
+          50,
+          "TACKLE"
+        ]
+      ],
+      "order": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "speeds": [
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "cases": [
+        [
+          "SNORLAX",
+          30,
+          "TRICKROOM"
+        ],
+        [
+          "JOLTEON",
+          30,
+          "VITALTHROW"
+        ],
+        [
+          "PIKACHU",
+          30,
+          "TACKLE"
+        ],
+        [
+          "SLOWBRO",
+          30,
+          "TACKLE"
+        ]
+      ],
+      "order": [
+        2,
+        3,
+        1,
+        0
+      ],
+      "speeds": [
+        32,
+        92,
+        68,
+        32
+      ]
+    }
+  ],
+  "exp": [
+    {
+      "gainer": "CYNDAQUIL",
+      "gainerLevel": 5,
+      "defeated": "PIDGEY",
+      "defeatedLevel": 3,
+      "trainer": false,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 23,
+      "levelAfter": 5,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 1
+      }
+    },
+    {
+      "gainer": "CYNDAQUIL",
+      "gainerLevel": 5,
+      "defeated": "RATTATA",
+      "defeatedLevel": 4,
+      "trainer": false,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 35,
+      "levelAfter": 5,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 1
+      }
+    },
+    {
+      "gainer": "BAYLEEF",
+      "gainerLevel": 18,
+      "defeated": "GEODUDE",
+      "defeatedLevel": 20,
+      "trainer": true,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 266,
+      "levelAfter": 18,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 1,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 0
+      }
+    },
+    {
+      "gainer": "CROCONAW",
+      "gainerLevel": 25,
+      "defeated": "ZUBAT",
+      "defeatedLevel": 12,
+      "trainer": false,
+      "numPartic": 2,
+      "expShare": [
+
+      ],
+      "expGained": 53,
+      "levelAfter": 25,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 1
+      }
+    },
+    {
+      "gainer": "TYPHLOSION",
+      "gainerLevel": 50,
+      "defeated": "BLISSEY",
+      "defeatedLevel": 55,
+      "trainer": true,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 7770,
+      "levelAfter": 51,
+      "evs": {
+        "HP": 3,
+        "ATTACK": 0,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 0
+      }
+    },
+    {
+      "gainer": "PICHU",
+      "gainerLevel": 2,
+      "defeated": "ONIX",
+      "defeatedLevel": 40,
+      "trainer": false,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 2428,
+      "levelAfter": 13,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 1,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 0
+      }
+    },
+    {
+      "gainer": "MEWTWO",
+      "gainerLevel": 100,
+      "defeated": "RATTATA",
+      "defeatedLevel": 2,
+      "trainer": false,
+      "numPartic": 1,
+      "expShare": [
+
+      ],
+      "expGained": 0,
+      "levelAfter": 100,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 0,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 1
+      }
+    },
+    {
+      "gainer": "CYNDAQUIL",
+      "gainerLevel": 10,
+      "defeated": "SENTRET",
+      "defeatedLevel": 9,
+      "trainer": false,
+      "numPartic": 1,
+      "expShare": [
+        0
+      ],
+      "expGained": 35,
+      "levelAfter": 10,
+      "evs": {
+        "HP": 0,
+        "ATTACK": 1,
+        "DEFENSE": 0,
+        "SPECIAL_ATTACK": 0,
+        "SPECIAL_DEFENSE": 0,
+        "SPEED": 0
+      }
+    }
+  ],
+  "catch": [
+    {
+      "species": "PIDGEY",
+      "level": 3,
+      "hp": 16,
+      "totalhp": 16,
+      "status": "NONE",
+      "ball": "POKEBALL",
+      "randomStart": 0,
+      "shakes": 2,
+      "critical": false
+    },
+    {
+      "species": "PIDGEY",
+      "level": 3,
+      "hp": 4,
+      "totalhp": 16,
+      "status": "NONE",
+      "ball": "POKEBALL",
+      "randomStart": 500,
+      "shakes": 2,
+      "critical": false
+    },
+    {
+      "species": "SNORLAX",
+      "level": 30,
+      "hp": 145,
+      "totalhp": 145,
+      "status": "NONE",
+      "ball": "GREATBALL",
+      "randomStart": 900,
+      "shakes": 0,
+      "critical": false
+    },
+    {
+      "species": "SNORLAX",
+      "level": 30,
+      "hp": 14,
+      "totalhp": 145,
+      "status": "SLEEP",
+      "ball": "ULTRABALL",
+      "randomStart": 1700,
+      "shakes": 4,
+      "critical": false
+    },
+    {
+      "species": "SNORLAX",
+      "level": 30,
+      "hp": 48,
+      "totalhp": 145,
+      "status": "PARALYSIS",
+      "ball": "POKEBALL",
+      "randomStart": 3300,
+      "shakes": 3,
+      "critical": false
+    },
+    {
+      "species": "MEWTWO",
+      "level": 70,
+      "hp": 250,
+      "totalhp": 250,
+      "status": "NONE",
+      "ball": "ULTRABALL",
+      "randomStart": 200,
+      "shakes": 0,
+      "critical": false
+    },
+    {
+      "species": "MEWTWO",
+      "level": 70,
+      "hp": 3,
+      "totalhp": 250,
+      "status": "FROZEN",
+      "ball": "ULTRABALL",
+      "randomStart": 4100,
+      "shakes": 3,
+      "critical": false
+    },
+    {
+      "species": "CATERPIE",
+      "level": 2,
+      "hp": 14,
+      "totalhp": 14,
+      "status": "NONE",
+      "ball": "MASTERBALL",
+      "randomStart": 0,
+      "shakes": 4,
+      "critical": false
+    },
+    {
+      "species": "ABRA",
+      "level": 10,
+      "hp": 14,
+      "totalhp": 28,
+      "status": "NONE",
+      "ball": "POKEBALL",
+      "randomStart": 300,
+      "shakes": 4,
+      "critical": false
+    },
+    {
+      "species": "CHANSEY",
+      "level": 25,
+      "hp": 167,
+      "totalhp": 167,
+      "status": "BURN",
+      "ball": "GREATBALL",
+      "randomStart": 700,
+      "shakes": 4,
+      "critical": false
+    }
+  ],
+  "run": [
+    {
+      "player": "RATTATA",
+      "playerLevel": 5,
+      "wild": "PIDGEY",
+      "wildLevel": 5,
+      "attempts": 0,
+      "results": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          50,
+          1,
+          3
+        ],
+        [
+          100,
+          1,
+          3
+        ],
+        [
+          128,
+          1,
+          3
+        ],
+        [
+          200,
+          1,
+          3
+        ],
+        [
+          255,
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "player": "SLOWPOKE",
+      "playerLevel": 5,
+      "wild": "PIDGEY",
+      "wildLevel": 30,
+      "attempts": 0,
+      "results": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          50,
+          1,
+          3
+        ],
+        [
+          100,
+          -1,
+          0
+        ],
+        [
+          128,
+          -1,
+          0
+        ],
+        [
+          200,
+          -1,
+          0
+        ],
+        [
+          255,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "player": "SLOWPOKE",
+      "playerLevel": 5,
+      "wild": "PIDGEY",
+      "wildLevel": 30,
+      "attempts": 2,
+      "results": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          50,
+          1,
+          3
+        ],
+        [
+          100,
+          1,
+          3
+        ],
+        [
+          128,
+          -1,
+          0
+        ],
+        [
+          200,
+          -1,
+          0
+        ],
+        [
+          255,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "player": "SNORLAX",
+      "playerLevel": 20,
+      "wild": "JOLTEON",
+      "wildLevel": 20,
+      "attempts": 1,
+      "results": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          50,
+          1,
+          3
+        ],
+        [
+          100,
+          1,
+          3
+        ],
+        [
+          128,
+          -1,
+          0
+        ],
+        [
+          200,
+          -1,
+          0
+        ],
+        [
+          255,
+          -1,
+          0
+        ]
+      ]
+    },
+    {
+      "player": "GASTLY",
+      "playerLevel": 5,
+      "wild": "JOLTEON",
+      "wildLevel": 50,
+      "attempts": 0,
+      "results": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          50,
+          1,
+          3
+        ],
+        [
+          100,
+          1,
+          3
+        ],
+        [
+          128,
+          1,
+          3
+        ],
+        [
+          200,
+          1,
+          3
+        ],
+        [
+          255,
+          1,
+          3
+        ]
+      ]
+    }
+  ]
+}

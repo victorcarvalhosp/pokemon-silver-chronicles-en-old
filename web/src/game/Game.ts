@@ -13,6 +13,9 @@ import { PokemonMapFactory } from "./MapFactory";
 import { SaveData, type SaveHash } from "./save/SaveData";
 import { pokemonMap, restoreMapState, savedMapId } from "./save/values";
 import "./mapHandlers";
+import { PokemonEncounters, pokemonEncounters, setPokemonEncounters } from "./encounters/PokemonEncounters";
+import { restoreSpawnedPokeEvents } from "./encounters/visibleEncounters";
+import "./battle/scripts";
 import { Graphics } from "../rgss/Graphics";
 
 // 013_Game_Stats.rb: Graphics.update adds delta_s to $stats.play_time once a
@@ -49,7 +52,8 @@ export const Game = {
     const p = G.gamePlayer as unknown as GamePlayer;
     p.moveto(Data.system.startX, Data.system.startY);
     p.refresh();
-    // TODO(M4): $PokemonEncounters = PokemonEncounters.new; .setup(map id).
+    setPokemonEncounters(new PokemonEncounters());
+    pokemonEncounters().setup(G.gameMap!.mapId);
     (G.gameMap as unknown as GameMap).autoplay();
     await (G.gameMap as unknown as GameMap).update();
   },
@@ -62,7 +66,9 @@ export const Game = {
     await prepareMap(savedMapId(save));
     // Game.load_map: maps come back from data with the saved event state.
     restoreMapState();
-    // TODO(M4): $PokemonEncounters.setup.
+    restoreSpawnedPokeEvents(); // Visible Overworld Wild Encounters' PokeEvents are part of the maps
+    setPokemonEncounters(new PokemonEncounters());
+    pokemonEncounters().setup(G.gameMap!.mapId);
     pbUpdateVehicle();
     pbAutoplayOnSave();
     await (G.gameMap as unknown as GameMap).update();

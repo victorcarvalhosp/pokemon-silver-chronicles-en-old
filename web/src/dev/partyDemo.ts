@@ -153,4 +153,4 @@ async function press(code: string, ticks = 2): Promise<void> {
   await step(1);
 }
 
-Object.assign(window, { __demo: { G, Graphics, Input, step, press } });
+Object.assign(window, { __demo: { G, Graphics, Input, step, press, app } });

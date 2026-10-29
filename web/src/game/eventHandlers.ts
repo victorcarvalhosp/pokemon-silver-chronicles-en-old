@@ -25,4 +25,30 @@ export const EventHandlers = {
   triggerSync(event: string, ...args: unknown[]): void {
     for (const h of handlers.get(event)?.values() ?? []) void h(...args);
   },
+
+  /**
+   * EventHandlers.trigger_2 (Following Pokemon EX, Compatibility.rb): the first
+   * handler result that isn't nil (null/undefined), else -1; nil when nothing
+   * was ever registered for the event.
+   */
+  async trigger2(event: string, ...args: unknown[]): Promise<unknown> {
+    const hs = handlers.get(event);
+    if (!hs) return null;
+    for (const h of hs.values()) {
+      const ret = await h(...args);
+      if (ret != null) return ret;
+    }
+    return -1;
+  },
+
+  /** trigger_2 for handlers that don't wait. */
+  trigger2Sync(event: string, ...args: unknown[]): unknown {
+    const hs = handlers.get(event);
+    if (!hs) return null;
+    for (const h of hs.values()) {
+      const ret = h(...args);
+      if (ret != null) return ret;
+    }
+    return -1;
+  },
 };

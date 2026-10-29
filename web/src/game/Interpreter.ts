@@ -128,6 +128,10 @@ export class Interpreter {
   private buttonInput = false;
   private hiddenChoices: boolean[] = [];
   private renamedChoices: (string | undefined)[] = [];
+  private followerMoveRoute_ = false;
+  private followerMoveRouteId: string | null = null;
+  private followerAnimation_ = false;
+  private followerAnimationId: string | null = null;
 
   constructor(private depth = 0, private main = false) {
     if (depth > 100) throw new Error("Common event call has exceeded maximum limit.");
@@ -143,6 +147,7 @@ export class Interpreter {
     this.buttonInput = false;
     this.hiddenChoices = [];
     this.renamedChoices = [];
+    this.endFollowerOverrides();
   }
 
   setup(list: Command[] | null, eventId: number, mapId?: number): void {
@@ -232,7 +237,7 @@ export class Interpreter {
       if (this.moveRouteWaiting) {
         if (player().moveRouteForcing) return;
         for (const e of map.events.values()) if (e.moveRouteForcing) return;
-        // TODO(followers): followers' move routes.
+        for (const [e] of G.gameTemp.followers?.eachFollower() ?? []) if (e.moveRouteForcing) return;
         this.moveRouteWaiting = false;
       }
       if (this.waitCount > 0) {
@@ -257,6 +262,37 @@ export class Interpreter {
     return events.get(parameter === 0 ? this.eventId : parameter) ?? null;
   }
   getPlayer() { return this.getCharacter(-1); }
+
+  /** The next Set Move Route moves a follower instead (nil: the first one). */
+  followerMoveRoute(id: string | null = null): void {
+    this.followerMoveRoute_ = true;
+    this.followerMoveRouteId = id;
+  }
+
+  /** The next Show Animation plays on a follower instead (nil: the first one). */
+  followerAnimation(id: string | null = null): void {
+    this.followerAnimation_ = true;
+    this.followerAnimationId = id;
+  }
+
+  endFollowerOverrides(): void {
+    this.followerMoveRoute_ = false;
+    this.followerMoveRouteId = null;
+    this.followerAnimation_ = false;
+    this.followerAnimationId = null;
+  }
+
+  /** Followers.get(name) */
+  private follower(name: string | null): GameEvent | null {
+    const f = G.gameTemp.followers;
+    return (name ? f?.getFollowerByName(name) : f?.getFollowerByIndex()) ?? null;
+  }
+
+  /** command_210: Wait for Move's Completion. */
+  command210(): boolean {
+    if (!G.gameTemp.inBattle) this.moveRouteWaiting = true;
+    return true;
+  }
   getSelf() { return this.getCharacter(0) as GameEvent | null; }
   getEvent(id: number) { return this.getCharacter(id); }
 
@@ -660,7 +696,12 @@ export class Interpreter {
         map.startFogOpacityChange(c.opacity as number, c.seconds as number);
         return true;
       case "showAnimation": {
-        const ch = this.getCharacter(c.character as number);
+        let ch: GameEvent | GamePlayer | null = this.getCharacter(c.character as number);
+        if (this.followerAnimation_) {
+          ch = this.follower(this.followerAnimationId);
+          this.followerAnimation_ = false;
+          this.followerAnimationId = null;
+        }
         if (ch) ch.animationId = c.animation as number;
         return true;
       }
@@ -668,7 +709,12 @@ export class Interpreter {
         player().transparent = c.value as boolean;
         return true;
       case "moveRoute": {
-        const ch = this.getCharacter(c.character as number);
+        let ch: GameEvent | GamePlayer | null = this.getCharacter(c.character as number);
+        if (this.followerMoveRoute_) {
+          ch = this.follower(this.followerMoveRouteId);
+          this.followerMoveRoute_ = false;
+          this.followerMoveRouteId = null;
+        }
         if (ch) ch.forceMoveRoute(c.route as MoveRoute);
         return true;
       }

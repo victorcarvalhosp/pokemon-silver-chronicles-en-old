@@ -51,6 +51,53 @@ export class GameSystem {
     Audio.bgmFade(Math.floor(seconds * 1000));
   }
 
+  // bgm_pause / bgm_unpause / bgm_resume (used around battles): pausing keeps
+  // the position, so the map music resumes where it was.
+  bgmPosition = 0;
+  bgsPosition = 0;
+  private bgmPaused = false;
+  private bgsPaused = false;
+
+  bgmPause(fadetime = 0): void {
+    const pos = Audio.bgmPos();
+    if (fadetime > 0) this.bgmFade(fadetime);
+    this.bgmPosition = pos;
+    this.bgmPaused = true;
+  }
+  bgmUnpause(): void {
+    this.bgmPosition = 0;
+    this.bgmPaused = false;
+  }
+  bgmResume(bgm: AudioRef | null): void {
+    if (!this.bgmPaused) return;
+    this.playingBgm = bgm ? { ...bgm } : null;
+    if (bgm && bgm.name) Audio.bgmPlay(bgm.name, Math.floor((bgm.volume * G.pokemonSystem.bgmvolume) / 100), bgm.pitch, this.bgmPosition);
+    else Audio.bgmStop();
+    this.bgmPosition = 0;
+    this.bgmPaused = false;
+  }
+  bgsPause(fadetime = 0): void {
+    const pos = Audio.bgsPos();
+    if (fadetime > 0) this.bgsFade(fadetime);
+    this.bgsPosition = pos;
+    this.bgsPaused = true;
+  }
+  bgsUnpause(): void {
+    this.bgsPosition = 0;
+    this.bgsPaused = false;
+  }
+  bgsResume(bgs: AudioRef | null): void {
+    if (!this.bgsPaused) return;
+    this.playingBgs = bgs ? { ...bgs } : null;
+    if (bgs && bgs.name) Audio.bgsPlay(bgs.name, Math.floor((bgs.volume * G.pokemonSystem.bgmvolume) / 100), bgs.pitch, this.bgsPosition);
+    else Audio.bgsStop();
+    this.bgsPosition = 0;
+    this.bgsPaused = false;
+  }
+  /** getPlayingBGM / getPlayingBGS: a copy of what's playing. */
+  getPlayingBGM(): AudioRef | null { return this.playingBgm ? { ...this.playingBgm } : null; }
+  getPlayingBGS(): AudioRef | null { return this.playingBgs ? { ...this.playingBgs } : null; }
+
   bgmMemorize(): void { this.memorizedBgm = this.playingBgm; }
   bgmRestore(): void { this.bgmPlay(this.memorizedBgm); }
 

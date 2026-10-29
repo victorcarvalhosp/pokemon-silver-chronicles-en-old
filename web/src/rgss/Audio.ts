@@ -102,8 +102,8 @@ class Channel {
     this.gain?.connect(this.duck).connect(ctx.destination);
   }
 
-  async play(name: string, volume = 100, pitch = 100, onEnd?: () => void): Promise<void> {
-    if (this.loop && name === this.name && this.source) {
+  async play(name: string, volume = 100, pitch = 100, onEnd?: () => void, position = 0): Promise<void> {
+    if (this.loop && name === this.name && this.source && position === 0) {
       this.setVolume(volume);
       this.pitch = pitch;
       this.source.playbackRate.value = pitch / 100;
@@ -135,9 +135,13 @@ class Channel {
         onEnd?.();
       }
     };
-    src.start();
+    // Resuming (Game_System#bgm_resume): start `position` seconds in, wrapped into the loop.
+    let offset = Math.max(0, position);
+    const end = src.loop ? (src.loopEnd || sound.buffer.duration) : sound.buffer.duration;
+    if (offset >= end) offset = src.loop ? (src.loopStart || 0) + ((offset - end) % Math.max(0.001, end - (src.loopStart || 0))) : 0;
+    src.start(0, offset);
     this.source = src;
-    this.startedAt = ctx.currentTime;
+    this.startedAt = ctx.currentTime - offset / (pitch / 100);
   }
 
   setVolume(volume: number): void {
@@ -190,17 +194,18 @@ const bgs = new Channel("BGS", true);
 const me = new Channel("ME", false);
 
 export const Audio = {
-  bgmPlay(name: string, volume = 100, pitch = 100): void {
-    void bgm.play(name, volume, pitch);
+  bgmPlay(name: string, volume = 100, pitch = 100, position = 0): void {
+    void bgm.play(name, volume, pitch, undefined, position);
   },
   bgmStop(): void { bgm.stop(); },
   bgmFade(ms: number): void { bgm.fade(ms); },
   bgmName(): string { return bgm.name; },
   bgmPos(): number { return bgm.position(); },
 
-  bgsPlay(name: string, volume = 80, pitch = 100): void {
-    void bgs.play(name, volume, pitch);
+  bgsPlay(name: string, volume = 80, pitch = 100, position = 0): void {
+    void bgs.play(name, volume, pitch, undefined, position);
   },
+  bgsPos(): number { return bgs.position(); },
   bgsStop(): void { bgs.stop(); },
   bgsFade(ms: number): void { bgs.fade(ms); },
   bgsName(): string { return bgs.name; },

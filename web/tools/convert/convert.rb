@@ -183,6 +183,60 @@ module Convert
     end
   end
 
+  # Battle animations (Data/PkmnAnimations.rxdata, a PBAnimations) and the
+  # move -> animation index table the compiler derives from their names
+  # (Data/move2anim.dat: [{move => index} for "Move:", {move => index} for
+  # "OppMove:"]). Each frame is the PBAnimation's array of cels; a cel is the
+  # 27-element AnimFrame array (X, Y, ZOOMX, ANGLE, MIRROR, BLENDTYPE, VISIBLE,
+  # PATTERN, OPACITY, -, -, ZOOMY, COLOR*4, TONE*4, LOCKED, FLASH*4, PRIORITY,
+  # FOCUS) or null. Trailing null cels are dropped. Animation indices are kept
+  # (null for empty slots) because move2anim refers to them.
+  def pkmn_animations
+    anims = iv(Rxdata.load(File.join(DATA_IN, "PkmnAnimations.rxdata")), :array)
+    timing_fields = %i[frame timingType name volume pitch bgX bgY opacity colorRed colorGreen colorBlue
+                       colorAlpha duration flashScope flashColor flashDuration]
+    list = anims.map do |a|
+      next nil if a.nil?
+      frames = iv(a, :array).map do |f|
+        cels = f.map { |c| c&.dup }
+        cels.pop while !cels.empty? && cels.last.nil?
+        cels
+      end
+      {
+        "id" => iv(a, :id), "name" => Rxdata.str(iv(a, :name)), "graphic" => Rxdata.str(iv(a, :graphic)),
+        "hue" => iv(a, :hue), "position" => iv(a, :position), "speed" => iv(a, :speed), "scope" => iv(a, :scope),
+        "timing" => iv(a, :timing).map do |t|
+          timing_fields.to_h do |k|
+            v = iv(t, k)
+            v = v.values if v.is_a?(Color)
+            v = Rxdata.str(v) if v.is_a?(String)
+            [k.to_s, v]
+          end
+        end,
+        "frames" => frames
+      }
+    end
+    move2anim = Rxdata.load(File.join(DATA_IN, "move2anim.dat")).map { |h| h.to_h { |k, v| [k.to_s, v] } }
+    { "move2anim" => move2anim, "animations" => list }
+  end
+
+  # pkmn-animations.json is large (~200k cels), so every frame goes on one
+  # line instead of through the generic pretty printer.
+  def write_pkmn_animations(path, data)
+    out = +"{\n"
+    out << "  \"move2anim\": [\n" << data["move2anim"].map { |h| "    " + JSON.generate(h) }.join(",\n") << "\n  ],\n"
+    out << "  \"animations\": [\n"
+    out << data["animations"].map do |a|
+      next "    null" if a.nil?
+      head = a.reject { |k, _| k == "frames" }.map { |k, v| "      #{JSON.generate(k)}: #{JSON.generate(v)}" }
+      frames = a["frames"].map { |f| "        " + JSON.generate(f) }.join(",\n")
+      "    {\n" + head.join(",\n") + ",\n      \"frames\": [\n" + frames + "\n      ]\n    }"
+    end.join(",\n")
+    out << "\n  ]\n}\n"
+    FileUtils.mkdir_p(File.dirname(path))
+    File.write(path, out)
+  end
+
   # Plugins/MQS quest definitions (QuestModule constants), in definition order.
   def quests
     mod = Module.new
@@ -256,6 +310,7 @@ if $PROGRAM_NAME == __FILE__
   Convert.write(File.join(DATA_OUT, "tilesets.json"), Convert.tilesets)
   Convert.write(File.join(DATA_OUT, "common-events.json"), Convert.common_events)
   Convert.write(File.join(DATA_OUT, "animations.json"), Convert.animations)
+  Convert.write_pkmn_animations(File.join(DATA_OUT, "pkmn-animations.json"), Convert.pkmn_animations)
   Convert.write(File.join(DATA_OUT, "quests.json"), Convert.quests)
 
   ids = Dir[File.join(DATA_IN, "Map[0-9]*.rxdata")].map { |f| File.basename(f)[/\d+/].to_i }.sort
