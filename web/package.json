@@ -12,6 +12,7 @@
     "audio": "node tools/sound/convert.ts"
   },
   "dependencies": {
+    "@wasm-audio-decoders/ogg-vorbis": "0.1.20",
     "pixi.js": "^8.22.0"
   },
   "devDependencies": {

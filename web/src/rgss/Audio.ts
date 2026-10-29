@@ -34,10 +34,12 @@ async function loadSound(path: string): Promise<LoadedSound | null> {
       const bytes = await res.arrayBuffer();
       const loop = oggLoopPoints(bytes);
       try {
-        const buffer = await ctx.decodeAudioData(bytes);
+        // decodeAudioData detaches its argument; keep `bytes` for the fallback.
+        const buffer = await ctx.decodeAudioData(bytes.slice(0));
         return { buffer, ...loop };
       } catch {
-        return warnOnce(path, "can't be decoded");
+        const buffer = await decodeOggVorbis(bytes);
+        return buffer ? { buffer, ...loop } : warnOnce(path, "can't be decoded");
       }
     })();
     buffers.set(key, entry);
@@ -49,6 +51,27 @@ function warnOnce(path: string, why: string): null {
   if (!warned.has(path)) console.warn(`Audio ${path}: ${why}`);
   warned.add(path);
   return null;
+}
+
+/**
+ * Browsers without native Ogg Vorbis (Safari) decode it in WebAssembly. The
+ * decoder only loads the first time it's needed.
+ */
+async function decodeOggVorbis(bytes: ArrayBuffer): Promise<AudioBuffer | null> {
+  if (new TextDecoder("latin1").decode(new Uint8Array(bytes, 0, Math.min(4, bytes.byteLength))) !== "OggS") return null;
+  try {
+    const { OggVorbisDecoder } = await import("@wasm-audio-decoders/ogg-vorbis");
+    const decoder = new OggVorbisDecoder();
+    await decoder.ready;
+    const { channelData, samplesDecoded, sampleRate } = await decoder.decodeFile(new Uint8Array(bytes));
+    decoder.free();
+    if (!samplesDecoded) return null;
+    const buffer = ctx.createBuffer(channelData.length, samplesDecoded, sampleRate);
+    channelData.forEach((data, i) => buffer.copyToChannel(data.subarray(0, samplesDecoded) as Float32Array<ArrayBuffer>, i));
+    return buffer;
+  } catch {
+    return null;
+  }
 }
 
 /** Reads LOOPSTART/LOOPLENGTH (in samples) from an OGG Vorbis comment header. */
