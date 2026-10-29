@@ -88,7 +88,8 @@ export interface IBattleScene {
    * -1 cancel (back to the previous battler's command).
    */
   pbCommandMenu(idxBattler: number, firstAction: boolean): Promise<number>;
-  pbFightMenu(idxBattler: number, megaEvoPossible: boolean, callback: FightMenuCallback): Promise<void>;
+  /** pbFightMenu(idxBattler, *mechanics) { |cmd| }: [mega, ultra, zmove, dynamax, style, tera, zodiac, custom]. */
+  pbFightMenu(idxBattler: number, ...args: [...mechanics: boolean[], callback: FightMenuCallback]): Promise<void>;
   /**
    * mode (Essentials Deluxe/Enhanced UI) is the party screen mode: 0 switch,
    * 1 choose a Pokémon to use an item on.

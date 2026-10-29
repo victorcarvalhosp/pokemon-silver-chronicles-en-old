@@ -185,10 +185,7 @@ const methods = {
     ["mega", "ultra", "zmove", "dynamax", "style", "tera", "zodiac", "custom"].forEach((mechanic, i) => {
       if (this.pbScriptedMechanic(idxBattler, mechanic)) mechanics[i] = false;
     });
-    // NOTE: Ruby passes all eight flags (@scene.pbFightMenu(idxBattler, *mechanics));
-    //       only Mega Evolution can be true here (the others are deferred or not
-    //       installed), so the scene gets that one.
-    await this.scene.pbFightMenu(idxBattler, mechanics[0]!, async (cmd) => {
+    await this.scene.pbFightMenu(idxBattler, ...mechanics, async (cmd) => {
       switch (cmd) {
         case DXTriggers.MENU_TRIGGER_CANCEL: // Cancel
           break;

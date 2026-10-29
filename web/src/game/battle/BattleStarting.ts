@@ -5,10 +5,11 @@
 // handlers (evolution check, Pickup, Honey Gather, blacking out).
 //
 // The battle itself is built in one place, battleFactory below
-// (BattleCreationHelperMethods.create_battle_scene + Battle.new). Until the
-// battle core is wired in, it builds a STUB battle that shows the foes for a
-// moment and returns a win.
+// (BattleCreationHelperMethods.create_battle_scene + Battle.new).
 
+import { Battle } from "../../battle";
+import type { IBattleScene } from "../../battle/BattleSceneInterface";
+import { BattleScene } from "../../battle/scene/BattleScene";
 import { rand } from "../../core/random";
 import type { Id } from "../../data/gameData/gameData";
 import { BattleTerrain } from "../../data/gameData/battleTerrain";
@@ -40,7 +41,6 @@ import { NPCTrainer, type Trainer } from "../trainer/Trainer";
 import { pbGetTrainerBattleBGM, pbGetWildBattleBGM } from "./battleAudio";
 import { pbBattleAnimation, pbSceneStandby } from "./BattleIntroAnim";
 import { pbStartOver } from "./startOver";
-import { createStubBattle } from "./stubBattle";
 
 /** $game_temp.battle_rules: string keys as in Ruby. */
 export type BattleRules = Record<string, unknown>;
@@ -199,17 +199,14 @@ export interface BattleLike {
 }
 
 /**
- * INTEGRATION POINT for the battle core: BattleCreationHelperMethods.
- * create_battle_scene (Battle::Scene.new) and Battle.new(scene, player_party,
- * foe_party, player_trainers, foe_trainers). Replace both with the real
- * classes, e.g.
- *   battleFactory.createScene = () => new BattleScene();
- *   battleFactory.createBattle = (scene, p1, p2, t1, t2) => new Battle(scene, p1, p2, t1, t2);
+ * BattleCreationHelperMethods.create_battle_scene (Battle::Scene.new) and
+ * Battle.new(scene, player_party, foe_party, player_trainers, foe_trainers);
+ * tests can swap them for a headless scene.
  */
 export const battleFactory = {
-  createScene: (): unknown => null,
+  createScene: (): unknown => new BattleScene(),
   createBattle: (scene: unknown, playerParty: Pokemon[], foeParty: Pokemon[], playerTrainers: Trainer[], foeTrainers: NPCTrainer[] | null): BattleLike =>
-    createStubBattle(scene, playerParty, foeParty, playerTrainers, foeTrainers),
+    new Battle(scene as IBattleScene, playerParty, foeParty, playerTrainers as never, foeTrainers) as unknown as BattleLike,
 };
 
 //===============================================================================

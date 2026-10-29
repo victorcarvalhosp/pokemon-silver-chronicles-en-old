@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:stable": "vite --config vite.nohmr.config.ts",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tools/pbs/tsconfig.json",
     "test": "vitest run",

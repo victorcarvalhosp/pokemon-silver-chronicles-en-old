@@ -23,8 +23,8 @@ class ScriptedScene extends DebugSceneNoLogging {
     void idxBattler;
     return this.command;
   }
-  override async pbFightMenu(_idxBattler: number, _mega: boolean, callback: FightMenuCallback): Promise<void> {
-    await callback(this.moveIndex);
+  override async pbFightMenu(_idxBattler: number, ...args: [...mechanics: boolean[], callback: FightMenuCallback]): Promise<void> {
+    await (args[args.length - 1] as FightMenuCallback)(this.moveIndex);
   }
   override async pbDisplayMessage(msg: string): Promise<void> { this.messages.push(msg); }
   override async pbDisplayPausedMessage(msg: string): Promise<void> { this.messages.push(msg); }

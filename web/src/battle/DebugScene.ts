@@ -108,7 +108,8 @@ export class DebugSceneNoLogging implements IBattleScene {
    * `move` method (it raises NoMethodError); this uses battler.moves.length,
    * which is what was meant.
    */
-  async pbFightMenu(idxBattler: number, _megaEvoPossible = false, callback: FightMenuCallback): Promise<void> {
+  async pbFightMenu(idxBattler: number, ...args: [...mechanics: boolean[], callback: FightMenuCallback]): Promise<void> {
+    const callback = args[args.length - 1] as FightMenuCallback;
     const battler = this.battle!.battlers[idxBattler]!;
     for (let i = 0; i < 50; i++) {
       if (await callback(rand(battler.moves.length))) break;
