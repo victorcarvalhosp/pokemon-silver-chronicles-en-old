@@ -2,6 +2,8 @@
 // - Essentials Deluxe ([000] Essentials Patches/Battle.rb:139): pbItemUsesAllActions? (UsesAllBattleActions flag).
 // - Essentials Deluxe ([002] Battle Deluxe/Midbattle_Triggers.rb:69-88): midbattle triggers in
 //   pbUseItemOnPokemon, pbUseItemOnBattler, pbUseItemInBattle.
+// - 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:172 (loaded after
+//   011_Battle): the pbCanUseItemOnPokemon? alias (Hyper Mode allows only scents).
 //
 // ItemHandlers.triggerCanUseInBattle/triggerUseInBattle/triggerBattleUseOnBattler/
 // triggerBattleUseOnPokemon (013_Items/001_Item_Utilities.rb:94-113) aren't in
@@ -54,8 +56,23 @@ const methods = {
   //=============================================================================
   // Choosing to use an item
   //=============================================================================
-  /** pbCanUseItemOnPokemon? — scene is the Bag/party screen (or the battle scene). */
+  /**
+   * pbCanUseItemOnPokemon? — scene is the Bag/party screen (or the battle scene).
+   * The Shadow Pokémon alias (002_ShadowPokemon_Other.rb:177) around the core version.
+   */
   async pbCanUseItemOnPokemon(this: Battle, item: Id, pkmn: Pokemon | null, battler: Battler | null,
+    scene: BattleSubScene | null, showMessages = true): Promise<boolean> {
+    const ret = await this.pbCanUseItemOnPokemonCore(item, pkmn, battler, scene, showMessages);
+    if (ret && pkmn!.hyperMode && !["JOYSCENT", "EXCITESCENT", "VIVIDSCENT"].includes(item)) {
+      // NOTE (Ruby parity): shown even when showMessages is false (002_ShadowPokemon_Other.rb:180).
+      await scene?.pbDisplay(_INTL("This item can't be used on that Pokémon."));
+      return false;
+    }
+    return ret;
+  },
+
+  /** __shadow__pbCanUseItemOnPokemon? (the core version, 006_Battle_ActionUseItem.rb:5). */
+  async pbCanUseItemOnPokemonCore(this: Battle, item: Id, pkmn: Pokemon | null, battler: Battler | null,
     scene: BattleSubScene | null, showMessages = true): Promise<boolean> {
     if (!pkmn || pkmn.egg()) {
       if (showMessages) await scene?.pbDisplay(_INTL("It won't have any effect."));

@@ -12,6 +12,10 @@
 // - ZUD Mechanics ([004] Battle_Battler/Battler.rb): power_index,
 //   ignore_dynamax, Z-Move/Ultra Burst/Dynamax queries, unmax;
 //   Battler_Overrides.rb: pbEncoredMoveIndex, pbHasMove?.
+// - 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:189-230
+//   (loaded after 011_Battle): shadowPokemon?, inHyperMode? here;
+//   pbInitPokemon in Battler_Initialize.ts, pbHyperMode in
+//   Battler_ChangeSelf.ts, pbHyperModeObedience in Battler_UseMoveSuccessChecks.ts.
 //
 // The rest of the class is in the other files of this folder (one per Ruby
 // file); see ../index.ts.
@@ -250,11 +254,21 @@ export class Battler {
   /** primal? */
   primal(): boolean { return this.pokemon?.primal() ?? false; }
 
-  /** shadowPokemon? */
-  shadowPokemon(): boolean { return false; }
+  /**
+   * shadowPokemon? (the base version returns false; this is the override in
+   * 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:203).
+   */
+  shadowPokemon(): boolean {
+    const p = this.pokemon;
+    return p?.shadowPokemon() ?? false;
+  }
 
-  /** inHyperMode? */
-  inHyperMode(): boolean { return false; }
+  /** inHyperMode? (002_ShadowPokemon_Other.rb:208, overrides the base `false`). */
+  inHyperMode(): boolean {
+    if (this.fainted()) return false;
+    const p = this.pokemon;
+    return p?.hyperMode ?? false;
+  }
 
   //=============================================================================
   // Display-only properties

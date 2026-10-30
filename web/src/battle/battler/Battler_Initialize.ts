@@ -7,11 +7,15 @@
 // - ZUD Mechanics ([004] Battle_Battler/Battler_Overrides.rb:9): pbInitEffects
 //   adds the Dynamax/Max Raid effects and keeps G-Max trapping effects;
 //   [009] Max Raid/Raid_Battle_Battler.rb:8 pbInitRaidBoss (in zud/raid/).
-// Alias chain: ZUD( Deluxe( Gen 9( core ) ) ).
+// - 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:192 (loaded
+//   after 011_Battle): pbInitPokemon (Hyper Mode off when a party member other
+//   than the first is sent out, Shadow type, heart gauge on send-out).
+// Alias chain: ZUD( Deluxe( Gen 9( core ) ) ); pbInitPokemon = Shadow( core ).
 
 import { _INTL } from "../../data/gameData/gameData";
 import { Settings } from "../../data/gameData/settings";
 import { Stat } from "../../data/gameData/stat";
+import { Type } from "../../data/gameData/type";
 import type { Pokemon } from "../../game/pokemon/Pokemon";
 import { Move } from "../move/Move";
 import { PBEffects } from "../other/PBEffects";
@@ -68,7 +72,20 @@ const methods = {
     this.damageState.reset();
   },
 
+  /** pbInitPokemon: Shadow Pokémon (002_ShadowPokemon_Other.rb:192) around the core version. */
   pbInitPokemon(this: Battler, pkmn: Pokemon, idxParty: number): void {
+    if (this.pokemonIndex > 0 && this.inHyperMode()) {
+      this.pokemon!.hyperMode = false;
+    }
+    this.pbInitPokemonCore(pkmn, idxParty);
+    // Called into battle
+    if (this.shadowPokemon()) {
+      if (Type.exists("SHADOW")) this.types = ["SHADOW"];
+      if (this.pbOwnedByPlayer()) this.pokemon!.changeHeartGauge("battle");
+    }
+  },
+
+  pbInitPokemonCore(this: Battler, pkmn: Pokemon, idxParty: number): void {
     if (pkmn.egg()) throw new Error(_INTL("An egg can't be an active Pokémon."));
     this.name = pkmn.name;
     this.species = pkmn.species;

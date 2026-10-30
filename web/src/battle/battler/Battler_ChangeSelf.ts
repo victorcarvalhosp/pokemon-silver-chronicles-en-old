@@ -17,6 +17,7 @@
 //   pbRecoverHPFromDrain = ZUD( Hotfixes ); pbChangeTypes/pbResetTypes/
 //   pbCheckFormOnWeatherChange = Gen 9( core ); pbFaint = ZUD( Deluxe( Gen 9( core ) ) );
 //   pbTransform = ZUD( Gen 9( core ) ); pbReducePP = Deluxe (replaces core).
+// - 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:214: pbHyperMode.
 
 import { DEBUG } from "../../core/debug";
 import { Input } from "../../rgss/Input";
@@ -768,7 +769,18 @@ const methods = {
     this.battle.scene.pbRefreshOne(this.index);
   },
 
-  pbHyperMode(this: Battler): void {},
+  /**
+   * pbHyperMode (014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:214;
+   * the base version at :328 does nothing).
+   */
+  async pbHyperMode(this: Battler): Promise<void> {
+    if (this.fainted() || !this.shadowPokemon() || this.inHyperMode() || !this.pbOwnedByPlayer()) return;
+    const p = this.pokemon!;
+    if (this.battle.pbRandom(p.heartGauge) <= Math.trunc(p.maxGaugeSize() / 4)) {
+      p.hyperMode = true;
+      await this.battle.pbDisplay(_INTL("{1}'s emotions rose to a fever pitch!\nIt entered Hyper Mode!", this.pbThis()));
+    }
+  },
 };
 
 type Methods = typeof methods;

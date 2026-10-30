@@ -19,6 +19,8 @@ import "./MoveEffects_Healing"; // 010
 import "./MoveEffects_Items"; // 011
 import "./MoveEffects_ChangeMoveEffect"; // 012
 import "./MoveEffects_SwitchingActing"; // 013
+// 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb (Shadow moves)
+import "./MoveEffects_Shadow";
 // Generation 9 Pack Scripts/[002] Moves/[001] New Move Functions.rb
 import "./MoveEffects_Gen9NewMoveFunctions";
 // ZUD Mechanics/[008] Overrides/Override_Moves.rb (its new class)
