@@ -4,8 +4,8 @@
 // Plugins/Pokemon Amie/Pokemon Amie.rb headless. Both sides replay the same
 // random numbers (rand(n) = raw % n). Compared: changeAmieStats for every
 // method, feedAmie for every food (with the PokeAmie_Scene the item handlers
-// get, so the foods whose handler calls scene.pbDisplay/pbRefresh raise as in
-// Ruby), getAmieStatLevel, resetAffection, the :hungerCounter step handler,
+// get, with the plugin's pbDisplay/pbRefresh/pbHardRefresh/pbUpdate and a -1
+// pbChooseMove made callable on both sides: a deliberate fix, see amieItemScene), getAmieStatLevel, resetAffection, the :hungerCounter step handler,
 // pbFirstNonEggPokemonOrFaintedPokemon and setAmiePokemon.
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import { GameData } from "../../data/gameData";

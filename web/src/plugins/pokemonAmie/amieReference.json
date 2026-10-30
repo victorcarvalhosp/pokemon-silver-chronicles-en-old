@@ -1034,14 +1034,11 @@
           ]
         ],
         "rolls": [
-
+          629443330
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1058,21 +1055,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "LAVACOOKIE",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became healthy."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1098,14 +1098,11 @@
           ]
         ],
         "rolls": [
-
+          120471290
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1122,21 +1119,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "OLDGATEAU",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became healthy."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1162,14 +1162,11 @@
           ]
         ],
         "rolls": [
-
+          878145311
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1186,21 +1183,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "CASTELIACONE",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became healthy."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1226,14 +1226,11 @@
           ]
         ],
         "rolls": [
-
+          1054470943
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1250,21 +1247,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "RAGECANDYBAR",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became healthy."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1290,14 +1290,11 @@
           ]
         ],
         "rolls": [
-
+          727678142
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1314,21 +1311,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "SWEETHEART",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu's HP was restored by 20 points."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1354,21 +1354,18 @@
           ]
         ],
         "rolls": [
-
+          206602377
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 31,
           "hp": 22,
           "totalhp": 72,
           "status": "BURN",
-          "happiness": 70,
+          "happiness": 76,
           "ev": {
             "HP": 0,
             "ATTACK": 0,
@@ -1378,21 +1375,32 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            14,
+            90,
             5
           ]
         },
         "bag": [
           [
             "RARECANDY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu grew to Lv. 31!"
+          ],
+          [
+            "topRight",
+            "Max. HP<r>+2\r\nAttack<r>+1\r\nDefense<r>+1\r\nSp. Atk<r>+1\r\nSp. Def<r>+1\r\nSpeed<r>+2"
+          ],
+          [
+            "topRight",
+            "Max. HP<r>72\r\nAttack<r>48\r\nDefense<r>39\r\nSp. Atk<r>45\r\nSp. Def<r>45\r\nSpeed<r>70"
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1418,14 +1426,11 @@
           ]
         ],
         "rolls": [
-
+          581881486
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1442,21 +1447,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "CHERIBERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1482,14 +1487,11 @@
           ]
         ],
         "rolls": [
-
+          895710425
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1506,21 +1508,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            14,
+            90,
             5
           ]
         },
         "bag": [
           [
             "CHESTOBERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1546,14 +1548,11 @@
           ]
         ],
         "rolls": [
-
+          157437183
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1570,21 +1569,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "PECHABERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1610,14 +1609,11 @@
           ]
         ],
         "rolls": [
-
+          804305681
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1634,21 +1630,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            14,
+            90,
             5
           ]
         },
         "bag": [
           [
             "RAWSTBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu's burn was healed."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1674,14 +1673,11 @@
           ]
         ],
         "rolls": [
-
+          860376139
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1698,21 +1694,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "ASPEARBERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1738,14 +1734,11 @@
           ]
         ],
         "rolls": [
-
+          1060199960
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbChooseMove' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1762,21 +1755,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "LEPPABERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1802,14 +1795,11 @@
           ]
         ],
         "rolls": [
-
+          681429508
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1826,21 +1816,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "ORANBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu's HP was restored by 10 points."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1927,14 +1920,11 @@
           ]
         ],
         "rolls": [
-
+          959785440
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -1951,21 +1941,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "LUMBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became healthy."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -1991,14 +1984,11 @@
           ]
         ],
         "rolls": [
-
+          62057987
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2015,21 +2005,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "SITRUSBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu's HP was restored by 17 points."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2665,14 +2658,11 @@
           ]
         ],
         "rolls": [
-
+          872080559
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2689,21 +2679,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "POMEGBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base HP can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2729,14 +2722,11 @@
           ]
         ],
         "rolls": [
-
+          398297916
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2753,21 +2743,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "KELPSYBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base Attack can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2793,14 +2786,11 @@
           ]
         ],
         "rolls": [
-
+          685411476
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2817,21 +2807,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "QUALOTBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base Defense can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2857,14 +2850,11 @@
           ]
         ],
         "rolls": [
-
+          1041534494
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2881,21 +2871,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "HONDEWBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base Special Attack can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2921,14 +2914,11 @@
           ]
         ],
         "rolls": [
-
+          482350467
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -2945,21 +2935,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "GREPABERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base Special Defense can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -2985,14 +2978,11 @@
           ]
         ],
         "rolls": [
-
+          395470066
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -3009,21 +2999,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "TAMATOBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. Its base Speed can't go lower."
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -5364,14 +5357,11 @@
           ]
         ],
         "rolls": [
-
+          393155468
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -5388,21 +5378,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            13,
+            90,
             5
           ]
         },
         "bag": [
           [
             "ORANBERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -5428,14 +5418,11 @@
           ]
         ],
         "rolls": [
-
+          947411026
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -5452,21 +5439,24 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "POMEGBERRY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu became more friendly. However, its base HP fell!"
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -5895,21 +5885,18 @@
           ]
         ],
         "rolls": [
-
+          836453306
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbRefresh' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 31,
           "hp": 72,
           "totalhp": 72,
           "status": "NONE",
-          "happiness": 50,
+          "happiness": 56,
           "ev": {
             "HP": 0,
             "ATTACK": 0,
@@ -5919,21 +5906,32 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            15,
+            90,
             5
           ]
         },
         "bag": [
           [
             "RARECANDY",
-            2
+            1
           ]
         ],
         "log": [
-
+          [
+            "msg",
+            "Pikachu grew to Lv. 31!"
+          ],
+          [
+            "topRight",
+            "Max. HP<r>+2\r\nAttack<r>+1\r\nDefense<r>+1\r\nSp. Atk<r>+1\r\nSp. Def<r>+1\r\nSpeed<r>+2"
+          ],
+          [
+            "topRight",
+            "Max. HP<r>72\r\nAttack<r>48\r\nDefense<r>39\r\nSp. Atk<r>45\r\nSp. Def<r>45\r\nSpeed<r>70"
+          ]
         ],
-        "returned": null
+        "returned": 5
       }
     },
     {
@@ -5956,14 +5954,11 @@
           ]
         ],
         "rolls": [
-
+          712766779
         ]
       },
       "result": {
-        "error": [
-          "NoMethodError",
-          "private method `pbDisplay' called for #<PokeAmie_Scene>"
-        ],
+        "error": null,
         "pokemon": {
           "species": "PIKACHU",
           "level": 30,
@@ -5980,21 +5975,21 @@
             "SPEED": 0
           },
           "amie": [
-            10,
-            0,
+            16,
+            90,
             5
           ]
         },
         "bag": [
           [
             "LUMBERRY",
-            2
+            1
           ]
         ],
         "log": [
 
         ],
-        "returned": null
+        "returned": 5
       }
     }
   ],

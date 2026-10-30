@@ -8,7 +8,7 @@ applying the same change to the Ruby harness in `tools/ruby-ref` (see
 `patch_ability_handler` in `ability_reference.rb`), then adding a scenario
 where the fix shows.
 
-Already fixed on purpose: the happiness soft-cap crash, the Gen 9 Pack Sun
+Already fixed on purpose: Pokémon Amie's feeding crash (22 foods), the happiness soft-cap crash, the Gen 9 Pack Sun
 multiplier, and Cotton Down, Bad Dreams, Forewarn, Magician, Mummy/Lingering
 Aroma, Neutralizing Gas, Opportunist and Synchronize.
 
@@ -337,7 +337,6 @@ crashes below can't happen from events. `TT` = `017_Minigames/002_Minigame_Tripl
 
 | Bug | Original | Port |
 |---|---|---|
-| Feeding any food with a field-use handler (status/HP berries, Leppa, the EV-lowering berries, the sweets, Rare Candy: 22 of the 70) stops the game: the handler calls `scene.pbDisplay`/`pbRefresh`/`pbChooseMove`, which the plugin defines as top-level (private) methods, so NoMethodError. The handler's effect (HP, status, happiness) is applied first; the item isn't taken | `:196, 1158-1195` | `src/plugins/pokemonAmie/amie.ts` (`amieItemScene`) |
 | Berries never use their berry_plants.dat entry (looked up by GameData::Item, keyed by symbol): every berry gives 3 + rand(4) affection. The loaded hash is kept in the Pokémon (`@berryPlantData`), so it goes into the save | `:198-207` | `src/plugins/pokemonAmie/amie.ts` (`feedAmie`; nothing stored) |
 | PokeBattle_Battler is v19's battler class (v20.1: Battle::Battler), so Amie stats do nothing in battle | `:344-365` | `src/plugins/pokemonAmie/amie.ts` (unused class) |
 | The hunger counter counts every event's steps (`:on_step_taken`), not just the player's, and lowers eggs' stats too | `:333-342` | `src/plugins/pokemonAmie/amie.ts` |

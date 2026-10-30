@@ -71,24 +71,24 @@ function noMethod(name: string, isPrivate: boolean): () => never {
  * The scene feedAmie hands to ItemHandlers.triggerUseOnPokemon: the
  * PokeAmie_Scene itself (`feedAmie(@food, @pokemon, self)`).
  *
- * NOTE (Ruby parity): PokeAmie_Scene has no pbDisplay/pbRefresh/pbHardRefresh/
- * pbUpdate/pbChooseMove. The plugin defines them as top-level methods
- * (Pokemon Amie.rb:1158-1195, "to keep the 002_Item_Effects script to work
- * properly"), but top-level methods are private, so the handlers'
- * `scene.pbDisplay(...)` raise NoMethodError and the game stops. Every food
- * with a UseOnPokemon handler does this (the status-healing and HP berries,
- * Leppa, the EV-lowering berries, the sweets and Rare Candy), after the
- * handler has done its work (HP restored, status healed...) and before the
- * item is taken and the stats change. The other berries (no field use) work.
+ * Deliberate fix: the plugin defines pbDisplay/pbRefresh/pbHardRefresh/
+ * pbUpdate as top-level methods (Pokemon Amie.rb:1158-1195, "to keep the
+ * 002_Item_Effects script to work properly"), but top-level methods are
+ * private, so in Ruby the handlers' `scene.pbDisplay(...)` raise NoMethodError
+ * and feeding any food with a UseOnPokemon handler (the status-healing and HP
+ * berries, Leppa, the EV-lowering berries, the sweets, Rare Candy) stops the
+ * game. Here the scene has them, as the plugin meant; pbChooseMove returns -1
+ * (no PP restored), the plugin's commented-out choice for PP items
+ * (:1165-1170). The tests' Ruby harness gives PokeAmie_Scene the same methods.
  * Any other method a handler could call on the scene doesn't exist at all.
  */
 export function amieItemScene(): object {
   return {
-    pbDisplay: noMethod("pbDisplay", true),
-    pbRefresh: noMethod("pbRefresh", true),
-    pbHardRefresh: noMethod("pbHardRefresh", true),
-    pbUpdate: noMethod("pbUpdate", true),
-    pbChooseMove: noMethod("pbChooseMove", true),
+    pbDisplay: (text: unknown) => pbDisplay(text),
+    pbRefresh: () => {},
+    pbHardRefresh: () => {},
+    pbUpdate: () => {},
+    pbChooseMove: () => -1,
     pbConfirm: noMethod("pbConfirm", false),
     pbShowCommands: noMethod("pbShowCommands", false),
     pbChoosePokemon: noMethod("pbChoosePokemon", false),

@@ -79,6 +79,28 @@ def pbTopRightWindow(text, _scene = nil)
   $log << ["topRight", text]
 end
 
+# Deliberate fix in the port (web/src/plugins/pokemonAmie/amie.ts,
+# amieItemScene): the plugin's top-level pbDisplay/pbRefresh/pbHardRefresh/
+# pbUpdate are private, so the item handlers' scene.pbDisplay raised
+# NoMethodError. Give the scene public versions that run the plugin's own
+# methods, and a pbChooseMove that restores no PP (the plugin's commented-out
+# choice).
+# What the fixed path reaches that the headless harness doesn't load: the
+# debug console pbDisplay echoes to, and the party screen class pbChangeLevel
+# checks the scene against (this scene isn't one).
+module Console
+  def self.echo_li(*_args); end
+end unless defined?(Console)
+class PokemonPartyScreen; end unless defined?(PokemonPartyScreen)
+
+class PokeAmie_Scene
+  def pbDisplay(text); super; end
+  def pbRefresh; super; end
+  def pbHardRefresh; super; end
+  def pbUpdate; super; end
+  def pbChooseMove(*_args); -1; end
+end
+
 def pbFadeOutIn(*_args)
   yield if block_given?
 end
