@@ -156,15 +156,19 @@ export class IconSprite extends Sprite {
     super.dispose();
   }
 
-  /** Sets the icon's filename (must be preloaded). */
+  /**
+   * Sets the icon's filename (must be preloaded): setBitmap(file, hue).
+   * Ruby keeps `oldrc = self.src_rect` and puts it back after `self.bitmap =`,
+   * but src_rect returns the sprite's own Rect, which mkxp-z's bitmap= resets
+   * to the new bitmap's size, so the sprite always ends up showing the whole
+   * new bitmap (007_SpriteWrapper.rb:280-292); setBitmap does the same here.
+   */
   setBitmapFile(file: string | null, hue = 0): void {
-    const oldrc = this.srcRect.clone();
     this.clearBitmaps();
     this.name = file ?? "";
     if (!file) return;
     this._iconbitmap = new AnimatedBitmap(file, hue);
     this.setBitmap(this._iconbitmap.bitmap);
-    if (oldrc.width > 0 && oldrc.height > 0) this.srcRect.set(oldrc);
   }
 
   clearBitmaps(): void {
@@ -177,10 +181,7 @@ export class IconSprite extends Sprite {
     super.update(dt);
     if (!this._iconbitmap) return;
     this._iconbitmap.update();
-    if (this.bitmap !== this._iconbitmap.bitmap) {
-      const oldrc = this.srcRect.clone();
-      this.setBitmap(this._iconbitmap.bitmap);
-      this.srcRect.set(oldrc);
-    }
+    // (Ruby's oldrc is the same Rect, reset by bitmap=; see setBitmapFile.)
+    if (this.bitmap !== this._iconbitmap.bitmap) this.setBitmap(this._iconbitmap.bitmap);
   }
 }

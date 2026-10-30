@@ -81,6 +81,26 @@ export const DevFiles = {
     return (await res.json()) as string[];
   },
 
+  /** Every folder under dir (recursively), relative to it. */
+  async listDirs(dir: string): Promise<string[]> {
+    if (!(await DevFiles.available())) throw new DevFilesUnavailable();
+    const res = await fetch(`/__dev/list?dir=${encodeURIComponent(dir)}&dirs=1`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return (await res.json()) as string[];
+  },
+
+  /** Makes a folder and its parents (Dir.mkdir for each missing one). */
+  async mkdir(path: string): Promise<void> {
+    if (!checkDevPath(path, DEV_WRITE_ROOTS)) throw new Error(`Creating ${path} is not allowed (only under ${DEV_WRITE_ROOTS.join(", ")})`);
+    await post("mkdir", { path });
+  },
+
+  /** File.delete(path), or Dir.delete(path) for an empty folder. */
+  async delete(path: string): Promise<void> {
+    if (!checkDevPath(path, DEV_WRITE_ROOTS)) throw new Error(`Deleting ${path} is not allowed (only under ${DEV_WRITE_ROOTS.join(", ")})`);
+    await post("delete", { path });
+  },
+
   /** Compiler.compile_all: runs `pnpm pbs` (tools/pbs/compile.ts) on the dev server; returns its output. */
   async compilePbs(): Promise<string> {
     const json = await post("compile-pbs", {});

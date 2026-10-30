@@ -208,16 +208,18 @@ export function savedMapId(hash: Record<string, unknown>): number {
  * Game.load_map: rebuilds the maps from data and puts every event, the
  * player and the running event back where they were.
  */
-export function restoreMapState(): void {
+export function restoreMapState(warp: [number, number, number] | null = null): void {
   const saved = pendingMaps;
   if (!saved) throw new Error("Save has no map data");
   G.gamePlayer = new GamePlayer() as never;
-  const factory = new PokemonMapFactory(saved.current);
+  // `warp`: the DEBUG recovery from a missing map (Game.load_map,
+  // 001_StartGame.rb:84-89): set up the chosen map instead, afresh.
+  const factory = new PokemonMapFactory(warp ? warp[0] : saved.current);
   // Game.load_map: a safe save (Game.save(safe: true), e.g. the Battle
   // Frontier's), or one made before the map data changed (magic number),
   // sets the map up afresh, with no interpreter running.
   const magicNumberMatches = G.gameSystem.magicNumber === ((Data.system as unknown as { magicNumber?: number }).magicNumber ?? 0);
-  const safe = !magicNumberMatches || !!(G.pokemonGlobal as unknown as { safesave?: boolean }).safesave;
+  const safe = !magicNumberMatches || !!(G.pokemonGlobal as unknown as { safesave?: boolean }).safesave || !!warp;
   for (const s of safe ? [] : saved.maps) {
     const m: GameMap = s.mapId === saved.current ? factory.map : factory.getMap(s.mapId);
     restore(m, s.fields);
@@ -239,6 +241,7 @@ export function restoreMapState(): void {
     p.encounterCount = Number(pendingPlayer.encounterCount ?? 0);
   }
   const current = factory.map;
+  if (warp) p.moveto(warp[1], warp[2]);
   if (safe) {
     p.center(p.x, p.y);
   } else {

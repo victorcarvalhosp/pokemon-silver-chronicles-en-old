@@ -6,6 +6,8 @@ import { Data } from "../data/store";
 import { assetExists } from "../core/assets";
 import { Audio } from "../rgss/Audio";
 import { Graphics } from "../rgss/Graphics";
+import { Input } from "../rgss/Input";
+import { pbCurrentEventCommentInput } from "../ui/messages";
 import { G } from "./globals";
 
 export type AudioParam = AudioRef | string | null | undefined;
@@ -148,6 +150,18 @@ export class GameSystem {
 
   update(): void {
     if (this.timerWorking && this.timer > 0) this.timer = Math.max(0, this.timer - Graphics.deltaS);
+    // SPECIAL skips a cut scene: an event whose page has a "Cut Scene" comment
+    // gets self switch A, and its new page starts (002_Game_System.rb:269-273).
+    if (!(Input.trigger(Input.SPECIAL) && pbCurrentEventCommentInput(1, "Cut Scene") != null)) return;
+    const interp = this.mapInterpreter as unknown as {
+      getSelf(): { id: number; start(): void };
+      pbSetSelfSwitch(eventid: number, switchName: string, value: boolean): void;
+      commandEnd(): void;
+    };
+    const event = interp.getSelf();
+    interp.pbSetSelfSwitch(event.id, "A", true);
+    interp.commandEnd();
+    event.start();
   }
 }
 

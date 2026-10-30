@@ -8,12 +8,17 @@
 //   GET  /__dev/ping                       -> {ok: true}
 //   GET  /__dev/read?path=PBS/items.txt    -> the file (also Graphics/Audio/Fonts)
 //   GET  /__dev/list?dir=PBS               -> ["items.txt", ...] (recursive)
+//   GET  /__dev/list?dir=PBS&dirs=1        -> ["Plugins", "Plugins/x", ...] (the folders, recursive)
 //   POST /__dev/write {path, content, encoding?: "utf8" | "base64", append?: boolean}
 //   POST /__dev/move  {from, to}           (both under web/data/ or PBS/)
+//   POST /__dev/mkdir {path}               (Dir.create: makes the folder and its parents)
+//   POST /__dev/delete {path}              (File.delete / Dir.delete: a file or an empty folder)
+// Writing routes (write, move, mkdir, delete) only take paths under web/data/
+// or PBS/ (never those folders themselves) that no symlink leads out of.
 //   POST /__dev/compile-pbs                -> runs tools/pbs/compile.ts, {ok, output}
 
 import { execFile } from "node:child_process";
-import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, realpathSync, renameSync, statSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, lstatSync, mkdirSync, readdirSync, readFileSync, realpathSync, renameSync, rmdirSync, statSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
 import type { Connect, Plugin } from "vite";
 import { checkDevPath, DEV_READ_ROOTS, DEV_WRITE_ROOTS } from "../src/debug/devFilesPolicy";
@@ -71,8 +76,9 @@ export function devFiles(gameRoot: string): Plugin {
               if (!full) return send(res, 403, { ok: false, error: "path not allowed" });
               const base = dirname(full);
               if (!existsSync(base)) return send(res, 200, []);
+              const wantDirs = url.searchParams.get("dirs") === "1";
               const files = (readdirSync(base, { recursive: true }) as string[])
-                .filter((f) => statSync(join(base, f)).isFile())
+                .filter((f) => (wantDirs ? statSync(join(base, f)).isDirectory() : statSync(join(base, f)).isFile()))
                 .map((f) => f.split("\\").join("/"));
               return send(res, 200, files);
             }
@@ -103,6 +109,22 @@ export function devFiles(gameRoot: string): Plugin {
               if (!existsSync(from)) return send(res, 404, { ok: false, error: "not found" });
               mkdirSync(dirname(to), { recursive: true });
               renameSync(from, to);
+              return send(res, 200, { ok: true });
+            }
+            if (route === "/mkdir") {
+              const full = resolveChecked(body.path, DEV_WRITE_ROOTS);
+              if (!full) return send(res, 403, { ok: false, error: `creating ${String(body.path)} is not allowed (only under ${DEV_WRITE_ROOTS.join(", ")})` });
+              mkdirSync(full, { recursive: true });
+              return send(res, 200, { ok: true });
+            }
+            if (route === "/delete") {
+              const full = resolveChecked(body.path, DEV_WRITE_ROOTS);
+              if (!full) return send(res, 403, { ok: false, error: `deleting ${String(body.path)} is not allowed (only under ${DEV_WRITE_ROOTS.join(", ")})` });
+              if (!existsSync(full)) return send(res, 404, { ok: false, error: "not found" });
+              // No symlinks (resolveChecked followed it to check where it leads; don't touch either end).
+              if (lstatSync(full).isSymbolicLink()) return send(res, 403, { ok: false, error: "deleting a symlink is not allowed" });
+              if (statSync(full).isDirectory()) rmdirSync(full); // fails unless empty, like Dir.delete
+              else unlinkSync(full);
               return send(res, 200, { ok: true });
             }
             return next();

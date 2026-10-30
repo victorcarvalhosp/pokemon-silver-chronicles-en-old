@@ -87,9 +87,11 @@ endpoint instead (`web/tools/devFiles.ts`, installed by `vite.config.ts`):
 |---|---|
 | `GET /__dev/ping` | `{ok: true}` when the endpoint exists |
 | `GET /__dev/read?path=PBS/items.txt` | a file under `web/data/`, `PBS/`, `Graphics/`, `Audio/` or `Fonts/` |
-| `GET /__dev/list?dir=PBS` | the files under a folder (same folders) |
+| `GET /__dev/list?dir=PBS` | the files under a folder (same folders); `&dirs=1` lists the subfolders instead |
 | `POST /__dev/write` `{path, content, encoding?, append?}` | writes a file under `web/data/` or `PBS/` |
 | `POST /__dev/move` `{from, to}` | renames within `web/data/` or `PBS/` |
+| `POST /__dev/mkdir` `{path}` | makes a folder (and its parents) under `web/data/` or `PBS/` (`Dir.create`) |
+| `POST /__dev/delete` `{path}` | deletes a file or an empty folder under `web/data/` or `PBS/`, never those folders themselves or a symlink (`File.delete`, `Dir.delete`, `Dir.delete_all`) |
 | `POST /__dev/compile-pbs` | runs `pnpm pbs` (PBS → `web/data/pbs/`) |
 
 Paths are relative to the game root. Writes anywhere else (`Graphics/`,

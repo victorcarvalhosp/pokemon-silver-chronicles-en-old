@@ -11,7 +11,7 @@ the Ruby is engine glue the browser does differently (files, Marshal, mkxp);
 the note says what replaces it. **Partial** lists what's missing, with
 Ruby file:line. Paths in "Where" are under `web/src/`.
 
-Last checked 2026-10-29: 263 ported, 6 browser equivalents, 4 partial,
+Last checked 2026-10-29: 266 ported, 6 browser equivalents, 1 partial,
 1 superseded by a plugin, 1 deferred (random dungeons). Unused helpers and
 editor-only code that are skipped inside a "ported" file are listed in its
 notes.
@@ -20,13 +20,7 @@ notes.
 
 | Ruby | Missing | Why it waits |
 |---|---|---|
-| `001_Technical/006_RPG_Sprite.rb:63-415` | RPG::Sprite `whiten`, `appear`, `escape`, `collapse`, `damage`, `blink_on/off`, `loop_animation` | Nothing in the game calls them |
 | `006_Map renderer/004_TileDrawingHelper.rb:1-196` | `TileDrawingHelper`, the minimap | Debug editors only |
-| `007_Objects and windows/012_TextEntry.rb:261` | `Window_MultilineTextEntry` | No game code uses it |
-| `014_Pokemon/001_Pokemon-related/001_FormHandlers.rb:37-61` | Spinda's spots (`drawSpot`, `pbSpindaSpots`) | Sprite pixels only |
-| `001_Technical/002_Files/001_FileTests.rb:48-88` | `Dir.create`, `Dir.all_dirs`, `Dir.delete_all` | A browser can't make folders; DevFiles writes create them |
-| `003_Game processing/001_StartGame.rb:84-92` | DEBUG recovery from a missing map (`pbWarpToMap`) | Needs the debug agent's warp screen |
-| `004_Game classes/002_Game_System.rb:268` | SPECIAL skips a "Cut Scene" event | No map has one |
 | `012_Overworld/008_Overworld_RandomDungeons.rb` | Everything | Deferred by agreement |
 
 Event scripts still written in Ruby (`{"cmd": "script", "ruby": …}`, see
@@ -44,21 +38,21 @@ file of their own.
 | 001_Technical/001_Debugging/004_Validation.rb | ported | debug/Validation.ts |  |
 | 001_Technical/001_Debugging/005_Deprecation.rb | ported | debug/Deprecation.ts |  |
 | 001_Technical/001_MKXP_Compatibility.rb | browser equivalent | rgss/Bitmap.ts, rgss/Graphics.ts, ui/options/options.ts | Bitmap text offsets, `Graphics.delta_s`; `pbSetResizeFactor` (:36) is a no-op (the page scales); `pbSetWindowText` (:8) not ported (the tab title is fixed). |
-| 001_Technical/002_Files/001_FileTests.rb | ported (browser equivalent) | core/fileTests.ts, core/assets.ts, ui/rpgCache.ts | Existence checks on the asset index, contents fetched, saves in IndexedDB. Not ported: `Dir.create`/`all_dirs`/`delete_all` (:48-88), which write folders (DevFiles creates them when writing). |
+| 001_Technical/002_Files/001_FileTests.rb | ported (browser equivalent) | core/fileTests.ts, core/assets.ts, ui/rpgCache.ts, debug/devFiles.ts | Existence checks on the asset index, contents fetched, saves in IndexedDB. `Dir.create`/`all_dirs`/`delete_all` (:48-88) go through the dev server's file endpoint (`/__dev/mkdir`, `/__dev/list?dirs=1`, `/__dev/delete`, same web/data/ and PBS/ restriction as writes; tools/devFiles.ts), so only under `pnpm dev`. |
 | 001_Technical/002_Files/002_FileMixins.rb | ported | core/fileTests.ts | On byte arrays (StringInput/StringOutput). |
 | 001_Technical/002_Files/003_HTTP_Utilities.rb | ported | core/httpUtilities.ts | On fetch; the browser sets Host/User-Agent/Content-Length itself. |
 | 001_Technical/002_RubyUtilities.rb | ported | core/rubyUtilities.ts (also itemUtilities.ts, PokemonMart.ts) | As functions. `Object#inspect`, `Class#to_sym` (:4-22) only serve Ruby's debugging. Ruby bug kept: `to_word` (:78) returns nil for 21. |
 | 001_Technical/003_Intl_Messages.rb | ported | core/intl.ts | Messages files are JSON under web/data; `_INTL`, GameData names, map names, event text/choices and the Load screen's Language option go through it. Debug Extract/Compile Text use it. |
 | 001_Technical/004_Input.rb | ported | rgss/Input.ts, game/utilities.ts | F8 screenshot hook in game/utilities.ts; `Mouse.getMousePos` (:29) is `Input.mouseX/mouseY`. |
 | 001_Technical/005_PluginManager.rb | browser equivalent | — | Plugins are static imports in Ruby's load order; each `PluginManager.installed?` is resolved in place. No runtime registry/`readMeta`/`runPlugins`. |
-| 001_Technical/006_RPG_Sprite.rb | partial | sprites/SpriteAnimation.ts | Animations (SpriteAnimation/SpriteAnimations, timings, SE, flash) ported. Not ported (unused by this game): `loop_animation` (:63, :381), `whiten` (:289), `appear` (:299), `escape` (:309), `collapse` (:319), `damage` (:329), `blink_on`/`blink_off` (:409-415). |
+| 001_Technical/006_RPG_Sprite.rb | ported | sprites/SpriteAnimation.ts | SpriteAnimation (once and looped), RPG::Sprite's animation lists, and RPG::Sprite itself (`RPGSprite`: `whiten`, `appear`, `escape`, `collapse`, `damage`, `blink_on`/`off`, counted in 40 fps frames). Unused by this game. Ruby bug kept: `loop_animation` reads `@_animation.name` (:70), so it always fails from RPG::Sprite. Not ported: `@@_animations` sharing of position-3 animations and the x=/y= cell moves (cells are placed again on each update). |
 | 002_BattleSettings.rb | ported | data/gameData/settings.ts, game/encounters/settings.ts |  |
 | 002_Save data/001_SaveData.rb | browser equivalent | game/save/SaveData.ts | Versioned JSON in IndexedDB, plus export/import. `get_data_from_file` (:24), `to_hash_format` (:73), `move_old_windows_save` (:86) don't apply. |
 | 002_Save data/002_SaveData_Value.rb | ported (simplified) | game/save/SaveData.ts | No type validation (`validate_value` :107, `ensure_class` :117); `from_old_format` (:153) doesn't apply. |
 | 002_Save data/003_SaveData_Conversion.rb | ported | game/save/SaveConversions.ts, game/save/SaveData.ts | Conversions run on the save's JSON before loading; the port's own layout changes use `__format`. |
 | 002_Save data/004_Game_SaveValues.rb | ported | game/save/values.ts, game/save/modelValues.ts |  |
 | 002_Save data/005_Game_SaveConversions.rb | ported | game/save/SaveConversions.ts | All 11 v20 conversions, on JSON values. Ruby bugs kept: an empty old Day Care slot becomes a Lv.50 Manaphy and one old Pokémon fills every empty slot (:176-183); `@lastPocket` cleared instead of `@lastpocket` (:221). |
-| 003_Game processing/001_StartGame.rb | ported | game/Game.ts, game/newGame.ts, game/save/values.ts | Magic-number check in `load_map` ported (data has no magic number, so it always matches). Not ported: the DEBUG missing-map recovery through `pbWarpToMap` (:84-92). |
+| 003_Game processing/001_StartGame.rb | ported | game/Game.ts, game/newGame.ts, game/save/values.ts | Magic-number check in `load_map` ported (data has no magic number, so it always matches). The DEBUG missing-map recovery (:84-92) is `pbRecoverMissingMap` (pbWarpToMap; a load with no map chosen is abandoned instead of `exit`); it applies to every load, as the port's saves don't hold the maps. |
 | 003_Game processing/002_Scene_Map.rb | ported | scenes/SceneMap.ts | Night BGM (`_n`) in `autofade` ported; `createSingleSpriteset` (:29) is unused in Ruby. |
 | 003_Game processing/003_Interpreter.rb | ported | game/Interpreter.ts, game/scriptApi.ts | Script commands run translated statements or hand-written `defineRubyScript` ports; untranslated Ruby is the event-scripts work (see data/reports/conversion.json). `pbShowPicture` (:299) not ported (no data uses it). |
 | 003_Game processing/004_Interpreter_Commands.rb | ported (pre-compiled) | game/Interpreter.ts | Codes are converted to named commands (web/tools/convert); 303 Name Input isn't converted (no data uses it). |
@@ -69,7 +63,7 @@ file of their own.
 | 004_Game classes/001_Switches and Variables/002_Game_Switches.rb | ported | game/globals.ts | Script switches ("s:") in game/GameEvent.ts. |
 | 004_Game classes/001_Switches and Variables/003_Game_Variables.rb | ported | game/globals.ts |  |
 | 004_Game classes/001_Switches and Variables/004_Game_SelfSwitches.rb | ported | game/globals.ts |  |
-| 004_Game classes/002_Game_System.rb | ported | game/GameSystem.ts | `setDefaultBGM`/`@defaultBGM` ported (Jukebox). Not ported: the SPECIAL-key cut-scene skip in `update` (:268; no map has a "Cut Scene" comment). |
+| 004_Game classes/002_Game_System.rb | ported | game/GameSystem.ts | `setDefaultBGM`/`@defaultBGM` ported (Jukebox). The SPECIAL-key cut-scene skip in `update` (:268) ported (no map has a "Cut Scene" comment). |
 | 004_Game classes/003_Game_Picture.rb | ported | game/GameScreen.ts |  |
 | 004_Game classes/004_Game_Map.rb | ported | game/GameMap.ts | `bgm_name` night variant and `erase_tile` ported. |
 | 004_Game classes/005_Game_Map_Autoscroll.rb | ported | game/field/autoscroll.ts, game/GameMap.ts |  |
@@ -109,7 +103,7 @@ file of their own.
 | 007_Objects and windows/009_Planes.rb | ported | ui/planes.ts |  |
 | 007_Objects and windows/010_DrawText.rb | ported | ui/drawText.ts | `drawTextTable` (:1064), `pbDrawShadow` (:1095) unused. |
 | 007_Objects and windows/011_Messages.rb | ported | ui/messages.ts, ui/planes.ts | Not ported: `pbCurrentEventCommentInput` (:45, only the cut-scene skip uses it), `pbGetBasicMapNameFromId` (:252, inlined). |
-| 007_Objects and windows/012_TextEntry.rb | partial | ui/textEntry/TextEntry.ts | `Window_MultilineTextEntry` (:261) not ported (no game code uses it). |
+| 007_Objects and windows/012_TextEntry.rb | ported | ui/textEntry/TextEntry.ts | `Window_MultilineTextEntry` (:261) ported too (no game code uses it). |
 | 008_Audio/001_Audio.rb | browser equivalent | rgss/Audio.ts, battle/scene/sceneFiles.ts |  |
 | 008_Audio/002_Audio_Play.rb | ported | game/GameSystem.ts, ui/messages.ts |  |
 | 009_Scenes/001_Transitions.rb | ported | game/battle/transitions.ts, rgss/Graphics.ts |  |
@@ -240,8 +234,8 @@ file of their own.
 | 013_Items/006_Item_Mail.rb | ported | ui/party/mail.ts, game/pokemon/Mail.ts |  |
 | 013_Items/007_Item_Sprites.rb | ported | ui/sprites/itemIcon.ts |  |
 | 013_Items/008_PokemonBag.rb | ported | game/items/PokemonBag.ts |  |
-| 014_Pokemon/001_Pokemon-related/001_FormHandlers.rb | partial | game/pokemon/formHandlers.ts | Not ported: Spinda's spots, `drawSpot` (:37) / `pbSpindaSpots` (:61) (SPINDA `alterBitmap`, sprite only). |
-| 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb | ported (another agent, in progress) | game/pokemon/shadowPokemonOther.ts, ui/purifyChamber/RelicStone.ts | Purification and the Relic Stone; check that agent's report for the battle-side Hyper Mode (`Battler.inHyperMode` is still the base stub returning false). |
+| 014_Pokemon/001_Pokemon-related/001_FormHandlers.rb | ported | game/pokemon/formHandlers.ts, ui/sprites/pokemonSprite.ts | Spinda's spots (`drawSpot` :37, `pbSpindaSpots` :61, SPINDA `alterBitmap`) ported; with the Gen 8 Pack they only apply to single-frame sprites (Essentials Deluxe's Species Files.rb:236), and this game's Spinda sprites are animated strips. |
+| 014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb | ported | game/pokemon/shadowPokemonOther.ts, ui/purifyChamber/RelicStone.ts, battle/battle/Battle_ActionUseItem.ts, battle/battler/Battler.ts, Battler_Initialize.ts, Battler_ChangeSelf.ts, Battler_UseMoveSuccessChecks.ts, battle/move/MoveEffects_Shadow.ts | Purification, Relic Stone, scents/Time Flute, the event handlers; the battle half (:167-404: item check in Hyper Mode, `pbInitPokemon`, `shadowPokemon?`/`inHyperMode?`, `pbHyperMode`, `pbHyperModeObedience`, the Shadow move classes) checked against Ruby by battle/shadowBattleReference.test.ts (tools/ruby-ref/shadow_battle_reference.rb). This game's PBS has no SHADOW type or Shadow moves, so the test registers them. |
 | 014_Pokemon/001_Pokemon-related/003_Pokemon_Sprites.rb | ported | ui/sprites/pokemonIcon.ts, ui/sprites/pokemonSprite.ts |  |
 | 014_Pokemon/001_Pokemon-related/004_PokemonStorage.rb | ported | game/pokemon/PokemonStorage.ts | `RegionalStorage` (:267-300) left out: the game uses one storage. |
 | 014_Pokemon/001_Pokemon.rb | ported | game/pokemon/Pokemon.ts, game/battle/scripts.ts |  |
@@ -273,7 +267,7 @@ file of their own.
 | 016_UI/010_UI_Phone.rb | ported | ui/pokegear/phone.ts |  |
 | 016_UI/011_UI_Jukebox.rb | ported | ui/pokegear/jukebox.ts |  |
 | 016_UI/012_UI_TrainerCard.rb | ported | ui/trainerCard/trainerCard.ts |  |
-| 016_UI/013_UI_Load.rb | ported | ui/load/loadScreen.ts | Language option ported (shows with 2+ Settings.LANGUAGES); Mystery Gift is the other agent's. |
+| 016_UI/013_UI_Load.rb | ported | ui/load/loadScreen.ts | Language option ported (shows with 2+ Settings.LANGUAGES); the Mystery Gift option ported (shows once the player has a Mystery Gift saved or `mysteryGiftUnlocked`, calls `pbDownloadMysteryGift` in ui/MysteryGift.ts). |
 | 016_UI/014_UI_Save.rb | ported | ui/save/saveScreen.ts | `pbEmergencySave` (:1) only runs on Hangup, which a browser doesn't have. |
 | 016_UI/015_UI_Options.rb | ported | ui/options/options.ts |  |
 | 016_UI/016_UI_ReadyMenu.rb | ported | ui/menus/readyMenu.ts |  |

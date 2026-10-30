@@ -74,6 +74,10 @@ const methods = {
 
   /** pbInitPokemon: Shadow Pokémon (002_ShadowPokemon_Other.rb:192) around the core version. */
   pbInitPokemon(this: Battler, pkmn: Pokemon, idxParty: number): void {
+    // NOTE (Ruby parity): meant to end the outgoing Pokémon's Hyper Mode, but a
+    // switch-out has already set the battler's HP to 0 (pbAbilitiesOnSwitchOut,
+    // 006_Battler_AbilityAndItem.rb:12), so inHyperMode? is false and Hyper Mode
+    // carries on (002_ShadowPokemon_Other.rb:193). See docs/original-game-bugs.md.
     if (this.pokemonIndex > 0 && this.inHyperMode()) {
       this.pokemon!.hyperMode = false;
     }

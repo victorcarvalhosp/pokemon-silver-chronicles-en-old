@@ -843,3 +843,16 @@ export function pbEventCommentInput(event: { list: readonly { cmd: string; [fiel
   }
   return null;
 }
+
+/**
+ * pbCurrentEventCommentInput(elements, trigger) (011_Messages.rb:45): the same
+ * for the event the map interpreter is running.
+ */
+export function pbCurrentEventCommentInput(elements: number, trigger: string): unknown[] | null {
+  const interp = G.gameSystem.mapInterpreter as unknown as { running(): boolean; getSelf(): { list: { cmd: string }[] | null } | null };
+  if (!interp.running()) return null;
+  const event = interp.getSelf();
+  if (!event) return null;
+  return pbEventCommentInput(event, elements, trigger);
+}
+

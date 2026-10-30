@@ -1,5 +1,6 @@
 // Port of 016_UI/013_UI_Load.rb: PokemonLoadPanel, PokemonLoad_Scene and
-// PokemonLoadScreen (Continue / New Game / Options / Quit).
+// PokemonLoadScreen (Continue / Mystery Gift / New Game / Options / Language /
+// Debug / Quit).
 
 import { _INTL, pbChooseLanguage, pbLoadMessages } from "../../core/intl";
 import { Settings } from "../../data/gameData/settings";
@@ -28,6 +29,7 @@ import { PokemonOption_Scene, PokemonOptionScreen } from "../options/options";
 import { preloadBitmaps } from "../rpgCache";
 import { Window_CommandPokemon } from "../windows/SpriteWindowText";
 import type { Pokemon } from "../../game/pokemon/Pokemon";
+import type { Player } from "../../game/trainer/Player";
 import { PictureOrigin } from "../scenes/PictureEx";
 import { PokemonIconSprite, preloadPokemonIcons } from "../sprites/pokemonIcon";
 
@@ -310,6 +312,7 @@ export class PokemonLoadScreen {
     let cmdContinue = -1;
     let cmdNewGame = -1;
     let cmdOptions = -1;
+    let cmdMysteryGift = -1;
     let cmdDebug = -1;
     let cmdQuit = -1;
     const showContinue = Object.keys(this.saveData).length > 0;
@@ -317,7 +320,10 @@ export class PokemonLoadScreen {
     if (showContinue) {
       cmdContinue = commands.length;
       commands.push("Continue");
-      // Mystery Gift appears once unlocked; the feature itself isn't ported yet.
+      if ((trainer as unknown as Player).mysteryGiftUnlocked) {
+        cmdMysteryGift = commands.length;
+        commands.push(_INTL("Mystery Gift"));
+      }
     }
     cmdNewGame = commands.length;
     commands.push("New Game");
@@ -351,6 +357,13 @@ export class PokemonLoadScreen {
       } else if (command === cmdNewGame) {
         await this.scene.pbEndScene();
         return { action: "new_game" };
+      } else if (cmdMysteryGift >= 0 && command === cmdMysteryGift) {
+        const { pbDownloadMysteryGift } = await import("../MysteryGift");
+        const player = trainer as unknown as Player;
+        await pbFadeOutIn(async () => { await pbDownloadMysteryGift(player as unknown as { mysteryGifts: unknown[][] }); });
+        // Ruby changes @save_data[:player], the object Continue loads (the file
+        // itself is only written by the next save).
+        this.saveData.player = player.toJSON();
       } else if (command === cmdOptions) {
         await pbFadeOutIn(async () => {
           const scene = new PokemonOption_Scene();

@@ -184,6 +184,7 @@ written for one (`web/src/battle/deluxe`).
 | LocationWindow never disposes the viewport it makes for its window (one empty viewport leaks per signpost) | `002_Overworld_Overlays.rb:10` | `src/game/weather/Overlays.ts` |
 | Map Zoom: the snapshot it zooms is the whole screen under it, so the Photographer's camera frame (viewport z 99) is zoomed in with the map; only `$game_temp.cmd_window` is hidden from it (the speech bubble's pbCreateMessageWindow and DP Pause Menu replace the plugin's versions that would record the message window and pause menu) | `Plugins/Map Zoom/Map Zoom.rb:24-37` | `src/game/weather/MapZoom.ts` |
 | Photographer: a party member without an overworld (follower) sprite makes `fname.gsub!` raise; pbPhotographWithPartner doesn't check that the follower exists | `Plugins/Photographer/Photographer.rb:26,267` | `src/game/weather/Photographer.ts` |
+| RPG::Sprite#loop_animation always raises NoMethodError: SpriteAnimation#loop_animation reads the frame rate from `@_animation.name` (the one-shot animation, nil in the SpriteAnimation RPG::Sprite makes for a loop) instead of `@_loop_animation`'s (nothing in this game calls it) | `001_Technical/006_RPG_Sprite.rb:70` | `src/sprites/SpriteAnimation.ts` (loopAnimation) |
 
 ## Trainer battles, battle intros and special battle types (`web/src/game/battle`, `web/src/game/trainers`)
 | Bug | Original | Port |
@@ -398,7 +399,7 @@ Nothing in the game calls these helpers, so none of this shows in play.
 | Mega Evolution plugin (SceneMegaEvolution; never runs in play, Essentials Deluxe's pbMegaEvolve replaces the plugin's): restoreColor restores nothing; the Pokémon is `Bitmap.new` of its front sprite file, a whole animation strip, shown centred with several frames side by side; the Mega strip then keeps the first strip's ox/oy, so it's drawn off screen (Ampharos); @viewport is never disposed | `Mega Evolution/Mega Evolution.rb:50, 146, 224-226, 271-276` | `src/plugins/megaEvolution/SceneMegaEvolution.ts` |
 | TC Wardrobe: Map003's `pbUnlockOutfit(4)` is past the 4 outfits and unlocks nil (kept as null in the save) | `TC Wardrobe/001_main.rb:17`; `web/data/maps/Map003.json` | `src/game/trainer/Player.ts`, `src/ui/scenes/Wardrobe.ts` |
 
-## Shadow Pokémon purification (`web/src/ui/purifyChamber`, `web/src/game/pokemon/shadowPokemonOther.ts`)
+## Shadow Pokémon: purification and battle (`web/src/ui/purifyChamber`, `web/src/game/pokemon/shadowPokemonOther.ts`, `web/src/battle`)
 
 | Bug | Original | Port |
 |---|---|---|
@@ -407,6 +408,8 @@ Nothing in the game calls these helpers, so none of this shows in play.
 | SUMMARY on a set's Shadow Pokémon does nothing while the set has no regular Pokémon (the loop covers `setCount * 2` positions) | `022_UI_PurifyChamber.rb:1267` | `src/ui/purifyChamber/PurifyChamberScene.ts` (pbSummary) |
 | `PurifyChamber#debugAdd` builds a `PseudoPokemon`, which v20.1 doesn't define (NameError; nothing calls it) | `022_UI_PurifyChamber.rb:279` | `src/ui/purifyChamber/PurifyChamber.ts` |
 | The Time Flute only works on a Shadow Pokémon whose heart gauge isn't 0, then calls pbPurify, which returns unless it is 0: the flute is used up and does nothing (not in this game's items) | `014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:289-292` | `src/game/pokemon/shadowPokemonOther.ts` |
+| Switching out a Shadow Pokémon in Hyper Mode doesn't end it: pbInitPokemon's reset checks `inHyperMode?` after the switch-out has set the battler's HP to 0 (`pbAbilitiesOnSwitchOut`), so it is always false; Hyper Mode only ends by Call, a scent, the 10% end-of-round chance or fainting | `014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb:193-195`, `011_Battle/002_Battler/006_Battler_AbilityAndItem.rb:12` | `src/battle/battler/Battler_Initialize.ts` (pbInitPokemon) |
+| Battle#pbCanUseItemOnPokemon?'s Hyper Mode check can't fire: the core version already refuses every non-scent item in Hyper Mode, and the alias exempts the three scents; if it did, it would show its message even with `showMessages` false | `002_ShadowPokemon_Other.rb:177-183`, `011_Battle/001_Battle/006_Battle_ActionUseItem.rb:18` | `src/battle/battle/Battle_ActionUseItem.ts` |
 
 ## Plugin audit leftovers (Generation 9 Pack, Mr. Gela's HGSS Trainer Card)
 
@@ -444,5 +447,6 @@ Calls in the game's events that the original game (v20.1 and its plugins) doesn'
 | Scene_Map#autofade: at night, with a map's "_n" BGM already playing, the second test (`playingBGM.name != map.bgm.name`) is still true, so the night music fades and restarts on every transfer between maps sharing it | `003_Game processing/002_Scene_Map.rb:62-63` | `src/scenes/SceneMap.ts` |
 | `Numeric#to_word` checks `self <= ret.length`, so 21 returns nil | `001_Technical/002_RubyUtilities.rb:78` | `src/core/rubyUtilities.ts` |
 | `pbPostData` only posts to `http://` URLs; anything else (https included) returns "" | `001_Technical/002_Files/003_HTTP_Utilities.rb:7` | `src/core/httpUtilities.ts` |
+| Pokégear phone: a trainer contact registered without its event (`pbPhoneRegister(nil, ...)`, 6 entries) is taken for an NPC contact, and `pbCommonEvent(:YOUNGSTER)` raises ArgumentError (`id < 0`) when it is called (no event of this game does that) | `013_Items/004_Item_Phone.rb:185-186`, `019_Utilities/001_Utilities.rb:496` | `src/ui/pokegear/phone.ts` |
 | Save conversion `v20_refactor_day_care_variables`: an empty old slot becomes a Lv.50 Manaphy, and `next if slot.filled?` keeps looping, so the first old Pokémon fills every empty slot | `002_Save data/005_Game_SaveConversions.rb:176-183` | `src/game/save/SaveConversions.ts` |
 | Save conversion `v20_rename_bag_variables` clears `@lastPocket` instead of `@lastpocket` | `005_Game_SaveConversions.rb:221` | `src/game/save/SaveConversions.ts` |

@@ -96,7 +96,63 @@ describe("dev file endpoint", () => {
     expect(existsSync(join(root, "PBS", "new.txt"))).toBe(true);
   });
 
+  it("makes folders, lists them, and deletes files and empty folders (Dir.create / all_dirs / delete_all)", async () => {
+    expect((await request(root, "POST", "/mkdir", { path: "PBS/tree/a/b" })).status).toBe(200);
+    await request(root, "POST", "/write", { path: "PBS/tree/a/f.txt", content: "x" });
+    expect(JSON.parse((await request(root, "GET", "/list?dir=PBS/tree&dirs=1")).text).sort()).toEqual(["a", "a/b"]);
+    // A folder that isn't empty stays
+    expect((await request(root, "POST", "/delete", { path: "PBS/tree/a" })).status).toBe(500);
+    expect((await request(root, "POST", "/delete", { path: "PBS/tree/a/f.txt" })).status).toBe(200);
+    for (const d of ["PBS/tree/a/b", "PBS/tree/a", "PBS/tree"]) {
+      expect((await request(root, "POST", "/delete", { path: d })).status, d).toBe(200);
+    }
+    expect(existsSync(join(root, "PBS", "tree"))).toBe(false);
+    expect((await request(root, "POST", "/delete", { path: "PBS/tree" })).status).toBe(404);
+  });
+
+  it("refuses to create or delete outside web/data/ and PBS/ (or those folders themselves, or through symlinks)", async () => {
+    writeFileSync(join(outside, "keep.txt"), "k");
+    for (const path of ["Graphics/a.txt", "Graphics", "PBS", "PBS/", "web/data", "../x", "PBS/../Graphics/a.txt",
+      "PBS/escape/keep.txt", "PBS/escape", "/tmp"]) {
+      expect((await request(root, "POST", "/delete", { path })).status, `delete ${path}`).toBe(403);
+      expect((await request(root, "POST", "/mkdir", { path })).status, `mkdir ${path}`).toBe(403);
+    }
+    expect(readFileSync(join(root, "Graphics", "a.txt"), "utf8")).toBe("graphic");
+    expect(readFileSync(join(outside, "keep.txt"), "utf8")).toBe("k");
+    expect(existsSync(join(root, "PBS"))).toBe(true);
+  });
+
   it("is a dev-server-only plugin", () => {
     expect(devFiles(root).apply).toBe("serve");
+  });
+});
+
+describe("Dir.create / all_dirs / delete_all through the endpoint", () => {
+  it("lists folders deepest first, as Dir.all_dirs, and deletes files before folders", async () => {
+    const { Dir } = await import("../core/fileTests");
+    const { DevFiles } = await import("./devFiles");
+    const calls: string[] = [];
+    const fake = async (url: string, init?: { body?: string }) => {
+      calls.push(init?.body ? `${url} ${init.body}` : url);
+      const json = url === "/__dev/ping" ? { ok: true }
+        : url.includes("dirs=1") ? ["b", "a", "a/x"]
+        : url.startsWith("/__dev/list") ? ["a/x/f.txt", "g.txt"] : { ok: true };
+      return { ok: true, status: 200, json: async () => json } as Response;
+    };
+    const orig = globalThis.fetch;
+    globalThis.fetch = fake as typeof fetch;
+    DevFiles.resetAvailability();
+    try {
+      expect(await Dir.allDirs("PBS/t")).toEqual(["PBS/t/a/x", "PBS/t/a", "PBS/t/b", "PBS/t"]);
+      calls.length = 0;
+      await Dir.deleteAll("PBS/t");
+      const deleted = calls.filter((c) => c.startsWith("/__dev/delete")).map((c) => JSON.parse(c.split(" ")[1]!).path);
+      expect(deleted).toEqual(["PBS/t/a/x/f.txt", "PBS/t/g.txt", "PBS/t/a/x", "PBS/t/a", "PBS/t/b", "PBS/t"]);
+      await Dir.create("PBS\\t\\new");
+      expect(calls.at(-1)).toBe('/__dev/mkdir {"path":"PBS/t/new"}');
+    } finally {
+      globalThis.fetch = orig;
+      DevFiles.resetAvailability();
+    }
   });
 });

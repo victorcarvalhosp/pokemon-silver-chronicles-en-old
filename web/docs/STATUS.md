@@ -1,6 +1,6 @@
 # Port status and how to resume
 
-Last updated 2026-10-29, at commit 84153bd on branch `feature/web-runtime`
+Last updated 2026-10-29, on branch `feature/web-runtime` (work after commit cbdb7b4 not committed yet)
 (nothing pushed yet — push / PR only when the owner says so).
 
 The browser port of Pokémon Silver Chronicles (Essentials v20.1 + 49 plugins)
@@ -38,35 +38,24 @@ tests replay).
 
 ## What's left
 
-1. **Shadow Pokémon in battle** — started (commit 84153bd: battler checks,
-   Hyper Mode state, `MoveEffects_Shadow.ts`, Call/item hooks) but not
-   finished and not yet compared with Ruby. Source: the battle half of
-   `Data/Scripts/014_Pokemon/001_Pokemon-related/002_ShadowPokemon_Other.rb`
-   (~:163-404). Needs a differential test (a few battles with a Shadow
-   Pokémon: Shadow moves, Hyper Mode in/out, Call).
-2. **Small script leftovers** (the "partial" rows of `docs/script-coverage.md`):
-   RPG_Sprite effects (`001_Technical/006_RPG_Sprite.rb:63-415`),
-   `Window_MultilineTextEntry` (`007_Objects and windows/012_TextEntry.rb:261`),
-   Spinda's spots (`014_Pokemon/001_Pokemon-related/001_FormHandlers.rb:37-61`),
-   `Dir.create/all_dirs/delete_all` (needs a dev-endpoint delete route;
-   `001_Technical/002_Files/001_FileTests.rb:48-88`), DEBUG recovery from a
-   missing map (`003_Game processing/001_StartGame.rb:84-92`), cut-scene skip
-   (`004_Game classes/002_Game_System.rb:268`).
-3. **Load screen "Mystery Gift" option** (`016_UI/013_UI_Load.rb`) in
-   `src/ui/load/loadScreen.ts`, calling `pbDownloadMysteryGift` from
-   `src/ui/MysteryGift.ts`.
-4. **Small fixes flagged by agents:** `src/ui/pokegear/phone.ts` uses
-   `Math.random` (should be `core/random`) and turns `:YOUNGSTER`-style
-   contacts into `pbCommonEvent(NaN)`; `IconSprite.setBitmapFile` restores the
-   old `src_rect` where mkxp-z resets it.
-5. **Deferred by the owner:** random dungeons
+1. **Done (2026-10-29, after 84153bd):** Shadow Pokémon in battle, checked
+   against Ruby (`src/battle/shadowBattleReference.test.ts`,
+   `tools/ruby-ref/shadow_battle_reference.rb`; the scripted-battle harness is
+   now shared in `src/battle/move/moveHarness.ts`); the script leftovers
+   (RPG::Sprite effects, `Window_MultilineTextEntry`, Spinda's spots,
+   `Dir.create/all_dirs/delete_all` through new `/__dev/mkdir`, `/__dev/delete`
+   and `/__dev/list?dirs=1` routes, the DEBUG missing-map recovery, the
+   cut-scene skip); the Load screen's Mystery Gift option; the phone.ts and
+   `IconSprite.setBitmapFile` fixes. Only `TileDrawingHelper` (debug minimap)
+   is still partial in `docs/script-coverage.md`.
+2. **Deferred by the owner:** random dungeons
    (`012_Overworld/008_Overworld_RandomDungeons.rb`).
-6. **Original-game bugs** (`docs/original-game-bugs.md`): kept on purpose;
+3. **Original-game bugs** (`docs/original-game-bugs.md`): kept on purpose;
    the owner will pick which to fix later. The ones players hit first are
    event crashes now easy to fix in the map JSON: Day Care (map 440), Name
    Rater (map 215), Cinnabar Lab, parallel common event 2 (switch 488), the
    Marts on maps 204/218/822, Fillet Away / Chilly Reception (PBS names).
-7. **Not started:** screen-by-screen comparison with the original running in
+4. **Not started:** screen-by-screen comparison with the original running in
    CrossOver (needs the owner's OK for computer control), a production build
    and hosting, push + PR.
 

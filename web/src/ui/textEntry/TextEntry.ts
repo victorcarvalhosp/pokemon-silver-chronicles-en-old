@@ -1,7 +1,6 @@
 // Port of 007_Objects and windows/012_TextEntry.rb: CharacterEntryHelper,
-// Window_TextEntry and Window_TextEntry_Keyboard.
-// Window_MultilineTextEntry isn't ported: only debug editors, mail and
-// pbMessageFreeText use it, none of which the game reaches yet.
+// Window_TextEntry, Window_TextEntry_Keyboard and Window_MultilineTextEntry
+// (no game code creates the last one).
 //
 // The cursor blink counts original 40 fps frames (FrameCounter), as the
 // Ruby code counts raw update calls.
@@ -9,7 +8,7 @@
 import { Bitmap } from "../../rgss/Bitmap";
 import { Input } from "../../rgss/Input";
 import { Color } from "../../rgss/types";
-import { pbDrawShadowText } from "../drawText";
+import { getLineBrokenText, pbDrawShadowText, type LineBrokenText } from "../drawText";
 import { FrameCounter } from "../frameTime";
 import { getDefaultTextColors, pbDoEnsureBitmap } from "../messageConfig";
 import { SpriteWindow_Base } from "../windows/SpriteWindow";
@@ -247,5 +246,290 @@ export class Window_TextEntry_Keyboard extends Window_TextEntry {
       return;
     }
     for (const c of chars(KeyboardInput.gets())) this.insert(c);
+  }
+}
+
+//===============================================================================
+//
+//===============================================================================
+export class Window_MultilineTextEntry extends SpriteWindow_Base {
+  declare _baseColor: Color;
+  declare _shadowColor: Color;
+  declare _helper: CharacterEntryHelper;
+  declare _firstline: number;
+  declare _cursorLine: number;
+  declare _cursorColumn: number;
+  declare _frame: number;
+  declare _clock: FrameCounter;
+  declare _textchars: LineBrokenText[] | null;
+
+  constructor(text: string, x: number, y: number, width: number, height: number) {
+    super(x, y, width, height);
+    const colors = getDefaultTextColors(this.windowskin);
+    this._baseColor = colors[0];
+    this._shadowColor = colors[1];
+    this._helper = new CharacterEntryHelper(text);
+    this._firstline = 0;
+    this._cursorLine = 0;
+    this._cursorColumn = 0;
+    this._frame = 0;
+    this._clock = new FrameCounter();
+    this._textchars = null;
+    this.active = true;
+    this.refresh();
+  }
+
+  get baseColor(): Color { return this._baseColor; }
+  set baseColor(value: Color) {
+    this._baseColor = value;
+    this.refresh();
+  }
+
+  get shadowColor(): Color { return this._shadowColor; }
+  set shadowColor(value: Color) {
+    this._shadowColor = value;
+    this.refresh();
+  }
+
+  get text(): string { return this._helper.text; }
+  set text(value: string) {
+    this._helper.text = value;
+    this._textchars = null;
+    this.refresh();
+  }
+
+  get maxlength(): number { return this._helper.maxlength; }
+  set maxlength(value: number) {
+    this._helper.maxlength = value;
+    this._textchars = null;
+    this.refresh();
+  }
+
+  insert(ch: string): boolean {
+    this._helper.cursor = this.getPosFromLineAndColumn(this._cursorLine, this._cursorColumn);
+    if (this._helper.insert(ch)) {
+      this._frame = 0;
+      this._textchars = null;
+      this.moveCursor(0, 1);
+      this.refresh();
+      return true;
+    }
+    return false;
+  }
+
+  delete(): boolean {
+    this._helper.cursor = this.getPosFromLineAndColumn(this._cursorLine, this._cursorColumn);
+    if (this._helper.delete()) {
+      this._frame = 0;
+      this.moveCursor(0, -1); // use old textchars
+      this._textchars = null;
+      this.refresh();
+      return true;
+    }
+    return false;
+  }
+
+  getTextChars(): LineBrokenText[] {
+    this._textchars ??= getLineBrokenText(this.contents!, this._helper.text, this.contents!.width, null);
+    return this._textchars;
+  }
+
+  getTotalLines(): number {
+    const textchars = this.getTextChars();
+    if (textchars.length === 0) return 1;
+    return textchars[textchars.length - 1]![5] + 1;
+  }
+
+  getLineY(line: number): number {
+    const textchars = this.getTextChars();
+    if (textchars.length === 0) return 0;
+    const totallines = this.getTotalLines();
+    if (line < 0) line = 0;
+    if (line >= totallines) line = totallines - 1;
+    let maximumY = 0;
+    for (const text of textchars) {
+      const thisline = text[5];
+      const y = text[2];
+      if (thisline === line) return y;
+      if (maximumY < y) maximumY = y;
+    }
+    return maximumY;
+  }
+
+  getColumnsInLine(line: number): number {
+    const textchars = this.getTextChars();
+    if (textchars.length === 0) return 0;
+    const totallines = this.getTotalLines();
+    if (line < 0) line = 0;
+    if (line >= totallines) line = totallines - 1;
+    let endpos = 0;
+    for (const text of textchars) if (text[5] === line) endpos += text[8];
+    return endpos;
+  }
+
+  getPosFromLineAndColumn(line: number, column: number): number {
+    const textchars = this.getTextChars();
+    if (textchars.length === 0) return 0;
+    const totallines = this.getTotalLines();
+    if (line < 0) line = 0;
+    if (line >= totallines) line = totallines - 1;
+    let endpos = 0;
+    for (const text of textchars) {
+      const [, , , , , thisline, thispos, thiscolumn, thislength] = text;
+      if (thisline === line) {
+        endpos = thispos + thislength;
+        if (column >= thiscolumn && column <= thiscolumn + thislength && thislength > 0) {
+          return thispos + (column - thiscolumn);
+        }
+      }
+    }
+    return endpos;
+  }
+
+  getLastVisibleLine(): number {
+    this.getTextChars();
+    const textheight = Math.max(1, this.contents!.textSize("X").height);
+    return this._firstline + Math.floor((this.height - this.borderY) / textheight) - 1;
+  }
+
+  updateCursorPos(doRefresh: boolean): void {
+    // Calculate new cursor position
+    this._helper.cursor = this.getPosFromLineAndColumn(this._cursorLine, this._cursorColumn);
+    if (doRefresh) {
+      this._frame = 0;
+      this.refresh();
+    }
+    if (this._cursorLine < this._firstline) this._firstline = this._cursorLine;
+    const lastVisible = this.getLastVisibleLine();
+    if (this._cursorLine > lastVisible) this._firstline += this._cursorLine - lastVisible;
+  }
+
+  moveCursor(lineOffset: number, columnOffset: number): void {
+    // Move column offset first, then lines (since column offset
+    // can affect line offset)
+    let totalColumns = this.getColumnsInLine(this._cursorLine); // check current line
+    const totalLines = this.getTotalLines();
+    const oldCursorLine = this._cursorLine;
+    const oldCursorColumn = this._cursorColumn;
+    this._cursorColumn += columnOffset;
+    if (this._cursorColumn < 0 && this._cursorLine > 0) {
+      // Will happen if cursor is moved left from the beginning of a line
+      this._cursorLine -= 1;
+      this._cursorColumn = this.getColumnsInLine(this._cursorLine);
+    } else if (this._cursorColumn > totalColumns && this._cursorLine < totalLines - 1) {
+      // Will happen if cursor is moved right from the end of a line
+      this._cursorLine += 1;
+      this._cursorColumn = 0;
+    }
+    // Ensure column bounds
+    totalColumns = this.getColumnsInLine(this._cursorLine);
+    if (this._cursorColumn > totalColumns) this._cursorColumn = totalColumns;
+    if (this._cursorColumn < 0) this._cursorColumn = 0; // totalColumns can be 0
+    // Move line offset
+    this._cursorLine += lineOffset;
+    if (this._cursorLine < 0) this._cursorLine = 0;
+    if (this._cursorLine >= totalLines) this._cursorLine = totalLines - 1;
+    // Ensure column bounds again
+    totalColumns = this.getColumnsInLine(this._cursorLine);
+    if (this._cursorColumn > totalColumns) this._cursorColumn = totalColumns;
+    if (this._cursorColumn < 0) this._cursorColumn = 0; // totalColumns can be 0
+    this.updateCursorPos(oldCursorLine !== this._cursorLine || oldCursorColumn !== this._cursorColumn);
+  }
+
+  override update(): void {
+    for (let n = this._clock.tick(); n > 0; n--) {
+      this._frame += 1;
+      this._frame %= 20;
+      if (this._frame % 10 === 0) this.refresh();
+    }
+    if (!this.active) return;
+    // Moving cursor
+    if (KeyboardInput.triggerex("UP") || KeyboardInput.repeatex("UP")) {
+      this.moveCursor(-1, 0);
+      return;
+    } else if (KeyboardInput.triggerex("DOWN") || KeyboardInput.repeatex("DOWN")) {
+      this.moveCursor(1, 0);
+      return;
+    } else if (KeyboardInput.triggerex("LEFT") || KeyboardInput.repeatex("LEFT")) {
+      this.moveCursor(0, -1);
+      return;
+    } else if (KeyboardInput.triggerex("RIGHT") || KeyboardInput.repeatex("RIGHT")) {
+      this.moveCursor(0, 1);
+      return;
+    }
+    if (Input.press(Input.CTRL) && KeyboardInput.triggerex("HOME")) {
+      // Move cursor to beginning
+      this._cursorLine = 0;
+      this._cursorColumn = 0;
+      this.updateCursorPos(true);
+      return;
+    } else if (Input.press(Input.CTRL) && KeyboardInput.triggerex("END")) {
+      // Move cursor to end
+      this._cursorLine = this.getTotalLines() - 1;
+      this._cursorColumn = this.getColumnsInLine(this._cursorLine);
+      this.updateCursorPos(true);
+      return;
+    } else if (KeyboardInput.triggerex("RETURN") || KeyboardInput.repeatex("RETURN")) {
+      this.insert("\n");
+      return;
+    } else if (KeyboardInput.triggerex("BACKSPACE") || KeyboardInput.repeatex("BACKSPACE")) { // Backspace
+      this.delete();
+      return;
+    }
+    for (const c of chars(KeyboardInput.gets())) this.insert(c);
+  }
+
+  override refresh(): void {
+    if (!this._helper) return; // (called from the superclass before Ruby's ivars exist)
+    const newContents = pbDoEnsureBitmap(this.contents, this.width - this.borderX, this.height - this.borderY);
+    if (this.contents !== newContents) this._textchars = null;
+    this.contents = newContents;
+    const bitmap: Bitmap = this.contents;
+    bitmap.clear();
+    this.getTextChars();
+    const height = this.height - this.borderY;
+    const cursorcolor = new Color(0, 0, 0);
+    const textchars = this.getTextChars();
+    const startY = this.getLineY(this._firstline);
+    for (const text of textchars) {
+      const thisline = text[5];
+      const thislength = text[8];
+      const textY = text[2] - startY;
+      // Don't draw lines before the first or zero-length segments
+      if (thisline < this._firstline || thislength === 0) continue;
+      // Don't draw lines beyond the window's height
+      if (textY >= height) break;
+      const c = text[0];
+      // Don't draw spaces
+      if (c === " ") continue;
+      const textwidth = text[3] + 4; // add 4 to prevent draw_text from stretching text
+      const textheight = text[4];
+      // Draw text
+      pbDrawShadowText(bitmap, text[1], textY, textwidth, textheight, c, this._baseColor, this._shadowColor);
+    }
+    // Draw cursor
+    if ((Math.floor(this._frame / 10) & 1) === 0) {
+      let textheight = bitmap.textSize("X").height;
+      let cursorY = (textheight * this._cursorLine) - startY;
+      let cursorX = 0;
+      for (const text of textchars) {
+        const [, , , , , thisline, , thiscolumn, thislength] = text;
+        if (thisline === this._cursorLine && this._cursorColumn >= thiscolumn &&
+            this._cursorColumn <= thiscolumn + thislength) {
+          cursorY = text[2] - startY;
+          cursorX = text[1];
+          textheight = text[4];
+          const posToCursor = this._cursorColumn - thiscolumn;
+          if (posToCursor >= 0) {
+            const partialString = chars(text[0]).slice(0, posToCursor).join("");
+            cursorX += bitmap.textSize(partialString).width;
+          }
+          break;
+        }
+      }
+      cursorY += 4;
+      const cursorHeight = Math.max(4, textheight - 4, bitmap.textSize("X").height - 4);
+      bitmap.fillRect(cursorX, cursorY, 2, cursorHeight, cursorcolor);
+    }
   }
 }

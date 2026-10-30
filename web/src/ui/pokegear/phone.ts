@@ -9,6 +9,7 @@
 // contacts' calls run.
 
 import { assetExists } from "../../core/assets";
+import { rand } from "../../core/random";
 import { Encounter } from "../../data/gameData/encounter";
 import { MapMetadata } from "../../data/gameData/mapMetadata";
 import { pbLoadPhoneData } from "../../data/gameData/miscPBSData";
@@ -50,8 +51,14 @@ export function phoneNumbers(): PhoneNumber[] {
   return g.phoneNumbers;
 }
 
-/** pbCommonEvent(id): runs a common event to completion; false if it doesn't exist. */
-export async function pbCommonEvent(id: number): Promise<boolean> {
+/**
+ * pbCommonEvent(id): runs a common event to completion; false if it doesn't exist.
+ * NOTE (Ruby parity): `id < 0` raises ArgumentError for an id that isn't a
+ * number (019_Utilities/001_Utilities.rb:496), e.g. a trainer contact
+ * registered without an event, which pbCallTrainer treats as an NPC contact.
+ */
+export async function pbCommonEvent(id: number | string): Promise<boolean> {
+  if (typeof id !== "number") throw Object.assign(new Error("comparison of Symbol with 0 failed"), { name: "ArgumentError" });
   if (id < 0) return false;
   const ce = Data.commonEvents.get(id);
   if (!ce) return false;
@@ -263,7 +270,10 @@ export async function pbCallTrainer(trtype: string | number, trname: string): Pr
   if (!trainer) return;
   // Special NPC contacts
   if (trainer.length !== 8) {
-    if (!(await pbCommonEvent(Number(trtype)))) {
+    // NOTE (Ruby parity): a trainer contact registered without its event
+    // (pbPhoneRegister(nil, ...): 6 entries) lands here too, and
+    // pbCommonEvent(:YOUNGSTER) raises (013_Items/004_Item_Phone.rb:186).
+    if (!(await pbCommonEvent(trtype))) {
       await pbMessage(_INTL("{1}'s messages not defined.\nCouldn't call common event {2}.", trainer[2], trtype));
     }
     return;
@@ -286,7 +296,6 @@ export async function pbCallTrainer(trtype: string | number, trname: string): Pr
 //===============================================================================
 // Generate phone message
 //===============================================================================
-const rand = (n: number) => Math.floor(Math.random() * n);
 
 export function pbPhoneGenerateCall(phonenum: PhoneNumber): string {
   const phoneData = pbLoadPhoneData()!;

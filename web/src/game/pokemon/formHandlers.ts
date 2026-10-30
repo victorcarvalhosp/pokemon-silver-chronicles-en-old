@@ -3,13 +3,13 @@
 // plugin load order (v20.1 Hotfixes → Generation 9 Pack → Essentials Deluxe →
 // ZUD Mechanics), so later ones replace earlier ones exactly as in Ruby.
 //
-// Not ported: "alterBitmap" (Spinda's spots; a sprite concern) and drawSpot.
 // Essentials Deluxe's onSetForm versions check $game_temp.dx_pokemon? /
 // dx_midbattle? (set while a Deluxe battle builds Pokémon); those read
 // G.gameTemp.dxPokemon / dxMidbattle when a battle port sets them.
 
 import { rand } from "../../core/random";
 import type { Id } from "../../data/gameData/gameData";
+import type { Bitmap } from "../../rgss/Bitmap";
 import { EncounterType } from "../../data/gameData/encounterType";
 import { MapMetadata } from "../../data/gameData/mapMetadata";
 import { Move as MoveData } from "../../data/gameData/move";
@@ -136,7 +136,111 @@ MultipleForms.register("UNOWN", {
   getFormOnCreation: () => rand(28),
 });
 
-// SPINDA's alterBitmap (pbSpindaSpots) isn't ported; it only changes the sprite.
+export function drawSpot(bitmap: Bitmap, spotpattern: number[][], x: number, y: number, red: number, green: number, blue: number): void {
+  const height = spotpattern.length;
+  const width = spotpattern[0]!.length;
+  for (let yy = 0; yy < height; yy++) {
+    const spot = spotpattern[yy]!;
+    for (let xx = 0; xx < width; xx++) {
+      if (spot[xx] !== 1) continue;
+      const xOrg = (x + xx) << 1;
+      const yOrg = (y + yy) << 1;
+      const color = bitmap.getPixel(xOrg, yOrg);
+      const r = color.red + red;
+      const g = color.green + green;
+      const b = color.blue + blue;
+      color.red = Math.min(Math.max(r, 0), 255);
+      color.green = Math.min(Math.max(g, 0), 255);
+      color.blue = Math.min(Math.max(b, 0), 255);
+      bitmap.setPixel(xOrg, yOrg, color);
+      bitmap.setPixel(xOrg + 1, yOrg, color);
+      bitmap.setPixel(xOrg, yOrg + 1, color);
+      bitmap.setPixel(xOrg + 1, yOrg + 1, color);
+    }
+  }
+}
+
+const SPINDA_SPOT1 = [
+  [0, 0, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 1, 0, 0],
+];
+const SPINDA_SPOT2 = [
+  [0, 0, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 0, 0],
+];
+const SPINDA_SPOT3 = [
+  [0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0],
+  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+  [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+  [0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+];
+const SPINDA_SPOT4 = [
+  [0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+  [0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+  [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0],
+];
+
+export function pbSpindaSpots(pkmn: Pokemon, bitmap: Bitmap): void {
+  const id = pkmn.personalID;
+  const h = (id >> 28) & 15;
+  const g = (id >> 24) & 15;
+  const f = (id >> 20) & 15;
+  const e = (id >> 16) & 15;
+  const d = (id >> 12) & 15;
+  const c = (id >> 8) & 15;
+  const b = (id >> 4) & 15;
+  const a = id & 15;
+  if (pkmn.shiny) {
+    drawSpot(bitmap, SPINDA_SPOT1, b + 33, a + 25, -75, -10, -150);
+    drawSpot(bitmap, SPINDA_SPOT2, d + 21, c + 24, -75, -10, -150);
+    drawSpot(bitmap, SPINDA_SPOT3, f + 39, e + 7, -75, -10, -150);
+    drawSpot(bitmap, SPINDA_SPOT4, h + 15, g + 6, -75, -10, -150);
+  } else {
+    drawSpot(bitmap, SPINDA_SPOT1, b + 33, a + 25, 0, -115, -75);
+    drawSpot(bitmap, SPINDA_SPOT2, d + 21, c + 24, 0, -115, -75);
+    drawSpot(bitmap, SPINDA_SPOT3, f + 39, e + 7, 0, -115, -75);
+    drawSpot(bitmap, SPINDA_SPOT4, h + 15, g + 6, 0, -115, -75);
+  }
+}
+
+// Applied by PokemonSprite#setPokemonBitmap (ui/sprites/pokemonSprite.ts) to
+// single-frame sprites only (Generation 8 Pack); this game's Spinda sprites are
+// animated strips, so its spots never show, as in the original.
+MultipleForms.register("SPINDA", {
+  alterBitmap: (pkmn: Pokemon, bitmap: Bitmap) => pbSpindaSpots(pkmn, bitmap),
+});
 
 MultipleForms.register("CASTFORM", {
   getFormOnLeavingBattle: () => 0,

@@ -3,7 +3,8 @@
 // /game/ assets: existence checks use the asset index (core/assets.ts, which
 // lists every file with and without its extension, lowercased) instead of
 // the disk, file contents are fetched, and the "save folder" is IndexedDB
-// (game/save/SaveData.ts). There's no Game.rgssad archive, so the archive
+// (game/save/SaveData.ts); Dir.create/all_dirs/delete_all write through the
+// dev server's file endpoint. There's no Game.rgssad archive, so the archive
 // branches of pbRgssExists?/pbRgssOpen/pbGetFileChar never apply.
 // pbResolveBitmap / pbBitmapName are in ui/rpgCache.ts.
 
@@ -58,6 +59,37 @@ export const Dir = {
   safe(dir: string): boolean {
     const prefix = dir.replace(/\\/g, "/").replace(/\/$/, "").toLowerCase() + "/";
     return assetPaths().some((p) => p.startsWith(prefix));
+  },
+
+  // The writing helpers (:48-88) go through the dev server's file endpoint
+  // (debug/devFiles.ts), so they only work under `pnpm dev`, on paths under
+  // web/data/ or PBS/ (game-root relative). Nothing in the game calls them.
+
+  /** Dir.create(path): creates all the folders of the path. */
+  async create(path: string): Promise<void> {
+    const { DevFiles } = await import("../debug/devFiles");
+    await DevFiles.mkdir(path.replace(/\\/g, "/")); // Windows compatibility
+  },
+
+  /** Dir.all_dirs(dir): the folder tree under dir, deepest first, dir last. */
+  async allDirs(dir: string): Promise<string[]> {
+    const { DevFiles } = await import("../debug/devFiles");
+    const rel = await DevFiles.listDirs(dir);
+    const walk = (full: string, relDir: string): string[] => {
+      let dirs: string[] = [];
+      const children = rel.filter((r) => r.includes("/") ? r.slice(0, r.lastIndexOf("/")) === relDir : relDir === "")
+        .map((r) => (r.includes("/") ? r.slice(r.lastIndexOf("/") + 1) : r)).sort();
+      for (const c of children) dirs = dirs.concat(walk(full + "/" + c, relDir === "" ? c : relDir + "/" + c));
+      return dirs.length > 0 ? dirs.concat([full]) : [full];
+    };
+    return walk(dir, "");
+  },
+
+  /** Dir.delete_all(dir): deletes every file under dir, then every folder (dir included). */
+  async deleteAll(dir: string): Promise<void> {
+    const { DevFiles } = await import("../debug/devFiles");
+    for (const f of await DevFiles.list(dir)) await DevFiles.delete(dir + "/" + f);
+    for (const d of await Dir.allDirs(dir)) await DevFiles.delete(d);
   },
 };
 

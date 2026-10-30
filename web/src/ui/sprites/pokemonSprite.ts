@@ -15,9 +15,10 @@
 //      versions of the same methods, which load earlier.
 //   30 ZUD Mechanics: footprint_filename(species, form, gmax) and
 //      Pokemon#play_cry (Dynamax volume/pitch).
-// Pokémon Birthsigns isn't installed (no celestial hue). Spinda's
-// "alterBitmap" isn't applied: with Gen 8 it only runs on single-frame
-// sprites, and Spinda's are animated strips.
+// Pokémon Birthsigns isn't installed (no celestial hue). A species'
+// "alterBitmap" (Spinda's spots) runs on single-frame sprites only, as with
+// Gen 8 installed (Species Files.rb:236-243); this game's Spinda sprites are
+// animated strips.
 //
 // File existence is checked against the asset index (synchronously, as
 // Ruby's pbResolveBitmap does). Bitmaps still have to be fetched: PokemonSprite
@@ -30,6 +31,7 @@ import { Settings } from "../../data/gameData/settings";
 import { Species } from "../../data/gameData/species";
 import { SpeciesMetrics } from "../../data/gameData/speciesMetrics";
 import { pbSEPlay } from "../../game/GameSystem";
+import { MultipleForms } from "../../game/pokemon/formHandlers";
 import type { Pokemon } from "../../game/pokemon/Pokemon";
 import { Bitmap } from "../../rgss/Bitmap";
 import { Sprite, type Viewport } from "../../rgss/display";
@@ -373,6 +375,15 @@ export class EBDXBitmapWrapper {
 
   copy(): Bitmap { return this.frameBitmap(this.frameIdx).clone(); }
 
+  /**
+   * prepare_strip, alter_bitmap(i) for each frame, compile_strip: `alter`
+   * changes every scaled frame in place.
+   */
+  alterFrames(alter: (bitmap: Bitmap) => void): void {
+    for (let i = 0; i < this.totalFrames; i++) alter(this.frameBitmap(i));
+    this.drawnKey = "";
+  }
+
   refresh(): void {
     this.dispose();
     this.disposedFlag = false;
@@ -446,6 +457,13 @@ export class EBDXBitmapWrapper {
 
 /** [file, scale] of the bitmap for a sprite request, or null. */
 export type BitmapRequest = { file: string; scale: number } | null;
+
+/** pokemon_sprite_bitmap's MultipleForms "alterBitmap" for a (non-egg) Pokémon, bound to it. */
+function alterBitmapFor(pkmn: Pokemon | null, species: Id | null): ((bitmap: Bitmap) => void) | null {
+  if (!pkmn || pkmn.egg()) return null;
+  const fn = MultipleForms.getFunction(Species.get(species ?? pkmn.species).species, "alterBitmap");
+  return fn ? (bitmap: Bitmap) => fn(pkmn, bitmap) : null;
+}
 
 /** front_sprite_bitmap / back_sprite_bitmap / egg_sprite_bitmap: which file at which scale. */
 export function spriteBitmapRequest(data: SpriteParams): BitmapRequest {
@@ -562,7 +580,7 @@ export class PokemonSprite extends Sprite {
   }
 
   /** Builds the wrapper for `req` now if its graphic is loaded, else once it has loaded. */
-  private applyRequest(req: BitmapRequest, after?: () => void): void {
+  private applyRequest(req: BitmapRequest, after?: () => void, alter?: ((bitmap: Bitmap) => void) | null): void {
     this._iconbitmap?.dispose();
     this._iconbitmap = null;
     const token = ++this.request;
@@ -570,6 +588,7 @@ export class PokemonSprite extends Sprite {
     const apply = () => {
       if (token !== this.request || this.isDisposed()) return;
       this._iconbitmap = req ? new EBDXBitmapWrapper(req.file, req.scale) : null;
+      if (alter && this._iconbitmap?.totalFrames === 1) this._iconbitmap.alterFrames(alter);
       this.setBitmap(this._iconbitmap ? this._iconbitmap.bitmap : null);
       after?.();
       this.changeOrigin();
@@ -590,11 +609,11 @@ export class PokemonSprite extends Sprite {
     this.applyRequest(pokemon ? pokemonBitmapRequest(pokemon, back, species, setDmax) : null, () => {
       this.color = new Color(0, 0, 0, 0);
       // applyEffects(pokemon): Dynamax/Tera sprite effects are battle-only (no-ops here).
-    });
+    }, alterBitmapFor(pokemon, species));
   }
 
   setPokemonBitmapSpecies(pokemon: Pokemon | null, species: Id, back = false): void {
-    this.applyRequest(pokemon ? pokemonBitmapRequest(pokemon, back, species) : null);
+    this.applyRequest(pokemon ? pokemonBitmapRequest(pokemon, back, species) : null, undefined, alterBitmapFor(pokemon, species));
   }
 
   /** setSpeciesBitmap(species, gender, form, shiny, shadow, back, egg, dmax, gmax, celestial) — Essentials Deluxe's. */
