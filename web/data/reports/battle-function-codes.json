@@ -1,8 +1,8 @@
 {
   "note": "Move function codes (moves.json) without a Battle::Move class in web/src/battle/move (or, for Z-Moves/Max Moves, a Battle::PowerMove class in web/src/battle/zud); their moves use Battle::Move::Unimplemented (status moves fail, damaging moves just deal damage). powerMoveCodesWithoutRubyClass: Power Move codes that have no class in Ruby either (Battle::PowerMove::Unimplemented in both).",
   "totalCodes": 494,
-  "implementedCount": 485,
-  "unknownCount": 7,
+  "implementedCount": 487,
+  "unknownCount": 5,
   "implemented": [
     "AddGhostTypeToTarget",
     "AddGrassTypeToTarget",
@@ -246,6 +246,7 @@
     "RaiseUserAtkDefSpd1",
     "RaiseUserAtkSpAtk1",
     "RaiseUserAtkSpAtk1Or2InSun",
+    "RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP",
     "RaiseUserAtkSpd1",
     "RaiseUserAtkSpd1RemoveHazardsSubstitutes",
     "RaiseUserAttack1",
@@ -356,6 +357,7 @@
     "SwitchOutTargetStatusMove",
     "SwitchOutUserDamagingMove",
     "SwitchOutUserPassOnEffects",
+    "SwitchOutUserStartHailWeather",
     "SwitchOutUserStatusMove",
     "TargetActsLast",
     "TargetActsNext",
@@ -502,12 +504,6 @@
     ],
     "LowerTargetSpeedOverTime": [
       "SYRUPBOMB"
-    ],
-    "RaiseUserAtk2SpAtk2Speed2LoseHalfOfTotalHP": [
-      "FILLETAWAY"
-    ],
-    "StartHailWeatherSwitchOutUser": [
-      "CHILLYRECEPTION"
     ],
     "TypeIsUserSecondType": [
       "IVYCUDGEL"

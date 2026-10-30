@@ -1456,7 +1456,7 @@
                     [
                       {"cmd":"text","text":"O Pokémon invísivel se tornou completamente visível!"},
                       {"cmd":"text","text":"Ele atacou!"},
-                      {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::KECLEON"},30,1]},
+                      {"cmd":"call","fn":"pbWildBattle","args":["KECLEON",30,1]},
                       {"cmd":"comment","lines":["If won"]},
                       {
                         "cmd": "if",

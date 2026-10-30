@@ -51,10 +51,11 @@ tests replay).
 2. **Deferred by the owner:** random dungeons
    (`012_Overworld/008_Overworld_RandomDungeons.rb`).
 3. **Original-game bugs** (`docs/original-game-bugs.md`): kept on purpose;
-   the owner will pick which to fix later. The ones players hit first are
-   event crashes now easy to fix in the map JSON: Day Care (map 440), Name
-   Rater (map 215), Cinnabar Lab, parallel common event 2 (switch 488), the
-   Marts on maps 204/218/822, Fillet Away / Chilly Reception (PBS names).
+   the owner will pick which to fix later. The event crashes players hit
+   (Day Care, Name Rater, Cinnabar Lab, common events 2/7, the Marts, the
+   Move Deleter, trades on maps 516/704…) and Fillet Away / Chilly Reception
+   are fixed (see its "Already fixed on purpose" paragraph); Secret Bases and
+   the online counters are left, as those features don't exist.
 4. **Not started:** screen-by-screen comparison with the original running in
    CrossOver (needs the owner's OK for computer control), a production build
    and hosting, push + PR.

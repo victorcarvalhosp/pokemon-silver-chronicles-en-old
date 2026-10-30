@@ -848,12 +848,12 @@ export async function pbScrollMap(direction: number, distance: number, speed: nu
 //===============================================================================
 defineScript("pbPokemonMart", async (_c, stock, speech, cantsell) => {
   const items = (Array.isArray(stock) ? stock : []) as (Id | null)[];
-  // NOTE (Ruby parity): old events name items through the PBItems constants
-  // (Plugins/Pokemon Silver Chronicles Helpers/Pokemon Silver Chronicles Helpers.rb:7);
-  // some marts use names that class doesn't define (POKeBALL, PARLYZHEAL,
-  // XDEFEND, XSPECIAL, POKeDOLL: maps 218, 312, 357, 559, 568, 756, 784, 820,
-  // 822, 828), which raise a NameError in Ruby before pbPokemonMart runs
-  // (003_Interpreter.rb:141 re-raises it), so those marts never open.
+  // Old events name items through the PBItems constants (Plugins/Pokemon
+  // Silver Chronicles Helpers/Pokemon Silver Chronicles Helpers.rb:7). Some
+  // marts used names that class doesn't define (POKeBALL, PARLYZHEAL,
+  // XDEFEND, XSPECIAL, POKeDOLL), a NameError in Ruby, so they never opened;
+  // their event data now uses the v20 IDs (fixed on purpose). A stock naming
+  // an item that doesn't exist still keeps the mart closed.
   if (items.some((i) => i == null || !Item.exists(i))) {
     console.warn("pbPokemonMart: the stock names an item that doesn't exist (a NameError in Ruby); the mart doesn't open", stock);
     return;

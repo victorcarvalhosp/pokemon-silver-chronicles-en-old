@@ -134,7 +134,7 @@
                         "cond": {
                           "script": {
                             "op": ">",
-                            "left": {"call":"eggsteps","on":{"call":"pbGetPokemon","args":[1]}},
+                            "left": {"call":"steps_to_hatch","on":{"call":"pbGetPokemon","args":[1]}},
                             "right": 0
                           }
                         },
@@ -185,7 +185,7 @@
                               "cond": {
                                 "script": {
                                   "op": ">",
-                                  "left": {"call":"eggsteps","on":{"call":"pbGetPokemon","args":[1]}},
+                                  "left": {"call":"steps_to_hatch","on":{"call":"pbGetPokemon","args":[1]}},
                                   "right": 0
                                 }
                               },
@@ -416,20 +416,6 @@
                       {"cmd":"text","text":"\\PN received the Egg from the Day-Care Man."},
                       {"cmd":"text","text":"Take good care of it."},
                       {"cmd":"call","fn":"DayCare.collect_egg","args":[]},
-                      {
-                        "cmd": "assign",
-                        "target": "$PokemonGlobal.daycareEgg",
-                        "args": [],
-                        "op": "=",
-                        "value": 0
-                      },
-                      {
-                        "cmd": "assign",
-                        "target": "$PokemonGlobal.daycareEggSteps",
-                        "args": [],
-                        "op": "=",
-                        "value": 0
-                      },
                       {"cmd":"selfSwitch","ch":"B","value":false},
                       {"cmd":"selfSwitch","ch":"A","value":true},
                       {"cmd":"exitEvent"}
@@ -443,20 +429,7 @@
                           [{"cmd":"jump","label":"ReceiveEgg"}],
                           [
                             {"cmd":"text","text":"Well then, I'll keep it.  Thanks!"},
-                            {
-                              "cmd": "assign",
-                              "target": "$PokemonGlobal.daycareEgg",
-                              "args": [],
-                              "op": "=",
-                              "value": 0
-                            },
-                            {
-                              "cmd": "assign",
-                              "target": "$PokemonGlobal.daycareEggSteps",
-                              "args": [],
-                              "op": "=",
-                              "value": 0
-                            },
+                            {"cmd":"call","fn":"DayCare.reset_egg_counters","args":[]},
                             {"cmd":"selfSwitch","ch":"B","value":false},
                             {"cmd":"selfSwitch","ch":"A","value":true},
                             {"cmd":"exitEvent"}

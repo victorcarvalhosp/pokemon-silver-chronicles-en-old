@@ -176,7 +176,7 @@ const methods = {
         "SwitchOutUserDamagingMove", // U-Turn/Volt Switch
         "SwitchOutUserPassOnEffects", // Baton Pass
         "LowerTargetAtkSpAtk1SwitchOutUser", // Parting Shot
-        "StartHailWeatherSwitchOutUser", // Chilly Reception
+        "SwitchOutUserStartHailWeather", // Chilly Reception (the Gen 9 Pack names its old PBS code, fixed in PBS/moves.txt)
         "UserMakeSubstituteSwitchOut", // Shed Tail
       ];
       for (let i = 0; i < battler.moves.length; i++) {

@@ -187,12 +187,12 @@
               "args": [
                 [
                   {"call":"PBItems::XATTACK"},
-                  {"call":"PBItems::XDEFEND"},
+                  {"call":"PBItems::XDEFENSE"},
                   {"call":"PBItems::XSPEED"},
-                  {"call":"PBItems::XDEFEND"},
+                  {"call":"PBItems::XDEFENSE"},
                   {"call":"PBItems::XACCURACY"},
-                  {"call":"PBItems::XSPECIAL"},
-                  {"call":"PBItems::POKeDOLL"},
+                  {"call":"PBItems::XSPATK"},
+                  {"call":"PBItems::POKEDOLL"},
                   {"call":"PBItems::PPMAX"}
                 ]
               ]

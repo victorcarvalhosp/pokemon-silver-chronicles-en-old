@@ -693,7 +693,7 @@
             {"cmd":"playMe","audio":{"name":"PkmRS-Item","volume":100,"pitch":100}},
             {
               "cmd": "if",
-              "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::XSPECIAL"}]}},
+              "cond": {"script":{"call":"pbReceiveItem","args":[{"call":"PBItems::XSPATK"}]}},
               "then": [{"cmd":"selfSwitch","ch":"A","value":true}],
               "else": []
             }

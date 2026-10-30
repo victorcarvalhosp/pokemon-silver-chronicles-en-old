@@ -168,11 +168,7 @@
                                 "cmd": "playMe",
                                 "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                               },
-                              {
-                                "cmd": "call",
-                                "fn": "pbAddPokemon",
-                                "args": [{"call":"PBSpecies::BULBASAUR"},25]
-                              },
+                              {"cmd":"call","fn":"pbAddPokemon","args":["BULBASAUR",25]},
                               {"cmd":"selfSwitch","ch":"A","value":true}
                             ],
                             "else": [
@@ -182,11 +178,7 @@
                                 "cmd": "playMe",
                                 "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                               },
-                              {
-                                "cmd": "call",
-                                "fn": "pbAddPokemon",
-                                "args": [{"call":"PBSpecies::CHARMANDER"},25]
-                              },
+                              {"cmd":"call","fn":"pbAddPokemon","args":["CHARMANDER",25]},
                               {"cmd":"selfSwitch","ch":"A","value":true}
                             ]
                           }
@@ -206,11 +198,7 @@
                                     "cmd": "playMe",
                                     "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                                   },
-                                  {
-                                    "cmd": "call",
-                                    "fn": "pbAddPokemon",
-                                    "args": [{"call":"PBSpecies::BULBASAUR"},25]
-                                  },
+                                  {"cmd":"call","fn":"pbAddPokemon","args":["BULBASAUR",25]},
                                   {"cmd":"selfSwitch","ch":"A","value":true}
                                 ],
                                 "else": [
@@ -220,11 +208,7 @@
                                     "cmd": "playMe",
                                     "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                                   },
-                                  {
-                                    "cmd": "call",
-                                    "fn": "pbAddPokemon",
-                                    "args": [{"call":"PBSpecies::SQUIRTLE"},25]
-                                  },
+                                  {"cmd":"call","fn":"pbAddPokemon","args":["SQUIRTLE",25]},
                                   {"cmd":"selfSwitch","ch":"A","value":true}
                                 ]
                               }
@@ -240,11 +224,7 @@
                                     "cmd": "playMe",
                                     "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                                   },
-                                  {
-                                    "cmd": "call",
-                                    "fn": "pbAddPokemon",
-                                    "args": [{"call":"PBSpecies::CHARMANDER"},25]
-                                  },
+                                  {"cmd":"call","fn":"pbAddPokemon","args":["CHARMANDER",25]},
                                   {"cmd":"selfSwitch","ch":"A","value":true}
                                 ],
                                 "else": [
@@ -254,11 +234,7 @@
                                     "cmd": "playMe",
                                     "audio": {"name":"pegapokemon","volume":100,"pitch":100}
                                   },
-                                  {
-                                    "cmd": "call",
-                                    "fn": "pbAddPokemon",
-                                    "args": [{"call":"PBSpecies::SQUIRTLE"},25]
-                                  },
+                                  {"cmd":"call","fn":"pbAddPokemon","args":["SQUIRTLE",25]},
                                   {"cmd":"selfSwitch","ch":"A","value":true}
                                 ]
                               }

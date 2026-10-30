@@ -1321,11 +1321,11 @@
             {
               "cmd": "comment",
               "lines": [
-                "Ruby: sscene=PokemonLoadScene.new / sscreen=PokemonLoad.new(sscene) / sscreen.pbStartLoadScreen.",
-                "v20 has no PokemonLoadScene (NameError), so the rest never runs (docs/original-game-bugs.md)."
+                "Was sscene=PokemonLoadScene.new / sscreen=PokemonLoad.new(sscene) / sscreen.pbStartLoadScreen",
+                "(v16 names, a NameError in v20): now the v20 load screen, see startLoadScreen."
               ]
             },
-            {"cmd":"call","fn":"PokemonLoadScene.new","args":[]}
+            {"cmd":"call","fn":"startLoadScreen","args":[]}
           ]
         }
       ]

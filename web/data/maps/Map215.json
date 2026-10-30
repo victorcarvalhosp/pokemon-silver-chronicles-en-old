@@ -117,7 +117,7 @@
                     "cmd": "if",
                     "cond": {
                       "script": {
-                        "call": "isForeign?",
+                        "call": "foreign?",
                         "on": {"call":"pbGetPokemon","args":[1]},
                         "args": [{"call":"$player"}]
                       }
@@ -165,8 +165,11 @@
                               "args": [],
                               "op": "=",
                               "value": {
-                                "call": "PBSpecies.getName",
-                                "args": [{"call":"species","on":{"call":"pkmn"}}]
+                                "call": "name",
+                                "on": {
+                                  "call": "GameData::Species.get",
+                                  "args": [{"call":"species","on":{"call":"pkmn"}}]
+                                }
                               }
                             },
                             {

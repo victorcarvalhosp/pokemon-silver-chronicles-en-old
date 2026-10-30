@@ -18,6 +18,8 @@ import { pbMessage } from "../../ui/messages";
 import { pbRelearnMoveScreen } from "../../ui/party/moveRelearner";
 import { PokemonPokedexInfo_Scene, PokemonPokedexInfoScreen } from "../../ui/pokedex/pokedexEntry";
 import { pbEnterText } from "../../ui/textEntry/UI_TextEntry";
+import { HallOfFame_Scene, HallOfFameScreen } from "../../ui/hallOfFame/HallOfFame";
+import { PokemonLoad_Scene, PokemonLoadScreen } from "../../ui/load/loadScreen";
 import { PokemonPartnerTrainerCard_Scene, PokemonPartnerTrainerCardScreen } from "../../ui/trainerCard/partnerTrainerCard";
 import { Audio } from "../../rgss/Audio";
 import { Graphics } from "../../rgss/Graphics";
@@ -36,7 +38,6 @@ import { playerQuests } from "../quests";
 import { defineScript } from "../scriptApi";
 import { SPEEDUP_STAGES, SpeedUp } from "../speedUp";
 import type { Player } from "../trainer/Player";
-import { rubyNameError } from "./rubyErrors";
 import { _ISPRINTF, _MAPINTL, pbGetMessage, pbGetMessageFromHash } from "../../core/intl";
 
 const player = () => G.player as unknown as Player;
@@ -208,10 +209,9 @@ defineScript("pbReceiveMysteryGift", (_c, id) => pbReceiveMysteryGift(Number(id)
  *   end
  *   $Trainer.party.compact!
  *   end
- * NOTE (Ruby parity): compact! runs inside the loop, so the Pokémon after a
- * stored one moves into slot k and is skipped (two in a row: only the first
- * is stored). `species` is evaluated per Pokémon: PBSpecies::CHIKORITA raises
- * on the first one there is (see rubyErrors.ts).
+ * Fixed on purpose: the original runs compact! inside the loop, so the
+ * Pokémon after a stored one moved into slot k and was skipped (two in a
+ * row: only the first was stored). It runs after the loop here.
  */
 export function storePartySpecies(species: () => unknown): void {
   const party = player().party as (Pokemon | null)[];
@@ -222,8 +222,8 @@ export function storePartySpecies(species: () => unknown): void {
         party[k] = null;
       }
     }
-    for (let i = party.length - 1; i >= 0; i--) if (party[i] == null) party.splice(i, 1); // compact!
   }
+  for (let i = party.length - 1; i >= 0; i--) if (party[i] == null) party.splice(i, 1); // compact!
 }
 // The species is a proc so a constant that raises does so where Ruby evaluates it.
 defineScript("storePartySpecies", (_c, species) => storePartySpecies(species as () => unknown));
@@ -325,13 +325,44 @@ defineScript("pbPartnerTrainerCard", () => pbPartnerTrainerCard());
  *     scene=HallofFameScene.new
  *     screen=HallofFame.new(scene)
  *     pbFadeOutIn(99999) { screen.pbStartScreen }}
- * NOTE (Ruby parity): v20 names these HallOfFame_Scene/HallOfFameScreen, so
- * HallofFameScene is a NameError, which logonerr catches and shows
- * (pbPrintException); the event then carries on. Graphics.frame_rate is
+ * Fixed on purpose: those are v16 names (a NameError in v20, which logonerr
+ * showed before carrying on); v20's are HallOfFame_Scene/HallOfFameScreen,
+ * whose entry screen (pbStartScreenEntry) this runs. Graphics.frame_rate is
  * already 40 (see moveRoute.ts).
  */
 export async function callHallOfFameCommonEvent(): Promise<void> {
   G.gameSystem.sePlay(Data.system.sounds.decisionSe ?? null);
-  await PBDebug.logonerr(async () => rubyNameError("uninitialized constant Interpreter::HallofFameScene"));
+  await PBDebug.logonerr(async () => {
+    const scene = new HallOfFame_Scene();
+    const screen = new HallOfFameScreen(scene);
+    await pbFadeOutIn(() => screen.pbStartScreenEntry(), 99999);
+  });
 }
 defineScript("callHallOfFameCommonEvent", () => callHallOfFameCommonEvent());
+
+/**
+ * Map 438 ("Intro antes title"), event 1 page 2:
+ *   sscene=PokemonLoadScene.new
+ *   sscreen=PokemonLoad.new(sscene)
+ *   sscreen.pbStartLoadScreen
+ * Fixed on purpose: those are v16 names (a NameError in v20); this opens
+ * v20's load screen (PokemonLoad_Scene/PokemonLoadScreen). Its Continue and
+ * New Game run Game.load/Game.start_new, which set $scene = Scene_Map.new
+ * (main.ts does that part of them here); Quit Game leaves $scene nil, which
+ * goes back to the title in the browser.
+ */
+export async function startLoadScreen(): Promise<void> {
+  const screen = new PokemonLoadScreen(new PokemonLoad_Scene());
+  await screen.init();
+  const choice = await screen.pbStartLoadScreen();
+  const { Game } = await import("../Game");
+  if (choice.action === "continue") await Game.load(choice.save);
+  else if (choice.action === "new_game") await Game.startNew();
+  else {
+    G.scene = null;
+    return;
+  }
+  const { SceneMap } = await import("../../scenes/SceneMap");
+  G.scene = new SceneMap() as never;
+}
+defineScript("startLoadScreen", () => startLoadScreen());

@@ -417,7 +417,7 @@
           "trigger": 0,
           "list": [
             {"cmd":"playSe","audio":{"name":"243Cry","volume":80,"pitch":100}},
-            {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::RAIKOU"},40]},
+            {"cmd":"call","fn":"pbWildBattle","args":["RAIKOU",40]},
             {"cmd":"selfSwitch","ch":"A","value":true},
             {"cmd":"switches","from":178,"to":178,"value":true}
           ]

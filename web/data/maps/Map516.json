@@ -592,7 +592,7 @@
                           "right": {
                             "op": "==",
                             "left": {"call":"species","on":{"call":"poke"}},
-                            "right": {"call":"PBSpecies::RAICHU"}
+                            "right": "RAICHU"
                           }
                         }
                       }
@@ -607,12 +607,7 @@
                       {
                         "cmd": "call",
                         "fn": "pbStartTrade",
-                        "args": [
-                          {"call":"pbGet","args":[1]},
-                          {"call":"PBSpecies::ELECTRODE"},
-                          "ESFERA",
-                          "CLIFTON"
-                        ]
+                        "args": [{"call":"pbGet","args":[1]},"ELECTRODE","ESFERA","CLIFTON"]
                       },
                       {"cmd":"text","text":"\\PN trocou RAICHU pelo ELECTRODE!"},
                       {"cmd":"text","text":"\\bObrigado!"},
@@ -700,7 +695,7 @@
                           "right": {
                             "op": "==",
                             "left": {"call":"species","on":{"call":"poke"}},
-                            "right": {"call":"PBSpecies::VENONAT"}
+                            "right": "VENONAT"
                           }
                         }
                       }
@@ -715,12 +710,7 @@
                       {
                         "cmd": "call",
                         "fn": "pbStartTrade",
-                        "args": [
-                          {"call":"pbGet","args":[1]},
-                          {"call":"PBSpecies::TANGELA"},
-                          "TANGENY",
-                          "NORMA"
-                        ]
+                        "args": [{"call":"pbGet","args":[1]},"TANGELA","TANGENY","NORMA"]
                       },
                       {"cmd":"text","text":"\\PN trocou VENONAT pelo TANGELA!"},
                       {"cmd":"text","text":"\\rMuito obrigado!"},

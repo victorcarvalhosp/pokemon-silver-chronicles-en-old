@@ -170,7 +170,7 @@
                       {
                         "cmd": "call",
                         "fn": "pbStartTrade",
-                        "args": [{"call":"pbGet","args":[1]},"DARUMAKA_1","Ice Potato","Silvia"]
+                        "args": [{"call":"pbGet","args":[1]},"DARUMAKA_2","Ice Potato","Silvia"]
                       },
                       {"cmd":"call","fn":"pbCallBub","args":[2,{"call":"@event_id"}]},
                       {"cmd":"text","text":"\\PN traded Slakoth for Darumaka!"},

@@ -10,7 +10,25 @@ where the fix shows.
 
 Already fixed on purpose: Pokémon Amie's feeding crash (22 foods), the happiness soft-cap crash, the Gen 9 Pack Sun
 multiplier, and Cotton Down, Bad Dreams, Forewarn, Magician, Mummy/Lingering
-Aroma, Neutralizing Gas, Opportunist and Synchronize.
+Aroma, Neutralizing Gas, Opportunist and Synchronize. Event crashes, fixed in
+the event data with the v20.1 names (`src/game/scripts/eventFixes.test.ts`):
+`PBSpecies::X` (common events 2 and 7, Cinnabar Lab's trades on Map 516, the
+Name Rater's `PBSpecies.getName`, and Maps 199, 207, 473, 676, 766) is now the
+species ID; the Marts and the item on Maps 204, 218, 312, 357, 559, 568, 756,
+784, 820, 822, 828 use POKEBALL, PARALYZEHEAL, XDEFENSE, XSPATK and POKEDOLL;
+the Day Care (Map 440) uses `steps_to_hatch` and `DayCare.reset_egg_counters`
+instead of `eggsteps` and `$PokemonGlobal.daycareEgg`; the Name Rater uses
+`foreign?`; the Move Deleter (Maps 314, 758) uses `numMoves` and
+`forget_move_at_index`; the Map 704 trade gives DARUMAKA_2 (Galarian, form 2
+here) instead of the missing DARUMAKA_1; common events 2 and 7 use
+`$player.has_species?` (v20 has no `pbHasSpecies?`). In TypeScript: common
+events 2, 5, 6, 7 compact the party after the loop, so no Pokémon is skipped
+(`storePartySpecies`); common event 32 opens v20's Hall of Fame entry screen
+(`callHallOfFameCommonEvent`) and Map 438 v20's load screen (`startLoadScreen`)
+instead of the v16 classes. Fillet Away and Chilly Reception always failed
+because their PBS function codes named no class: `PBS/moves.txt` now says
+`RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP` and `SwitchOutUserStartHailWeather`
+(the Gen 9 Pack AI's cases use the new codes; `src/battle/gen9FunctionCodeFix.test.ts`).
 
 Battles carry on after an error, as in the original (`PBDebug.logonerr`), so
 the crashes below cut a move or a round short instead of stopping the game.
@@ -36,8 +54,6 @@ the crashes below cut a move or a round short instead of stopping the game.
 ### Moves
 | Bug | Original | Port |
 |---|---|---|
-| Fillet Away always fails: PBS code `RaiseUserAtk2SpAtk2Speed2LoseHalfOfTotalHP`, plugin class `RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP` (data fix in `PBS/moves.txt`) | `PBS/moves.txt`, Gen 9 Pack `[001] New Move Functions.rb` | `data/reports/battle-function-codes.json` |
-| Chilly Reception always fails: PBS code `StartHailWeatherSwitchOutUser`, plugin class `SwitchOutUserStartHailWeather` | same | same |
 | Take Heart cures status but never raises stats | Gen 9 Pack `[001] New Move Functions.rb:229` | `src/battle/move/MoveEffects_Gen9NewMoveFunctions.ts:263` |
 | Simple Beam works on Truant/Simple targets (Symbol vs GameData check never true) | `007_MoveEffects_BattlerOther.rb:960` | `src/battle/move/MoveEffects_BattlerOther.ts:1140` |
 | Secret Power: flinch check true for 6/10/12 instead of 7/11/13 | `012_MoveEffects_ChangeMoveEffect.rb:204` | `src/battle/move/MoveEffects_ChangeMoveEffect.ts:256` |
@@ -110,7 +126,6 @@ check (ZUD `Override_Moves.rb:249`), Encore's Z-Move check (ZUD
 |---|---|---|
 | League regulations (HOENN_SWITCH on): Place into the party checks the empty party slot instead of the held Pokémon, so placing there is always refused | `016_UI/017_UI_PokemonStorage.rb:1826` | `src/ui/storage/PokemonStorageScreen.ts` (`pbPlace`) |
 | setPrice / setSellPrice store the sell price doubled for a halving the v20.1 Hotfixes removed, so it sells for twice the given price (a buy price alone sells at the full buy price) | `003_Interpreter.rb:455-458`, Hotfixes `Misc bug fixes.rb:384` | `src/ui/mart/PokemonMart.ts` (`setPrice`) |
-| Marts on maps 218, 312, 357, 559, 568, 756, 784, 820, 822, 828 list `PBItems::` names the compatibility class doesn't define (POKeBALL, PARLYZHEAL, XDEFEND, XSPECIAL, POKeDOLL): a NameError, so the mart never opens | `Pokemon Silver Chronicles Helpers.rb:7`, map events | `src/ui/mart/PokemonMart.ts` (the `pbPokemonMart` script) |
 
 ## Pokémon lifecycle (evolution, eggs, Day Care, trades, Hall of Fame, berry plants)
 | Bug | Original | Port |
@@ -123,9 +138,6 @@ check (ZUD `Override_Moves.rb:249`), Encore's Z-Move check (ZUD
 | Day Care OW Pokémon: the message shows the species ID ("PIKACHU") instead of its name; a species without a follower sprite crashes (`gsub!` on nil) | DayCare Overworld Pokemon `:66`, `:24` | `src/game/daycare/DayCareOverworld.ts` |
 | Berry plant events have Direction Fix on, so `turn_left/right/up` never change the plant's frame: every stage after planting looks like the sprout | map events named BerryPlant (e.g. Map 203 EV6, page 2) | `src/game/berries/BerryPlants.ts` (`setEventGraphic`) |
 | PLANT_SPARKLE_ANIMATION_ID is 7, which is "Move:FIREPUNCH" in this game's Animations, so a Fire Punch plays on the plant at each growth stage | `001_Settings.rb:388`, `Data/Animations.rxdata` | `src/game/berries/BerryPlants.ts` |
-| The Galarian Darumaka trade (Map 704) asks for `DARUMAKA_1`, but the Galarian form is form 2 here: "Species DARUMAKA_1 does not exist." | Map 704 event, `PBS/pokemon_forms.txt:1363` | `src/ui/trading/Trading.ts` (`pbTradePokemon`) |
-| The Electrode trade (Map 516) passes `PBSpecies::ELECTRODE`, a constant v20 doesn't define (NameError) | Map 516 event | left untranslated (`scriptApi` warns, the trade then fails like the original) |
-| Common event 32 builds `HallofFameScene`/`HallofFame` (v16 class names, NameError) | `CommonEvent32` | left untranslated |
 
 ## Essentials Deluxe midbattle scripts and deluxe battles
 No event in this game starts a deluxe battle, so these only show in scripts
@@ -426,17 +438,9 @@ Calls in the game's events that the original game (v20.1 and its plugins) doesn'
 
 | Bug | Original (event) | Port |
 |---|---|---|
-| `PBSpecies` doesn't exist (the Chronicles Helpers keep PBItems/PBTrainers only): `PBSpecies::X` raises. Common events 2 ("Pokés", parallel on switch 488) and 7 raise on the first party Pokémon they compare; Cinnabar Lab (Map 516, events 5-6) raises when the party screen checks a Pokémon; also Maps 207, 473, 676, 766, 199 (conditions), and `PBSpecies.getName` in the Name Rater (Map 215, event 3) | events | `rubyErrors.ts`, `storePartySpecies` |
-| `PBItems::PARLYZHEAL`, `POKeBALL`, `POKeDOLL`, `XDEFEND`, `XSPECIAL` aren't in the Helpers' PBItems (uninitialized constant): Marts on Maps 204, 218, 822 | events | `rubyErrors.ts` |
-| Day Care (Map 440): event 1 calls `pkmn.eggsteps` (v20: `steps_to_hatch`) after you pick the Pokémon; event 2 assigns `$PokemonGlobal.daycareEgg`/`daycareEggSteps` (gone in v20) right after giving you the egg | Map 440 events 1-2 | `rubyErrors.ts` |
-| Name Rater (Map 215, event 3): `pkmn.isForeign?($player)` (v20: `foreign?`) | Map 215 | `rubyErrors.ts` |
 | Secret Bases (Maps 255, 673, 209): `pbSecretBaseMart`, `pbSecretBasePC`, `pbNewSecretBase`, `pbInstallingBase`, `getAllCushions`… don't exist | events | `rubyErrors.ts` |
 | Pokémon Center online counters (Map 842, common events 43-44): `GTS.open`, `PVP.open`, `OnlineLobby.open`, `pbWonderTrade`, `pbSave`, `Kernel.pbTransferPlayer` don't exist | events | `rubyErrors.ts` |
-| Move Deleter (Map 314, event 3): `pbNumMoves`, `pbDeleteMove` (v17 names) | Map 314 | `rubyErrors.ts` |
 | `pbIsWeekday?` (common event 78; the function is `pbIsWeekday`), `pbTalkToFollower` (common event 41), `pbToggleFollowingPokemon` (Map 569), `pbFirstRaid` (Map 851) don't exist | events | `rubyErrors.ts` |
-| Map 438 ("Intro antes title"), event 1 page 2: `PokemonLoadScene.new` (v20: `PokemonLoad_Scene`) raises after stopping the BGM | Map 438 | `rubyErrors.ts` |
-| Common event 32 ("Call HallofFame", unused): `HallofFameScene` (v20: `HallOfFame_Scene`) raises inside `PBDebug.logonerr`, which shows the error and carries on | common event 32 | `callHallOfFameCommonEvent` |
-| Common events 2, 5, 6, 7: `$Trainer.party.compact!` runs inside the `for k in 0..5` loop, so the Pokémon after a stored one is skipped | common events 2, 5-7 | `storePartySpecies` |
 | Messages with a stray backslash show it as written: `\v [77]` / `\v [76]` (a space; Map 251 event 31), `\Olá` (Map 314), `\Hm!` (Map 678) | events | `data/eventScripts.test.ts` |
 
 ## Core overworld, saves and utilities (`web/src/game/field/stepHandlers.ts`, `web/src/game/dayNight.ts`, `web/src/game/save/SaveConversions.ts`, `web/src/core`)

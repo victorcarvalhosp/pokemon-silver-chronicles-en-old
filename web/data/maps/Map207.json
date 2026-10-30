@@ -910,7 +910,7 @@
           "trigger": 1,
           "list": [
             {"cmd":"playSe","audio":{"name":"304Cry","volume":100,"pitch":80}},
-            {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::ARON"},7,1,false]},
+            {"cmd":"call","fn":"pbWildBattle","args":["ARON",7,1,false]},
             {"cmd":"comment","lines":["If won"]},
             {
               "cmd": "if",

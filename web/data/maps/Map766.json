@@ -2686,7 +2686,7 @@
             {"cmd":"erasePicture","id":1},
             {"cmd":"erasePicture","id":2},
             {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
-            {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::GROUDON"},70]},
+            {"cmd":"call","fn":"pbWildBattle","args":["GROUDON",70]},
             {"cmd":"switches","from":652,"to":652,"value":true},
             {"cmd":"switches","from":31,"to":31,"value":false},
             {"cmd":"switches","from":554,"to":554,"value":false}
@@ -2952,7 +2952,7 @@
             {"cmd":"erasePicture","id":1},
             {"cmd":"erasePicture","id":2},
             {"cmd":"screenTone","tone":[0.0,0.0,0.0,0.0],"seconds":0.05},
-            {"cmd":"call","fn":"pbWildBattle","args":[{"call":"PBSpecies::GROUDON"},70]},
+            {"cmd":"call","fn":"pbWildBattle","args":["GROUDON",70]},
             {"cmd":"switches","from":652,"to":652,"value":true},
             {"cmd":"switches","from":31,"to":31,"value":false},
             {"cmd":"switches","from":554,"to":554,"value":false}

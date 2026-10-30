@@ -488,7 +488,7 @@ AI.prototype.pbGetMoveScoreFunctionCode = async function (this: AI, score: numbe
       }
       break;
     //---------------------------------------------------------------------------
-    case "RaiseUserAtk2SpAtk2Speed2LoseHalfOfTotalHP": // Fillet Away
+    case "RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP": // Fillet Away (the Gen 9 Pack names its old PBS code, fixed in PBS/moves.txt)
     //---------------------------------------------------------------------------
       if ((user.statStageAtMax("ATTACK") &&
         user.statStageAtMax("SPECIAL_ATTACK") &&
@@ -574,7 +574,7 @@ AI.prototype.pbGetMoveScoreFunctionCode = async function (this: AI, score: numbe
       if (this.battle.field.terrain !== "None") score += 20;
       break;
     //---------------------------------------------------------------------------
-    case "StartHailWeatherSwitchOutUser": // Chilly Reception
+    case "SwitchOutUserStartHailWeather": // Chilly Reception (old PBS code in the Gen 9 Pack, as above)
     //---------------------------------------------------------------------------
       if (!this.battle.pbCanChooseNonActive(user.index) ||
         this.battle.pbTeamAbleNonActiveCount(user.index) > 1) {

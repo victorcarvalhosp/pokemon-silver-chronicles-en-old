@@ -164,7 +164,7 @@
                         "cond": {
                           "script": {
                             "op": "==",
-                            "left": {"call":"pbNumMoves","args":[{"call":"pbGetPokemon","args":[1]}]},
+                            "left": {"call":"numMoves","on":{"call":"pbGetPokemon","args":[1]}},
                             "right": 1
                           }
                         },
@@ -203,8 +203,9 @@
                                 {"cmd":"wait","seconds":4.0},
                                 {
                                   "cmd": "call",
-                                  "fn": "pbDeleteMove",
-                                  "args": [{"call":"pbGetPokemon","args":[1]},{"call":"pbGet","args":[2]}]
+                                  "fn": "forget_move_at_index",
+                                  "on": {"call":"pbGetPokemon","args":[1]},
+                                  "args": [{"call":"pbGet","args":[2]}]
                                 },
                                 {"cmd":"text","text":"Isso funcionou perfeitamente!"},
                                 {"cmd":"text","text":"\\v[3] esqueceu \\v[4] completamente."}

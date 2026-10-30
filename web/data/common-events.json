@@ -8,25 +8,17 @@
     "list": [
       {
         "cmd": "if",
-        "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::CHIKORITA"}]}},
+        "cond": {"script":{"call":"$player.has_species?","args":["CHIKORITA"]}},
         "then": [
-          {
-            "cmd": "call",
-            "fn": "storePartySpecies",
-            "args": [{"proc":[],"body":{"call":"PBSpecies::CHIKORITA"}}]
-          },
+          {"cmd":"call","fn":"storePartySpecies","args":[{"proc":[],"body":"CHIKORITA"}]},
           {"cmd":"text","text":"Algum pkmn foi depositado"}
         ]
       },
       {
         "cmd": "if",
-        "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::CHIKORITA"}]}},
+        "cond": {"script":{"call":"$player.has_species?","args":["CHIKORITA"]}},
         "then": [
-          {
-            "cmd": "call",
-            "fn": "storePartySpecies",
-            "args": [{"proc":[],"body":{"call":"PBSpecies::CHIKORITA"}}]
-          },
+          {"cmd":"call","fn":"storePartySpecies","args":[{"proc":[],"body":"CHIKORITA"}]},
           {"cmd":"text","text":"Algum pkmn foi depositado"}
         ]
       }
@@ -88,13 +80,9 @@
     "list": [
       {
         "cmd": "if",
-        "cond": {"script":{"call":"pbHasSpecies?","args":[{"call":"PBSpecies::BULBASAUR"}]}},
+        "cond": {"script":{"call":"$player.has_species?","args":["BULBASAUR"]}},
         "then": [
-          {
-            "cmd": "call",
-            "fn": "storePartySpecies",
-            "args": [{"proc":[],"body":{"call":"PBSpecies::BULBASAUR"}}]
-          },
+          {"cmd":"call","fn":"storePartySpecies","args":[{"proc":[],"body":"BULBASAUR"}]},
           {"cmd":"text","text":"BULBASAUR saiu do grupo."},
           {"cmd":"text","text":"Ele Não se adapta bem aqui."}
         ],

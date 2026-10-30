@@ -4,7 +4,9 @@
 // (NameError/NoMethodError), Interpreter#execute_script turns that into an
 // EventScriptError and the game stops with the error box. NOTE (Ruby parity):
 // they raise the same here, so the port stops where the original does. The
-// events are listed in docs/original-game-bugs.md ("Event scripts").
+// events are listed in docs/original-game-bugs.md ("Event scripts"). The
+// ones that were fixed on purpose (PBSpecies, old PBItems names, the Day Care,
+// Name Rater and Move Deleter's v16 calls...) are edits to the event data.
 
 import { defineScript } from "../scriptApi";
 
@@ -34,31 +36,13 @@ function missingConstant(name: string): void {
   defineScript(name, () => rubyNameError(`uninitialized constant ${name.split(/\.|::(?=[a-z])/)[0]}`));
 }
 
-// PBSpecies doesn't exist since v19 (the Chronicles Helpers keep PBItems and
-// PBTrainers only), so PBSpecies::X raises.
-for (const species of ["ARON", "BULBASAUR", "CHARMANDER", "CHIKORITA", "ELECTRODE", "GROUDON", "KECLEON", "RAIKOU",
-  "SQUIRTLE", "TANGELA", "RAICHU", "VENONAT"]) {
-  defineScript(`PBSpecies::${species}`, () => rubyNameError("uninitialized constant PBSpecies"));
-}
-defineScript("PBSpecies.getName", () => rubyNameError("uninitialized constant PBSpecies"));
-// PBItems constants the Chronicles Helpers don't define (old item names).
-for (const item of ["PARLYZHEAL", "POKeBALL", "POKeDOLL", "XDEFEND", "XSPECIAL"]) {
-  defineScript(`PBItems::${item}`, () => rubyNameError(`uninitialized constant PBItems::${item}`));
-}
-// Online features and scenes from other games/versions.
-for (const name of ["GTS.open", "PVP.open", "OnlineLobby.open", "PokemonLoadScene.new"]) missingConstant(name);
-// Secret Bases, Wonder Trade, old move-deleter and follower helpers...
+// Online features from other games.
+for (const name of ["GTS.open", "PVP.open", "OnlineLobby.open"]) missingConstant(name);
+// Secret Bases, Wonder Trade, follower helpers...
 for (const name of [
   "pbSecretBaseMart", "pbSecretBasePC", "pbNewSecretBase", "pbInstallingBase",
   "getAllCushions", "getAllDolls", "getAllMats", "getAllOrnaments", "getAllPlants", "getAllPosters",
-  "pbWonderTrade", "pbSave", "pbDeleteMove", "pbNumMoves", "pbFirstRaid", "pbIsWeekday?",
+  "pbWonderTrade", "pbSave", "pbFirstRaid", "pbIsWeekday?",
   "pbTalkToFollower", "pbToggleFollowingPokemon",
 ]) missingMethod(name);
 missingMethod("Kernel.pbTransferPlayer", "Kernel:Module");
-// Pokemon methods from older versions (v20: steps_to_hatch, foreign?).
-// (A "#name" entry is a method looked up on whatever receiver the event has.)
-missingMethod("#eggsteps", "#<Pokemon>");
-missingMethod("#isForeign?", "#<Pokemon>");
-// v20's PokemonGlobalMetadata has no daycareEgg/daycareEggSteps (only old saves had them).
-missingMethod("$PokemonGlobal.daycareEgg=", "#<PokemonGlobalMetadata>");
-missingMethod("$PokemonGlobal.daycareEggSteps=", "#<PokemonGlobalMetadata>");

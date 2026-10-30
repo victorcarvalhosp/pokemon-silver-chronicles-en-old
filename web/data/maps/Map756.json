@@ -170,12 +170,12 @@
               "fn": "pbPokemonMart",
               "args": [
                 [
-                  {"call":"PBItems::POKeBALL"},
+                  {"call":"PBItems::POKEBALL"},
                   {"call":"PBItems::GREATBALL"},
                   {"call":"PBItems::SUPERPOTION"},
                   {"call":"PBItems::ANTIDOTE"},
                   {"call":"PBItems::AWAKENING"},
-                  {"call":"PBItems::PARLYZHEAL"},
+                  {"call":"PBItems::PARALYZEHEAL"},
                   {"call":"PBItems::ICEHEAL"},
                   {"call":"PBItems::DIREHIT"},
                   {"call":"PBItems::XATTACK"}

@@ -21,6 +21,10 @@ vi.mock("../../ui/messages", async (importOriginal) => {
   const orig = await importOriginal<typeof import("../../ui/messages")>();
   return { ...orig, pbMessage: async (text: string) => { messages.push(text); return 0; } };
 });
+vi.mock("../../ui/fades", async (importOriginal) => {
+  const orig = await importOriginal<typeof import("../../ui/fades")>();
+  return { ...orig, pbFadeOutIn: async <T>(block?: () => Promise<T> | T) => block?.() };
+});
 vi.mock("../../rgss/Graphics", async (importOriginal) => {
   const orig = await importOriginal<typeof import("../../rgss/Graphics")>();
   const graphics = orig.Graphics as unknown as { frameCount: number; update: () => Promise<void> };
@@ -48,23 +52,14 @@ beforeEach(() => {
 });
 
 describe("party snippets", () => {
-  it("storePartySpecies stores that species, skipping the Pokémon after one (compact! inside the loop)", () => {
+  it("storePartySpecies stores every Pokémon of that species (compact! after the loop, fixed on purpose)", () => {
     add("RAIKOU");
     add("RAIKOU");
     add("PIDGEY");
     add("RAIKOU");
     storePartySpecies(() => "RAIKOU");
-    // k=0 stores the first Raikou and compacts; the second slides into 0 and is skipped.
-    expect(player().party.map((p) => p.species)).toEqual(["RAIKOU", "PIDGEY"]);
-    expect(G.storage.get(0, 0)!.species).toBe("RAIKOU");
-    expect(G.storage.get(0, 1)!.species).toBe("RAIKOU");
-  });
-
-  it("storePartySpecies(PBSpecies::X) raises only when there's a Pokémon to compare", async () => {
-    const call = { cmd: "call", fn: "storePartySpecies", args: [{ proc: [], body: { call: "PBSpecies::CHIKORITA" } }] } as Command;
-    await runStatements([call], ctx); // empty party: nothing is compared
-    add("CHIKORITA");
-    await expect(runStatements([call], ctx)).rejects.toThrow("uninitialized constant PBSpecies");
+    expect(player().party.map((p) => p.species)).toEqual(["PIDGEY"]);
+    expect([0, 1, 2].map((i) => G.storage.get(0, i)!.species)).toEqual(["RAIKOU", "RAIKOU", "RAIKOU"]);
   });
 
   it("storeWholeParty moves the party to the PC, last first", () => {
@@ -166,17 +161,46 @@ describe("Mystery Gift", () => {
 describe("names the original game doesn't have", () => {
   it("raise Ruby's error", async () => {
     await expect(evaluateAsync({ call: "pbSecretBaseMart", args: [[], "Welcome!"] }, ctx)).rejects.toThrow(RubyScriptError);
-    await expect(evaluateAsync({ call: "PBSpecies::RAICHU" }, ctx)).rejects.toThrow("uninitialized constant PBSpecies");
-    const p = add("PIDGEY");
-    G.gameVariables.set(1, 0);
-    expect(() => evaluate({ call: "eggsteps", on: { call: "pbGetPokemon", args: [1] } }, ctx)).toThrow("undefined method `eggsteps'");
-    await expect(runStatements([{ cmd: "assign", target: "$PokemonGlobal.daycareEgg", args: [], op: "=", value: 0 } as Command], ctx))
-      .rejects.toThrow("undefined method `daycareEgg='");
-    void p;
+    await expect(evaluateAsync({ call: "GTS.open" }, ctx)).rejects.toThrow("uninitialized constant GTS");
+    await expect(evaluateAsync({ call: "pbTalkToFollower" }, ctx)).rejects.toThrow("undefined method `pbTalkToFollower'");
   });
 
   it("the quest helpers check the MQS lists", () => {
     expect(evaluate({ call: "isQuestActive?", args: ["Quest1"] }, ctx)).toBe(false);
     expect(evaluate({ call: "isQuestComplete?", args: ["Quest1"] }, ctx)).toBe(false);
+  });
+});
+
+describe("v16 scenes the events open (fixed on purpose)", () => {
+  it("common event 32 opens the Hall of Fame entry screen", async () => {
+    const { HallOfFameScreen } = await import("../../ui/hallOfFame/HallOfFame");
+    const entry = vi.spyOn(HallOfFameScreen.prototype, "pbStartScreenEntry").mockResolvedValue();
+    const { PBDebug } = await import("../../battle/other/PBDebug");
+    const logonerr = vi.spyOn(PBDebug, "logonerr");
+    const { Data } = await import("../../data/store");
+    const system = Data.system;
+    (Data as { system: unknown }).system = { sounds: {} };
+    await evaluateAsync({ call: "callHallOfFameCommonEvent" }, ctx);
+    expect(entry).toHaveBeenCalledTimes(1);
+    await expect(logonerr.mock.results[0]!.value).resolves.toBeUndefined();
+    (Data as { system: unknown }).system = system;
+    entry.mockRestore();
+    logonerr.mockRestore();
+  });
+
+  it("Map 438 opens the v20 load screen and starts the chosen game", async () => {
+    const { PokemonLoadScreen } = await import("../../ui/load/loadScreen");
+    const { Game } = await import("../Game");
+    const { SceneMap } = await import("../../scenes/SceneMap");
+    const init = vi.spyOn(PokemonLoadScreen.prototype, "init").mockResolvedValue();
+    const start = vi.spyOn(PokemonLoadScreen.prototype, "pbStartLoadScreen").mockResolvedValue({ action: "new_game" });
+    const startNew = vi.spyOn(Game, "startNew").mockResolvedValue();
+    await evaluateAsync({ call: "startLoadScreen" }, ctx);
+    expect(startNew).toHaveBeenCalledTimes(1);
+    expect(G.scene).toBeInstanceOf(SceneMap);
+    start.mockResolvedValue({ action: "quit" });
+    await evaluateAsync({ call: "startLoadScreen" }, ctx);
+    expect(G.scene).toBeNull();
+    for (const s of [init, start, startNew]) s.mockRestore();
   });
 });
